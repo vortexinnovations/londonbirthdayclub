@@ -13,6 +13,7 @@ export default function Header() {
     { href: "/birthday-by-age", label: "By Age" },
     { href: "/plan-birthday-london-club", label: "Planning Guide" },
     { href: "/birthday-by-night", label: "By Night" },
+    { href: "/blog", label: "Blog" },
     { href: "/book-birthday", label: "Book Now" },
   ];
 

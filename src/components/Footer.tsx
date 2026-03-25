@@ -101,6 +101,14 @@ export default function Footer() {
                   Book Your Birthday
                 </Link>
               </li>
+              <li>
+                <Link
+                  href="/blog"
+                  className="text-text-secondary hover:text-gold text-sm transition-colors"
+                >
+                  Birthday Blog
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
