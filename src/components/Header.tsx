@@ -9,10 +9,10 @@ export default function Header() {
 
   const navLinks = [
     { href: "/", label: "Home" },
+    { href: "/birthday-clubs-london", label: "Birthday Clubs" },
+    { href: "/birthday-table-booking-london", label: "Table Booking" },
     { href: "/best-birthday-clubs-london", label: "Best Clubs" },
-    { href: "/birthday-by-age", label: "By Age" },
     { href: "/plan-birthday-london-club", label: "Planning Guide" },
-    { href: "/birthday-by-night", label: "By Night" },
     { href: "/blog", label: "Blog" },
     { href: "/book-birthday", label: "Book Now" },
   ];

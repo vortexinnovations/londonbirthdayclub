@@ -193,8 +193,18 @@ export default function HomePage() {
             Explore Birthday Guides
           </h2>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {[
+              {
+                href: "/birthday-clubs-london",
+                label: "Birthday Clubs London",
+                sub: "All 13 venues compared",
+              },
+              {
+                href: "/birthday-table-booking-london",
+                label: "Table Booking Guide",
+                sub: "Pricing & packages",
+              },
               {
                 href: "/best-birthday-clubs-london",
                 label: "Best Birthday Clubs",

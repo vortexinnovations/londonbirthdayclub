@@ -355,12 +355,24 @@ export default async function ClubPage({
               </Link>
             ))}
           </div>
-          <div className="text-center mt-6">
+          <div className="flex flex-wrap justify-center gap-4 mt-6">
+            <Link
+              href="/birthday-clubs-london"
+              className="text-gold hover:underline text-sm"
+            >
+              All birthday clubs &rarr;
+            </Link>
+            <Link
+              href="/birthday-table-booking-london"
+              className="text-gold hover:underline text-sm"
+            >
+              Table booking guide &rarr;
+            </Link>
             <Link
               href="/best-birthday-clubs-london"
               className="text-gold hover:underline text-sm"
             >
-              View all birthday venues &rarr;
+              Ranked club guide &rarr;
             </Link>
           </div>
         </div>

@@ -30,6 +30,7 @@ export default function BookBirthdayPage() {
             message={getGeneralWhatsAppMessage()}
             label="Message Us on WhatsApp"
             size="large"
+            variant="detailed"
           />
         </div>
       </section>
@@ -133,6 +134,28 @@ export default function BookBirthdayPage() {
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <Link
+              href="/birthday-clubs-london"
+              className="block bg-bg-card hover:bg-bg-card-hover border border-border hover:border-gold/30 rounded-xl p-5 transition-all group"
+            >
+              <div className="font-semibold group-hover:text-gold transition-colors">
+                Birthday Clubs London
+              </div>
+              <div className="text-text-secondary text-sm mt-1">
+                Compare all 13 venues
+              </div>
+            </Link>
+            <Link
+              href="/birthday-table-booking-london"
+              className="block bg-bg-card hover:bg-bg-card-hover border border-border hover:border-gold/30 rounded-xl p-5 transition-all group"
+            >
+              <div className="font-semibold group-hover:text-gold transition-colors">
+                Table Booking Guide
+              </div>
+              <div className="text-text-secondary text-sm mt-1">
+                Pricing, packages, what&apos;s included
+              </div>
+            </Link>
+            <Link
               href="/best-birthday-clubs-london"
               className="block bg-bg-card hover:bg-bg-card-hover border border-border hover:border-gold/30 rounded-xl p-5 transition-all group"
             >
@@ -140,7 +163,7 @@ export default function BookBirthdayPage() {
                 Best Birthday Clubs
               </div>
               <div className="text-text-secondary text-sm mt-1">
-                See our ranked guide
+                Ranked guide with verdicts
               </div>
             </Link>
             <Link
@@ -152,28 +175,6 @@ export default function BookBirthdayPage() {
               </div>
               <div className="text-text-secondary text-sm mt-1">
                 Step-by-step walkthrough
-              </div>
-            </Link>
-            <Link
-              href="/birthday-by-age"
-              className="block bg-bg-card hover:bg-bg-card-hover border border-border hover:border-gold/30 rounded-xl p-5 transition-all group"
-            >
-              <div className="font-semibold group-hover:text-gold transition-colors">
-                Birthday by Age
-              </div>
-              <div className="text-text-secondary text-sm mt-1">
-                Recommendations for your milestone
-              </div>
-            </Link>
-            <Link
-              href="/birthday-by-night"
-              className="block bg-bg-card hover:bg-bg-card-hover border border-border hover:border-gold/30 rounded-xl p-5 transition-all group"
-            >
-              <div className="font-semibold group-hover:text-gold transition-colors">
-                Birthday by Night
-              </div>
-              <div className="text-text-secondary text-sm mt-1">
-                Which night suits your birthday
               </div>
             </Link>
           </div>

@@ -63,6 +63,22 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>
                 <Link
+                  href="/birthday-clubs-london"
+                  className="text-text-secondary hover:text-gold text-sm transition-colors"
+                >
+                  Birthday Clubs London
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/birthday-table-booking-london"
+                  className="text-text-secondary hover:text-gold text-sm transition-colors"
+                >
+                  Table Booking Guide
+                </Link>
+              </li>
+              <li>
+                <Link
                   href="/best-birthday-clubs-london"
                   className="text-text-secondary hover:text-gold text-sm transition-colors"
                 >
@@ -71,18 +87,18 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/birthday-by-age"
-                  className="text-text-secondary hover:text-gold text-sm transition-colors"
-                >
-                  Birthday by Age
-                </Link>
-              </li>
-              <li>
-                <Link
                   href="/plan-birthday-london-club"
                   className="text-text-secondary hover:text-gold text-sm transition-colors"
                 >
                   Planning Guide
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/birthday-by-age"
+                  className="text-text-secondary hover:text-gold text-sm transition-colors"
+                >
+                  Birthday by Age
                 </Link>
               </li>
               <li>
