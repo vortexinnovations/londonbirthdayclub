@@ -110,7 +110,7 @@ export default function HomePage() {
               },
             ].map((item) => (
               <div key={item.step} className="text-center">
-                <div className="text-gold text-5xl font-bold mb-4 opacity-30">
+                <div className="text-gold text-5xl font-bold mb-4 opacity-60">
                   {item.step}
                 </div>
                 <h3 className="text-xl font-semibold mb-3">{item.title}</h3>
