@@ -64,6 +64,19 @@ export default function RootLayout({
 
   return (
     <html lang="en" className={`${inter.variable} antialiased`}>
+      <head>
+        <style
+          dangerouslySetInnerHTML={{
+            __html: `
+              html{scroll-behavior:smooth}
+              body{background-color:#0a0a0a;color:#f5f5f5;font-family:"Inter",system-ui,-apple-system,sans-serif;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;margin:0}
+              ::selection{background-color:#c9a84c;color:#000}
+              .min-h-screen{min-height:100vh}.flex{display:flex}.flex-col{flex-direction:column}.flex-1{flex:1 1 0%}.pt-16{padding-top:4rem}
+              header{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(10,10,10,.9);backdrop-filter:blur(12px);border-bottom:1px solid #222}
+            `,
+          }}
+        />
+      </head>
       <body className="min-h-screen flex flex-col">
         <script
           type="application/ld+json"
