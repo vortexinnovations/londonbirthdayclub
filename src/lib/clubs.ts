@@ -38,6 +38,22 @@ export function getClubWhatsAppMessage(clubName: string): string {
   return `Hi, I'd like to book a birthday table at ${clubName}. Here are my details:\n\nBirthday person's name:\nDate:\nGroup size:\nBudget:\nAny requests (cake, decorations, surprises):`;
 }
 
+export function getGroupWhatsAppMessage(): string {
+  return `Hi, I'm planning a group night out in London. Here are my details:\n\nWhat we're celebrating:\nGroup size:\nDate:\nMusic preference:\nBudget:\nAny specific club in mind?:`;
+}
+
+export function getMilestoneWhatsAppMessage(age: string): string {
+  return `Hi, I'm planning a ${age} birthday celebration. Here are my details:\n\nBirthday person's name:\nDate:\nGroup size:\nBudget:\nPreferred vibe (big party / intimate / dinner & club):\nAny requests (cake, decorations, surprises):`;
+}
+
+export function getPricingWhatsAppMessage(): string {
+  return `Hi, I'd like a price quote for a birthday table. Here are my details:\n\nDate:\nGroup size:\nBudget per person (or total):\nPreferred area (Mayfair / Soho / anywhere):\nMusic preference:`;
+}
+
+export function getVIPWhatsAppMessage(): string {
+  return `Hi, I'm interested in a VIP birthday table. Here are my details:\n\nBirthday person's name:\nDate:\nGroup size:\nBudget:\nPreferred club (or need a recommendation):\nAny premium requests (champagne, premium position, extra decorations):`;
+}
+
 export const clubs: Club[] = [
   // ==================== OPEN VENUES ====================
   {

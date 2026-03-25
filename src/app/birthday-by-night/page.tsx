@@ -3,10 +3,11 @@ import Link from "next/link";
 import { getGeneralWhatsAppMessage } from "@/lib/clubs";
 import WhatsAppCTA from "@/components/WhatsAppCTA";
 import FAQSchema from "@/components/FAQSchema";
+import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 export const metadata: Metadata = {
   title:
-    "Best Night for a Birthday in London | Weekday vs Weekend Birthday Guide",
+    "Best Night of the Week for a Birthday in London — Weekday vs Weekend",
   description:
     "Which night of the week is best for your birthday? A guide to Tuesday–Saturday birthday celebrations at London clubs — atmosphere, pricing, and which venues are open each night.",
   alternates: {
@@ -140,6 +141,7 @@ export default function BirthdayByNightPage() {
   return (
     <>
       <FAQSchema faqs={faqs} />
+      <BreadcrumbSchema items={[{ name: "Home", href: "/" }, { name: "Birthday by Night", href: "/birthday-by-night" }]} />
 
       <section className="relative py-20 sm:py-28 px-4">
         <div className="absolute inset-0 bg-gradient-to-b from-gold/5 via-transparent to-transparent" />

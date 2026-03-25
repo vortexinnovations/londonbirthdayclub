@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { openClubs, getGeneralWhatsAppMessage } from "@/lib/clubs";
+import { openClubs, getMilestoneWhatsAppMessage } from "@/lib/clubs";
 import WhatsAppCTA from "@/components/WhatsAppCTA";
 import FAQSchema from "@/components/FAQSchema";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
@@ -39,7 +39,7 @@ export default function ThirtiethBirthdayPage() {
           <p className="text-lg text-text-secondary max-w-2xl mx-auto leading-relaxed mb-8">
             Turning 30 calls for quality, not chaos. The right venue, exceptional service, and an evening that feels worthy of the milestone. This is your guide to celebrating 30 with the sophistication it deserves.
           </p>
-          <WhatsAppCTA message={getGeneralWhatsAppMessage()} label="Plan My 30th Birthday" size="large" />
+          <WhatsAppCTA message={getMilestoneWhatsAppMessage("30th")} label="Plan My 30th Birthday" size="large" />
         </div>
       </section>
 
@@ -96,7 +96,7 @@ export default function ThirtiethBirthdayPage() {
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-6">Plan Your 30th Birthday</h2>
           <p className="text-text-secondary text-center text-lg mb-8">This milestone deserves the right venue. Tell us your vision and we&apos;ll make it happen — dinner, club, birthday extras, everything.</p>
-          <WhatsAppCTA message={getGeneralWhatsAppMessage()} label="Plan My 30th on WhatsApp" size="large" variant="detailed" />
+          <WhatsAppCTA message={getMilestoneWhatsAppMessage("30th")} label="Plan My 30th on WhatsApp" size="large" variant="detailed" />
         </div>
       </section>
 

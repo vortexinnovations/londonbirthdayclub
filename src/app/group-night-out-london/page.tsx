@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { openClubs, getGeneralWhatsAppMessage } from "@/lib/clubs";
+import { openClubs, getGroupWhatsAppMessage } from "@/lib/clubs";
 import WhatsAppCTA from "@/components/WhatsAppCTA";
 import FAQSchema from "@/components/FAQSchema";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 export const metadata: Metadata = {
-  title: "Group Night Out London | Group Nightclub Booking & Celebration Tables",
-  description: "Plan a group night out at London's best nightclubs. Birthday groups, hen parties, work celebrations — VIP tables from £1,000 with bottle service. Free group booking via WhatsApp.",
+  title: "Group Night Out London — VIP Tables for Birthdays, Hen Parties & Celebrations",
+  description: "Planning a group night out in London? Birthday parties, hen nights, work dos — we'll sort VIP tables and bottle service at the best clubs. Groups of 5 to 30+. Free booking via WhatsApp.",
   alternates: { canonical: "https://londonbirthdayclub.com/group-night-out-london" },
 };
 
@@ -36,7 +36,7 @@ export default function GroupNightOutPage() {
           <p className="text-lg text-text-secondary max-w-2xl mx-auto leading-relaxed mb-8">
             Whether it&apos;s a birthday, hen night, work celebration, or any excuse to get your group together — we&apos;ll sort VIP tables, bottle service, and everything else at London&apos;s best clubs. Free booking, zero hassle.
           </p>
-          <WhatsAppCTA message={getGeneralWhatsAppMessage()} label="Plan Our Group Night" size="large" />
+          <WhatsAppCTA message={getGroupWhatsAppMessage()} label="Plan Our Group Night" size="large" />
         </div>
       </section>
 
@@ -124,7 +124,7 @@ export default function GroupNightOutPage() {
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-6">Plan Your Group Night</h2>
           <p className="text-text-secondary text-center text-lg mb-8">Tell us your group size, date, and what you&apos;re celebrating. We&apos;ll recommend the perfect venue and handle everything.</p>
-          <WhatsAppCTA message={getGeneralWhatsAppMessage()} label="Start Planning on WhatsApp" size="large" variant="detailed" />
+          <WhatsAppCTA message={getGroupWhatsAppMessage()} label="Start Planning on WhatsApp" size="large" variant="detailed" />
         </div>
       </section>
 

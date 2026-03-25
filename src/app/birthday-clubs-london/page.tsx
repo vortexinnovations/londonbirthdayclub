@@ -1,14 +1,15 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { openClubs, getGeneralWhatsAppMessage, getClubWhatsAppMessage } from "@/lib/clubs";
+import ClubComparisonModule from "@/components/ClubComparisonModule";
 import WhatsAppCTA from "@/components/WhatsAppCTA";
 import FAQSchema from "@/components/FAQSchema";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 export const metadata: Metadata = {
-  title: "Birthday Clubs in London | 13 Venues for Birthday Celebrations 2026",
+  title: "Birthday Clubs London — 13 Venues Compared (Prices, Music & Group Size)",
   description:
-    "Find the perfect birthday club in London. 13 premium venues with VIP tables, sparklers, birthday cakes, and bottle service from £1,000. Compare clubs and book free via WhatsApp.",
+    "Compare 13 London birthday clubs side by side — minimum spends, music, group size, and what makes each one great for birthdays. Tables from £1,000. Free booking via WhatsApp.",
   alternates: {
     canonical: "https://londonbirthdayclub.com/birthday-clubs-london",
   },
@@ -298,6 +299,22 @@ export default function BirthdayClubsLondonPage() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section className="py-16 px-4">
+        <div className="max-w-5xl mx-auto">
+          <ClubComparisonModule
+            title="Quick Match: Best Club for Your Birthday"
+            categories={[
+              { label: "Best for 6-10 Guests", description: "Intimate celebrations", clubs: ["tape-london", "tabu-london", "dear-darling", "scotch-of-st-james"] },
+              { label: "Best for 15+ Guests", description: "Big group energy", clubs: ["reign-london", "beat-london", "cuckoo-club", "the-box-london"] },
+              { label: "Best for Entertainment", description: "Performers & spectacle", clubs: ["cirque-le-soir", "the-box-london", "reign-london"] },
+              { label: "Best for Elegance", description: "Refined celebrations", clubs: ["dear-darling", "maddox-club", "selene-london"] },
+              { label: "Best for Hip-Hop", description: "The right playlist", clubs: ["funky-buddha", "tabu-london", "cuckoo-club"] },
+              { label: "Best for House Music", description: "Groove all night", clubs: ["maddox-club", "beat-london", "selene-london"] },
+            ]}
+          />
         </div>
       </section>
 

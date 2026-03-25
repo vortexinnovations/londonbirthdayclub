@@ -49,6 +49,7 @@ export default function RootLayout({
   const localBusinessSchema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
+    "@id": "https://londonbirthdayclub.com/#organization",
     name: "London Birthday Club",
     description:
       "Birthday party planning service for London's most exclusive nightclubs. Free VIP table booking and birthday packages at Mayfair's finest venues.",
@@ -60,6 +61,30 @@ export default function RootLayout({
     },
     priceRange: "££££",
     serviceType: "Birthday Party Planning & VIP Nightclub Table Booking",
+    knowsAbout: [
+      "Birthday party planning",
+      "VIP nightclub table booking",
+      "London nightlife",
+      "Mayfair nightclubs",
+      "Birthday bottle service",
+      "Hen party nightlife",
+      "Milestone birthday celebrations",
+      "Group nightclub bookings",
+    ],
+  };
+
+  const webSiteSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": "https://londonbirthdayclub.com/#website",
+    name: "London Birthday Club",
+    url: "https://londonbirthdayclub.com",
+    description:
+      "The ultimate guide to celebrating birthdays at London's most exclusive nightclubs. Free VIP table planning and booking service.",
+    publisher: {
+      "@id": "https://londonbirthdayclub.com/#organization",
+    },
+    inLanguage: "en-GB",
   };
 
   return (
@@ -82,6 +107,12 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(localBusinessSchema),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(webSiteSchema),
           }}
         />
         <Header />

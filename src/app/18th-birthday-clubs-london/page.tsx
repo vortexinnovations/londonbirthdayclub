@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { openClubs, getGeneralWhatsAppMessage } from "@/lib/clubs";
+import { openClubs, getMilestoneWhatsAppMessage } from "@/lib/clubs";
 import WhatsAppCTA from "@/components/WhatsAppCTA";
 import FAQSchema from "@/components/FAQSchema";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
@@ -39,7 +39,7 @@ export default function EighteenthBirthdayPage() {
           <p className="text-lg text-text-secondary max-w-2xl mx-auto leading-relaxed mb-8">
             Your first legal night out deserves better than a random bar. Celebrate turning 18 at one of London&apos;s best nightclubs with VIP tables, bottle service, and the kind of spectacle that makes this birthday genuinely unforgettable.
           </p>
-          <WhatsAppCTA message={getGeneralWhatsAppMessage()} label="Plan My 18th Birthday" size="large" />
+          <WhatsAppCTA message={getMilestoneWhatsAppMessage("18th")} label="Plan My 18th Birthday" size="large" />
         </div>
       </section>
 
@@ -89,7 +89,7 @@ export default function EighteenthBirthdayPage() {
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-6">Plan Your 18th Birthday</h2>
           <p className="text-text-secondary text-center text-lg mb-8">Tell us your date, group size, and vibe — we&apos;ll recommend the perfect venue and handle every detail. Free service, zero hassle.</p>
-          <WhatsAppCTA message={getGeneralWhatsAppMessage()} label="Plan My 18th on WhatsApp" size="large" variant="detailed" />
+          <WhatsAppCTA message={getMilestoneWhatsAppMessage("18th")} label="Plan My 18th on WhatsApp" size="large" variant="detailed" />
         </div>
       </section>
 

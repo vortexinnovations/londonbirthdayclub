@@ -3,6 +3,7 @@ import Link from "next/link";
 import { blogPosts, type BlogPost } from "@/lib/blog";
 import { getGeneralWhatsAppMessage } from "@/lib/clubs";
 import WhatsAppCTA from "@/components/WhatsAppCTA";
+import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 export const metadata: Metadata = {
   title: "Birthday Planning Blog | Tips, Guides & Ideas for London Birthdays",
@@ -43,6 +44,7 @@ export default function BlogIndexPage() {
 
   return (
     <>
+      <BreadcrumbSchema items={[{ name: "Home", href: "/" }, { name: "Blog", href: "/blog" }]} />
       <section className="relative py-20 sm:py-28 px-4">
         <div className="absolute inset-0 bg-gradient-to-b from-gold/5 via-transparent to-transparent" />
         <div className="max-w-4xl mx-auto relative">

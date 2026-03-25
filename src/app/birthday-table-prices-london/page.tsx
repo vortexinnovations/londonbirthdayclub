@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { openClubs, getGeneralWhatsAppMessage } from "@/lib/clubs";
+import { openClubs, getPricingWhatsAppMessage } from "@/lib/clubs";
 import WhatsAppCTA from "@/components/WhatsAppCTA";
 import FAQSchema from "@/components/FAQSchema";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
+import ArticleSchema from "@/components/ArticleSchema";
 
 export const metadata: Metadata = {
-  title: "Birthday Table Prices London 2026 | Nightclub Table Costs & Per-Person Breakdown",
+  title: "Birthday Table Prices London 2026 — Per-Person Costs at Every Club",
   description: "Complete guide to birthday table prices at London nightclubs. Venue-by-venue minimums, per-person costs by group size, weekday vs weekend pricing, and what's included. Updated for 2026.",
   alternates: { canonical: "https://londonbirthdayclub.com/birthday-table-prices-london" },
 };
@@ -24,6 +25,7 @@ export default function BirthdayTablePricesPage() {
     <>
       <FAQSchema faqs={faqs} />
       <BreadcrumbSchema items={[{ name: "Home", href: "/" }, { name: "Birthday Table Prices London", href: "/birthday-table-prices-london" }]} />
+      <ArticleSchema title="Birthday Table Prices London 2026" description="Complete guide to birthday table prices at London nightclubs." url="https://londonbirthdayclub.com/birthday-table-prices-london" />
 
       <section className="relative py-20 sm:py-28 px-4">
         <div className="absolute inset-0 bg-gradient-to-b from-gold/5 via-transparent to-transparent" />
@@ -151,7 +153,7 @@ export default function BirthdayTablePricesPage() {
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-6">Get an Exact Quote</h2>
           <p className="text-text-secondary text-center text-lg mb-8">Prices vary by venue, night, and table position. Tell us your details and we&apos;ll give you an exact quote — no obligation, completely free.</p>
-          <WhatsAppCTA message={getGeneralWhatsAppMessage()} label="Get a Quote on WhatsApp" size="large" variant="detailed" />
+          <WhatsAppCTA message={getPricingWhatsAppMessage()} label="Get a Quote on WhatsApp" size="large" variant="detailed" />
         </div>
       </section>
 

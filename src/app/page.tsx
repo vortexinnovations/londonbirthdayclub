@@ -4,12 +4,14 @@ import { openClubs, getGeneralWhatsAppMessage } from "@/lib/clubs";
 import ClubCard from "@/components/ClubCard";
 import WhatsAppCTA from "@/components/WhatsAppCTA";
 import FAQSchema from "@/components/FAQSchema";
+import TrustSignals from "@/components/TrustSignals";
+import ClubComparisonModule from "@/components/ClubComparisonModule";
 
 export const metadata: Metadata = {
   title:
-    "London Birthday Club | Celebrate Your Birthday at London's Best Nightclubs",
+    "London Birthday Club — VIP Birthday Tables at London's Best Nightclubs",
   description:
-    "Plan the perfect birthday night out at London's most exclusive clubs. VIP tables, bottle service, sparklers, birthday cakes and more at Mayfair's finest venues. Free planning, book via WhatsApp.",
+    "Free birthday planning at London's top nightclubs. VIP tables from £1,000 with sparklers, cake, and bottle service at Cirque Le Soir, Tape, Funky Buddha & more. Book instantly via WhatsApp.",
   alternates: { canonical: "https://londonbirthdayclub.com" },
 };
 
@@ -140,6 +142,8 @@ export default function HomePage() {
         </div>
       </section>
 
+      <TrustSignals />
+
       {/* Why Choose Us */}
       <section className="py-20 px-4 bg-bg-secondary">
         <div className="max-w-5xl mx-auto">
@@ -183,6 +187,22 @@ export default function HomePage() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section className="py-16 px-4 bg-bg-secondary">
+        <div className="max-w-5xl mx-auto">
+          <ClubComparisonModule
+            title="Find Your Perfect Birthday Club"
+            categories={[
+              { label: "Best for 6-10 Guests", description: "Intimate celebrations", clubs: ["tape-london", "tabu-london", "dear-darling", "scotch-of-st-james"] },
+              { label: "Best for 15+ Guests", description: "Large group energy", clubs: ["reign-london", "beat-london", "cuckoo-club", "luna-club-london"] },
+              { label: "Best for Entertainment", description: "Performers and spectacle", clubs: ["cirque-le-soir", "the-box-london", "reign-london"] },
+              { label: "Best for Hip-Hop & RnB", description: "The right soundtrack", clubs: ["funky-buddha", "tabu-london", "cuckoo-club"] },
+              { label: "Best for Dinner + Club", description: "Complete evening", clubs: ["maddox-club", "dear-darling"] },
+              { label: "Best on a Budget", description: "Midweek value", clubs: ["cuckoo-club", "cirque-le-soir", "funky-buddha"] },
+            ]}
+          />
         </div>
       </section>
 

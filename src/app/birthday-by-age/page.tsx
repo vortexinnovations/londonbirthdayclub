@@ -3,10 +3,11 @@ import Link from "next/link";
 import { getGeneralWhatsAppMessage } from "@/lib/clubs";
 import WhatsAppCTA from "@/components/WhatsAppCTA";
 import FAQSchema from "@/components/FAQSchema";
+import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 export const metadata: Metadata = {
   title:
-    "Birthday by Age | Best London Clubs for 21st, 25th, 30th, 40th Birthdays",
+    "Best London Clubs by Age — 18th, 21st, 25th, 30th, 40th & 50th Birthday Guide",
   description:
     "Find the perfect London nightclub for your milestone birthday. Expert recommendations for 21st, 25th, 30th, 40th, and 50th birthday celebrations at Mayfair's best clubs.",
   alternates: {
@@ -194,6 +195,7 @@ export default function BirthdayByAgePage() {
   return (
     <>
       <FAQSchema faqs={faqs} />
+      <BreadcrumbSchema items={[{ name: "Home", href: "/" }, { name: "Birthday by Age", href: "/birthday-by-age" }]} />
 
       <section className="relative py-20 sm:py-28 px-4">
         <div className="absolute inset-0 bg-gradient-to-b from-gold/5 via-transparent to-transparent" />

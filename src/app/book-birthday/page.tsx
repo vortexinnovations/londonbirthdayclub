@@ -2,9 +2,10 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { getGeneralWhatsAppMessage } from "@/lib/clubs";
 import WhatsAppCTA from "@/components/WhatsAppCTA";
+import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 export const metadata: Metadata = {
-  title: "Book Your Birthday | London Birthday Club",
+  title: "Book Your Birthday — Free VIP Table Planning via WhatsApp",
   description:
     "Book your birthday celebration at a London nightclub in minutes via WhatsApp. Free planning service, VIP tables, birthday extras — we handle everything.",
   alternates: {
@@ -15,6 +16,7 @@ export const metadata: Metadata = {
 export default function BookBirthdayPage() {
   return (
     <>
+      <BreadcrumbSchema items={[{ name: "Home", href: "/" }, { name: "Book Your Birthday", href: "/book-birthday" }]} />
       <section className="relative py-24 sm:py-32 px-4">
         <div className="absolute inset-0 bg-gradient-to-b from-gold/5 via-transparent to-transparent" />
         <div className="max-w-3xl mx-auto text-center relative">

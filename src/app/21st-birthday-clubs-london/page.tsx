@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { openClubs, getGeneralWhatsAppMessage } from "@/lib/clubs";
+import { openClubs, getMilestoneWhatsAppMessage } from "@/lib/clubs";
 import WhatsAppCTA from "@/components/WhatsAppCTA";
 import FAQSchema from "@/components/FAQSchema";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
@@ -39,7 +39,7 @@ export default function TwentyFirstBirthdayPage() {
           <p className="text-lg text-text-secondary max-w-2xl mx-auto leading-relaxed mb-8">
             Turning 21 is the biggest birthday milestone in nightlife. This is the one your friends will compare every future night out to — make it count with a VIP celebration at one of London&apos;s most spectacular clubs.
           </p>
-          <WhatsAppCTA message={getGeneralWhatsAppMessage()} label="Plan My 21st Birthday" size="large" />
+          <WhatsAppCTA message={getMilestoneWhatsAppMessage("21st")} label="Plan My 21st Birthday" size="large" />
         </div>
       </section>
 
@@ -111,7 +111,7 @@ export default function TwentyFirstBirthdayPage() {
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-6">Plan Your 21st Birthday</h2>
           <p className="text-text-secondary text-center text-lg mb-8">This is the big one. Tell us your date, group size, and dream venue — we&apos;ll make your 21st unforgettable.</p>
-          <WhatsAppCTA message={getGeneralWhatsAppMessage()} label="Plan My 21st on WhatsApp" size="large" variant="detailed" />
+          <WhatsAppCTA message={getMilestoneWhatsAppMessage("21st")} label="Plan My 21st on WhatsApp" size="large" variant="detailed" />
         </div>
       </section>
 

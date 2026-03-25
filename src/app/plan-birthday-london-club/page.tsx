@@ -3,10 +3,11 @@ import Link from "next/link";
 import { getGeneralWhatsAppMessage } from "@/lib/clubs";
 import WhatsAppCTA from "@/components/WhatsAppCTA";
 import FAQSchema from "@/components/FAQSchema";
+import ArticleSchema from "@/components/ArticleSchema";
 
 export const metadata: Metadata = {
   title:
-    "How to Plan a Birthday at a London Club | Complete Guide to Birthday Bottle Service",
+    "How to Plan a Birthday at a London Club — Step-by-Step (2026 Guide)",
   description:
     "Step-by-step guide to planning a birthday at a London nightclub. Covers booking, minimum spends, group payments, dress codes, birthday extras, and what to expect on the night.",
   alternates: {
@@ -61,6 +62,7 @@ export default function PlanBirthdayPage() {
   return (
     <>
       <FAQSchema faqs={faqs} />
+      <ArticleSchema title="How to Plan a Birthday at a London Club" description="Step-by-step guide to planning a birthday at a London nightclub." url="https://londonbirthdayclub.com/plan-birthday-london-club" />
 
       <section className="relative py-20 sm:py-28 px-4">
         <div className="absolute inset-0 bg-gradient-to-b from-gold/5 via-transparent to-transparent" />
@@ -394,6 +396,26 @@ export default function PlanBirthdayPage() {
                 Applies to: BEAT London
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-12 px-4">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-2xl font-bold text-center mb-6">Ready to Take the Next Step?</h2>
+          <div className="grid sm:grid-cols-3 gap-4">
+            <Link href="/birthday-table-prices-london" className="block bg-bg-card hover:bg-bg-card-hover border border-border hover:border-gold/30 rounded-xl p-5 transition-all group text-center">
+              <div className="font-semibold group-hover:text-gold transition-colors text-sm">Check Prices</div>
+              <div className="text-text-muted text-xs mt-1">Per-person cost breakdown</div>
+            </Link>
+            <Link href="/best-birthday-clubs-london" className="block bg-bg-card hover:bg-bg-card-hover border border-border hover:border-gold/30 rounded-xl p-5 transition-all group text-center">
+              <div className="font-semibold group-hover:text-gold transition-colors text-sm">Compare Clubs</div>
+              <div className="text-text-muted text-xs mt-1">13 venues ranked</div>
+            </Link>
+            <Link href="/book-birthday" className="block bg-bg-card hover:bg-bg-card-hover border border-gold/30 rounded-xl p-5 transition-all group text-center">
+              <div className="font-semibold text-gold text-sm">Book Now</div>
+              <div className="text-text-muted text-xs mt-1">Free WhatsApp booking</div>
+            </Link>
           </div>
         </div>
       </section>

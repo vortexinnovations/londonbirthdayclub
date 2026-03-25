@@ -4,9 +4,10 @@ import { getGeneralWhatsAppMessage } from "@/lib/clubs";
 import WhatsAppCTA from "@/components/WhatsAppCTA";
 import FAQSchema from "@/components/FAQSchema";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
+import ArticleSchema from "@/components/ArticleSchema";
 
 export const metadata: Metadata = {
-  title: "Birthday Guestlist vs Table Booking London | Which Should You Choose?",
+  title: "Guestlist vs Table for a Birthday in London — Which Is Actually Worth It?",
   description: "Should you book a guestlist or a VIP table for your birthday at a London nightclub? Honest comparison of costs, benefits, and which option suits your group size and budget.",
   alternates: { canonical: "https://londonbirthdayclub.com/birthday-guestlist-vs-table-booking" },
 };
@@ -23,6 +24,7 @@ export default function GuestlistVsTablePage() {
     <>
       <FAQSchema faqs={faqs} />
       <BreadcrumbSchema items={[{ name: "Home", href: "/" }, { name: "Guestlist vs Table Booking", href: "/birthday-guestlist-vs-table-booking" }]} />
+      <ArticleSchema title="Birthday Guestlist vs Table Booking in London" description="Should you book a guestlist or a VIP table for your birthday?" url="https://londonbirthdayclub.com/birthday-guestlist-vs-table-booking" />
 
       <section className="relative py-20 sm:py-28 px-4">
         <div className="absolute inset-0 bg-gradient-to-b from-gold/5 via-transparent to-transparent" />

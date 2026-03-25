@@ -3,11 +3,14 @@ import Link from "next/link";
 import { openClubs, getGeneralWhatsAppMessage } from "@/lib/clubs";
 import WhatsAppCTA from "@/components/WhatsAppCTA";
 import FAQSchema from "@/components/FAQSchema";
+import BreadcrumbSchema from "@/components/BreadcrumbSchema";
+import ItemListSchema from "@/components/ItemListSchema";
+import ArticleSchema from "@/components/ArticleSchema";
 
 export const metadata: Metadata = {
-  title: "Best Clubs for a Birthday in London 2026 | Ranked Birthday Venue Guide",
+  title: "13 Best Birthday Clubs in London (2026) — Ranked by Real Experience",
   description:
-    "Honest, ranked guide to the best London nightclubs for birthday celebrations. From intimate Mayfair lounges to iconic superclubs — find the perfect venue for your birthday party.",
+    "We've booked hundreds of birthday tables. Here are the 13 best London clubs for a birthday, honestly ranked. Cirque Le Soir, Tape, The Box & more — with prices, group advice, and what to expect.",
   alternates: {
     canonical: "https://londonbirthdayclub.com/best-birthday-clubs-london",
   },
@@ -126,9 +129,21 @@ const rankings = [
 ];
 
 export default function BestClubsPage() {
+  const itemListItems = rankings.map((r) => {
+    const club = openClubs.find((c) => c.slug === r.slug);
+    return {
+      name: club?.name ?? r.slug,
+      url: `https://londonbirthdayclub.com/clubs/${r.slug}`,
+      position: r.position,
+    };
+  });
+
   return (
     <>
       <FAQSchema faqs={faqs} />
+      <BreadcrumbSchema items={[{ name: "Home", href: "/" }, { name: "Best Birthday Clubs London", href: "/best-birthday-clubs-london" }]} />
+      <ItemListSchema name="Best Birthday Clubs in London 2026" description="13 London nightclubs ranked for birthday celebrations, based on atmosphere, service, entertainment, and birthday-specific features." items={itemListItems} />
+      <ArticleSchema title="13 Best Birthday Clubs in London — Ranked by Real Experience" description="Honest, ranked guide to the best London nightclubs for birthday celebrations." url="https://londonbirthdayclub.com/best-birthday-clubs-london" />
 
       <section className="relative py-20 sm:py-28 px-4">
         <div className="absolute inset-0 bg-gradient-to-b from-gold/5 via-transparent to-transparent" />

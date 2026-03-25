@@ -4,9 +4,10 @@ import { openClubs, getGeneralWhatsAppMessage } from "@/lib/clubs";
 import WhatsAppCTA from "@/components/WhatsAppCTA";
 import FAQSchema from "@/components/FAQSchema";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
+import ArticleSchema from "@/components/ArticleSchema";
 
 export const metadata: Metadata = {
-  title: "How to Plan a Birthday Night in Mayfair | Mayfair Birthday Club Guide",
+  title: "Mayfair Birthday Night — How to Plan the Perfect Celebration (2026)",
   description: "The complete guide to planning a birthday night out in Mayfair. Which clubs are where, dress codes, what to expect, and how to make your Mayfair birthday celebration perfect.",
   alternates: { canonical: "https://londonbirthdayclub.com/how-to-plan-a-birthday-night-in-mayfair" },
 };
@@ -25,6 +26,7 @@ export default function MayfairBirthdayPage() {
     <>
       <FAQSchema faqs={faqs} />
       <BreadcrumbSchema items={[{ name: "Home", href: "/" }, { name: "Birthday Night in Mayfair", href: "/how-to-plan-a-birthday-night-in-mayfair" }]} />
+      <ArticleSchema title="How to Plan a Birthday Night in Mayfair" description="The complete guide to planning a birthday night out in Mayfair." url="https://londonbirthdayclub.com/how-to-plan-a-birthday-night-in-mayfair" />
 
       <section className="relative py-20 sm:py-28 px-4">
         <div className="absolute inset-0 bg-gradient-to-b from-gold/5 via-transparent to-transparent" />

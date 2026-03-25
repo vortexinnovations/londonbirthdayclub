@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { openClubs, getGeneralWhatsAppMessage } from "@/lib/clubs";
+import { openClubs, getVIPWhatsAppMessage } from "@/lib/clubs";
 import WhatsAppCTA from "@/components/WhatsAppCTA";
 import FAQSchema from "@/components/FAQSchema";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 export const metadata: Metadata = {
-  title: "VIP Birthday Tables London | Luxury Birthday Table Packages 2026",
+  title: "VIP Birthday Tables London — Premium Positions & Luxury Packages (2026)",
   description: "Book a VIP birthday table at London's most exclusive nightclubs. Premium table positions, champagne packages, sparklers, and dedicated hosts. Luxury birthday experiences from £1,000.",
   alternates: { canonical: "https://londonbirthdayclub.com/vip-birthday-tables-london" },
 };
@@ -31,7 +31,7 @@ export default function VIPBirthdayTablesPage() {
           <p className="text-lg text-text-secondary max-w-2xl mx-auto leading-relaxed mb-8">
             The premium birthday experience. The best table positions, enhanced service, spectacular presentations, and the kind of night that makes turning another year older feel like an achievement worth celebrating.
           </p>
-          <WhatsAppCTA message={getGeneralWhatsAppMessage()} label="Book a VIP Birthday Table" size="large" />
+          <WhatsAppCTA message={getVIPWhatsAppMessage()} label="Book a VIP Birthday Table" size="large" />
         </div>
       </section>
 
@@ -115,7 +115,7 @@ export default function VIPBirthdayTablesPage() {
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-6">Book Your VIP Birthday Table</h2>
           <p className="text-text-secondary text-center text-lg mb-8">Tell us your date, group size, and budget. We&apos;ll secure the best VIP table available and handle every detail.</p>
-          <WhatsAppCTA message={getGeneralWhatsAppMessage()} label="Book VIP Table on WhatsApp" size="large" variant="detailed" />
+          <WhatsAppCTA message={getVIPWhatsAppMessage()} label="Book VIP Table on WhatsApp" size="large" variant="detailed" />
         </div>
       </section>
 

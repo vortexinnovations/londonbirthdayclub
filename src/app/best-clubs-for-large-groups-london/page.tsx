@@ -4,9 +4,10 @@ import { openClubs, getGeneralWhatsAppMessage } from "@/lib/clubs";
 import WhatsAppCTA from "@/components/WhatsAppCTA";
 import FAQSchema from "@/components/FAQSchema";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
+import ItemListSchema from "@/components/ItemListSchema";
 
 export const metadata: Metadata = {
-  title: "Best Clubs for Large Groups London | 15-30+ Guest Birthday Venues",
+  title: "Best London Clubs for Large Groups — 15 to 30+ Guest Birthday Venues",
   description: "The best London nightclubs for large group bookings of 15-30+ guests. Multi-table configurations, big birthday celebrations, and venues that handle large parties without cramping the atmosphere.",
   alternates: { canonical: "https://londonbirthdayclub.com/best-clubs-for-large-groups-london" },
 };
@@ -32,6 +33,18 @@ export default function LargeGroupsPage() {
     <>
       <FAQSchema faqs={faqs} />
       <BreadcrumbSchema items={[{ name: "Home", href: "/" }, { name: "Best Clubs for Large Groups London", href: "/best-clubs-for-large-groups-london" }]} />
+      <ItemListSchema
+        name="Best London Clubs for Large Groups 2026"
+        description="London nightclubs ranked for large birthday group bookings of 15-30+ guests."
+        items={[
+          { name: "Reign London", url: "https://londonbirthdayclub.com/clubs/reign-london", position: 1 },
+          { name: "BEAT London", url: "https://londonbirthdayclub.com/clubs/beat-london", position: 2 },
+          { name: "Cuckoo Club", url: "https://londonbirthdayclub.com/clubs/cuckoo-club", position: 3 },
+          { name: "The Box London", url: "https://londonbirthdayclub.com/clubs/the-box-london", position: 4 },
+          { name: "Luna Club London", url: "https://londonbirthdayclub.com/clubs/luna-club-london", position: 5 },
+          { name: "Cirque Le Soir", url: "https://londonbirthdayclub.com/clubs/cirque-le-soir", position: 6 },
+        ]}
+      />
 
       <section className="relative py-20 sm:py-28 px-4">
         <div className="absolute inset-0 bg-gradient-to-b from-gold/5 via-transparent to-transparent" />

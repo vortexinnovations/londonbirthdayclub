@@ -7,9 +7,9 @@ import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 export const metadata: Metadata = {
   title:
-    "Birthday Table Booking London | VIP Tables & Bottle Service for Birthdays",
+    "Birthday Table Booking London — What's Included & How It Works (2026)",
   description:
-    "Book a birthday VIP table at London's best nightclubs. From £1,000 minimum spend — includes premium bottles, sparklers, cake, and dedicated service. Free booking via WhatsApp.",
+    "Everything you need to know about booking a birthday table in London. What's included in the minimum spend, birthday extras, per-person costs, and how to book for free via WhatsApp.",
   alternates: {
     canonical: "https://londonbirthdayclub.com/birthday-table-booking-london",
   },
