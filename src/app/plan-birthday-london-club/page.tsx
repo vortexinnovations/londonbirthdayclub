@@ -53,7 +53,7 @@ const faqs = [
   {
     question: "What should I wear to a London nightclub birthday?",
     answer:
-      "Mayfair clubs enforce smart dress codes: no sportswear, trainers, shorts, or overly casual clothing. For men, smart shoes, fitted trousers, and a collared shirt are safe. For women, the dress code is more flexible but still smart. Venues like Ministry of Sound and BEAT have more relaxed dress codes. Always check the specific venue's requirements.",
+      "Mayfair clubs enforce smart dress codes: no sportswear, trainers, shorts, or overly casual clothing. For men, smart shoes, fitted trousers, and a collared shirt are safe. For women, the dress code is more flexible but still smart. BEAT London has a more relaxed dress code than the Mayfair venues. Always check the specific venue's requirements.",
   },
 ];
 
@@ -376,8 +376,8 @@ export default function PlanBirthdayPage() {
                 The dress code is more flexible for women but still smart.
               </p>
               <p className="text-text-muted text-xs">
-                Applies to: Tape, Cirque, TABU, Libertine, Luxx, Maddox,
-                Scotch, Cuckoo, Dear Darling, Lio, Reign
+                Applies to: Tape, Cirque, TABU, Funky Buddha, Luna, Maddox,
+                Scotch, Cuckoo, Dear Darling, The Box, Reign, Selene
               </p>
             </div>
             <div className="bg-bg-card border border-border rounded-xl p-6">
@@ -391,7 +391,7 @@ export default function PlanBirthdayPage() {
                 express yourself more freely while still looking put-together.
               </p>
               <p className="text-text-muted text-xs">
-                Applies to: BEAT London, Ministry of Sound
+                Applies to: BEAT London
               </p>
             </div>
           </div>

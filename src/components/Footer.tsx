@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { clubs } from "@/lib/clubs";
+import { openClubs } from "@/lib/clubs";
 
 export default function Footer() {
   return (
@@ -24,7 +24,7 @@ export default function Footer() {
               Birthday Venues
             </h4>
             <ul className="space-y-2">
-              {clubs.slice(0, 7).map((club) => (
+              {openClubs.slice(0, 7).map((club) => (
                 <li key={club.slug}>
                   <Link
                     href={`/clubs/${club.slug}`}
@@ -42,7 +42,7 @@ export default function Footer() {
               More Venues
             </h4>
             <ul className="space-y-2">
-              {clubs.slice(7).map((club) => (
+              {openClubs.slice(7).map((club) => (
                 <li key={club.slug}>
                   <Link
                     href={`/clubs/${club.slug}`}

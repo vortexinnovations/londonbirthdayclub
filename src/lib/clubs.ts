@@ -19,6 +19,9 @@ export interface Club {
   atmosphere: string;
   groupSizeAdvice: string;
   proTip: string;
+  status: "open" | "closed";
+  closedNote?: string;
+  alternatives?: string[];
 }
 
 export const WHATSAPP_NUMBER = "447880662708";
@@ -36,6 +39,7 @@ export function getClubWhatsAppMessage(clubName: string): string {
 }
 
 export const clubs: Club[] = [
+  // ==================== OPEN VENUES ====================
   {
     slug: "tape-london",
     name: "Tape London",
@@ -50,6 +54,7 @@ export const clubs: Club[] = [
     capacity: "Intimate (approx. 200)",
     birthdayRating: 5,
     bestFor: "Celebrity-style birthdays and exclusive private celebrations",
+    status: "open",
     description:
       "Tape London is Mayfair's most exclusive members' club, tucked away on Hanover Square. This is where London's elite celebrate — A-list celebrities, musicians, and footballers are regulars. The intimate setting means your birthday group won't be lost in a massive crowd. Instead, you're part of an exclusive room where everyone feels like a VIP. The interiors are dark, sleek, and sophisticated with world-class sound — think recording studio meets luxury lounge.",
     birthdayHighlights: [
@@ -84,6 +89,7 @@ export const clubs: Club[] = [
     capacity: "Medium (approx. 350)",
     birthdayRating: 5,
     bestFor: "Show-stopping birthdays with entertainment and spectacle",
+    status: "open",
     description:
       "Cirque Le Soir is unlike any other club in London — or the world. This circus-themed nightclub has been a celebrity magnet since it opened, attracting everyone from Drake to Rihanna. The club features live performers throughout the night: fire breathers, contortionists, stilt walkers, and aerial artists weave through the crowd, creating an atmosphere that's part nightclub, part immersive theatre. For birthdays, this translates into an experience your guests will genuinely never forget.",
     birthdayHighlights: [
@@ -105,8 +111,8 @@ export const clubs: Club[] = [
       "Friday nights tend to have the most performers and the biggest production. If you want the full Cirque experience for your birthday, Friday is the night. Wednesday is great for a more relaxed but still spectacular celebration.",
   },
   {
-    slug: "the-london-reign",
-    name: "The London Reign",
+    slug: "reign-london",
+    name: "Reign London",
     shortName: "Reign",
     tagline: "The Grand Birthday Spectacle",
     location: "Piccadilly, Central London",
@@ -118,8 +124,9 @@ export const clubs: Club[] = [
     capacity: "Large (approx. 500)",
     birthdayRating: 4,
     bestFor: "Big group birthdays who want a jaw-dropping venue",
+    status: "open",
     description:
-      "The London Reign is Piccadilly's most extravagant showclub, combining world-class nightlife with theatrical performances that rival West End productions. The venue is spread across multiple levels with a grand central stage where aerial artists, dancers, and performers deliver jaw-dropping shows throughout the night. For birthdays, the sheer scale and spectacle of The London Reign creates a celebration that feels truly monumental.",
+      "Reign London is Piccadilly's most extravagant showclub, combining world-class nightlife with theatrical performances that rival West End productions. The venue is spread across multiple levels with a grand central stage where aerial artists, dancers, and performers deliver jaw-dropping shows throughout the night. For birthdays, the sheer scale and spectacle of Reign creates a celebration that feels truly monumental.",
     birthdayHighlights: [
       "Aerial performances and acrobatic shows from the central stage",
       "Grand, multi-level venue with impressive architecture",
@@ -128,13 +135,13 @@ export const clubs: Club[] = [
       "Multiple seating areas with different vibes",
     ],
     whatToExpect:
-      "The London Reign makes an impression from the moment you walk in. The venue is grand — high ceilings, dramatic lighting, and a central performance area that draws every eye in the room. Throughout the night, scheduled performances feature aerial silk artists, choreographed dance routines, and theatrical acts that pause the dancefloor. Your birthday table gives you a front-row seat to the action while enjoying premium bottle service.",
+      "Reign makes an impression from the moment you walk in. The venue is grand — high ceilings, dramatic lighting, and a central performance area that draws every eye in the room. Throughout the night, scheduled performances feature aerial silk artists, choreographed dance routines, and theatrical acts that pause the dancefloor. Your birthday table gives you a front-row seat to the action while enjoying premium bottle service.",
     birthdayExtras:
-      "Birthday packages at The London Reign include sparkler-led bottle parades, the option to arrange cake delivery, decorated table setups, and DJ shoutouts. The venue's theatrical nature means birthday celebrations fit naturally into the night's energy — your bottle presentation becomes part of the show.",
+      "Birthday packages at Reign include sparkler-led bottle parades, the option to arrange cake delivery, decorated table setups, and DJ shoutouts. The venue's theatrical nature means birthday celebrations fit naturally into the night's energy — your bottle presentation becomes part of the show.",
     atmosphere:
       "Grand, theatrical, and high-energy. The crowd at Reign comes dressed to impress and ready for a big night. The combination of club music and live performances creates waves of energy — moments of spectacle followed by peak dancefloor moments. It's a club that rewards groups who come ready to celebrate.",
     groupSizeAdvice:
-      "The London Reign excels with birthday groups of 10–30+. The large venue means big groups don't feel cramped, and multiple table configurations allow you to keep your entire birthday party together. This is one of the best choices for larger celebrations where you want everyone in one venue.",
+      "Reign excels with birthday groups of 10–30+. The large venue means big groups don't feel cramped, and multiple table configurations allow you to keep your entire birthday party together. This is one of the best choices for larger celebrations where you want everyone in one venue.",
     proTip:
       "Saturday nights have the fullest performance schedule. Arrive by 11pm to catch the earlier shows from your table before the club hits peak energy around midnight.",
   },
@@ -152,6 +159,7 @@ export const clubs: Club[] = [
     capacity: "Intimate-Medium (approx. 250)",
     birthdayRating: 4,
     bestFor: "Hip-hop lovers wanting an intimate, edgy birthday vibe",
+    status: "open",
     description:
       "TABU brings a Japanese underground aesthetic to the heart of Mayfair, creating something genuinely different in London's nightlife scene. The dark, immersive interiors draw inspiration from Tokyo's hidden bars and underground clubs, with moody lighting, intricate detailing, and an atmosphere that feels like you've discovered somewhere secret. For birthdays, TABU offers an experience that's edgy, cool, and completely different from a standard Mayfair club night.",
     birthdayHighlights: [
@@ -173,140 +181,39 @@ export const clubs: Club[] = [
       "Thursday nights at TABU often have a more local, fashion-industry crowd and can be easier to book. Friday and Saturday are busier with more energy — perfect for a birthday where you want a packed room.",
   },
   {
-    slug: "libertine",
-    name: "Libertine",
-    shortName: "Libertine",
-    tagline: "The Futuristic Birthday Celebration",
-    location: "Mayfair, London",
+    slug: "funky-buddha",
+    name: "Funky Buddha",
+    shortName: "Funky Buddha",
+    tagline: "The Legendary Celebrity Birthday",
+    location: "Berkeley Street, Mayfair",
     area: "Mayfair",
     minSpend: "£1,000",
-    musicPolicy: "Hip-Hop, RnB, Commercial",
-    dressCode: "Smart and stylish. Mayfair dress code — no sportswear, trainers, or overly casual attire.",
+    musicPolicy: "Hip-Hop, RnB, Dancehall, Afrobeats",
+    dressCode: "Smart stylish. Mayfair dress code — no sportswear, casual trainers, or shorts. Look sharp.",
     openingNights: "Wednesday, Friday, Saturday",
-    capacity: "Medium (approx. 300)",
-    birthdayRating: 4,
-    bestFor: "Style-conscious birthday celebrations with a modern edge",
-    description:
-      "Libertine brings a sophisticated, futuristic energy to Mayfair's nightlife scene. The venue combines sleek design with state-of-the-art lighting and sound, creating an environment that feels like stepping into the future. The interiors are refined yet bold — think clean lines, ambient lighting, and a layout that makes every table feel like the best seat in the house. For birthdays, Libertine delivers a celebration that's polished, energetic, and undeniably cool.",
-    birthdayHighlights: [
-      "Futuristic, visually stunning interior design",
-      "State-of-the-art sound and lighting systems",
-      "Excellent dancefloor energy throughout the night",
-      "Well-positioned tables with great sightlines",
-      "Attentive, professional service team",
-    ],
-    whatToExpect:
-      "Libertine impresses with its modern design and impeccable sound quality. The venue layout ensures every table has a view of the dancefloor and DJ, so your birthday group is always part of the action. The lighting shifts and evolves throughout the night, creating different moods as the energy builds. Bottle service is slick and well-choreographed, with sparkler presentations that match the venue's futuristic aesthetic.",
-    birthdayExtras:
-      "Birthday celebrations at Libertine include sparkler bottle presentations, birthday cake options, table decorations, and DJ shoutouts. The venue's sophisticated setup means everything feels premium — from the way bottles are presented to how your table is arranged for the evening.",
-    atmosphere:
-      "Sophisticated, energetic, and forward-thinking. Libertine attracts a well-dressed, fun-loving crowd who appreciate quality nightlife. The atmosphere builds from relaxed early-evening energy to a packed, high-energy dancefloor by midnight. The sound system is one of the best in Mayfair.",
-    groupSizeAdvice:
-      "Libertine works well for birthday groups of 8–20. The layout offers good options for medium-sized groups, and the atmosphere is lively enough that even smaller groups feel part of the action. Multiple tables can be arranged for larger parties.",
-    proTip:
-      "Wednesday nights at Libertine are an underrated option for birthdays — slightly lower minimum spends and a more relaxed atmosphere, but the venue still delivers the full Libertine experience.",
-  },
-  {
-    slug: "luxx-club",
-    name: "Luxx Club London",
-    shortName: "Luxx",
-    tagline: "The Electric Birthday Experience",
-    location: "Mayfair, London",
-    area: "Mayfair",
-    minSpend: "£1,000",
-    musicPolicy: "Open Format, Hip-Hop, Commercial",
-    dressCode: "Smart stylish. Standard Mayfair dress code applies — look sharp.",
-    openingNights: "Friday, Saturday",
-    capacity: "Medium (approx. 300)",
-    birthdayRating: 4,
-    bestFor: "Visually spectacular birthdays with an electric atmosphere",
-    description:
-      "Luxx Club London brings an electric, light-show experience to Mayfair nightlife. The venue's signature feature is its stunning LED installations and dynamic light shows that transform the space throughout the night. Every surface seems to pulse with energy, creating a visual spectacle that makes the entire club feel alive. For birthdays, this means your celebration happens against a backdrop that's Instagram-ready from every angle.",
-    birthdayHighlights: [
-      "Stunning LED light shows and visual installations",
-      "Every corner is Instagram-worthy for birthday photos",
-      "Open format music policy appeals to diverse groups",
-      "Premium Mayfair location and service standards",
-      "Dynamic atmosphere that evolves through the night",
-    ],
-    whatToExpect:
-      "Walking into Luxx is a visual experience. The LED installations create a constantly shifting backdrop of colour and light that makes the venue feel like it's breathing. The music policy is open format, meaning the DJ reads the room and plays what works — from hip-hop bangers to commercial anthems. For birthdays, the light shows can feel like they're part of your celebration. Bottle presentations are enhanced by the visual environment, with sparklers and LED elements combining for dramatic effect.",
-    birthdayExtras:
-      "Birthday packages at Luxx include sparkler-enhanced bottle deliveries, birthday cake arrangements, personalised table décor, and DJ birthday announcements. The LED environment adds an extra dimension to every celebration element — even a simple sparkler presentation looks spectacular against the backdrop.",
-    atmosphere:
-      "Electric, vibrant, and visually immersive. Luxx attracts a fun, photogenic crowd who appreciate the venue's visual impact. The energy is consistently high, with the light shows building alongside the music to create peak moments throughout the night.",
-    groupSizeAdvice:
-      "Luxx is great for birthday groups of 8–20. The visual environment means even smaller groups feel like they're in the middle of something special. The open format music policy works well for mixed groups who might have different music tastes.",
-    proTip:
-      "The LED shows peak around midnight-1am — time your birthday moment (cake, toast, sparklers) to coincide with the most intense visual displays for maximum impact.",
-  },
-  {
-    slug: "maddox",
-    name: "Maddox",
-    shortName: "Maddox",
-    tagline: "The Dinner-to-Dance Birthday",
-    location: "Mayfair, London",
-    area: "Mayfair",
-    minSpend: "£1,000",
-    musicPolicy: "House, Deep House, Tech House",
-    dressCode: "Smart elegant. Maddox is refined — dress accordingly. No sportswear or casual wear.",
-    openingNights: "Thursday, Friday, Saturday",
-    capacity: "Medium (approx. 300)",
-    birthdayRating: 4,
-    bestFor: "Sophisticated birthdays combining dinner and nightclub",
-    description:
-      "Maddox is Mayfair's premier restaurant-nightclub hybrid, offering the rare ability to seamlessly transition from an elegant Italian dinner to a full nightclub experience without leaving the building. The restaurant serves exceptional Italian cuisine in a sophisticated setting, while the club space features a house-music-driven atmosphere that attracts a mature, well-dressed crowd. For birthdays, this means you can host your entire evening — dinner, drinks, dancing — in one venue.",
-    birthdayHighlights: [
-      "Start with Italian dinner, transition seamlessly to the club",
-      "One venue for the entire birthday evening",
-      "House music focus attracts a sophisticated crowd",
-      "Elegant restaurant perfect for pre-club birthday toasts",
-      "The only Mayfair venue offering this dinner-to-dance concept",
-    ],
-    whatToExpect:
-      "A birthday at Maddox typically begins with dinner in the restaurant — Italian cuisine that's genuinely excellent, not just a club-attached afterthought. As the evening progresses, the energy shifts as the club space opens and the DJ starts building. The transition feels natural and exciting — one moment you're toasting with champagne over pasta, the next you're on a dancefloor with deep house filling the room. The house music policy sets Maddox apart from the hip-hop-heavy Mayfair scene.",
-    birthdayExtras:
-      "Birthday celebrations at Maddox can include a full dinner service with birthday cake for dessert, followed by sparkler bottle presentations in the club. Table decorations, DJ shoutouts, and personalised touches can be arranged. The dinner-to-club format means the celebration naturally builds in energy throughout the evening.",
-    atmosphere:
-      "Refined, warm, and musically driven. Maddox attracts a slightly older, more sophisticated crowd than some Mayfair venues — people who appreciate good food, good music, and good company. The house music policy means the dancefloor has a different energy — more groovy, less intense, but equally engaging.",
-    groupSizeAdvice:
-      "Maddox is perfect for birthday groups of 6–20. The dinner-then-club format works especially well for groups where some people prefer dining and conversation over pure clubbing — everyone can enjoy the evening at their own pace. Book a private dining area for groups of 10+.",
-    proTip:
-      "Book dinner for 9–9:30pm to perfectly time the transition into the club. The kitchen produces excellent sharing platters that work perfectly for birthday groups who want variety.",
-  },
-  {
-    slug: "scotch-of-st-james",
-    name: "Scotch of St James",
-    shortName: "Scotch",
-    tagline: "The Iconic Birthday in a Historic Setting",
-    location: "Mayfair, London",
-    area: "Mayfair",
-    minSpend: "£1,000",
-    musicPolicy: "Mixed — Hip-Hop, RnB, House, depending on the night",
-    dressCode: "Smart stylish. Scotch has heritage — respect the dress code. No sportswear or casual attire.",
-    openingNights: "Thursday, Friday, Saturday",
     capacity: "Intimate (approx. 200)",
-    birthdayRating: 4,
-    bestFor: "Birthdays with character in a venue with genuine history",
+    birthdayRating: 5,
+    bestFor: "Iconic, celebrity-style birthday celebrations with incredible energy",
+    status: "open",
     description:
-      "Scotch of St James is one of London's most storied nightclub locations, with a history stretching back to the 1960s when Jimi Hendrix himself was a regular. That rock'n'roll heritage permeates the venue today — the interiors blend vintage elegance with modern luxury, creating a space that feels like it has stories to tell. For birthdays, Scotch offers something no other Mayfair club can: genuine character and history, combined with modern VIP service.",
+      "Funky Buddha is one of the most iconic names in London nightlife. Located on Berkeley Street in the heart of Mayfair, this legendary venue has hosted some of the biggest names in entertainment, sport, and fashion since it first opened. The intimate setting, combined with a music policy rooted in hip-hop, RnB, dancehall, and Afrobeats, creates an atmosphere that's unapologetically fun and dripping with energy. For birthdays, Funky Buddha delivers a celebration that feels like a headline event — intimate enough to feel exclusive, loud enough to feel like a party.",
     birthdayHighlights: [
-      "Historic venue with genuine 1960s heritage (Hendrix era)",
-      "Intimate setting with bags of character",
-      "Vintage-meets-luxury interior design",
-      "Eclectic music policy that varies by night",
-      "Personal, attentive service in a compact space",
+      "One of Mayfair's most iconic and recognisable club names",
+      "Intimate layout where every birthday group is part of the energy",
+      "Music policy that keeps the dancefloor moving all night",
+      "Celebrity pedigree — a genuinely famous venue",
+      "Exceptional table service with a personal touch",
     ],
     whatToExpect:
-      "Scotch has a warmth that many Mayfair clubs lack. The vintage detailing, intimate layout, and rich history create an atmosphere that feels like celebrating in someone's incredibly cool private members' bar. The music varies by night — some evenings lean hip-hop, others more house — so check which night suits your birthday crew's taste. The compact size means your celebration has presence; a birthday at Scotch is felt by everyone in the room.",
+      "Walking into Funky Buddha, you immediately feel the heritage. This is a club that's earned its reputation over years of legendary nights. The intimate size means the energy is concentrated — the DJ is playing to the room, not to a stadium, and the music hits harder because of it. The hip-hop, RnB, and Afrobeats playlist is expertly curated, moving between classic anthems and current tracks. For birthdays, the compact dancefloor means your group is never far from the action, and the bottle presentations with sparklers create genuine moments of celebration.",
     birthdayExtras:
-      "Birthday celebrations at Scotch include sparkler bottle presentations, cake arrangements, DJ shoutouts, and decorated tables. The intimate setting means everything feels personal and considered — you're not just another table, you're part of the evening's story.",
+      "Birthday celebrations at Funky Buddha include sparkler bottle deliveries, birthday cake arrangements, DJ shoutouts, and decorated table setups. The intimate size means the DJ shoutout fills the whole room — everyone knows it's your birthday. The personal service ensures every detail is handled.",
     atmosphere:
-      "Characterful, warm, and unexpectedly rock'n'roll. Scotch attracts a crowd that appreciates the venue's uniqueness — creative types, music lovers, and people who've grown tired of identikit Mayfair clubs. The energy is fun and unpretentious, built on genuine connection to the music and the space.",
+      "Legendary, energetic, and intimate. Funky Buddha attracts a well-dressed crowd who come for the music and the energy. The atmosphere is unapologetically fun — people are dancing on seats, singing along, and genuinely celebrating. It's the kind of club where strangers become friends by the end of the night.",
     groupSizeAdvice:
-      "Scotch is ideal for birthday groups of 5–12. The intimate setting means smaller groups feel special, and the venue's character ensures your birthday has personality. For groups larger than 12, multiple tables can be arranged but the venue works best with tighter birthday parties.",
+      "Funky Buddha is perfect for birthday groups of 5–15. The intimate setting means your group is always part of the atmosphere, and the personal service means every birthday feels like a VIP event. Larger groups can be accommodated with advance planning.",
     proTip:
-      "Ask about the music policy for your specific night before booking. Scotch varies its sound more than most Mayfair clubs, so matching the right night to your birthday crowd's music taste makes a big difference.",
+      "Wednesday nights at Funky Buddha have a loyal following and a slightly more relaxed atmosphere — great for a birthday that's more about the music and less about the scene. Friday and Saturday are peak energy.",
   },
   {
     slug: "cuckoo-club",
@@ -322,6 +229,7 @@ export const clubs: Club[] = [
     capacity: "Medium (approx. 350)",
     birthdayRating: 4,
     bestFor: "Groups who want two vibes under one roof",
+    status: "open",
     description:
       "Cuckoo Club is Mayfair's versatile two-floor nightclub, offering the rare luxury of two completely different atmospheres in one venue. The ground floor delivers a sleek, house-music-driven experience, while the basement pumps hip-hop and RnB in a darker, more intimate setting. For birthday groups, this dual personality is a genuine advantage — different members of your group can gravitate toward their preferred sound while staying in the same venue.",
     birthdayHighlights: [
@@ -343,6 +251,41 @@ export const clubs: Club[] = [
       "For birthdays, the basement hip-hop floor tends to create a more energetic celebration atmosphere. But booking a table on the ground floor gives you the option to retreat to a slightly calmer vibe when you need a break from the bass.",
   },
   {
+    slug: "scotch-of-st-james",
+    name: "Scotch of St James",
+    shortName: "Scotch",
+    tagline: "The Iconic Birthday in a Historic Setting",
+    location: "Mayfair, London",
+    area: "Mayfair",
+    minSpend: "£1,000",
+    musicPolicy: "Mixed — Hip-Hop, RnB, House, depending on the night",
+    dressCode: "Smart stylish. Scotch has heritage — respect the dress code. No sportswear or casual attire.",
+    openingNights: "Thursday, Friday, Saturday",
+    capacity: "Intimate (approx. 200)",
+    birthdayRating: 4,
+    bestFor: "Birthdays with character in a venue with genuine history",
+    status: "open",
+    description:
+      "Scotch of St James is one of London's most storied nightclub locations, with a history stretching back to the 1960s when Jimi Hendrix himself was a regular. That rock'n'roll heritage permeates the venue today — the interiors blend vintage elegance with modern luxury, creating a space that feels like it has stories to tell. For birthdays, Scotch offers something no other Mayfair club can: genuine character and history, combined with modern VIP service.",
+    birthdayHighlights: [
+      "Historic venue with genuine 1960s heritage (Hendrix era)",
+      "Intimate setting with bags of character",
+      "Vintage-meets-luxury interior design",
+      "Eclectic music policy that varies by night",
+      "Personal, attentive service in a compact space",
+    ],
+    whatToExpect:
+      "Scotch has a warmth that many Mayfair clubs lack. The vintage detailing, intimate layout, and rich history create an atmosphere that feels like celebrating in someone's incredibly cool private members' bar. The music varies by night — some evenings lean hip-hop, others more house — so check which night suits your birthday crew's taste. The compact size means your celebration has presence; a birthday at Scotch is felt by everyone in the room.",
+    birthdayExtras:
+      "Birthday celebrations at Scotch include sparkler bottle presentations, cake arrangements, DJ shoutouts, and decorated tables. The intimate setting means everything feels personal and considered — you're not just another table, you're part of the evening's story.",
+    atmosphere:
+      "Characterful, warm, and unexpectedly rock'n'roll. Scotch attracts a crowd that appreciates the venue's uniqueness — creative types, music lovers, and people who've grown tired of identikit Mayfair clubs. The energy is fun and unpretentious, built on genuine connection to the music and the space.",
+    groupSizeAdvice:
+      "Scotch is ideal for birthday groups of 5–12. The intimate setting means smaller groups feel special, and the venue's character ensures your birthday has personality. For groups larger than 12, multiple tables can be arranged but the venue works best with tighter birthday parties.",
+    proTip:
+      "Ask about the music policy for your specific night before booking. Scotch varies its sound more than most Mayfair clubs, so matching the right night to your birthday crowd's music taste makes a big difference.",
+  },
+  {
     slug: "dear-darling",
     name: "Dear Darling",
     shortName: "Dear Darling",
@@ -356,6 +299,7 @@ export const clubs: Club[] = [
     capacity: "Intimate (approx. 150)",
     birthdayRating: 4,
     bestFor: "Elegant, cocktail-focused birthday celebrations",
+    status: "open",
     description:
       "Dear Darling is Mayfair's most opulent bar, a venue that feels like stepping into a lavishly decorated private salon. Think chandeliers, velvet booths, ornate detailing, and a cocktail programme that rivals the best bars in the city. With late-night hours that push it into club territory, Dear Darling occupies a unique space — more refined than a nightclub, more exciting than a cocktail bar. For birthdays where elegance is the priority, this is the venue.",
     birthdayHighlights: [
@@ -377,6 +321,146 @@ export const clubs: Club[] = [
       "Start your evening at Dear Darling for cocktails and cake, then move to a high-energy club later if your group wants to dance. Or stay all night — Dear Darling's late hours mean you absolutely can.",
   },
   {
+    slug: "maddox-club",
+    name: "Maddox Club",
+    shortName: "Maddox",
+    tagline: "The Dinner-to-Dance Birthday",
+    location: "Mayfair, London",
+    area: "Mayfair",
+    minSpend: "£1,000",
+    musicPolicy: "House, Deep House, Tech House",
+    dressCode: "Smart elegant. Maddox is refined — dress accordingly. No sportswear or casual wear.",
+    openingNights: "Thursday, Friday, Saturday",
+    capacity: "Medium (approx. 300)",
+    birthdayRating: 4,
+    bestFor: "Sophisticated birthdays combining dinner and nightclub",
+    status: "open",
+    description:
+      "Maddox Club is Mayfair's premier restaurant-nightclub hybrid, offering the rare ability to seamlessly transition from an elegant Italian dinner to a full nightclub experience without leaving the building. The restaurant serves exceptional Italian cuisine in a sophisticated setting, while the club space features a house-music-driven atmosphere that attracts a mature, well-dressed crowd. For birthdays, this means you can host your entire evening — dinner, drinks, dancing — in one venue.",
+    birthdayHighlights: [
+      "Start with Italian dinner, transition seamlessly to the club",
+      "One venue for the entire birthday evening",
+      "House music focus attracts a sophisticated crowd",
+      "Elegant restaurant perfect for pre-club birthday toasts",
+      "The only Mayfair venue offering this dinner-to-dance concept",
+    ],
+    whatToExpect:
+      "A birthday at Maddox typically begins with dinner in the restaurant — Italian cuisine that's genuinely excellent, not just a club-attached afterthought. As the evening progresses, the energy shifts as the club space opens and the DJ starts building. The transition feels natural and exciting — one moment you're toasting with champagne over pasta, the next you're on a dancefloor with deep house filling the room. The house music policy sets Maddox apart from the hip-hop-heavy Mayfair scene.",
+    birthdayExtras:
+      "Birthday celebrations at Maddox can include a full dinner service with birthday cake for dessert, followed by sparkler bottle presentations in the club. Table decorations, DJ shoutouts, and personalised touches can be arranged. The dinner-to-club format means the celebration naturally builds in energy throughout the evening.",
+    atmosphere:
+      "Refined, warm, and musically driven. Maddox attracts a slightly older, more sophisticated crowd than some Mayfair venues — people who appreciate good food, good music, and good company. The house music policy means the dancefloor has a different energy — more groovy, less intense, but equally engaging.",
+    groupSizeAdvice:
+      "Maddox is perfect for birthday groups of 6–20. The dinner-then-club format works especially well for groups where some people prefer dining and conversation over pure clubbing — everyone can enjoy the evening at their own pace. Book a private dining area for groups of 10+.",
+    proTip:
+      "Book dinner for 9–9:30pm to perfectly time the transition into the club. The kitchen produces excellent sharing platters that work perfectly for birthday groups who want variety.",
+  },
+  {
+    slug: "the-box-london",
+    name: "The Box London",
+    shortName: "The Box",
+    tagline: "The Most Daring Birthday in London",
+    location: "Soho, London",
+    area: "Soho",
+    minSpend: "£1,000",
+    musicPolicy: "Eclectic — Hip-Hop, Pop, Commercial, mixed by performance",
+    dressCode: "Smart and expressive. The Box rewards creativity — dress bold, dress sharp, but no sportswear.",
+    openingNights: "Thursday, Friday, Saturday",
+    capacity: "Medium (approx. 300)",
+    birthdayRating: 5,
+    bestFor: "Boundary-pushing birthday celebrations for the adventurous",
+    status: "open",
+    description:
+      "The Box London is Soho's most provocative and talked-about nightclub, a venue that has built its reputation on delivering theatrical performances that push every boundary. Born from the legendary New York original, The Box combines burlesque, cabaret, circus, and live music in a multi-level theatre-club hybrid that's unlike anything else in London. For birthdays, The Box offers the kind of night your guests will never stop talking about — thrilling, surprising, and completely unforgettable.",
+    birthdayHighlights: [
+      "London's most provocative and boundary-pushing performances",
+      "Theatre-meets-nightclub atmosphere in a stunning Soho venue",
+      "Multi-level venue with stage, mezzanine, and dance areas",
+      "The ultimate talking-point birthday — your guests will never forget it",
+      "Eclectic music policy that keeps the energy unpredictable",
+    ],
+    whatToExpect:
+      "Walking into The Box feels like entering another world. The venue is designed as a theatre, with a central stage that commands the room. Performances happen throughout the night and range from breathtaking burlesque and acrobatics to provocative, jaw-dropping acts that you genuinely won't see anywhere else. Between performances, the DJ takes over and the dancefloor fills. For birthdays, the combination of spectacle and party creates a celebration that's equal parts sophisticated and wild. Your table gives you a prime view of the stage while keeping you close to the energy.",
+    birthdayExtras:
+      "Birthday celebrations at The Box include sparkler bottle presentations timed between performances, birthday cake service, DJ shoutouts, and the possibility of the birthday person being acknowledged from the stage. The theatrical environment means every birthday element feels amplified — sparklers against a theatre backdrop hit differently.",
+    atmosphere:
+      "Provocative, theatrical, and exhilarating. The Box attracts an adventurous, creative crowd — artists, performers, industry figures, and people who want their night out to be an experience, not just a venue. The energy swings between edge-of-your-seat performances and full dancefloor euphoria. No two nights are exactly the same.",
+    groupSizeAdvice:
+      "The Box works well for birthday groups of 6–20. Tables near the stage offer the most immersive experience, while mezzanine positions provide a more relaxed view. The theatrical format means even smaller groups feel part of something epic. Larger groups can book multiple tables.",
+    proTip:
+      "The performances are the main event — arrive by 11pm to catch them from the start. Saturday nights have the most elaborate shows. If anyone in your group is easily shocked, give them a gentle heads-up about The Box's reputation beforehand.",
+  },
+  {
+    slug: "luna-club-london",
+    name: "Luna Club London",
+    shortName: "Luna",
+    tagline: "The Celestial Birthday Experience",
+    location: "Mayfair, London",
+    area: "Mayfair",
+    minSpend: "£1,000",
+    musicPolicy: "Hip-Hop, RnB, Commercial, Afrobeats",
+    dressCode: "Smart stylish. Mayfair dress code — no sportswear, trainers, or casual wear.",
+    openingNights: "Friday, Saturday",
+    capacity: "Medium (approx. 300)",
+    birthdayRating: 4,
+    bestFor: "Stylish birthday celebrations in a stunning modern venue",
+    status: "open",
+    description:
+      "Luna Club London is one of Mayfair's most exciting newer venues, bringing a celestial-inspired design concept to London's nightlife scene. The interiors are sleek, modern, and immersive, with atmospheric lighting and design touches that create an otherworldly ambience. The music policy spans hip-hop, RnB, commercial anthems, and Afrobeats, ensuring the dancefloor stays packed all night. For birthdays, Luna offers a fresh, visually stunning setting that photographs beautifully and delivers consistently high energy.",
+    birthdayHighlights: [
+      "Stunning modern interiors with celestial-inspired design",
+      "Every corner is designed for exceptional photos",
+      "Energetic atmosphere with a well-curated music policy",
+      "Premium Mayfair location and service standards",
+      "Fresh venue energy — the excitement of somewhere new",
+    ],
+    whatToExpect:
+      "Luna impresses immediately with its design. The celestial-inspired interiors create an atmosphere that's both intimate and grand, with atmospheric lighting that shifts throughout the night. The music is a well-curated mix of hip-hop, RnB, and Afrobeats that keeps the energy high without becoming repetitive. For birthdays, the visual impact of the venue does half the work — your celebration looks and feels spectacular from the moment you arrive. Bottle service is polished and professional.",
+    birthdayExtras:
+      "Birthday celebrations at Luna include sparkler bottle presentations, birthday cake arrangements, table decorations, DJ shoutouts, and photo-worthy moments throughout the night. The modern, photogenic interiors mean every birthday moment is enhanced by the setting.",
+    atmosphere:
+      "Modern, energetic, and visually immersive. Luna attracts a young, well-dressed crowd who appreciate both aesthetics and atmosphere. The energy builds progressively through the night, with the dancefloor peaking around midnight. The venue's newer status means the excitement of discovery — people are genuinely impressed when they walk in.",
+    groupSizeAdvice:
+      "Luna is excellent for birthday groups of 8–20. The modern layout offers flexible table configurations that work for both intimate celebrations and larger parties. The energetic atmosphere means even smaller groups feel part of the action.",
+    proTip:
+      "As a newer venue, Luna is still building its reputation — which means booking is often easier than at more established clubs, even on peak nights. Take advantage of this while it lasts.",
+  },
+  {
+    slug: "selene-london",
+    name: "Selene London",
+    shortName: "Selene",
+    tagline: "The Refined Mayfair Birthday",
+    location: "Mayfair, London",
+    area: "Mayfair",
+    minSpend: "£1,000",
+    musicPolicy: "House, Commercial, RnB",
+    dressCode: "Smart elegant. Mayfair standards — dress to impress.",
+    openingNights: "Friday, Saturday",
+    capacity: "Intimate-Medium (approx. 250)",
+    birthdayRating: 4,
+    bestFor: "Refined birthday celebrations in an elegant Mayfair setting",
+    status: "open",
+    description:
+      "Selene London brings a refined elegance to Mayfair's nightlife, offering a venue that balances sophisticated design with genuine club energy. The interiors are polished and considered — soft lighting, luxurious materials, and a layout that creates both intimate corners and open dancefloor space. The music spans house, commercial, and RnB, appealing to a broad range of tastes. For birthdays, Selene delivers a celebration that feels premium without being pretentious — stylish, fun, and effortlessly impressive.",
+    birthdayHighlights: [
+      "Elegant, refined interiors with luxurious finishing",
+      "Balanced atmosphere — sophisticated but never stuffy",
+      "Music policy that appeals to diverse group tastes",
+      "Premium service with genuine attention to detail",
+      "Intimate enough for personal celebrations, large enough for groups",
+    ],
+    whatToExpect:
+      "Selene strikes the balance that many Mayfair clubs aim for but few achieve: genuinely elegant without feeling intimidating. The design is luxurious but warm, the music is polished but fun, and the service is attentive without being overbearing. For birthdays, this balance means your group can relax and enjoy — the venue does the impressing for you. Bottle presentations are slick and well-choreographed, and the atmosphere builds naturally through the evening.",
+    birthdayExtras:
+      "Birthday celebrations at Selene include sparkler bottle presentations, birthday cake service, decorated tables, and DJ shoutouts. The refined setting elevates every celebration element — even a simple champagne toast feels special in Selene's elegant surroundings.",
+    atmosphere:
+      "Refined, warm, and celebratory. Selene attracts a well-dressed, fun-loving crowd who appreciate quality without pretension. The atmosphere is consistently enjoyable — sophisticated enough for a milestone birthday, energetic enough for a group who wants to dance.",
+    groupSizeAdvice:
+      "Selene is ideal for birthday groups of 6–18. The venue's intimate-medium size means your group is always part of the energy without being lost in a crowd. The elegant setting works particularly well for groups who want their birthday to feel premium.",
+    proTip:
+      "Selene's balanced atmosphere makes it an excellent choice for birthday groups with mixed preferences — those who want to dance and those who prefer conversation can both enjoy the evening.",
+  },
+  {
     slug: "beat-london",
     name: "BEAT London",
     shortName: "BEAT",
@@ -390,6 +474,7 @@ export const clubs: Club[] = [
     capacity: "Medium (approx. 400)",
     birthdayRating: 4,
     bestFor: "Music-focused birthdays with incredible sound quality",
+    status: "open",
     description:
       "BEAT London puts music first. The Margaret Street venue is built around one of London's finest sound systems, delivering audio quality that rivals dedicated music venues. The focus here is on the dancefloor experience — house and tech house played loud, clear, and with the bass you can feel in your chest. For birthdays where the music matters as much as the celebration, BEAT delivers an experience that music lovers genuinely appreciate.",
     birthdayHighlights: [
@@ -410,75 +495,111 @@ export const clubs: Club[] = [
     proTip:
       "If your birthday falls on a night when BEAT has a notable guest DJ, book it — the combination of a special lineup and your celebration creates something magical. Check the BEAT socials for upcoming lineups.",
   },
+
+  // ==================== PERMANENTLY CLOSED VENUES ====================
   {
-    slug: "ministry-of-sound",
-    name: "Ministry of Sound",
-    shortName: "Ministry",
-    tagline: "The Legendary Birthday",
-    location: "Elephant & Castle, South London",
-    area: "Elephant & Castle",
+    slug: "luxx-club",
+    name: "Luxx Club London",
+    shortName: "Luxx",
+    tagline: "Permanently Closed",
+    location: "Mayfair, London",
+    area: "Mayfair",
     minSpend: "£1,000",
-    musicPolicy: "House, Techno, Electronic, varies by night and room",
-    dressCode: "Casual-smart. Ministry is more relaxed — comfort and style over formality.",
-    openingNights: "Friday, Saturday (plus special events)",
-    capacity: "Large (1,500+)",
+    musicPolicy: "Open Format, Hip-Hop, Commercial",
+    dressCode: "Smart stylish.",
+    openingNights: "Permanently Closed",
+    capacity: "Medium (approx. 300)",
     birthdayRating: 4,
-    bestFor: "Dance music lovers wanting a legendary birthday venue",
+    bestFor: "This venue has permanently closed",
+    status: "closed",
+    closedNote:
+      "Luxx Club London has permanently closed. The venue was known for its stunning LED installations and electric light shows that made every birthday celebration visually spectacular. While Luxx is no longer operating, its legacy as one of Mayfair's most photogenic birthday venues lives on.",
+    alternatives: ["luna-club-london", "tabu-london", "selene-london"],
     description:
-      "Ministry of Sound needs no introduction. As one of the most iconic nightclubs in the world, Ministry has been at the forefront of dance music culture since 1991. The venue features multiple rooms, each with its own sound system and music policy, offering everything from house and techno to drum & bass and garage across a single night. For birthdays, celebrating at Ministry means your party happens in a venue that's genuinely part of music history.",
+      "Luxx Club London was a premium Mayfair venue famous for its electric light show theme and stunning LED imagery. The club offered an immersive visual experience with dynamic LED installations that transformed the space throughout the night. Luxx has now permanently closed.",
     birthdayHighlights: [
-      "One of the world's most iconic nightclubs",
-      "Multiple rooms with different music genres",
-      "World-renowned sound system (The Box is legendary)",
-      "Hosts global DJ talent regularly",
-      "The most talked-about birthday venue choice",
+      "Stunning LED light shows and visual installations",
+      "Every corner was Instagram-worthy for birthday photos",
+      "Open format music policy appealed to diverse groups",
+      "Premium Mayfair location and service standards",
+      "Dynamic atmosphere that evolved through the night",
     ],
-    whatToExpect:
-      "A night at Ministry of Sound is a pilgrimage for music fans. The Box — the main room — features a sound system that's considered one of the best on the planet. Additional rooms offer different genres, so your birthday group can explore different sounds throughout the night. The scale is impressive: this isn't an intimate Mayfair club, it's a full-scale superclub where thousands of people share the dancefloor. For birthdays, the VIP table experience gives you a premium base camp amidst the organised chaos.",
-    birthdayExtras:
-      "Birthday VIP packages at Ministry include dedicated table areas, sparkler bottle service, birthday cake arrangements, and dedicated hosts. The scale of the venue means your birthday celebration can be as big or as intimate as you want — from a table for six to a full VIP area for 30+.",
-    atmosphere:
-      "Legendary, immersive, and utterly electric. Ministry attracts dedicated music fans from across London and beyond. The atmosphere varies by room and night, but the common thread is a genuine love of dance music. The energy in The Box during a peak moment is something every music fan should experience at least once.",
-    groupSizeAdvice:
-      "Ministry works for birthday groups of all sizes, from 6 to 30+. The multiple rooms and large capacity mean groups never feel restricted. VIP areas can be tailored to your group size. This is an excellent choice for very large birthday celebrations where other venues would feel too small.",
-    proTip:
-      "Check the lineup for your birthday night — Ministry hosts different events and genres. Make sure the night aligns with your group's music taste. Saturday nights tend to have the biggest lineups and fullest rooms.",
+    whatToExpect: "Luxx Club London has permanently closed. If you were planning a birthday at Luxx, we recommend Luna Club London, TABU, or Selene London as excellent alternatives that deliver a similarly impressive visual and atmospheric experience.",
+    birthdayExtras: "Luxx Club London has permanently closed.",
+    atmosphere: "Luxx Club London has permanently closed.",
+    groupSizeAdvice: "Luxx Club London has permanently closed.",
+    proTip: "Luxx has permanently closed. For a similar experience, try Luna Club London for visual impact, TABU for intimate Mayfair atmosphere, or Selene for refined elegance.",
   },
   {
     slug: "lio-london",
     name: "Lio Club London",
     shortName: "Lio",
-    tagline: "The Glamorous Dining-to-Dancing Birthday",
+    tagline: "Permanently Closed",
     location: "Mayfair, London",
     area: "Mayfair",
     minSpend: "£1,000",
     musicPolicy: "House, Commercial, Live Performance",
-    dressCode: "Smart glamorous. Lio is high-end — dress to match the surroundings.",
-    openingNights: "Thursday, Friday, Saturday",
+    dressCode: "Smart glamorous.",
+    openingNights: "Permanently Closed",
     capacity: "Medium (approx. 350)",
     birthdayRating: 5,
-    bestFor: "The ultimate all-in-one birthday experience with dining, shows, and dancing",
+    bestFor: "This venue has permanently closed",
+    status: "closed",
+    closedNote:
+      "Lio Club London has permanently closed. Originally bringing the famous Ibiza dining-and-entertainment concept to Mayfair, Lio was known for its seamless blend of gourmet dining, live performances, and late-night dancing. For a similar dinner-to-club birthday experience, Maddox Club remains an excellent alternative.",
+    alternatives: ["maddox-club", "the-box-london", "reign-london"],
     description:
-      "Lio Club London brings the magic of the famous Ibiza venue to Mayfair, combining gourmet dining with live entertainment and late-night dancing in one seamless experience. The concept is dinner-and-a-show meets high-end nightclub — guests enjoy exceptional food while performers, singers, and dancers create an immersive spectacle around them. As the evening progresses, the tables are cleared and the space transforms into a full dancefloor. For birthdays, Lio offers the most complete celebration experience in London.",
+      "Lio Club London brought the magic of the famous Ibiza venue to Mayfair, combining gourmet dining with live entertainment and late-night dancing. The concept was dinner-and-a-show meets high-end nightclub. Lio has now permanently closed.",
     birthdayHighlights: [
       "Complete evening: gourmet dinner, live shows, and nightclub",
       "Live performers and singers throughout dinner service",
       "Seamless transition from dining to dancefloor",
       "Ibiza-famous concept brought to Mayfair",
-      "The most complete birthday experience in London",
+      "The most complete birthday experience concept in London",
     ],
-    whatToExpect:
-      "A birthday at Lio is a full evening event. You'll arrive for dinner — expect high-quality cuisine served while live performers create magic around you. Singers, dancers, and artists perform between the tables, creating moments of spectacle that punctuate the meal. As the night deepens, the energy shifts — plates are cleared, the music builds, and the venue transforms into a fully-fledged nightclub. Your birthday table transitions with the room, giving you the best position for every phase of the evening.",
-    birthdayExtras:
-      "Lio's birthday packages are among the most comprehensive in London. Expect personalised service from the moment you arrive, cake during the dinner show, sparkler-adorned bottle presentations when the club kicks in, performer interactions with the birthday person, and a DJ dedication. The dinner-show-club format means there are multiple natural moments for birthday celebrations throughout the evening.",
-    atmosphere:
-      "Glamorous, theatrical, and building in intensity. Lio starts elegant and refined during dinner, becoming progressively more energetic as the live shows escalate and the dancefloor opens. The crowd is glamorous and well-heeled, adding to the sense of occasion. By the end of the night, the room is transformed — the same space that hosted a refined dinner is now a full-energy dancefloor.",
-    groupSizeAdvice:
-      "Lio is excellent for birthday groups of 6–25. The dinner format means everyone is seated together, creating a natural social dynamic. Larger groups can book extended table areas. This is particularly good for birthday groups where some people want dinner and shows while others are there for the club — Lio delivers both.",
-    proTip:
-      "Book a dinner table rather than a late-entry club table — the dinner show is half the experience and gives your birthday group the complete Lio journey. Arrive by 8:30pm for the full evening.",
+    whatToExpect: "Lio Club London has permanently closed. If you were planning a birthday at Lio, we recommend Maddox Club for dinner-to-dancing, The Box for theatrical performances, or Reign London for grand spectacle.",
+    birthdayExtras: "Lio Club London has permanently closed.",
+    atmosphere: "Lio Club London has permanently closed.",
+    groupSizeAdvice: "Lio Club London has permanently closed.",
+    proTip: "Lio has permanently closed. For the dinner-to-club birthday experience, Maddox Club is the top alternative. For live entertainment, The Box or Cirque Le Soir deliver unforgettable performances.",
+  },
+  {
+    slug: "libertine",
+    name: "Libertine",
+    shortName: "Libertine",
+    tagline: "Permanently Closed",
+    location: "Mayfair, London",
+    area: "Mayfair",
+    minSpend: "£1,000",
+    musicPolicy: "Hip-Hop, RnB, Commercial",
+    dressCode: "Smart and stylish.",
+    openingNights: "Permanently Closed",
+    capacity: "Medium (approx. 300)",
+    birthdayRating: 4,
+    bestFor: "This venue has permanently closed",
+    status: "closed",
+    closedNote:
+      "Libertine has permanently closed. Known for its sophisticated, futuristic design and excellent sound system, Libertine was a popular choice for style-conscious birthday celebrations. For a similar experience, TABU, Selene London, and Cuckoo Club are excellent alternatives.",
+    alternatives: ["tabu-london", "selene-london", "cuckoo-club"],
+    description:
+      "Libertine brought a sophisticated, futuristic energy to Mayfair's nightlife scene. The venue combined sleek design with state-of-the-art lighting and sound. Libertine has now permanently closed.",
+    birthdayHighlights: [
+      "Futuristic, visually stunning interior design",
+      "State-of-the-art sound and lighting systems",
+      "Excellent dancefloor energy throughout the night",
+      "Well-positioned tables with great sightlines",
+      "Attentive, professional service team",
+    ],
+    whatToExpect: "Libertine has permanently closed. If you were planning a birthday here, we recommend TABU for edgy intimate style, Selene London for refined elegance, or Cuckoo Club for versatile two-floor fun.",
+    birthdayExtras: "Libertine has permanently closed.",
+    atmosphere: "Libertine has permanently closed.",
+    groupSizeAdvice: "Libertine has permanently closed.",
+    proTip: "Libertine has permanently closed. For a similar sophisticated Mayfair birthday, try TABU for design-forward interiors, Selene for refined elegance, or Funky Buddha for iconic energy.",
   },
 ];
+
+export const openClubs = clubs.filter((c) => c.status === "open");
+export const closedClubs = clubs.filter((c) => c.status === "closed");
 
 export function getClubBySlug(slug: string): Club | undefined {
   return clubs.find((c) => c.slug === slug);

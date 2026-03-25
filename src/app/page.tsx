@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { clubs, getGeneralWhatsAppMessage } from "@/lib/clubs";
+import { openClubs, getGeneralWhatsAppMessage } from "@/lib/clubs";
 import ClubCard from "@/components/ClubCard";
 import WhatsAppCTA from "@/components/WhatsAppCTA";
 import FAQSchema from "@/components/FAQSchema";
@@ -133,7 +133,7 @@ export default function HomePage() {
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {clubs.map((club) => (
+            {openClubs.map((club) => (
               <ClubCard key={club.slug} club={club} />
             ))}
           </div>

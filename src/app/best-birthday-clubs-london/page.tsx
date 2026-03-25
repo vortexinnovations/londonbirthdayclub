@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { clubs, getGeneralWhatsAppMessage } from "@/lib/clubs";
+import { openClubs, getGeneralWhatsAppMessage } from "@/lib/clubs";
 import WhatsAppCTA from "@/components/WhatsAppCTA";
 import FAQSchema from "@/components/FAQSchema";
 
 export const metadata: Metadata = {
-  title: "Best Clubs for a Birthday in London 2025 | Ranked Birthday Venue Guide",
+  title: "Best Clubs for a Birthday in London 2026 | Ranked Birthday Venue Guide",
   description:
     "Honest, ranked guide to the best London nightclubs for birthday celebrations. From intimate Mayfair lounges to iconic superclubs — find the perfect venue for your birthday party.",
   alternates: {
@@ -17,17 +17,17 @@ const faqs = [
   {
     question: "What is the best club in London for a birthday?",
     answer:
-      "It depends on what kind of birthday you want. For the most unforgettable experience with live entertainment, Cirque Le Soir and Lio Club London are unmatched. For an exclusive, celebrity-style celebration, Tape London is the top choice. For a complete dinner-to-dancing evening, Maddox or Lio deliver the most complete experience.",
+      "It depends on what kind of birthday you want. For the most unforgettable experience with live entertainment, Cirque Le Soir and The Box London are unmatched. For an exclusive, celebrity-style celebration, Tape London or Funky Buddha are the top choices. For a complete dinner-to-dancing evening, Maddox Club delivers the most complete experience.",
   },
   {
     question: "Which London club is best for a big birthday group?",
     answer:
-      "For large birthday groups of 15+, The London Reign, Ministry of Sound, and Cuckoo Club offer the most space and can accommodate multiple tables together. Ministry of Sound is the best option for very large groups of 25+ thanks to its dedicated VIP areas.",
+      "For large birthday groups of 15+, Reign London, BEAT London, and Cuckoo Club offer the most space and can accommodate multiple tables together. Reign London is the best option for very large groups of 25+ thanks to its multi-level layout.",
   },
   {
     question: "Which Mayfair club is cheapest for a birthday?",
     answer:
-      "Most Mayfair clubs start from £1,000 minimum spend. Weeknight bookings (Wednesday and Thursday) often have lower minimums than weekends. Cirque Le Soir on Wednesdays, Cuckoo Club on Tuesdays, and Libertine on Wednesdays can offer more accessible entry points for birthday groups.",
+      "Most Mayfair clubs start from £1,000 minimum spend. Weeknight bookings (Wednesday and Thursday) often have lower minimums than weekends. Cirque Le Soir on Wednesdays, Cuckoo Club on Tuesdays, and Funky Buddha on Wednesdays can offer more accessible entry points for birthday groups.",
   },
 ];
 
@@ -41,10 +41,10 @@ const rankings = [
   },
   {
     position: 2,
-    slug: "lio-london",
+    slug: "the-box-london",
     verdict:
-      "Lio delivers the most complete birthday evening in London. Starting with gourmet dining surrounded by live performers, then seamlessly transitioning into a full nightclub — it removes the logistical headache of organising dinner and a club separately. For milestone birthdays where you want the whole evening to feel special, Lio is exceptional.",
-    bestForTag: "Complete Birthday Evening",
+      "The Box London delivers the most daring and talked-about birthday in the city. The provocative theatrical performances, stunning Soho venue, and boundary-pushing entertainment create a celebration that your guests will never stop discussing. If you want your birthday to be genuinely unique and unforgettable, The Box is the venue.",
+    bestForTag: "Most Daring & Theatrical",
   },
   {
     position: 3,
@@ -55,73 +55,73 @@ const rankings = [
   },
   {
     position: 4,
-    slug: "the-london-reign",
+    slug: "funky-buddha",
     verdict:
-      "If you're planning a big birthday with a large group and want a jaw-dropping venue, The London Reign delivers. The aerial performances, grand setting, and large capacity mean your celebration can be as big as you want it to be. The visual spectacle gives your birthday a sense of occasion that smaller venues can't match.",
-    bestForTag: "Big Group Spectacle",
+      "Funky Buddha is one of the most iconic names in London nightlife. The legendary Berkeley Street venue has hosted everyone from pop stars to footballers, and that celebrity energy infuses every birthday celebration. The intimate setting, exceptional hip-hop playlist, and incredible atmosphere make it a birthday that feels like a headline event.",
+    bestForTag: "Iconic & Legendary",
   },
   {
     position: 5,
+    slug: "reign-london",
+    verdict:
+      "If you're planning a big birthday with a large group and want a jaw-dropping venue, Reign London delivers. The aerial performances, grand setting, and large capacity mean your celebration can be as big as you want it to be. The visual spectacle gives your birthday a sense of occasion that smaller venues can't match.",
+    bestForTag: "Big Group Spectacle",
+  },
+  {
+    position: 6,
     slug: "dear-darling",
     verdict:
       "Dear Darling is the most elegant birthday option in London. If your ideal birthday is champagne cocktails in velvet booths surrounded by chandeliers rather than a packed dancefloor, this is your venue. Perfect for milestone birthdays (30th, 40th) where sophistication matters more than volume.",
     bestForTag: "Elegant & Sophisticated",
   },
   {
-    position: 6,
-    slug: "maddox",
+    position: 7,
+    slug: "maddox-club",
     verdict:
       "Maddox's dinner-to-club format solves the birthday planning problem of coordinating a restaurant and a nightclub. Start with excellent Italian food, end on a house music dancefloor — all without leaving the building. The house music policy also makes it a refreshing alternative to Mayfair's hip-hop-heavy scene.",
     bestForTag: "Dinner-to-Dancing",
   },
   {
-    position: 7,
+    position: 8,
     slug: "tabu-london",
     verdict:
       "TABU is the coolest-looking birthday venue on this list. The Japanese underground aesthetic creates an atmosphere that's dark, moody, and incredibly photogenic. If your birthday crew is style-conscious and hip-hop focused, TABU is the perfect match. The intimate size means the energy is concentrated and your celebration really stands out.",
     bestForTag: "Edgy & Photogenic",
   },
   {
-    position: 8,
+    position: 9,
     slug: "cuckoo-club",
     verdict:
       "Cuckoo Club's two floors solve the common birthday problem of mixed music taste. House upstairs, hip-hop downstairs — everyone gets what they want without splitting the group across different venues. The Mayfair location and consistent atmosphere make it a reliable choice for birthdays where variety matters.",
     bestForTag: "Two Vibes, One Venue",
   },
   {
-    position: 9,
-    slug: "libertine",
-    verdict:
-      "Libertine delivers a polished, futuristic birthday experience with one of the best sound systems in Mayfair. It's a strong all-rounder — great music, great design, great service — without a single weak point. If you want a guaranteed good night without the theatrics of Cirque or the exclusivity of Tape, Libertine is a smart choice.",
-    bestForTag: "Polished All-Rounder",
-  },
-  {
     position: 10,
-    slug: "luxx-club",
+    slug: "luna-club-london",
     verdict:
-      "Luxx's LED installations make every moment of your birthday visually spectacular. The open format music policy means the DJ adapts to the room, which works brilliantly for birthday groups with diverse tastes. If your group cares about the visual experience and Instagram-worthy moments, Luxx delivers.",
-    bestForTag: "Visual Spectacle",
+      "Luna Club London brings a fresh, visually stunning energy to Mayfair's birthday scene. The celestial-inspired interiors are incredibly photogenic, the music policy spans hip-hop to Afrobeats, and the newer-venue excitement means every visit feels like a discovery. If your group wants a modern, Instagram-worthy birthday, Luna delivers.",
+    bestForTag: "Modern & Photogenic",
   },
   {
     position: 11,
-    slug: "scotch-of-st-james",
+    slug: "selene-london",
     verdict:
-      "Scotch of St James offers something no other venue can — genuine history and character. Celebrating your birthday in a venue where Hendrix once hung out gives the evening a story that goes beyond just another club night. Best for birthday groups who appreciate authenticity and a more intimate, characterful setting.",
-    bestForTag: "Character & History",
+      "Selene strikes the balance that many Mayfair clubs aim for but few achieve: genuinely elegant without feeling intimidating. The refined interiors, balanced music policy, and warm atmosphere make it an excellent choice for birthday groups who want premium quality without pretension. Particularly well-suited for mixed groups.",
+    bestForTag: "Refined & Balanced",
   },
   {
     position: 12,
+    slug: "scotch-of-st-james",
+    verdict:
+      "Scotch of St James offers something no other venue can — genuine history and character. Celebrating your birthday in a venue with heritage stretching back to the Hendrix era gives the evening a story that goes beyond just another club night. Best for birthday groups who appreciate authenticity and a more intimate, characterful setting.",
+    bestForTag: "Character & History",
+  },
+  {
+    position: 13,
     slug: "beat-london",
     verdict:
       "BEAT is the choice for birthday groups where the music genuinely matters. The sound system is among the best in London, and the house and tech house policy creates a dancefloor energy that's about the music, not about being seen. More relaxed on dress code, more focused on the experience.",
     bestForTag: "Music-First Birthday",
-  },
-  {
-    position: 13,
-    slug: "ministry-of-sound",
-    verdict:
-      "Ministry of Sound is a bucket-list venue. Celebrating your birthday at one of the world's most iconic clubs is a statement in itself. The multiple rooms, legendary sound system, and massive capacity make it ideal for dance music lovers and very large birthday groups. It's a different experience from Mayfair — rawer, louder, more about the music.",
-    bestForTag: "Iconic & Legendary",
   },
 ];
 
@@ -145,7 +145,7 @@ export default function BestClubsPage() {
             specifically.
           </p>
           <p className="text-text-muted text-sm">
-            Updated for 2025. Every venue personally vetted.
+            Updated for 2026. Every venue personally vetted.
           </p>
         </div>
       </section>
@@ -154,7 +154,7 @@ export default function BestClubsPage() {
       <section className="py-10 px-4">
         <div className="max-w-4xl mx-auto space-y-8">
           {rankings.map((item) => {
-            const club = clubs.find((c) => c.slug === item.slug)!;
+            const club = openClubs.find((c) => c.slug === item.slug)!;
             return (
               <div
                 key={item.slug}
@@ -220,8 +220,8 @@ export default function BestClubsPage() {
               },
               {
                 q: "Best for big groups?",
-                a: "The London Reign or Ministry of Sound",
-                link: "/clubs/the-london-reign",
+                a: "Reign London — grand multi-level venue",
+                link: "/clubs/reign-london",
               },
               {
                 q: "Most elegant?",
@@ -230,12 +230,12 @@ export default function BestClubsPage() {
               },
               {
                 q: "Best dinner + club?",
-                a: "Maddox or Lio Club London",
-                link: "/clubs/lio-london",
+                a: "Maddox Club — Italian dining meets dancefloor",
+                link: "/clubs/maddox-club",
               },
               {
                 q: "Best sound system?",
-                a: "BEAT London or Ministry of Sound",
+                a: "BEAT London — music-first experience",
                 link: "/clubs/beat-london",
               },
             ].map((item) => (

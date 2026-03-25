@@ -23,12 +23,12 @@ const faqs = [
   {
     question: "Where should I celebrate my 30th birthday in London?",
     answer:
-      "For a 30th birthday, consider Lio Club London for the complete dinner-show-club experience, Dear Darling for an elegant cocktail-focused celebration, or Tape London for genuine exclusivity. A 30th calls for something more refined than a standard night out — these venues deliver sophistication without sacrificing fun.",
+      "For a 30th birthday, consider Maddox Club for the complete dinner-to-dancing experience, Dear Darling for an elegant cocktail-focused celebration, or Tape London for genuine exclusivity. A 30th calls for something more refined than a standard night out — these venues deliver sophistication without sacrificing fun.",
   },
   {
     question: "Is Mayfair good for a 25th birthday?",
     answer:
-      "Mayfair is excellent for a 25th birthday. Venues like TABU, Libertine, and Cuckoo Club offer the perfect blend of high energy and style that suits the 25th birthday demographic. Minimum spends start from £1,000, which works well when split across a group of 8-15.",
+      "Mayfair is excellent for a 25th birthday. Venues like TABU, Luna Club London, and Cuckoo Club offer the perfect blend of high energy and style that suits the 25th birthday demographic. Minimum spends start from £1,000, which works well when split across a group of 8-15.",
   },
 ];
 
@@ -55,8 +55,8 @@ const milestones = [
           "Two floors with different music mean everyone in your birthday group finds their groove. The hip-hop basement is where the party peaks. The Mayfair location makes the night feel special without being intimidatingly exclusive.",
       },
       {
-        name: "The London Reign",
-        slug: "the-london-reign",
+        name: "Reign London",
+        slug: "reign-london",
         reason:
           "If your 21st group is big (15+), Reign's large capacity and aerial performances create a birthday that matches the energy of a milestone year. The spectacle gives everyone something to remember.",
       },
@@ -80,16 +80,16 @@ const milestones = [
           "The Japanese underground aesthetic is the kind of venue that impresses a 25-year-old crowd. It's cool, it's different, and the hip-hop playlist is exactly right. The intimate size means your birthday group is part of the energy, not lost in it.",
       },
       {
-        name: "Libertine",
-        slug: "libertine",
+        name: "Luna Club London",
+        slug: "luna-club-london",
         reason:
-          "Polished, futuristic, and with an incredible sound system — Libertine delivers the quality step-up that a 25th birthday deserves. The vibe is fun but sophisticated, which perfectly matches the 25th birthday energy.",
+          "The celestial-inspired interiors are the kind of venue that impresses a 25-year-old crowd — modern, visually stunning, and incredibly photogenic. The hip-hop and Afrobeats playlist keeps the energy high, and the newer-venue excitement means every visit feels like a discovery.",
       },
       {
-        name: "Luxx Club London",
-        slug: "luxx-club",
+        name: "Funky Buddha",
+        slug: "funky-buddha",
         reason:
-          "The LED light shows make every moment Instagram-worthy, and the open format music keeps a diverse group happy. For 25th birthdays where the visual experience matters, Luxx is hard to beat.",
+          "One of the most iconic names in London nightlife. The legendary Berkeley Street venue has incredible energy, an excellent hip-hop playlist, and the kind of celebrity pedigree that makes turning 25 feel like a headline event.",
       },
     ],
     budgetTip:
@@ -105,10 +105,10 @@ const milestones = [
       "Turning 30 is a big deal, and the celebration needs to match. At this stage, your birthday group values quality — good drinks, excellent service, an environment that feels premium. The focus shifts from pure energy to experience. A 30th birthday at the right venue feels like a proper event, not just another night out. Many 30th birthday groups also want the option to include dinner, making the evening feel more complete.",
     topPicks: [
       {
-        name: "Lio Club London",
-        slug: "lio-london",
+        name: "Maddox Club",
+        slug: "maddox-club",
         reason:
-          "Lio's dinner-show-club format is purpose-built for milestone birthdays. You get a gourmet meal with live entertainment, followed by a club that transforms around you. It's the most complete 30th birthday experience in London — one booking, one venue, the whole evening sorted.",
+          "Maddox's dinner-to-club format is perfect for milestone birthdays. Start with excellent Italian dining, then transition seamlessly into a house music dancefloor — all without leaving the building. It's the most complete 30th birthday experience in London — one booking, one venue, the whole evening sorted.",
       },
       {
         name: "Tape London",
@@ -124,7 +124,7 @@ const milestones = [
       },
     ],
     budgetTip:
-      "30th birthday groups are typically 8–20 people with a higher per-person budget. Many groups are happy spending £100–200 per head for a premium experience. Consider Maddox or Lio for the dinner-and-club option, which maximises the evening for a similar per-person spend.",
+      "30th birthday groups are typically 8–20 people with a higher per-person budget. Many groups are happy spending £100–200 per head for a premium experience. Consider Maddox Club for the dinner-and-club option, which maximises the evening for a similar per-person spend.",
   },
   {
     age: "40th",
@@ -136,8 +136,8 @@ const milestones = [
       "A 40th birthday is a celebration of success, friendship, and knowing exactly what you want. The group is typically smaller, the budget is higher, and the expectations are for genuine quality. A 40th birthday venue needs to deliver flawless service, a refined atmosphere, and an experience that feels worthy of the occasion. This is not about proving anything — it's about enjoying the very best.",
     topPicks: [
       {
-        name: "Maddox",
-        slug: "maddox",
+        name: "Maddox Club",
+        slug: "maddox-club",
         reason:
           "Maddox's Italian dinner followed by a house music club is ideal for a 40th. The dinner sets the tone for a proper celebration, the food is genuinely excellent, and the house music dancefloor attracts a mature, well-dressed crowd. The transition from dinner to dancing feels natural and exciting.",
       },
@@ -167,16 +167,16 @@ const milestones = [
       "A 50th birthday is a landmark, and the celebration should reflect that. The group is typically close friends and loved ones, the atmosphere should be convivial and warm, and the experience should feel effortlessly premium. A 50th birthday venue needs to deliver impeccable service without pretension, a setting that facilitates conversation and connection, and enough energy to make the evening feel genuinely celebratory.",
     topPicks: [
       {
-        name: "Lio Club London",
-        slug: "lio-london",
+        name: "Maddox Club",
+        slug: "maddox-club",
         reason:
-          "Lio's gourmet dinner with live entertainment creates a celebration that's engaging without being overwhelming. The performances provide natural entertainment and conversation points, while the food is genuinely exceptional. As the evening progresses, those who want to dance can, while others enjoy the atmosphere from their seats.",
+          "The dinner-to-club format works exceptionally well for 50th birthdays. The Italian dinner allows for toasts, speeches, and catching up, while the house music club provides energy for those who want to keep the night going. The sophistication of the venue matches the milestone perfectly.",
       },
       {
-        name: "Maddox",
-        slug: "maddox",
+        name: "Scotch of St James",
+        slug: "scotch-of-st-james",
         reason:
-          "The dinner-to-club format works exceptionally well for 50th birthdays. The Italian dinner allows for toasts, speeches, and catching up, while the house music club provides energy for those who want to keep the night going. The sophistication of the venue matches the milestone.",
+          "Scotch's heritage stretching back to the Hendrix era resonates beautifully with a 50th birthday group. The warmth, character, and authenticity create an atmosphere that feels like celebrating in somewhere truly special. The intimate setting facilitates conversation and genuine connection.",
       },
       {
         name: "Dear Darling",

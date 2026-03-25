@@ -28,7 +28,7 @@ const faqs = [
   {
     question: "Which London clubs are open on a Thursday?",
     answer:
-      "Thursday is a popular night in Mayfair with several top clubs open: Tape London, TABU, Maddox, Scotch of St James, Cuckoo Club, Dear Darling, and Lio Club London all operate on Thursday nights. It's an excellent night for birthdays with strong atmosphere and lower minimum spends than weekends.",
+      "Thursday is a popular night in Mayfair with several top clubs open: Tape London, TABU, Maddox Club, Scotch of St James, Cuckoo Club, Dear Darling, and The Box London all operate on Thursday nights. It's an excellent night for birthdays with strong atmosphere and lower minimum spends than weekends.",
   },
 ];
 
@@ -51,9 +51,9 @@ const nights = [
     slug: "wednesday",
     energy: "Building momentum",
     minSpendNote: "Lower than weekend, great value",
-    venuesOpen: ["Cirque Le Soir", "Libertine"],
+    venuesOpen: ["Cirque Le Soir", "Funky Buddha"],
     description:
-      "Wednesday is an underrated birthday night. Cirque Le Soir's Wednesday offering is particularly noteworthy — you still get the full circus experience with live performers, but the atmosphere is slightly more intimate than Friday. Libertine also runs a quality Wednesday night with its signature futuristic vibe.",
+      "Wednesday is an underrated birthday night. Cirque Le Soir's Wednesday offering is particularly noteworthy — you still get the full circus experience with live performers, but the atmosphere is slightly more intimate than Friday. Funky Buddha also runs a legendary Wednesday night with its signature hip-hop energy and iconic atmosphere.",
     bestFor:
       "Birthday groups who want the big-venue experience without the peak-weekend price tag. A Wednesday Cirque birthday gives you the performers and spectacle at a more accessible minimum spend.",
     considerations:
@@ -67,11 +67,11 @@ const nights = [
     venuesOpen: [
       "Tape London",
       "TABU London",
-      "Maddox",
+      "Maddox Club",
       "Scotch of St James",
       "Cuckoo Club",
       "Dear Darling",
-      "Lio Club London",
+      "The Box London",
     ],
     description:
       "Thursday is the sweet spot for London birthday celebrations. Nearly every major Mayfair venue is open, the atmosphere is genuinely lively, and minimum spends are lower than weekends. The crowd on a Thursday tends to be slightly more industry-connected and fashion-forward — people who know the scene.",
@@ -88,17 +88,17 @@ const nights = [
     venuesOpen: [
       "Tape London",
       "Cirque Le Soir",
-      "The London Reign",
+      "Reign London",
       "TABU London",
-      "Libertine",
-      "Luxx Club London",
-      "Maddox",
+      "Funky Buddha",
+      "Maddox Club",
       "Scotch of St James",
       "Cuckoo Club",
       "Dear Darling",
       "BEAT London",
-      "Ministry of Sound",
-      "Lio Club London",
+      "The Box London",
+      "Luna Club London",
+      "Selene London",
     ],
     description:
       "Friday is when London nightlife hits its stride. Every venue is open, the energy is high, and the crowd is ready to celebrate. For birthdays, Friday offers the biggest choice of venues and consistently strong atmospheres across the board. Cirque Le Soir often has its best performance lineup on Fridays.",
@@ -115,17 +115,17 @@ const nights = [
     venuesOpen: [
       "Tape London",
       "Cirque Le Soir",
-      "The London Reign",
+      "Reign London",
       "TABU London",
-      "Libertine",
-      "Luxx Club London",
-      "Maddox",
+      "Funky Buddha",
+      "Maddox Club",
       "Scotch of St James",
       "Cuckoo Club",
       "Dear Darling",
       "BEAT London",
-      "Ministry of Sound",
-      "Lio Club London",
+      "The Box London",
+      "Luna Club London",
+      "Selene London",
     ],
     description:
       "Saturday is the biggest night in London nightlife. Every venue operates at full capacity, the atmosphere peaks, and the energy is at its absolute maximum. For birthdays, a Saturday night means your celebration happens when the room is at its most electric. The downside is the highest minimum spends and the most competition for premium table positions.",
@@ -221,17 +221,17 @@ export default function BirthdayByNightPage() {
                     const slugMap: Record<string, string> = {
                       "Tape London": "tape-london",
                       "Cirque Le Soir": "cirque-le-soir",
-                      "The London Reign": "the-london-reign",
+                      "Reign London": "reign-london",
                       "TABU London": "tabu-london",
-                      "Libertine": "libertine",
-                      "Luxx Club London": "luxx-club",
-                      "Maddox": "maddox",
+                      "Funky Buddha": "funky-buddha",
+                      "Maddox Club": "maddox-club",
                       "Scotch of St James": "scotch-of-st-james",
                       "Cuckoo Club": "cuckoo-club",
                       "Dear Darling": "dear-darling",
                       "BEAT London": "beat-london",
-                      "Ministry of Sound": "ministry-of-sound",
-                      "Lio Club London": "lio-london",
+                      "The Box London": "the-box-london",
+                      "Luna Club London": "luna-club-london",
+                      "Selene London": "selene-london",
                     };
                     return (
                       <Link

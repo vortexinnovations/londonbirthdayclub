@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import {
   clubs,
+  openClubs,
   getClubBySlug,
   getClubWhatsAppMessage,
   getGeneralWhatsAppMessage,
@@ -69,11 +70,50 @@ export default async function ClubPage({
     },
   ];
 
-  const otherClubs = clubs.filter((c) => c.slug !== club.slug).slice(0, 4);
+  const otherClubs = openClubs.filter((c) => c.slug !== club.slug).slice(0, 4);
+  const isClosed = club.status === "closed";
+  const alternativeClubs = isClosed && club.alternatives
+    ? club.alternatives.map((s) => getClubBySlug(s)).filter(Boolean)
+    : [];
 
   return (
     <>
-      <FAQSchema faqs={faqs} />
+      {!isClosed && <FAQSchema faqs={faqs} />}
+
+      {/* Closed Banner */}
+      {isClosed && (
+        <section className="bg-red-900/30 border-b border-red-700/40 py-6 px-4">
+          <div className="max-w-4xl mx-auto">
+            <div className="flex items-start gap-3">
+              <span className="text-red-400 text-2xl flex-shrink-0">&#9888;</span>
+              <div>
+                <h2 className="text-lg font-bold text-red-300 mb-2">
+                  {club.name} Has Permanently Closed
+                </h2>
+                <p className="text-text-secondary leading-relaxed mb-4">
+                  {club.closedNote}
+                </p>
+                {alternativeClubs.length > 0 && (
+                  <div>
+                    <p className="text-sm text-text-muted mb-2">Recommended alternatives:</p>
+                    <div className="flex flex-wrap gap-2">
+                      {alternativeClubs.map((alt) => alt && (
+                        <Link
+                          key={alt.slug}
+                          href={`/clubs/${alt.slug}`}
+                          className="inline-flex items-center px-4 py-2 bg-gold/10 text-gold border border-gold/20 rounded-lg text-sm font-medium hover:bg-gold/20 transition-colors"
+                        >
+                          {alt.name} &rarr;
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Hero */}
       <section className="relative py-20 sm:py-28 px-4">
@@ -87,19 +127,26 @@ export default async function ClubPage({
           </Link>
           <h1 className="text-4xl sm:text-5xl font-bold tracking-tight mb-4">
             Birthday at{" "}
-            <span className="text-gold">{club.name}</span>
+            <span className={isClosed ? "text-text-muted" : "text-gold"}>{club.name}</span>
           </h1>
-          <p className="text-xl text-gold/80 font-medium mb-4">
-            {club.tagline}
-          </p>
+          {isClosed && (
+            <p className="text-red-400 font-semibold mb-4">This venue has permanently closed</p>
+          )}
+          {!isClosed && (
+            <p className="text-xl text-gold/80 font-medium mb-4">
+              {club.tagline}
+            </p>
+          )}
           <p className="text-lg text-text-secondary max-w-2xl mb-8 leading-relaxed">
             {club.description}
           </p>
-          <WhatsAppCTA
-            message={getClubWhatsAppMessage(club.name)}
-            label={`Book Birthday at ${club.shortName}`}
-            size="large"
-          />
+          {!isClosed && (
+            <WhatsAppCTA
+              message={getClubWhatsAppMessage(club.name)}
+              label={`Book Birthday at ${club.shortName}`}
+              size="large"
+            />
+          )}
         </div>
       </section>
 
@@ -252,18 +299,36 @@ export default async function ClubPage({
       {/* CTA */}
       <section className="py-16 px-4">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-4">
-            Book Your Birthday at {club.name}
-          </h2>
-          <p className="text-text-secondary text-lg mb-8">
-            Message us with your date, group size, and any special requests.
-            We&apos;ll handle everything.
-          </p>
-          <WhatsAppCTA
-            message={getClubWhatsAppMessage(club.name)}
-            label={`Book at ${club.shortName} on WhatsApp`}
-            size="large"
-          />
+          {isClosed ? (
+            <>
+              <h2 className="text-3xl font-bold mb-4">
+                Looking for a Birthday Venue?
+              </h2>
+              <p className="text-text-secondary text-lg mb-8">
+                {club.name} has permanently closed, but we can help you find the perfect alternative. Message us on WhatsApp and we&apos;ll recommend the best venue for your birthday.
+              </p>
+              <WhatsAppCTA
+                message={getGeneralWhatsAppMessage()}
+                label="Find an Alternative on WhatsApp"
+                size="large"
+              />
+            </>
+          ) : (
+            <>
+              <h2 className="text-3xl font-bold mb-4">
+                Book Your Birthday at {club.name}
+              </h2>
+              <p className="text-text-secondary text-lg mb-8">
+                Message us with your date, group size, and any special requests.
+                We&apos;ll handle everything.
+              </p>
+              <WhatsAppCTA
+                message={getClubWhatsAppMessage(club.name)}
+                label={`Book at ${club.shortName} on WhatsApp`}
+                size="large"
+              />
+            </>
+          )}
         </div>
       </section>
 
