@@ -7,7 +7,7 @@ import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import ArticleSchema from "@/components/ArticleSchema";
 
 export const metadata: Metadata = {
-  title: "Guestlist vs Table for a Birthday in London — Which Is Actually Worth It?",
+  title: "Guestlist vs Table for a London Birthday — Worth It?",
   description: "Should you book a guestlist or a VIP table for your birthday at a London nightclub? Honest comparison of costs, benefits, and which option suits your group size and budget.",
   alternates: { canonical: "https://londonbirthdayclub.com/birthday-guestlist-vs-table-booking" },
 };

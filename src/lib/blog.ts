@@ -28,8 +28,8 @@ export const blogPosts: BlogPost[] = [
       "Full breakdown of birthday table costs at London nightclubs. Minimum spends, what's included, per-person costs, and how to get the best value at Mayfair clubs.",
     excerpt:
       "A transparent breakdown of what you'll actually spend on a birthday table at a London nightclub — from minimum spends to hidden costs and per-person budgets.",
-    publishedAt: "2025-01-15",
-    updatedAt: "2025-03-01",
+    publishedAt: "2026-01-15",
+    updatedAt: "2026-03-25",
     category: "Planning",
     readTime: "7 min read",
     sections: [
@@ -111,8 +111,8 @@ export const blogPosts: BlogPost[] = [
       "Complete dress code guide for London nightclub birthdays. What to wear at Mayfair clubs, what gets you turned away, and outfit ideas for birthday celebrations.",
     excerpt:
       "A practical guide to dressing for a birthday at a London nightclub — what works, what doesn't, and how to make sure nobody in your group gets turned away at the door.",
-    publishedAt: "2025-01-22",
-    updatedAt: "2025-03-01",
+    publishedAt: "2026-01-22",
+    updatedAt: "2026-03-25",
     category: "Tips",
     readTime: "6 min read",
     sections: [
@@ -188,8 +188,8 @@ export const blogPosts: BlogPost[] = [
       "Complete guide to planning a surprise birthday at a London club. Secret booking tips, how to coordinate with the venue, surprise arrival ideas, and common mistakes to avoid.",
     excerpt:
       "Planning a surprise birthday at a London club requires coordination, secrecy, and timing. Here's how to pull it off without the birthday person finding out.",
-    publishedAt: "2025-02-05",
-    updatedAt: "2025-03-01",
+    publishedAt: "2026-01-05",
+    updatedAt: "2026-03-25",
     category: "Planning",
     readTime: "6 min read",
     sections: [
@@ -266,8 +266,8 @@ export const blogPosts: BlogPost[] = [
       "Everything you need to know about birthday bottle service at London nightclubs. How it works, what bottles to choose, tipping etiquette, and how to make the most of your table.",
     excerpt:
       "A no-nonsense guide to how bottle service actually works at London clubs on your birthday — from choosing bottles to tipping your table host.",
-    publishedAt: "2025-02-12",
-    updatedAt: "2025-03-01",
+    publishedAt: "2026-01-12",
+    updatedAt: "2026-03-25",
     category: "Guide",
     readTime: "8 min read",
     sections: [
@@ -338,8 +338,8 @@ export const blogPosts: BlogPost[] = [
       "Creative birthday celebration ideas in London's nightlife scene. From circus-themed clubs to dinner-and-dancing, cocktail bars to superclubs — unique ways to celebrate.",
     excerpt:
       "If you want a birthday that goes beyond a standard night at the pub, London's nightlife scene offers genuinely unique experiences. Here are the most memorable ways to celebrate.",
-    publishedAt: "2025-02-20",
-    updatedAt: "2025-03-01",
+    publishedAt: "2026-01-20",
+    updatedAt: "2026-03-25",
     category: "Ideas",
     readTime: "7 min read",
     sections: [
@@ -373,7 +373,7 @@ export const blogPosts: BlogPost[] = [
         headingLevel: "h2",
         content: [
           "One of the most common birthday headaches is coordinating a restaurant and a club in the same evening. Maddox Club solves this by offering the complete evening under one roof — Italian dinner followed by a house music dancefloor.",
-          "Maddox starts with exceptional Italian dining before transforming into a house-music-driven nightclub. The transition happens naturally around you — one moment you're finishing dessert, the next the lights have dimmed and the DJ is building. Lio takes a similar approach but adds live entertainment during dinner, making the meal itself part of the show.",
+          "Maddox starts with exceptional Italian dining before transforming into a house-music-driven nightclub. The transition happens naturally around you — one moment you're finishing dessert, the next the lights have dimmed and the DJ is building. For groups who want even more spectacle, pairing dinner at a nearby Mayfair restaurant with a show-club like Cirque Le Soir or The Box gives you the best of both worlds.",
           "This format works particularly well for birthday groups with mixed preferences — the dinner-lovers get their elegant meal, the clubbers get their dancefloor, and nobody has to negotiate a transfer between venues at midnight.",
         ],
       },
@@ -424,8 +424,8 @@ export const blogPosts: BlogPost[] = [
       "Practical advice on collecting money and splitting the cost of a birthday table at a London nightclub. Avoid awkward conversations and last-minute cancellations.",
     excerpt:
       "Money is the most awkward part of planning a birthday table. Here's how to handle group payments without the drama — from how to split the cost to when to collect.",
-    publishedAt: "2025-03-01",
-    updatedAt: "2025-03-15",
+    publishedAt: "2026-01-01",
+    updatedAt: "2026-03-25",
     category: "Planning",
     readTime: "5 min read",
     sections: [
@@ -494,8 +494,8 @@ export const blogPosts: BlogPost[] = [
       "The best London birthday night out ideas for women. From glamorous Mayfair clubs to cocktail bars and dinner-and-dancing — venues where she'll feel like a VIP.",
     excerpt:
       "Planning a birthday night out for the woman in your life? These are the London venues and experiences that consistently deliver unforgettable celebrations for women's birthdays.",
-    publishedAt: "2025-03-10",
-    updatedAt: "2025-03-20",
+    publishedAt: "2026-01-10",
+    updatedAt: "2026-03-25",
     category: "Ideas",
     readTime: "6 min read",
     sections: [
@@ -572,8 +572,8 @@ export const blogPosts: BlogPost[] = [
       "The best London birthday night out ideas for men. From exclusive members' clubs to legendary superclubs — venues that deliver an unforgettable birthday for him.",
     excerpt:
       "Planning a birthday night out for the man in your life? These are the London venues that consistently deliver memorable celebrations for men's birthdays.",
-    publishedAt: "2025-03-15",
-    updatedAt: "2025-03-20",
+    publishedAt: "2026-01-15",
+    updatedAt: "2026-03-25",
     category: "Ideas",
     readTime: "6 min read",
     sections: [
@@ -650,8 +650,8 @@ export const blogPosts: BlogPost[] = [
       "The best birthday songs to request from the DJ at a London nightclub. How DJ requests work, when to ask, and which tracks always get the room singing happy birthday.",
     excerpt:
       "When the DJ shouts your name and drops the right track, it's the peak of your birthday night. Here's how to make the most of your DJ moment at a London club.",
-    publishedAt: "2025-03-20",
-    updatedAt: "2025-03-25",
+    publishedAt: "2026-01-20",
+    updatedAt: "2026-03-25",
     category: "Tips",
     readTime: "5 min read",
     sections: [
@@ -721,8 +721,8 @@ export const blogPosts: BlogPost[] = [
       "Plan a full birthday weekend in London. From daytime activities to the main event at a Mayfair club — a complete itinerary for making a birthday weekend unforgettable.",
     excerpt:
       "Turn your birthday night into a birthday weekend. Here's how to plan a full London birthday celebration from Saturday afternoon to Sunday morning.",
-    publishedAt: "2025-03-25",
-    updatedAt: "2025-03-25",
+    publishedAt: "2026-01-25",
+    updatedAt: "2026-03-25",
     category: "Planning",
     readTime: "6 min read",
     sections: [
@@ -746,9 +746,9 @@ export const blogPosts: BlogPost[] = [
         heading: "Saturday Evening: Pre-Club Dinner",
         headingLevel: "h2",
         content: [
-          "If your chosen club doesn't include dinner (like Maddox or Lio), arrange a group dinner before heading to the club. Mayfair and Soho are packed with restaurants that cater to birthday groups, and eating together sets a convivial, celebratory tone for the evening.",
-          "Book a restaurant that's close to your club venue — no one wants a long taxi ride between dinner and the club. Aim for dinner at 8–8:30pm, finishing by 10:30pm, which gives everyone time to settle the bill and freshend up before heading to the club.",
-          "If you've booked Maddox or Lio, your dinner is built into the evening and you can skip the separate restaurant booking entirely. This is one of the biggest advantages of the dinner-club format for birthday weekends — one fewer thing to coordinate.",
+          "If your chosen club doesn't include dinner (like Maddox), arrange a group dinner before heading to the club. Mayfair and Soho are packed with restaurants that cater to birthday groups, and eating together sets a convivial, celebratory tone for the evening.",
+          "Book a restaurant that's close to your club venue — no one wants a long taxi ride between dinner and the club. Aim for dinner at 8–8:30pm, finishing by 10:30pm, which gives everyone time to settle the bill and freshen up before heading to the club.",
+          "If you've booked Maddox, your dinner is built into the evening and you can skip the separate restaurant booking entirely. This is one of the biggest advantages of the dinner-club format for birthday weekends — one fewer thing to coordinate.",
         ],
       },
       {
@@ -797,8 +797,8 @@ export const blogPosts: BlogPost[] = [
     metaTitle: "Tape London Birthday | The Most Exclusive Mayfair Celebration",
     metaDescription: "Discover why Tape London is the ultimate exclusive birthday venue in Mayfair. Members' club atmosphere, celebrity crowd, world-class sound. Complete birthday guide inside.",
     excerpt: "What makes a birthday at Tape London different from every other Mayfair club — and why the intimate, members' club experience creates the most genuinely exclusive celebration in London.",
-    publishedAt: "2025-04-10",
-    updatedAt: "2025-06-01",
+    publishedAt: "2026-01-10",
+    updatedAt: "2026-03-25",
     category: "Venue Guide",
     readTime: "6 min read",
     sections: [
@@ -847,8 +847,8 @@ export const blogPosts: BlogPost[] = [
     metaTitle: "Cirque Le Soir Birthday Night | What to Expect Hour by Hour",
     metaDescription: "A real walkthrough of a birthday night at Cirque Le Soir London. From arrival to close — performers, bottle shows, and why it's London's most unforgettable birthday.",
     excerpt: "An hour-by-hour walkthrough of what a birthday night at Cirque Le Soir actually looks like — from the moment you arrive to the final performance.",
-    publishedAt: "2025-04-15",
-    updatedAt: "2025-06-01",
+    publishedAt: "2026-01-15",
+    updatedAt: "2026-03-25",
     category: "Venue Guide",
     readTime: "7 min read",
     sections: [
@@ -896,8 +896,8 @@ export const blogPosts: BlogPost[] = [
     metaTitle: "Reign London Birthday Review | Is It Worth It for Your Celebration?",
     metaDescription: "Honest review of Reign London for birthday celebrations. Aerial performances, grand venue, large groups. Everything you need to know before booking your birthday at Reign.",
     excerpt: "An honest assessment of whether Reign London lives up to the hype for birthday celebrations — from the aerial acts to the grand venue and large group accommodations.",
-    publishedAt: "2025-04-20",
-    updatedAt: "2025-06-01",
+    publishedAt: "2026-01-20",
+    updatedAt: "2026-03-25",
     category: "Venue Guide",
     readTime: "6 min read",
     sections: [
@@ -945,8 +945,8 @@ export const blogPosts: BlogPost[] = [
     metaTitle: "TABU London Birthday | Mayfair's Coolest Underground Birthday Venue",
     metaDescription: "Everything about celebrating a birthday at TABU London. Japanese underground aesthetics, intimate hip-hop atmosphere, and why it's Mayfair's most photogenic birthday venue.",
     excerpt: "Inside TABU London — the Japanese underground-themed Mayfair club that creates the most photogenic, design-forward birthday experience in London's nightlife scene.",
-    publishedAt: "2025-04-25",
-    updatedAt: "2025-06-01",
+    publishedAt: "2026-01-25",
+    updatedAt: "2026-03-25",
     category: "Venue Guide",
     readTime: "5 min read",
     sections: [
@@ -986,8 +986,8 @@ export const blogPosts: BlogPost[] = [
     metaTitle: "Funky Buddha Birthday | London's Most Iconic Birthday Celebration",
     metaDescription: "Celebrate your birthday at Funky Buddha London — one of Mayfair's most legendary clubs. Celebrity history, incredible energy, intimate setting. Birthday booking guide inside.",
     excerpt: "What it's like to celebrate your birthday at Funky Buddha — one of the most iconic names in London nightlife, with a celebrity history that's earned over decades.",
-    publishedAt: "2025-05-01",
-    updatedAt: "2025-06-01",
+    publishedAt: "2026-01-01",
+    updatedAt: "2026-03-25",
     category: "Venue Guide",
     readTime: "6 min read",
     sections: [
@@ -1035,8 +1035,8 @@ export const blogPosts: BlogPost[] = [
     metaTitle: "Cuckoo Club Birthday | Two Floors, Two Vibes, One Perfect Night",
     metaDescription: "How to plan a birthday at Cuckoo Club using both floors. House music upstairs, hip-hop downstairs. Practical guide to maximising Mayfair's most versatile venue.",
     excerpt: "A practical guide to making the most of Cuckoo Club's unique two-floor layout for your birthday — which floor for your table, how to use both, and why it solves the mixed-taste problem.",
-    publishedAt: "2025-05-05",
-    updatedAt: "2025-06-01",
+    publishedAt: "2026-01-05",
+    updatedAt: "2026-03-25",
     category: "Venue Guide",
     readTime: "5 min read",
     sections: [
@@ -1076,8 +1076,8 @@ export const blogPosts: BlogPost[] = [
     metaTitle: "Scotch of St James Birthday | Celebrating in a Piece of London History",
     metaDescription: "Celebrate your birthday at Scotch of St James — the historic Mayfair club where Hendrix was a regular. History, character, and intimate birthday celebrations with genuine personality.",
     excerpt: "What it means to celebrate your birthday in one of London's most historic music venues — from the Hendrix-era heritage to the modern intimate birthday experience.",
-    publishedAt: "2025-05-10",
-    updatedAt: "2025-06-01",
+    publishedAt: "2026-01-10",
+    updatedAt: "2026-03-25",
     category: "Venue Guide",
     readTime: "5 min read",
     sections: [
@@ -1117,8 +1117,8 @@ export const blogPosts: BlogPost[] = [
     metaTitle: "Dear Darling Birthday | Mayfair's Most Elegant Celebration Venue",
     metaDescription: "Celebrate your birthday at Dear Darling Mayfair — chandeliers, velvet booths, and exceptional cocktails. The ultimate elegant birthday for milestone celebrations.",
     excerpt: "Why Dear Darling is the perfect birthday venue for those who want elegance over energy — chandeliers, cocktails, and an atmosphere that makes milestones feel magnificent.",
-    publishedAt: "2025-05-15",
-    updatedAt: "2025-06-01",
+    publishedAt: "2026-01-15",
+    updatedAt: "2026-03-25",
     category: "Venue Guide",
     readTime: "5 min read",
     sections: [
@@ -1158,8 +1158,8 @@ export const blogPosts: BlogPost[] = [
     metaTitle: "Maddox Club Birthday | The Complete Dinner-to-Dancing Guide",
     metaDescription: "How a birthday at Maddox Club works — from Italian dinner to house music dancefloor. The practical guide to London's best dinner-and-club birthday experience.",
     excerpt: "A practical walkthrough of the Maddox Club birthday experience — how the dinner-to-club transition works, when to arrive, and why it's the most convenient way to celebrate.",
-    publishedAt: "2025-05-20",
-    updatedAt: "2025-06-01",
+    publishedAt: "2026-01-20",
+    updatedAt: "2026-03-25",
     category: "Venue Guide",
     readTime: "6 min read",
     sections: [
@@ -1207,8 +1207,8 @@ export const blogPosts: BlogPost[] = [
     metaTitle: "The Box London Birthday | London's Most Daring Birthday Experience",
     metaDescription: "Everything you need to know about celebrating a birthday at The Box London. Provocative performances, stunning Soho venue, and the most talked-about night out in the city.",
     excerpt: "What a birthday at The Box London actually involves — the performances, the atmosphere, and how to prepare your guests for London's most provocative nightclub experience.",
-    publishedAt: "2025-05-25",
-    updatedAt: "2025-06-01",
+    publishedAt: "2026-01-25",
+    updatedAt: "2026-03-25",
     category: "Venue Guide",
     readTime: "6 min read",
     sections: [
@@ -1256,8 +1256,8 @@ export const blogPosts: BlogPost[] = [
     metaTitle: "Luna Club London Birthday | Mayfair's Hottest New Birthday Venue",
     metaDescription: "Everything about celebrating a birthday at Luna Club London. Celestial-inspired design, energetic atmosphere, and why Mayfair's newest venue is perfect for birthdays.",
     excerpt: "What makes Luna Club London one of the most exciting new birthday venues in Mayfair — the celestial design, photogenic interiors, and energetic atmosphere that's winning over London's party crowd.",
-    publishedAt: "2025-06-01",
-    updatedAt: "2025-06-15",
+    publishedAt: "2026-01-01",
+    updatedAt: "2026-03-25",
     category: "Venue Guide",
     readTime: "5 min read",
     sections: [
@@ -1297,8 +1297,8 @@ export const blogPosts: BlogPost[] = [
     metaTitle: "Selene London Birthday | Refined Mayfair Birthday Celebration",
     metaDescription: "Celebrate your birthday at Selene London — Mayfair's refined new venue that balances elegance with genuine fun. Perfect for groups who want premium without pretension.",
     excerpt: "Why Selene London is the ideal birthday venue for groups who want Mayfair elegance without the pretension — refined interiors, balanced music, and an atmosphere that works for everyone.",
-    publishedAt: "2025-06-05",
-    updatedAt: "2025-06-15",
+    publishedAt: "2026-01-05",
+    updatedAt: "2026-03-25",
     category: "Venue Guide",
     readTime: "5 min read",
     sections: [
@@ -1338,8 +1338,8 @@ export const blogPosts: BlogPost[] = [
     metaTitle: "BEAT London Birthday | The Music-First Birthday Experience",
     metaDescription: "Why music lovers choose BEAT London for birthdays. World-class sound system, house and tech house, and the most music-focused birthday celebration in the city.",
     excerpt: "For birthday groups who define a great night by the music — why BEAT London's world-class sound system and house music focus creates a celebration that music lovers genuinely appreciate.",
-    publishedAt: "2025-06-10",
-    updatedAt: "2025-06-15",
+    publishedAt: "2026-01-10",
+    updatedAt: "2026-03-25",
     category: "Venue Guide",
     readTime: "5 min read",
     sections: [

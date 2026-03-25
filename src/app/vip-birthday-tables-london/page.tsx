@@ -6,7 +6,7 @@ import FAQSchema from "@/components/FAQSchema";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 export const metadata: Metadata = {
-  title: "VIP Birthday Tables London — Premium Positions & Luxury Packages (2026)",
+  title: "VIP Birthday Tables London — Luxury Packages (2026)",
   description: "Book a VIP birthday table at London's most exclusive nightclubs. Premium table positions, champagne packages, sparklers, and dedicated hosts. Luxury birthday experiences from £1,000.",
   alternates: { canonical: "https://londonbirthdayclub.com/vip-birthday-tables-london" },
 };

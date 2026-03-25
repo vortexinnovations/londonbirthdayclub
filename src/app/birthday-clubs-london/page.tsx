@@ -7,7 +7,7 @@ import FAQSchema from "@/components/FAQSchema";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 export const metadata: Metadata = {
-  title: "Birthday Clubs London — 13 Venues Compared (Prices, Music & Group Size)",
+  title: "Birthday Clubs London — 13 Venues Compared (2026)",
   description:
     "Compare 13 London birthday clubs side by side — minimum spends, music, group size, and what makes each one great for birthdays. Tables from £1,000. Free booking via WhatsApp.",
   alternates: {
