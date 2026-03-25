@@ -94,14 +94,6 @@ export default function Header() {
                 {link.label}
               </Link>
             ))}
-            <a
-              href={getWhatsAppLink(getGeneralWhatsAppMessage())}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block bg-whatsapp hover:bg-whatsapp-hover text-white text-center font-semibold px-4 py-3 rounded-lg transition-colors mt-4"
-            >
-              WhatsApp Us
-            </a>
           </div>
         </div>
       )}
