@@ -276,6 +276,18 @@ export default function BirthdayByAgePage() {
                   {milestone.budgetTip}
                 </p>
               </div>
+
+              {milestone.slug === "18th-21st" && (
+                <div className="flex flex-wrap gap-4 mt-4">
+                  <Link href="/18th-birthday-clubs-london" className="text-gold text-sm hover:underline">Full 18th birthday guide &rarr;</Link>
+                  <Link href="/21st-birthday-clubs-london" className="text-gold text-sm hover:underline">Full 21st birthday guide &rarr;</Link>
+                </div>
+              )}
+              {milestone.slug === "30th" && (
+                <div className="mt-4">
+                  <Link href="/30th-birthday-night-out-london" className="text-gold text-sm hover:underline">Full 30th birthday guide &rarr;</Link>
+                </div>
+              )}
             </div>
           ))}
         </div>
