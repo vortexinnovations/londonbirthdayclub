@@ -8,6 +8,7 @@ import WhatsAppSticky from "@/components/WhatsAppSticky";
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
