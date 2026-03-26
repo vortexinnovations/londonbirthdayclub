@@ -290,6 +290,11 @@ export default function BirthdayByAgePage() {
                   <Link href="/30th-birthday-night-out-london" className="text-gold text-sm hover:underline">Full 30th birthday guide &rarr;</Link>
                 </div>
               )}
+              {milestone.slug === "40th" && (
+                <div className="mt-4">
+                  <Link href="/blog/40th-birthday-night-out-london" className="text-gold text-sm hover:underline">Full 40th birthday guide &rarr;</Link>
+                </div>
+              )}
             </div>
           ))}
         </div>

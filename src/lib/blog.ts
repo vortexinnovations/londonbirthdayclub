@@ -1948,6 +1948,136 @@ export const blogPosts: BlogPost[] = [
       { question: "Is a club table worth it for just 2 people?", answer: "For a milestone birthday where you want a genuinely premium experience, yes. The personal attention from your table host is concentrated, the atmosphere at intimate venues feels like a private celebration, and the night has a quality that a restaurant or bar can't match. It's a luxury choice, but it delivers a luxury experience." },
     ],
   },
+  {
+    slug: "40th-birthday-night-out-london",
+    title: "40th Birthday Night Out in London: Where Sophistication Meets Celebration",
+    metaTitle: "40th Birthday Night Out London — Refined Venues & Planning (2026)",
+    metaDescription: "The best London clubs for a 40th birthday celebration. Sophisticated venues, dinner-to-club options, and VIP experiences designed for milestone birthdays where quality matters most.",
+    excerpt: "Turning 40 is a milestone that demands more than just a big night — it demands the right night. Here are the venues and formats that deliver a 40th birthday worthy of the occasion.",
+    publishedAt: "2026-03-26",
+    updatedAt: "2026-03-26",
+    category: "Guide",
+    readTime: "7 min read",
+    sections: [
+      {
+        heading: "Why a 40th Birthday Deserves a Different Approach",
+        headingLevel: "h2" as const,
+        content: [
+          "A 40th birthday sits at a particular inflection point. The group is tighter — these are the people who have genuinely stuck around. The budget is more generous, but the tolerance for chaos is lower. Nobody wants to queue outside a nightclub at midnight in the cold. Nobody wants to shout over terrible music. What everyone wants is to feel that the evening was considered, that it matched the significance of the milestone.",
+          "The venues we recommend for 40th birthdays share common traits: exceptional service, refined atmospheres, food and drink that reward attention, and music that enhances rather than overwhelms conversation. These are not the clubs you went to at 21 — and that is entirely the point.",
+        ],
+      },
+      {
+        heading: "The Best Venues for a 40th Birthday in London",
+        headingLevel: "h2" as const,
+        content: [
+          "Maddox Club leads our recommendations for a reason. The Italian dinner-to-club format was practically designed for milestone birthdays: your group arrives for a genuinely excellent meal, the birthday toast happens over champagne and pasta, and the evening naturally evolves into a house-music-driven dancefloor without anyone needing to hail a taxi between venues. One booking, one location, an entire evening that builds in tempo. The house music policy attracts a mature, well-dressed crowd — the room matches the occasion.",
+          "Dear Darling is the choice for groups who prioritise elegance above all else. The chandeliered, velvet-draped interiors create the kind of environment where a champagne toast feels like a scene from a film. The cocktail programme is exceptional, the late-night hours extend the celebration, and the intimate capacity means your birthday is felt by the room rather than lost in it. For 40th birthdays where the guest list is deliberately small — 6 to 10 close friends — Dear Darling is difficult to beat.",
+          "Tape London suits the 40th birthday person who wants genuine exclusivity. The members' club atmosphere filters the crowd naturally, the sound system is built for music appreciation, and the service is quietly impeccable. With a higher minimum spend from £1,500, Tape attracts guests who understand what premium means. For intimate 40th celebrations of 6 to 8, it delivers an evening that feels privately curated.",
+          "Scotch of St James brings something no other venue can offer: heritage. The Hendrix-era history creates a warmth and character that modern clubs lack. For the birthday person who values personality over polish, Scotch's vintage-meets-luxury interiors provide a backdrop with genuine stories to tell. The eclectic music policy varies by night, so matching your group's taste requires checking in advance.",
+        ],
+      },
+      {
+        heading: "The Dinner-to-Club Format: Why It Works for a 40th",
+        headingLevel: "h2" as const,
+        content: [
+          "The most popular format for 40th birthdays is dinner followed by a club, and for good reason. It structures the evening into two distinct acts: the first is social, conversational, and centred around food and wine; the second is energetic, celebratory, and driven by music and atmosphere. This dual format means guests who prefer to leave after dinner can do so gracefully, while those who want to dance until close have a seamless transition.",
+          "Maddox Club handles this transition under one roof, which removes the logistical headache of coordinating two venues. If you prefer separate venues, start with a restaurant in Mayfair — the area around Berkeley Square, Mount Street, and Bruton Place has dozens of excellent options — then walk to your chosen club five minutes away. We can recommend pairings that work well together.",
+        ],
+      },
+      {
+        heading: "Budget Expectations for a 40th Birthday",
+        headingLevel: "h2" as const,
+        content: [
+          "A 40th birthday group tends to be smaller and more willing to spend. Typical groups of 8 to 12 with a £1,000 minimum spend translate to £83-125 per person. Many 40th birthday groups comfortably spend £150-200 per head when dinner is included — and consider it excellent value for an evening that includes a multi-course meal, premium bottles, VIP service, and a venue that matches the milestone.",
+          "For the dinner-to-club format at Maddox, budget approximately £50-70 per person for dinner plus the club minimum split across your group. The total per-person cost of £120-180 covers an entire evening from 9pm to 3am — often the best value-per-hour of premium entertainment in London.",
+        ],
+      },
+      {
+        heading: "Planning Timeline for a 40th Birthday",
+        headingLevel: "h2" as const,
+        content: [
+          "Book three to four weeks ahead for a 40th birthday, especially if your preferred date falls on a Friday or Saturday. Table positions at intimate venues like Tape and Scotch are limited, and the best spots go quickly. For Maddox, book dinner and club together to ensure the transition is seamless.",
+          "If you are organising this as a surprise, we can coordinate directly with you while keeping the details hidden from the birthday person. Many 40th birthdays involve an element of surprise — arriving at a beautifully decorated table, a sparkler-led bottle presentation timed to your moment, or a DJ shoutout that catches them off guard. We have handled hundreds of surprise celebrations and know exactly how to execute them.",
+        ],
+      },
+    ],
+    faqs: [
+      { question: "Where should I celebrate my 40th birthday in London?", answer: "Maddox Club is the top choice for its Italian dinner-to-club format, perfectly suited to a 40th. Dear Darling offers the most elegant setting for intimate groups. Tape London delivers genuine exclusivity. Scotch of St James provides heritage and character. The best choice depends on whether you prioritise food, atmosphere, exclusivity, or personality." },
+      { question: "Is a nightclub appropriate for a 40th birthday?", answer: "The right nightclub, absolutely. The venues we recommend for 40th birthdays are not the high-energy, youth-oriented clubs. They are sophisticated, service-driven venues with mature crowds, exceptional drinks, and atmospheres that reward quality over volume. The experience is closer to a premium members' club than a traditional nightclub." },
+      { question: "How much should I budget for a 40th birthday night out in London?", answer: "For dinner and a club table, budget £120-200 per person depending on venue choice and wine at dinner. For a club-only celebration, £83-125 per person for a group of 8-12 at a £1,000 minimum. 40th birthday groups tend to spend more willingly and enjoy the evening more as a result." },
+    ],
+  },
+  {
+    slug: "birthday-brunch-to-club-london",
+    title: "Birthday Brunch to Club in London: How to Plan the Ultimate Day-to-Night Celebration",
+    metaTitle: "Birthday Brunch to Club London — Day-to-Night Celebration Guide (2026)",
+    metaDescription: "Plan the ultimate birthday brunch to club celebration in London. Start with bottomless brunch, transition to a VIP club table. Full planning guide for day-into-night birthdays.",
+    excerpt: "Why limit your birthday to a few hours after dark? The brunch-to-club format turns a single evening into an all-day celebration — and it's becoming London's most popular birthday format.",
+    publishedAt: "2026-03-26",
+    updatedAt: "2026-03-26",
+    category: "Planning",
+    readTime: "8 min read",
+    sections: [
+      {
+        heading: "Why the Brunch-to-Club Format Is Taking Over London Birthdays",
+        headingLevel: "h2" as const,
+        content: [
+          "The traditional birthday format — meet at 10pm, queue outside a club, celebrate for four hours — is being replaced by something more ambitious. The brunch-to-club format extends your birthday from early afternoon to the early hours, creating a full day of celebration that moves through distinct phases: relaxed daytime dining, a social golden-hour transition, and an electric late-night finale at a premium venue.",
+          "This format works particularly well for birthdays because it accommodates everyone. Friends who cannot make a late night can join for brunch and still feel part of the celebration. The core group carries the energy through to the club. And the birthday person gets the rare luxury of an entire day dedicated to them — not just a few hours squeezed into a Saturday night.",
+        ],
+      },
+      {
+        heading: "Phase One: Birthday Brunch (1pm to 4pm)",
+        headingLevel: "h2" as const,
+        content: [
+          "The brunch sets the tone. For a birthday that leads into a Mayfair club night, choose a restaurant with energy — not a quiet café. You want a venue with a lively atmosphere, good cocktails or bottomless options, and enough space for your group to spread out and settle in. Mayfair, Soho, and Marylebone all have excellent brunch spots within walking distance of the clubs.",
+          "Budget approximately £40-60 per person for a birthday brunch with drinks. Bottomless brunch packages, where available, are popular for birthday groups and typically run 90 minutes to two hours. Book a private or semi-private area if your group exceeds 12 — this prevents the group splitting across multiple tables and losing the celebratory cohesion.",
+          "Timing matters. A 1pm start gives your group three hours of brunch before the next phase. Starting much earlier risks the energy dipping before the evening arrives; starting later compresses the transition and leaves less recovery time.",
+        ],
+      },
+      {
+        heading: "Phase Two: The Transition (4pm to 9pm)",
+        headingLevel: "h2" as const,
+        content: [
+          "This is the phase most birthday planners overlook, and getting it right separates a good day from a great one. After brunch, your group needs a change of scenery and pace before the club. Options include a cocktail bar with a relaxed afternoon atmosphere, a hotel bar with comfortable seating, or simply heading home to change outfits and recharge.",
+          "The smartest approach: book a late-afternoon cocktail session at a venue like Dear Darling, where the opulent interiors provide an Instagram-worthy backdrop and the cocktail programme bridges the gap between afternoon and evening. This also positions your group in Mayfair, ready for the club without needing to travel.",
+          "For groups that prefer to reset at home, ensure everyone knows the evening meet-up time and location clearly. Losing momentum during the transition is the biggest risk to the brunch-to-club format — a firm 10pm regrouping time keeps the day on track.",
+        ],
+      },
+      {
+        heading: "Phase Three: The Club (10:30pm to Close)",
+        headingLevel: "h2" as const,
+        content: [
+          "By the time your group arrives at the club, the birthday has already had hours of celebration behind it — and this final phase is the exclamation point. A VIP table booking ensures your group walks straight in with priority entry, settles into a reserved area, and picks up the energy with premium bottles and the anticipation of a room filling around you.",
+          "For brunch-to-club birthdays, we particularly recommend Cirque Le Soir for groups who want spectacle — the live performers and pyrotechnics provide a dramatic shift from the daytime atmosphere. Cuckoo Club works well for groups with mixed music tastes, offering house upstairs and hip-hop downstairs. Funky Buddha delivers the intimate, high-energy finale that caps a long day perfectly.",
+          "Time your bottle presentation and birthday cake for around 11:30pm to midnight, when the room is full and the energy is at its peak. The sparklers, DJ shoutout, and cheering from your group create a moment that elevates the entire day into something genuinely memorable.",
+        ],
+      },
+      {
+        heading: "Budget for the Full Day",
+        headingLevel: "h2" as const,
+        content: [
+          "A complete brunch-to-club birthday costs approximately £120-180 per person when all phases are included. This breaks down to roughly £40-60 for brunch, £20-30 for the transition cocktails, and £50-100 for the club table share. For a group of 12 splitting a £1,000 club minimum, the table element alone is just £83 per person.",
+          "This per-person total covers an entire day of celebration — eight or more hours of premium experiences across multiple venues. Compare that to a single restaurant dinner at £80-120 per person for two hours, and the brunch-to-club format delivers significantly more value per pound spent.",
+        ],
+      },
+      {
+        heading: "Best Clubs for a Brunch-to-Club Birthday",
+        headingLevel: "h2" as const,
+        content: [
+          "Cirque Le Soir is ideal for groups who want the evening finale to be an event in itself. After a long day of brunch and cocktails, arriving at Cirque to fire-breathers and acrobats feels like walking into another dimension. The sensory overload is the perfect contrast to a relaxed daytime celebration.",
+          "Cuckoo Club suits groups where not everyone wants the same music. After a day of socialising, having two floors with different sounds means your group can split and reconvene naturally. The Swallow Street location is also perfectly central for a Mayfair-based brunch-to-club itinerary.",
+          "Funky Buddha provides the intimate, legendary atmosphere that caps a birthday day perfectly. The hip-hop and RnB playlist is familiar and celebratory, the room is compact enough that your group's energy fills it, and the Berkeley Street location is walking distance from most Mayfair brunch spots.",
+        ],
+      },
+    ],
+    faqs: [
+      { question: "Can you do a brunch and club on the same day in London?", answer: "Absolutely — it's becoming one of the most popular birthday formats. Start with brunch around 1pm, transition through cocktails in the afternoon, and arrive at the club by 10:30pm. The key is pacing: the transition period between brunch and club prevents fatigue and keeps the energy building." },
+      { question: "How much does a brunch-to-club birthday cost?", answer: "Budget approximately £120-180 per person for the full day: £40-60 for brunch with drinks, £20-30 for afternoon cocktails, and £50-100 for your share of the club table minimum. A group of 12 splitting a £1,000 table minimum pays roughly £83 each for the club element." },
+      { question: "What time should we arrive at the club after brunch?", answer: "Aim for 10:30-11pm. This gives you time after brunch to transition, change outfits if needed, and arrive at the club as the atmosphere builds. Arriving too early means a quieter start; too late and you miss the build-up. Time your birthday bottle presentation for midnight when energy peaks." },
+    ],
+  },
 ];
 
 export function getBlogPostBySlug(slug: string): BlogPost | undefined {

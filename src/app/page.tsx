@@ -61,15 +61,16 @@ export default function HomePage() {
             unforgettable nights at Mayfair&apos;s finest venues. We plan
             everything — you just celebrate.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <WhatsAppCTA
               message={getGeneralWhatsAppMessage()}
               label="Plan My Birthday"
               size="large"
+              className="min-w-[220px] justify-center"
             />
             <Link
               href="/best-birthday-clubs-london"
-              className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-gold border border-gold/30 hover:bg-gold/10 rounded-lg transition-all"
+              className="inline-flex items-center justify-center min-w-[220px] px-8 py-4 text-lg font-semibold text-gold border border-gold/30 hover:bg-gold/10 rounded-lg transition-all"
             >
               Explore Clubs
             </Link>
