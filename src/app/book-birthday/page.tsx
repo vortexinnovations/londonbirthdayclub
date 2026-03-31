@@ -26,7 +26,7 @@ export default function BookBirthdayPage() {
           <h1 className="text-4xl sm:text-5xl font-bold tracking-tight mb-6">
             Book Your <span className="text-gold">Birthday</span>
           </h1>
-          <p className="text-lg text-text-secondary max-w-xl mx-auto mb-10 leading-relaxed">
+          <p className="text-lg text-white max-w-xl mx-auto mb-10 leading-relaxed [text-shadow:0_2px_8px_rgba(0,0,0,0.8)]">
             No forms. No waiting. Just message us on WhatsApp with your
             birthday details and we&apos;ll have your night sorted within
             minutes. Our service is completely free.
