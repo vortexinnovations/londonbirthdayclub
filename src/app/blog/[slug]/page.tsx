@@ -84,7 +84,7 @@ export default async function BlogPostPage({
 
       {/* Header */}
       <article>
-        <header className="pt-24 pb-8 px-4">
+        <div className="pt-24 pb-8 px-4">
           <div className="max-w-3xl mx-auto">
             <Link
               href="/blog"
@@ -115,7 +115,7 @@ export default async function BlogPostPage({
               <Image src={getBlogImage(post.slug)} alt={post.title} fill className="object-cover" priority sizes="(max-width: 768px) 100vw, 768px" />
             </div>
           </div>
-        </header>
+        </div>
 
         {/* Body */}
         <div className="py-10 px-4">
