@@ -84,13 +84,10 @@ export default async function BlogPostPage({
 
       {/* Header */}
       <article>
-        {/* Featured image */}
-        <div className="relative w-full aspect-[21/9] max-h-[400px]">
+        <header className="relative min-h-[50vh] flex items-end px-4 pb-12 pt-28">
           <Image src={getBlogImage(post.slug)} alt={post.title} fill className="object-cover" priority sizes="100vw" />
-        </div>
-
-        <header className="py-12 sm:py-16 px-4">
-          <div className="max-w-3xl mx-auto">
+          <div className="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-black/30" />
+          <div className="max-w-3xl mx-auto relative z-10 w-full">
             <Link
               href="/blog"
               className="text-gold text-sm hover:underline mb-4 inline-block"
