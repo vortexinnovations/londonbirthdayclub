@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
+import { images } from "@/lib/images";
 import { openClubs, getGeneralWhatsAppMessage } from "@/lib/clubs";
 import WhatsAppCTA from "@/components/WhatsAppCTA";
 import FAQSchema from "@/components/FAQSchema";
@@ -145,9 +147,10 @@ export default function BestClubsPage() {
       <ItemListSchema name="Best Birthday Clubs in London 2026" description="13 London nightclubs ranked for birthday celebrations, based on atmosphere, service, entertainment, and birthday-specific features." items={itemListItems} />
       <ArticleSchema title="13 Best Birthday Clubs in London — Ranked by Real Experience" description="Honest, ranked guide to the best London nightclubs for birthday celebrations." url="https://londonbirthdayclub.com/best-birthday-clubs-london" />
 
-      <section className="relative py-20 sm:py-28 px-4">
-        <div className="absolute inset-0 bg-gradient-to-b from-gold/5 via-transparent to-transparent" />
-        <div className="max-w-4xl mx-auto relative">
+      <section className="relative min-h-[50vh] flex items-center justify-center px-4">
+        <Image src={images.hero.bestClubs} alt="Best birthday clubs in London" fill className="object-cover" priority sizes="100vw" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-black/30" />
+        <div className="max-w-4xl mx-auto relative z-10">
           <h1 className="text-4xl sm:text-5xl font-bold tracking-tight mb-6">
             Best Clubs for a Birthday in{" "}
             <span className="text-gold">London</span>

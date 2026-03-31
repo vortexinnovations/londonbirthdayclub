@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
+import { images } from "@/lib/images";
 import { openClubs, getPricingWhatsAppMessage } from "@/lib/clubs";
 import WhatsAppCTA from "@/components/WhatsAppCTA";
 import FAQSchema from "@/components/FAQSchema";
@@ -27,9 +29,10 @@ export default function BirthdayTablePricesPage() {
       <BreadcrumbSchema items={[{ name: "Home", href: "/" }, { name: "Birthday Table Prices London", href: "/birthday-table-prices-london" }]} />
       <ArticleSchema title="Birthday Table Prices London 2026" description="Complete guide to birthday table prices at London nightclubs." url="https://londonbirthdayclub.com/birthday-table-prices-london" />
 
-      <section className="relative py-20 sm:py-28 px-4">
-        <div className="absolute inset-0 bg-gradient-to-b from-gold/5 via-transparent to-transparent" />
-        <div className="max-w-4xl mx-auto relative text-center">
+      <section className="relative min-h-[50vh] flex items-center justify-center px-4">
+        <Image src={images.hero.tablePrices} alt="Birthday table with bottle service and sparklers in London" fill className="object-cover" priority sizes="100vw" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-black/30" />
+        <div className="max-w-4xl mx-auto relative z-10 text-center">
           <h1 className="text-4xl sm:text-5xl font-bold tracking-tight mb-6">Birthday Table Prices in <span className="text-gold">London</span></h1>
           <p className="text-lg text-text-secondary max-w-2xl mx-auto leading-relaxed mb-4">
             A transparent breakdown of what birthday tables actually cost at London&apos;s best nightclubs. No hidden fees, no guesswork — just honest pricing to help you plan your budget.

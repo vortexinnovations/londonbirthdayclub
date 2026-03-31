@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
+import { images } from "@/lib/images";
 import { getGeneralWhatsAppMessage } from "@/lib/clubs";
 import WhatsAppCTA from "@/components/WhatsAppCTA";
 import FAQSchema from "@/components/FAQSchema";
@@ -64,9 +66,10 @@ export default function PlanBirthdayPage() {
       <FAQSchema faqs={faqs} />
       <ArticleSchema title="How to Plan a Birthday at a London Club" description="Step-by-step guide to planning a birthday at a London nightclub." url="https://londonbirthdayclub.com/plan-birthday-london-club" />
 
-      <section className="relative py-20 sm:py-28 px-4">
-        <div className="absolute inset-0 bg-gradient-to-b from-gold/5 via-transparent to-transparent" />
-        <div className="max-w-4xl mx-auto relative">
+      <section className="relative min-h-[50vh] flex items-center justify-center px-4">
+        <Image src={images.hero.planBirthday} alt="Planning a birthday night at a London club" fill className="object-cover" priority sizes="100vw" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-black/30" />
+        <div className="max-w-4xl mx-auto relative z-10">
           <h1 className="text-4xl sm:text-5xl font-bold tracking-tight mb-6">
             How to Plan a Birthday at a{" "}
             <span className="text-gold">London Nightclub</span>

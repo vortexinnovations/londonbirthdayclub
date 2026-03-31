@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { blogPosts, type BlogPost } from "@/lib/blog";
 import { getGeneralWhatsAppMessage } from "@/lib/clubs";
 import WhatsAppCTA from "@/components/WhatsAppCTA";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
+import { getBlogImage } from "@/lib/images";
 
 export const metadata: Metadata = {
   title: "Birthday Planning Blog | Tips, Guides & Ideas for London Birthdays",
@@ -18,23 +20,28 @@ function PostCard({ post }: { post: BlogPost }) {
   return (
     <Link
       href={`/blog/${post.slug}`}
-      className="group block bg-bg-card hover:bg-bg-card-hover border border-border hover:border-gold/30 rounded-xl p-6 transition-all"
+      className="group block bg-bg-card hover:bg-bg-card-hover border border-border hover:border-gold/30 rounded-xl overflow-hidden transition-all"
     >
-      <div className="flex items-center gap-3 mb-3">
-        <span className="text-xs bg-gold/10 text-gold px-2 py-1 rounded">
-          {post.category}
-        </span>
-        <span className="text-xs text-text-muted">{post.readTime}</span>
+      <div className="relative aspect-[3/2] overflow-hidden">
+        <Image src={getBlogImage(post.slug)} alt={post.title} fill className="object-cover group-hover:scale-105 transition-transform duration-500" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
       </div>
-      <h2 className="text-xl font-semibold mb-2 group-hover:text-gold transition-colors">
-        {post.title}
-      </h2>
-      <p className="text-text-secondary text-sm leading-relaxed mb-4">
-        {post.excerpt}
-      </p>
-      <span className="text-gold text-sm font-medium group-hover:underline">
-        Read more &rarr;
-      </span>
+      <div className="p-6">
+        <div className="flex items-center gap-3 mb-3">
+          <span className="text-xs bg-gold/10 text-gold px-2 py-1 rounded">
+            {post.category}
+          </span>
+          <span className="text-xs text-text-muted">{post.readTime}</span>
+        </div>
+        <h2 className="text-xl font-semibold mb-2 group-hover:text-gold transition-colors">
+          {post.title}
+        </h2>
+        <p className="text-text-secondary text-sm leading-relaxed mb-4">
+          {post.excerpt}
+        </p>
+        <span className="text-gold text-sm font-medium group-hover:underline">
+          Read more &rarr;
+        </span>
+      </div>
     </Link>
   );
 }

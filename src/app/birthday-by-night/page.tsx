@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
+import { images } from "@/lib/images";
 import { getGeneralWhatsAppMessage } from "@/lib/clubs";
 import WhatsAppCTA from "@/components/WhatsAppCTA";
 import FAQSchema from "@/components/FAQSchema";
@@ -143,9 +145,10 @@ export default function BirthdayByNightPage() {
       <FAQSchema faqs={faqs} />
       <BreadcrumbSchema items={[{ name: "Home", href: "/" }, { name: "Birthday by Night", href: "/birthday-by-night" }]} />
 
-      <section className="relative py-20 sm:py-28 px-4">
-        <div className="absolute inset-0 bg-gradient-to-b from-gold/5 via-transparent to-transparent" />
-        <div className="max-w-4xl mx-auto relative">
+      <section className="relative min-h-[50vh] flex items-center justify-center px-4">
+        <Image src={images.hero.birthdayByNight} alt="London nightclub atmosphere on different nights of the week" fill className="object-cover" priority sizes="100vw" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-black/30" />
+        <div className="max-w-4xl mx-auto relative z-10">
           <h1 className="text-4xl sm:text-5xl font-bold tracking-tight mb-6">
             Best Night for a Birthday in{" "}
             <span className="text-gold">London</span>

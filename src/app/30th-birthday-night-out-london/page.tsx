@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
+import { images } from "@/lib/images";
 import { openClubs, getMilestoneWhatsAppMessage } from "@/lib/clubs";
 import WhatsAppCTA from "@/components/WhatsAppCTA";
 import FAQSchema from "@/components/FAQSchema";
@@ -32,9 +34,10 @@ export default function ThirtiethBirthdayPage() {
       <FAQSchema faqs={faqs} />
       <BreadcrumbSchema items={[{ name: "Home", href: "/" }, { name: "30th Birthday Night Out London", href: "/30th-birthday-night-out-london" }]} />
 
-      <section className="relative py-20 sm:py-28 px-4">
-        <div className="absolute inset-0 bg-gradient-to-b from-gold/5 via-transparent to-transparent" />
-        <div className="max-w-4xl mx-auto relative text-center">
+      <section className="relative min-h-[50vh] flex items-center justify-center px-4">
+        <Image src={images.hero.thirtieth} alt="30th birthday night out at a sophisticated London venue" fill className="object-cover" priority sizes="100vw" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-black/30" />
+        <div className="max-w-4xl mx-auto relative z-10 text-center">
           <h1 className="text-4xl sm:text-5xl font-bold tracking-tight mb-6">30th Birthday Night Out in <span className="text-gold">London</span></h1>
           <p className="text-lg text-text-secondary max-w-2xl mx-auto leading-relaxed mb-8">
             Turning 30 calls for quality, not chaos. The right venue, exceptional service, and an evening that feels worthy of the milestone. This is your guide to celebrating 30 with the sophistication it deserves.

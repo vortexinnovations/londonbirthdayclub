@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { openClubs, getGeneralWhatsAppMessage } from "@/lib/clubs";
 import ClubCard from "@/components/ClubCard";
@@ -6,6 +7,7 @@ import WhatsAppCTA from "@/components/WhatsAppCTA";
 import FAQSchema from "@/components/FAQSchema";
 import TrustSignals from "@/components/TrustSignals";
 import ClubComparisonModule from "@/components/ClubComparisonModule";
+import { images } from "@/lib/images";
 
 export const metadata: Metadata = {
   title:
@@ -49,9 +51,10 @@ export default function HomePage() {
       <FAQSchema faqs={faqs} />
 
       {/* Hero Section */}
-      <section className="relative py-24 sm:py-32 lg:py-40 px-4">
-        <div className="absolute inset-0 bg-gradient-to-b from-gold/5 via-transparent to-transparent" />
-        <div className="max-w-4xl mx-auto text-center relative">
+      <section className="relative min-h-[70vh] flex items-center justify-center px-4">
+        <Image src={images.hero.homepage} alt="VIP birthday celebration at a London nightclub" fill className="object-cover" priority sizes="100vw" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-black/30" />
+        <div className="max-w-4xl mx-auto text-center relative z-10">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
             Celebrate Your Birthday at London&apos;s{" "}
             <span className="text-gold">Most Exclusive Nightclubs</span>

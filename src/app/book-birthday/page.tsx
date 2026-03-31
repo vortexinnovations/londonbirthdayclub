@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
+import { images } from "@/lib/images";
 import { getGeneralWhatsAppMessage } from "@/lib/clubs";
 import WhatsAppCTA from "@/components/WhatsAppCTA";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
@@ -17,9 +19,10 @@ export default function BookBirthdayPage() {
   return (
     <>
       <BreadcrumbSchema items={[{ name: "Home", href: "/" }, { name: "Book Your Birthday", href: "/book-birthday" }]} />
-      <section className="relative py-24 sm:py-32 px-4">
-        <div className="absolute inset-0 bg-gradient-to-b from-gold/5 via-transparent to-transparent" />
-        <div className="max-w-3xl mx-auto text-center relative">
+      <section className="relative min-h-[50vh] flex items-center justify-center px-4">
+        <Image src={images.hero.bookBirthday} alt="Book your birthday celebration at a London club" fill className="object-cover" priority sizes="100vw" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-black/30" />
+        <div className="max-w-3xl mx-auto text-center relative z-10">
           <h1 className="text-4xl sm:text-5xl font-bold tracking-tight mb-6">
             Book Your <span className="text-gold">Birthday</span>
           </h1>

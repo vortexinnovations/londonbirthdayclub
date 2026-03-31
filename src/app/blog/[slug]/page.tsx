@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { blogPosts, getBlogPostBySlug } from "@/lib/blog";
 import { getGeneralWhatsAppMessage } from "@/lib/clubs";
 import WhatsAppCTA from "@/components/WhatsAppCTA";
 import FAQSchema from "@/components/FAQSchema";
+import { getBlogImage } from "@/lib/images";
 
 export async function generateStaticParams() {
   return blogPosts.map((post) => ({ slug: post.slug }));
@@ -82,9 +84,14 @@ export default async function BlogPostPage({
 
       {/* Header */}
       <article>
-        <header className="relative py-20 sm:py-28 px-4">
-          <div className="absolute inset-0 bg-gradient-to-b from-gold/5 via-transparent to-transparent" />
-          <div className="max-w-3xl mx-auto relative">
+        {/* Featured image */}
+        <div className="relative w-full aspect-[21/9] max-h-[400px]">
+          <Image src={getBlogImage(post.slug)} alt={post.title} fill className="object-cover" priority sizes="100vw" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />
+        </div>
+
+        <header className="relative py-12 sm:py-16 px-4 -mt-20">
+          <div className="max-w-3xl mx-auto relative z-10">
             <Link
               href="/blog"
               className="text-gold text-sm hover:underline mb-4 inline-block"
