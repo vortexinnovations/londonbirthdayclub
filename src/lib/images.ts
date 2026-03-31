@@ -6,9 +6,9 @@ export const images = {
   hero: {
     homepage: "/gallery/images/TapeSaturdayNYE311222-130.jpg",
     birthdayClubs: "/gallery/images/TapeFriday041024PartyNextDoor-279.jpg",
-    tableBooking: "/gallery/images/Tape-259.jpg",
+    tableBooking: "/gallery/images/TapeSaturdayNYE311222-118.jpg",
     bestClubs: "/gallery/images/TapeSaturday191024-102.jpg",
-    planBirthday: "/gallery/images/fe4414_7e3d6b3e12ed4f2fb2a3aac3e23d3d5a.jpg",
+    planBirthday: "/gallery/images/Tape-156.jpg",
     birthdayByAge: "/gallery/images/TapeFriday041024PartyNextDoor-333.jpg",
     birthdayByNight: "/gallery/images/fe4414_5d8f12e99e584d0b93b8b67bc4f85e27.jpg",
     bookBirthday: "/gallery/images/Tape-3.jpg",
