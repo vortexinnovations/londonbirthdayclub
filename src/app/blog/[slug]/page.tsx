@@ -84,10 +84,8 @@ export default async function BlogPostPage({
 
       {/* Header */}
       <article>
-        <header className="relative min-h-[50vh] flex items-end px-4 pb-12 pt-28">
-          <Image src={getBlogImage(post.slug)} alt={post.title} fill className="object-cover" priority sizes="100vw" />
-          <div className="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-black/30" />
-          <div className="max-w-3xl mx-auto relative z-10 w-full">
+        <header className="pt-24 pb-8 px-4">
+          <div className="max-w-3xl mx-auto">
             <Link
               href="/blog"
               className="text-gold text-sm hover:underline mb-4 inline-block"
@@ -107,12 +105,15 @@ export default async function BlogPostPage({
                 })}
               </span>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight mb-6">
+            <h1 className="text-3xl sm:text-4xl font-bold tracking-tight mb-4">
               {post.title}
             </h1>
-            <p className="text-lg text-text-secondary leading-relaxed">
+            <p className="text-text-secondary leading-relaxed mb-8">
               {post.excerpt}
             </p>
+            <div className="relative w-full aspect-video rounded-xl overflow-hidden">
+              <Image src={getBlogImage(post.slug)} alt={post.title} fill className="object-cover" priority sizes="(max-width: 768px) 100vw, 768px" />
+            </div>
           </div>
         </header>
 
