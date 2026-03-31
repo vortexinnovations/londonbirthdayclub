@@ -4,9 +4,9 @@
 export const images = {
   // Hero backgrounds
   hero: {
-    homepage: "/gallery/images/Tape-1.jpg",
+    homepage: "/gallery/images/TapeSaturdayNYE311222-130.jpg",
     birthdayClubs: "/gallery/images/TapeFriday041024PartyNextDoor-279.jpg",
-    tableBooking: "/gallery/images/fe4414_a89cf5c921a0484c8f000d2bcb459d2c.jpg",
+    tableBooking: "/gallery/images/Tape-259.jpg",
     bestClubs: "/gallery/images/TapeSaturday191024-102.jpg",
     planBirthday: "/gallery/images/fe4414_7e3d6b3e12ed4f2fb2a3aac3e23d3d5a.jpg",
     birthdayByAge: "/gallery/images/TapeFriday041024PartyNextDoor-333.jpg",
