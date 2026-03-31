@@ -39,7 +39,7 @@ export default function EighteenthBirthdayPage() {
         <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-black/30" />
         <div className="max-w-4xl mx-auto relative z-10 text-center">
           <h1 className="text-4xl sm:text-5xl font-bold tracking-tight mb-6">18th Birthday Clubs in <span className="text-gold">London</span></h1>
-          <p className="text-lg text-text-secondary max-w-2xl mx-auto leading-relaxed mb-8">
+          <p className="text-lg text-white max-w-2xl [text-shadow:0_2px_8px_rgba(0,0,0,0.8)] mx-auto leading-relaxed mb-8">
             Your first legal night out deserves better than a random bar. Celebrate turning 18 at one of London&apos;s best nightclubs with VIP tables, bottle service, and the kind of spectacle that makes this birthday genuinely unforgettable.
           </p>
           <WhatsAppCTA message={getMilestoneWhatsAppMessage("18th")} label="Plan My 18th Birthday" size="large" />

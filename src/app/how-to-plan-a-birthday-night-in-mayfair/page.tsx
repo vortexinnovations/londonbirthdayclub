@@ -35,7 +35,7 @@ export default function MayfairBirthdayPage() {
         <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-black/30" />
         <div className="max-w-4xl mx-auto relative z-10 text-center">
           <h1 className="text-4xl sm:text-5xl font-bold tracking-tight mb-6">How to Plan a Birthday Night in <span className="text-gold">Mayfair</span></h1>
-          <p className="text-lg text-text-secondary max-w-2xl mx-auto leading-relaxed mb-8">
+          <p className="text-lg text-white max-w-2xl [text-shadow:0_2px_8px_rgba(0,0,0,0.8)] mx-auto leading-relaxed mb-8">
             Mayfair is London&apos;s premier nightlife district — the highest concentration of luxury clubs in the city, all within walking distance. Here&apos;s everything you need to plan a birthday celebration in London&apos;s most exclusive neighbourhood.
           </p>
           <WhatsAppCTA message={getGeneralWhatsAppMessage()} label="Plan My Mayfair Birthday" size="large" />

@@ -153,7 +153,7 @@ export default function BirthdayByNightPage() {
             Best Night for a Birthday in{" "}
             <span className="text-gold">London</span>
           </h1>
-          <p className="text-lg text-text-secondary max-w-2xl leading-relaxed">
+          <p className="text-lg text-white max-w-2xl [text-shadow:0_2px_8px_rgba(0,0,0,0.8)] leading-relaxed">
             Your birthday doesn&apos;t have to fall on a Saturday to be
             incredible. Here&apos;s how each night of the week compares for
             birthday celebrations — atmosphere, pricing, and which clubs are

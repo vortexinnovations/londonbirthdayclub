@@ -36,7 +36,7 @@ export default function GroupNightOutPage() {
           <h1 className="text-4xl sm:text-5xl font-bold tracking-tight mb-6">
             Group Night Out in <span className="text-gold">London</span>
           </h1>
-          <p className="text-lg text-text-secondary max-w-2xl mx-auto leading-relaxed mb-8">
+          <p className="text-lg text-white max-w-2xl [text-shadow:0_2px_8px_rgba(0,0,0,0.8)] mx-auto leading-relaxed mb-8">
             Whether it&apos;s a birthday, hen night, work celebration, or any excuse to get your group together — we&apos;ll sort VIP tables, bottle service, and everything else at London&apos;s best clubs. Free booking, zero hassle.
           </p>
           <WhatsAppCTA message={getGroupWhatsAppMessage()} label="Plan Our Group Night" size="large" />

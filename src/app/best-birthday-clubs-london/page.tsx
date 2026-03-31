@@ -155,14 +155,14 @@ export default function BestClubsPage() {
             Best Clubs for a Birthday in{" "}
             <span className="text-gold">London</span>
           </h1>
-          <p className="text-lg text-text-secondary max-w-2xl leading-relaxed mb-4">
+          <p className="text-lg text-white max-w-2xl leading-relaxed mb-4 [text-shadow:0_2px_8px_rgba(0,0,0,0.8)]">
             An honest, opinionated guide to the best London nightclubs for
             birthday celebrations. We&apos;ve helped plan hundreds of birthday
             nights — these are the venues that consistently deliver
             unforgettable celebrations, ranked by how well they handle birthdays
             specifically.
           </p>
-          <p className="text-text-muted text-sm">
+          <p className="text-white/70 text-sm [text-shadow:0_2px_8px_rgba(0,0,0,0.8)]">
             Updated for 2026. Every venue personally vetted.
           </p>
         </div>

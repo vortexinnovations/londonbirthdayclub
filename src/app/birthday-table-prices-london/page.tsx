@@ -34,10 +34,10 @@ export default function BirthdayTablePricesPage() {
         <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-black/30" />
         <div className="max-w-4xl mx-auto relative z-10 text-center">
           <h1 className="text-4xl sm:text-5xl font-bold tracking-tight mb-6">Birthday Table Prices in <span className="text-gold">London</span></h1>
-          <p className="text-lg text-text-secondary max-w-2xl mx-auto leading-relaxed mb-4">
+          <p className="text-lg text-white max-w-2xl [text-shadow:0_2px_8px_rgba(0,0,0,0.8)] mx-auto leading-relaxed mb-4">
             A transparent breakdown of what birthday tables actually cost at London&apos;s best nightclubs. No hidden fees, no guesswork — just honest pricing to help you plan your budget.
           </p>
-          <p className="text-text-muted text-sm mb-8">Updated for 2026. All prices are starting minimums — contact us for exact quotes.</p>
+          <p className="text-white/70 text-sm mb-8 [text-shadow:0_2px_8px_rgba(0,0,0,0.8)]">Updated for 2026. All prices are starting minimums — contact us for exact quotes.</p>
         </div>
       </section>
 

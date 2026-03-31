@@ -74,7 +74,7 @@ export default function PlanBirthdayPage() {
             How to Plan a Birthday at a{" "}
             <span className="text-gold">London Nightclub</span>
           </h1>
-          <p className="text-lg text-text-secondary max-w-2xl leading-relaxed">
+          <p className="text-lg text-white max-w-2xl leading-relaxed [text-shadow:0_2px_8px_rgba(0,0,0,0.8)]">
             Everything you need to know about planning a birthday celebration at
             a London club — from choosing the right venue and understanding
             minimum spends to handling group payments and knowing what to expect

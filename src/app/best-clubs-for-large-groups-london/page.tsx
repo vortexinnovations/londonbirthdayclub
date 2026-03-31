@@ -53,7 +53,7 @@ export default function LargeGroupsPage() {
         <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-black/30" />
         <div className="max-w-4xl mx-auto relative z-10 text-center">
           <h1 className="text-4xl sm:text-5xl font-bold tracking-tight mb-6">Best Clubs for <span className="text-gold">Large Groups</span> in London</h1>
-          <p className="text-lg text-text-secondary max-w-2xl mx-auto leading-relaxed mb-8">
+          <p className="text-lg text-white max-w-2xl [text-shadow:0_2px_8px_rgba(0,0,0,0.8)] mx-auto leading-relaxed mb-8">
             Planning a birthday with 15, 20, or 30+ guests? These venues handle large groups without cramping the celebration. Multi-table configurations, space to spread out, and atmospheres that get better with bigger numbers.
           </p>
           <WhatsAppCTA message={getGeneralWhatsAppMessage()} label="Plan Large Group Booking" size="large" />

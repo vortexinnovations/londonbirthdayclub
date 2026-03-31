@@ -207,7 +207,7 @@ export default function BirthdayByAgePage() {
             Best London Clubs by{" "}
             <span className="text-gold">Birthday Milestone</span>
           </h1>
-          <p className="text-lg text-text-secondary max-w-2xl leading-relaxed">
+          <p className="text-lg text-white max-w-2xl [text-shadow:0_2px_8px_rgba(0,0,0,0.8)] leading-relaxed">
             Different ages call for different celebrations. A 21st birthday
             crew wants a completely different vibe from a 40th. Here&apos;s our
             honest guide to matching the right London club to your milestone
