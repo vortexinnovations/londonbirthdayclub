@@ -53,13 +53,13 @@ export default function HomePage() {
       {/* Hero Section */}
       <section className="relative min-h-[70vh] flex items-center justify-center px-4">
         <Image src={images.hero.homepage} alt="VIP birthday celebration at a London nightclub" fill className="object-cover" priority sizes="100vw" />
-        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-black/30" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-black/40" />
         <div className="max-w-4xl mx-auto text-center relative z-10">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
             Celebrate Your Birthday at London&apos;s{" "}
             <span className="text-gold">Most Exclusive Nightclubs</span>
           </h1>
-          <p className="text-lg sm:text-xl text-text-secondary max-w-2xl mx-auto mb-8 leading-relaxed">
+          <p className="text-lg sm:text-xl text-white max-w-2xl mx-auto mb-8 leading-relaxed [text-shadow:0_2px_8px_rgba(0,0,0,0.8)]">
             VIP tables, bottle service, sparklers, birthday cakes, and
             unforgettable nights at Mayfair&apos;s finest venues. We plan
             everything — you just celebrate.
