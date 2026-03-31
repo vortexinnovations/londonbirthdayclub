@@ -87,11 +87,10 @@ export default async function BlogPostPage({
         {/* Featured image */}
         <div className="relative w-full aspect-[21/9] max-h-[400px]">
           <Image src={getBlogImage(post.slug)} alt={post.title} fill className="object-cover" priority sizes="100vw" />
-          <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />
         </div>
 
-        <header className="relative py-12 sm:py-16 px-4 -mt-20">
-          <div className="max-w-3xl mx-auto relative z-10">
+        <header className="py-12 sm:py-16 px-4">
+          <div className="max-w-3xl mx-auto">
             <Link
               href="/blog"
               className="text-gold text-sm hover:underline mb-4 inline-block"
