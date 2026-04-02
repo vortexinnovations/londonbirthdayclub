@@ -47,6 +47,7 @@ function PostCard({ post }: { post: BlogPost }) {
 }
 
 export default function BlogIndexPage() {
+  const sortedPosts = [...blogPosts].sort((a, b) => b.publishedAt.localeCompare(a.publishedAt));
   const categories = [...new Set(blogPosts.map((p) => p.category))];
 
   return (
@@ -90,22 +91,22 @@ export default function BlogIndexPage() {
               Latest
             </h2>
             <Link
-              href={`/blog/${blogPosts[0].slug}`}
+              href={`/blog/${sortedPosts[0].slug}`}
               className="group block bg-bg-card hover:bg-bg-card-hover border border-border hover:border-gold/30 rounded-xl p-8 transition-all"
             >
               <div className="flex items-center gap-3 mb-4">
                 <span className="text-xs bg-gold/10 text-gold px-2 py-1 rounded">
-                  {blogPosts[0].category}
+                  {sortedPosts[0].category}
                 </span>
                 <span className="text-xs text-text-muted">
-                  {blogPosts[0].readTime}
+                  {sortedPosts[0].readTime}
                 </span>
               </div>
               <h3 className="text-2xl sm:text-3xl font-bold mb-3 group-hover:text-gold transition-colors">
-                {blogPosts[0].title}
+                {sortedPosts[0].title}
               </h3>
               <p className="text-text-secondary leading-relaxed mb-4 max-w-2xl">
-                {blogPosts[0].excerpt}
+                {sortedPosts[0].excerpt}
               </p>
               <span className="text-gold font-medium group-hover:underline">
                 Read the full guide &rarr;
@@ -122,7 +123,7 @@ export default function BlogIndexPage() {
             All Articles
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {blogPosts.slice(1).map((post) => (
+            {sortedPosts.slice(1).map((post) => (
               <PostCard key={post.slug} post={post} />
             ))}
           </div>
