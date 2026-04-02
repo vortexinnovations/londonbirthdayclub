@@ -96,6 +96,7 @@ export const images = {
     "couples-birthday-london-intimate-celebration": "/gallery/images/Tape-104.jpg",
     "40th-birthday-night-out-london": "/gallery/images/NL_TAPE_CLEAN_1229_545.jpg",
     "birthday-brunch-to-club-london": "/gallery/images/TapeSaturdayNYE311222-114.jpg",
+    "tipping-etiquette-london-nightclubs-birthday": "/gallery/images/fe4414_c855b43f41f44f79891ae18f1e6a765c.jpg",
   },
 } as const;
 
