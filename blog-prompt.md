@@ -104,46 +104,17 @@ Select ONE topic that:
 
 Images are stored in a Supabase public bucket. Blog posts reference images via `/gallery/images/FILENAME`.
 
-**SETUP REQUIREMENT:** The project root must contain a `.env` file with `SUPABASE_SECRET_KEY` set to the Supabase secret key for this project. Ask the project owner if you do not have the key. This file is gitignored and must never be committed.
+Fetch the list of available images from the tracker repo (all sites share the same image pool):
 
-**Fetch the full image list (reads key from .env at runtime):**
+Read `images.json` from the `vortexinnovations/blog-scheduler-tracker` repo. It contains a JSON array of all available image filenames from the shared Supabase gallery bucket (917+ images).
 
+If you cannot read it, try:
 ```bash
-node -e "
-const fs = require('fs');
-const env = Object.fromEntries(fs.readFileSync('.env','utf8').trim().split('\n').map(l=>l.split('=')).map(([k,...v])=>[k,v.join('=')]));
-const https = require('https');
-const url = 'https://hgsgysaxiraaezeneshr.supabase.co/storage/v1/object/list/gallery';
-const options = {
-  method: 'POST',
-  headers: {
-    'apikey': env.SUPABASE_SECRET_KEY,
-    'Authorization': 'Bearer ' + env.SUPABASE_SECRET_KEY,
-    'Content-Type': 'application/json',
-  },
-};
-const req = https.request(url, options, (res) => {
-  let body = '';
-  res.on('data', (c) => body += c);
-  res.on('end', () => {
-    const files = JSON.parse(body);
-    console.log(JSON.stringify(files.map(f => f.name)));
-  });
-});
-req.write(JSON.stringify({ prefix: '', limit: 1000, offset: 0 }));
-req.end();
-"
+gh api repos/vortexinnovations/blog-scheduler-tracker/contents/images.json --jq '.content' | base64 -d
 ```
 
-**Read used images:**
+This returns all image filenames. No Supabase API key or .env file is needed.
 
-```bash
-cat src/lib/used-images.json
-```
-
-**Selection logic:**
-
-1. Parse the bucket file list and the used-images.json array
 2. Filter out any filenames already in used-images.json
 3. If ALL images are used, reset: clear used-images.json to `[]` and start fresh
 4. From the unused images, pick one using this deterministic method: sort the unused list alphabetically, then select index = `(day_of_year * 7 + existing_post_count) % unused_count`
