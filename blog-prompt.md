@@ -104,16 +104,21 @@ Select ONE topic that:
 
 Images are stored in a Supabase public bucket. Blog posts reference images via `/gallery/images/FILENAME`.
 
-**Fetch the full image list:**
+**SETUP REQUIREMENT:** The project root must contain a `.env` file with `SUPABASE_SECRET_KEY` set to the Supabase secret key for this project. Ask the project owner if you do not have the key. This file is gitignored and must never be committed.
+
+**Fetch the full image list (reads key from .env at runtime):**
 
 ```bash
 node -e "
+const fs = require('fs');
+const env = Object.fromEntries(fs.readFileSync('.env','utf8').trim().split('\n').map(l=>l.split('=')).map(([k,...v])=>[k,v.join('=')]));
 const https = require('https');
 const url = 'https://hgsgysaxiraaezeneshr.supabase.co/storage/v1/object/list/gallery';
 const options = {
   method: 'POST',
   headers: {
-    'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imhnc2d5c2F4aXJhYWV6ZW5lc2hyIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc3NDU3MTA0MCwiZXhwIjoyMDkwMTQ3MDQwfQ.i_-3uggRCa52chsppLL8f8MVC-FaCjKDeUJKiWf7i28',
+    'apikey': env.SUPABASE_SECRET_KEY,
+    'Authorization': 'Bearer ' + env.SUPABASE_SECRET_KEY,
     'Content-Type': 'application/json',
   },
 };
@@ -122,7 +127,7 @@ const req = https.request(url, options, (res) => {
   res.on('data', (c) => body += c);
   res.on('end', () => {
     const files = JSON.parse(body);
-    files.forEach(f => console.log(f.name));
+    console.log(JSON.stringify(files.map(f => f.name)));
   });
 });
 req.write(JSON.stringify({ prefix: '', limit: 1000, offset: 0 }));
