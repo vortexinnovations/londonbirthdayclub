@@ -2201,6 +2201,68 @@ export const blogPosts: BlogPost[] = [
       { question: "How much does a birthday activity combo cost in London?", answer: "A cocktail class typically costs 35 to 55 pounds per person. An escape room runs around 25 to 35 per person. Combined with a club table booking starting from 1,000 pounds, a full activity-plus-club birthday usually costs 80 to 150 per person depending on group size and venue choice." },
     ],
   },
+  {
+    slug: "birthday-cake-london-clubs-guide",
+    title: "Birthday Cake at London Clubs: What You Can Arrange",
+    metaTitle: "Birthday Cake at London Clubs: What to Know (2026)",
+    metaDescription: "Find out which London clubs allow birthday cakes, how to arrange delivery, and what the rules are. A practical guide for birthday hosts planning a club night.",
+    excerpt: "Not every London club handles birthday cakes the same way. Here is what you need to know about bringing, ordering, and presenting a cake at a Mayfair or central London venue.",
+    publishedAt: "2026-04-03",
+    updatedAt: "2026-04-03",
+    category: "Guide",
+    readTime: "6 min read",
+    sections: [
+      {
+        heading: "Can You Bring a Birthday Cake to a London Club",
+        headingLevel: "h2" as const,
+        content: [
+          "The short answer is yes, but the details vary by venue. Most premium London clubs allow birthday cakes as part of a table booking, though very few will let you walk in off the street carrying one. The cake is almost always tied to the VIP table experience, and the club expects you to coordinate with their events team in advance rather than simply turning up with a box from the bakery.",
+          "The reason clubs care about cakes has less to do with health regulations and more to do with presentation. A birthday table at a Mayfair club is a production. The sparklers, the music drop, the bottle parade \u2014 these are choreographed moments. A cake that arrives unannounced disrupts the flow. When you arrange it properly, the cake becomes part of the show rather than an awkward interruption.",
+          "If you are booking a birthday table, mention the cake during your initial enquiry. Our plan birthday London club guide walks you through the full booking process, including how to flag extras like cakes and decorations from the start.",
+        ],
+      },
+      {
+        heading: "How Cake Delivery and Storage Works at London Clubs",
+        headingLevel: "h2" as const,
+        content: [
+          "Most clubs ask you to deliver the cake on the day of your booking, typically between 6pm and 8pm before the venue opens to guests. The staff will store it in the kitchen or a designated area and bring it out at a time you agree in advance. Some clubs have limited cold storage, so check whether your cake needs refrigeration. Buttercream and fondant designs generally hold up fine, but anything with fresh cream or mousse may struggle in a warm club environment.",
+          "A few venues, including Maddox Club and Cuckoo Club, can coordinate with external bakeries to have the cake delivered directly. This saves you the trouble of transporting it yourself, especially if you are coming from a pre-club activity. Make sure the bakery knows the delivery window and has the venue address and contact name. Late deliveries are a common source of stress on the night.",
+        ],
+      },
+      {
+        heading: "What Kind of Cake Works Best in a Club Setting",
+        headingLevel: "h2" as const,
+        content: [
+          "Keep it simple and photogenic. Tall, multi-tier cakes look impressive but are impractical in a dark, crowded club. A single-tier cake with bold decoration, metallic finishes, or a personalised topper photographs well under club lighting and is far easier to cut and serve. Think about colours that work under neon and UV light \u2014 white, gold, and bright pink tend to look best.",
+          "Size matters more than you might expect. A cake for ten people is manageable at a table. A cake for thirty creates a logistics problem. Most hosts find that a small feature cake for the photo moment, supplemented by individual cupcakes or cake pops for the wider group, works better than one enormous creation. Several clubs, including Cirque Le Soir and Funky Buddha, are used to handling this kind of split arrangement.",
+          "Check our birthday decorations and extras guide for more on how to style your table area around the cake presentation.",
+        ],
+      },
+      {
+        heading: "The Cake Moment: Timing and Presentation",
+        headingLevel: "h2" as const,
+        content: [
+          "The standard approach at most London clubs is to bring the cake out between midnight and 1am, usually alongside a bottle of champagne and sparklers. The DJ will often drop a birthday announcement or play a birthday track at the same time. This is the moment everyone gets their phones out, so make sure your group knows roughly when it is happening.",
+          "If you want a specific song played during the cake presentation, tell your host or promoter when you book. Our guide to birthday songs to request from the DJ covers what works well in a club setting. The key is timing: you want the cake to arrive when energy is high but before the night gets too late and guests start drifting. At venues like Dear Darling and Reign London, the events team are particularly good at reading the room and choosing the right moment.",
+        ],
+      },
+      {
+        heading: "Costs, Cutting, and Clean-Up",
+        headingLevel: "h2" as const,
+        content: [
+          "Most clubs do not charge a cakeage fee for birthday table bookings, but it is worth confirming. Some venues include cake service as part of the package, while others treat it as a courtesy that comes with your minimum spend. The cake itself is your responsibility to source and pay for. Expect to spend between 40 and 150 pounds depending on size and complexity. A simple personalised cake from a London bakery typically starts around 50 pounds.",
+          "Clubs will usually cut and plate the cake for you, though not all have full cutlery sets. Paper plates and napkins are standard. Do not expect the same service you would get at a restaurant \u2014 this is a nightclub, and the focus is on the visual moment rather than a formal dessert course. If you want the cutting handled smoothly, brief a friend in advance to help distribute slices while the night continues.",
+          "Planning a birthday and want help coordinating the cake alongside your table booking? Message us on WhatsApp and we will handle everything. We work with clubs like Maddox Club, Cuckoo Club, Cirque Le Soir, and Dear Darling every week and can advise on exactly what each venue accommodates. See our birthday table prices guide for an overview of what a full birthday package typically costs.",
+        ],
+      },
+    ],
+    faqs: [
+      { question: "Do London clubs allow birthday cakes?", answer: "Yes, most premium London clubs allow birthday cakes as part of a table booking. You need to arrange it in advance with the venue or your promoter. Walk-ins with cakes are generally not permitted." },
+      { question: "How much does a birthday cake for a London club cost?", answer: "A personalised birthday cake from a London bakery typically costs between 50 and 150 pounds depending on size and design. Most clubs do not charge a separate cakeage fee if you have a table booking." },
+      { question: "When should the birthday cake come out at a club?", answer: "Between midnight and 1am is the standard window. This is when energy is highest and your full group is likely to be present. Coordinate the timing with your host or promoter when you book." },
+      { question: "Can the club store my birthday cake?", answer: "Most clubs will store your cake if you deliver it between 6pm and 8pm on the night. Check whether refrigeration is available, as warm club environments can affect fresh cream designs." },
+    ],
+  },
 ];
 
 export function getBlogPostBySlug(slug: string): BlogPost | undefined {
