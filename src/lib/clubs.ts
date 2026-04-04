@@ -512,6 +512,42 @@ export const clubs: Club[] = [
       "If your birthday falls on a night when BEAT has a notable guest DJ, book it — the combination of a special lineup and your celebration creates something magical. Check the BEAT socials for upcoming lineups.",
   },
 
+  {
+    slug: "maison-close",
+    name: "Maison Close",
+    shortName: "Maison Close",
+    tagline: "The Intimate Art-House Birthday",
+    location: "9 Swallow Street, Mayfair",
+    area: "Mayfair",
+    minSpend: "\u00a31,000",
+    musicPolicy: "House, Deep House, Soulful House",
+    dressCode: "Smart and sophisticated. Suits or smart separates for men, elegant dresses or upscale ensembles for women. No sportswear, trainers, or casual wear.",
+    openingNights: "Wednesday, Thursday, Friday, Saturday",
+    capacity: "Intimate (approx. 160)",
+    birthdayRating: 5,
+    bestFor: "Intimate, art-forward birthday celebrations with exceptional house music",
+    status: "open",
+    description:
+      "Maison Close is Mayfair\u2019s most artistically curated nightclub, occupying the former Kadies space on Swallow Street. The French-inspired interiors blend vintage chandeliers, plush velvet seating, bold red accents, and curated art installations into a space that feels more like a private salon than a nightclub. The music policy is firmly house \u2014 world-class DJs play deep, soulful sets that reward attentive listeners. For birthdays, Maison Close offers an intimate, culturally rich experience that stands apart from the louder, more commercial Mayfair scene.",
+    birthdayHighlights: [
+      "Artistically curated interiors with vintage chandeliers and velvet",
+      "World-class house music DJs every night",
+      "Intimate 160-capacity venue where your birthday is felt by the room",
+      "Exceptional cocktail programme crafted by expert mixologists",
+      "Live performances and art exhibitions alongside nightlife",
+    ],
+    whatToExpect:
+      "Walking into Maison Close feels like stepping into a private members\u2019 salon in Paris. The plush seating, ambient lighting, and art-filled walls create an atmosphere that\u2019s sophisticated without being stuffy. The house music builds gradually through the night, played by DJs who understand dynamics \u2014 early sets are warm and conversational, building to a peak-time dancefloor that\u2019s intimate and electric. For birthdays, the compact space means your celebration has genuine presence. The staff treat every table like VIP guests, and the cocktails are genuinely exceptional.",
+    birthdayExtras:
+      "Birthday celebrations at Maison Close include sparkler-adorned bottle deliveries, the option to arrange birthday cake, personalised DJ shoutouts, and decorated table setups. The intimate, art-house atmosphere means even standard birthday touches feel elevated \u2014 sparklers surrounded by chandeliers and velvet create a visual that\u2019s effortlessly photogenic.",
+    atmosphere:
+      "Intimate, cultured, and effortlessly sophisticated. Maison Close attracts a well-dressed crowd who appreciate house music, design, and cocktails in equal measure. The energy is warm and social rather than frenetic \u2014 conversations flow as easily as the music. It\u2019s the kind of venue where you feel like you\u2019ve discovered something special.",
+    groupSizeAdvice:
+      "Maison Close is ideal for birthday groups of 4\u201315. The intimate 160-capacity venue means smaller groups feel perfectly at home, and the cosy layout creates natural conversation spaces. For groups larger than 15, the venue can feel snug \u2014 but that intimacy is part of the charm.",
+    proTip:
+      "Thursday nights at Maison Close often feature guest DJs and a slightly more industry-connected crowd. If your group appreciates house music, Thursday delivers the most musically rewarding experience. Wednesday is the most relaxed night and easiest to book.",
+  },
+
   // ==================== PERMANENTLY CLOSED VENUES ====================
   {
     slug: "luxx-club",
