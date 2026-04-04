@@ -38,10 +38,10 @@ export const images = {
   // Club-specific images
   clubs: {
     "tape-london": "/gallery/images/Tape-1-.jpg",
-    "cirque-le-soir": "/gallery/images/DSC_6754.jpg",
-    "reign-london": "/gallery/images/DSC_6800.jpg",
+    "cirque-le-soir": "/gallery/images/DSC_7170.jpg",
+    "reign-london": "/gallery/images/DSC_6754.jpg",
     "tabu-london": "/gallery/images/DSC_6847.jpg",
-    "funky-buddha": "/gallery/images/DSC_6873.jpg",
+    "funky-buddha": "/gallery/images/DSC_7150.jpg",
     "cuckoo-club": "/gallery/images/DSC_6899.jpg",
     "scotch-of-st-james": "/gallery/images/DSC_6929.jpg",
     "dear-darling": "/gallery/images/photo-dec-23-2024-2-34-05-am.jpg",
