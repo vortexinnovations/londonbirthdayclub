@@ -39,24 +39,24 @@ const faqs = [
 const rankings = [
   {
     position: 1,
+    slug: "tape-london",
+    verdict:
+      "For exclusivity and genuine VIP treatment, Tape London is in a class of its own. The intimate members' club atmosphere means your birthday group gets real attention — not just a sparkler and a nod. The celebrity clientele, world-class sound, and personal service create a birthday that feels genuinely exclusive. Best for smaller groups who want quality over quantity.",
+    bestForTag: "Most Exclusive Birthday Venue",
+  },
+  {
+    position: 2,
     slug: "cirque-le-soir",
     verdict:
       "Nothing in London comes close to the sheer entertainment value of a birthday at Cirque Le Soir. The live performers, pyrotechnic bottle shows, and immersive atmosphere create a birthday experience that your guests will talk about for years. If you want your birthday to be genuinely unforgettable — not just another night at a club — Cirque is the one.",
     bestForTag: "Most Unforgettable Experience",
   },
   {
-    position: 2,
+    position: 3,
     slug: "the-box-london",
     verdict:
       "The Box London delivers the most daring and talked-about birthday in the city. The provocative theatrical performances, stunning Soho venue, and boundary-pushing entertainment create a celebration that your guests will never stop discussing. If you want your birthday to be genuinely unique and unforgettable, The Box is the venue.",
     bestForTag: "Most Daring & Theatrical",
-  },
-  {
-    position: 3,
-    slug: "tape-london",
-    verdict:
-      "For exclusivity and genuine VIP treatment, Tape London is in a class of its own. The intimate members' club atmosphere means your birthday group gets real attention — not just a sparkler and a nod. The celebrity clientele, world-class sound, and personal service create a birthday that feels genuinely exclusive. Best for smaller groups who want quality over quantity.",
-    bestForTag: "Exclusive & Intimate",
   },
   {
     position: 4,
