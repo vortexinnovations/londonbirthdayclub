@@ -23,39 +23,35 @@ export default function WhatsAppCTA({
 }: WhatsAppCTAProps) {
   const sizeClasses =
     size === "large"
-      ? "px-8 py-4 text-lg"
-      : "px-6 py-3 text-base";
+      ? "px-8 py-3.5 text-base"
+      : "px-6 py-2.5 text-sm";
 
   if (variant === "detailed") {
     return (
       <div className={`text-center ${className}`}>
         <div className="grid grid-cols-3 gap-3 max-w-md mx-auto mb-6">
           {[
-            { icon: "&#128101;", label: "Group Size", hint: "How many guests?" },
-            { icon: "&#128197;", label: "Date", hint: "When's the birthday?" },
-            { icon: "&#128176;", label: "Budget", hint: "Per person or total" },
+            { label: "Group Size", hint: "How many guests?" },
+            { label: "Date", hint: "When is the birthday?" },
+            { label: "Budget", hint: "Per person or total" },
           ].map((item) => (
             <div
               key={item.label}
-              className="bg-bg-card border border-border rounded-lg p-3 text-center"
+              className="border border-border-light/50 rounded-lg p-3 text-center"
             >
-              <div
-                className="text-2xl mb-1"
-                dangerouslySetInnerHTML={{ __html: item.icon }}
-              />
-              <div className="text-xs font-semibold text-gold">{item.label}</div>
-              <div className="text-xs text-text-muted mt-0.5">{item.hint}</div>
+              <div className="text-xs font-medium text-gold mb-0.5">{item.label}</div>
+              <div className="text-xs text-text-muted">{item.hint}</div>
             </div>
           ))}
         </div>
-        <p className="text-text-muted text-sm mb-4">
-          Have these details ready — we&apos;ll handle the rest
+        <p className="text-text-muted text-sm mb-5">
+          Have these details ready — we handle the rest
         </p>
         <a
           href={getWhatsAppLink(message)}
           target="_blank"
           rel="noopener noreferrer"
-          className={`inline-flex items-center gap-2 bg-whatsapp hover:bg-whatsapp-hover text-white font-semibold rounded-lg transition-all hover:scale-105 ${sizeClasses}`}
+          className={`inline-flex items-center justify-center gap-2.5 bg-whatsapp/90 hover:bg-whatsapp text-white font-medium rounded-full transition-all duration-200 ${sizeClasses}`}
         >
           {whatsAppIcon}
           {label}
@@ -69,7 +65,7 @@ export default function WhatsAppCTA({
       href={getWhatsAppLink(message)}
       target="_blank"
       rel="noopener noreferrer"
-      className={`inline-flex items-center gap-2 bg-whatsapp hover:bg-whatsapp-hover text-white font-semibold rounded-lg transition-all hover:scale-105 ${sizeClasses} ${className}`}
+      className={`inline-flex items-center justify-center gap-2.5 bg-whatsapp/90 hover:bg-whatsapp text-white font-medium rounded-full transition-all duration-200 ${sizeClasses} ${className}`}
     >
       {whatsAppIcon}
       {label}

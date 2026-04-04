@@ -73,7 +73,7 @@ export default function HomePage() {
             />
             <Link
               href="/best-birthday-clubs-london"
-              className="inline-flex items-center justify-center min-w-[220px] px-8 py-4 text-lg font-semibold text-gold border border-gold/30 hover:bg-gold/10 rounded-lg transition-all"
+              className="inline-flex items-center justify-center min-w-[220px] px-8 py-3.5 text-base font-medium text-gold border border-gold/30 hover:bg-gold/10 rounded-full transition-all duration-200"
             >
               Explore Clubs
             </Link>
