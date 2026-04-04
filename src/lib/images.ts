@@ -97,6 +97,8 @@ export const images = {
     "40th-birthday-night-out-london": "/gallery/images/NL_TAPE_CLEAN_1229_545.jpg",
     "birthday-brunch-to-club-london": "/gallery/images/TapeSaturdayNYE311222-114.jpg",
     "tipping-etiquette-london-nightclubs-birthday": "/gallery/images/fe4414_c855b43f41f44f79891ae18f1e6a765c.jpg",
+    "birthday-activity-combos-london-clubs": "/gallery/images/fe4414_cba78c72313f4958a32bbc1868c02b8e.jpg",
+    "birthday-cake-london-clubs-guide": "/gallery/images/fe4414_ccd327574dd4452aabb60f9bc26e3b4e.jpg",
   },
 } as const;
 

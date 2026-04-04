@@ -2140,6 +2140,129 @@ export const blogPosts: BlogPost[] = [
       { question: "Should you tip the doorman at a London club?", answer: "Door staff do not expect tips, but a \u00a310\u201320 handshake is a classy gesture if they have gone out of their way for your birthday group, such as accommodating late arrivals or managing a large guest list. It is not required but is always appreciated and remembered." },
     ],
   },
+  {
+    slug: "birthday-activity-combos-london-clubs",
+    title: "Birthday Activity Combos: Pre-Club Ideas That Make the Night",
+    metaTitle: "Birthday Activity Combos Before a London Club 2026",
+    metaDescription: "Plan the perfect birthday with pre-club activities like cocktail classes, escape rooms, and dinners before hitting a Mayfair club. Practical combos that work.",
+    excerpt: "The best birthday nights start hours before you reach the club. Here are the pre-club activity combos that London birthday groups love most, and how to time them perfectly.",
+    publishedAt: "2026-04-03",
+    updatedAt: "2026-04-03",
+    category: "Ideas",
+    readTime: "7 min read",
+    sections: [
+      {
+        heading: "Why a Pre-Club Activity Makes Your Birthday Better",
+        headingLevel: "h2" as const,
+        content: [
+          "A birthday table booking at a London club is the highlight, but the hours before arrival set the tone for the entire evening. Starting with a shared activity gives your group something to bond over, loosens everyone up, and creates memories beyond the dancefloor. It also solves the awkward early-evening gap when people are arriving at different times and nobody quite knows what to do.",
+          "The key is choosing an activity that complements the club rather than competing with it. You want something social, not exhausting. Something that gets people talking, not something that leaves half the group wanting to go home. The best combos share a neighbourhood with your venue so you are not losing time to travel between stops.",
+          "Whether your group is eight friends or thirty colleagues, the right pre-club activity transforms a good birthday into one people talk about for months. Here are the combinations that work best with a Mayfair or central London club booking.",
+        ],
+      },
+      {
+        heading: "Cocktail Making Classes: The Most Popular Combo",
+        headingLevel: "h2" as const,
+        content: [
+          "A cocktail class is the single most reliable pre-club activity for birthday groups. It works for mixed groups, keeps energy levels high, and naturally leads into the drinking atmosphere of a club night. Most classes in central London run 60 to 90 minutes and accommodate groups of eight to thirty. Book a session that finishes around 9pm and you will arrive at your club table perfectly warmed up.",
+          "Mayfair and Soho have several options within walking distance of clubs like Tape London, Cuckoo Club, and Maddox Club. This means your group can stroll from the class to the venue without needing taxis or losing anyone along the way. If you are planning a birthday and want to pair a cocktail class with a table booking, check our plan your birthday guide for timing advice.",
+        ],
+      },
+      {
+        heading: "Escape Rooms and Competitive Socials",
+        headingLevel: "h2" as const,
+        content: [
+          "Escape rooms work brilliantly for birthday groups that enjoy a challenge. They force people to collaborate, create instant in-jokes, and fill exactly one hour. The competitive element also pairs well with the celebratory atmosphere of a club night afterwards. Look for venues in the West End that can run multiple rooms simultaneously if your group is larger than six.",
+          "Other competitive social options include shuffleboard bars, mini golf, and axe throwing. These tend to work better for groups where not everyone knows each other, as the activity gives people something to rally around. The important thing is finishing by 9:30pm at the latest, giving your group time to freshen up before arriving at the club for a 10:30 or 11pm table booking. Our birthday table booking guide has more detail on ideal arrival times.",
+        ],
+      },
+      {
+        heading: "Birthday Dinner Then Club: Getting the Timing Right",
+        headingLevel: "h2" as const,
+        content: [
+          "Dinner before a club is the classic combination for a reason. It anchors the evening, ensures everyone eats properly, and creates a natural build-up to the main event. The trick is choosing a restaurant that understands group bookings and can get you out on time. A table for twelve that books at 7:30pm needs to be finished by 9:30pm, which means choosing somewhere efficient, not a tasting menu.",
+          "Several of the clubs on our roster offer dinner-to-dancing formats in the same venue. Maddox Club is particularly strong here, with a restaurant-quality dining room that transitions seamlessly into the club downstairs. Scotch of St James also handles pre-club dining well. If you want a separate restaurant, book somewhere in the same postcode as your club. You can explore our birthday dinner then club guide for specific restaurant recommendations and timing templates.",
+        ],
+      },
+      {
+        heading: "How to Schedule Your Birthday Activity Combo",
+        headingLevel: "h2" as const,
+        content: [
+          "The timeline that works for most London birthday groups follows a simple pattern. Start your activity between 7pm and 8pm, allow 60 to 90 minutes, then build in a 30-minute buffer for travel and freshening up. Aim to arrive at your club between 10:30pm and 11pm. This gives you the full evening without rushing and avoids the dead zone before midnight when clubs are still filling up.",
+          "For larger groups, communication is everything. Create a WhatsApp group with the timeline, meeting points, and dress code at least a week in advance. Include the address of both the activity venue and the club, along with the name on the table booking. Our group night out guide covers how to manage large birthday groups on the night itself.",
+          "If you are organising a birthday and want help pairing a pre-club activity with the right venue, message us on WhatsApp and we will handle everything. We book birthday tables at clubs like Cirque Le Soir, Tape London, Reign, and Dear Darling every week and can advise on which combinations work best for your group size and budget. Check our birthday table prices guide for an idea of costs before you get in touch.",
+        ],
+      },
+    ],
+    faqs: [
+      { question: "What is the best pre-club activity for a birthday in London?", answer: "Cocktail making classes are the most popular choice. They last 60 to 90 minutes, work for groups of eight to thirty, and naturally build energy for a club night. Book one in Mayfair or Soho so you can walk to your venue afterwards." },
+      { question: "How do you time a birthday dinner before a London club?", answer: "Book dinner for 7:30pm and choose a restaurant that can serve a group efficiently. Aim to finish by 9:30pm, giving you 30 minutes to travel and freshen up before arriving at the club around 10:30pm." },
+      { question: "Can you do an escape room before a London club night?", answer: "Yes, escape rooms are a great option. They last exactly one hour and work well for groups of four to six per room. Book a session ending by 9pm and you will have plenty of time to get to your club for a 10:30pm arrival." },
+      { question: "How much does a birthday activity combo cost in London?", answer: "A cocktail class typically costs 35 to 55 pounds per person. An escape room runs around 25 to 35 per person. Combined with a club table booking starting from 1,000 pounds, a full activity-plus-club birthday usually costs 80 to 150 per person depending on group size and venue choice." },
+    ],
+  },
+  {
+    slug: "birthday-cake-london-clubs-guide",
+    title: "Birthday Cake at London Clubs: What You Can Arrange",
+    metaTitle: "Birthday Cake at London Clubs: What to Know (2026)",
+    metaDescription: "Find out which London clubs allow birthday cakes, how to arrange delivery, and what the rules are. A practical guide for birthday hosts planning a club night.",
+    excerpt: "Not every London club handles birthday cakes the same way. Here is what you need to know about bringing, ordering, and presenting a cake at a Mayfair or central London venue.",
+    publishedAt: "2026-04-03",
+    updatedAt: "2026-04-03",
+    category: "Guide",
+    readTime: "6 min read",
+    sections: [
+      {
+        heading: "Can You Bring a Birthday Cake to a London Club",
+        headingLevel: "h2" as const,
+        content: [
+          "The short answer is yes, but the details vary by venue. Most premium London clubs allow birthday cakes as part of a table booking, though very few will let you walk in off the street carrying one. The cake is almost always tied to the VIP table experience, and the club expects you to coordinate with their events team in advance rather than simply turning up with a box from the bakery.",
+          "The reason clubs care about cakes has less to do with health regulations and more to do with presentation. A birthday table at a Mayfair club is a production. The sparklers, the music drop, the bottle parade \u2014 these are choreographed moments. A cake that arrives unannounced disrupts the flow. When you arrange it properly, the cake becomes part of the show rather than an awkward interruption.",
+          "If you are booking a birthday table, mention the cake during your initial enquiry. Our plan birthday London club guide walks you through the full booking process, including how to flag extras like cakes and decorations from the start.",
+        ],
+      },
+      {
+        heading: "How Cake Delivery and Storage Works at London Clubs",
+        headingLevel: "h2" as const,
+        content: [
+          "Most clubs ask you to deliver the cake on the day of your booking, typically between 6pm and 8pm before the venue opens to guests. The staff will store it in the kitchen or a designated area and bring it out at a time you agree in advance. Some clubs have limited cold storage, so check whether your cake needs refrigeration. Buttercream and fondant designs generally hold up fine, but anything with fresh cream or mousse may struggle in a warm club environment.",
+          "A few venues, including Maddox Club and Cuckoo Club, can coordinate with external bakeries to have the cake delivered directly. This saves you the trouble of transporting it yourself, especially if you are coming from a pre-club activity. Make sure the bakery knows the delivery window and has the venue address and contact name. Late deliveries are a common source of stress on the night.",
+        ],
+      },
+      {
+        heading: "What Kind of Cake Works Best in a Club Setting",
+        headingLevel: "h2" as const,
+        content: [
+          "Keep it simple and photogenic. Tall, multi-tier cakes look impressive but are impractical in a dark, crowded club. A single-tier cake with bold decoration, metallic finishes, or a personalised topper photographs well under club lighting and is far easier to cut and serve. Think about colours that work under neon and UV light \u2014 white, gold, and bright pink tend to look best.",
+          "Size matters more than you might expect. A cake for ten people is manageable at a table. A cake for thirty creates a logistics problem. Most hosts find that a small feature cake for the photo moment, supplemented by individual cupcakes or cake pops for the wider group, works better than one enormous creation. Several clubs, including Cirque Le Soir and Funky Buddha, are used to handling this kind of split arrangement.",
+          "Check our birthday decorations and extras guide for more on how to style your table area around the cake presentation.",
+        ],
+      },
+      {
+        heading: "The Cake Moment: Timing and Presentation",
+        headingLevel: "h2" as const,
+        content: [
+          "The standard approach at most London clubs is to bring the cake out between midnight and 1am, usually alongside a bottle of champagne and sparklers. The DJ will often drop a birthday announcement or play a birthday track at the same time. This is the moment everyone gets their phones out, so make sure your group knows roughly when it is happening.",
+          "If you want a specific song played during the cake presentation, tell your host or promoter when you book. Our guide to birthday songs to request from the DJ covers what works well in a club setting. The key is timing: you want the cake to arrive when energy is high but before the night gets too late and guests start drifting. At venues like Dear Darling and Reign London, the events team are particularly good at reading the room and choosing the right moment.",
+        ],
+      },
+      {
+        heading: "Costs, Cutting, and Clean-Up",
+        headingLevel: "h2" as const,
+        content: [
+          "Most clubs do not charge a cakeage fee for birthday table bookings, but it is worth confirming. Some venues include cake service as part of the package, while others treat it as a courtesy that comes with your minimum spend. The cake itself is your responsibility to source and pay for. Expect to spend between 40 and 150 pounds depending on size and complexity. A simple personalised cake from a London bakery typically starts around 50 pounds.",
+          "Clubs will usually cut and plate the cake for you, though not all have full cutlery sets. Paper plates and napkins are standard. Do not expect the same service you would get at a restaurant \u2014 this is a nightclub, and the focus is on the visual moment rather than a formal dessert course. If you want the cutting handled smoothly, brief a friend in advance to help distribute slices while the night continues.",
+          "Planning a birthday and want help coordinating the cake alongside your table booking? Message us on WhatsApp and we will handle everything. We work with clubs like Maddox Club, Cuckoo Club, Cirque Le Soir, and Dear Darling every week and can advise on exactly what each venue accommodates. See our birthday table prices guide for an overview of what a full birthday package typically costs.",
+        ],
+      },
+    ],
+    faqs: [
+      { question: "Do London clubs allow birthday cakes?", answer: "Yes, most premium London clubs allow birthday cakes as part of a table booking. You need to arrange it in advance with the venue or your promoter. Walk-ins with cakes are generally not permitted." },
+      { question: "How much does a birthday cake for a London club cost?", answer: "A personalised birthday cake from a London bakery typically costs between 50 and 150 pounds depending on size and design. Most clubs do not charge a separate cakeage fee if you have a table booking." },
+      { question: "When should the birthday cake come out at a club?", answer: "Between midnight and 1am is the standard window. This is when energy is highest and your full group is likely to be present. Coordinate the timing with your host or promoter when you book." },
+      { question: "Can the club store my birthday cake?", answer: "Most clubs will store your cake if you deliver it between 6pm and 8pm on the night. Check whether refrigeration is available, as warm club environments can affect fresh cream designs." },
+    ],
+  },
 ];
 
 export function getBlogPostBySlug(slug: string): BlogPost | undefined {
