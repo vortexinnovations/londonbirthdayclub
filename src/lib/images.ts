@@ -38,7 +38,7 @@ export const images = {
   // Club-specific images
   clubs: {
     "tape-london": "/gallery/images/Tape-1-.jpg",
-    "cirque-le-soir": "/gallery/images/DSC_7170.jpg",
+    "cirque-le-soir": "/gallery/images/DSC_7349.jpg",
     "reign-london": "/gallery/images/DSC_6754.jpg",
     "tabu-london": "/gallery/images/DSC_6847.jpg",
     "funky-buddha": "/gallery/images/DSC_7150.jpg",
