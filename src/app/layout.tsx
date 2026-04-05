@@ -55,6 +55,15 @@ export default function RootLayout({
       "Birthday party planning service for London's most exclusive nightclubs. Free VIP table booking and birthday packages at Mayfair's finest venues.",
     url: "https://londonbirthdayclub.com",
     telephone: "+447880662708",
+    image: "https://londonbirthdayclub.com/gallery/images/TapeSaturdayNYE311222-130.jpg",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "Mayfair",
+      addressLocality: "London",
+      addressRegion: "Greater London",
+      postalCode: "W1",
+      addressCountry: "GB",
+    },
     areaServed: {
       "@type": "City",
       name: "London",
