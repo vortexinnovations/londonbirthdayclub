@@ -100,6 +100,7 @@ export const images = {
     "tipping-etiquette-london-nightclubs-birthday": "/gallery/images/fe4414_c855b43f41f44f79891ae18f1e6a765c.jpg",
     "birthday-activity-combos-london-clubs": "/gallery/images/fe4414_cba78c72313f4958a32bbc1868c02b8e.jpg",
     "birthday-cake-london-clubs-guide": "/gallery/images/fe4414_ccd327574dd4452aabb60f9bc26e3b4e.jpg",
+    "birthday-organiser-tips-london-club": "/gallery/images/fe4414_d2079b72ac414f71bdef2fffc70fe4ab.jpg",
   },
 } as const;
 
