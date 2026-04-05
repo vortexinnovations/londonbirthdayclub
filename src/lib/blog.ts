@@ -2263,6 +2263,59 @@ export const blogPosts: BlogPost[] = [
       { question: "Can the club store my birthday cake?", answer: "Most clubs will store your cake if you deliver it between 6pm and 8pm on the night. Check whether refrigeration is available, as warm club environments can affect fresh cream designs." },
     ],
   },
+  {
+    slug: "birthday-organiser-tips-london-club",
+    title: "Tips for the Birthday Organiser at a London Nightclub",
+    metaTitle: "Birthday Organiser Tips for London Clubs (2026)",
+    metaDescription: "Practical tips for the person organising a birthday at a London nightclub. From collecting money to managing the guest list, here is how to keep it stress-free.",
+    excerpt: "You volunteered to organise the birthday. Now what? Here are the insider tips that keep the night running smoothly and the birthday person blissfully unaware of the logistics.",
+    publishedAt: "2026-04-05",
+    updatedAt: "2026-04-05",
+    category: "Tips",
+    readTime: "7 min read",
+    sections: [
+      {
+        heading: "Why the Organiser Needs a Different Game Plan",
+        headingLevel: "h2" as const,
+        content: [
+          "Every birthday night out has two experiences running in parallel. There is the birthday person\u2019s version \u2014 effortless, celebratory, full of surprises. And there is the organiser\u2019s version \u2014 a logistical operation that starts weeks before anyone sets foot in a club. If you have taken on the role of organiser, your job is to make the first version feel seamless while quietly managing the second.",
+          "The good news is that London\u2019s premium clubs are set up to help you. Venues like Maddox Club, Cirque Le Soir, and Funky Buddha handle birthday bookings every week, and their hosts and promoters are experienced at coordinating the details. But they need a competent organiser on the other end. These tips will make sure that person is you.",
+        ],
+      },
+      {
+        heading: "Start with a Headcount and a Budget Conversation",
+        headingLevel: "h2" as const,
+        content: [
+          "The single biggest source of stress for birthday organisers is money. Get ahead of it by setting a clear per-person budget before you confirm anything. Most London clubs require a minimum spend starting from \u00a31,000 for a birthday table, so divide that by your expected group size and communicate the number early. Be direct \u2014 vagueness about costs leads to dropouts and resentment. Our birthday table prices guide breaks down what to expect at each venue.",
+          "Lock in firm commitments at least ten days before the night. Ask people to transfer their share upfront rather than chasing payments on the evening itself. If someone drops out, you need time to either absorb the cost across the remaining group or find a replacement. Our guide to handling group payments covers the practical mechanics of collecting money without awkwardness.",
+          "Keep the guest list tight. A group of 8 to 12 is the sweet spot for most Mayfair venues \u2014 large enough to feel like a proper celebration, small enough that everyone gets a good experience at the table. If the birthday person wants a bigger group, consider whether a guestlist-plus-table approach works better than trying to seat 20 people at one table.",
+        ],
+      },
+      {
+        heading: "Coordinate Without Micromanaging",
+        headingLevel: "h2" as const,
+        content: [
+          "Create a single WhatsApp group for logistics \u2014 date, venue, arrival time, dress expectations, and payment details. Pin the key information so latecomers do not need to scroll. Send one clear message with everything people need to know, then resist the urge to send daily reminders. Two updates in the final week are enough: one at five days out confirming numbers, and one on the day with the final plan.",
+          "On the night itself, delegate. Assign one person to meet latecomers at the door. Ask another to handle the cake timing if you have arranged one (see our birthday cake guide for logistics). Your job as organiser is to liaise with the club host and keep the birthday person from dealing with any admin. You should be the only contact point between the group and the venue.",
+        ],
+      },
+      {
+        heading: "Work with the Venue, Not Around It",
+        headingLevel: "h2" as const,
+        content: [
+          "Contact the club or promoter at least a week in advance. Confirm your table booking, the number of guests, any extras like birthday decorations or a cake delivery, and your expected arrival time. Clubs such as Cuckoo Club, Dear Darling, and The Box London have dedicated hosts who will walk you through the options. If you are unsure which venue suits your group, our plan your birthday night guide helps narrow the choices.",
+          "Arrive 15 to 20 minutes before the birthday person. This gives you time to check in with the host, confirm the table location, and make sure any extras are in place. If you have ordered bottle service, the first round should be poured and ready when the guest of honour arrives. That initial moment \u2014 walking into a table that is already set up and buzzing \u2014 is what separates a good night from a great one.",
+          "Planning a birthday and want help with the logistics? Message us on WhatsApp and we will handle everything. We coordinate with venues like Maddox Club, Cirque Le Soir, Funky Buddha, and Dear Darling every week and know exactly what each club needs from the organiser to deliver a perfect night. Check our birthday clubs guide for the full list of venues we work with.",
+        ],
+      },
+    ],
+    faqs: [
+      { question: "How far in advance should I book a birthday table in London?", answer: "Book at least two weeks ahead for weekend nights, especially at popular venues like Maddox Club or Cirque Le Soir. Midweek bookings can sometimes be arranged with a week or less notice. The earlier you book, the better your table position." },
+      { question: "What is the best way to collect money for a group birthday?", answer: "Set a clear per-person amount and ask for bank transfers at least a week before the night. Apps like Splitwise or a simple shared note work well. Avoid collecting cash on the night \u2014 it creates confusion and delays." },
+      { question: "Should the organiser tell the birthday person the plan?", answer: "Share the basics \u2014 date, dress code, and rough timing \u2014 but keep venue details and any surprises to yourself. The birthday person should feel looked after, not left in the dark about what to wear or when to arrive." },
+      { question: "How many people is the ideal group size for a club birthday?", answer: "Eight to twelve guests is the sweet spot for most Mayfair clubs. This fits comfortably at a standard VIP table and keeps the minimum spend per person reasonable. Larger groups may need multiple tables or a different booking structure." },
+    ],
+  },
 ];
 
 export function getBlogPostBySlug(slug: string): BlogPost | undefined {
