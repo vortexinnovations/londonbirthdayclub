@@ -11,6 +11,7 @@ export const metadata: Metadata = {
   title: "Group Night Out London — VIP Tables for Celebrations",
   description: "Planning a group night out in London? Birthday parties, hen nights, work dos — we'll sort VIP tables and bottle service at the best clubs. Groups of 5 to 30+. Free booking via WhatsApp.",
   alternates: { canonical: "https://londonbirthdayclub.com/group-night-out-london" },
+  openGraph: { url: "https://londonbirthdayclub.com/group-night-out-london" },
 };
 
 const faqs = [

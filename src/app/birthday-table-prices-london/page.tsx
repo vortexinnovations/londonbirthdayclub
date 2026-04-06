@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   title: "Birthday Table Prices London 2026 — Per-Person Costs at Every Club",
   description: "Complete guide to birthday table prices at London nightclubs. Venue-by-venue minimums, per-person costs by group size, weekday vs weekend pricing, and what's included. Updated for 2026.",
   alternates: { canonical: "https://londonbirthdayclub.com/birthday-table-prices-london" },
+  openGraph: { url: "https://londonbirthdayclub.com/birthday-table-prices-london" },
 };
 
 const faqs = [

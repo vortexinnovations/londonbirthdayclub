@@ -13,6 +13,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://londonbirthdayclub.com/book-birthday",
   },
+  openGraph: { url: "https://londonbirthdayclub.com/book-birthday" },
 };
 
 export default function BookBirthdayPage() {

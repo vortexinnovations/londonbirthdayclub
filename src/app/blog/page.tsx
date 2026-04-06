@@ -14,6 +14,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://londonbirthdayclub.com/blog",
   },
+  openGraph: { url: "https://londonbirthdayclub.com/blog" },
 };
 
 function PostCard({ post }: { post: BlogPost }) {

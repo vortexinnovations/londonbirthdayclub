@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   title: "Best London Clubs for Large Groups — 15 to 30+ Guest Birthday Venues",
   description: "The best London nightclubs for large group bookings of 15-30+ guests. Multi-table configurations, big birthday celebrations, and venues that handle large parties without cramping the atmosphere.",
   alternates: { canonical: "https://londonbirthdayclub.com/best-clubs-for-large-groups-london" },
+  openGraph: { url: "https://londonbirthdayclub.com/best-clubs-for-large-groups-london" },
 };
 
 const faqs = [

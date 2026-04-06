@@ -11,6 +11,7 @@ export const metadata: Metadata = {
   title: "30th Birthday Night Out London | Celebrate Turning 30 in Style",
   description: "The best London clubs and venues for a 30th birthday celebration. Quality over chaos — elegant venues, dinner-to-club options, and VIP birthday experiences for the milestone that matters.",
   alternates: { canonical: "https://londonbirthdayclub.com/30th-birthday-night-out-london" },
+  openGraph: { url: "https://londonbirthdayclub.com/30th-birthday-night-out-london" },
 };
 
 const faqs = [

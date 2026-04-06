@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   title: "Mayfair Birthday Night — How to Plan the Perfect Celebration (2026)",
   description: "The complete guide to planning a birthday night out in Mayfair. Which clubs are where, dress codes, what to expect, and how to make your Mayfair birthday celebration perfect.",
   alternates: { canonical: "https://londonbirthdayclub.com/how-to-plan-a-birthday-night-in-mayfair" },
+  openGraph: { url: "https://londonbirthdayclub.com/how-to-plan-a-birthday-night-in-mayfair" },
 };
 
 const faqs = [

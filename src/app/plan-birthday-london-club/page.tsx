@@ -15,6 +15,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://londonbirthdayclub.com/plan-birthday-london-club",
   },
+  openGraph: { url: "https://londonbirthdayclub.com/plan-birthday-london-club" },
 };
 
 const faqs = [
