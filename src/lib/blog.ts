@@ -2316,6 +2316,67 @@ export const blogPosts: BlogPost[] = [
       { question: "How many people is the ideal group size for a club birthday?", answer: "Eight to twelve guests is the sweet spot for most Mayfair clubs. This fits comfortably at a standard VIP table and keeps the minimum spend per person reasonable. Larger groups may need multiple tables or a different booking structure." },
     ],
   },
+  {
+    slug: "birthday-party-themes-london-clubs",
+    title: "Birthday Party Themes That Actually Work at London Clubs",
+    metaTitle: "Birthday Party Themes for London Clubs (2026)",
+    metaDescription: "Planning a themed birthday at a London club? These party themes actually work in real nightclub settings. Practical ideas and decoration tips included.",
+    excerpt: "Most birthday themes fall apart the moment your group arrives at a nightclub. These are the ones that actually work, from black and gold to decades nights.",
+    publishedAt: "2026-04-09",
+    updatedAt: "2026-04-09",
+    category: "Ideas",
+    readTime: "6 min read",
+    sections: [
+      {
+        heading: "Why a Birthday Theme Changes the Night",
+        headingLevel: "h2" as const,
+        content: [
+          "Most birthday nights at London clubs follow the same pattern: book a table, order bottles, hope everyone has fun. A theme gives the evening an identity before anyone walks through the door. It turns a group booking into an event that people talk about for months. When your group arrives looking coordinated and prepared, the energy shifts immediately. Staff take notice, other guests look over, and the birthday person feels like the night was genuinely planned for them.",
+          "The challenge is picking a theme that works inside a real nightclub. Elaborate costumes get turned away at the door. Themes that rely on heavy decoration face venue restrictions. The best birthday party themes for London clubs are ones that enhance the experience without fighting the environment. They work with the venue, the lighting, and the energy of the room. Get it right, and the theme becomes the thing everyone remembers about the night.",
+        ],
+      },
+      {
+        heading: "Black and Gold: The Timeless Club Birthday Theme",
+        headingLevel: "h2" as const,
+        content: [
+          "This is the most reliable theme for a Mayfair birthday. Everyone owns something black, and adding gold accessories is simple - gold ties, gold jewellery, gold clutch bags. The effect when your group arrives as a coordinated unit is striking, and it works perfectly with the standard at venues like Maddox Club and Dear Darling. Nobody gets turned away, and the group photographs beautifully under club lighting.",
+          "The practical advantage is that nobody needs to buy a costume. Guests simply elevate what they already own. Ask the group to send outfit photos to a WhatsApp chat beforehand so you can confirm everyone is on brief. For the birthday person, gold becomes their colour for the night, making them instantly recognisable in every photo. Pair this with gold-themed bottle presentations and LED sparklers, and the table becomes a centrepiece. Our birthday decorations and extras guide covers what clubs can provide to match your colour scheme.",
+        ],
+      },
+      {
+        heading: "Decades Night: A Theme That Gets Everyone Involved",
+        headingLevel: "h2" as const,
+        content: [
+          "A decades theme gives guests creative freedom while keeping the group visually connected. The most club-friendly decades are the 1970s disco era, 1990s streetwear, and early 2000s glamour. Each translates naturally into outfits that pass door policies at London clubs without feeling like fancy dress. The key is choosing an era where the fashion still looks sharp in a modern nightclub setting.",
+          "Venues with eclectic music programming work best for decades themes. Funky Buddha has the retro energy that suits a 70s or 80s inspiration. Cirque le Soir already feels like stepping into a different era, with its theatrical atmosphere creating a natural backdrop for any decade. Avoid themes from periods that require full costumes, like medieval or Victorian, as these will not get past security at any Mayfair venue.",
+          "Brief your guests with reference images so everyone understands the level. You want \"inspired by\" rather than \"costume party.\" A 90s night means oversized blazers and statement trainers, not a full fancy dress situation. Browse our best birthday clubs page to find venues that suit the era you have in mind.",
+        ],
+      },
+      {
+        heading: "Colour Coordinated: The Easiest Theme That Photographs Well",
+        headingLevel: "h2" as const,
+        content: [
+          "If a full theme feels like too much effort, a colour code is the simplest alternative. Pick one colour for the group and a contrasting colour for the birthday person. All-white with a red birthday star. All-pink for a summer celebration. All-black with neon accessories for something bolder. The visual impact in photos is enormous, especially under the lighting at clubs like Cuckoo Club.",
+          "Colour coordination works brilliantly for mixed groups where not everyone wants to commit to a full costume theme. It requires minimal effort from guests while still creating that sense of a planned, intentional event. For inspiration on how to extend the colour theme to your table setup, check our birthday clubs page for the full list of venues we work with and the extras each one offers.",
+        ],
+      },
+      {
+        heading: "How to Pull Off a Themed Birthday at a London Club",
+        headingLevel: "h2" as const,
+        content: [
+          "Start communicating the theme at least three weeks before the date. Send a clear WhatsApp message with the theme, example outfit ideas, and any rules about what works within the club setting. If guests know early, they have time to prepare without stress. Last-minute theme announcements lead to half the group arriving off-brief, which defeats the purpose entirely.",
+          "Let the venue know about your theme when you confirm the table. Some clubs can match the bottle presentation, LED colours, or table decorations to your colour scheme. Our plan your birthday night page walks through the full timeline from initial planning to the night itself. When choosing a venue, consider which clubs naturally suit your theme and the size of your group.",
+          "If you want help coordinating a themed birthday, message us on WhatsApp and we will handle everything. We work with venues like Maddox Club, Funky Buddha, and Dear Darling every week and can arrange themed extras that make the night feel curated rather than thrown together. A well-executed theme is the difference between a good birthday and one your group will be talking about for years.",
+        ],
+      },
+    ],
+    faqs: [
+      { question: "Do London clubs allow themed birthday outfits?", answer: "Most Mayfair clubs welcome themed outfits as long as they meet the standard requirements. Avoid full costumes, masks, or fancy dress. Themes built around colour coordination or era-inspired fashion work best and will not cause issues at the door." },
+      { question: "What is the easiest birthday theme for a London club?", answer: "Black and gold. Every guest owns something black, and gold accessories are inexpensive and easy to find. It photographs well, passes every standard, and immediately makes the group look coordinated." },
+      { question: "Can clubs help with themed decorations for a birthday table?", answer: "Yes, many London clubs offer LED sparklers, personalised bottle labels, and balloon arrangements. Contact the venue at least a week in advance with your theme and colour scheme. Some venues like Maddox Club and Dear Darling have dedicated hosts who can match extras to your theme." },
+      { question: "Should I tell the club about my birthday theme in advance?", answer: "Always. Letting the venue know allows them to coordinate bottle presentations, lighting, and table decorations with your theme. The more notice you give, the more the club can do to make the night feel tailored to your group." },
+    ],
+  },
 ];
 
 export function getBlogPostBySlug(slug: string): BlogPost | undefined {
