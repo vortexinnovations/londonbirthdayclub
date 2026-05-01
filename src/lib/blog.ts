@@ -2377,6 +2377,66 @@ export const blogPosts: BlogPost[] = [
       { question: "Should I tell the club about my birthday theme in advance?", answer: "Always. Letting the venue know allows them to coordinate bottle presentations, lighting, and table decorations with your theme. The more notice you give, the more the club can do to make the night feel tailored to your group." },
     ],
   },
+  {
+    slug: "pre-drinks-london-club-birthday-guide",
+    title: "Pre-Drinks Before a London Club Birthday: What to Plan",
+    metaTitle: "Pre-Drinks Before a London Club Birthday: Full Guide (2026)",
+    metaDescription: "Planning pre-drinks before a London club birthday? Our guide covers where to go, when to start, and how to get your group to the venue on time.",
+    excerpt: "The hour before the club sets the tone for the entire birthday night. Here is how to plan pre-drinks that bring your group together and build the right energy.",
+    publishedAt: "2026-05-01",
+    updatedAt: "2026-05-01",
+    category: "Guide",
+    readTime: "6 min read",
+    sections: [
+      {
+        heading: "Why Pre-Drinks Set the Tone for a Birthday Night",
+        headingLevel: "h2" as const,
+        content: [
+          "The hour before your group arrives at the club is one of the most important parts of a birthday night. Pre-drinks give everyone a chance to greet the birthday person, settle into the evening, and build the kind of energy that carries the whole night forward. Without that collective warm-up, groups often arrive at the venue scattered, with some guests meeting for the first time at the door and others already several drinks ahead. A good pre-drinks location turns strangers into friends before the real celebration starts.",
+          "For birthday groups especially, pre-drinks serve a practical purpose. This is when you confirm the final headcount, collect any outstanding contributions, and brief the group on the plan. Which club are you heading to? What time is the table booked for? Who has the confirmation details? Handle all of this over a relaxed cocktail rather than shouting over music in a dark room. If you want a full timeline for your evening, our plan your birthday night page covers every stage from initial planning to last orders.",
+        ],
+      },
+      {
+        heading: "Where to Have Pre-Drinks Near London Clubs",
+        headingLevel: "h2" as const,
+        content: [
+          "The best pre-drinks spots sit within a short walk or taxi ride of the club. If your table is booked at Maddox Club or Cuckoo Club in Mayfair, look at cocktail bars along Dover Street, South Molton Street, or around Berkeley Square. For groups heading to Cirque le Soir in Soho, Wardour Street and Greek Street have plenty of options with space for larger parties. The key is proximity, so nobody has to navigate across London mid-evening.",
+          "Hotel bars are an underrated choice for birthday pre-drinks. Most offer comfortable seating for groups of ten or more, the drinks are reliable, and the atmosphere is polished without being intimidating. Ground floor bars at hotels near Mayfair work particularly well for groups planning a premium night. If you are considering a sit-down meal first instead, our birthday dinner then club guide covers how to combine the two seamlessly.",
+        ],
+      },
+      {
+        heading: "Timing Your Pre-Drinks: When to Start and When to Leave",
+        headingLevel: "h2" as const,
+        content: [
+          "Start your pre-drinks around two to two and a half hours before your table time. That gives the group enough time to arrive, settle in, have two or three drinks, and still reach the club feeling fresh. If your table is booked for 11pm, aim for the first guests arriving at the pre-drinks location by 8:30pm. Accept that not everyone will be punctual, but having a clear start time prevents the evening from drifting.",
+          "Leave for the club no later than 30 minutes before your table allocation. Arriving on time matters more than most people realise. Late arrivals can mean losing your table position or being placed in a less desirable spot. For groups of eight or more, factor in extra time for taxis or a short walk. Our guide to birthday mistakes covers the most common timing errors that derail otherwise well-planned nights.",
+        ],
+      },
+      {
+        heading: "What to Serve and How to Keep Costs Manageable",
+        headingLevel: "h2" as const,
+        content: [
+          "Keep the pre-drinks menu simple. Order cocktails, wine, or prosecco that everyone can enjoy without overthinking. Avoid heavy beers or spirits-heavy rounds that leave the group feeling sluggish before the night has properly started. Many birthday groups find that setting up a tab with a pre-agreed limit works better than trying to split rounds across fifteen people.",
+          "Budget matters here. Cocktails at a central London bar run around eight to fifteen pounds each. For a group of ten having two drinks, that adds up quickly. If cost is a concern, consider starting at a private location. A rented flat, a hotel suite, or even a co-working space with a bar licence can be both cheaper and more personal. Reserve the premium spending for the club itself, where bottles and table service create the real birthday atmosphere. Our birthday clubs page lists the venues we work with and what each one offers for celebrations.",
+        ],
+      },
+      {
+        heading: "Getting Your Group from Pre-Drinks to the Club",
+        headingLevel: "h2" as const,
+        content: [
+          "The transition from pre-drinks to the club is where birthday nights most commonly fall apart. Designate one person, ideally not the birthday person, as the logistics coordinator. That person sends the time-to-leave message to the WhatsApp group, orders the taxis, and makes sure nobody wanders off. For groups heading to venues like Funky Buddha or Dear Darling, where arrival times matter, having one person in charge of the door conversation makes everything smoother.",
+          "Make sure everyone knows the club name, the address, and what name the reservation is under before leaving pre-drinks. It sounds obvious, but half of all group confusion happens because guests take separate taxis and arrive at the wrong venue or cannot find the rest of the party. A pinned message in the group chat with the club address, postcode, and confirmation details saves problems later. For larger groups, our large groups guide covers which venues handle big birthday parties best.",
+          "If you want help planning the full evening from pre-drinks to close, message us on WhatsApp and we will handle everything. We coordinate birthday nights every week across Mayfair and Soho, and can recommend pre-drinks spots that work perfectly with your chosen venue. One message gets the whole evening sorted.",
+        ],
+      },
+    ],
+    faqs: [
+      { question: "How long should pre-drinks last before a London club birthday?", answer: "Around two hours is ideal. That gives your group time to arrive, catch up, and have two or three drinks before moving to the club. Starting too early leads to guests arriving at the venue tired, while rushing removes the social warm-up that makes the night feel planned." },
+      { question: "Where should I have pre-drinks before a Mayfair club?", answer: "Cocktail bars on Dover Street, South Molton Street, or hotel bars near Berkeley Square work well. Choose somewhere within a five-minute taxi ride of the venue. Hotel bars are particularly good for larger groups as they usually have space and do not require a reservation for the bar area." },
+      { question: "Should I organise pre-drinks at a bar or at home?", answer: "Both work depending on budget and group size. A bar feels more polished and sets the tone for a premium night out. A private location is cheaper and more flexible, especially for groups over fifteen. The priority is getting everyone together before the club, not where you do it." },
+      { question: "How do I get my birthday group to leave pre-drinks on time?", answer: "Set a clear departure time from the start and remind the group thirty minutes before. One designated coordinator should send the final message and handle taxis. Framing the departure around the table allocation rather than the clock helps, as people respond better to not wanting to lose their table." },
+    ],
+  },
 ];
 
 export function getBlogPostBySlug(slug: string): BlogPost | undefined {

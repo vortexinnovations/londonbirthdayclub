@@ -102,6 +102,7 @@ export const images = {
     "birthday-cake-london-clubs-guide": "/gallery/images/fe4414_ccd327574dd4452aabb60f9bc26e3b4e.jpg",
     "birthday-organiser-tips-london-club": "/gallery/images/fe4414_d2079b72ac414f71bdef2fffc70fe4ab.jpg",
     "birthday-party-themes-london-clubs": "/gallery/images/fe4414_dd9694e452204ef99a0b6c2dc693faf9.jpg",
+    "pre-drinks-london-club-birthday-guide": "/gallery/images/maison-close-070.jpg",
   },
 } as const;
 
