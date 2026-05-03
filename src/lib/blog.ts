@@ -2437,6 +2437,67 @@ export const blogPosts: BlogPost[] = [
       { question: "How do I get my birthday group to leave pre-drinks on time?", answer: "Set a clear departure time from the start and remind the group thirty minutes before. One designated coordinator should send the final message and handle taxis. Framing the departure around the table allocation rather than the clock helps, as people respond better to not wanting to lose their table." },
     ],
   },
+  {
+    slug: "london-club-door-policy-birthday-groups",
+    title: "How London Club Door Policies Work for Birthday Groups",
+    metaTitle: "London Club Door Policy for Birthday Groups (2026)",
+    metaDescription: "How London nightclub door policies work when you arrive as a birthday group. Practical tips to ensure your whole party gets through the door.",
+    excerpt: "A practical guide to navigating London club door policies as a birthday group, from arrival strategy to handling large parties and late guests.",
+    publishedAt: "2026-05-03",
+    updatedAt: "2026-05-03",
+    category: "Guide",
+    readTime: "6 min read",
+    sections: [
+      {
+        heading: "Why Door Policies Hit Birthday Groups Harder",
+        headingLevel: "h2" as const,
+        content: [
+          "By Charlotte Hayes, Events Specialist | Last updated: 3 May 2026",
+          "Door policies at London nightclubs apply to everyone, but birthday groups face particular scrutiny. A party of ten or twelve arriving together draws far more attention than a couple, and door staff evaluate the whole group before letting anyone through. Your table reservation secures the table, but each guest still needs to meet the venue's standards independently. This is the single biggest source of birthday night anxiety, and it is entirely manageable once you understand how it works.",
+          "I've coordinated birthday arrivals at venues like Maddox Club and Funky Buddha for several years, and the most common misconception is that a booking guarantees automatic entry for the entire group. It does not. One guest in trainers or one person who has clearly had too much to drink at pre-drinks can delay or even prevent entry for the whole party. Understanding how door assessments work lets you prepare properly and protect the celebration you have spent weeks planning.",
+        ],
+      },
+      {
+        heading: "What Door Staff Actually Assess",
+        headingLevel: "h2" as const,
+        content: [
+          "London club door staff look at four things: dress code compliance, sobriety, group composition, and behaviour. For birthday groups, the critical factor is group composition. Most Mayfair venues prefer a balanced ratio of male and female guests. A group of twelve men without any women will face a harder door conversation than a mixed group of the same size, regardless of whether a table is booked. This is worth knowing early in the planning process so you can set expectations with your guests.",
+          "Sobriety checks are straightforward but strictly enforced. Door staff at venues such as Cirque le Soir and Cuckoo Club assess each person individually. If one guest is visibly intoxicated, they will be refused entry, and the rest of the group may be held while staff decide what to do. From experience, the groups that run into trouble are almost always those who went too hard at pre-drinks. As Time Out's London nightlife editors have noted, Mayfair clubs are increasingly selective about who they let through the door, prioritising the atmosphere inside over filling capacity.",
+          "Dress code is covered in our plan your birthday page, but the birthday-relevant point is this: you cannot assume every guest knows the rules. Smart shoes, no sportswear, and no fancy dress unless the venue specifically caters to it will cover most Mayfair clubs as of May 2026.",
+        ],
+      },
+      {
+        heading: "How to Brief Your Group Before Arrival",
+        headingLevel: "h2" as const,
+        content: [
+          "The single most effective thing you can do is send a WhatsApp message to your group 48 hours before the night with three pieces of information: the dress code, the arrival time, and whose name the reservation is under. I've noticed that groups who receive this brief have significantly fewer door problems than those who leave it to chance. Keep the message short and specific. Something like 'smart shoes required, no trainers for men, arrive by 10:45pm, table is under Sarah' covers everything.",
+          "For groups over ten, assign an arrival coordinator who is not the birthday person. This person arrives first, confirms the reservation with the host or promoter inside, and then messages the group when it is time to approach the door. Walking up as a coordinated group rather than in scattered arrivals makes a measurably better impression on door staff. Our birthday mistakes guide covers the most common version of this going wrong, and it is almost always a coordination failure rather than a dress code issue.",
+        ],
+      },
+      {
+        heading: "Managing Large Groups and Late Arrivals",
+        headingLevel: "h2" as const,
+        content: [
+          "Large birthday groups rarely arrive at the same time, and venues understand this. Most clubs allow guests to join the table throughout the night, provided each person meets the entry criteria. However, the initial group that arrives to open the table should include whoever made the reservation and ideally at least half the total party. If you have booked a table at Dear Darling or Maddox Club and only two of your twelve guests show up at table time, the venue may reassign your position.",
+          "Late arrivals should know the exact club name, the reservation name, and ideally the name of a promoter or host to mention at the door. Saying 'I am joining a birthday table booked under James' is far more effective than 'my friends are inside somewhere.' We went through this recently with a group of sixteen at Funky Buddha, where three guests arrived ninety minutes late. Because they had the promoter's name and were dressed appropriately, they walked straight in. Without that information, they would have faced the standard queue and full door assessment. Our mixed group birthday guide explains how to manage this when your party spans different social circles.",
+        ],
+      },
+      {
+        heading: "Getting Your Whole Group Through the Door",
+        headingLevel: "h2" as const,
+        content: [
+          "On my last visit to coordinate a birthday at Cuckoo Club, I watched a neighbouring group of fourteen arrive with zero preparation. Half were in trainers, two had clearly been drinking since the afternoon, and nobody knew the reservation name. They spent forty minutes at the door, lost their original table position, and the birthday person was visibly embarrassed before the night had started. Everything about that situation was avoidable with a five-minute WhatsApp brief sent the day before.",
+          "Here is what works every time: brief your group in advance, arrive as close to your table time as possible, designate one person to speak with the door team, and keep pre-drinks moderate. If your group includes anyone who might be a dress code risk, tell them directly. It is far less awkward than watching them get turned away at the venue. Our birthday clubs page has the full list of venues we work with and their typical door standards.",
+          "If you want someone to handle the door coordination for you, message us on WhatsApp and we will take care of everything. We confirm reservations, brief the door team in advance, and make sure your group gets through without stress. One message gets the whole evening sorted.",
+        ],
+      },
+    ],
+    faqs: [
+      { question: "Does a table reservation guarantee entry for my birthday group?", answer: "No. A reservation secures your table, but every guest must individually meet the venue's entry criteria including dress code, sobriety, and any age requirements. Door staff assess each person regardless of the booking." },
+      { question: "What happens if someone in my birthday group gets refused at the door?", answer: "The refused guest will need to wait outside or leave. The rest of the group can usually proceed in, though the door team may hold everyone briefly while they assess the situation. Having a backup plan for refused guests is worth discussing with your group beforehand." },
+      { question: "How early should a birthday group arrive at a London club?", answer: "Aim to arrive at your table time or no more than fifteen minutes after. The initial party should include at least half your total guests and the person whose name the reservation is under. Late arrivals can join throughout the night provided they meet entry criteria." },
+    ],
+  },
 ];
 
 export function getBlogPostBySlug(slug: string): BlogPost | undefined {
