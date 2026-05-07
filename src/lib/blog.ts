@@ -2498,6 +2498,68 @@ export const blogPosts: BlogPost[] = [
       { question: "How early should a birthday group arrive at a London club?", answer: "Aim to arrive at your table time or no more than fifteen minutes after. The initial party should include at least half your total guests and the person whose name the reservation is under. Late arrivals can join throughout the night provided they meet entry criteria." },
     ],
   },
+  {
+    slug: "friends-cancel-birthday-night-out-london",
+    title: "What to Do When Friends Cancel on Your Birthday Night Out",
+    metaTitle: "Friends Cancel Birthday Night Out? What to Do (2026)",
+    metaDescription: "Friends dropped out of your birthday plans? Practical steps to save the night, adjust your reservation, and still celebrate in style at London clubs.",
+    excerpt: "A practical guide to handling last-minute cancellations for your birthday night out in London, from adjusting your reservation to making the smaller group work.",
+    publishedAt: "2026-05-07",
+    updatedAt: "2026-05-07",
+    category: "Tips",
+    readTime: "6 min read",
+    sections: [
+      {
+        heading: "Why Cancellations Happen and Why They Do Not Ruin Your Night",
+        headingLevel: "h2" as const,
+        content: [
+          "By Charlotte Hayes, Events Specialist | Last updated: 7 May 2026",
+          "You have spent weeks planning a birthday celebration at a London club, confirmed the table, briefed the group, and then three friends message to say they cannot make it. This is one of the most common frustrations in birthday planning, and it happens far more often than most people expect. The good news is that cancellations do not have to derail your evening. With a few practical adjustments, a smaller group can still have a brilliant night.",
+          "I have coordinated birthday celebrations where nearly half the original group dropped out in the final 48 hours. In every case, the night still worked because we adjusted the plan rather than trying to force the original vision. The key is speed. The sooner you know about cancellations, the more options you have for reshaping the evening. As The Guardian has reported on London’s nightlife scene, smaller and more intentional groups often have a better experience at premium venues than overstretched large parties trying to keep everyone together.",
+        ],
+      },
+      {
+        heading: "Assess How Cancellations Affect Your Reservation",
+        headingLevel: "h2" as const,
+        content: [
+          "The first thing to check is your minimum spend. Most Mayfair club tables come with a minimum spend requirement that was calculated for your original group size. If you reserved a table for twelve at Funky Buddha with a minimum spend starting from £1,000 as of May 2026, losing four guests means the remaining eight need to cover that same total. Before you do anything else, work out the per-person cost increase and decide whether your remaining group can absorb it.",
+          "I have seen birthday groups panic at this stage, but the reality is more flexible than most people assume. Promoters and hosts at venues like Maddox Club and Cirque le Soir deal with group size changes every weekend. If you contact your promoter promptly, they can often adjust the arrangement. You might move to a smaller table with a lower minimum spend, or the venue might offer a compromise. The worst approach is saying nothing and hoping it works out on the night. Our birthday table information page covers how minimum spends work in detail.",
+        ],
+      },
+      {
+        heading: "How to Adjust Your Plans Quickly",
+        headingLevel: "h2" as const,
+        content: [
+          "Contact your promoter or the person who arranged the reservation immediately. Explain how many guests you have lost and ask what options are available. On my last visit to coordinate a birthday at Dear Darling, the host moved a group of six from a large corner table to a more intimate booth closer to the DJ, which actually suited the smaller party better and reduced their minimum spend by roughly a third.",
+          "If you originally planned a premium table and the numbers no longer justify the cost, consider switching to a guestlist-only arrangement instead. Several venues allow this conversion with enough notice. Your group still gets into the club, the birthday person still has a night out, and nobody is stretching their budget uncomfortably. Our last-minute birthday guide covers how to make quick changes without losing the evening entirely.",
+          "For groups that have dropped below six, think about whether a different venue might serve the night better. A smaller, more intimate club like The Box or Cuckoo Club can feel more alive with a compact group than a large venue where an empty table stands out. Matching the venue to your actual group size rather than your original plan almost always produces a better night.",
+        ],
+      },
+      {
+        heading: "Filling Empty Spots at Short Notice",
+        headingLevel: "h2" as const,
+        content: [
+          "If you want to keep your original table and spend, consider inviting additional people. We noticed that the birthday organisers who handle this best keep a mental list of friends who would enjoy a night out but were not on the original invite. A casual WhatsApp message saying you have spare capacity at a birthday table is surprisingly effective. Most people are flattered to be invited, even as a late addition.",
+          "Be honest about the situation. Saying something along the lines of a few people dropped out and we have space at our table on Saturday is perfectly fine. Nobody needs the full story. The priority is getting the right number of people to the venue so the birthday person has the celebration they deserve. Our mistakes to avoid guide covers why empty seats at a birthday table create an atmosphere problem that is worth preventing.",
+        ],
+      },
+      {
+        heading: "Making a Smaller Group Work in Your Favour",
+        headingLevel: "h2" as const,
+        content: [
+          "Some of the best birthday celebrations I have arranged were for groups that shrank from the original plan. A table of eight where everyone genuinely wants to be there creates a completely different energy than a table of fourteen where five people are checking their phones. Smaller groups are easier to coordinate, arrive on time more reliably, and the conversation flows better across the table.",
+          "If your group has reduced to four or five, consider an intimate celebration approach rather than the large-group format. A birthday dinner followed by a club visit with a small, committed group often creates better memories than a huge party where half the guests disappear by midnight. Our couples birthday guide explores how to make a smaller celebration feel premium rather than compromised.",
+          "Whatever the final group size, the night belongs to the birthday person. Message us on WhatsApp and we will handle everything, from adjusting your reservation to recommending the right venue for your updated numbers. One message gets the whole evening sorted.",
+        ],
+      },
+    ],
+    faqs: [
+      { question: "Should I confront friends who cancel on my birthday night out?", answer: "Generally no. People cancel for legitimate reasons and pressing them rarely changes the outcome. Focus your energy on adjusting the plan for those who are coming rather than dwelling on those who are not. If a pattern of cancellations is a broader friendship issue, that conversation belongs on a different day." },
+      { question: "Can I get a refund on my deposit if people drop out of my birthday table?", answer: "Most London club deposits are non-refundable, but your promoter can often restructure the arrangement. You might move to a smaller table, reduce the minimum spend, or convert to a guestlist-only evening. Contact your booker as soon as you know about cancellations for the best chance of adjustment." },
+      { question: "How many people do I need to keep a club table in London?", answer: "Most venues expect at least four to six guests per table as of May 2026, though this varies by club and table size. A table booked for twelve that only has three arrivals risks being reassigned. Check with your promoter about the minimum number they need to hold your reservation." },
+      { question: "Is it rude to invite replacements for friends who cancelled on my birthday?", answer: "Not at all. Filling empty spots shows you value having a full, lively table for the birthday person. Frame it as an invitation rather than a replacement and most people will be happy to join a night that is already organised." },
+    ],
+  },
 ];
 
 export function getBlogPostBySlug(slug: string): BlogPost | undefined {

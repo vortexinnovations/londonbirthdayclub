@@ -104,6 +104,7 @@ export const images = {
     "birthday-party-themes-london-clubs": "/gallery/images/fe4414_dd9694e452204ef99a0b6c2dc693faf9.jpg",
     "pre-drinks-london-club-birthday-guide": "/gallery/images/maison-close-070.jpg",
     "london-club-door-policy-birthday-groups": "/gallery/images/maison-close-086.jpg",
+    "friends-cancel-birthday-night-out-london": "/gallery/images/maison-close-1014.jpg",
   },
 } as const;
 
