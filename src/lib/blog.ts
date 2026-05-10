@@ -179,3 +179,158 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "how-to-surprise-birthday-london-club",
+    title: "How to Plan a Surprise Birthday at a London Club",
+    metaTitle:
+      "How to Plan a Surprise Birthday at a London Nightclub | Step-by-Step",
+    metaDescription:
+      "Complete guide to planning a surprise birthday at a London club. Secret booking tips, how to coordinate with the venue, surprise arrival ideas, and common mistakes to avoid.",
+    excerpt:
+      "Planning a surprise birthday at a London club requires coordination, secrecy, and timing. Here's how to pull it off without the birthday person finding out.",
+    publishedAt: "2026-01-05",
+    updatedAt: "2026-03-25",
+    category: "Planning",
+    readTime: "6 min read",
+    sections: [
+      {
+        heading: "Why Clubs Are Perfect for Surprise Birthdays",
+        headingLevel: "h2",
+        content: [
+          "A surprise birthday at a London club is one of the most impactful ways to celebrate someone. The combination of walking into a dark venue, seeing your closest friends at a decorated VIP table with sparklers and champagne, and having the DJ shout your name creates a genuine moment of shock and joy that a restaurant or house party can't match.",
+          "The logistics actually work in your favour too. You can coordinate everything through WhatsApp without the birthday person knowing, the club handles all the setup on-site, and the 'cover story' of a casual night out is completely believable.",
+        ],
+      },
+      {
+        heading: "Step 1: Book Without the Birthday Person Knowing",
+        headingLevel: "h2",
+        content: [
+          "This is the easy part. Message us on WhatsApp and tell us it's a surprise — we'll handle the booking entirely through you. No confirmation emails to the birthday person's phone, no deposits on their card. Everything goes through the organiser.",
+          "Choose the venue based on what the birthday person would love, not just what's available. If they're a hip-hop fan, TABU or Cirque Le Soir. If they love house music, Maddox or BEAT. If they appreciate luxury, Tape or Dear Darling. We can help you match their personality to the right club.",
+        ],
+      },
+      {
+        heading: "Step 2: Coordinate the Guest List Secretly",
+        headingLevel: "h2",
+        content: [
+          "Create a separate WhatsApp group without the birthday person for coordination. Share the venue, date, dress code, arrival time, and — critically — the cover story. Everyone needs to tell the same story if asked.",
+          "Collect money in advance through the group. Use a bank transfer or payment app and give people a clear deadline at least a week before. Nothing ruins a surprise faster than chasing payments at the last minute in a way the birthday person might notice.",
+        ],
+      },
+      {
+        heading: "Step 3: Plan the Arrival",
+        headingLevel: "h2",
+        content: [
+          "The arrival is the surprise moment, so plan it carefully. The most common approach: have the guests arrive at the club 20–30 minutes before the birthday person. Everyone gets settled at the table, bottles are ready, the table host knows the plan.",
+          "Then one or two close friends bring the birthday person to the club under a cover story — 'quick drink,' 'meeting friends for dinner nearby,' or 'checking out this new place.' When they walk in, they see their entire friend group at a decorated VIP table with sparklers going off. That's the moment.",
+          "Coordinate with us to make sure the club door staff know the plan. They'll let the advance group in without questions and make sure the birthday person's arrival is smooth.",
+        ],
+      },
+      {
+        heading: "Step 4: The Birthday Extras",
+        headingLevel: "h2",
+        content: [
+          "Pre-arrange all the birthday touches for maximum impact at the surprise moment. Have the table decorated before the birthday person arrives. Arrange for sparklers and a bottle presentation within minutes of their arrival. Have the birthday cake ready to bring out once the initial excitement settles.",
+          "The DJ shoutout is particularly powerful for surprises — time it for shortly after arrival when the birthday person is still processing the surprise. Hearing their name over the sound system while surrounded by friends is genuinely emotional.",
+        ],
+      },
+      {
+        heading: "Common Surprise Birthday Mistakes",
+        headingLevel: "h2",
+        content: [
+          "The biggest mistake is overcomplicating the cover story. Keep it simple and believable. The second biggest is not accounting for timing — if you tell the birthday person you're meeting at 10pm, make sure all guests are at the venue by 9:30pm at the latest. Stragglers arriving after the birthday person ruin the reveal.",
+          "Don't rely on the birthday person getting ready quickly. If you know they take two hours to get dressed, factor that into your timeline. And make sure the friend bringing them knows the exact table location so there's no awkward wandering around the club looking for the group.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question:
+          "Can I arrange a surprise birthday at a London club without the birthday person knowing?",
+        answer:
+          "Yes, absolutely. We handle the entire booking through the organiser — no emails, calls, or confirmations go to the birthday person. Everything is coordinated via WhatsApp with the person planning the surprise.",
+      },
+      {
+        question: "How early should guests arrive for a surprise birthday?",
+        answer:
+          "Guests should arrive 20-30 minutes before the birthday person. This allows time to get settled, have bottles ready, and brief the table host on the plan. The surprise is much more impactful when everyone is already in place.",
+      },
+    ],
+  },
+  {
+    slug: "birthday-bottle-service-london-guide",
+    title: "Birthday Bottle Service in London: The Complete Guide",
+    metaTitle:
+      "Birthday Bottle Service London | What It Is, How It Works & What to Expect",
+    metaDescription:
+      "Everything you need to know about birthday bottle service at London nightclubs. How it works, what bottles to choose, tipping etiquette, and how to make the most of your table.",
+    excerpt:
+      "A no-nonsense guide to how bottle service actually works at London clubs on your birthday — from choosing bottles to tipping your table host.",
+    publishedAt: "2026-01-12",
+    updatedAt: "2026-03-25",
+    category: "Guide",
+    readTime: "8 min read",
+    sections: [
+      {
+        heading: "What Is Bottle Service and How Does It Work?",
+        headingLevel: "h2",
+        content: [
+          "Bottle service means you book a reserved table at a nightclub and purchase bottles of spirits or champagne rather than individual drinks at the bar. Your table comes with a dedicated host who pours your drinks, keeps your ice fresh, and ensures your group has everything they need throughout the night.",
+          "For birthdays, bottle service is the standard way to celebrate at London's premium clubs. It gives your group a home base for the evening — somewhere to keep your things, have conversations, and retreat to between trips to the dancefloor. Your table area is yours for the night; nobody else sits there.",
+        ],
+      },
+      {
+        heading: "How to Choose Your Bottles",
+        headingLevel: "h2",
+        content: [
+          "The bottles you choose should match what your group actually drinks. There's no point ordering three bottles of vodka if half your group prefers gin. A good mix for most birthday groups of 10–15 is two bottles of a spirit (vodka is the most popular, followed by gin and tequila) and one bottle of champagne for the birthday toast.",
+          "Your table host will present the bottle menu when you arrive. Prices vary by brand and venue, but as a general guide: premium vodka (Grey Goose, Belvedere) runs £300–400 per bottle, champagne (Moët, Veuve Clicquot) £300–500, and super-premium options (Dom Pérignon, Ace of Spades) £500–1,500+.",
+          "A practical tip: choose one or two spirits that most of your group enjoys, add a bottle of champagne for the birthday moment, and use the rest of your minimum spend on drinks that suit the group. Your table host can advise on the best combination for your budget and group size.",
+        ],
+      },
+      {
+        heading: "The Birthday Bottle Presentation",
+        headingLevel: "h2",
+        content: [
+          "The bottle presentation is one of the highlights of a birthday at a London club. When your bottles arrive — especially at venues like Cirque Le Soir, Tape, and The London Reign — they come with sparklers, LED displays, and sometimes a procession of staff carrying them to your table. The music drops, the sparklers light up, and the whole room's attention turns to your table.",
+          "At birthday celebrations, the first bottle presentation is usually the biggest moment. The sparklers, combined with a DJ shoutout and the energy of your group cheering, creates a genuine peak moment. Some clubs, like Cirque Le Soir, incorporate their performers into the bottle delivery, making it even more theatrical.",
+          "If you've arranged a birthday cake, it's often delivered alongside or shortly after the first bottle presentation. The timing creates a natural flow: sparklers and bottles, then cake and singing, then the party continues.",
+        ],
+      },
+      {
+        heading: "Table Host Etiquette and Tipping",
+        headingLevel: "h2",
+        content: [
+          "Your table host is your main point of contact for the entire evening. They'll greet you on arrival, show you to your table, present your bottles, keep your drinks topped up, manage ice and mixers, and handle any requests. Good table hosts anticipate what you need before you ask.",
+          "Tipping is customary at London clubs, typically 10–15% for good service. For birthday celebrations where your host has gone above and beyond — coordinating cake delivery, arranging extra sparklers, liaising with the DJ — 15–20% is appropriate. Tips can be added to your card payment at the end of the night.",
+          "Don't hesitate to ask your table host for anything. Need more mixers? Different glasses? Want to rearrange the table area? They're there to make your night work. The best birthday table experiences come from groups who communicate with their host about what they want.",
+        ],
+      },
+      {
+        heading: "Making the Most of Your Birthday Table",
+        headingLevel: "h2",
+        content: [
+          "Your table is a home base, not a prison. The best birthday nights involve a mix of table time and dancefloor time. Use the table for toasts, cake, conversations, and refuelling — then hit the dancefloor when the music hits right. Your bottles and belongings are safe at the table with your host.",
+          "Position matters. If you're booking and have a choice, tables near the dancefloor offer more energy and easier access to the action. Tables in more secluded areas offer better conversation and a more relaxed vibe. For birthdays, dancefloor-adjacent tables are usually the better choice — you want to be where the energy is.",
+          "Timing your key birthday moments (cake, toast, sparklers) for when the club is at peak energy — typically midnight to 1am — maximises the impact. Your table host can help coordinate timing with the DJ for the perfect moment.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "How many bottles do I need for my group?",
+        answer:
+          "As a rough guide, one bottle of spirits serves 15-20 mixed drinks. For a group of 10 over a full evening, 2-3 bottles of spirits plus a bottle of champagne is a comfortable amount. Your table host can help you gauge the right amount based on your group's drinking pace.",
+      },
+      {
+        question: "Can I order more bottles during the night?",
+        answer:
+          "Yes, absolutely. You can add bottles at any time through your table host. Many birthday groups start with the minimum spend and add bottles as the night progresses. Additional bottles can be ordered with sparklers for extra birthday moments throughout the evening.",
+      },
+    ],
+  },
+];
+
+export function getBlogPostBySlug(slug: string): BlogPost | undefined {
+  return blogPosts.find((p) => p.slug === slug);
+}
