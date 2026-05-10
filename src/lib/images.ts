@@ -105,6 +105,7 @@ export const images = {
     "pre-drinks-london-club-birthday-guide": "/gallery/images/maison-close-070.jpg",
     "london-club-door-policy-birthday-groups": "/gallery/images/maison-close-086.jpg",
     "friends-cancel-birthday-night-out-london": "/gallery/images/maison-close-1014.jpg",
+    "birthday-planning-timeline-london": "/gallery/images/maison-close-106.jpg",
   },
 } as const;
 
