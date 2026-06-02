@@ -682,4 +682,66 @@ export const blogDataPart4: BlogPost[] = [
       { question: "Do I need to reconfirm the table the week of the event?", answer: "Yes. A short call or message to the venue host seven days out catches any miscommunication about table size, timing, or special requests like a birthday cake. Do the same again 24 hours before. Venues appreciate organised groups and tend to look after them better on the night." },
     ],
   },
+  {
+    slug: "sober-birthday-night-out-london",
+    title: "How to Plan a Sober Birthday Night Out in London",
+    metaTitle: "Sober Birthday Night Out in London: A Guide",
+    metaDescription: "Planning a sober birthday in London? How to choose the right venue, keep a mixed group happy, and have a brilliant alcohol-free night out.",
+    excerpt: "You do not need to drink to have a brilliant birthday in London. Here is how to plan a sober-friendly night out that the whole group enjoys.",
+    publishedAt: "2026-06-02",
+    updatedAt: "2026-06-02",
+    category: "Guide",
+    readTime: "6 min read",
+    sections: [
+      {
+        heading: "A Great Birthday Without the Booze",
+        headingLevel: "h2" as const,
+        content: [
+          "By Charlotte Hayes, Events Specialist | Last updated: 2 June 2026",
+          "More of the birthdays I plan now have at least one person who is not drinking, and a growing number where the birthday person themselves wants a completely sober night. That used to feel awkward to organise. It does not any more. Low- and no-alcohol drinking has moved firmly into the British mainstream, a shift that nightlife outlets like Time Out have tracked closely in their London bar coverage at https://www.timeout.com/london/bars, and London venues have caught up with proper alcohol-free menus rather than a sad lime and soda.",
+          "From experience, a sober birthday lives or dies on two things: the venue you choose and how you handle a mixed group. Get those right and nobody spends the night feeling like they are missing out. This guide covers both.",
+        ],
+      },
+      {
+        heading: "Choose a Venue Where the Atmosphere Does the Work",
+        headingLevel: "h2" as const,
+        content: [
+          "The single biggest decision is picking somewhere the energy comes from the room, not the bar. A venue with a strong DJ, a real dance floor, and a sense of occasion carries a sober guest effortlessly, because the fun is in the music and the crowd rather than in how much everyone has had to drink. A quiet bar where the only activity is ordering rounds is the hardest place to enjoy sober.",
+          "I always steer sober celebrations towards music-led, high-energy rooms. On my last visit to coordinate a smaller birthday, the group barely touched the bar all night because the floor was packed and the DJ was relentless, and the birthday person told me afterwards it was the best night out she had had in a year. Look for venues known for their sound and their dance floor rather than their bottle presentations.",
+        ],
+      },
+      {
+        heading: "Sort the Alcohol-Free Options in Advance",
+        headingLevel: "h2" as const,
+        content: [
+          "Do not assume the venue has a proper alcohol-free range. Some do, with full mocktail lists and no-alcohol spirits and beers, while others still treat soft drinks as an afterthought. A quick message to the venue before the night confirms what they can actually pour, and means the sober guests are not stuck with cola for hours.",
+          "I noticed early on that the venues which take mocktails seriously make a real difference to how included a non-drinker feels. A proper alcohol-free cocktail served in the same glass as everyone else removes the sense of being the odd one out. When I check a venue for a sober-friendly birthday, the quality of the no-alcohol list is one of the first things I ask about.",
+        ],
+      },
+      {
+        heading: "Keep a Mixed Group Happy",
+        headingLevel: "h2" as const,
+        content: [
+          "Most birthday groups are mixed: some drinking, some not, and that is completely fine when it is handled with a little thought. The trick is to make the night about the shared experience rather than the drinking. Agree on a meeting point and a rough plan, and avoid building the whole evening around rounds at the bar, which naturally leaves non-drinkers on the sidelines.",
+          "It helps to brief the group quietly beforehand so nobody pressures the birthday person or any other sober guest to drink. A good group takes the cue immediately. Our birthday planning hub and our group night out guide both cover how to set the tone with the group in advance so everyone arrives on the same page.",
+          "If the birthday person is the one staying sober, check in with them on what they want the night to feel like. Some want it kept low-key, others want the biggest party in the room and simply do not want a drink in their hand. Knowing which it is shapes every other decision.",
+        ],
+      },
+      {
+        heading: "Practical Tips for the Night Itself",
+        headingLevel: "h2" as const,
+        content: [
+          "A few things make a sober birthday run smoothly. Arrive earlier rather than later, because the first couple of hours have the best atmosphere for anyone who is fully present and wants to dance while the floor fills up. Plan transport home in advance, which is far easier when at least one person is clear-headed enough to coordinate it at the end of the night.",
+          "Bring the celebration touches that have nothing to do with alcohol: a cake moment, a reserved spot for the group, a playlist of the birthday person's favourites requested with the DJ. These are what people remember, not the bar tab. Our birthday cake and decorations guidance covers what most London venues will happily arrange.",
+          "If planning all of this feels like a lot, you do not have to do it alone. Message us on WhatsApp and we will find a venue with a genuine alcohol-free offering and an atmosphere that carries the night, then handle the arrangements for your group. One conversation and the whole evening is sorted.",
+        ],
+      },
+    ],
+    faqs: [
+      { question: "Can you have a good birthday night out in London without drinking?", answer: "Absolutely. The key is choosing a music-led, high-energy venue where the atmosphere comes from the DJ and the dance floor rather than the bar. Plenty of London venues now offer full alcohol-free menus, so a sober guest can enjoy a proper drink in hand and a great night out." },
+      { question: "Do London clubs have alcohol-free or mocktail options?", answer: "Many do, and the better ones take them seriously with full mocktail lists and no-alcohol spirits and beers. It varies by venue though, so it is worth confirming with the venue before the night so your sober guests are looked after." },
+      { question: "How do you handle a mixed group where some people are not drinking?", answer: "Make the night about the shared experience rather than rounds at the bar. Agree a plan and a meeting point, brief the group not to pressure anyone to drink, and pick a venue where the energy is on the dance floor. Handled well, nobody feels left out." },
+      { question: "Is a sober birthday cheaper than a normal night out?", answer: "Often, yes, since drinks are usually the largest variable cost of a night out. That said, the focus should be on the experience rather than savings. A great venue and a well-planned evening matter far more than the bar total." },
+    ],
+  },
 ];
