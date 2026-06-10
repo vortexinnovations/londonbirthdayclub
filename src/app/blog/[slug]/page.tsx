@@ -109,6 +109,16 @@ export default async function BlogPostPage({
             <h1 className="text-3xl sm:text-4xl font-bold tracking-tight mb-4">
               {post.title}
             </h1>
+            <p className="text-sm text-text-muted mb-4">
+              By{" "}
+              <Link
+                href="/about-the-editor"
+                className="text-gold underline underline-offset-2 hover:opacity-80"
+              >
+                Charlotte Hayes
+              </Link>
+              , Events Specialist
+            </p>
             <p className="text-text-secondary leading-relaxed mb-8">
               {post.excerpt}
             </p>

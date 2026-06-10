@@ -505,7 +505,7 @@ export const blogDataPart4: BlogPost[] = [
         heading: "Why Door Policies Hit Birthday Groups Harder",
         headingLevel: "h2" as const,
         content: [
-          "By Charlotte Hayes, Events Specialist | Last updated: 3 May 2026",
+          "Last updated: 3 May 2026",
           "Door policies at London nightclubs apply to everyone, but birthday groups face particular scrutiny. A party of ten or twelve arriving together draws far more attention than a couple, and door staff evaluate the whole group before letting anyone through. Your table reservation secures the table, but each guest still needs to meet the venue's standards independently. This is the single biggest source of birthday night anxiety, and it is entirely manageable once you understand how it works.",
           "I've coordinated birthday arrivals at venues like Maddox Club and Funky Buddha for several years, and the most common misconception is that a booking guarantees automatic entry for the entire group. It does not. One guest in trainers or one person who has clearly had too much to drink at pre-drinks can delay or even prevent entry for the whole party. Understanding how door assessments work lets you prepare properly and protect the celebration you have spent weeks planning.",
         ],
@@ -566,7 +566,7 @@ export const blogDataPart4: BlogPost[] = [
         heading: "Why Cancellations Happen and Why They Do Not Ruin Your Night",
         headingLevel: "h2" as const,
         content: [
-          "By Charlotte Hayes, Events Specialist | Last updated: 7 May 2026",
+          "Last updated: 7 May 2026",
           "You have spent weeks planning a birthday celebration at a London club, confirmed the table, briefed the group, and then three friends message to say they cannot make it. This is one of the most common frustrations in birthday planning, and it happens far more often than most people expect. The good news is that cancellations do not have to derail your evening. With a few practical adjustments, a smaller group can still have a brilliant night.",
           "I have coordinated birthday celebrations where nearly half the original group dropped out in the final 48 hours. In every case, the night still worked because we adjusted the plan rather than trying to force the original vision. The key is speed. The sooner you know about cancellations, the more options you have for reshaping the evening. As The Guardian has reported on London's nightlife scene, smaller and more intentional groups often have a better experience at premium venues than overstretched large parties trying to keep everyone together.",
         ],
@@ -628,7 +628,7 @@ export const blogDataPart4: BlogPost[] = [
         heading: "Why a Birthday Timeline Saves Your Sanity",
         headingLevel: "h2" as const,
         content: [
-          "By Charlotte Hayes, Events Specialist | Last updated: 10 May 2026",
+          "Last updated: 10 May 2026",
           "Most birthday celebrations at London nightclubs that go wrong do not fail because of the venue or the music. They fail because someone left the planning until the final fortnight, and by then the table options were limited, the group could not agree on a date, and three friends quietly dropped out. A timeline fixes this.",
           "I have planned more than a hundred birthday nights across central London, and the pattern is always the same. Groups who follow a structured eight-week build-up arrive at the venue relaxed and ready. Groups who scramble in the final week arrive stressed and resentful, often missing key reservations. The good news is that the timeline is straightforward, and you do not need to spend more than an hour on it in any given week.",
         ],
@@ -697,7 +697,7 @@ export const blogDataPart4: BlogPost[] = [
         heading: "A Great Birthday Without the Booze",
         headingLevel: "h2" as const,
         content: [
-          "By Charlotte Hayes, Events Specialist | Last updated: 2 June 2026",
+          "Last updated: 2 June 2026",
           "More of the birthdays I plan now have at least one person who is not drinking, and a growing number where the birthday person themselves wants a completely sober night. That used to feel awkward to organise. It does not any more. Low- and no-alcohol drinking has moved firmly into the British mainstream, a shift that nightlife outlets like Time Out have tracked closely in their London bar coverage at https://www.timeout.com/london/bars, and London venues have caught up with proper alcohol-free menus rather than a sad lime and soda.",
           "From experience, a sober birthday lives or dies on two things: the venue you choose and how you handle a mixed group. Get those right and nobody spends the night feeling like they are missing out. This guide covers both.",
         ],
@@ -759,7 +759,7 @@ export const blogDataPart4: BlogPost[] = [
         heading: "The Weekday Birthday Problem",
         headingLevel: "h2" as const,
         content: [
-          "By Charlotte Hayes, Events Specialist | Last updated: 10 June 2026",
+          "Last updated: 10 June 2026",
           "Here is a piece of maths nobody thinks about until it affects them: five out of seven birthdays land on a weekday. For every birthday that conveniently falls on a Saturday, there are several that arrive on a Tuesday morning with a full work week wrapped around them. I have planned birthdays for years, and the weekday question comes up more than almost anything else: do you celebrate on the actual day, push it to the weekend, or try to do both?",
           "The honest answer is that there is no single right call, but there is a right call for your group, your budget, and your energy levels. This guide walks through how to decide, and how to make a weekday celebration in London genuinely brilliant rather than a watered-down version of the weekend.",
         ],
@@ -832,7 +832,7 @@ export const blogDataPart4: BlogPost[] = [
         heading: "The Best and Worst Season for a Birthday",
         headingLevel: "h2" as const,
         content: [
-          "By Charlotte Hayes, Events Specialist | Last updated: 11 June 2026",
+          "Last updated: 11 June 2026",
           "A summer birthday in London is a gift and a trap at the same time. The gift is obvious: long light evenings, outdoor spaces that actually get used, and a city in a visibly better mood. The trap is quieter: summer is when your guest list is least available, when the best outdoor spots are most contested, and when the weather can rewrite your plan an hour before it starts. I plan more birthdays in June and July than any other months, and the difference between the great ones and the stressful ones is almost never the venue. It is how early and how flexibly the organiser planned around summer itself.",
         ],
       },
