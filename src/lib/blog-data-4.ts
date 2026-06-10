@@ -817,4 +817,71 @@ export const blogDataPart4: BlogPost[] = [
       { question: "How do you get friends to come out on a school night?", answer: "Make yes feel easy: give the night a clear end time, pick somewhere central near good transport, keep the plan to one or two stops, and put place, time, and rough cost in the group chat once. People commit to a well-shaped 8pm-to-midnight plan far more readily than an open-ended night." },
     ],
   },
+  {
+    slug: "summer-birthday-night-out-london",
+    title: "Planning a Summer Birthday Night Out in London",
+    metaTitle: "Summer Birthday Night Out in London: A Guide",
+    metaDescription: "Planning a summer birthday in London? How to beat the holiday-season guest list problem, build a day-to-night celebration, and weather-proof the plan.",
+    excerpt: "Long evenings, outdoor starts, and half your friends on holiday. Here is how to plan a summer birthday night out in London that actually comes together.",
+    publishedAt: "2026-06-11",
+    updatedAt: "2026-06-11",
+    category: "Planning",
+    readTime: "6 min read",
+    sections: [
+      {
+        heading: "The Best and Worst Season for a Birthday",
+        headingLevel: "h2" as const,
+        content: [
+          "By Charlotte Hayes, Events Specialist | Last updated: 11 June 2026",
+          "A summer birthday in London is a gift and a trap at the same time. The gift is obvious: long light evenings, outdoor spaces that actually get used, and a city in a visibly better mood. The trap is quieter: summer is when your guest list is least available, when the best outdoor spots are most contested, and when the weather can rewrite your plan an hour before it starts. I plan more birthdays in June and July than any other months, and the difference between the great ones and the stressful ones is almost never the venue. It is how early and how flexibly the organiser planned around summer itself.",
+        ],
+      },
+      {
+        heading: "Solve the Guest List Before Anything Else",
+        headingLevel: "h2" as const,
+        content: [
+          "The single biggest summer problem is that everyone is away. Between annual leave, festivals, and family holidays, any given July weekend will lose you a chunk of your invite list, and no venue choice can fix that. So flip the usual order of planning: before you pick a place, pick the date with the people who matter most.",
+          "From experience, the method that works is simple. Choose your three or four essential guests and agree the date with them directly, three to four weeks out. Then invite everyone else with a clear, single message and accept the absences without chasing. A summer birthday with twelve people who are genuinely present beats one with twenty maybes, and the groups that try to find a date that works for absolutely everyone usually end up celebrating in September.",
+        ],
+      },
+      {
+        heading: "Build a Day-to-Night Celebration",
+        headingLevel: "h2" as const,
+        content: [
+          "Summer is the one season where a birthday can honestly run from afternoon to early morning, and the celebrations that make the most of it treat the day as three acts. Start outdoors in the late afternoon, somewhere relaxed where the light does the decorating for you. Move to dinner as the evening cools, booked for a table that does not rush you. Then take the group on to the night's main event once the energy has built naturally.",
+          "Two practical notes on that structure. First, outdoor space in London is rationed in summer: terraces, courtyards and rooftops fill fast on any warm day, so the afternoon stop needs booking with the same seriousness as the dinner. Second, pace the day for the long haul. I have watched plenty of birthday groups burn out by ten because the afternoon ran too hot; the organisers who build in a proper dinner break deliver their group to the late venue with energy left to spend.",
+        ],
+      },
+      {
+        heading: "Always Hold a Weather Plan B",
+        headingLevel: "h2" as const,
+        content: [
+          "London summer has a sense of humour, and an outdoor birthday plan with no fallback is a coin flip you do not need to take. The fix costs nothing: for every outdoor element of the day, know the indoor version before you send the invite. A covered or indoor alternative for the afternoon, a dinner booking that works regardless, and a late venue that never depended on the sky in the first place.",
+          "Communicate it once, in the invite itself: one message with plan A, plan B, and the simple rule that the group chat decides by late morning on the day. That single line saves the organiser from twenty separate weather conversations, and it means rain downgrades the day from perfect to still very good rather than cancelling it.",
+        ],
+      },
+      {
+        heading: "Summer-Specific Touches Worth Planning",
+        headingLevel: "h2" as const,
+        content: [
+          "A few small things land differently in the warm months. Golden hour is the best free birthday photographer in London, so plan the group photos for the outdoor act of the day rather than the dark of the late venue. If there is a cake involved, summer argues for serving it at dinner rather than carting it through a hot afternoon. And remind the group that dressing for a summer birthday means dressing for the whole arc, including venues that hold a smart standard whatever the temperature and rooms that run cold by the last hour.",
+          "London's going-out calendar is also at its fullest in summer, as Time Out's London nightlife coverage (https://www.timeout.com/london/nightlife) makes clear, which cuts both ways for a birthday: there is more happening around you, and more competition for every good table.",
+        ],
+      },
+      {
+        heading: "When to Book What",
+        headingLevel: "h2" as const,
+        content: [
+          "Summer compresses every booking window, as of June 2026. As a working timeline: agree the date with your essential guests three to four weeks out, book the outdoor afternoon spot and the dinner two to three weeks out, and confirm the late venue at the same time rather than leaving it to the week of. Larger groups should add a week to everything, since the spaces that hold twelve people comfortably are exactly the ones summer demand eats first.",
+          "However you structure it, do the booking work early and the day itself becomes easy. The summer birthdays that feel effortless in the photos are the ones that were boringly well organised three weeks before.",
+        ],
+      },
+    ],
+    faqs: [
+      { question: "What is the best month for a summer birthday in London?", answer: "June and early July give you the longest evenings and the best odds on weather, while late July and August lose more guests to holidays. If your birthday falls in peak holiday season, lock the date with your essential people first and plan around the absences rather than fighting them." },
+      { question: "How far ahead should you plan a summer birthday night out?", answer: "Three to four weeks for the date and the key bookings, as of June 2026. Summer demand compresses everything: outdoor spaces, good dinner tables, and late venues all book earlier than they would in winter, and larger groups should add another week." },
+      { question: "What if it rains on an outdoor birthday plan?", answer: "Have the indoor version of every outdoor element decided before the invite goes out, and put plan A and plan B in the same message. A morning-of decision in the group chat turns rain into a minor reroute instead of a cancellation." },
+      { question: "Is a summer birthday more expensive than other seasons?", answer: "The venues themselves rarely charge more, but summer demand means the good options sell out, leaving latecomers with pricier leftovers. Booking two to three weeks ahead is the real cost control, and a day-to-night structure spreads the spend across an afternoon, a dinner and a night rather than one big bill." },
+    ],
+  },
 ];
