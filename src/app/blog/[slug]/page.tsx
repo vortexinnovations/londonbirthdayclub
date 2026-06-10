@@ -55,9 +55,10 @@ export default async function BlogPostPage({
     datePublished: post.publishedAt,
     dateModified: post.updatedAt,
     author: {
-      "@type": "Organization",
-      name: "London Birthday Club",
-      url: "https://londonbirthdayclub.com",
+      "@type": "Person",
+      name: "Charlotte Hayes",
+      jobTitle: "Events Specialist",
+      url: "https://londonbirthdayclub.com/about-the-editor/",
     },
     publisher: {
       "@type": "Organization",
