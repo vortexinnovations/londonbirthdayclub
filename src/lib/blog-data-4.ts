@@ -744,4 +744,77 @@ export const blogDataPart4: BlogPost[] = [
       { question: "Is a sober birthday cheaper than a normal night out?", answer: "Often, yes, since drinks are usually the largest variable cost of a night out. That said, the focus should be on the experience rather than savings. A great venue and a well-planned evening matter far more than the bar total." },
     ],
   },
+  {
+    slug: "birthday-falls-on-a-weekday-london",
+    title: "When Your Birthday Falls on a Weekday: How to Celebrate in London",
+    metaTitle: "Birthday on a Weekday? How to Celebrate in London",
+    metaDescription: "Birthday landing on a Tuesday? How to decide between celebrating on the day or the weekend, and how to plan a brilliant weekday birthday in London.",
+    excerpt: "Most birthdays land on a weekday, not a Saturday. Here is how to decide when to celebrate, and why a midweek birthday in London can quietly be the better night.",
+    publishedAt: "2026-06-10",
+    updatedAt: "2026-06-10",
+    category: "Planning",
+    readTime: "7 min read",
+    sections: [
+      {
+        heading: "The Weekday Birthday Problem",
+        headingLevel: "h2" as const,
+        content: [
+          "By Charlotte Hayes, Events Specialist | Last updated: 10 June 2026",
+          "Here is a piece of maths nobody thinks about until it affects them: five out of seven birthdays land on a weekday. For every birthday that conveniently falls on a Saturday, there are several that arrive on a Tuesday morning with a full work week wrapped around them. I have planned birthdays for years, and the weekday question comes up more than almost anything else: do you celebrate on the actual day, push it to the weekend, or try to do both?",
+          "The honest answer is that there is no single right call, but there is a right call for your group, your budget, and your energy levels. This guide walks through how to decide, and how to make a weekday celebration in London genuinely brilliant rather than a watered-down version of the weekend.",
+        ],
+      },
+      {
+        heading: "On the Day, the Weekend, or Both?",
+        headingLevel: "h2" as const,
+        content: [
+          "Start with the decision itself, because everything else flows from it. Celebrating on the actual day feels right in a way a moved date never quite does: the messages, the cake at work, and the night out all line up, and there is something special about being out in London on the date itself. The trade-off is that some friends will struggle with a school night, so the group is usually smaller.",
+          "Moving the party to the nearest Friday or Saturday gets you the full guest list and a later night, but you lose the magic of the day, and weekend nights out come with bigger crowds and bigger costs. From experience, the people who feel best about their birthday usually split the difference: something small and easy on the actual day, a dinner or a few drinks with the inner circle, and the main event at the weekend if a big group matters to them.",
+          "If you only have the appetite for one celebration, my advice is simple: small group, do it on the day; big group, move it to the weekend and let the actual birthday be a quiet pleasure.",
+        ],
+      },
+      {
+        heading: "Why a Midweek Birthday Can Quietly Beat a Saturday",
+        headingLevel: "h2" as const,
+        content: [
+          "Now for the part most people do not expect: a weekday birthday night in London is not a consolation prize. London's scene runs seven nights a week, as Time Out's nightlife coverage (https://www.timeout.com/london/nightlife) makes clear, and the midweek version of the city has real advantages for a birthday group.",
+          "The rooms are calmer, so your group actually stays together instead of being scattered by a Saturday crush. Doors are friendlier and queues are shorter, which matters when you are shepherding ten people. Staff have more time for you, and venues are noticeably more flexible about little birthday touches when they are not at full stretch. And the value is better across the board: midweek offers, easier entry, and quieter bars mean the same budget simply goes further than it would on a Saturday, as of June 2026.",
+          "I noticed years ago that midweek birthday groups often have a better time than weekend ones, precisely because the night feels like theirs. When the room is at seventy percent rather than rammed, a birthday group becomes the centre of gravity, and the staff treat them that way.",
+        ],
+      },
+      {
+        heading: "Getting People to Commit on a School Night",
+        headingLevel: "h2" as const,
+        content: [
+          "The biggest obstacle to a weekday birthday is not the venue, it is the RSVP. People say maybe to a Tuesday in a way they never would to a Saturday. The fix is to design the night so saying yes feels easy.",
+          "Frame it with an end time, not just a start time. An invitation that says eight until midnight gets more yeses than one that implies a 3am finish, because everyone is silently calculating their alarm clock. Pick somewhere central and close to good transport so nobody is doing mental arithmetic about the last train home. Keep the plan to one or two stops rather than a crawl, and put the key details in the group chat once, clearly: place, time, end time, and what it will roughly cost.",
+          "And set expectations honestly. A Tuesday night out is a different animal to a Saturday: the music starts earlier, the room peaks around midnight rather than half past one, and the night has a natural end. Sold properly, that is a feature. Everyone gets a proper celebration and still functions at work the next day.",
+        ],
+      },
+      {
+        heading: "Planning the Night Itself",
+        headingLevel: "h2" as const,
+        content: [
+          "A weekday birthday rewards a slightly different running order. Book dinner earlier than you would at the weekend, around seven or half past, so the meal is relaxed rather than rushed. Move on by ten if dancing is on the menu, because midweek rooms fill and peak earlier. Our dinner-then-club and birthday planning timeline guides both apply here, just shifted a couple of hours earlier than their weekend versions.",
+          "Think about the next morning as part of the plan, not an afterthought. Encourage people to drop coats and bags at the cloakroom early, keep the pace gentler than a Friday blowout, and know your transport options home before you head out. The groups that enjoy weekday birthdays most are the ones that treat the early finish as part of the design rather than a defeat.",
+          "One more practical note: confirm everything with the venue a day or two ahead. Midweek programming can vary more than weekends, and you want to be sure the night you are picturing, the music, the room, the birthday touches, is the night that is actually running, as of June 2026.",
+        ],
+      },
+      {
+        heading: "If You Move It to the Weekend",
+        headingLevel: "h2" as const,
+        content: [
+          "If you do shift the main event to Friday or Saturday, do not let the actual day pass unmarked. A favourite dinner, a couple of cocktails with your closest people, even a proper breakfast before work changes how the day feels. The weekend party then becomes a second celebration rather than a delayed one.",
+          "Watch the double-spend, though. Two celebrations can quietly cost more than one good one, so decide early which night is the headline and budget the other as a low-key warm-up. And send the weekend invitation with the actual date mentioned, people are warmer about a moved party when they know what it is celebrating.",
+          "However you split it, the rule is the same one I give every birthday organiser: decide what kind of night you actually want first, then pick the date and the venue to serve it, never the other way round.",
+        ],
+      },
+    ],
+    faqs: [
+      { question: "Should you celebrate your birthday on the actual day if it falls on a weekday?", answer: "If your ideal celebration is a small group, yes, the actual day carries a charm a moved date never quite matches. If you want the full guest list and a late night, move the main event to the weekend and mark the day itself with something small, like dinner with your closest people." },
+      { question: "Are London clubs and bars open on weekdays?", answer: "Yes. London runs seven nights a week, though midweek programming varies more by venue than weekends, as of June 2026. Rooms fill and peak earlier in the evening, so plan a slightly earlier running order than you would on a Saturday." },
+      { question: "Is a weekday birthday night out cheaper than a weekend one?", answer: "Usually, yes. Midweek nights tend to mean easier entry, better offers, and quieter bars, so the same budget goes further than on a Friday or Saturday. The savings are a side benefit; the calmer, more personal atmosphere is the real win for a birthday group." },
+      { question: "How do you get friends to come out on a school night?", answer: "Make yes feel easy: give the night a clear end time, pick somewhere central near good transport, keep the plan to one or two stops, and put place, time, and rough cost in the group chat once. People commit to a well-shaped 8pm-to-midnight plan far more readily than an open-ended night." },
+    ],
+  },
 ];
