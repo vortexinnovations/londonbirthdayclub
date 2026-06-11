@@ -55,6 +55,7 @@ export const images = {
 
   // Blog featured images (one per blog post — all unique)
   blog: {
+    "budget-birthday-night-out-london": "/gallery/images/maison-close-970.jpg",
     "summer-birthday-night-out-london": "/gallery/images/maison-close-410.jpg",
     "birthday-falls-on-a-weekday-london": "/gallery/images/maison-close-302.jpg",
     "sober-birthday-night-out-london": "/gallery/images/DSC_6802.jpg",

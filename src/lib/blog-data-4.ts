@@ -884,4 +884,72 @@ export const blogDataPart4: BlogPost[] = [
       { question: "Is a summer birthday more expensive than other seasons?", answer: "The venues themselves rarely charge more, but summer demand means the good options sell out, leaving latecomers with pricier leftovers. Booking two to three weeks ahead is the real cost control, and a day-to-night structure spreads the spend across an afternoon, a dinner and a night rather than one big bill." },
     ],
   },
+  {
+    slug: "budget-birthday-night-out-london",
+    title: "How to Celebrate a Birthday in London on a Budget",
+    metaTitle: "Birthday in London on a Budget: How to Plan It",
+    metaDescription: "Planning a birthday night out in London on a budget? The night to pick, a guest list over a table, pre-drinks, and how to split costs so no one overpays.",
+    excerpt: "A great birthday in London does not have to cost a fortune. The structural choices that save the most money, from the night you pick to how you split the bill.",
+    publishedAt: "2026-06-12",
+    updatedAt: "2026-06-12",
+    category: "Planning",
+    readTime: "6 min read",
+    sections: [
+      {
+        heading: "Where a Birthday Budget Actually Goes",
+        headingLevel: "h2" as const,
+        content: [
+          "Last updated: 12 June 2026",
+          "A great birthday night out in London does not have to cost a fortune, but the people who overspend almost always do it in the same few places. The money goes on entry, on drinks bought one round at a time at club prices, on a table booked bigger than the group needed, and on the taxis nobody planned for. I plan birthdays on every budget, and the ones that come in cheap are rarely the ones that cut the fun. They are the ones that made a handful of structural choices early, before a single drink was poured.",
+          "The point worth holding onto is this: the biggest savings are structural, not penny-pinching. You save far more by picking the right night than by counting drinks, and far more by organising the group than by hunting discounts. Here is where to make those choices as of June 2026.",
+        ],
+      },
+      {
+        heading: "Pick the Night, Not Just the Venue",
+        headingLevel: "h2" as const,
+        content: [
+          "The single biggest lever on a birthday budget is the night you choose. A celebration on a quieter night costs a fraction of the same night on a Saturday: entry is often free before a cut-off time, tables carry much lower minimums, and the room is calmer and easier to enjoy. From experience, a midweek or early-weekend birthday is the closest thing there is to a discount on the whole night, and the group usually has a better time for the lack of a crush.",
+          "Arrival time matters just as much. Getting your group through the door before the venue starts charging, or before its busiest hour, can turn a pricey entry into a free one. I have walked plenty of birthday groups in at no cost simply by setting the arrival an hour earlier than the group first wanted. If your birthday falls on a weekend, an earlier start is the budget version of the same night, and nobody will feel short-changed by walking in at ten rather than midnight.",
+        ],
+      },
+      {
+        heading: "A Guest List Beats a Table, Until It Doesn't",
+        headingLevel: "h2" as const,
+        content: [
+          "For most budget birthdays, getting your group on a guest list and enjoying the floor beats committing to a table. A guest list keeps the per-person cost close to zero for entry and lets everyone buy their own drinks at their own pace, which suits a group where not everyone wants to spend the same.",
+          "A table earns its place only when the group is big enough to split the minimum spend comfortably, or when the birthday genuinely wants a base for the night. The mistake I see most is a group of six booking a table sized and priced for ten, then struggling to hit the minimum. If a table is the dream, match it honestly to the headcount and the night, and read it as a shared cost from the start rather than a surprise at the end.",
+        ],
+      },
+      {
+        heading: "Front-Load the Night with Pre-Drinks",
+        headingLevel: "h2" as const,
+        content: [
+          "Drinks bought one round at a time at club prices are where a budget quietly disappears, so the cheapest birthdays move the early drinking somewhere cheaper. An hour or two of pre-drinks at home or at a relaxed bar before the main venue is the most effective single saving available, because it shifts the bulk of the night's drinking off the club tab without shortening the night.",
+          "It also does the group a favour. Everyone arrives warmed up and in good spirits, the awkward first hour is already behind you, and the time spent paying top prices inside is shorter. I build an hour or two of pre-drinks into almost every budget birthday I plan, and it is the saving the group notices least and benefits from most.",
+        ],
+      },
+      {
+        heading: "Split the Costs Cleanly So No One Overpays",
+        headingLevel: "h2" as const,
+        content: [
+          "A budget birthday is not only about spending less overall, it is about nobody feeling stung. Agree how shared costs are handled before the night, not at two in the morning when a bill lands. The fairest approach most groups settle on is simple: the guest of honour should not be paying for the privilege of their own birthday, and any shared spend is divided evenly among the people who opted into it, agreed up front.",
+          "Collecting a set amount per person in advance, rather than chasing money afterwards, removes the single most common source of birthday friction. It also keeps the night honestly within budget, because the group decides the number before the night talks them into a bigger one.",
+        ],
+      },
+      {
+        heading: "Where Not to Cut Corners",
+        headingLevel: "h2" as const,
+        content: [
+          "Saving money is the goal, but two things are worth protecting. The first is getting home safely: a planned, shared ride at the end of the night is not where to economise, and splitting it across the group makes it a small cost anyway. The second is the one detail that makes the night feel like a birthday rather than just a night out, whether that is a cake, a booked corner to gather in, or a toast at midnight. London's nightlife runs at full price most weekends, as Time Out's London nightlife coverage (https://www.timeout.com/london/nightlife) reflects, so spend your saved money on the moment that matters and let the rest stay lean.",
+          "Get the structure right and a budget birthday does not look or feel like a compromise. It looks like a well-run night that happened to cost a fraction of what the group expected, which is exactly the result every organiser is actually after.",
+        ],
+      },
+    ],
+    faqs: [
+      { question: "What is the cheapest night for a birthday in London?", answer: "A midweek or early-weekend night is consistently the cheapest, as of June 2026. Entry is often free before a cut-off time, table minimums are far lower than on a Saturday, and the calmer room is easier to enjoy. Pairing a quieter night with an earlier arrival is the biggest single saving on the whole celebration." },
+      { question: "Is it cheaper to do a guest list or a table for a birthday?", answer: "For most budget groups a guest list is cheaper, keeping entry close to zero and letting everyone buy drinks at their own pace. A table only makes financial sense when the group is large enough to split the minimum spend comfortably, so match the table to the real headcount rather than overbooking." },
+      { question: "How do you celebrate a birthday in London without spending much?", answer: "Pick a quieter night, arrive early to beat entry charges, do pre-drinks somewhere cheaper before the main venue, and split shared costs evenly and in advance. The structural choices save far more than counting drinks, and they leave the night itself feeling generous rather than tight." },
+      { question: "Should the birthday person pay on their own birthday?", answer: "Generally no. The fairest approach most groups use is that the guest of honour is covered by the group for shared costs, with everyone else paying an agreed amount per head. Settling the number in advance avoids the most common birthday-night money friction entirely." },
+    ],
+  },
 ];
