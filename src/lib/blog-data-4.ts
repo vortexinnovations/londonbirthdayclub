@@ -952,4 +952,77 @@ export const blogDataPart4: BlogPost[] = [
       { question: "Should the birthday person pay on their own birthday?", answer: "Generally no. The fairest approach most groups use is that the guest of honour is covered by the group for shared costs, with everyone else paying an agreed amount per head. Settling the number in advance avoids the most common birthday-night money friction entirely." },
     ],
   },
+  {
+    slug: "organise-birthday-group-whatsapp-london",
+    title: "How to Organise a Big Birthday Group on WhatsApp in London",
+    metaTitle: "Organise a Birthday Group on WhatsApp | London Guide 2026",
+    metaDescription: "How to organise a big birthday group on WhatsApp: chat setup, deadlines, polls and the week-of message that gets a London night out over the line.",
+    excerpt: "The group chat makes or breaks a London birthday. Here is the organiser's WhatsApp playbook: setup, deadlines, polls, and the message everyone actually reads.",
+    publishedAt: "2026-07-06",
+    updatedAt: "2026-07-06",
+    category: "Planning",
+    readTime: "5 min read",
+    sections: [
+      {
+        heading: "Why the Group Chat Decides the Night",
+        headingLevel: "h2" as const,
+        content: [
+          "Last updated: 6 July 2026",
+          "Most London birthdays are not lost at the club door. They are lost three weeks earlier, in a group chat that never quite made a decision. I coordinate more than a hundred celebrations a year, and the pattern is consistent: the nights that come off are run by an organiser who treats WhatsApp as a planning tool, not a spectator sport.",
+          "This is the playbook I wish every organiser had: the chat setup, the deadlines that matter, how to get decisions out of people who never reply, and the one message everyone genuinely reads.",
+        ],
+      },
+      {
+        heading: "Set Up the Chat Like an Organiser, Not a Participant",
+        headingLevel: "h2" as const,
+        content: [
+          "Start a dedicated event chat rather than hijacking the friendship group that already exists. Name it with the person and the date, something like Maya's 30th, Sat 25 July, so the commitment is visible every time the chat opens, and the plan is not buried under two hundred unrelated messages by Thursday.",
+          "Pin the key message. The pin should always hold the current state of the plan: date, area, meeting time, and what people need to do next. From experience, half the questions organisers field are already answered in a message nobody scrolled back to find; the pin removes the scroll.",
+          "One more structural trick: for anything with a surprise element, or any group where money might get awkward, run a second, smaller organisers' chat of two or three people, so the chasing and the wobbles never play out in front of the guest of honour.",
+        ],
+      },
+      {
+        heading: "The Three Deadlines That Save Every Birthday",
+        headingLevel: "h2" as const,
+        content: [
+          "Big groups do not fail because people are unwilling; they fail because nobody set a deadline. Set three, and say them plainly in the chat.",
+          "First, the interest deadline, about three weeks out: who is in, in principle. Second, the money deadline, at least a week before the night: a confirmed guest is someone who has paid, not someone who sent a thumbs up, and our birthday group payment tips guide covers the collecting itself. Third, the headcount lock, a few days out: the number you give the venue, after which the plan stops flexing.",
+          "That last one matters more than most organisers realise. Venues set up for the number you confirm. The groups that lock their numbers midweek keep the arrangement they were promised; the ones that let the chat drift arrive as nine people to a table set for fourteen, and no venue resets a Saturday floor plan at ten o'clock at night.",
+        ],
+      },
+      {
+        heading: "Polls, Pins and the Silent Majority",
+        headingLevel: "h2" as const,
+        content: [
+          "Open questions die in big chats. Ask fifteen people where should we go and you will get four replies, two jokes and a voice note. Ask them to tap a poll with two options and a closing time, and you will have a decision by the evening. One decision per poll, never more than three options, always a stated close.",
+          "Treat silence as a no. This is the rule that feels harsh and saves every plan. If someone has not answered or paid by the deadline, the plan stops waiting for them. I have watched a fifteen-person chat talk itself out of a night entirely inside forty-eight hours because the organiser kept extending deadlines for two silent members.",
+          "Keep decisions moving one at a time: date, then area, then venue style, then money. A chat asked to decide everything at once decides nothing, and London offers more good nights per weekend than any chat can process, as the depth of the listings at https://www.timeout.com/london/nightlife makes clear. The organiser's job is to narrow, not to broadcast options.",
+        ],
+      },
+      {
+        heading: "The Week-Of Message Everyone Actually Reads",
+        headingLevel: "h2" as const,
+        content: [
+          "Whatever else happens in the chat, send one consolidated message two or three days before the night, and pin it. It should fit on one screen: meeting time and point, the area, the standard to dress to, a reminder that everyone needs physical photo ID, the travel plan, and one line on timings.",
+          "Write it as a card, with each item on its own line. From experience this single message eliminates ninety per cent of day-of questions. If the night includes a pre-drinks stop, our pre-drinks planning guide pairs naturally with this step, and our birthday planning timeline guide covers everything that should already have happened by now.",
+          "Day-of, keep chat traffic to logistics only. Share a live location when you set off, nominate one meeting-point anchor, and agree in advance that latecomers make their own way to the venue; the group does not hold the door.",
+        ],
+      },
+      {
+        heading: "When the Chat Goes Quiet or Goes Wrong",
+        headingLevel: "h2" as const,
+        content: [
+          "Every big group sheds people. None of it needs to sink the night if the chat has the structures above: the headcount lock gives you a clean number to adjust from, and the money deadline means a dropout is a refund conversation rather than a hole in the budget. Our guide to what to do when friends cancel a birthday night out covers the emotional half of that problem.",
+          "If the whole chat has gone flat, the fix is a decision, not more chat. Post a poll with a close, or make the call yourself; in my opinion a decisive organiser with a good-enough plan beats a democratic chat with a perfect one every time.",
+          "And if you would rather not run the logistics at all, that is what we are here for. Tell us the date, the group size and the occasion, and we will sort the venue and the timings while your chat gets on with the fun part. Message us on WhatsApp and we will handle everything.",
+        ],
+      },
+    ],
+    faqs: [
+      { question: "How far in advance should you start a birthday group chat?", answer: "Three to four weeks before the night. It gives people time to commit and pay without the plan going stale, and it means you can confirm numbers with the venue about a week out." },
+      { question: "How do you get people in a group chat to actually reply?", answer: "Use polls instead of open questions, give every decision a stated closing time, and treat silence as a no once the deadline passes. People respond to a tap with a deadline far more reliably than to a question with neither." },
+      { question: "Should the birthday person be in the planning chat?", answer: "For a surprise, no. Even for an open celebration, it often works better to run a small organisers' chat alongside the main one, so money chasing and dropout drama never happen in front of the guest of honour." },
+      { question: "What should the final message before the night include?", answer: "One screen, one message: meeting time and point, the area, the standard to dress to, a physical ID reminder, the travel plan and rough timings. Pin it, and update it rather than posting corrections underneath." },
+    ],
+  },
 ];
