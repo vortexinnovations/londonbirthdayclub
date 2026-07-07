@@ -1025,4 +1025,74 @@ export const blogDataPart4: BlogPost[] = [
       { question: "What should the final message before the night include?", answer: "One screen, one message: meeting time and point, the area, the standard to dress to, a physical ID reminder, the travel plan and rough timings. Pin it, and update it rather than posting corrections underneath." },
     ],
   },
+  {
+    slug: "joint-birthday-night-out-london",
+    title: "How to Plan a Joint Birthday Night Out in London",
+    metaTitle: "Joint Birthday Night Out in London | Planning Guide 2026",
+    metaDescription: "How to plan a joint birthday night out in London: sharing the spotlight fairly, merging two friend groups, the double-host money plan and venue numbers.",
+    excerpt: "Two birthdays, one night, double the guest list. The organiser's guide to joint birthday celebrations in London, from the money plan to the spotlight.",
+    publishedAt: "2026-07-07",
+    updatedAt: "2026-07-07",
+    category: "Planning",
+    readTime: "5 min read",
+    sections: [
+      {
+        heading: "Why Joint Birthdays Are the Smartest Party in London",
+        headingLevel: "h2" as const,
+        content: [
+          "Last updated: 7 July 2026",
+          "Some of the best celebrations I coordinate every year have two names on them. Joint birthdays, the flatmates born a week apart, the twins, the two best friends who decided one big night beats two medium ones, are quietly the smartest format in London partying: double the guest list, double the energy in the room, and half the admin for each host.",
+          "But the format has its own traps, and they are different from a normal birthday's. This is the playbook for the three that matter: sharing the spotlight, merging two friend groups, and running money with two hosts instead of one.",
+        ],
+      },
+      {
+        heading: "Sharing the Spotlight Without Splitting the Night",
+        headingLevel: "h2" as const,
+        content: [
+          "The golden rule of a joint birthday is that it must feel like one party with two names on it, not two parties awkwardly sharing a room. Decide the shared moments in advance: one toast that names both of you, one cake moment even if there are two cakes, and one photo everyone is in. Our guide to arranging birthday cake at London clubs covers the venue side; for a joint night, the only extra decision is whether each of you gets your own cake or you share one with both names, and honestly, two small cakes beats one diplomatic compromise every time.",
+          "From experience, the joint birthdays that feel flat are the ones where each host quietly runs their own corner. Stand together for the toast, sit at the same table, and let the night orbit one centre rather than two.",
+        ],
+      },
+      {
+        heading: "Merging Two Friend Groups That Have Never Met",
+        headingLevel: "h2" as const,
+        content: [
+          "The defining feature of a joint birthday is that half the room are strangers to the other half. Treat that as the format's gift rather than its risk. The mechanics that work are simple: one shared table rather than two camps, a couple of deliberate introductions from each host early in the night, and a seating or standing arrangement that interleaves the groups instead of letting them settle into halves.",
+          "Our guide to mixed-group birthday nights covers the wider dynamics, but the joint-specific trick is this: each host is the other group's icebreaker. When I watch these nights work, it is because both birthday people spend the first hour actively cross-introducing, after which the room does the rest by itself.",
+          "One practical note: a merged crowd is bigger and more varied than either host's usual, so pick a venue and a night with broad appeal rather than one group's niche taste. London has no shortage of rooms built for exactly this, as the sheer range at https://www.timeout.com/london/nightlife makes clear.",
+        ],
+      },
+      {
+        heading: "The Double-Host Money Plan",
+        headingLevel: "h2" as const,
+        content: [
+          "Money is where joint birthdays most often wobble, because there are two organisers and therefore, if you are not careful, two half-plans. Settle the host split first: fifty-fifty is the default, but splitting by guest count is fairer when one of you is bringing twenty people and the other eight. Then run the guest side exactly like any birthday: contributions collected before the night, one shared target, clear deadlines.",
+          "The one rule I insist on: appoint a single treasurer. Two people collecting money into two accounts against one venue bill is how joint birthdays end up in spreadsheet arguments the week after. One of you owns the money, the other owns the guest experience, and both own the night. Our birthday group payment tips guide covers the collecting mechanics, and our budget birthday guide helps you set a target both friend groups can live with.",
+        ],
+      },
+      {
+        heading: "Space, Numbers and the Venue Conversation",
+        headingLevel: "h2" as const,
+        content: [
+          "A joint birthday changes the venue maths, because your headcount is two guest lists, not one. Bigger groups need either a larger table or two adjacent ones, and venues arrange the second option happily when they know in advance; two tables side by side with both names on the celebration works beautifully and keeps the one-party feel.",
+          "Tell the venue it is a joint birthday when you arrange the night. Two names on the celebration costs nothing and means both birthday people get acknowledged properly. And plan earlier than a solo birthday would need to, because doubled numbers meet the venue's capacity limits sooner; our birthday planning timeline guide applies, just with every deadline moved a week earlier.",
+          "As of July 2026, the sweet spot for a joint night in central London remains the same as ever: confirm the venue two to three weeks out, lock numbers a few days before, and arrive early enough to claim the room while it is still yours.",
+        ],
+      },
+      {
+        heading: "Make Both Birthdays Count",
+        headingLevel: "h2" as const,
+        content: [
+          "The finishing touches are small and they land hard: both names when the venue acknowledges the celebration, a song request for each of you, and a photo moment for each family group chat as well as the big shared one. None of it costs anything; all of it is what people remember.",
+          "Two birthdays in one night is not a compromise, it is an upgrade, and it is one of the most enjoyable briefs we take. Tell us both your dates, the combined group size and the kind of night you both want, and we will find the room that fits it. Message us on WhatsApp and we will handle everything.",
+        ],
+      },
+    ],
+    faqs: [
+      { question: "How do you split the cost of a joint birthday party?", answer: "Settle the host split first: fifty-fifty by default, or proportional to each guest list if the groups differ a lot in size. Then collect guest contributions before the night with one treasurer, one account and one deadline, exactly as for a solo birthday." },
+      { question: "Should a joint birthday have one cake or two?", answer: "Two small cakes usually beats one shared one: each birthday person gets their own moment and nobody compromises on flavour. Keep the cake moment itself shared, one pause in the night with both names on it." },
+      { question: "What if the two friend groups do not know each other?", answer: "That is normal for joint birthdays and it usually becomes the best part of the night. Share one table rather than forming camps, have both hosts cross-introduce early, and pick a venue with broad appeal rather than one group's niche taste." },
+      { question: "How far ahead should you plan a joint birthday night?", answer: "Earlier than a solo birthday, because the combined guest list is bigger. Confirm the venue two to three weeks ahead, collect money at least a week out, and lock final numbers a few days before the night." },
+    ],
+  },
 ];
