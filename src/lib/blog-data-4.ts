@@ -1095,4 +1095,91 @@ export const blogDataPart4: BlogPost[] = [
       { question: "How far ahead should you plan a joint birthday night?", answer: "Earlier than a solo birthday, because the combined guest list is bigger. Confirm the venue two to three weeks ahead, collect money at least a week out, and lock final numbers a few days before the night." },
     ],
   },
+  {
+    slug: "birthday-weekend-london",
+    title: "How to Plan a Birthday Weekend in London",
+    metaTitle: "How to Plan a Birthday Weekend in London",
+    metaDescription: "Turn a birthday into a full London weekend: choosing the anchor night, building the supporting events, pacing the group and planning the recovery day.",
+    excerpt: "Some birthdays deserve more than one night. How to structure a full London birthday weekend, from the anchor night to the recovery brunch, without exhausting anyone.",
+    publishedAt: "2026-07-13",
+    updatedAt: "2026-07-13",
+    category: "Planning",
+    readTime: "6 min read",
+    sections: [
+      {
+        heading: "When One Night Is Not Enough",
+        headingLevel: "h2" as const,
+        content: [
+          "Last updated: 13 July 2026",
+          "Some birthdays fit neatly into a single Saturday night, and some simply do not: the milestone years, the birthdays where half the guest list is travelling in, or the years when the people you love cannot all make the same evening. That is when the answer is a birthday weekend, and after helping plan a lot of them I can tell you the difference between a great one and an exhausting one is structure, not spend. This guide covers how to build a full London birthday weekend, as of July 2026: choosing the anchor night, arranging the supporting events around it, pacing your group across two days, and why the recovery day is part of the plan rather than the aftermath.",
+          "One thing this guide is not: a single-day itinerary. If what you want is one continuous day-to-night arc, our brunch-to-club day guide covers that format in full. A weekend is a different shape, with different rules.",
+        ],
+      },
+      {
+        heading: "Decide Whether You Actually Need a Weekend",
+        headingLevel: "h2" as const,
+        content: [
+          "Start with an honest threshold test. A weekend earns its place when at least one of three things is true: the guest list splits into groups that will not mix well in one room, key people are travelling from outside London and staying over, or the birthday itself is a milestone that one evening would shortchange. If none of those apply, a single brilliant night with everything poured into it will beat a stretched weekend every time.",
+          "The other honest question is energy. From experience, the organiser who plans three events attends all three; the guests each attend one or two. Plan for that reality from the start and nobody ends the weekend resentful or ruined.",
+        ],
+      },
+      {
+        heading: "Choose the Anchor Night First",
+        headingLevel: "h2" as const,
+        content: [
+          "Every good birthday weekend has one unmistakable main event, and everything else exists in relation to it. Choose that anchor night before anything else, because it decides the weekend's shape. Friday anchors suit London-based groups: people arrive straight from work with the whole weekend still ahead, venues are marginally easier to arrange, and Saturday becomes a generous recovery-and-brunch day. Saturday anchors suit weekends with travelling guests, who can arrive in the morning, drop bags and build up to the night properly; the cost is that Sunday carries the recovery and out-of-towners travel home tired.",
+          "As of July 2026, the practical rule I give every organiser is this: if more than a quarter of your list is coming from outside London, anchor on Saturday. Otherwise, Friday is the underrated choice and the whole weekend breathes better.",
+        ],
+      },
+      {
+        heading: "Build the Supporting Acts Around It",
+        headingLevel: "h2" as const,
+        content: [
+          "With the anchor set, add one or at most two supporting events, chosen so they contrast with the main night rather than compete with it. The classic menu: a daytime activity on the anchor day that flows into the evening, a small dinner for the inner circle on the other night, or a relaxed gathering on the Sunday. Our activity-combos guide covers the daytime options that pair well with a club night, and the day-to-night brunch format works beautifully as an anchor-day opener.",
+          "The mistake to avoid is symmetry: two big nights of equal weight. It splits attendance, doubles the organising load, and guarantees that whichever night the birthday person enjoys less will quietly bother them. One summit, smaller foothills.",
+        ],
+      },
+      {
+        heading: "Pace the Group Across the Whole Weekend",
+        headingLevel: "h2" as const,
+        content: [
+          "Nobody is required to attend everything, and the sooner your invitations say so, the better the weekend runs. Tier the plan openly: the whole list gets the anchor night, the inner circle gets the dinner or the Sunday, and people choose their own level beyond that. I noticed years ago that guests relax noticeably when the invitation itself gives them permission to skip a part; attendance at the anchor night actually improves when the weekend around it is optional.",
+          "Money runs on the same discipline as any group birthday: one treasurer, clear per-event amounts, and collection before the weekend rather than during it. Our group payments guide covers the mechanics, and the same one-treasurer rule that saves a single night saves a weekend twice over. Keep the plan itself in one group chat with the key details pinned, and resist creating a separate chat per event.",
+        ],
+      },
+      {
+        heading: "Out-of-Town Guests Change the Geography",
+        headingLevel: "h2" as const,
+        content: [
+          "If people are staying over, the weekend should live centrally. Choose the anchor venue first, then point guests at places to stay within a short, cheap ride of it, because the gap between the hotel and the night is where travelling guests quietly lose their evening. Keep the daytime events near the same patch too; a weekend that criss-crosses London burns its energy on transport. For the anchor night itself, the breadth of what the city offers is genuinely vast, and a listings sweep at https://www.timeout.com/london/nightlife shows what any given weekend holds, but the venue-agnostic truth is that travelling guests remember the company and the ease far more than the postcode.",
+        ],
+      },
+      {
+        heading: "The Recovery Day Is Part of the Plan",
+        headingLevel: "h2" as const,
+        content: [
+          "The difference between a weekend that ends well and one that just stops is the last few hours. Plan the Sunday deliberately and gently: a late brunch within walking distance of wherever most people stayed, a park or a river walk if the weather allows, and a clear, guilt-free end point by mid-afternoon so travelling guests get home at a civilised hour. If the actual birthday date falls on the Sunday, this is where the quiet moment goes: the cake, the cards, the toast with the people who stayed.",
+          "Ending gently is not an anticlimax; it is what makes the anchor night the story everyone tells. The best birthday weekends I have seen finish with a table of survivors laughing about the night before, and that scene needs planning exactly like the party did.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "Is a birthday weekend much more expensive than one night?",
+        answer: "Less than you would expect, if the structure is right. The anchor night carries the real spend, and the supporting events are deliberately low-cost formats like brunches, walks and casual dinners. The one-treasurer rule with per-event amounts keeps it fair for people attending different parts.",
+      },
+      {
+        question: "Which night should the main event be, Friday or Saturday?",
+        answer: "Friday if your group is mostly London-based, Saturday if a meaningful share is travelling in and staying over. The anchor night decides the whole weekend's rhythm, so settle it before planning anything else.",
+      },
+      {
+        question: "How far in advance should you plan a birthday weekend?",
+        answer: "Six to eight weeks for the anchor night and the invitation tiers, as of July 2026, with the supporting events firmed up around four weeks out. Travelling guests need the dates earliest, so announce the weekend before the details are perfect.",
+      },
+      {
+        question: "Do you have to invite everyone to everything?",
+        answer: "No, and you should not. Tier it openly: everyone to the anchor night, the inner circle to the rest. Guests are more comfortable, attendance at the main event improves, and the organising load halves.",
+      },
+    ],
+  },
 ];
