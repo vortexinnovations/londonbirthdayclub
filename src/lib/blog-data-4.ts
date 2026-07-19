@@ -1262,4 +1262,81 @@ export const blogDataPart4: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "dietary-requirements-london-club-birthday",
+    title: "Dietary Requirements at a London Club Birthday: How to Plan for Everyone",
+    metaTitle: "Dietary Needs at a London Club Birthday: A Guide",
+    metaDescription: "Planning a London club birthday with dietary needs: telling the venue, the allergen-friendly cake, eating before, and making sure everyone is included.",
+    excerpt: "A birthday should include everyone at the table, allergies and all. How to plan a London club birthday around dietary requirements without anyone missing out.",
+    publishedAt: "2026-07-19",
+    updatedAt: "2026-07-19",
+    category: "Planning",
+    readTime: "6 min read",
+    sections: [
+      {
+        heading: "A Birthday Should Include Everyone",
+        headingLevel: "h2" as const,
+        content: [
+          "Last updated: 19 July 2026",
+          "Nothing flattens a birthday faster than the guest of honour, or a good friend at the table, watching everyone else eat while they sit with nothing they can have. Dietary requirements are more common than a lot of organisers plan for: coeliac and gluten needs, nut and other allergies, vegetarian and vegan diets, halal and kosher, and simple strong preferences all turn up in most groups of any size. After planning a lot of London birthdays, I can tell you the difference between a night where everyone is included and one where someone is quietly left out is almost entirely advance planning, and none of it is hard. This guide covers how to plan a London club birthday around dietary requirements so nobody misses out, as of July 2026.",
+          "One point first: this is not about a sober night, which is a different subject we cover separately. This is about food, allergies and what people can and cannot eat, which is easy to forget when the plan is centred on a club rather than a restaurant.",
+        ],
+      },
+      {
+        heading: "Tell the Venue When You Book, Not on the Night",
+        headingLevel: "h2" as const,
+        content: [
+          "The single most important step is also the easiest: raise dietary needs when you book, not when you arrive. Venues arrange far more than people assume, from allergen-aware bottle-service snacks to a cake they can accommodate, but only if they know in advance. Springing a serious allergy on a busy floor team at midnight is where problems happen. When you enquire, give the venue the specifics, the number of guests affected and the nature of each need, and ask what they can do rather than assuming they cannot. From experience, the good rooms are used to this and handle it gracefully; the key is simply that they hear about it with time to prepare.",
+          "This is also the moment to be honest about severity. A preference and a life-threatening nut allergy are not the same conversation, and a venue needs to know which one it is dealing with so it can take the right care.",
+        ],
+      },
+      {
+        heading: "The Birthday Cake Is the Big One",
+        headingLevel: "h2" as const,
+        content: [
+          "The cake is where dietary planning most often falls down, because it is usually an afterthought and it is the one thing everyone is meant to share. If the birthday person or a key guest has a restriction, the cake has to work for them, or the centrepiece of the celebration excludes exactly the person it is for. You have two clean routes. Ask whether the venue can arrange an allergen-friendly cake, since many can with notice, or bring your own from a specialist bakery, which is the surest way to guarantee a gluten-free, vegan or nut-free cake that is genuinely safe. If you bring your own, clear it with the venue first, because policies on outside cakes vary, and confirm they can store and present it. A cake everyone can actually eat is worth the small extra effort.",
+        ],
+      },
+      {
+        heading: "Eating Before, Not At, the Club",
+        headingLevel: "h2" as const,
+        content: [
+          "For anyone with a serious restriction, the most reliable plan is to make the real meal happen before the club rather than relying on club food. A dinner at a restaurant that handles the group's needs properly, chosen for exactly that, takes all the pressure off the night: everyone arrives fed and safe, and the club becomes the celebration rather than the catering. London's restaurant range makes this genuinely easy, and a quick look at the listings on https://www.timeout.com/london/restaurants will turn up rooms for almost any dietary combination. Then the club only needs to handle drinks and the cake, which is a far smaller ask than a full meal. For a group with mixed and serious needs, the dinner-first structure is the plan I recommend most often.",
+        ],
+      },
+      {
+        heading: "Make Sure Everyone Has Something to Drink",
+        headingLevel: "h2" as const,
+        content: [
+          "Drinks deserve a moment of thought too, because a table where the alcohol flows but there is nothing else quietly excludes anyone not drinking that night, whether for dietary, medical or personal reasons. You do not need to overthink it: just make sure the plan includes good soft options and mixers alongside whatever else you arrange, so nobody is stuck with tap water while the group toasts. Most venues can sort this easily when asked, and it costs almost nothing to get right. The point is simply that everyone should be able to raise a glass of something they actually want when it is time for the birthday toast.",
+        ],
+      },
+      {
+        heading: "Coordinating a Group With Mixed Needs",
+        headingLevel: "h2" as const,
+        content: [
+          "The organiser's job is to gather the needs early and hold them in one place. When you set up the group, ask everyone to flag any dietary requirements in the same message where you collect the other details, rather than finding out at the restaurant door. Keep a simple list, share the relevant parts with the venue and the restaurant, and check back once before the night. It sounds like a lot, but it is five minutes of admin that prevents the single most common way a group member ends up feeling like an afterthought. The same clear-communication habit that makes any group birthday run smoothly does the work here too.",
+          "Done well, none of this is visible on the night. The cake is one everyone can share, the dinner suited the whole table, and the person with the allergy spent the evening celebrating rather than managing it, which is the entire point.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "Can you bring your own birthday cake to a London club?",
+        answer: "Often yes, but always check first, because policies vary. Bringing your own from a specialist bakery is the surest way to guarantee a gluten-free, vegan or nut-free cake is genuinely safe. Confirm the venue can store and present it when you book.",
+      },
+      {
+        question: "Do London clubs cater for allergies and dietary needs?",
+        answer: "Many can, but only with advance notice. Raise specific requirements when you book, including how many guests are affected and how serious each need is. A busy venue cannot improvise a safe allergy plan at midnight, so the earlier you tell them the better.",
+      },
+      {
+        question: "What is the best way to handle serious dietary needs on a club birthday?",
+        answer: "Make the main meal a dinner before the club at a restaurant chosen for the group's needs, as of July 2026. Everyone arrives fed and safe, and the club only has to handle drinks and the cake, which is a much smaller and lower-risk ask.",
+      },
+      {
+        question: "How do you plan a birthday for a group with mixed dietary requirements?",
+        answer: "Collect everyone's needs early in the same message as the other details, keep them in one list, and share the relevant parts with the venue and restaurant in advance. Check back once before the night so nothing is missed and nobody is caught out.",
+      },
+    ],
+  },
 ];
