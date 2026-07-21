@@ -37,7 +37,7 @@ export default function WhatsAppSticky() {
 
   return (
     <div
-      className={`fixed bottom-0 inset-x-0 z-50 lg:hidden bg-noir-deep/90 backdrop-blur-md border-t border-hairline-strong px-4 pt-2.5 [padding-bottom:calc(0.625rem+env(safe-area-inset-bottom))] transition-transform duration-500 ease-[var(--ease-lux)] ${
+      className={`fixed bottom-0 inset-x-0 z-50 xl:hidden bg-noir-deep/90 backdrop-blur-md border-t border-hairline-strong px-4 pt-2.5 [padding-bottom:calc(0.625rem+env(safe-area-inset-bottom))] transition-transform duration-500 ease-[var(--ease-lux)] ${
         suppressed ? "translate-y-full" : "translate-y-0"
       }`}
     >

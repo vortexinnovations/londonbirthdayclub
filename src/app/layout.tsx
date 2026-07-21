@@ -111,7 +111,7 @@ export default function RootLayout({
       lang="en"
       className={`${bodoni.variable} ${hanken.variable} antialiased`}
     >
-      <body className="grain min-h-screen flex flex-col pb-24 lg:pb-0">
+      <body className="grain min-h-screen flex flex-col pb-24 xl:pb-0">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

@@ -48,9 +48,9 @@
   --grad-hero: linear-gradient(
     to top,
     #0d0b08 0%,
-    rgba(13, 11, 8, 0.86) 20%,
-    rgba(13, 11, 8, 0.45) 52%,
-    rgba(24, 17, 8, 0.3) 100%
+    rgba(13, 11, 8, 0.93) 20%,
+    rgba(13, 11, 8, 0.68) 52%,
+    rgba(24, 17, 8, 0.52) 100%
   );
   --grad-card: linear-gradient(
     to top,
@@ -137,6 +137,42 @@ body {
 
 .cta-wa {
   position: relative;
+  /* Jewel finish: champagne-rimmed emerald enamel — a curved
+     specular gloss over a deep two-stop gradient, seated with an
+     inner bevel and a soft green under-glow. */
+  background-image:
+    radial-gradient(
+      120% 90% at 22% 0%,
+      rgba(255, 255, 255, 0.3) 0%,
+      rgba(255, 255, 255, 0) 48%
+    ),
+    linear-gradient(180deg, #2fd96e 0%, #1fc25e 55%, #17a04f 100%);
+  border: 1px solid rgba(212, 181, 114, 0.5);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.3),
+    inset 0 -1px 0 rgba(8, 26, 14, 0.35),
+    0 16px 40px -14px rgba(31, 194, 94, 0.42);
+  transition:
+    filter 0.3s var(--ease-lux),
+    box-shadow 0.3s var(--ease-lux),
+    border-color 0.3s var(--ease-lux),
+    transform 0.15s var(--ease-lux);
+}
+.cta-wa:hover {
+  filter: brightness(1.07) saturate(1.04);
+  border-color: rgba(235, 217, 168, 0.7);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.34),
+    inset 0 -1px 0 rgba(8, 26, 14, 0.35),
+    0 20px 48px -14px rgba(31, 194, 94, 0.55);
+}
+.cta-wa:active {
+  transform: translateY(1px);
+  filter: brightness(0.97);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.18),
+    inset 0 -1px 0 rgba(8, 26, 14, 0.4),
+    0 8px 22px -12px rgba(31, 194, 94, 0.35);
 }
 .cta-wa::before {
   /* offset gilded frame — engraved invitation feel */
