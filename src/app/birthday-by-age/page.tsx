@@ -1,3 +1,4 @@
+import { Fragment } from "react";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -200,31 +201,49 @@ export default function BirthdayByAgePage() {
       <FAQSchema faqs={faqs} />
       <BreadcrumbSchema items={[{ name: "Home", href: "/" }, { name: "Birthday by Age", href: "/birthday-by-age" }]} />
 
-      <section className="relative min-h-[50vh] flex items-center justify-center px-4">
-        <Image src={images.hero.birthdayByAge} alt="Birthday celebrations for every age milestone in London" fill className="object-cover" priority sizes="100vw" />
-        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-black/30" />
-        <div className="max-w-4xl mx-auto relative z-10">
-          <h1 className="text-4xl sm:text-5xl font-bold tracking-tight mb-6">
-            Best London Clubs by{" "}
-            <span className="text-gold">Birthday Milestone</span>
-          </h1>
-          <p className="text-lg text-white max-w-2xl [text-shadow:0_2px_8px_rgba(0,0,0,0.8)] leading-relaxed">
-            Different ages call for different celebrations. A 21st birthday
-            crew wants a completely different vibe from a 40th. Here&apos;s our
-            honest guide to matching the right London club to your milestone
-            birthday.
-          </p>
+      {/* Hero */}
+      <section className="relative min-h-[64vh] img-editorial flex items-end overflow-hidden">
+        <Image
+          src={images.hero.birthdayByAge}
+          alt="Birthday celebrations for every age milestone in London"
+          fill
+          className="object-cover kenburns"
+          priority
+          sizes="100vw"
+        />
+        <div className="absolute inset-0 [background:var(--grad-hero)]" />
+        <div className="grade" />
+        <div className="absolute inset-0 pointer-events-none [box-shadow:inset_0_0_140px_60px_rgba(8,6,3,0.55)]" />
+        <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-40 pb-16 sm:pb-20">
+          <div className="max-w-3xl">
+            <p className="flex items-center gap-4 font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.28em] text-champagne mb-6">
+              <span className="block h-px w-10 bg-champagne/60" />
+              The Age Guide
+            </p>
+            <h1 className="font-display font-medium text-[2.9rem] leading-[1.04] tracking-[-0.015em] sm:text-6xl lg:text-[4.75rem] text-ink mb-7">
+              Best London Clubs by{" "}
+              <em className="italic text-champagne font-normal">
+                Birthday Milestone
+              </em>
+            </h1>
+            <p className="font-sans text-[1.0625rem] leading-[1.8] text-ink-soft max-w-2xl">
+              Different ages call for different celebrations. A 21st birthday
+              crew wants a completely different vibe from a 40th. Here&apos;s our
+              honest guide to matching the right London club to your milestone
+              birthday.
+            </p>
+          </div>
         </div>
       </section>
 
       {/* Quick Jump */}
-      <section className="py-6 px-4 bg-bg-secondary border-y border-border">
-        <div className="max-w-4xl mx-auto flex flex-wrap gap-3 justify-center">
+      <section className="py-6 px-4 sm:px-6 lg:px-8 border-b border-hairline">
+        <div className="max-w-3xl mx-auto flex flex-wrap gap-3">
           {milestones.map((m) => (
             <a
               key={m.slug}
               href={`#${m.slug}`}
-              className="text-sm bg-bg-card border border-border hover:border-gold/30 px-4 py-2 rounded-lg text-text-secondary hover:text-gold transition-colors"
+              className="inline-flex items-center border border-hairline-strong hover:border-champagne rounded-[2px] px-4 py-2 font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.18em] text-champagne hover:text-champagne-bright transition-colors duration-300"
             >
               {m.age} Birthday
             </a>
@@ -233,91 +252,151 @@ export default function BirthdayByAgePage() {
       </section>
 
       {/* Milestone Sections */}
-      <section className="py-10 px-4">
-        <div className="max-w-4xl mx-auto space-y-20">
-          {milestones.map((milestone) => (
-            <div key={milestone.slug} id={milestone.slug} className="scroll-mt-24">
-              <h2 className="text-3xl font-bold mb-2">
-                {milestone.title}
-              </h2>
-              <p className="text-gold/80 font-medium mb-4">
-                {milestone.subtitle}
-              </p>
-              <p className="text-text-secondary leading-relaxed mb-8">
-                {milestone.description}
-              </p>
+      {milestones.map((milestone, idx) => (
+        <Fragment key={milestone.slug}>
+          {idx > 0 && <div className="divider-gilt" />}
+          <section
+            id={milestone.slug}
+            className={`scroll-mt-24 py-24 sm:py-28 px-4 sm:px-6 lg:px-8${
+              idx % 2 === 1 ? " bg-noir-soft" : ""
+            }`}
+          >
+            <div className="max-w-3xl mx-auto">
+              <div className="mb-12 sm:mb-16" data-reveal>
+                <p className="flex items-center gap-4 font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.28em] text-champagne mb-5">
+                  <span className="hairline-draw block h-px w-10 bg-champagne/60" />
+                  The Milestone
+                </p>
+                <h2 className="font-display font-medium text-[2rem] leading-[1.12] sm:text-4xl lg:text-[2.75rem] tracking-[-0.01em] text-ink max-w-2xl">
+                  {milestone.title.replace(" Celebrations", "")}{" "}
+                  <em className="italic text-champagne font-normal">
+                    Celebrations
+                  </em>
+                </h2>
+                <p className="mt-5 font-sans text-[1.0625rem] leading-[1.8] text-champagne max-w-xl">
+                  {milestone.subtitle}
+                </p>
+                <p className="mt-5 font-sans text-base leading-[1.8] text-ink-soft">
+                  {milestone.description}
+                </p>
+              </div>
 
-              <h3 className="text-xl font-semibold mb-6">
+              <h3 className="font-display font-medium text-xl text-ink mb-8">
                 Our Top Picks for a {milestone.age} Birthday
               </h3>
-              <div className="space-y-4 mb-8">
+              <div className="space-y-8 mb-12">
                 {milestone.topPicks.map((pick, i) => (
                   <div
                     key={pick.slug}
-                    className="bg-bg-card border border-border rounded-xl p-6"
+                    className="flex gap-6 border-t border-hairline pt-6"
+                    data-reveal
+                    data-reveal-delay={i * 90}
                   >
-                    <div className="flex items-center gap-3 mb-3">
-                      <span className="text-gold font-bold text-lg">
-                        #{i + 1}
-                      </span>
+                    <div className="flex-none font-display italic font-medium text-4xl text-champagne/60 leading-none select-none">
+                      {String(i + 1).padStart(2, "0")}
+                    </div>
+                    <div>
                       <Link
                         href={`/clubs/${pick.slug}`}
-                        className="text-lg font-semibold hover:text-gold transition-colors"
+                        className="font-display font-medium text-xl text-ink hover:text-champagne-bright transition-colors duration-300"
                       >
                         {pick.name}
                       </Link>
+                      <p className="mt-3 font-sans text-base leading-[1.8] text-ink-soft">
+                        {pick.reason}
+                      </p>
                     </div>
-                    <p className="text-text-secondary leading-relaxed">
-                      {pick.reason}
-                    </p>
                   </div>
                 ))}
               </div>
 
-              <div className="bg-bg-secondary border border-border rounded-xl p-5">
-                <h4 className="text-sm font-semibold text-gold mb-2">
+              <div className="border-l border-hairline pl-6 py-2" data-reveal>
+                <h4 className="font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.28em] text-champagne mb-3">
                   Budget Guide for a {milestone.age} Birthday
                 </h4>
-                <p className="text-text-secondary text-sm leading-relaxed">
+                <p className="font-sans text-[0.9375rem] leading-[1.8] text-ink-soft">
                   {milestone.budgetTip}
                 </p>
               </div>
 
               {milestone.slug === "18th-21st" && (
-                <div className="flex flex-wrap gap-4 mt-4">
-                  <Link href="/18th-birthday-clubs-london" className="text-gold text-sm hover:underline">Full 18th birthday guide &rarr;</Link>
-                  <Link href="/21st-birthday-clubs-london" className="text-gold text-sm hover:underline">Full 21st birthday guide &rarr;</Link>
+                <div className="flex flex-wrap gap-x-8 gap-y-4 mt-10">
+                  <Link
+                    href="/18th-birthday-clubs-london"
+                    className="group inline-flex items-center gap-2 text-champagne hover:text-champagne-bright text-[0.8125rem] font-semibold uppercase tracking-[0.14em] transition-colors duration-200"
+                  >
+                    Full 18th birthday guide{" "}
+                    <span className="transition-transform duration-400 group-hover:translate-x-1.5">
+                      &rarr;
+                    </span>
+                  </Link>
+                  <Link
+                    href="/21st-birthday-clubs-london"
+                    className="group inline-flex items-center gap-2 text-champagne hover:text-champagne-bright text-[0.8125rem] font-semibold uppercase tracking-[0.14em] transition-colors duration-200"
+                  >
+                    Full 21st birthday guide{" "}
+                    <span className="transition-transform duration-400 group-hover:translate-x-1.5">
+                      &rarr;
+                    </span>
+                  </Link>
                 </div>
               )}
               {milestone.slug === "30th" && (
-                <div className="mt-4">
-                  <Link href="/30th-birthday-night-out-london" className="text-gold text-sm hover:underline">Full 30th birthday guide &rarr;</Link>
+                <div className="mt-10">
+                  <Link
+                    href="/30th-birthday-night-out-london"
+                    className="group inline-flex items-center gap-2 text-champagne hover:text-champagne-bright text-[0.8125rem] font-semibold uppercase tracking-[0.14em] transition-colors duration-200"
+                  >
+                    Full 30th birthday guide{" "}
+                    <span className="transition-transform duration-400 group-hover:translate-x-1.5">
+                      &rarr;
+                    </span>
+                  </Link>
                 </div>
               )}
               {milestone.slug === "40th" && (
-                <div className="mt-4">
-                  <Link href="/blog/40th-birthday-night-out-london" className="text-gold text-sm hover:underline">Full 40th birthday guide &rarr;</Link>
+                <div className="mt-10">
+                  <Link
+                    href="/blog/40th-birthday-night-out-london"
+                    className="group inline-flex items-center gap-2 text-champagne hover:text-champagne-bright text-[0.8125rem] font-semibold uppercase tracking-[0.14em] transition-colors duration-200"
+                  >
+                    Full 40th birthday guide{" "}
+                    <span className="transition-transform duration-400 group-hover:translate-x-1.5">
+                      &rarr;
+                    </span>
+                  </Link>
                 </div>
               )}
             </div>
-          ))}
-        </div>
-      </section>
+          </section>
+        </Fragment>
+      ))}
+
+      <div className="divider-gilt" />
 
       {/* FAQ */}
-      <section className="py-16 px-4 bg-bg-secondary">
+      <section className="py-24 sm:py-28 px-4 sm:px-6 lg:px-8 bg-noir-soft">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-10">
-            Birthday Age Guide FAQ
-          </h2>
-          <div className="space-y-6">
+          <div className="mb-14" data-reveal>
+            <p className="flex items-center gap-4 font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.28em] text-champagne mb-5">
+              <span className="hairline-draw block h-px w-10 bg-champagne/60" />
+              Good to Know
+            </p>
+            <h2 className="font-display font-medium text-[2rem] leading-[1.12] sm:text-4xl lg:text-[2.75rem] tracking-[-0.01em] text-ink">
+              Birthday Age Guide{" "}
+              <em className="italic text-champagne font-normal">FAQ</em>
+            </h2>
+          </div>
+          <div className="divide-y divide-hairline border-y border-hairline" data-reveal>
             {faqs.map((faq) => (
-              <div
-                key={faq.question}
-                className="bg-bg-card border border-border rounded-xl p-6"
-              >
-                <h3 className="text-lg font-semibold mb-3">{faq.question}</h3>
-                <p className="text-text-secondary leading-relaxed">
+              <div key={faq.question} className="py-7">
+                <h3 className="font-display font-medium text-lg sm:text-xl text-ink flex gap-5">
+                  <span className="font-display italic text-champagne/70 select-none">
+                    Q.
+                  </span>
+                  {faq.question}
+                </h3>
+                <p className="mt-3 pl-[2.15rem] font-sans text-base leading-[1.8] text-ink-soft">
                   {faq.answer}
                 </p>
               </div>
@@ -326,13 +405,19 @@ export default function BirthdayByAgePage() {
         </div>
       </section>
 
+      <div className="divider-gilt" />
+
       {/* CTA */}
-      <section className="py-16 px-4">
-        <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-4">
-            Tell Us Your Age & We&apos;ll Find Your Venue
+      <section className="py-24 sm:py-32 px-4 sm:px-6 lg:px-8 bg-noir-deep">
+        <div className="max-w-3xl mx-auto text-center" data-reveal>
+          <p className="font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.28em] text-champagne mb-6">
+            Your Milestone Awaits
+          </p>
+          <h2 className="font-display font-medium text-[2rem] leading-[1.12] sm:text-4xl lg:text-[2.75rem] tracking-[-0.01em] text-ink mb-5">
+            Tell Us Your Age & We&apos;ll Find{" "}
+            <em className="italic text-champagne font-normal">Your Venue</em>
           </h2>
-          <p className="text-text-secondary text-lg mb-8">
+          <p className="font-sans text-[1.0625rem] leading-[1.8] text-ink-soft mb-10 max-w-xl mx-auto">
             Every milestone deserves the right venue. Message us with your
             birthday details and we&apos;ll recommend the perfect club.
           </p>
@@ -340,6 +425,7 @@ export default function BirthdayByAgePage() {
             message={getGeneralWhatsAppMessage()}
             label="Get Personalised Recommendations"
             size="large"
+            microcopy="Free service · Replies in minutes"
           />
         </div>
       </section>

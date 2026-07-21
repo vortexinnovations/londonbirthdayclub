@@ -67,234 +67,315 @@ export default function PlanBirthdayPage() {
       <FAQSchema faqs={faqs} />
       <ArticleSchema title="How to Plan a Birthday at a London Club" description="Step-by-step guide to planning a birthday at a London nightclub." url="https://londonbirthdayclub.com/plan-birthday-london-club" />
 
-      <section className="relative min-h-[50vh] flex items-center justify-center px-4">
-        <Image src={images.hero.planBirthday} alt="Planning a birthday night at a London club" fill className="object-cover" priority sizes="100vw" />
-        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-black/30" />
-        <div className="max-w-4xl mx-auto relative z-10">
-          <h1 className="text-4xl sm:text-5xl font-bold tracking-tight mb-6">
-            How to Plan a Birthday at a{" "}
-            <span className="text-gold">London Nightclub</span>
-          </h1>
-          <p className="text-lg text-white max-w-2xl leading-relaxed [text-shadow:0_2px_8px_rgba(0,0,0,0.8)]">
-            Everything you need to know about planning a birthday celebration at
-            a London club — from choosing the right venue and understanding
-            minimum spends to handling group payments and knowing what to expect
-            on the night.
-          </p>
+      {/* Hero */}
+      <section className="relative min-h-[64vh] img-editorial flex items-end overflow-hidden">
+        <Image src={images.hero.planBirthday} alt="Planning a birthday night at a London club" fill className="object-cover kenburns" priority sizes="100vw" />
+        <div className="absolute inset-0 [background:var(--grad-hero)]" />
+        <div className="grade" />
+        <div className="absolute inset-0 pointer-events-none [box-shadow:inset_0_0_140px_60px_rgba(8,6,3,0.55)]" />
+        <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-40 pb-16 sm:pb-20">
+          <div className="max-w-3xl">
+            <p className="flex items-center gap-4 font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.28em] text-champagne mb-6">
+              <span className="block h-px w-10 bg-champagne/60" />
+              The Planning Guide
+            </p>
+            <h1 className="font-display font-medium text-[2.9rem] leading-[1.04] tracking-[-0.015em] sm:text-6xl lg:text-[4.75rem] text-ink mb-7">
+              How to Plan a Birthday at a{" "}
+              <em className="italic text-champagne font-normal">
+                London Nightclub
+              </em>
+            </h1>
+            <p className="font-sans text-[1.0625rem] leading-[1.8] text-ink-soft max-w-2xl">
+              Everything you need to know about planning a birthday celebration at
+              a London club — from choosing the right venue and understanding
+              minimum spends to handling group payments and knowing what to expect
+              on the night.
+            </p>
+          </div>
         </div>
       </section>
 
       {/* Timeline / Steps */}
-      <section className="py-16 px-4">
+      <section className="py-24 sm:py-28 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold mb-10">
-            Step-by-Step Birthday Planning Timeline
-          </h2>
+          <div className="mb-14 sm:mb-20" data-reveal>
+            <p className="flex items-center gap-4 font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.28em] text-champagne mb-5">
+              <span className="hairline-draw block h-px w-10 bg-champagne/60" />
+              The Timeline
+            </p>
+            <h2 className="font-display font-medium text-[2rem] leading-[1.12] sm:text-4xl lg:text-[2.75rem] tracking-[-0.01em] text-ink max-w-2xl">
+              Step-by-Step{" "}
+              <em className="italic text-champagne font-normal">
+                Birthday Planning
+              </em>{" "}
+              Timeline
+            </h2>
+          </div>
 
-          <div className="space-y-10">
+          <div className="space-y-14" data-reveal>
             {/* Step 1 */}
-            <div className="border-l-2 border-gold/30 pl-8 relative">
-              <div className="absolute left-[-9px] top-1 w-4 h-4 rounded-full bg-gold" />
-              <h3 className="text-xl font-semibold mb-2">
-                3–4 Weeks Before: Choose Your Venue
-              </h3>
-              <p className="text-text-secondary leading-relaxed mb-4">
-                Start by working out what kind of birthday you want. Consider
-                your group size, music preferences, and budget. A group of 8
-                hip-hop lovers needs a very different club from a dinner party
-                of 12 who like house music.
-              </p>
-              <p className="text-text-secondary leading-relaxed mb-4">
-                Key questions to answer early: How many people are definitely
-                coming? What night of the week? What&apos;s your realistic
-                per-person budget? Do you want just a club, or dinner and a
-                club?
-              </p>
-              <p className="text-text-secondary leading-relaxed">
-                Our{" "}
-                <Link
-                  href="/best-birthday-clubs-london"
-                  className="text-gold hover:underline"
-                >
-                  ranked club guide
-                </Link>{" "}
-                can help you narrow down options, or{" "}
-                <Link
-                  href="/birthday-by-age"
-                  className="text-gold hover:underline"
-                >
-                  browse by age group
-                </Link>{" "}
-                for tailored recommendations.
-              </p>
+            <div className="flex gap-6 sm:gap-10 border-t border-hairline pt-8">
+              <div className="font-display italic font-medium text-5xl sm:text-6xl text-champagne/40 leading-none w-14 sm:w-20 shrink-0 select-none">
+                01
+              </div>
+              <div className="flex-1">
+                <h3 className="font-display font-medium text-xl text-ink mb-4">
+                  3–4 Weeks Before: Choose Your Venue
+                </h3>
+                <p className="font-sans text-base leading-[1.8] text-ink-soft mb-4">
+                  Start by working out what kind of birthday you want. Consider
+                  your group size, music preferences, and budget. A group of 8
+                  hip-hop lovers needs a very different club from a dinner party
+                  of 12 who like house music.
+                </p>
+                <p className="font-sans text-base leading-[1.8] text-ink-soft mb-4">
+                  Key questions to answer early: How many people are definitely
+                  coming? What night of the week? What&apos;s your realistic
+                  per-person budget? Do you want just a club, or dinner and a
+                  club?
+                </p>
+                <p className="font-sans text-base leading-[1.8] text-ink-soft">
+                  Our{" "}
+                  <Link
+                    href="/best-birthday-clubs-london"
+                    className="text-champagne hover:text-champagne-bright underline decoration-champagne/30 underline-offset-4 decoration-[0.5px] transition-colors duration-200"
+                  >
+                    ranked club guide
+                  </Link>{" "}
+                  can help you narrow down options, or{" "}
+                  <Link
+                    href="/birthday-by-age"
+                    className="text-champagne hover:text-champagne-bright underline decoration-champagne/30 underline-offset-4 decoration-[0.5px] transition-colors duration-200"
+                  >
+                    browse by age group
+                  </Link>{" "}
+                  for tailored recommendations.
+                </p>
+              </div>
             </div>
 
             {/* Step 2 */}
-            <div className="border-l-2 border-gold/30 pl-8 relative">
-              <div className="absolute left-[-9px] top-1 w-4 h-4 rounded-full bg-gold" />
-              <h3 className="text-xl font-semibold mb-2">
-                2–3 Weeks Before: Book and Confirm
-              </h3>
-              <p className="text-text-secondary leading-relaxed mb-4">
-                Once you&apos;ve chosen your club, message us on WhatsApp with
-                your details. We&apos;ll check availability, confirm the
-                minimum spend for your chosen night, and arrange any birthday
-                extras you want — cake, sparklers, decorations, DJ shoutouts.
-              </p>
-              <p className="text-text-secondary leading-relaxed">
-                Most clubs require a deposit or card on file (typically
-                £200–500, deducted from your spend on the night). We&apos;ll
-                walk you through the process and make sure everything is
-                confirmed.
-              </p>
+            <div className="flex gap-6 sm:gap-10 border-t border-hairline pt-8">
+              <div className="font-display italic font-medium text-5xl sm:text-6xl text-champagne/40 leading-none w-14 sm:w-20 shrink-0 select-none">
+                02
+              </div>
+              <div className="flex-1">
+                <h3 className="font-display font-medium text-xl text-ink mb-4">
+                  2–3 Weeks Before: Book and Confirm
+                </h3>
+                <p className="font-sans text-base leading-[1.8] text-ink-soft mb-4">
+                  Once you&apos;ve chosen your club, message us on WhatsApp with
+                  your details. We&apos;ll check availability, confirm the
+                  minimum spend for your chosen night, and arrange any birthday
+                  extras you want — cake, sparklers, decorations, DJ shoutouts.
+                </p>
+                <p className="font-sans text-base leading-[1.8] text-ink-soft">
+                  Most clubs require a deposit or card on file (typically
+                  £200–500, deducted from your spend on the night). We&apos;ll
+                  walk you through the process and make sure everything is
+                  confirmed.
+                </p>
+              </div>
             </div>
 
             {/* Step 3 */}
-            <div className="border-l-2 border-gold/30 pl-8 relative">
-              <div className="absolute left-[-9px] top-1 w-4 h-4 rounded-full bg-gold" />
-              <h3 className="text-xl font-semibold mb-2">
-                1–2 Weeks Before: Sort Group Logistics
-              </h3>
-              <p className="text-text-secondary leading-relaxed mb-4">
-                This is when the practical stuff matters most. Confirm your
-                final headcount, collect money from the group, and share the
-                plan with everyone attending. Send out the dress code, arrival
-                time, and venue address.
-              </p>
-              <div className="bg-bg-card border border-border rounded-xl p-5 mb-4">
-                <h4 className="text-sm font-semibold text-gold mb-3">
-                  Group Payment Tips
-                </h4>
-                <ul className="space-y-2 text-text-secondary text-sm">
-                  <li className="flex gap-2">
-                    <span className="text-gold">&#8226;</span>
-                    The birthday person traditionally pays nothing — split the
-                    cost among everyone else
-                  </li>
-                  <li className="flex gap-2">
-                    <span className="text-gold">&#8226;</span>
-                    Collect money at least a week before, not on the night
-                  </li>
-                  <li className="flex gap-2">
-                    <span className="text-gold">&#8226;</span>
-                    Use bank transfer or a group payment app — avoid chasing
-                    cash
-                  </li>
-                  <li className="flex gap-2">
-                    <span className="text-gold">&#8226;</span>
-                    Factor in a small buffer above the minimum spend for
-                    extra drinks
-                  </li>
-                  <li className="flex gap-2">
-                    <span className="text-gold">&#8226;</span>
-                    Be upfront about the cost — people appreciate honesty
-                    over surprises
-                  </li>
-                </ul>
+            <div className="flex gap-6 sm:gap-10 border-t border-hairline pt-8">
+              <div className="font-display italic font-medium text-5xl sm:text-6xl text-champagne/40 leading-none w-14 sm:w-20 shrink-0 select-none">
+                03
+              </div>
+              <div className="flex-1">
+                <h3 className="font-display font-medium text-xl text-ink mb-4">
+                  1–2 Weeks Before: Sort Group Logistics
+                </h3>
+                <p className="font-sans text-base leading-[1.8] text-ink-soft mb-6">
+                  This is when the practical stuff matters most. Confirm your
+                  final headcount, collect money from the group, and share the
+                  plan with everyone attending. Send out the dress code, arrival
+                  time, and venue address.
+                </p>
+                <div className="border-l border-hairline pl-6 py-1">
+                  <h4 className="font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.24em] text-champagne mb-4">
+                    Group Payment Tips
+                  </h4>
+                  <ul className="space-y-3 font-sans text-[0.9375rem] leading-[1.8] text-ink-soft">
+                    <li className="flex gap-3">
+                      <span className="font-display italic text-champagne/70 select-none">✦</span>
+                      The birthday person traditionally pays nothing — split the
+                      cost among everyone else
+                    </li>
+                    <li className="flex gap-3">
+                      <span className="font-display italic text-champagne/70 select-none">✦</span>
+                      Collect money at least a week before, not on the night
+                    </li>
+                    <li className="flex gap-3">
+                      <span className="font-display italic text-champagne/70 select-none">✦</span>
+                      Use bank transfer or a group payment app — avoid chasing
+                      cash
+                    </li>
+                    <li className="flex gap-3">
+                      <span className="font-display italic text-champagne/70 select-none">✦</span>
+                      Factor in a small buffer above the minimum spend for
+                      extra drinks
+                    </li>
+                    <li className="flex gap-3">
+                      <span className="font-display italic text-champagne/70 select-none">✦</span>
+                      Be upfront about the cost — people appreciate honesty
+                      over surprises
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
 
             {/* Step 4 */}
-            <div className="border-l-2 border-gold/30 pl-8 relative">
-              <div className="absolute left-[-9px] top-1 w-4 h-4 rounded-full bg-gold" />
-              <h3 className="text-xl font-semibold mb-2">
-                Day Before: Final Checks
-              </h3>
-              <p className="text-text-secondary leading-relaxed">
-                Confirm the guest list with us, remind your group about the
-                dress code and arrival time, and sort any last-minute birthday
-                extras (cake delivery, decorations). We&apos;ll send you a
-                final confirmation with all the details you need — venue
-                address, your table host&apos;s name, and what to expect on
-                arrival.
-              </p>
+            <div className="flex gap-6 sm:gap-10 border-t border-hairline pt-8">
+              <div className="font-display italic font-medium text-5xl sm:text-6xl text-champagne/40 leading-none w-14 sm:w-20 shrink-0 select-none">
+                04
+              </div>
+              <div className="flex-1">
+                <h3 className="font-display font-medium text-xl text-ink mb-4">
+                  Day Before: Final Checks
+                </h3>
+                <p className="font-sans text-base leading-[1.8] text-ink-soft">
+                  Confirm the guest list with us, remind your group about the
+                  dress code and arrival time, and sort any last-minute birthday
+                  extras (cake delivery, decorations). We&apos;ll send you a
+                  final confirmation with all the details you need — venue
+                  address, your table host&apos;s name, and what to expect on
+                  arrival.
+                </p>
+              </div>
             </div>
 
             {/* Step 5 */}
-            <div className="border-l-2 border-gold/30 pl-8 relative">
-              <div className="absolute left-[-9px] top-1 w-4 h-4 rounded-full bg-gold" />
-              <h3 className="text-xl font-semibold mb-2">
-                On the Night: What to Expect
-              </h3>
-              <p className="text-text-secondary leading-relaxed mb-4">
-                Arrive at the time we&apos;ve agreed — usually between
-                10:30pm and 11:30pm for most clubs. Give your name at the door
-                and you&apos;ll be taken to your table. Your table host will
-                introduce themselves and present your bottles.
-              </p>
-              <p className="text-text-secondary leading-relaxed">
-                From there, it&apos;s your night. Birthday sparklers and
-                bottle shows typically happen within the first hour. If
-                you&apos;ve arranged a cake or DJ shoutout, your table host
-                will coordinate the timing. The best birthday nights are the
-                ones where you stop thinking about logistics and just enjoy it
-                — which is exactly why we handle all of that for you.
-              </p>
+            <div className="flex gap-6 sm:gap-10 border-t border-hairline pt-8">
+              <div className="font-display italic font-medium text-5xl sm:text-6xl text-champagne/40 leading-none w-14 sm:w-20 shrink-0 select-none">
+                05
+              </div>
+              <div className="flex-1">
+                <h3 className="font-display font-medium text-xl text-ink mb-4">
+                  On the Night: What to Expect
+                </h3>
+                <p className="font-sans text-base leading-[1.8] text-ink-soft mb-4">
+                  Arrive at the time we&apos;ve agreed — usually between
+                  10:30pm and 11:30pm for most clubs. Give your name at the door
+                  and you&apos;ll be taken to your table. Your table host will
+                  introduce themselves and present your bottles.
+                </p>
+                <p className="font-sans text-base leading-[1.8] text-ink-soft">
+                  From there, it&apos;s your night. Birthday sparklers and
+                  bottle shows typically happen within the first hour. If
+                  you&apos;ve arranged a cake or DJ shoutout, your table host
+                  will coordinate the timing. The best birthday nights are the
+                  ones where you stop thinking about logistics and just enjoy it
+                  — which is exactly why we handle all of that for you.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Understanding Minimum Spend */}
-      <section className="py-16 px-4 bg-bg-secondary">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8">
-            Understanding Minimum Spend
-          </h2>
-          <p className="text-text-secondary leading-relaxed mb-6">
-            Minimum spend is the part of club birthday planning that confuses
-            people most. Here&apos;s the simple version: minimum spend is the
-            minimum amount your table must spend on drinks. It&apos;s not an
-            entry fee, it&apos;s not a deposit on top of drinks — it IS your
-            drinks budget.
-          </p>
+      <div className="divider-gilt" />
 
-          <div className="grid md:grid-cols-2 gap-6 mb-8">
-            <div className="bg-bg-card border border-border rounded-xl p-6">
-              <h3 className="text-lg font-semibold mb-3">
+      {/* Understanding Minimum Spend */}
+      <section className="py-24 sm:py-28 px-4 sm:px-6 lg:px-8 bg-noir-soft">
+        <div className="max-w-4xl mx-auto">
+          <div className="mb-14 sm:mb-20" data-reveal>
+            <p className="flex items-center gap-4 font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.28em] text-champagne mb-5">
+              <span className="hairline-draw block h-px w-10 bg-champagne/60" />
+              The Budget
+            </p>
+            <h2 className="font-display font-medium text-[2rem] leading-[1.12] sm:text-4xl lg:text-[2.75rem] tracking-[-0.01em] text-ink max-w-2xl">
+              Understanding{" "}
+              <em className="italic text-champagne font-normal">
+                Minimum Spend
+              </em>
+            </h2>
+            <p className="mt-5 font-sans text-[1.0625rem] leading-[1.8] text-ink-soft max-w-2xl">
+              Minimum spend is the part of club birthday planning that confuses
+              people most. Here&apos;s the simple version: minimum spend is the
+              minimum amount your table must spend on drinks. It&apos;s not an
+              entry fee, it&apos;s not a deposit on top of drinks — it IS your
+              drinks budget.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-x-14 gap-y-12 mb-16" data-reveal>
+            <div className="border-t border-hairline pt-6">
+              <h3 className="font-display font-medium text-xl text-ink mb-5">
                 What&apos;s Included in Minimum Spend
               </h3>
-              <ul className="space-y-2 text-text-secondary text-sm">
-                <li>&#10003; Your choice of bottles (vodka, champagne, etc.)</li>
-                <li>&#10003; Mixers — juices, soft drinks, Red Bull, tonic</li>
-                <li>&#10003; Ice and glassware</li>
-                <li>&#10003; Your reserved table and seating area</li>
-                <li>&#10003; A dedicated table host for the night</li>
+              <ul className="space-y-3 font-sans text-[0.9375rem] leading-[1.8] text-ink-soft">
+                <li className="flex gap-3">
+                  <span className="text-champagne/70 select-none">&#10003;</span>
+                  <span>Your choice of bottles (vodka, champagne, etc.)</span>
+                </li>
+                <li className="flex gap-3">
+                  <span className="text-champagne/70 select-none">&#10003;</span>
+                  <span>Mixers — juices, soft drinks, Red Bull, tonic</span>
+                </li>
+                <li className="flex gap-3">
+                  <span className="text-champagne/70 select-none">&#10003;</span>
+                  <span>Ice and glassware</span>
+                </li>
+                <li className="flex gap-3">
+                  <span className="text-champagne/70 select-none">&#10003;</span>
+                  <span>Your reserved table and seating area</span>
+                </li>
+                <li className="flex gap-3">
+                  <span className="text-champagne/70 select-none">&#10003;</span>
+                  <span>A dedicated table host for the night</span>
+                </li>
               </ul>
             </div>
-            <div className="bg-bg-card border border-border rounded-xl p-6">
-              <h3 className="text-lg font-semibold mb-3">
+            <div className="border-t border-hairline pt-6">
+              <h3 className="font-display font-medium text-xl text-ink mb-5">
                 What It Doesn&apos;t Cover
               </h3>
-              <ul className="space-y-2 text-text-secondary text-sm">
-                <li>&#10007; Entry for non-table guests (guestlist separate)</li>
-                <li>&#10007; Birthday cake (arranged separately, usually £50–150)</li>
-                <li>&#10007; Dinner (at dinner-club venues, food is additional)</li>
-                <li>&#10007; Gratuity (10–15% is customary for great service)</li>
+              <ul className="space-y-3 font-sans text-[0.9375rem] leading-[1.8] text-ink-soft">
+                <li className="flex gap-3">
+                  <span className="text-ink-faint select-none">&#10007;</span>
+                  <span>Entry for non-table guests (guestlist separate)</span>
+                </li>
+                <li className="flex gap-3">
+                  <span className="text-ink-faint select-none">&#10007;</span>
+                  <span>Birthday cake (arranged separately, usually £50–150)</span>
+                </li>
+                <li className="flex gap-3">
+                  <span className="text-ink-faint select-none">&#10007;</span>
+                  <span>Dinner (at dinner-club venues, food is additional)</span>
+                </li>
+                <li className="flex gap-3">
+                  <span className="text-ink-faint select-none">&#10007;</span>
+                  <span>Gratuity (10–15% is customary for great service)</span>
+                </li>
               </ul>
             </div>
           </div>
 
-          <div className="bg-bg-card border border-gold/20 rounded-xl p-6">
-            <h3 className="text-lg font-semibold text-gold mb-3">
+          <div className="border-t border-hairline pt-10" data-reveal>
+            <h3 className="font-display font-medium text-xl text-ink mb-10">
               Per-Person Cost Guide
             </h3>
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-center">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-x-6 gap-y-10">
               {[
                 { size: "6 people", cost: "~£170" },
                 { size: "10 people", cost: "~£100" },
                 { size: "15 people", cost: "~£70" },
                 { size: "20 people", cost: "~£50" },
               ].map((item) => (
-                <div key={item.size}>
-                  <div className="text-text-primary font-semibold">
+                <div key={item.size} className="border-l border-hairline pl-5 py-1">
+                  <div className="font-display italic font-medium text-3xl sm:text-4xl text-champagne leading-none">
                     {item.cost}
                   </div>
-                  <div className="text-text-muted text-sm">{item.size}</div>
+                  <div className="mt-3 font-sans text-[0.6875rem] uppercase tracking-[0.24em] text-ink-faint">
+                    {item.size}
+                  </div>
                 </div>
               ))}
             </div>
-            <p className="text-text-muted text-xs mt-4 text-center">
+            <p className="mt-8 font-sans text-[0.8125rem] leading-relaxed tracking-[0.02em] text-ink-faint">
               Based on a £1,000 minimum spend, excluding birthday person.
               Prices vary by venue and night.
             </p>
@@ -302,19 +383,29 @@ export default function PlanBirthdayPage() {
         </div>
       </section>
 
-      {/* Birthday Extras */}
-      <section className="py-16 px-4">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8">
-            Birthday Extras at London Clubs
-          </h2>
-          <p className="text-text-secondary leading-relaxed mb-8">
-            London clubs know that birthdays are their biggest table bookings,
-            so most venues offer dedicated birthday touches. Here&apos;s what
-            you can typically expect and arrange.
-          </p>
+      <div className="divider-gilt" />
 
-          <div className="grid sm:grid-cols-2 gap-6">
+      {/* Birthday Extras */}
+      <section className="py-24 sm:py-28 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-4xl mx-auto">
+          <div className="mb-14 sm:mb-20" data-reveal>
+            <p className="flex items-center gap-4 font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.28em] text-champagne mb-5">
+              <span className="hairline-draw block h-px w-10 bg-champagne/60" />
+              The Extras
+            </p>
+            <h2 className="font-display font-medium text-[2rem] leading-[1.12] sm:text-4xl lg:text-[2.75rem] tracking-[-0.01em] text-ink max-w-2xl">
+              Birthday{" "}
+              <em className="italic text-champagne font-normal">Extras</em> at
+              London Clubs
+            </h2>
+            <p className="mt-5 font-sans text-[1.0625rem] leading-[1.8] text-ink-soft max-w-2xl">
+              London clubs know that birthdays are their biggest table bookings,
+              so most venues offer dedicated birthday touches. Here&apos;s what
+              you can typically expect and arrange.
+            </p>
+          </div>
+
+          <div className="grid sm:grid-cols-2 gap-x-14 gap-y-12" data-reveal>
             {[
               {
                 title: "Sparkler Bottle Presentations",
@@ -343,12 +434,12 @@ export default function PlanBirthdayPage() {
             ].map((item) => (
               <div
                 key={item.title}
-                className="bg-bg-card border border-border rounded-xl p-6"
+                className="border-t border-hairline hover:border-hairline-strong pt-6 transition-colors duration-500"
               >
-                <h3 className="text-lg font-semibold text-gold mb-2">
+                <h3 className="font-display font-medium text-xl text-ink mb-3">
                   {item.title}
                 </h3>
-                <p className="text-text-secondary text-sm leading-relaxed">
+                <p className="font-sans text-[0.9375rem] leading-[1.8] text-ink-soft">
                   {item.desc}
                 </p>
               </div>
@@ -357,46 +448,57 @@ export default function PlanBirthdayPage() {
         </div>
       </section>
 
-      {/* Dress Code */}
-      <section className="py-16 px-4 bg-bg-secondary">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8">
-            Dress Code Guide for Birthday Groups
-          </h2>
-          <p className="text-text-secondary leading-relaxed mb-6">
-            Nothing ruins a birthday faster than someone in your group being
-            turned away at the door. Share the dress code with your entire
-            group in advance — no exceptions.
-          </p>
+      <div className="divider-gilt" />
 
-          <div className="grid md:grid-cols-2 gap-6">
-            <div className="bg-bg-card border border-border rounded-xl p-6">
-              <h3 className="text-lg font-semibold mb-3">
+      {/* Dress Code */}
+      <section className="py-24 sm:py-28 px-4 sm:px-6 lg:px-8 bg-noir-soft">
+        <div className="max-w-4xl mx-auto">
+          <div className="mb-14 sm:mb-20" data-reveal>
+            <p className="flex items-center gap-4 font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.28em] text-champagne mb-5">
+              <span className="hairline-draw block h-px w-10 bg-champagne/60" />
+              The Dress Code
+            </p>
+            <h2 className="font-display font-medium text-[2rem] leading-[1.12] sm:text-4xl lg:text-[2.75rem] tracking-[-0.01em] text-ink max-w-2xl">
+              Dress Code Guide for{" "}
+              <em className="italic text-champagne font-normal">
+                Birthday Groups
+              </em>
+            </h2>
+            <p className="mt-5 font-sans text-[1.0625rem] leading-[1.8] text-ink-soft max-w-2xl">
+              Nothing ruins a birthday faster than someone in your group being
+              turned away at the door. Share the dress code with your entire
+              group in advance — no exceptions.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-x-14 gap-y-12" data-reveal>
+            <div className="border-t border-hairline pt-6">
+              <h3 className="font-display font-medium text-xl text-ink mb-4">
                 Mayfair Clubs (Most Venues)
               </h3>
-              <p className="text-text-secondary text-sm leading-relaxed mb-3">
+              <p className="font-sans text-[0.9375rem] leading-[1.8] text-ink-soft mb-5">
                 Smart dress code enforced strictly. For men: smart shoes
                 (no trainers), fitted trousers or dark jeans, collared shirt
                 or smart knitwear. No sportswear, caps, or casual wear. For
                 women: dress to impress — heels, dresses, smart separates.
                 The dress code is more flexible for women but still smart.
               </p>
-              <p className="text-text-muted text-xs">
+              <p className="font-sans text-[0.8125rem] leading-relaxed tracking-[0.02em] text-ink-faint">
                 Applies to: Tape, Cirque, TABU, Funky Buddha, Luna, Maddox,
                 Scotch, Cuckoo, Dear Darling, The Box, Reign, Selene
               </p>
             </div>
-            <div className="bg-bg-card border border-border rounded-xl p-6">
-              <h3 className="text-lg font-semibold mb-3">
+            <div className="border-t border-hairline pt-6">
+              <h3 className="font-display font-medium text-xl text-ink mb-4">
                 More Relaxed Venues
               </h3>
-              <p className="text-text-secondary text-sm leading-relaxed mb-3">
+              <p className="font-sans text-[0.9375rem] leading-[1.8] text-ink-soft mb-5">
                 Smart-casual is accepted. Clean trainers are fine, but still
                 no sportswear, flip-flops, or gym gear. The vibe is less
                 formal — comfort and style over strict dress codes. You can
                 express yourself more freely while still looking put-together.
               </p>
-              <p className="text-text-muted text-xs">
+              <p className="font-sans text-[0.8125rem] leading-relaxed tracking-[0.02em] text-ink-faint">
                 Applies to: BEAT London
               </p>
             </div>
@@ -404,40 +506,102 @@ export default function PlanBirthdayPage() {
         </div>
       </section>
 
-      <section className="py-12 px-4">
+      <div className="divider-gilt" />
+
+      {/* Next Steps */}
+      <section className="py-24 sm:py-28 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-2xl font-bold text-center mb-6">Ready to Take the Next Step?</h2>
-          <div className="grid sm:grid-cols-3 gap-4">
-            <Link href="/birthday-table-prices-london" className="block bg-bg-card hover:bg-bg-card-hover border border-border hover:border-gold/30 rounded-xl p-5 transition-all group text-center">
-              <div className="font-semibold group-hover:text-gold transition-colors text-sm">Check Prices</div>
-              <div className="text-text-muted text-xs mt-1">Per-person cost breakdown</div>
+          <div className="mb-14 sm:mb-20" data-reveal>
+            <p className="flex items-center gap-4 font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.28em] text-champagne mb-5">
+              <span className="hairline-draw block h-px w-10 bg-champagne/60" />
+              Quick Links
+            </p>
+            <h2 className="font-display font-medium text-[2rem] leading-[1.12] sm:text-4xl lg:text-[2.75rem] tracking-[-0.01em] text-ink max-w-2xl">
+              Ready to Take the{" "}
+              <em className="italic text-champagne font-normal">Next Step?</em>
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-x-10 gap-y-2" data-reveal>
+            <Link
+              href="/birthday-table-prices-london"
+              className="group block border-t border-hairline hover:border-hairline-strong px-1 pt-5 pb-6 hover:bg-noir-soft/60 transition-colors duration-300"
+            >
+              <div className="flex items-baseline justify-between gap-3">
+                <span className="font-display font-medium text-xl text-ink group-hover:text-champagne-bright transition-colors duration-300">
+                  Check Prices
+                </span>
+                <span className="text-champagne transition-transform duration-400 group-hover:translate-x-1.5">
+                  &rarr;
+                </span>
+              </div>
+              <div className="font-sans text-[0.8125rem] tracking-[0.02em] text-ink-faint mt-1.5">
+                Per-person cost breakdown
+              </div>
             </Link>
-            <Link href="/best-birthday-clubs-london" className="block bg-bg-card hover:bg-bg-card-hover border border-border hover:border-gold/30 rounded-xl p-5 transition-all group text-center">
-              <div className="font-semibold group-hover:text-gold transition-colors text-sm">Compare Clubs</div>
-              <div className="text-text-muted text-xs mt-1">13 venues ranked</div>
+            <Link
+              href="/best-birthday-clubs-london"
+              className="group block border-t border-hairline hover:border-hairline-strong px-1 pt-5 pb-6 hover:bg-noir-soft/60 transition-colors duration-300"
+            >
+              <div className="flex items-baseline justify-between gap-3">
+                <span className="font-display font-medium text-xl text-ink group-hover:text-champagne-bright transition-colors duration-300">
+                  Compare Clubs
+                </span>
+                <span className="text-champagne transition-transform duration-400 group-hover:translate-x-1.5">
+                  &rarr;
+                </span>
+              </div>
+              <div className="font-sans text-[0.8125rem] tracking-[0.02em] text-ink-faint mt-1.5">
+                13 venues ranked
+              </div>
             </Link>
-            <Link href="/book-birthday" className="block bg-bg-card hover:bg-bg-card-hover border border-gold/30 rounded-xl p-5 transition-all group text-center">
-              <div className="font-semibold text-gold text-sm">Book Now</div>
-              <div className="text-text-muted text-xs mt-1">Free WhatsApp booking</div>
+            <Link
+              href="/book-birthday"
+              className="group block border-t border-hairline-strong hover:border-champagne px-1 pt-5 pb-6 hover:bg-noir-soft/60 transition-colors duration-300"
+            >
+              <div className="flex items-baseline justify-between gap-3">
+                <span className="font-display font-medium text-xl text-champagne group-hover:text-champagne-bright transition-colors duration-300">
+                  Book Now
+                </span>
+                <span className="text-champagne transition-transform duration-400 group-hover:translate-x-1.5">
+                  &rarr;
+                </span>
+              </div>
+              <div className="font-sans text-[0.8125rem] tracking-[0.02em] text-ink-faint mt-1.5">
+                Free WhatsApp booking
+              </div>
             </Link>
           </div>
         </div>
       </section>
 
+      <div className="divider-gilt" />
+
       {/* FAQ */}
-      <section className="py-16 px-4">
+      <section className="py-24 sm:py-28 px-4 sm:px-6 lg:px-8 bg-noir-soft">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-10">
-            Birthday Planning FAQ
-          </h2>
-          <div className="space-y-6">
+          <div className="mb-14" data-reveal>
+            <p className="flex items-center gap-4 font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.28em] text-champagne mb-5">
+              <span className="hairline-draw block h-px w-10 bg-champagne/60" />
+              Good to Know
+            </p>
+            <h2 className="font-display font-medium text-[2rem] leading-[1.12] sm:text-4xl lg:text-[2.75rem] tracking-[-0.01em] text-ink">
+              Birthday{" "}
+              <em className="italic text-champagne font-normal">Planning</em>{" "}
+              FAQ
+            </h2>
+          </div>
+
+          <div className="divide-y divide-hairline border-y border-hairline" data-reveal>
             {faqs.map((faq) => (
-              <div
-                key={faq.question}
-                className="bg-bg-card border border-border rounded-xl p-6"
-              >
-                <h3 className="text-lg font-semibold mb-3">{faq.question}</h3>
-                <p className="text-text-secondary leading-relaxed">
+              <div key={faq.question} className="py-7">
+                <h3 className="font-display font-medium text-lg sm:text-xl text-ink flex gap-5">
+                  <span className="font-display italic text-champagne/70 select-none">
+                    Q.
+                  </span>
+                  {faq.question}
+                </h3>
+                <p className="mt-3 pl-[2.15rem] font-sans text-base leading-[1.8] text-ink-soft">
                   {faq.answer}
                 </p>
               </div>
@@ -446,13 +610,19 @@ export default function PlanBirthdayPage() {
         </div>
       </section>
 
+      <div className="divider-gilt" />
+
       {/* CTA */}
-      <section className="py-16 px-4 bg-bg-secondary">
-        <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-4">
-            Ready to Start Planning?
+      <section className="py-24 sm:py-32 px-4 sm:px-6 lg:px-8 bg-noir-deep">
+        <div className="max-w-3xl mx-auto text-center" data-reveal>
+          <p className="font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.28em] text-champagne mb-6">
+            Get Started
+          </p>
+          <h2 className="font-display font-medium text-[2rem] leading-[1.12] sm:text-4xl lg:text-[2.75rem] tracking-[-0.01em] text-ink mb-5">
+            Ready to Start{" "}
+            <em className="italic text-champagne font-normal">Planning?</em>
           </h2>
-          <p className="text-text-secondary text-lg mb-8">
+          <p className="font-sans text-[1.0625rem] leading-[1.8] text-ink-soft mb-10 max-w-xl mx-auto">
             Send us your birthday details on WhatsApp and we&apos;ll handle
             the rest — venue recommendation, booking, extras, and
             confirmations. Takes two minutes, saves you hours.
@@ -461,6 +631,7 @@ export default function PlanBirthdayPage() {
             message={getGeneralWhatsAppMessage()}
             label="Start Planning on WhatsApp"
             size="large"
+            microcopy="Free service · Replies in minutes"
           />
         </div>
       </section>

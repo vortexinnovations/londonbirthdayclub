@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { images } from "@/lib/images";
-import { openClubs, getGeneralWhatsAppMessage, getClubWhatsAppMessage } from "@/lib/clubs";
+import { openClubs, getGeneralWhatsAppMessage, getClubWhatsAppMessage, getWhatsAppLink } from "@/lib/clubs";
 import ClubComparisonModule from "@/components/ClubComparisonModule";
 import WhatsAppCTA from "@/components/WhatsAppCTA";
 import FAQSchema from "@/components/FAQSchema";
@@ -63,35 +63,54 @@ export default function BirthdayClubsLondonPage() {
       />
 
       {/* Hero */}
-      <section className="relative min-h-[50vh] flex items-center justify-center px-4">
-        <Image src={images.hero.birthdayClubs} alt="Birthday celebrations at London nightclubs" fill className="object-cover" priority sizes="100vw" />
-        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-black/30" />
-        <div className="max-w-4xl mx-auto relative z-10 text-center">
-          <h1 className="text-4xl sm:text-5xl font-bold tracking-tight mb-6">
-            Birthday Clubs in{" "}
-            <span className="text-gold">London</span>
-          </h1>
-          <p className="text-lg text-white max-w-2xl mx-auto leading-relaxed mb-4 [text-shadow:0_2px_8px_rgba(0,0,0,0.8)]">
-            Thirteen premium London nightclubs that specialise in birthday
-            celebrations. VIP tables, bottle service, sparklers, birthday cakes,
-            and unforgettable nights — all bookable free via WhatsApp.
-          </p>
-          <p className="text-white/70 text-sm mb-8 [text-shadow:0_2px_8px_rgba(0,0,0,0.8)]">
-            Tables from £1,000 &middot; Free booking service &middot; WhatsApp
-            support
-          </p>
-          <WhatsAppCTA
-            message={getGeneralWhatsAppMessage()}
-            label="Plan My Birthday"
-            size="large"
-          />
+      <section className="relative min-h-[64vh] img-editorial flex items-end overflow-hidden">
+        <Image
+          src={images.hero.birthdayClubs}
+          alt="Birthday celebrations at London nightclubs"
+          fill
+          className="object-cover kenburns"
+          priority
+          sizes="100vw"
+        />
+        <div className="absolute inset-0 [background:var(--grad-hero)]" />
+        <div className="grade" />
+        <div className="absolute inset-0 pointer-events-none [box-shadow:inset_0_0_140px_60px_rgba(8,6,3,0.55)]" />
+        <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-40 pb-16 sm:pb-20">
+          <div className="max-w-3xl">
+            <p className="flex items-center gap-4 font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.28em] text-champagne mb-6">
+              <span className="block h-px w-10 bg-champagne/60" />
+              The Directory
+            </p>
+            <h1 className="font-display font-medium text-[2.9rem] leading-[1.04] tracking-[-0.015em] sm:text-6xl lg:text-[4.75rem] text-ink mb-7">
+              Birthday Clubs in{" "}
+              <em className="italic text-champagne font-normal">London</em>
+            </h1>
+            <p className="font-sans text-[1.0625rem] leading-[1.8] text-ink-soft max-w-xl mb-6">
+              Thirteen premium London nightclubs that specialise in birthday
+              celebrations. VIP tables, bottle service, sparklers, birthday cakes,
+              and unforgettable nights — all bookable free via WhatsApp.
+            </p>
+            <p className="font-sans text-[0.75rem] uppercase tracking-[0.18em] text-ink-faint mb-10">
+              Tables from{" "}
+              <span className="font-display italic font-medium text-lg normal-case tracking-normal text-champagne">
+                £1,000
+              </span>{" "}
+              &middot; Free booking service &middot; WhatsApp support
+            </p>
+            <WhatsAppCTA
+              message={getGeneralWhatsAppMessage()}
+              label="Plan My Birthday"
+              size="large"
+              microcopy="Free service · Replies in minutes"
+            />
+          </div>
         </div>
       </section>
 
       {/* How It Works - Quick */}
-      <section className="py-12 px-4 bg-bg-secondary border-y border-border">
+      <section className="py-14 sm:py-16 px-4 sm:px-6 lg:px-8 border-y border-hairline">
         <div className="max-w-5xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-x-12 gap-y-10">
             {[
               {
                 step: "1",
@@ -108,13 +127,17 @@ export default function BirthdayClubsLondonPage() {
                 title: "Celebrate",
                 desc: "Arrive on the night — your table, bottles, and birthday extras are sorted.",
               },
-            ].map((item) => (
-              <div key={item.step} className="flex flex-col items-center">
-                <div className="w-10 h-10 rounded-full bg-gold/10 text-gold font-bold flex items-center justify-center text-lg mb-3">
+            ].map((item, i) => (
+              <div key={item.step} data-reveal data-reveal-delay={i * 90}>
+                <div className="font-display italic font-medium text-5xl text-champagne/40 leading-none mb-4">
                   {item.step}
                 </div>
-                <h3 className="font-semibold mb-1">{item.title}</h3>
-                <p className="text-text-secondary text-sm">{item.desc}</p>
+                <h3 className="font-display font-medium text-xl text-ink mb-2">
+                  {item.title}
+                </h3>
+                <p className="font-sans text-[0.9375rem] leading-relaxed text-ink-soft">
+                  {item.desc}
+                </p>
               </div>
             ))}
           </div>
@@ -122,61 +145,74 @@ export default function BirthdayClubsLondonPage() {
       </section>
 
       {/* Club Directory */}
-      <section className="py-16 px-4">
+      <section className="py-24 sm:py-28 px-4 sm:px-6 lg:px-8 bg-noir-soft">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-4">
-            All Birthday Venues
-          </h2>
-          <p className="text-text-secondary text-center max-w-xl mx-auto mb-12">
-            Every club listed here has been personally vetted for birthday
-            celebrations. Click any venue for the full birthday guide.
-          </p>
+          <div className="mb-14 sm:mb-20" data-reveal>
+            <p className="flex items-center gap-4 font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.28em] text-champagne mb-5">
+              <span className="hairline-draw block h-px w-10 bg-champagne/60" />
+              The Venues
+            </p>
+            <h2 className="font-display font-medium text-[2rem] leading-[1.12] sm:text-4xl lg:text-[2.75rem] tracking-[-0.01em] text-ink max-w-2xl">
+              All Birthday{" "}
+              <em className="italic text-champagne font-normal">Venues</em>
+            </h2>
+            <p className="mt-5 font-sans text-[1.0625rem] leading-[1.8] text-ink-soft max-w-xl">
+              Every club listed here has been personally vetted for birthday
+              celebrations. Click any venue for the full birthday guide.
+            </p>
+          </div>
 
-          <div className="space-y-4">
+          <div className="border-b border-hairline" data-reveal>
             {openClubs.map((club) => (
               <div
                 key={club.slug}
-                className="bg-bg-card border border-border hover:border-gold/20 rounded-xl p-5 sm:p-6 transition-colors"
+                className="border-t border-hairline hover:border-hairline-strong py-7 transition-colors duration-500"
               >
-                <div className="flex flex-col sm:flex-row sm:items-center gap-4">
+                <div className="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-8">
                   <div className="flex-1">
-                    <div className="flex flex-wrap items-center gap-3 mb-2">
+                    <div className="flex flex-wrap items-center gap-3 mb-2.5">
                       <Link
                         href={`/clubs/${club.slug}`}
-                        className="text-xl font-bold hover:text-gold transition-colors"
+                        className="font-display font-semibold text-[1.375rem] leading-snug text-ink hover:text-champagne-bright transition-colors duration-300"
                       >
                         {club.name}
                       </Link>
-                      <span className="text-xs bg-gold/10 text-gold px-2 py-0.5 rounded">
+                      <span className="inline-flex items-center border border-hairline-strong rounded-[2px] px-2.5 py-1 font-sans text-[0.625rem] font-semibold uppercase tracking-[0.2em] text-champagne">
                         {club.bestFor.length > 50
                           ? club.bestFor.slice(0, 50)
                           : club.bestFor}
                       </span>
                     </div>
-                    <div className="flex flex-wrap gap-x-5 gap-y-1 text-sm text-text-muted mb-3">
+                    <div className="flex flex-wrap items-baseline gap-x-5 gap-y-1 font-sans text-[0.75rem] uppercase tracking-[0.18em] text-ink-faint mb-3">
                       <span>{club.area}</span>
-                      <span>From {club.minSpend}</span>
+                      <span>
+                        From{" "}
+                        <span className="font-display italic font-medium text-lg normal-case tracking-normal text-champagne">
+                          {club.minSpend}
+                        </span>
+                      </span>
                       <span>{club.musicPolicy.split(",")[0]}</span>
                       <span>{club.openingNights}</span>
                     </div>
-                    <p className="text-text-secondary text-sm leading-relaxed line-clamp-2">
+                    <p className="font-sans text-[0.9375rem] leading-relaxed text-ink-soft line-clamp-2">
                       {club.description.slice(0, 200)}...
                     </p>
                   </div>
-                  <div className="flex flex-row sm:flex-col gap-2 flex-shrink-0">
+                  <div className="flex flex-row sm:flex-col items-baseline sm:items-end gap-x-6 gap-y-2.5 flex-shrink-0">
                     <Link
                       href={`/clubs/${club.slug}`}
-                      className="text-sm text-gold font-medium hover:underline whitespace-nowrap"
+                      className="group inline-flex items-center gap-2 text-champagne hover:text-champagne-bright text-[0.8125rem] font-semibold uppercase tracking-[0.14em] whitespace-nowrap transition-colors duration-200"
                     >
-                      Full guide &rarr;
+                      Full guide{" "}
+                      <span className="transition-transform duration-400 group-hover:translate-x-1.5">
+                        &rarr;
+                      </span>
                     </Link>
                     <a
-                      href={`https://wa.me/447880662708?text=${encodeURIComponent(
-                        `Hi, I'd like to book a birthday table at ${club.name}. Here are my details:\n\nBirthday person's name:\nDate:\nGroup size:\nBudget:\nAny requests (cake, decorations, surprises):`
-                      )}`}
+                      href={getWhatsAppLink(getClubWhatsAppMessage(club.name))}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-sm text-whatsapp font-medium hover:underline whitespace-nowrap"
+                      className="font-sans text-[0.8125rem] font-medium text-champagne hover:text-champagne-bright underline decoration-champagne/30 underline-offset-4 decoration-[0.5px] whitespace-nowrap transition-colors duration-200"
                     >
                       Book via WhatsApp
                     </a>
@@ -188,65 +224,72 @@ export default function BirthdayClubsLondonPage() {
         </div>
       </section>
 
+      <div className="divider-gilt" />
+
       {/* Comparison Table */}
-      <section className="py-16 px-4 bg-bg-secondary">
+      <section className="py-24 sm:py-28 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-10">
-            Quick Comparison
-          </h2>
-          <div className="overflow-x-auto">
-            <table className="w-full text-sm">
+          <div className="mb-14 sm:mb-20" data-reveal>
+            <p className="flex items-center gap-4 font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.28em] text-champagne mb-5">
+              <span className="hairline-draw block h-px w-10 bg-champagne/60" />
+              At a Glance
+            </p>
+            <h2 className="font-display font-medium text-[2rem] leading-[1.12] sm:text-4xl lg:text-[2.75rem] tracking-[-0.01em] text-ink max-w-2xl">
+              Quick{" "}
+              <em className="italic text-champagne font-normal">Comparison</em>
+            </h2>
+          </div>
+          <div className="overflow-x-auto" data-reveal>
+            <table className="w-full">
               <thead>
-                <tr className="border-b border-border">
-                  <th className="text-left py-3 px-4 text-text-muted font-medium">
+                <tr>
+                  <th className="text-left font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.22em] text-ink-faint py-4 pr-6 border-b border-hairline-strong">
                     Venue
                   </th>
-                  <th className="text-left py-3 px-4 text-text-muted font-medium">
+                  <th className="text-left font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.22em] text-ink-faint py-4 pr-6 border-b border-hairline-strong">
                     Area
                   </th>
-                  <th className="text-left py-3 px-4 text-text-muted font-medium">
+                  <th className="text-left font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.22em] text-ink-faint py-4 pr-6 border-b border-hairline-strong">
                     Min Spend
                   </th>
-                  <th className="text-left py-3 px-4 text-text-muted font-medium">
+                  <th className="text-left font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.22em] text-ink-faint py-4 pr-6 border-b border-hairline-strong">
                     Music
                   </th>
-                  <th className="text-left py-3 px-4 text-text-muted font-medium">
+                  <th className="text-left font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.22em] text-ink-faint py-4 pr-6 border-b border-hairline-strong">
                     Capacity
                   </th>
-                  <th className="text-left py-3 px-4 text-text-muted font-medium hidden sm:table-cell">
+                  <th className="text-left font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.22em] text-ink-faint py-4 border-b border-hairline-strong hidden sm:table-cell">
                     Nights
                   </th>
                 </tr>
               </thead>
               <tbody>
-                {openClubs.map((club, i) => (
+                {openClubs.map((club) => (
                   <tr
                     key={club.slug}
-                    className={`border-b border-border/50 ${
-                      i % 2 === 0 ? "" : "bg-bg-card/50"
-                    }`}
+                    className="border-b border-hairline hover:bg-noir-soft/70 transition-colors duration-300"
                   >
-                    <td className="py-3 px-4">
+                    <td className="py-5 pr-6 font-display font-medium text-lg text-ink whitespace-nowrap">
                       <Link
                         href={`/clubs/${club.slug}`}
-                        className="font-medium text-text-primary hover:text-gold transition-colors"
+                        className="hover:text-champagne-bright transition-colors duration-300"
                       >
                         {club.shortName}
                       </Link>
                     </td>
-                    <td className="py-3 px-4 text-text-secondary">
+                    <td className="py-5 pr-6 font-sans text-[0.9375rem] text-ink-soft">
                       {club.area}
                     </td>
-                    <td className="py-3 px-4 text-gold font-medium">
+                    <td className="py-5 pr-6 font-display italic text-lg text-champagne whitespace-nowrap">
                       {club.minSpend}
                     </td>
-                    <td className="py-3 px-4 text-text-secondary">
+                    <td className="py-5 pr-6 font-sans text-[0.9375rem] text-ink-soft">
                       {club.musicPolicy.split(",")[0]}
                     </td>
-                    <td className="py-3 px-4 text-text-secondary">
+                    <td className="py-5 pr-6 font-sans text-[0.9375rem] text-ink-soft">
                       {club.capacity.split("(")[0].trim()}
                     </td>
-                    <td className="py-3 px-4 text-text-muted hidden sm:table-cell">
+                    <td className="py-5 font-sans text-[0.9375rem] text-ink-faint hidden sm:table-cell">
                       {club.openingNights}
                     </td>
                   </tr>
@@ -257,13 +300,22 @@ export default function BirthdayClubsLondonPage() {
         </div>
       </section>
 
+      <div className="divider-gilt" />
+
       {/* Group Size Guide */}
-      <section className="py-16 px-4">
+      <section className="py-24 sm:py-28 px-4 sm:px-6 lg:px-8 bg-noir-soft">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-10">
-            Which Club Fits Your Group?
-          </h2>
-          <div className="grid sm:grid-cols-2 gap-6">
+          <div className="mb-14 sm:mb-20" data-reveal>
+            <p className="flex items-center gap-4 font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.28em] text-champagne mb-5">
+              <span className="hairline-draw block h-px w-10 bg-champagne/60" />
+              Group Size
+            </p>
+            <h2 className="font-display font-medium text-[2rem] leading-[1.12] sm:text-4xl lg:text-[2.75rem] tracking-[-0.01em] text-ink max-w-2xl">
+              Which Club Fits{" "}
+              <em className="italic text-champagne font-normal">Your Group?</em>
+            </h2>
+          </div>
+          <div className="grid sm:grid-cols-2 gap-x-14 gap-y-12">
             {[
               {
                 size: "5–10 guests",
@@ -285,18 +337,20 @@ export default function BirthdayClubsLondonPage() {
                 venues: "Reign London, BEAT London",
                 desc: "The biggest venues with multi-table configurations for major celebrations.",
               },
-            ].map((item) => (
+            ].map((item, i) => (
               <div
                 key={item.size}
-                className="bg-bg-card border border-border rounded-xl p-6"
+                className="border-t border-hairline hover:border-hairline-strong pt-6 transition-colors duration-500"
+                data-reveal
+                data-reveal-delay={(i % 2) * 90}
               >
-                <h3 className="text-gold font-bold text-lg mb-2">
+                <h3 className="font-display italic font-medium text-2xl text-champagne mb-3">
                   {item.size}
                 </h3>
-                <p className="text-text-secondary text-sm leading-relaxed mb-3">
+                <p className="font-sans text-base leading-[1.8] text-ink-soft mb-3">
                   {item.desc}
                 </p>
-                <p className="text-text-muted text-xs">
+                <p className="font-sans text-[0.8125rem] leading-relaxed tracking-[0.02em] text-ink-faint">
                   Best venues: {item.venues}
                 </p>
               </div>
@@ -305,8 +359,10 @@ export default function BirthdayClubsLondonPage() {
         </div>
       </section>
 
-      <section className="py-16 px-4">
-        <div className="max-w-5xl mx-auto">
+      <div className="divider-gilt" />
+
+      <section className="py-24 sm:py-28 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto">
           <ClubComparisonModule
             title="Quick Match: Best Club for Your Birthday"
             categories={[
@@ -321,16 +377,25 @@ export default function BirthdayClubsLondonPage() {
         </div>
       </section>
 
+      <div className="divider-gilt" />
+
       {/* CTA with detailed variant */}
-      <section className="py-16 px-4 bg-bg-secondary">
+      <section className="py-24 sm:py-28 px-4 sm:px-6 lg:px-8 bg-noir-soft">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-6">
-            Ready to Book Your Birthday?
-          </h2>
-          <p className="text-text-secondary text-center text-lg mb-8">
-            Have your details ready and we&apos;ll confirm your birthday
-            table within minutes. Completely free.
-          </p>
+          <div className="mb-12" data-reveal>
+            <p className="flex items-center gap-4 font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.28em] text-champagne mb-5">
+              <span className="hairline-draw block h-px w-10 bg-champagne/60" />
+              The Booking
+            </p>
+            <h2 className="font-display font-medium text-[2rem] leading-[1.12] sm:text-4xl lg:text-[2.75rem] tracking-[-0.01em] text-ink max-w-2xl">
+              Ready to Book Your{" "}
+              <em className="italic text-champagne font-normal">Birthday?</em>
+            </h2>
+            <p className="mt-5 font-sans text-[1.0625rem] leading-[1.8] text-ink-soft max-w-xl">
+              Have your details ready and we&apos;ll confirm your birthday
+              table within minutes. Completely free.
+            </p>
+          </div>
           <WhatsAppCTA
             message={getGeneralWhatsAppMessage()}
             label="Book My Birthday on WhatsApp"
@@ -340,13 +405,25 @@ export default function BirthdayClubsLondonPage() {
         </div>
       </section>
 
+      <div className="divider-gilt" />
+
       {/* Explore More */}
-      <section className="py-16 px-4">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-2xl font-bold text-center mb-8">
-            Explore Birthday Guides
-          </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      <section className="py-24 sm:py-28 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto">
+          <div className="mb-14 sm:mb-20" data-reveal>
+            <p className="flex items-center gap-4 font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.28em] text-champagne mb-5">
+              <span className="hairline-draw block h-px w-10 bg-champagne/60" />
+              The Guides
+            </p>
+            <h2 className="font-display font-medium text-[2rem] leading-[1.12] sm:text-4xl lg:text-[2.75rem] tracking-[-0.01em] text-ink max-w-2xl">
+              Explore Birthday{" "}
+              <em className="italic text-champagne font-normal">Guides</em>
+            </h2>
+          </div>
+          <div
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-10 gap-y-2"
+            data-reveal
+          >
             {[
               {
                 href: "/birthday-table-booking-london",
@@ -372,32 +449,50 @@ export default function BirthdayClubsLondonPage() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="block bg-bg-card hover:bg-bg-card-hover border border-border hover:border-gold/30 rounded-xl p-5 transition-all group"
+                className="group block border-t border-hairline hover:border-hairline-strong px-1 pt-5 pb-6 hover:bg-noir-soft/60 transition-colors duration-300"
               >
-                <div className="font-semibold group-hover:text-gold transition-colors text-sm">
-                  {link.label}
+                <div className="flex items-baseline justify-between gap-3">
+                  <span className="font-display font-medium text-xl text-ink group-hover:text-champagne-bright transition-colors duration-300">
+                    {link.label}
+                  </span>
+                  <span className="text-champagne transition-transform duration-400 group-hover:translate-x-1.5">
+                    &rarr;
+                  </span>
                 </div>
-                <div className="text-text-muted text-xs mt-1">{link.sub}</div>
+                <div className="font-sans text-[0.8125rem] tracking-[0.02em] text-ink-faint mt-1.5">
+                  {link.sub}
+                </div>
               </Link>
             ))}
           </div>
         </div>
       </section>
 
+      <div className="divider-gilt" />
+
       {/* FAQ */}
-      <section className="py-16 px-4 bg-bg-secondary">
+      <section className="py-24 sm:py-28 px-4 sm:px-6 lg:px-8 bg-noir-soft">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-10">
-            Birthday Club London FAQ
-          </h2>
-          <div className="space-y-6">
+          <div className="mb-14" data-reveal>
+            <p className="flex items-center gap-4 font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.28em] text-champagne mb-5">
+              <span className="hairline-draw block h-px w-10 bg-champagne/60" />
+              Good to Know
+            </p>
+            <h2 className="font-display font-medium text-[2rem] leading-[1.12] sm:text-4xl lg:text-[2.75rem] tracking-[-0.01em] text-ink">
+              Birthday Club London{" "}
+              <em className="italic text-champagne font-normal">FAQ</em>
+            </h2>
+          </div>
+          <div className="divide-y divide-hairline border-y border-hairline" data-reveal>
             {faqs.map((faq) => (
-              <div
-                key={faq.question}
-                className="bg-bg-card border border-border rounded-xl p-6"
-              >
-                <h3 className="text-lg font-semibold mb-3">{faq.question}</h3>
-                <p className="text-text-secondary leading-relaxed">
+              <div key={faq.question} className="py-7">
+                <h3 className="font-display font-medium text-lg sm:text-xl text-ink flex gap-5">
+                  <span className="font-display italic text-champagne/70 select-none">
+                    Q.
+                  </span>
+                  {faq.question}
+                </h3>
+                <p className="mt-3 pl-[2.15rem] font-sans text-base leading-[1.8] text-ink-soft">
                   {faq.answer}
                 </p>
               </div>

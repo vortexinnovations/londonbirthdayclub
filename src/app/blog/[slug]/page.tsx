@@ -75,6 +75,12 @@ export default async function BlogPostPage({
     .filter((p) => p.slug !== post.slug)
     .slice(0, 3);
 
+  // Styling only: split the title so the final word carries the single
+  // italic champagne accent — rendered copy is byte-identical.
+  const titleWords = post.title.split(" ");
+  const titleAccent = titleWords[titleWords.length - 1];
+  const titleLead = titleWords.slice(0, -1).join(" ");
+
   return (
     <>
       <script
@@ -85,20 +91,25 @@ export default async function BlogPostPage({
 
       {/* Header */}
       <article>
-        <div className="pt-24 pb-8 px-4">
-          <div className="max-w-3xl mx-auto">
+        <div className="pt-36 sm:pt-40 pb-10 px-4 sm:px-6 lg:px-8">
+          <div className="max-w-3xl mx-auto" data-reveal>
             <Link
               href="/blog"
-              className="text-gold text-sm hover:underline mb-4 inline-block"
+              className="group inline-flex items-center gap-2 text-champagne hover:text-champagne-bright text-[0.8125rem] font-semibold uppercase tracking-[0.14em] transition-colors duration-200 mb-10"
             >
-              &larr; All Articles
+              <span className="transition-transform duration-400 group-hover:-translate-x-1.5">
+                &larr;
+              </span>{" "}
+              All Articles
             </Link>
-            <div className="flex items-center gap-3 mb-4">
-              <span className="text-xs bg-gold/10 text-gold px-2 py-1 rounded">
+            <div className="flex flex-wrap items-center gap-4 mb-6">
+              <span className="inline-flex items-center border border-hairline-strong rounded-[2px] px-2.5 py-1 font-sans text-[0.625rem] font-semibold uppercase tracking-[0.2em] text-champagne">
                 {post.category}
               </span>
-              <span className="text-xs text-text-muted">{post.readTime}</span>
-              <span className="text-xs text-text-muted">
+              <span className="font-sans text-[0.75rem] uppercase tracking-[0.18em] text-ink-faint">
+                {post.readTime}
+              </span>
+              <span className="font-sans text-[0.75rem] uppercase tracking-[0.18em] text-ink-faint">
                 Updated{" "}
                 {new Date(post.updatedAt).toLocaleDateString("en-GB", {
                   month: "long",
@@ -106,37 +117,41 @@ export default async function BlogPostPage({
                 })}
               </span>
             </div>
-            <h1 className="text-3xl sm:text-4xl font-bold tracking-tight mb-4">
-              {post.title}
+            <h1 className="font-display font-medium text-[2.5rem] leading-[1.08] tracking-[-0.015em] sm:text-5xl text-ink mb-6">
+              {titleLead && <>{titleLead} </>}
+              <em className="italic text-champagne font-normal">
+                {titleAccent}
+              </em>
             </h1>
-            <p className="text-sm text-text-muted mb-4">
+            <p className="font-sans text-[0.75rem] uppercase tracking-[0.18em] text-ink-faint mb-6">
               By{" "}
               <Link
                 href="/about-the-editor"
-                className="text-gold underline underline-offset-2 hover:opacity-80"
+                className="text-champagne hover:text-champagne-bright underline decoration-champagne/30 underline-offset-4 decoration-[0.5px] transition-colors duration-200"
               >
                 Charlotte Hayes
               </Link>
               , Events Specialist
             </p>
-            <p className="text-text-secondary leading-relaxed mb-8">
+            <p className="font-sans text-[1.0625rem] leading-[1.8] text-ink-soft mb-10">
               {post.excerpt}
             </p>
-            <div className="relative w-full aspect-video rounded-xl overflow-hidden">
+            <div className="frame-mat img-editorial relative w-full aspect-video overflow-hidden">
               <Image src={getBlogImage(post.slug)} alt={post.title} fill className="object-cover" priority sizes="(max-width: 768px) 100vw, 768px" />
+              <div className="grade" />
             </div>
           </div>
         </div>
 
         {/* Body */}
-        <div className="py-10 px-4">
+        <div className="pt-10 pb-24 px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto">
             {post.sections.map((section, i) => {
               const Heading = section.headingLevel === "h2" ? "h2" : "h3";
               const headingClass =
                 section.headingLevel === "h2"
-                  ? "text-2xl sm:text-3xl font-bold mb-5 mt-12 first:mt-0"
-                  : "text-xl font-semibold mb-4 mt-8";
+                  ? "font-display font-medium text-2xl sm:text-3xl text-ink mb-5 mt-12 first:mt-0"
+                  : "font-display font-medium text-xl text-ink mb-4 mt-8";
 
               return (
                 <section key={i}>
@@ -144,7 +159,7 @@ export default async function BlogPostPage({
                   {section.content.map((para, j) => (
                     <p
                       key={j}
-                      className="text-text-secondary leading-relaxed mb-4"
+                      className="font-sans text-base leading-[1.8] text-ink-soft mb-5"
                     >
                       {para}
                     </p>
@@ -157,38 +172,56 @@ export default async function BlogPostPage({
 
         {/* FAQ Section */}
         {post.faqs && post.faqs.length > 0 && (
-          <div className="py-12 px-4 bg-bg-secondary">
-            <div className="max-w-3xl mx-auto">
-              <h2 className="text-2xl sm:text-3xl font-bold mb-8">
-                Frequently Asked Questions
-              </h2>
-              <div className="space-y-6">
-                {post.faqs.map((faq) => (
-                  <div
-                    key={faq.question}
-                    className="bg-bg-card border border-border rounded-xl p-6"
-                  >
-                    <h3 className="text-lg font-semibold mb-3">
-                      {faq.question}
-                    </h3>
-                    <p className="text-text-secondary leading-relaxed">
-                      {faq.answer}
-                    </p>
-                  </div>
-                ))}
+          <>
+            <div className="divider-gilt" />
+            <div className="py-24 sm:py-28 px-4 sm:px-6 lg:px-8 bg-noir-soft">
+              <div className="max-w-3xl mx-auto">
+                <div className="mb-14" data-reveal>
+                  <p className="flex items-center gap-4 font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.28em] text-champagne mb-5">
+                    <span className="hairline-draw block h-px w-10 bg-champagne/60" />
+                    Good to Know
+                  </p>
+                  <h2 className="font-display font-medium text-[2rem] leading-[1.12] sm:text-4xl lg:text-[2.75rem] tracking-[-0.01em] text-ink">
+                    Frequently Asked{" "}
+                    <em className="italic text-champagne font-normal">
+                      Questions
+                    </em>
+                  </h2>
+                </div>
+                <div className="divide-y divide-hairline border-y border-hairline" data-reveal>
+                  {post.faqs.map((faq) => (
+                    <div key={faq.question} className="py-7">
+                      <h3 className="font-display font-medium text-lg sm:text-xl text-ink flex gap-5">
+                        <span className="font-display italic text-champagne/70 select-none">
+                          Q.
+                        </span>
+                        {faq.question}
+                      </h3>
+                      <p className="mt-3 pl-[2.15rem] font-sans text-base leading-[1.8] text-ink-soft">
+                        {faq.answer}
+                      </p>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
-          </div>
+          </>
         )}
       </article>
 
+      <div className="divider-gilt" />
+
       {/* CTA */}
-      <section className="py-16 px-4">
-        <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-4">
-            Ready to Book Your Birthday?
+      <section className="py-24 sm:py-32 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-3xl mx-auto text-center" data-reveal>
+          <p className="font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.28em] text-champagne mb-6">
+            The Next Step
+          </p>
+          <h2 className="font-display font-medium text-[2rem] leading-[1.12] sm:text-4xl lg:text-[2.75rem] tracking-[-0.01em] text-ink mb-5">
+            Ready to Book Your{" "}
+            <em className="italic text-champagne font-normal">Birthday?</em>
           </h2>
-          <p className="text-text-secondary text-lg mb-8">
+          <p className="font-sans text-[1.0625rem] leading-[1.8] text-ink-soft mb-10 max-w-xl mx-auto">
             Now you know the details — let us handle the rest. Message us on
             WhatsApp and we&apos;ll plan your perfect birthday night.
           </p>
@@ -196,44 +229,59 @@ export default async function BlogPostPage({
             message={getGeneralWhatsAppMessage()}
             label="Plan My Birthday on WhatsApp"
             size="large"
+            microcopy="Free service · Replies in minutes"
           />
         </div>
       </section>
 
+      <div className="divider-gilt" />
+
       {/* Related posts */}
-      <section className="py-16 px-4 bg-bg-secondary">
-        <div className="max-w-5xl mx-auto">
-          <h2 className="text-2xl font-bold text-center mb-8">
-            More Birthday Guides
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <section className="py-24 sm:py-28 px-4 sm:px-6 lg:px-8 bg-noir-soft">
+        <div className="max-w-6xl mx-auto">
+          <div className="mb-14 sm:mb-20" data-reveal>
+            <p className="flex items-center gap-4 font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.28em] text-champagne mb-5">
+              <span className="hairline-draw block h-px w-10 bg-champagne/60" />
+              Keep Reading
+            </p>
+            <h2 className="font-display font-medium text-[2rem] leading-[1.12] sm:text-4xl lg:text-[2.75rem] tracking-[-0.01em] text-ink max-w-2xl">
+              More Birthday{" "}
+              <em className="italic text-champagne font-normal">Guides</em>
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-x-10 gap-y-12" data-reveal>
             {otherPosts.map((p) => (
               <Link
                 key={p.slug}
                 href={`/blog/${p.slug}`}
-                className="group block bg-bg-card hover:bg-bg-card-hover border border-border hover:border-gold/30 rounded-xl p-5 transition-all"
+                className="group block border-t border-hairline hover:border-hairline-strong pt-6 transition-colors duration-500"
               >
-                <div className="flex items-center gap-2 mb-3">
-                  <span className="text-xs bg-gold/10 text-gold px-2 py-1 rounded">
+                <div className="flex flex-wrap items-center gap-4 mb-4">
+                  <span className="inline-flex items-center border border-hairline-strong rounded-[2px] px-2.5 py-1 font-sans text-[0.625rem] font-semibold uppercase tracking-[0.2em] text-champagne">
                     {p.category}
                   </span>
-                  <span className="text-xs text-text-muted">{p.readTime}</span>
+                  <span className="font-sans text-[0.75rem] uppercase tracking-[0.18em] text-ink-faint">
+                    {p.readTime}
+                  </span>
                 </div>
-                <h3 className="font-semibold group-hover:text-gold transition-colors mb-2">
+                <h3 className="font-display font-medium text-xl text-ink group-hover:text-champagne-bright transition-colors duration-300 mb-3">
                   {p.title}
                 </h3>
-                <p className="text-text-secondary text-sm line-clamp-2">
+                <p className="font-sans text-sm leading-relaxed text-ink-soft line-clamp-2">
                   {p.excerpt}
                 </p>
               </Link>
             ))}
           </div>
-          <div className="text-center mt-6">
+          <div className="mt-12" data-reveal>
             <Link
               href="/blog"
-              className="text-gold hover:underline text-sm"
+              className="group inline-flex items-center gap-2 text-champagne text-[0.8125rem] font-semibold uppercase tracking-[0.14em]"
             >
-              View all articles &rarr;
+              View all articles{" "}
+              <span className="transition-transform duration-400 group-hover:translate-x-1.5">
+                &rarr;
+              </span>
             </Link>
           </div>
         </div>

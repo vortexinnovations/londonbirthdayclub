@@ -30,58 +30,88 @@ export default function BirthdayTablePricesPage() {
       <BreadcrumbSchema items={[{ name: "Home", href: "/" }, { name: "Birthday Table Prices London", href: "/birthday-table-prices-london" }]} />
       <ArticleSchema title="Birthday Table Prices London 2026" description="Complete guide to birthday table prices at London nightclubs." url="https://londonbirthdayclub.com/birthday-table-prices-london" />
 
-      <section className="relative min-h-[50vh] flex items-center justify-center px-4">
-        <Image src={images.hero.tablePrices} alt="Birthday table with bottle service and sparklers in London" fill className="object-cover" priority sizes="100vw" />
-        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-black/30" />
-        <div className="max-w-4xl mx-auto relative z-10 text-center">
-          <h1 className="text-4xl sm:text-5xl font-bold tracking-tight mb-6">Birthday Table Prices in <span className="text-gold">London</span></h1>
-          <p className="text-lg text-white max-w-2xl [text-shadow:0_2px_8px_rgba(0,0,0,0.8)] mx-auto leading-relaxed mb-4">
-            A transparent breakdown of what birthday tables actually cost at London&apos;s best nightclubs. No hidden fees, no guesswork — just honest pricing to help you plan your budget.
-          </p>
-          <p className="text-white/70 text-sm mb-8 [text-shadow:0_2px_8px_rgba(0,0,0,0.8)]">Updated for 2026. All prices are starting minimums — contact us for exact quotes.</p>
+      {/* Hero */}
+      <section className="relative min-h-[64vh] img-editorial flex items-end overflow-hidden">
+        <Image src={images.hero.tablePrices} alt="Birthday table with bottle service and sparklers in London" fill className="object-cover kenburns" priority sizes="100vw" />
+        <div className="absolute inset-0 [background:var(--grad-hero)]" />
+        <div className="grade" />
+        <div className="absolute inset-0 pointer-events-none [box-shadow:inset_0_0_140px_60px_rgba(8,6,3,0.55)]" />
+        <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-40 pb-16 sm:pb-20">
+          <div className="max-w-3xl">
+            <p className="flex items-center gap-4 font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.28em] text-champagne mb-6">
+              <span className="block h-px w-10 bg-champagne/60" />
+              Pricing Guide
+            </p>
+            <h1 className="font-display font-medium text-[2.9rem] leading-[1.04] tracking-[-0.015em] sm:text-6xl lg:text-[4.75rem] text-ink mb-7">
+              Birthday Table Prices in{" "}
+              <em className="italic text-champagne font-normal">London</em>
+            </h1>
+            <p className="font-sans text-[1.0625rem] leading-[1.8] text-ink-soft max-w-xl mb-5">
+              A transparent breakdown of what birthday tables actually cost at London&apos;s best nightclubs. No hidden fees, no guesswork — just honest pricing to help you plan your budget.
+            </p>
+            <p className="font-sans text-[0.8125rem] leading-relaxed tracking-[0.02em] text-ink-faint">Updated for 2026. All prices are starting minimums — contact us for exact quotes.</p>
+          </div>
         </div>
       </section>
 
       {/* Venue pricing table */}
-      <section className="py-16 px-4 bg-bg-secondary">
-        <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-10">Minimum Spend by Venue</h2>
-          <div className="overflow-x-auto">
-            <table className="w-full text-sm">
+      <section className="py-24 sm:py-28 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto">
+          <div className="mb-14 sm:mb-20" data-reveal>
+            <p className="flex items-center gap-4 font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.28em] text-champagne mb-5">
+              <span className="hairline-draw block h-px w-10 bg-champagne/60" />
+              The Venues
+            </p>
+            <h2 className="font-display font-medium text-[2rem] leading-[1.12] sm:text-4xl lg:text-[2.75rem] tracking-[-0.01em] text-ink max-w-2xl">
+              <em className="italic text-champagne font-normal">Minimum Spend</em> by Venue
+            </h2>
+          </div>
+          <div className="overflow-x-auto" data-reveal>
+            <table className="w-full border-y border-hairline">
               <thead>
-                <tr className="border-b border-border">
-                  <th className="text-left py-3 px-4 text-text-muted font-medium">Venue</th>
-                  <th className="text-left py-3 px-4 text-text-muted font-medium">Area</th>
-                  <th className="text-left py-3 px-4 text-text-muted font-medium">Starting From</th>
-                  <th className="text-left py-3 px-4 text-text-muted font-medium">Open Nights</th>
-                  <th className="text-left py-3 px-4 text-text-muted font-medium hidden sm:table-cell">Music</th>
+                <tr>
+                  <th className="text-left font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.22em] text-ink-faint py-4 pr-6 border-b border-hairline-strong">Venue</th>
+                  <th className="text-left font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.22em] text-ink-faint py-4 pr-6 border-b border-hairline-strong">Area</th>
+                  <th className="text-left font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.22em] text-ink-faint py-4 pr-6 border-b border-hairline-strong">Starting From</th>
+                  <th className="text-left font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.22em] text-ink-faint py-4 pr-6 border-b border-hairline-strong">Open Nights</th>
+                  <th className="text-left font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.22em] text-ink-faint py-4 pr-6 border-b border-hairline-strong hidden sm:table-cell">Music</th>
                 </tr>
               </thead>
               <tbody>
-                {openClubs.map((club, i) => (
-                  <tr key={club.slug} className={`border-b border-border/50 ${i % 2 === 0 ? "" : "bg-bg-card/50"}`}>
-                    <td className="py-3 px-4">
-                      <Link href={`/clubs/${club.slug}`} className="font-medium text-text-primary hover:text-gold transition-colors">{club.shortName}</Link>
+                {openClubs.map((club) => (
+                  <tr key={club.slug} className="border-b border-hairline hover:bg-noir-soft/70 transition-colors duration-300">
+                    <td className="py-5 pr-6">
+                      <Link href={`/clubs/${club.slug}`} className="font-display font-medium text-lg text-ink hover:text-champagne-bright transition-colors duration-300">{club.shortName}</Link>
                     </td>
-                    <td className="py-3 px-4 text-text-secondary">{club.area}</td>
-                    <td className="py-3 px-4 text-gold font-bold">{club.minSpend}</td>
-                    <td className="py-3 px-4 text-text-secondary">{club.openingNights}</td>
-                    <td className="py-3 px-4 text-text-muted hidden sm:table-cell">{club.musicPolicy.split(",")[0]}</td>
+                    <td className="py-5 pr-6 font-sans text-[0.9375rem] text-ink-soft">{club.area}</td>
+                    <td className="py-5 pr-6 font-display italic text-lg text-champagne whitespace-nowrap">{club.minSpend}</td>
+                    <td className="py-5 pr-6 font-sans text-[0.9375rem] text-ink-soft">{club.openingNights}</td>
+                    <td className="py-5 pr-6 font-sans text-[0.9375rem] text-ink-faint hidden sm:table-cell">{club.musicPolicy.split(",")[0]}</td>
                   </tr>
                 ))}
               </tbody>
             </table>
           </div>
-          <p className="text-text-muted text-xs mt-4 text-center">Prices are starting minimums for standard table positions. Premium positions and peak nights (Friday/Saturday) may have higher minimums. Contact us for exact pricing.</p>
+          <p className="mt-6 font-sans text-[0.8125rem] leading-relaxed tracking-[0.02em] text-ink-faint max-w-2xl">Prices are starting minimums for standard table positions. Premium positions and peak nights (Friday/Saturday) may have higher minimums. Contact us for exact pricing.</p>
         </div>
       </section>
 
+      <div className="divider-gilt" />
+
       {/* Per person breakdown */}
-      <section className="py-16 px-4">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-4">Per-Person Cost Breakdown</h2>
-          <p className="text-text-secondary text-center max-w-xl mx-auto mb-10">Based on a £1,000 minimum spend. The birthday person typically pays nothing — costs below exclude them.</p>
-          <div className="bg-bg-card border border-border rounded-xl overflow-hidden">
+      <section className="py-24 sm:py-28 px-4 sm:px-6 lg:px-8 bg-noir-soft">
+        <div className="max-w-6xl mx-auto">
+          <div className="mb-14 sm:mb-20" data-reveal>
+            <p className="flex items-center gap-4 font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.28em] text-champagne mb-5">
+              <span className="hairline-draw block h-px w-10 bg-champagne/60" />
+              Per Person
+            </p>
+            <h2 className="font-display font-medium text-[2rem] leading-[1.12] sm:text-4xl lg:text-[2.75rem] tracking-[-0.01em] text-ink max-w-2xl">
+              Per-Person Cost <em className="italic text-champagne font-normal">Breakdown</em>
+            </h2>
+            <p className="mt-5 font-sans text-[1.0625rem] leading-[1.8] text-ink-soft max-w-xl">Based on a £1,000 minimum spend. The birthday person typically pays nothing — costs below exclude them.</p>
+          </div>
+          <div className="divide-y divide-hairline border-y border-hairline" data-reveal>
             {[
               { total: "5 paying guests", pp: "£200", note: "Intimate group — high per-person but premium experience" },
               { total: "7 paying guests", pp: "£143", note: "Small group — still excellent value for VIP" },
@@ -89,38 +119,48 @@ export default function BirthdayTablePricesPage() {
               { total: "12 paying guests", pp: "£83", note: "Great value — cheaper than a night of bar drinks" },
               { total: "15 paying guests", pp: "£67", note: "Large group — outstanding value per head" },
               { total: "20 paying guests", pp: "£50", note: "Best per-person value you'll find" },
-            ].map((row, i) => (
-              <div key={row.total} className={`flex flex-col sm:flex-row sm:items-center px-6 py-4 gap-1 ${i % 2 === 0 ? "bg-bg-card" : "bg-bg-primary"}`}>
-                <span className="font-medium sm:w-40">{row.total}</span>
-                <span className="text-gold font-bold sm:w-20">{row.pp}</span>
-                <span className="text-text-muted text-sm flex-1">{row.note}</span>
+            ].map((row) => (
+              <div key={row.total} className="flex flex-col sm:flex-row sm:items-baseline py-5 gap-1 sm:gap-6">
+                <span className="font-display font-medium text-lg text-ink sm:w-52">{row.total}</span>
+                <span className="font-display italic font-medium text-2xl text-champagne whitespace-nowrap sm:w-28">{row.pp}</span>
+                <span className="font-sans text-[0.9375rem] leading-relaxed text-ink-soft flex-1">{row.note}</span>
               </div>
             ))}
           </div>
         </div>
       </section>
 
+      <div className="divider-gilt" />
+
       {/* What's included vs extra */}
-      <section className="py-16 px-4 bg-bg-secondary">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-10">What&apos;s Included vs What Costs Extra</h2>
-          <div className="grid md:grid-cols-2 gap-6">
-            <div className="bg-bg-card border border-gold/20 rounded-xl p-6">
-              <h3 className="text-lg font-bold text-gold mb-4">Included in Minimum Spend</h3>
-              <ul className="space-y-2">
+      <section className="py-24 sm:py-28 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto">
+          <div className="mb-14 sm:mb-20" data-reveal>
+            <p className="flex items-center gap-4 font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.28em] text-champagne mb-5">
+              <span className="hairline-draw block h-px w-10 bg-champagne/60" />
+              The Breakdown
+            </p>
+            <h2 className="font-display font-medium text-[2rem] leading-[1.12] sm:text-4xl lg:text-[2.75rem] tracking-[-0.01em] text-ink max-w-2xl">
+              What&apos;s Included vs What Costs <em className="italic text-champagne font-normal">Extra</em>
+            </h2>
+          </div>
+          <div className="grid md:grid-cols-2 gap-x-14 gap-y-12" data-reveal>
+            <div className="border-t border-champagne/40 pt-6">
+              <h3 className="font-display font-medium text-xl text-ink mb-5">Included in Minimum Spend</h3>
+              <ul className="space-y-3">
                 {["Premium bottles (your choice of spirit or champagne)", "All mixers, juices, soft drinks, ice", "Reserved VIP table and seating area", "Dedicated table host all night", "Priority entry for your group", "Birthday guestlist arrangement", "Sparkler bottle presentations", "DJ birthday shoutout"].map(item => (
-                  <li key={item} className="text-text-secondary text-sm flex items-start gap-2">
-                    <span className="text-gold mt-0.5">&#10003;</span>{item}
+                  <li key={item} className="font-sans text-[0.9375rem] leading-[1.8] text-ink-soft flex items-start gap-3">
+                    <span className="text-champagne/70 select-none">&#10003;</span>{item}
                   </li>
                 ))}
               </ul>
             </div>
-            <div className="bg-bg-card border border-border rounded-xl p-6">
-              <h3 className="text-lg font-bold mb-4">Additional Costs</h3>
-              <ul className="space-y-2">
+            <div className="border-t border-hairline pt-6">
+              <h3 className="font-display font-medium text-xl text-ink mb-5">Additional Costs</h3>
+              <ul className="space-y-3">
                 {["Birthday cake: £50-150 (arranged through us)", "Table decorations: £30-100 (varies by venue)", "Gratuity for table host: 10-15% (customary)", "Any drinks above minimum spend", "Premium bottle upgrades (Dom Perignon, etc.)", "Dinner at Maddox: £40-70pp (separate from club)"].map(item => (
-                  <li key={item} className="text-text-secondary text-sm flex items-start gap-2">
-                    <span className="text-text-muted mt-0.5">+</span>{item}
+                  <li key={item} className="font-sans text-[0.9375rem] leading-[1.8] text-ink-soft flex items-start gap-3">
+                    <span className="text-ink-faint select-none">+</span>{item}
                   </li>
                 ))}
               </ul>
@@ -129,58 +169,98 @@ export default function BirthdayTablePricesPage() {
         </div>
       </section>
 
+      <div className="divider-gilt" />
+
       {/* Budget tiers */}
-      <section className="py-16 px-4">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-10">Birthday Budget Tiers</h2>
-          <div className="space-y-4">
+      <section className="py-24 sm:py-28 px-4 sm:px-6 lg:px-8 bg-noir-soft">
+        <div className="max-w-6xl mx-auto">
+          <div className="mb-14 sm:mb-20" data-reveal>
+            <p className="flex items-center gap-4 font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.28em] text-champagne mb-5">
+              <span className="hairline-draw block h-px w-10 bg-champagne/60" />
+              Budget
+            </p>
+            <h2 className="font-display font-medium text-[2rem] leading-[1.12] sm:text-4xl lg:text-[2.75rem] tracking-[-0.01em] text-ink max-w-2xl">
+              Birthday Budget <em className="italic text-champagne font-normal">Tiers</em>
+            </h2>
+          </div>
+          <div className="space-y-10">
             {[
               { tier: "Smart Budget", pp: "£50-80 per person", how: "Large group (15+), midweek booking, standard table position. You still get the full VIP experience — just with a bigger group splitting the cost.", venues: "Cuckoo Club, Funky Buddha (Wed), Cirque Le Soir (Wed)" },
               { tier: "Standard", pp: "£80-120 per person", how: "Group of 10-12, weekend booking, standard table. This is the most popular tier — excellent experience at a reasonable per-person cost.", venues: "Most Mayfair clubs on Fri/Sat" },
               { tier: "Premium", pp: "£120-200 per person", how: "Smaller group (6-8), premium table position, potentially upgraded bottles. A more intimate, higher-quality experience.", venues: "Tape London, Cirque Le Soir, The Box" },
               { tier: "Luxury", pp: "£200+ per person", how: "Small group at the most exclusive venue, best table in the house, champagne packages. For milestone birthdays where budget isn't the primary concern.", venues: "Tape London, Cirque Le Soir — premium positions" },
-            ].map(item => (
-              <div key={item.tier} className="bg-bg-card border border-border rounded-xl p-6">
-                <div className="flex flex-wrap items-center gap-3 mb-2">
-                  <span className="text-gold font-bold">{item.tier}</span>
-                  <span className="text-xs bg-gold/10 text-gold px-2 py-0.5 rounded">{item.pp}</span>
+            ].map((item, i) => (
+              <div key={item.tier} className="border-t border-hairline pt-6" data-reveal data-reveal-delay={i * 90}>
+                <div className="flex flex-wrap items-baseline gap-x-5 gap-y-1 mb-3">
+                  <h3 className="font-display font-medium text-xl text-ink">{item.tier}</h3>
+                  <span className="font-display italic font-medium text-xl text-champagne whitespace-nowrap">{item.pp}</span>
                 </div>
-                <p className="text-text-secondary text-sm leading-relaxed mb-2">{item.how}</p>
-                <p className="text-text-muted text-xs">Best venues: {item.venues}</p>
+                <p className="font-sans text-base leading-[1.8] text-ink-soft mb-3 max-w-3xl">{item.how}</p>
+                <p className="font-sans text-[0.75rem] uppercase tracking-[0.18em] text-ink-faint">Best venues: {item.venues}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="py-16 px-4 bg-bg-secondary">
+      <div className="divider-gilt" />
+
+      {/* Quote CTA */}
+      <section className="py-24 sm:py-28 px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-6">Get an Exact Quote</h2>
-          <p className="text-text-secondary text-center text-lg mb-8">Prices vary by venue, night, and table position. Tell us your details and we&apos;ll give you an exact quote — no obligation, completely free.</p>
-          <WhatsAppCTA message={getPricingWhatsAppMessage()} label="Get a Quote on WhatsApp" size="large" variant="detailed" />
+          <div className="mb-14" data-reveal>
+            <p className="flex items-center gap-4 font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.28em] text-champagne mb-5">
+              <span className="hairline-draw block h-px w-10 bg-champagne/60" />
+              Your Quote
+            </p>
+            <h2 className="font-display font-medium text-[2rem] leading-[1.12] sm:text-4xl lg:text-[2.75rem] tracking-[-0.01em] text-ink max-w-2xl">
+              Get an Exact <em className="italic text-champagne font-normal">Quote</em>
+            </h2>
+            <p className="mt-5 font-sans text-[1.0625rem] leading-[1.8] text-ink-soft max-w-xl">Prices vary by venue, night, and table position. Tell us your details and we&apos;ll give you an exact quote — no obligation, completely free.</p>
+          </div>
+          <div data-reveal>
+            <WhatsAppCTA message={getPricingWhatsAppMessage()} label="Get a Quote on WhatsApp" size="large" variant="detailed" microcopy="Free service · Replies in minutes" />
+          </div>
         </div>
       </section>
 
-      <section className="py-16 px-4">
+      <div className="divider-gilt" />
+
+      {/* FAQ */}
+      <section className="py-24 sm:py-28 px-4 sm:px-6 lg:px-8 bg-noir-soft">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-10">Birthday Table Pricing FAQ</h2>
-          <div className="space-y-6">
+          <div className="mb-14" data-reveal>
+            <p className="flex items-center gap-4 font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.28em] text-champagne mb-5">
+              <span className="hairline-draw block h-px w-10 bg-champagne/60" />
+              Good to Know
+            </p>
+            <h2 className="font-display font-medium text-[2rem] leading-[1.12] sm:text-4xl lg:text-[2.75rem] tracking-[-0.01em] text-ink">
+              Birthday Table <em className="italic text-champagne font-normal">Pricing</em> FAQ
+            </h2>
+          </div>
+          <div className="divide-y divide-hairline border-y border-hairline" data-reveal>
             {faqs.map(faq => (
-              <div key={faq.question} className="bg-bg-card border border-border rounded-xl p-6">
-                <h3 className="text-lg font-semibold mb-3">{faq.question}</h3>
-                <p className="text-text-secondary leading-relaxed">{faq.answer}</p>
+              <div key={faq.question} className="py-7">
+                <h3 className="font-display font-medium text-lg sm:text-xl text-ink flex gap-5">
+                  <span className="font-display italic text-champagne/70 select-none">Q.</span>
+                  {faq.question}
+                </h3>
+                <p className="mt-3 pl-[2.15rem] font-sans text-base leading-[1.8] text-ink-soft">{faq.answer}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="py-12 px-4 bg-bg-secondary">
-        <div className="max-w-4xl mx-auto flex flex-wrap justify-center gap-4">
-          <Link href="/birthday-table-booking-london" className="text-gold text-sm hover:underline">How table booking works &rarr;</Link>
-          <Link href="/vip-birthday-tables-london" className="text-gold text-sm hover:underline">VIP table upgrades &rarr;</Link>
-          <Link href="/birthday-guestlist-vs-table-booking" className="text-gold text-sm hover:underline">Guestlist vs table &rarr;</Link>
-          <Link href="/birthday-clubs-london" className="text-gold text-sm hover:underline">All birthday clubs &rarr;</Link>
+      <div className="divider-gilt" />
+
+      {/* Related links */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-4xl mx-auto flex flex-wrap justify-center gap-x-10 gap-y-4" data-reveal>
+          <Link href="/birthday-table-booking-london" className="group inline-flex items-center gap-2 text-champagne hover:text-champagne-bright text-[0.8125rem] font-semibold uppercase tracking-[0.14em] transition-colors duration-200">How table booking works <span className="transition-transform duration-400 group-hover:translate-x-1.5">&rarr;</span></Link>
+          <Link href="/vip-birthday-tables-london" className="group inline-flex items-center gap-2 text-champagne hover:text-champagne-bright text-[0.8125rem] font-semibold uppercase tracking-[0.14em] transition-colors duration-200">VIP table upgrades <span className="transition-transform duration-400 group-hover:translate-x-1.5">&rarr;</span></Link>
+          <Link href="/birthday-guestlist-vs-table-booking" className="group inline-flex items-center gap-2 text-champagne hover:text-champagne-bright text-[0.8125rem] font-semibold uppercase tracking-[0.14em] transition-colors duration-200">Guestlist vs table <span className="transition-transform duration-400 group-hover:translate-x-1.5">&rarr;</span></Link>
+          <Link href="/birthday-clubs-london" className="group inline-flex items-center gap-2 text-champagne hover:text-champagne-bright text-[0.8125rem] font-semibold uppercase tracking-[0.14em] transition-colors duration-200">All birthday clubs <span className="transition-transform duration-400 group-hover:translate-x-1.5">&rarr;</span></Link>
         </div>
       </section>
     </>

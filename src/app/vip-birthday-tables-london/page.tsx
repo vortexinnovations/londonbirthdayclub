@@ -27,23 +27,44 @@ export default function VIPBirthdayTablesPage() {
       <FAQSchema faqs={faqs} />
       <BreadcrumbSchema items={[{ name: "Home", href: "/" }, { name: "VIP Birthday Tables London", href: "/vip-birthday-tables-london" }]} />
 
-      <section className="relative min-h-[50vh] flex items-center justify-center px-4">
-        <Image src={images.hero.vipTables} alt="VIP birthday table with bottle service in London" fill className="object-cover" priority sizes="100vw" />
-        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-black/30" />
-        <div className="max-w-4xl mx-auto relative z-10 text-center">
-          <h1 className="text-4xl sm:text-5xl font-bold tracking-tight mb-6">VIP Birthday Tables in <span className="text-gold">London</span></h1>
-          <p className="text-lg text-white max-w-2xl [text-shadow:0_2px_8px_rgba(0,0,0,0.8)] mx-auto leading-relaxed mb-8">
-            The premium birthday experience. The best table positions, enhanced service, spectacular presentations, and the kind of night that makes turning another year older feel like an achievement worth celebrating.
-          </p>
-          <WhatsAppCTA message={getVIPWhatsAppMessage()} label="Book a VIP Birthday Table" size="large" />
+      {/* Hero */}
+      <section className="relative min-h-[64vh] img-editorial flex items-end overflow-hidden">
+        <Image src={images.hero.vipTables} alt="VIP birthday table with bottle service in London" fill className="object-cover kenburns" priority sizes="100vw" />
+        <div className="absolute inset-0 [background:var(--grad-hero)]" />
+        <div className="grade" />
+        <div className="absolute inset-0 pointer-events-none [box-shadow:inset_0_0_140px_60px_rgba(8,6,3,0.55)]" />
+        <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-40 pb-16 sm:pb-20">
+          <div className="max-w-3xl">
+            <p className="flex items-center gap-4 font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.28em] text-champagne mb-6">
+              <span className="block h-px w-10 bg-champagne/60" />
+              The VIP Experience
+            </p>
+            <h1 className="font-display font-medium text-[2.9rem] leading-[1.04] tracking-[-0.015em] sm:text-6xl lg:text-[4.75rem] text-ink mb-7">
+              VIP Birthday Tables in{" "}
+              <em className="italic text-champagne font-normal">London</em>
+            </h1>
+            <p className="font-sans text-[1.0625rem] leading-[1.8] text-ink-soft max-w-xl mb-10">
+              The premium birthday experience. The best table positions, enhanced service, spectacular presentations, and the kind of night that makes turning another year older feel like an achievement worth celebrating.
+            </p>
+            <WhatsAppCTA message={getVIPWhatsAppMessage()} label="Book a VIP Birthday Table" size="large" microcopy="Free service · Replies in minutes" />
+          </div>
         </div>
       </section>
 
       {/* What VIP means */}
-      <section className="py-16 px-4 bg-bg-secondary">
-        <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-10">What a VIP Birthday Table Gets You</h2>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+      <section className="py-24 sm:py-28 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto">
+          <div className="mb-14 sm:mb-20" data-reveal>
+            <p className="flex items-center gap-4 font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.28em] text-champagne mb-5">
+              <span className="hairline-draw block h-px w-10 bg-champagne/60" />
+              The Service
+            </p>
+            <h2 className="font-display font-medium text-[2rem] leading-[1.12] sm:text-4xl lg:text-[2.75rem] tracking-[-0.01em] text-ink max-w-2xl">
+              What a VIP Birthday Table{" "}
+              <em className="italic text-champagne font-normal">Gets You</em>
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-12" data-reveal>
             {[
               { title: "Premium Position", desc: "The best table in the house — centre stage, near the DJ, or in an elevated VIP area with commanding views of the entire room." },
               { title: "Dedicated VIP Host", desc: "Your personal host for the night. They manage your service, anticipate needs, and ensure your birthday runs flawlessly." },
@@ -52,20 +73,31 @@ export default function VIPBirthdayTablesPage() {
               { title: "Priority Everything", desc: "First to be served, first through the door, and first to receive attention. VIP means your group never waits." },
               { title: "Birthday Concierge", desc: "We coordinate cake delivery, table decorations, DJ shoutouts, and any surprises you want to arrange for the birthday person." },
             ].map(item => (
-              <div key={item.title} className="bg-bg-card border border-border rounded-xl p-5">
-                <h3 className="font-semibold text-gold mb-2">{item.title}</h3>
-                <p className="text-text-secondary text-sm leading-relaxed">{item.desc}</p>
+              <div key={item.title} className="border-t border-hairline hover:border-hairline-strong pt-6 transition-colors duration-500">
+                <h3 className="font-display font-medium text-xl text-ink mb-3">{item.title}</h3>
+                <p className="font-sans text-base leading-[1.8] text-ink-soft">{item.desc}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
+      <div className="divider-gilt" />
+
       {/* Best VIP venues */}
-      <section className="py-16 px-4">
+      <section className="py-24 sm:py-28 px-4 sm:px-6 lg:px-8 bg-noir-soft">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-10">Best Venues for VIP Birthdays</h2>
-          <div className="space-y-4">
+          <div className="mb-14 sm:mb-20" data-reveal>
+            <p className="flex items-center gap-4 font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.28em] text-champagne mb-5">
+              <span className="hairline-draw block h-px w-10 bg-champagne/60" />
+              The Venues
+            </p>
+            <h2 className="font-display font-medium text-[2rem] leading-[1.12] sm:text-4xl lg:text-[2.75rem] tracking-[-0.01em] text-ink max-w-2xl">
+              Best Venues for{" "}
+              <em className="italic text-champagne font-normal">VIP Birthdays</em>
+            </h2>
+          </div>
+          <div className="space-y-10" data-reveal>
             {[
               { slug: "tape-london", why: "The most exclusive VIP experience in London. Members' club atmosphere, celebrity clientele, world-class sound. Every table at Tape feels VIP." },
               { slug: "cirque-le-soir", why: "VIP tables get the best performer interactions, the most dramatic bottle presentations, and front-row seats to the circus spectacle." },
@@ -76,12 +108,15 @@ export default function VIPBirthdayTablesPage() {
               const club = openClubs.find(c => c.slug === item.slug);
               if (!club) return null;
               return (
-                <div key={item.slug} className="bg-bg-card border border-border rounded-xl p-6">
-                  <div className="flex flex-wrap items-center gap-3 mb-2">
-                    <Link href={`/clubs/${club.slug}`} className="text-xl font-bold hover:text-gold transition-colors">{club.name}</Link>
-                    <span className="text-xs text-text-muted">{club.area} &middot; From {club.minSpend}</span>
+                <div key={item.slug} className="border-t border-hairline hover:border-hairline-strong pt-6 transition-colors duration-500">
+                  <div className="flex flex-wrap items-baseline gap-x-4 gap-y-1">
+                    <Link href={`/clubs/${club.slug}`} className="font-display font-semibold text-[1.375rem] leading-snug text-ink hover:text-champagne-bright transition-colors duration-300">{club.name}</Link>
+                    <span className="font-sans text-[0.75rem] uppercase tracking-[0.18em] text-ink-faint">
+                      {club.area} &middot; From{" "}
+                      <span className="font-display italic font-medium text-lg normal-case tracking-normal text-champagne">{club.minSpend}</span>
+                    </span>
                   </div>
-                  <p className="text-text-secondary text-sm leading-relaxed">{item.why}</p>
+                  <p className="mt-3 font-sans text-base leading-[1.8] text-ink-soft max-w-2xl">{item.why}</p>
                 </div>
               );
             })}
@@ -89,48 +124,91 @@ export default function VIPBirthdayTablesPage() {
         </div>
       </section>
 
+      <div className="divider-gilt" />
+
       {/* Budget tiers */}
-      <section className="py-16 px-4 bg-bg-secondary">
+      <section className="py-24 sm:py-28 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-10">VIP Birthday Budget Tiers</h2>
-          <div className="space-y-4">
+          <div className="mb-14 sm:mb-20" data-reveal>
+            <p className="flex items-center gap-4 font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.28em] text-champagne mb-5">
+              <span className="hairline-draw block h-px w-10 bg-champagne/60" />
+              Budget
+            </p>
+            <h2 className="font-display font-medium text-[2rem] leading-[1.12] sm:text-4xl lg:text-[2.75rem] tracking-[-0.01em] text-ink max-w-2xl">
+              VIP Birthday{" "}
+              <em className="italic text-champagne font-normal">Budget</em> Tiers
+            </h2>
+          </div>
+          <div className="space-y-10" data-reveal>
             {[
               { tier: "Premium", spend: "£1,000–£1,500", desc: "A standard VIP table at most Mayfair venues. Premium bottles, dedicated host, sparkler presentations, and reserved seating. The entry point to VIP and genuinely excellent.", venues: "Most Mayfair clubs" },
               { tier: "Luxury", spend: "£1,500–£3,000", desc: "Premium table positions, upgraded bottle selections, enhanced birthday presentations. The sweet spot for a memorable VIP birthday that impresses everyone.", venues: "Tape, Cirque, The Box" },
               { tier: "Ultra-Premium", spend: "£3,000+", desc: "The absolute best table, the finest champagnes, the most dramatic presentations. For milestone birthdays where the budget matches the occasion.", venues: "Tape, Cirque — by arrangement" },
             ].map(item => (
-              <div key={item.tier} className="bg-bg-card border border-border rounded-xl p-6">
-                <div className="flex flex-wrap items-center gap-3 mb-2">
-                  <span className="text-gold font-bold text-lg">{item.tier}</span>
-                  <span className="text-xs bg-gold/10 text-gold px-2 py-0.5 rounded">{item.spend}</span>
+              <div key={item.tier} className="border-t border-hairline hover:border-hairline-strong pt-6 transition-colors duration-500">
+                <div className="flex flex-wrap items-baseline gap-x-4 gap-y-1">
+                  <span className="font-display font-medium text-xl text-ink">{item.tier}</span>
+                  <span className="font-display italic font-medium text-lg text-champagne whitespace-nowrap">{item.spend}</span>
                 </div>
-                <p className="text-text-secondary text-sm leading-relaxed mb-2">{item.desc}</p>
-                <p className="text-text-muted text-xs">Best venues: {item.venues}</p>
+                <p className="mt-3 font-sans text-base leading-[1.8] text-ink-soft max-w-2xl">{item.desc}</p>
+                <p className="mt-3 font-sans text-[0.8125rem] leading-relaxed tracking-[0.02em] text-ink-faint">Best venues: {item.venues}</p>
               </div>
             ))}
           </div>
-          <div className="text-center mt-6">
-            <Link href="/birthday-table-prices-london" className="text-gold text-sm hover:underline">Full pricing breakdown &rarr;</Link>
+          <div className="mt-12">
+            <Link href="/birthday-table-prices-london" className="group inline-flex items-center gap-2 text-champagne hover:text-champagne-bright text-[0.8125rem] font-semibold uppercase tracking-[0.14em] transition-colors duration-200">
+              Full pricing breakdown{" "}
+              <span className="transition-transform duration-400 group-hover:translate-x-1.5">&rarr;</span>
+            </Link>
           </div>
         </div>
       </section>
 
-      <section className="py-16 px-4">
+      <div className="divider-gilt" />
+
+      {/* Book CTA */}
+      <section className="py-24 sm:py-28 px-4 sm:px-6 lg:px-8 bg-noir-soft">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-6">Book Your VIP Birthday Table</h2>
-          <p className="text-text-secondary text-center text-lg mb-8">Tell us your date, group size, and budget. We&apos;ll secure the best VIP table available and handle every detail.</p>
-          <WhatsAppCTA message={getVIPWhatsAppMessage()} label="Book VIP Table on WhatsApp" size="large" variant="detailed" />
+          <div className="mb-12 sm:mb-14" data-reveal>
+            <p className="flex items-center gap-4 font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.28em] text-champagne mb-5">
+              <span className="hairline-draw block h-px w-10 bg-champagne/60" />
+              Start Planning
+            </p>
+            <h2 className="font-display font-medium text-[2rem] leading-[1.12] sm:text-4xl lg:text-[2.75rem] tracking-[-0.01em] text-ink max-w-2xl">
+              Book Your{" "}
+              <em className="italic text-champagne font-normal">VIP Birthday</em> Table
+            </h2>
+            <p className="mt-5 font-sans text-[1.0625rem] leading-[1.8] text-ink-soft max-w-xl">Tell us your date, group size, and budget. We&apos;ll secure the best VIP table available and handle every detail.</p>
+          </div>
+          <div data-reveal>
+            <WhatsAppCTA message={getVIPWhatsAppMessage()} label="Book VIP Table on WhatsApp" size="large" variant="detailed" microcopy="Free service · Replies in minutes" />
+          </div>
         </div>
       </section>
 
-      <section className="py-16 px-4 bg-bg-secondary">
+      <div className="divider-gilt" />
+
+      {/* FAQ */}
+      <section className="py-24 sm:py-28 px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-10">VIP Birthday Table FAQ</h2>
-          <div className="space-y-6">
+          <div className="mb-14" data-reveal>
+            <p className="flex items-center gap-4 font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.28em] text-champagne mb-5">
+              <span className="hairline-draw block h-px w-10 bg-champagne/60" />
+              Good to Know
+            </p>
+            <h2 className="font-display font-medium text-[2rem] leading-[1.12] sm:text-4xl lg:text-[2.75rem] tracking-[-0.01em] text-ink">
+              <em className="italic text-champagne font-normal">VIP</em> Birthday
+              Table FAQ
+            </h2>
+          </div>
+          <div className="divide-y divide-hairline border-y border-hairline" data-reveal>
             {faqs.map(faq => (
-              <div key={faq.question} className="bg-bg-card border border-border rounded-xl p-6">
-                <h3 className="text-lg font-semibold mb-3">{faq.question}</h3>
-                <p className="text-text-secondary leading-relaxed">{faq.answer}</p>
+              <div key={faq.question} className="py-7">
+                <h3 className="font-display font-medium text-lg sm:text-xl text-ink flex gap-5">
+                  <span className="font-display italic text-champagne/70 select-none">Q.</span>
+                  {faq.question}
+                </h3>
+                <p className="mt-3 pl-[2.15rem] font-sans text-base leading-[1.8] text-ink-soft">{faq.answer}</p>
               </div>
             ))}
           </div>

@@ -6,6 +6,7 @@ interface WhatsAppCTAProps {
   className?: string;
   size?: "default" | "large";
   variant?: "default" | "detailed";
+  microcopy?: string;
 }
 
 const whatsAppIcon = (
@@ -20,55 +21,62 @@ export default function WhatsAppCTA({
   className = "",
   size = "default",
   variant = "default",
+  microcopy,
 }: WhatsAppCTAProps) {
   const sizeClasses =
     size === "large"
-      ? "px-8 py-3.5 text-base"
-      : "px-6 py-2.5 text-sm";
+      ? "gap-3 text-sm tracking-[0.16em] px-10 py-4"
+      : "gap-2.5 text-[0.8125rem] tracking-[0.14em] px-7 py-3";
 
-  if (variant === "detailed") {
-    return (
-      <div className={`text-center ${className}`}>
-        <div className="grid grid-cols-3 gap-3 max-w-md mx-auto mb-6">
-          {[
-            { label: "Group Size", hint: "How many guests?" },
-            { label: "Date", hint: "When is the birthday?" },
-            { label: "Budget", hint: "Per person or total" },
-          ].map((item) => (
-            <div
-              key={item.label}
-              className="border border-border-light/50 rounded-lg p-3 text-center"
-            >
-              <div className="text-xs font-medium text-gold mb-0.5">{item.label}</div>
-              <div className="text-xs text-text-muted">{item.hint}</div>
-            </div>
-          ))}
-        </div>
-        <p className="text-text-muted text-sm mb-5">
-          Have these details ready — we handle the rest
-        </p>
-        <a
-          href={getWhatsAppLink(message)}
-          target="_blank"
-          rel="noopener noreferrer"
-          className={`inline-flex items-center justify-center gap-2.5 bg-whatsapp/90 hover:bg-whatsapp text-white font-medium rounded-full transition-all duration-200 ${sizeClasses}`}
-        >
-          {whatsAppIcon}
-          {label}
-        </a>
-      </div>
-    );
-  }
-
-  return (
+  const button = (
     <a
       href={getWhatsAppLink(message)}
       target="_blank"
       rel="noopener noreferrer"
-      className={`inline-flex items-center justify-center gap-2.5 bg-whatsapp/90 hover:bg-whatsapp text-white font-medium rounded-full transition-all duration-200 ${sizeClasses} ${className}`}
+      className={`cta-wa inline-flex items-center justify-center bg-whatsapp hover:bg-whatsapp-deep text-whatsapp-ink font-sans font-bold uppercase rounded-[2px] transition-colors duration-300 ${sizeClasses} ${
+        microcopy ? "" : className
+      }`}
     >
       {whatsAppIcon}
       {label}
     </a>
   );
+
+  const withMicrocopy = microcopy ? (
+    <span className={`inline-flex flex-col items-center ${className}`}>
+      {button}
+      <span className="mt-3 font-sans text-[0.8125rem] text-ink-faint tracking-[0.02em]">
+        {microcopy}
+      </span>
+    </span>
+  ) : (
+    button
+  );
+
+  if (variant === "detailed") {
+    return (
+      <div className="text-center">
+        <div className="grid grid-cols-3 max-w-md mx-auto mb-6 divide-x divide-hairline border-y border-hairline">
+          {[
+            { label: "Group Size", hint: "How many guests?" },
+            { label: "Date", hint: "When is the birthday?" },
+            { label: "Budget", hint: "Per person or total" },
+          ].map((item) => (
+            <div key={item.label} className="px-3 py-4 text-center">
+              <div className="font-sans text-[0.625rem] font-semibold uppercase tracking-[0.2em] text-champagne mb-1">
+                {item.label}
+              </div>
+              <div className="font-sans text-xs text-ink-faint">{item.hint}</div>
+            </div>
+          ))}
+        </div>
+        <p className="font-sans text-[0.8125rem] text-ink-faint tracking-[0.02em] mb-6">
+          Have these details ready — we handle the rest
+        </p>
+        {withMicrocopy}
+      </div>
+    );
+  }
+
+  return withMicrocopy;
 }

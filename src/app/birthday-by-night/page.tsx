@@ -146,31 +146,40 @@ export default function BirthdayByNightPage() {
       <FAQSchema faqs={faqs} />
       <BreadcrumbSchema items={[{ name: "Home", href: "/" }, { name: "Birthday by Night", href: "/birthday-by-night" }]} />
 
-      <section className="relative min-h-[50vh] flex items-center justify-center px-4">
-        <Image src={images.hero.birthdayByNight} alt="London nightclub atmosphere on different nights of the week" fill className="object-cover" priority sizes="100vw" />
-        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-black/30" />
-        <div className="max-w-4xl mx-auto relative z-10">
-          <h1 className="text-4xl sm:text-5xl font-bold tracking-tight mb-6">
-            Best Night for a Birthday in{" "}
-            <span className="text-gold">London</span>
-          </h1>
-          <p className="text-lg text-white max-w-2xl [text-shadow:0_2px_8px_rgba(0,0,0,0.8)] leading-relaxed">
-            Your birthday doesn&apos;t have to fall on a Saturday to be
-            incredible. Here&apos;s how each night of the week compares for
-            birthday celebrations — atmosphere, pricing, and which clubs are
-            open.
-          </p>
+      {/* Hero */}
+      <section className="relative min-h-[64vh] img-editorial flex items-end overflow-hidden">
+        <Image src={images.hero.birthdayByNight} alt="London nightclub atmosphere on different nights of the week" fill className="object-cover kenburns" priority sizes="100vw" />
+        <div className="absolute inset-0 [background:var(--grad-hero)]" />
+        <div className="grade" />
+        <div className="absolute inset-0 pointer-events-none [box-shadow:inset_0_0_140px_60px_rgba(8,6,3,0.55)]" />
+        <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-40 pb-16 sm:pb-20">
+          <div className="max-w-3xl">
+            <p className="flex items-center gap-4 font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.28em] text-champagne mb-6">
+              <span className="block h-px w-10 bg-champagne/60" />
+              Night by Night
+            </p>
+            <h1 className="font-display font-medium text-[2.9rem] leading-[1.04] tracking-[-0.015em] sm:text-6xl lg:text-[4.75rem] text-ink mb-7">
+              Best Night for a Birthday in{" "}
+              <em className="italic text-champagne font-normal">London</em>
+            </h1>
+            <p className="font-sans text-[1.0625rem] leading-[1.8] text-ink-soft max-w-2xl">
+              Your birthday doesn&apos;t have to fall on a Saturday to be
+              incredible. Here&apos;s how each night of the week compares for
+              birthday celebrations — atmosphere, pricing, and which clubs are
+              open.
+            </p>
+          </div>
         </div>
       </section>
 
       {/* Quick Jump */}
-      <section className="py-6 px-4 bg-bg-secondary border-y border-border">
-        <div className="max-w-4xl mx-auto flex flex-wrap gap-3 justify-center">
+      <section className="border-b border-hairline px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto py-5 flex flex-wrap gap-x-9 gap-y-3">
           {nights.map((n) => (
             <a
               key={n.slug}
               href={`#${n.slug}`}
-              className="text-sm bg-bg-card border border-border hover:border-gold/30 px-4 py-2 rounded-lg text-text-secondary hover:text-gold transition-colors"
+              className="font-sans text-[0.75rem] font-semibold uppercase tracking-[0.18em] text-ink-faint hover:text-champagne-bright transition-colors duration-200"
             >
               {n.day}
             </a>
@@ -179,50 +188,59 @@ export default function BirthdayByNightPage() {
       </section>
 
       {/* Night Sections */}
-      <section className="py-10 px-4">
-        <div className="max-w-4xl mx-auto space-y-16">
+      <section className="py-24 sm:py-28 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto space-y-20 sm:space-y-24">
           {nights.map((night) => (
-            <div key={night.slug} id={night.slug} className="scroll-mt-24">
-              <div className="flex flex-wrap items-center gap-4 mb-4">
-                <h2 className="text-3xl font-bold">{night.day} Birthday</h2>
-                <span className="text-xs bg-gold/10 text-gold px-3 py-1 rounded">
-                  {night.energy}
+            <div key={night.slug} id={night.slug} className="scroll-mt-24" data-reveal>
+              <p className="flex items-center gap-4 font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.28em] text-champagne mb-5">
+                <span className="hairline-draw block h-px w-10 bg-champagne/60" />
+                {night.energy}
+              </p>
+              <h2 className="font-display font-medium text-[2rem] leading-[1.12] sm:text-4xl lg:text-[2.75rem] tracking-[-0.01em] text-ink">
+                {night.day}{" "}
+                <em className="italic text-champagne font-normal">Birthday</em>
+              </h2>
+
+              <div className="mt-5 flex flex-wrap items-baseline gap-x-9 gap-y-2">
+                <span className="font-sans text-[0.75rem] uppercase tracking-[0.18em] text-ink-faint">
+                  {night.minSpendNote}
+                </span>
+                <span className="font-sans text-[0.75rem] uppercase tracking-[0.18em] text-ink-faint">
+                  <span className="font-display italic font-medium text-lg text-champagne mr-1.5">
+                    {night.venuesOpen.length}
+                  </span>
+                  venues open
                 </span>
               </div>
 
-              <div className="flex flex-wrap gap-4 text-sm text-text-muted mb-6">
-                <span>{night.minSpendNote}</span>
-                <span>{night.venuesOpen.length} venues open</span>
-              </div>
-
-              <p className="text-text-secondary leading-relaxed mb-6">
+              <p className="mt-6 font-sans text-base leading-[1.8] text-ink-soft max-w-3xl">
                 {night.description}
               </p>
 
-              <div className="grid md:grid-cols-2 gap-4 mb-6">
-                <div className="bg-bg-card border border-border rounded-xl p-5">
-                  <h3 className="text-sm font-semibold text-gold mb-2">
+              <div className="mt-10 grid md:grid-cols-2 gap-x-12 gap-y-8">
+                <div className="border-t border-hairline pt-6">
+                  <h3 className="font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.22em] text-champagne mb-3">
                     Best For
                   </h3>
-                  <p className="text-text-secondary text-sm leading-relaxed">
+                  <p className="font-sans text-[0.9375rem] leading-[1.8] text-ink-soft">
                     {night.bestFor}
                   </p>
                 </div>
-                <div className="bg-bg-card border border-border rounded-xl p-5">
-                  <h3 className="text-sm font-semibold text-gold mb-2">
+                <div className="border-t border-hairline pt-6">
+                  <h3 className="font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.22em] text-champagne mb-3">
                     Things to Consider
                   </h3>
-                  <p className="text-text-secondary text-sm leading-relaxed">
+                  <p className="font-sans text-[0.9375rem] leading-[1.8] text-ink-soft">
                     {night.considerations}
                   </p>
                 </div>
               </div>
 
-              <div className="bg-bg-secondary border border-border rounded-xl p-5">
-                <h3 className="text-sm font-semibold mb-3">
+              <div className="mt-10 border-t border-hairline pt-6">
+                <h3 className="font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.22em] text-ink-faint mb-4">
                   Venues Open on {night.day}
                 </h3>
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-2.5">
                   {night.venuesOpen.map((venue) => {
                     const slugMap: Record<string, string> = {
                       "Tape London": "tape-london",
@@ -243,7 +261,7 @@ export default function BirthdayByNightPage() {
                       <Link
                         key={venue}
                         href={`/clubs/${slugMap[venue] || "#"}`}
-                        className="text-sm bg-bg-card border border-border hover:border-gold/30 px-3 py-1.5 rounded-lg text-text-secondary hover:text-gold transition-colors"
+                        className="inline-flex items-center border border-hairline-strong hover:border-champagne rounded-[2px] px-3 py-1.5 font-sans text-[0.625rem] font-semibold uppercase tracking-[0.2em] text-champagne hover:text-champagne-bright transition-colors duration-300"
                       >
                         {venue}
                       </Link>
@@ -256,27 +274,38 @@ export default function BirthdayByNightPage() {
         </div>
       </section>
 
+      <div className="divider-gilt" />
+
       {/* Summary comparison */}
-      <section className="py-16 px-4 bg-bg-secondary">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-10">
-            At a Glance: Which Night Should You Choose?
-          </h2>
-          <div className="bg-bg-card border border-border rounded-xl overflow-hidden">
-            {nights.map((n, i) => (
+      <section className="py-24 sm:py-28 px-4 sm:px-6 lg:px-8 bg-noir-soft">
+        <div className="max-w-6xl mx-auto">
+          <div className="mb-14 sm:mb-20" data-reveal>
+            <p className="flex items-center gap-4 font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.28em] text-champagne mb-5">
+              <span className="hairline-draw block h-px w-10 bg-champagne/60" />
+              The Verdict
+            </p>
+            <h2 className="font-display font-medium text-[2rem] leading-[1.12] sm:text-4xl lg:text-[2.75rem] tracking-[-0.01em] text-ink max-w-2xl">
+              At a Glance: Which Night Should You{" "}
+              <em className="italic text-champagne font-normal">Choose?</em>
+            </h2>
+          </div>
+          <div className="divide-y divide-hairline border-y border-hairline" data-reveal>
+            {nights.map((n) => (
               <div
                 key={n.day}
-                className={`flex flex-col sm:flex-row sm:items-center px-6 py-4 gap-2 sm:gap-6 ${
-                  i % 2 === 0 ? "bg-bg-card" : "bg-bg-primary"
-                }`}
+                className="flex flex-col sm:flex-row sm:items-baseline py-5 gap-2 sm:gap-6"
               >
-                <div className="font-semibold sm:w-28">{n.day}</div>
-                <div className="text-text-secondary text-sm flex-1">
+                <div className="font-display font-medium text-lg text-ink sm:w-32">
+                  {n.day}
+                </div>
+                <div className="font-sans text-[0.9375rem] text-ink-soft flex-1">
                   {n.energy}
                 </div>
-                <div className="text-text-muted text-sm sm:w-48 sm:text-right">
-                  {n.venuesOpen.length} venues &middot;{" "}
-                  {n.minSpendNote.split(",")[0]}
+                <div className="font-sans text-[0.8125rem] tracking-[0.02em] text-ink-faint sm:w-64 sm:text-right">
+                  <span className="font-display italic text-lg text-champagne">
+                    {n.venuesOpen.length}
+                  </span>{" "}
+                  venues &middot; {n.minSpendNote.split(",")[0]}
                 </div>
               </div>
             ))}
@@ -284,20 +313,31 @@ export default function BirthdayByNightPage() {
         </div>
       </section>
 
+      <div className="divider-gilt" />
+
       {/* FAQ */}
-      <section className="py-16 px-4">
+      <section className="py-24 sm:py-28 px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-10">
-            Birthday Night FAQ
-          </h2>
-          <div className="space-y-6">
+          <div className="mb-14" data-reveal>
+            <p className="flex items-center gap-4 font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.28em] text-champagne mb-5">
+              <span className="hairline-draw block h-px w-10 bg-champagne/60" />
+              Good to Know
+            </p>
+            <h2 className="font-display font-medium text-[2rem] leading-[1.12] sm:text-4xl lg:text-[2.75rem] tracking-[-0.01em] text-ink">
+              Birthday Night{" "}
+              <em className="italic text-champagne font-normal">FAQ</em>
+            </h2>
+          </div>
+          <div className="divide-y divide-hairline border-y border-hairline" data-reveal>
             {faqs.map((faq) => (
-              <div
-                key={faq.question}
-                className="bg-bg-card border border-border rounded-xl p-6"
-              >
-                <h3 className="text-lg font-semibold mb-3">{faq.question}</h3>
-                <p className="text-text-secondary leading-relaxed">
+              <div key={faq.question} className="py-7">
+                <h3 className="font-display font-medium text-lg sm:text-xl text-ink flex gap-5">
+                  <span className="font-display italic text-champagne/70 select-none">
+                    Q.
+                  </span>
+                  {faq.question}
+                </h3>
+                <p className="mt-3 pl-[2.15rem] font-sans text-base leading-[1.8] text-ink-soft">
                   {faq.answer}
                 </p>
               </div>
@@ -306,13 +346,19 @@ export default function BirthdayByNightPage() {
         </div>
       </section>
 
+      <div className="divider-gilt" />
+
       {/* CTA */}
-      <section className="py-16 px-4 bg-bg-secondary">
-        <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-4">
-            Not Sure Which Night? Ask Us
+      <section className="py-24 sm:py-32 px-4 sm:px-6 lg:px-8 bg-noir-deep">
+        <div className="max-w-3xl mx-auto text-center" data-reveal>
+          <p className="font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.28em] text-champagne mb-6">
+            Plan Your Night
+          </p>
+          <h2 className="font-display font-medium text-[2rem] leading-[1.12] sm:text-4xl lg:text-[2.75rem] tracking-[-0.01em] text-ink mb-5">
+            Not Sure Which Night?{" "}
+            <em className="italic text-champagne font-normal">Ask Us</em>
           </h2>
-          <p className="text-text-secondary text-lg mb-8">
+          <p className="font-sans text-[1.0625rem] leading-[1.8] text-ink-soft mb-10 max-w-xl mx-auto">
             Tell us your birthday date and preferences — we&apos;ll tell you
             which venues and nights are the best fit.
           </p>
@@ -320,6 +366,7 @@ export default function BirthdayByNightPage() {
             message={getGeneralWhatsAppMessage()}
             label="Get Night Advice on WhatsApp"
             size="large"
+            microcopy="Free service · Replies in minutes"
           />
         </div>
       </section>

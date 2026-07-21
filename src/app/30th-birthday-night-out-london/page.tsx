@@ -35,41 +35,82 @@ export default function ThirtiethBirthdayPage() {
       <FAQSchema faqs={faqs} />
       <BreadcrumbSchema items={[{ name: "Home", href: "/" }, { name: "30th Birthday Night Out London", href: "/30th-birthday-night-out-london" }]} />
 
-      <section className="relative min-h-[50vh] flex items-center justify-center px-4">
-        <Image src={images.hero.thirtieth} alt="30th birthday night out at a sophisticated London venue" fill className="object-cover" priority sizes="100vw" />
-        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-black/30" />
-        <div className="max-w-4xl mx-auto relative z-10 text-center">
-          <h1 className="text-4xl sm:text-5xl font-bold tracking-tight mb-6">30th Birthday Night Out in <span className="text-gold">London</span></h1>
-          <p className="text-lg text-white max-w-2xl [text-shadow:0_2px_8px_rgba(0,0,0,0.8)] mx-auto leading-relaxed mb-8">
-            Turning 30 calls for quality, not chaos. The right venue, exceptional service, and an evening that feels worthy of the milestone. This is your guide to celebrating 30 with the sophistication it deserves.
-          </p>
-          <WhatsAppCTA message={getMilestoneWhatsAppMessage("30th")} label="Plan My 30th Birthday" size="large" />
+      {/* Hero */}
+      <section className="relative min-h-[64vh] img-editorial flex items-end overflow-hidden">
+        <Image src={images.hero.thirtieth} alt="30th birthday night out at a sophisticated London venue" fill className="object-cover kenburns" priority sizes="100vw" />
+        <div className="absolute inset-0 [background:var(--grad-hero)]" />
+        <div className="grade" />
+        <div className="absolute inset-0 pointer-events-none [box-shadow:inset_0_0_140px_60px_rgba(8,6,3,0.55)]" />
+        <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-40 pb-16 sm:pb-20">
+          <div className="max-w-3xl">
+            <p className="flex items-center gap-4 font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.28em] text-champagne mb-6">
+              <span className="block h-px w-10 bg-champagne/60" />
+              The Milestone
+            </p>
+            <h1 className="font-display font-medium text-[2.9rem] leading-[1.04] tracking-[-0.015em] sm:text-6xl lg:text-[4.75rem] text-ink mb-7">
+              30th Birthday Night Out in{" "}
+              <em className="italic text-champagne font-normal">London</em>
+            </h1>
+            <p className="font-sans text-[1.0625rem] leading-[1.8] text-ink-soft max-w-xl mb-10">
+              Turning 30 calls for quality, not chaos. The right venue, exceptional service, and an evening that feels worthy of the milestone. This is your guide to celebrating 30 with the sophistication it deserves.
+            </p>
+            <WhatsAppCTA message={getMilestoneWhatsAppMessage("30th")} label="Plan My 30th Birthday" size="large" microcopy="Free service · Replies in minutes" />
+          </div>
         </div>
       </section>
 
-      <section className="py-16 px-4 bg-bg-secondary">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold mb-4">What a 30th Birthday Night Should Feel Like</h2>
-          <p className="text-text-secondary leading-relaxed mb-6">A 30th birthday is fundamentally different from a 21st. The group is slightly smaller but closer. The budget is higher but expectations match. The priority shifts from pure energy to quality — good drinks, excellent service, a venue that feels genuinely premium. Many 30th birthday groups want the evening to include dinner, making it a proper occasion rather than just a club night.</p>
-          <p className="text-text-secondary leading-relaxed">The venues we recommend for 30th birthdays reflect this shift. They prioritise atmosphere over volume, sophistication over spectacle, and personal service over crowd size. The result is a birthday that feels like an achievement celebrated, not just another night out.</p>
+      {/* Intro */}
+      <section className="py-24 sm:py-28 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-3xl mx-auto">
+          <div className="mb-10" data-reveal>
+            <p className="flex items-center gap-4 font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.28em] text-champagne mb-5">
+              <span className="hairline-draw block h-px w-10 bg-champagne/60" />
+              The Occasion
+            </p>
+            <h2 className="font-display font-medium text-[2rem] leading-[1.12] sm:text-4xl lg:text-[2.75rem] tracking-[-0.01em] text-ink max-w-2xl">
+              What a 30th Birthday Night Should{" "}
+              <em className="italic text-champagne font-normal">Feel Like</em>
+            </h2>
+          </div>
+          <div data-reveal>
+            <p className="font-sans text-[1.0625rem] leading-[1.8] text-ink-soft mb-6">A 30th birthday is fundamentally different from a 21st. The group is slightly smaller but closer. The budget is higher but expectations match. The priority shifts from pure energy to quality — good drinks, excellent service, a venue that feels genuinely premium. Many 30th birthday groups want the evening to include dinner, making it a proper occasion rather than just a club night.</p>
+            <p className="font-sans text-[1.0625rem] leading-[1.8] text-ink-soft">The venues we recommend for 30th birthdays reflect this shift. They prioritise atmosphere over volume, sophistication over spectacle, and personal service over crowd size. The result is a birthday that feels like an achievement celebrated, not just another night out.</p>
+          </div>
         </div>
       </section>
 
-      <section className="py-16 px-4">
+      <div className="divider-gilt" />
+
+      {/* Ranked Top 5 */}
+      <section className="py-24 sm:py-28 px-4 sm:px-6 lg:px-8 bg-noir-soft">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8">Top 5 Venues for a 30th Birthday</h2>
-          <div className="space-y-4">
+          <div className="mb-14 sm:mb-20" data-reveal>
+            <p className="flex items-center gap-4 font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.28em] text-champagne mb-5">
+              <span className="hairline-draw block h-px w-10 bg-champagne/60" />
+              The Venues
+            </p>
+            <h2 className="font-display font-medium text-[2rem] leading-[1.12] sm:text-4xl lg:text-[2.75rem] tracking-[-0.01em] text-ink max-w-2xl">
+              Top 5 Venues for a{" "}
+              <em className="italic text-champagne font-normal">30th Birthday</em>
+            </h2>
+          </div>
+          <div className="space-y-10" data-reveal>
             {topPicks.map((pick, i) => {
               const club = openClubs.find(c => c.slug === pick.slug);
               if (!club) return null;
               return (
-                <div key={pick.slug} className="bg-bg-card border border-border rounded-xl p-6">
-                  <div className="flex items-center gap-3 mb-3">
-                    <span className="text-gold font-bold text-lg">#{i + 1}</span>
-                    <Link href={`/clubs/${club.slug}`} className="text-lg font-semibold hover:text-gold transition-colors">{club.name}</Link>
-                    <span className="text-xs text-text-muted">{club.area} &middot; From {club.minSpend}</span>
+                <div key={pick.slug} className="flex gap-6 sm:gap-8 border-t border-hairline hover:border-hairline-strong pt-6 transition-colors duration-500">
+                  <span className="font-display italic font-medium text-4xl text-champagne/60 leading-none select-none w-12 flex-shrink-0 pt-1">
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
+                  <div>
+                    <div className="flex flex-wrap items-baseline gap-x-4 gap-y-1.5 mb-3">
+                      <Link href={`/clubs/${club.slug}`} className="font-display font-semibold text-[1.375rem] leading-snug text-ink hover:text-champagne-bright transition-colors duration-300">{club.name}</Link>
+                      <span className="font-sans text-[0.75rem] uppercase tracking-[0.18em] text-ink-faint">{club.area} &middot; From</span>
+                      <span className="font-display italic font-medium text-lg text-champagne leading-none">{club.minSpend}</span>
+                    </div>
+                    <p className="font-sans text-base leading-[1.8] text-ink-soft">{pick.reason}</p>
                   </div>
-                  <p className="text-text-secondary leading-relaxed text-sm">{pick.reason}</p>
                 </div>
               );
             })}
@@ -77,52 +118,102 @@ export default function ThirtiethBirthdayPage() {
         </div>
       </section>
 
-      <section className="py-16 px-4 bg-bg-secondary">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-10">Match Your 30th Birthday Style</h2>
-          <div className="grid sm:grid-cols-2 gap-4">
+      <div className="divider-gilt" />
+
+      {/* Style Match */}
+      <section className="py-24 sm:py-28 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto">
+          <div className="mb-14 sm:mb-20" data-reveal>
+            <p className="flex items-center gap-4 font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.28em] text-champagne mb-5">
+              <span className="hairline-draw block h-px w-10 bg-champagne/60" />
+              Style Match
+            </p>
+            <h2 className="font-display font-medium text-[2rem] leading-[1.12] sm:text-4xl lg:text-[2.75rem] tracking-[-0.01em] text-ink max-w-2xl">
+              Match Your 30th Birthday{" "}
+              <em className="italic text-champagne font-normal">Style</em>
+            </h2>
+          </div>
+          <div className="grid sm:grid-cols-2 gap-x-14 gap-y-12">
             {[
               { q: "Want dinner + club?", a: "Maddox Club — Italian dining then house music", slug: "maddox-club" },
               { q: "Want pure elegance?", a: "Dear Darling — chandeliers, cocktails, opulence", slug: "dear-darling" },
               { q: "Want exclusivity?", a: "Tape London — members' club, celebrity crowd", slug: "tape-london" },
               { q: "Want balance?", a: "Selene — refined but fun, works for everyone", slug: "selene-london" },
-            ].map(item => (
-              <Link key={item.q} href={`/clubs/${item.slug}`} className="block bg-bg-card border border-border hover:border-gold/30 rounded-xl p-5 transition-all group">
-                <div className="font-semibold text-sm mb-1 group-hover:text-gold transition-colors">{item.q}</div>
-                <div className="text-text-secondary text-sm">{item.a}</div>
+            ].map((item, i) => (
+              <Link
+                key={item.q}
+                href={`/clubs/${item.slug}`}
+                className="group block border-t border-hairline hover:border-hairline-strong pt-6 transition-colors duration-500"
+                data-reveal
+                data-reveal-delay={(i % 2) * 90}
+              >
+                <div className="font-display font-medium text-xl text-ink group-hover:text-champagne-bright transition-colors duration-300 mb-3">{item.q}</div>
+                <div className="font-sans text-base leading-[1.8] text-ink-soft">{item.a}</div>
               </Link>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="py-16 px-4">
+      <div className="divider-gilt" />
+
+      {/* Plan CTA */}
+      <section className="py-24 sm:py-28 px-4 sm:px-6 lg:px-8 bg-noir-soft">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-6">Plan Your 30th Birthday</h2>
-          <p className="text-text-secondary text-center text-lg mb-8">This milestone deserves the right venue. Tell us your vision and we&apos;ll make it happen — dinner, club, birthday extras, everything.</p>
-          <WhatsAppCTA message={getMilestoneWhatsAppMessage("30th")} label="Plan My 30th on WhatsApp" size="large" variant="detailed" />
+          <div className="mb-12" data-reveal>
+            <p className="flex items-center gap-4 font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.28em] text-champagne mb-5">
+              <span className="hairline-draw block h-px w-10 bg-champagne/60" />
+              The Service
+            </p>
+            <h2 className="font-display font-medium text-[2rem] leading-[1.12] sm:text-4xl lg:text-[2.75rem] tracking-[-0.01em] text-ink max-w-2xl">
+              Plan Your{" "}
+              <em className="italic text-champagne font-normal">30th Birthday</em>
+            </h2>
+            <p className="mt-5 font-sans text-[1.0625rem] leading-[1.8] text-ink-soft max-w-xl">This milestone deserves the right venue. Tell us your vision and we&apos;ll make it happen — dinner, club, birthday extras, everything.</p>
+          </div>
+          <div data-reveal>
+            <WhatsAppCTA message={getMilestoneWhatsAppMessage("30th")} label="Plan My 30th on WhatsApp" size="large" variant="detailed" microcopy="Free service · Replies in minutes" />
+          </div>
         </div>
       </section>
 
-      <section className="py-16 px-4 bg-bg-secondary">
+      <div className="divider-gilt" />
+
+      {/* FAQ */}
+      <section className="py-24 sm:py-28 px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-10">30th Birthday FAQ</h2>
-          <div className="space-y-6">
+          <div className="mb-14" data-reveal>
+            <p className="flex items-center gap-4 font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.28em] text-champagne mb-5">
+              <span className="hairline-draw block h-px w-10 bg-champagne/60" />
+              Good to Know
+            </p>
+            <h2 className="font-display font-medium text-[2rem] leading-[1.12] sm:text-4xl lg:text-[2.75rem] tracking-[-0.01em] text-ink">
+              30th Birthday{" "}
+              <em className="italic text-champagne font-normal">FAQ</em>
+            </h2>
+          </div>
+          <div className="divide-y divide-hairline border-y border-hairline" data-reveal>
             {faqs.map(faq => (
-              <div key={faq.question} className="bg-bg-card border border-border rounded-xl p-6">
-                <h3 className="text-lg font-semibold mb-3">{faq.question}</h3>
-                <p className="text-text-secondary leading-relaxed">{faq.answer}</p>
+              <div key={faq.question} className="py-7">
+                <h3 className="font-display font-medium text-lg sm:text-xl text-ink flex gap-5">
+                  <span className="font-display italic text-champagne/70 select-none">Q.</span>
+                  {faq.question}
+                </h3>
+                <p className="mt-3 pl-[2.15rem] font-sans text-base leading-[1.8] text-ink-soft">{faq.answer}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="py-12 px-4">
-        <div className="max-w-4xl mx-auto flex flex-wrap justify-center gap-4">
-          <Link href="/21st-birthday-clubs-london" className="text-gold text-sm hover:underline">&larr; 21st birthday guide</Link>
-          <Link href="/birthday-by-age" className="text-gold text-sm hover:underline">All milestone birthdays</Link>
-          <Link href="/how-to-plan-a-birthday-night-in-mayfair" className="text-gold text-sm hover:underline">Mayfair planning guide &rarr;</Link>
+      <div className="divider-gilt" />
+
+      {/* Cross-links */}
+      <section className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-4xl mx-auto flex flex-wrap justify-center gap-x-8 gap-y-4">
+          <Link href="/21st-birthday-clubs-london" className="font-sans text-[0.8125rem] text-champagne hover:text-champagne-bright underline decoration-champagne/30 underline-offset-4 decoration-[0.5px] transition-colors duration-200">&larr; 21st birthday guide</Link>
+          <Link href="/birthday-by-age" className="font-sans text-[0.8125rem] text-champagne hover:text-champagne-bright underline decoration-champagne/30 underline-offset-4 decoration-[0.5px] transition-colors duration-200">All milestone birthdays</Link>
+          <Link href="/how-to-plan-a-birthday-night-in-mayfair" className="font-sans text-[0.8125rem] text-champagne hover:text-champagne-bright underline decoration-champagne/30 underline-offset-4 decoration-[0.5px] transition-colors duration-200">Mayfair planning guide &rarr;</Link>
         </div>
       </section>
     </>

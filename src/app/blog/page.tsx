@@ -19,28 +19,37 @@ export const metadata: Metadata = {
 
 function PostCard({ post }: { post: BlogPost }) {
   return (
-    <Link
-      href={`/blog/${post.slug}`}
-      className="group block bg-bg-card hover:bg-bg-card-hover border border-border hover:border-gold/30 rounded-xl overflow-hidden transition-all"
-    >
-      <div className="relative aspect-[3/2] overflow-hidden">
-        <Image src={getBlogImage(post.slug)} alt={post.title} fill className="object-cover group-hover:scale-105 transition-transform duration-500" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
+    <Link href={`/blog/${post.slug}`} className="group block">
+      <div className="frame-mat img-editorial relative aspect-[3/2] overflow-hidden">
+        <Image
+          src={getBlogImage(post.slug)}
+          alt={post.title}
+          fill
+          className="object-cover transition-transform duration-[900ms] ease-[var(--ease-lux)] group-hover:scale-[1.04]"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+        />
+        <div className="grade" />
       </div>
-      <div className="p-6">
-        <div className="flex items-center gap-3 mb-3">
-          <span className="text-xs bg-gold/10 text-gold px-2 py-1 rounded">
+      <div className="pt-5 pb-2">
+        <div className="flex flex-wrap items-center gap-4 mb-4">
+          <span className="inline-flex items-center border border-hairline-strong rounded-[2px] px-2.5 py-1 font-sans text-[0.625rem] font-semibold uppercase tracking-[0.2em] text-champagne">
             {post.category}
           </span>
-          <span className="text-xs text-text-muted">{post.readTime}</span>
+          <span className="font-sans text-[0.75rem] uppercase tracking-[0.18em] text-ink-faint">
+            {post.readTime}
+          </span>
         </div>
-        <h2 className="text-xl font-semibold mb-2 group-hover:text-gold transition-colors">
+        <h2 className="font-display font-medium text-xl text-ink group-hover:text-champagne-bright transition-colors duration-300 mb-3">
           {post.title}
         </h2>
-        <p className="text-text-secondary text-sm leading-relaxed mb-4">
+        <p className="font-sans text-[0.9375rem] leading-relaxed text-ink-soft mb-4">
           {post.excerpt}
         </p>
-        <span className="text-gold text-sm font-medium group-hover:underline">
-          Read more &rarr;
+        <span className="inline-flex items-center gap-2 text-champagne text-[0.8125rem] font-semibold uppercase tracking-[0.14em]">
+          Read more{" "}
+          <span className="transition-transform duration-400 group-hover:translate-x-1.5">
+            &rarr;
+          </span>
         </span>
       </div>
     </Link>
@@ -54,14 +63,19 @@ export default function BlogIndexPage() {
   return (
     <>
       <BreadcrumbSchema items={[{ name: "Home", href: "/" }, { name: "Blog", href: "/blog" }]} />
-      <section className="relative py-20 sm:py-28 px-4">
-        <div className="absolute inset-0 bg-gradient-to-b from-gold/5 via-transparent to-transparent" />
-        <div className="max-w-4xl mx-auto relative">
-          <h1 className="text-4xl sm:text-5xl font-bold tracking-tight mb-6">
+
+      {/* Hero */}
+      <section className="pt-36 sm:pt-40 pb-16 sm:pb-20 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto" data-reveal>
+          <p className="flex items-center gap-4 font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.28em] text-champagne mb-6">
+            <span className="hairline-draw block h-px w-10 bg-champagne/60" />
+            The Journal
+          </p>
+          <h1 className="font-display font-medium text-[2.9rem] leading-[1.04] tracking-[-0.015em] sm:text-6xl lg:text-[4.75rem] text-ink mb-7">
             Birthday Planning{" "}
-            <span className="text-gold">Blog</span>
+            <em className="italic text-champagne font-normal">Blog</em>
           </h1>
-          <p className="text-lg text-text-secondary max-w-2xl leading-relaxed">
+          <p className="font-sans text-[1.0625rem] leading-[1.8] text-ink-soft max-w-2xl">
             Everything you need to know about celebrating your birthday at a
             London nightclub — from costs and dress codes to surprise party
             planning and bottle service tips.
@@ -70,13 +84,15 @@ export default function BlogIndexPage() {
       </section>
 
       {/* Categories */}
-      <section className="py-4 px-4 bg-bg-secondary border-y border-border">
-        <div className="max-w-5xl mx-auto flex flex-wrap gap-3 justify-center">
-          <span className="text-sm text-text-muted py-2">Filter:</span>
+      <section className="py-5 px-4 sm:px-6 lg:px-8 border-y border-hairline bg-noir-soft">
+        <div className="max-w-6xl mx-auto flex flex-wrap items-center gap-3">
+          <span className="font-sans text-[0.75rem] uppercase tracking-[0.18em] text-ink-faint mr-1">
+            Filter:
+          </span>
           {categories.map((cat) => (
             <span
               key={cat}
-              className="text-sm bg-bg-card border border-border px-4 py-2 rounded-lg text-text-secondary"
+              className="inline-flex items-center border border-hairline-strong rounded-[2px] px-3 py-1.5 font-sans text-[0.625rem] font-semibold uppercase tracking-[0.2em] text-champagne"
             >
               {cat} ({blogPosts.filter((p) => p.category === cat).length})
             </span>
@@ -85,45 +101,61 @@ export default function BlogIndexPage() {
       </section>
 
       {/* Featured post */}
-      <section className="py-12 px-4">
-        <div className="max-w-5xl mx-auto">
-          <div className="mb-8">
-            <h2 className="text-sm font-semibold text-gold uppercase tracking-wider mb-6">
-              Latest
+      <section className="py-24 sm:py-28 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto">
+          <div className="mb-10 sm:mb-12" data-reveal>
+            <p className="flex items-center gap-4 font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.28em] text-champagne mb-5">
+              <span className="hairline-draw block h-px w-10 bg-champagne/60" />
+              Featured
+            </p>
+            <h2 className="font-display font-medium text-[2rem] leading-[1.12] sm:text-4xl lg:text-[2.75rem] tracking-[-0.01em] text-ink max-w-2xl">
+              <em className="italic text-champagne font-normal">Latest</em>
             </h2>
-            <Link
-              href={`/blog/${sortedPosts[0].slug}`}
-              className="group block bg-bg-card hover:bg-bg-card-hover border border-border hover:border-gold/30 rounded-xl p-8 transition-all"
-            >
-              <div className="flex items-center gap-3 mb-4">
-                <span className="text-xs bg-gold/10 text-gold px-2 py-1 rounded">
-                  {sortedPosts[0].category}
-                </span>
-                <span className="text-xs text-text-muted">
-                  {sortedPosts[0].readTime}
-                </span>
-              </div>
-              <h3 className="text-2xl sm:text-3xl font-bold mb-3 group-hover:text-gold transition-colors">
-                {sortedPosts[0].title}
-              </h3>
-              <p className="text-text-secondary leading-relaxed mb-4 max-w-2xl">
-                {sortedPosts[0].excerpt}
-              </p>
-              <span className="text-gold font-medium group-hover:underline">
-                Read the full guide &rarr;
-              </span>
-            </Link>
           </div>
+          <Link
+            href={`/blog/${sortedPosts[0].slug}`}
+            className="group block border-t border-hairline hover:border-hairline-strong pt-8 transition-colors duration-500"
+            data-reveal
+          >
+            <div className="flex flex-wrap items-center gap-4 mb-5">
+              <span className="inline-flex items-center border border-hairline-strong rounded-[2px] px-2.5 py-1 font-sans text-[0.625rem] font-semibold uppercase tracking-[0.2em] text-champagne">
+                {sortedPosts[0].category}
+              </span>
+              <span className="font-sans text-[0.75rem] uppercase tracking-[0.18em] text-ink-faint">
+                {sortedPosts[0].readTime}
+              </span>
+            </div>
+            <h3 className="font-display font-medium text-2xl sm:text-[2rem] leading-[1.15] text-ink group-hover:text-champagne-bright transition-colors duration-300 mb-4 max-w-2xl">
+              {sortedPosts[0].title}
+            </h3>
+            <p className="font-sans text-base leading-[1.8] text-ink-soft mb-6 max-w-2xl">
+              {sortedPosts[0].excerpt}
+            </p>
+            <span className="inline-flex items-center gap-2 text-champagne text-[0.8125rem] font-semibold uppercase tracking-[0.14em]">
+              Read the full guide{" "}
+              <span className="transition-transform duration-400 group-hover:translate-x-1.5">
+                &rarr;
+              </span>
+            </span>
+          </Link>
         </div>
       </section>
 
+      <div className="divider-gilt" />
+
       {/* All posts grid */}
-      <section className="py-8 px-4 pb-20">
-        <div className="max-w-5xl mx-auto">
-          <h2 className="text-sm font-semibold text-gold uppercase tracking-wider mb-6">
-            All Articles
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <section className="py-24 sm:py-28 px-4 sm:px-6 lg:px-8 bg-noir-soft">
+        <div className="max-w-6xl mx-auto">
+          <div className="mb-12 sm:mb-14" data-reveal>
+            <p className="flex items-center gap-4 font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.28em] text-champagne mb-5">
+              <span className="hairline-draw block h-px w-10 bg-champagne/60" />
+              The Archive
+            </p>
+            <h2 className="font-display font-medium text-[2rem] leading-[1.12] sm:text-4xl lg:text-[2.75rem] tracking-[-0.01em] text-ink max-w-2xl">
+              All <em className="italic text-champagne font-normal">Articles</em>
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-14" data-reveal>
             {sortedPosts.slice(1).map((post) => (
               <PostCard key={post.slug} post={post} />
             ))}
@@ -131,13 +163,19 @@ export default function BlogIndexPage() {
         </div>
       </section>
 
+      <div className="divider-gilt" />
+
       {/* CTA */}
-      <section className="py-16 px-4 bg-bg-secondary">
-        <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-4">
-            Ready to Start Planning?
+      <section className="py-24 sm:py-32 px-4 sm:px-6 lg:px-8 bg-noir-deep">
+        <div className="max-w-3xl mx-auto text-center" data-reveal>
+          <p className="font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.28em] text-champagne mb-6">
+            The Next Step
+          </p>
+          <h2 className="font-display font-medium text-[2rem] leading-[1.12] sm:text-4xl lg:text-[2.75rem] tracking-[-0.01em] text-ink mb-5">
+            Ready to Start{" "}
+            <em className="italic text-champagne font-normal">Planning?</em>
           </h2>
-          <p className="text-text-secondary text-lg mb-8">
+          <p className="font-sans text-[1.0625rem] leading-[1.8] text-ink-soft mb-10 max-w-xl mx-auto">
             All the knowledge is here — but the easiest way to plan your
             birthday is to message us directly. We&apos;ll handle everything.
           </p>
@@ -145,6 +183,7 @@ export default function BlogIndexPage() {
             message={getGeneralWhatsAppMessage()}
             label="Plan My Birthday on WhatsApp"
             size="large"
+            microcopy="Free service · Replies in minutes"
           />
         </div>
       </section>

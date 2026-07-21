@@ -35,41 +35,85 @@ export default function TwentyFirstBirthdayPage() {
       <FAQSchema faqs={faqs} />
       <BreadcrumbSchema items={[{ name: "Home", href: "/" }, { name: "21st Birthday Clubs London", href: "/21st-birthday-clubs-london" }]} />
 
-      <section className="relative min-h-[50vh] flex items-center justify-center px-4">
-        <Image src={images.hero.twentyFirst} alt="21st birthday party at a London club" fill className="object-cover" priority sizes="100vw" />
-        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-black/30" />
-        <div className="max-w-4xl mx-auto relative z-10 text-center">
-          <h1 className="text-4xl sm:text-5xl font-bold tracking-tight mb-6">21st Birthday Clubs in <span className="text-gold">London</span></h1>
-          <p className="text-lg text-white max-w-2xl [text-shadow:0_2px_8px_rgba(0,0,0,0.8)] mx-auto leading-relaxed mb-8">
-            Turning 21 is the biggest birthday milestone in nightlife. This is the one your friends will compare every future night out to — make it count with a VIP celebration at one of London&apos;s most spectacular clubs.
-          </p>
-          <WhatsAppCTA message={getMilestoneWhatsAppMessage("21st")} label="Plan My 21st Birthday" size="large" />
+      {/* Hero */}
+      <section className="relative min-h-[64vh] img-editorial flex items-end overflow-hidden">
+        <Image src={images.hero.twentyFirst} alt="21st birthday party at a London club" fill className="object-cover kenburns" priority sizes="100vw" />
+        <div className="absolute inset-0 [background:var(--grad-hero)]" />
+        <div className="grade" />
+        <div className="absolute inset-0 pointer-events-none [box-shadow:inset_0_0_140px_60px_rgba(8,6,3,0.55)]" />
+        <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-40 pb-16 sm:pb-20">
+          <div className="max-w-3xl">
+            <p className="flex items-center gap-4 font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.28em] text-champagne mb-6">
+              <span className="block h-px w-10 bg-champagne/60" />
+              Milestone &middot; 21st
+            </p>
+            <h1 className="font-display font-medium text-[2.9rem] leading-[1.04] tracking-[-0.015em] sm:text-6xl lg:text-[4.75rem] text-ink mb-7">
+              21st Birthday Clubs in{" "}
+              <em className="italic text-champagne font-normal">London</em>
+            </h1>
+            <p className="font-sans text-[1.0625rem] leading-[1.8] text-ink-soft max-w-xl mb-10">
+              Turning 21 is the biggest birthday milestone in nightlife. This is the one your friends will compare every future night out to — make it count with a VIP celebration at one of London&apos;s most spectacular clubs.
+            </p>
+            <WhatsAppCTA message={getMilestoneWhatsAppMessage("21st")} label="Plan My 21st Birthday" size="large" microcopy="Free service · Replies in minutes" />
+          </div>
         </div>
       </section>
 
-      <section className="py-16 px-4 bg-bg-secondary">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold mb-4">Why Your 21st Deserves a London Club</h2>
-          <p className="text-text-secondary leading-relaxed mb-6">By 21, you and your friends have been to enough bars and house parties to know the difference between a good night and a great one. A 21st birthday at a London nightclub elevates the celebration from memorable to legendary — VIP service, spectacular venues, bottle presentations with sparklers, and the feeling of being at the centre of something genuinely exciting.</p>
-          <p className="text-text-secondary leading-relaxed">The 21st birthday group is typically the perfect size for a club celebration: big enough to create energy, close enough as friends to make the night genuinely personal. Whether you want the theatrical spectacle of Cirque Le Soir, the exclusive cool of Tape London, or the daring entertainment of The Box, London has a venue that matches exactly what your 21st should feel like.</p>
+      {/* Intro */}
+      <section className="py-24 sm:py-28 px-4 sm:px-6 lg:px-8 bg-noir-soft">
+        <div className="max-w-3xl mx-auto">
+          <div className="mb-10" data-reveal>
+            <p className="flex items-center gap-4 font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.28em] text-champagne mb-5">
+              <span className="hairline-draw block h-px w-10 bg-champagne/60" />
+              The Milestone
+            </p>
+            <h2 className="font-display font-medium text-[2rem] leading-[1.12] sm:text-4xl lg:text-[2.75rem] tracking-[-0.01em] text-ink max-w-2xl">
+              Why Your 21st <em className="italic text-champagne font-normal">Deserves</em> a London Club
+            </h2>
+          </div>
+          <div data-reveal>
+            <p className="font-sans text-base leading-[1.8] text-ink-soft mb-6">By 21, you and your friends have been to enough bars and house parties to know the difference between a good night and a great one. A 21st birthday at a London nightclub elevates the celebration from memorable to legendary — VIP service, spectacular venues, bottle presentations with sparklers, and the feeling of being at the centre of something genuinely exciting.</p>
+            <p className="font-sans text-base leading-[1.8] text-ink-soft">The 21st birthday group is typically the perfect size for a club celebration: big enough to create energy, close enough as friends to make the night genuinely personal. Whether you want the theatrical spectacle of Cirque Le Soir, the exclusive cool of Tape London, or the daring entertainment of The Box, London has a venue that matches exactly what your 21st should feel like.</p>
+          </div>
         </div>
       </section>
 
-      <section className="py-16 px-4">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8">Top 5 Clubs for a 21st Birthday</h2>
-          <div className="space-y-4">
+      <div className="divider-gilt" />
+
+      {/* Top 5 ranked list */}
+      <section className="py-24 sm:py-28 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto">
+          <div className="mb-14 sm:mb-20" data-reveal>
+            <p className="flex items-center gap-4 font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.28em] text-champagne mb-5">
+              <span className="hairline-draw block h-px w-10 bg-champagne/60" />
+              The Shortlist
+            </p>
+            <h2 className="font-display font-medium text-[2rem] leading-[1.12] sm:text-4xl lg:text-[2.75rem] tracking-[-0.01em] text-ink max-w-2xl">
+              Top 5 Clubs for a{" "}
+              <em className="italic text-champagne font-normal">21st Birthday</em>
+            </h2>
+          </div>
+          <div className="space-y-10" data-reveal>
             {topPicks.map((pick, i) => {
               const club = openClubs.find(c => c.slug === pick.slug);
               if (!club) return null;
               return (
-                <div key={pick.slug} className="bg-bg-card border border-border rounded-xl p-6">
-                  <div className="flex items-center gap-3 mb-3">
-                    <span className="text-gold font-bold text-lg">#{i + 1}</span>
-                    <Link href={`/clubs/${club.slug}`} className="text-lg font-semibold hover:text-gold transition-colors">{club.name}</Link>
-                    <span className="text-xs text-text-muted">{club.area} &middot; From {club.minSpend}</span>
+                <div key={pick.slug} className="flex gap-6 sm:gap-8 border-t border-hairline pt-6">
+                  <span className="font-display italic font-medium text-4xl text-champagne/60 leading-none select-none">
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
+                  <div className="flex-1">
+                    <div className="flex flex-wrap items-baseline gap-x-4 gap-y-1 mb-3">
+                      <Link href={`/clubs/${club.slug}`} className="font-display font-semibold text-[1.375rem] leading-snug text-ink hover:text-champagne-bright transition-colors duration-300">
+                        {club.name}
+                      </Link>
+                      <p className="font-sans text-[0.75rem] uppercase tracking-[0.18em] text-ink-faint">
+                        {club.area} &middot; From{" "}
+                        <span className="font-display italic font-medium text-lg normal-case tracking-normal text-champagne whitespace-nowrap">{club.minSpend}</span>
+                      </p>
+                    </div>
+                    <p className="font-sans text-base leading-[1.8] text-ink-soft max-w-3xl">{pick.reason}</p>
                   </div>
-                  <p className="text-text-secondary leading-relaxed text-sm">{pick.reason}</p>
                 </div>
               );
             })}
@@ -77,11 +121,22 @@ export default function TwentyFirstBirthdayPage() {
         </div>
       </section>
 
+      <div className="divider-gilt" />
+
       {/* Quick comparisons */}
-      <section className="py-16 px-4 bg-bg-secondary">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-10">Quick Match: What Kind of 21st Are You Planning?</h2>
-          <div className="grid sm:grid-cols-2 gap-4">
+      <section className="py-24 sm:py-28 px-4 sm:px-6 lg:px-8 bg-noir-soft">
+        <div className="max-w-6xl mx-auto">
+          <div className="mb-14 sm:mb-20" data-reveal>
+            <p className="flex items-center gap-4 font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.28em] text-champagne mb-5">
+              <span className="hairline-draw block h-px w-10 bg-champagne/60" />
+              Quick Match
+            </p>
+            <h2 className="font-display font-medium text-[2rem] leading-[1.12] sm:text-4xl lg:text-[2.75rem] tracking-[-0.01em] text-ink max-w-2xl">
+              Quick Match: What Kind of{" "}
+              <em className="italic text-champagne font-normal">21st</em> Are You Planning?
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-2" data-reveal>
             {[
               { q: "Want the biggest wow?", a: "Cirque Le Soir — performers and pyrotechnics", slug: "cirque-le-soir" },
               { q: "Want genuine exclusivity?", a: "Tape London — members' club, A-list energy", slug: "tape-london" },
@@ -90,54 +145,100 @@ export default function TwentyFirstBirthdayPage() {
               { q: "Large group (15+)?", a: "Reign London — grand venue, aerial performances", slug: "reign-london" },
               { q: "Instagram-worthy venue?", a: "TABU — Japanese underground, every angle looks amazing", slug: "tabu-london" },
             ].map(item => (
-              <Link key={item.q} href={`/clubs/${item.slug}`} className="block bg-bg-card border border-border hover:border-gold/30 rounded-xl p-5 transition-all group">
-                <div className="font-semibold text-sm mb-1 group-hover:text-gold transition-colors">{item.q}</div>
-                <div className="text-text-secondary text-sm">{item.a}</div>
+              <Link key={item.q} href={`/clubs/${item.slug}`} className="group block border-t border-hairline hover:border-hairline-strong px-1 pt-5 pb-6 transition-colors duration-500">
+                <div className="flex items-baseline justify-between gap-3">
+                  <span className="font-display font-medium text-xl text-ink group-hover:text-champagne-bright transition-colors duration-300">{item.q}</span>
+                  <span className="text-champagne transition-transform duration-400 group-hover:translate-x-1.5">&rarr;</span>
+                </div>
+                <div className="font-sans text-[0.9375rem] leading-relaxed text-ink-soft mt-1.5">{item.a}</div>
               </Link>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="py-16 px-4">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8">21st Birthday Budget Guide</h2>
-          <p className="text-text-secondary leading-relaxed mb-6">A typical 21st birthday group of 12-18 people, with a £1,000 minimum spend, breaks down to approximately £56-83 per person. That covers premium bottles, mixers, VIP service, and a reserved area for the entire night. Factor in cake (£50-150) and you&apos;re looking at a genuinely premium experience for less than you might expect.</p>
-          <p className="text-text-secondary leading-relaxed">The birthday person typically pays nothing — their share is covered by the group. With 15 friends splitting £1,000 plus cake, each person pays roughly £70-75 for a VIP birthday experience that&apos;s incomparably better than buying individual drinks at a bar all night.</p>
-          <div className="flex flex-wrap gap-4 mt-6">
-            <Link href="/birthday-table-prices-london" className="text-gold text-sm hover:underline">Full pricing guide &rarr;</Link>
-            <Link href="/vip-birthday-tables-london" className="text-gold text-sm hover:underline">VIP table upgrades &rarr;</Link>
+      <div className="divider-gilt" />
+
+      {/* Budget guide */}
+      <section className="py-24 sm:py-28 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-3xl mx-auto">
+          <div className="mb-10" data-reveal>
+            <p className="flex items-center gap-4 font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.28em] text-champagne mb-5">
+              <span className="hairline-draw block h-px w-10 bg-champagne/60" />
+              The Budget
+            </p>
+            <h2 className="font-display font-medium text-[2rem] leading-[1.12] sm:text-4xl lg:text-[2.75rem] tracking-[-0.01em] text-ink max-w-2xl">
+              21st Birthday <em className="italic text-champagne font-normal">Budget</em> Guide
+            </h2>
+          </div>
+          <div data-reveal>
+            <p className="font-sans text-base leading-[1.8] text-ink-soft mb-6">A typical 21st birthday group of 12-18 people, with a £1,000 minimum spend, breaks down to approximately £56-83 per person. That covers premium bottles, mixers, VIP service, and a reserved area for the entire night. Factor in cake (£50-150) and you&apos;re looking at a genuinely premium experience for less than you might expect.</p>
+            <p className="font-sans text-base leading-[1.8] text-ink-soft">The birthday person typically pays nothing — their share is covered by the group. With 15 friends splitting £1,000 plus cake, each person pays roughly £70-75 for a VIP birthday experience that&apos;s incomparably better than buying individual drinks at a bar all night.</p>
+            <div className="flex flex-wrap gap-x-8 gap-y-3 mt-8">
+              <Link href="/birthday-table-prices-london" className="font-sans text-sm text-champagne hover:text-champagne-bright underline decoration-champagne/30 underline-offset-4 decoration-[0.5px] transition-colors duration-200">Full pricing guide &rarr;</Link>
+              <Link href="/vip-birthday-tables-london" className="font-sans text-sm text-champagne hover:text-champagne-bright underline decoration-champagne/30 underline-offset-4 decoration-[0.5px] transition-colors duration-200">VIP table upgrades &rarr;</Link>
+            </div>
           </div>
         </div>
       </section>
 
-      <section className="py-16 px-4 bg-bg-secondary">
+      <div className="divider-gilt" />
+
+      {/* Plan CTA */}
+      <section className="py-24 sm:py-28 px-4 sm:px-6 lg:px-8 bg-noir-soft">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-6">Plan Your 21st Birthday</h2>
-          <p className="text-text-secondary text-center text-lg mb-8">This is the big one. Tell us your date, group size, and dream venue — we&apos;ll make your 21st unforgettable.</p>
-          <WhatsAppCTA message={getMilestoneWhatsAppMessage("21st")} label="Plan My 21st on WhatsApp" size="large" variant="detailed" />
+          <div className="mb-14" data-reveal>
+            <p className="flex items-center gap-4 font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.28em] text-champagne mb-5">
+              <span className="hairline-draw block h-px w-10 bg-champagne/60" />
+              The Booking
+            </p>
+            <h2 className="font-display font-medium text-[2rem] leading-[1.12] sm:text-4xl lg:text-[2.75rem] tracking-[-0.01em] text-ink max-w-2xl">
+              Plan Your <em className="italic text-champagne font-normal">21st Birthday</em>
+            </h2>
+            <p className="mt-5 font-sans text-[1.0625rem] leading-[1.8] text-ink-soft max-w-xl">This is the big one. Tell us your date, group size, and dream venue — we&apos;ll make your 21st unforgettable.</p>
+          </div>
+          <div data-reveal>
+            <WhatsAppCTA message={getMilestoneWhatsAppMessage("21st")} label="Plan My 21st on WhatsApp" size="large" variant="detailed" microcopy="Free service · Replies in minutes" />
+          </div>
         </div>
       </section>
 
-      <section className="py-16 px-4">
+      <div className="divider-gilt" />
+
+      {/* FAQ */}
+      <section className="py-24 sm:py-28 px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-10">21st Birthday FAQ</h2>
-          <div className="space-y-6">
+          <div className="mb-14" data-reveal>
+            <p className="flex items-center gap-4 font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.28em] text-champagne mb-5">
+              <span className="hairline-draw block h-px w-10 bg-champagne/60" />
+              Good to Know
+            </p>
+            <h2 className="font-display font-medium text-[2rem] leading-[1.12] sm:text-4xl lg:text-[2.75rem] tracking-[-0.01em] text-ink">
+              21st Birthday <em className="italic text-champagne font-normal">FAQ</em>
+            </h2>
+          </div>
+          <div className="divide-y divide-hairline border-y border-hairline" data-reveal>
             {faqs.map(faq => (
-              <div key={faq.question} className="bg-bg-card border border-border rounded-xl p-6">
-                <h3 className="text-lg font-semibold mb-3">{faq.question}</h3>
-                <p className="text-text-secondary leading-relaxed">{faq.answer}</p>
+              <div key={faq.question} className="py-7">
+                <h3 className="font-display font-medium text-lg sm:text-xl text-ink flex gap-5">
+                  <span className="font-display italic text-champagne/70 select-none">Q.</span>
+                  {faq.question}
+                </h3>
+                <p className="mt-3 pl-[2.15rem] font-sans text-base leading-[1.8] text-ink-soft">{faq.answer}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="py-12 px-4 bg-bg-secondary">
-        <div className="max-w-4xl mx-auto flex flex-wrap justify-center gap-4">
-          <Link href="/18th-birthday-clubs-london" className="text-gold text-sm hover:underline">&larr; 18th birthday guide</Link>
-          <Link href="/30th-birthday-night-out-london" className="text-gold text-sm hover:underline">30th birthday guide &rarr;</Link>
-          <Link href="/birthday-by-age" className="text-gold text-sm hover:underline">All milestone birthdays</Link>
+      <div className="divider-gilt" />
+
+      {/* Related guides */}
+      <section className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-noir-soft">
+        <div className="max-w-4xl mx-auto flex flex-wrap justify-center gap-x-8 gap-y-3" data-reveal>
+          <Link href="/18th-birthday-clubs-london" className="font-sans text-sm text-champagne hover:text-champagne-bright underline decoration-champagne/30 underline-offset-4 decoration-[0.5px] transition-colors duration-200">&larr; 18th birthday guide</Link>
+          <Link href="/30th-birthday-night-out-london" className="font-sans text-sm text-champagne hover:text-champagne-bright underline decoration-champagne/30 underline-offset-4 decoration-[0.5px] transition-colors duration-200">30th birthday guide &rarr;</Link>
+          <Link href="/birthday-by-age" className="font-sans text-sm text-champagne hover:text-champagne-bright underline decoration-champagne/30 underline-offset-4 decoration-[0.5px] transition-colors duration-200">All milestone birthdays</Link>
         </div>
       </section>
     </>

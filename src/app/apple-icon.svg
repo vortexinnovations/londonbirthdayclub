@@ -1,5 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180">
-  <rect width="180" height="180" rx="36" fill="#0a0a0a"/>
-  <text x="90" y="105" text-anchor="middle" font-family="Georgia, serif" font-weight="bold" font-size="78" fill="#c9a84c">LB</text>
-  <text x="90" y="148" text-anchor="middle" font-family="Georgia, serif" font-weight="normal" font-size="36" fill="#c9a84c" opacity="0.7">CLUB</text>
+  <rect width="180" height="180" rx="36" fill="#0d0b08"/>
+  <rect x="12" y="12" width="156" height="156" rx="28" fill="none" stroke="#d4b572" stroke-width="2.5" opacity="0.35"/>
+  <text x="90" y="108" text-anchor="middle" font-family="Didot, 'Bodoni MT', 'Bodoni 72', Georgia, serif" font-style="italic" font-weight="500" font-size="82" fill="#d4b572">LB</text>
+  <text x="90" y="148" text-anchor="middle" font-family="Georgia, serif" font-size="22" letter-spacing="9" fill="#d4b572" opacity="0.65">CLUB</text>
 </svg>

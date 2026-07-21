@@ -7,13 +7,15 @@ interface HeroImageProps {
   minHeight?: string;
 }
 
-export default function HeroImage({ src, alt, children, minHeight = "min-h-[60vh]" }: HeroImageProps) {
+export default function HeroImage({ src, alt, children, minHeight = "min-h-[64vh]" }: HeroImageProps) {
   return (
-    <section className={`relative ${minHeight} flex items-center justify-center px-4`}>
-      <Image src={src} alt={alt} fill className="object-cover" priority sizes="100vw" />
-      <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-black/30" />
-      <div className="relative z-10 max-w-4xl mx-auto text-center w-full">
-        {children}
+    <section className={`relative ${minHeight} img-editorial flex items-end overflow-hidden`}>
+      <Image src={src} alt={alt} fill className="object-cover kenburns" priority sizes="100vw" />
+      <div className="absolute inset-0 [background:var(--grad-hero)]" />
+      <div className="grade" />
+      <div className="absolute inset-0 pointer-events-none [box-shadow:inset_0_0_140px_60px_rgba(8,6,3,0.55)]" />
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-40 pb-16 sm:pb-20">
+        <div className="max-w-3xl">{children}</div>
       </div>
     </section>
   );

@@ -7,6 +7,7 @@ import WhatsAppCTA from "@/components/WhatsAppCTA";
 import FAQSchema from "@/components/FAQSchema";
 import TrustSignals from "@/components/TrustSignals";
 import ClubComparisonModule from "@/components/ClubComparisonModule";
+import VenueTicker from "@/components/VenueTicker";
 import { images } from "@/lib/images";
 
 export const metadata: Metadata = {
@@ -51,48 +52,74 @@ export default function HomePage() {
       <FAQSchema faqs={faqs} />
 
       {/* Hero Section */}
-      <section className="relative min-h-[70vh] flex items-center justify-center px-4">
-        <Image src={images.hero.homepage} alt="VIP birthday celebration at a London nightclub" fill className="object-cover" priority sizes="100vw" />
-        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-black/40" />
-        <div className="max-w-4xl mx-auto text-center relative z-10">
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
-            Celebrate Your Birthday at London&apos;s{" "}
-            <span className="text-gold">Most Exclusive Nightclubs</span>
-          </h1>
-          <p className="text-lg sm:text-xl text-white max-w-2xl mx-auto mb-8 leading-relaxed [text-shadow:0_2px_8px_rgba(0,0,0,0.8)]">
-            VIP tables, bottle service, sparklers, birthday cakes, and
-            unforgettable nights at Mayfair&apos;s finest venues. We plan
-            everything — you just celebrate.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <WhatsAppCTA
-              message={getGeneralWhatsAppMessage()}
-              label="Plan My Birthday"
-              size="large"
-              className="min-w-[220px] justify-center"
-            />
-            <Link
-              href="/best-birthday-clubs-london"
-              className="inline-flex items-center justify-center min-w-[220px] px-8 py-3.5 text-base font-medium text-gold border border-gold/30 hover:bg-gold/10 rounded-full transition-all duration-200"
-            >
-              Explore Clubs
-            </Link>
+      <section className="relative min-h-[88vh] img-editorial flex items-end sm:items-center overflow-hidden">
+        <Image
+          src={images.hero.homepage}
+          alt="VIP birthday celebration at a London nightclub"
+          fill
+          className="object-cover kenburns"
+          priority
+          sizes="100vw"
+        />
+        <div className="absolute inset-0 [background:var(--grad-hero)]" />
+        <div className="grade" />
+        <div className="absolute inset-0 pointer-events-none [box-shadow:inset_0_0_140px_60px_rgba(8,6,3,0.55)]" />
+        <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-40 pb-20 sm:pb-24">
+          <div className="max-w-3xl">
+            <p className="flex items-center gap-4 font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.28em] text-champagne mb-6">
+              <span className="block h-px w-10 bg-champagne/60" />
+              Mayfair · Est. London
+            </p>
+            <h1 className="font-display font-medium text-[2.9rem] leading-[1.04] tracking-[-0.015em] sm:text-6xl lg:text-[4.75rem] text-ink mb-7">
+              Celebrate Your Birthday at London&apos;s{" "}
+              <em className="italic text-champagne font-normal">
+                Most Exclusive
+              </em>{" "}
+              Nightclubs
+            </h1>
+            <p className="font-sans text-[1.0625rem] leading-[1.8] text-ink-soft max-w-xl mb-10">
+              VIP tables, bottle service, sparklers, birthday cakes, and
+              unforgettable nights at Mayfair&apos;s finest venues. We plan
+              everything — you just celebrate.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-6 items-start sm:items-center">
+              <WhatsAppCTA
+                message={getGeneralWhatsAppMessage()}
+                label="Plan My Birthday"
+                size="large"
+                microcopy="Free service · Replies in minutes"
+              />
+              <Link
+                href="/best-birthday-clubs-london"
+                className="inline-flex items-center justify-center gap-2 border border-hairline-strong hover:border-champagne text-champagne hover:text-champagne-bright font-sans text-[0.8125rem] font-bold uppercase tracking-[0.16em] px-9 py-[15px] rounded-[2px] transition-colors duration-300 sm:mb-7"
+              >
+                Explore Clubs
+              </Link>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* How It Works */}
-      <section className="py-20 px-4 bg-bg-secondary">
-        <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl sm:text-4xl font-bold text-center mb-4">
-            How It Works
-          </h2>
-          <p className="text-text-secondary text-center max-w-xl mx-auto mb-14">
-            Planning a birthday at a London club should be exciting, not
-            stressful. We handle everything for free.
-          </p>
+      <VenueTicker />
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      {/* How It Works */}
+      <section className="py-24 sm:py-28 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto">
+          <div className="mb-14 sm:mb-20" data-reveal>
+            <p className="flex items-center gap-4 font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.28em] text-champagne mb-5">
+              <span className="hairline-draw block h-px w-10 bg-champagne/60" />
+              The Service
+            </p>
+            <h2 className="font-display font-medium text-[2rem] leading-[1.12] sm:text-4xl lg:text-[2.75rem] tracking-[-0.01em] text-ink max-w-2xl">
+              How It <em className="italic text-champagne font-normal">Works</em>
+            </h2>
+            <p className="mt-5 font-sans text-[1.0625rem] leading-[1.8] text-ink-soft max-w-xl">
+              Planning a birthday at a London club should be exciting, not
+              stressful. We handle everything for free.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-x-12 gap-y-14">
             {[
               {
                 step: "01",
@@ -112,13 +139,15 @@ export default function HomePage() {
                 description:
                   "Turn up on the night and enjoy VIP treatment — your table, bottles, sparklers, and birthday extras are all sorted. You just have a great time.",
               },
-            ].map((item) => (
-              <div key={item.step} className="text-center">
-                <div className="text-gold text-5xl font-bold mb-4 opacity-60">
+            ].map((item, i) => (
+              <div key={item.step} data-reveal data-reveal-delay={i * 90}>
+                <div className="font-display italic font-medium text-6xl sm:text-7xl text-champagne/40 leading-none mb-5">
                   {item.step}
                 </div>
-                <h3 className="text-xl font-semibold mb-3">{item.title}</h3>
-                <p className="text-text-secondary leading-relaxed">
+                <h3 className="font-display font-medium text-xl text-ink mb-3">
+                  {item.title}
+                </h3>
+                <p className="font-sans text-base leading-[1.8] text-ink-soft">
                   {item.description}
                 </p>
               </div>
@@ -127,18 +156,29 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Club Grid */}
-      <section className="py-20 px-4">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl sm:text-4xl font-bold text-center mb-4">
-            Birthday Venues
-          </h2>
-          <p className="text-text-secondary text-center max-w-xl mx-auto mb-14">
-            Every club we work with has been personally vetted for birthday
-            celebrations. From intimate Mayfair lounges to iconic superclubs.
-          </p>
+      <div className="divider-gilt" />
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {/* Club Grid */}
+      <section className="py-24 sm:py-28 px-4 sm:px-6 lg:px-8 bg-noir-soft">
+        <div className="max-w-7xl mx-auto">
+          <div className="mb-14 sm:mb-20" data-reveal>
+            <p className="flex items-center gap-4 font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.28em] text-champagne mb-5">
+              <span className="hairline-draw block h-px w-10 bg-champagne/60" />
+              The Venues
+            </p>
+            <h2 className="font-display font-medium text-[2rem] leading-[1.12] sm:text-4xl lg:text-[2.75rem] tracking-[-0.01em] text-ink max-w-2xl">
+              Birthday <em className="italic text-champagne font-normal">Venues</em>
+            </h2>
+            <p className="mt-5 font-sans text-[1.0625rem] leading-[1.8] text-ink-soft max-w-xl">
+              Every club we work with has been personally vetted for birthday
+              celebrations. From intimate Mayfair lounges to iconic superclubs.
+            </p>
+          </div>
+
+          <div
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-14"
+            data-reveal
+          >
             {openClubs.map((club) => (
               <ClubCard key={club.slug} club={club} />
             ))}
@@ -146,16 +186,25 @@ export default function HomePage() {
         </div>
       </section>
 
+      <div className="divider-gilt" />
+
       <TrustSignals />
 
       {/* Why Choose Us */}
-      <section className="py-20 px-4 bg-bg-secondary">
-        <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl sm:text-4xl font-bold text-center mb-14">
-            Why Plan Your Birthday With Us
-          </h2>
+      <section className="py-24 sm:py-28 px-4 sm:px-6 lg:px-8 bg-noir-soft">
+        <div className="max-w-6xl mx-auto">
+          <div className="mb-14 sm:mb-20" data-reveal>
+            <p className="flex items-center gap-4 font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.28em] text-champagne mb-5">
+              <span className="hairline-draw block h-px w-10 bg-champagne/60" />
+              Why Us
+            </p>
+            <h2 className="font-display font-medium text-[2rem] leading-[1.12] sm:text-4xl lg:text-[2.75rem] tracking-[-0.01em] text-ink max-w-2xl">
+              Why Plan Your Birthday{" "}
+              <em className="italic text-champagne font-normal">With Us</em>
+            </h2>
+          </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-14 gap-y-12">
             {[
               {
                 title: "Completely Free Service",
@@ -177,15 +226,17 @@ export default function HomePage() {
                 description:
                   "No lengthy booking forms or waiting for email replies. Message us on WhatsApp, get an instant conversation, and have your night sorted in minutes.",
               },
-            ].map((item) => (
+            ].map((item, i) => (
               <div
                 key={item.title}
-                className="bg-bg-card border border-border rounded-xl p-6"
+                className="group border-t border-hairline hover:border-hairline-strong pt-6 transition-colors duration-500"
+                data-reveal
+                data-reveal-delay={(i % 2) * 90}
               >
-                <h3 className="text-lg font-semibold text-gold mb-2">
+                <h3 className="font-display font-medium text-xl text-ink group-hover:text-champagne-bright transition-colors duration-300 mb-3">
                   {item.title}
                 </h3>
-                <p className="text-text-secondary leading-relaxed">
+                <p className="font-sans text-base leading-[1.8] text-ink-soft">
                   {item.description}
                 </p>
               </div>
@@ -194,8 +245,10 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="py-16 px-4 bg-bg-secondary">
-        <div className="max-w-5xl mx-auto">
+      <div className="divider-gilt" />
+
+      <section className="py-24 sm:py-28 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto">
           <ClubComparisonModule
             title="Find Your Perfect Birthday Club"
             categories={[
@@ -210,14 +263,23 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Quick Links */}
-      <section className="py-20 px-4">
-        <div className="max-w-5xl mx-auto text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-14">
-            Explore Birthday Guides
-          </h2>
+      <div className="divider-gilt" />
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      {/* Quick Links */}
+      <section className="py-24 sm:py-28 px-4 sm:px-6 lg:px-8 bg-noir-soft">
+        <div className="max-w-6xl mx-auto">
+          <div className="mb-14 sm:mb-20" data-reveal>
+            <p className="flex items-center gap-4 font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.28em] text-champagne mb-5">
+              <span className="hairline-draw block h-px w-10 bg-champagne/60" />
+              The Guides
+            </p>
+            <h2 className="font-display font-medium text-[2rem] leading-[1.12] sm:text-4xl lg:text-[2.75rem] tracking-[-0.01em] text-ink max-w-2xl">
+              Explore Birthday{" "}
+              <em className="italic text-champagne font-normal">Guides</em>
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-2" data-reveal>
             {[
               {
                 href: "/birthday-clubs-london",
@@ -253,12 +315,17 @@ export default function HomePage() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="block bg-bg-card hover:bg-bg-card-hover border border-border hover:border-gold/30 rounded-xl p-6 transition-all group"
+                className="group block border-t border-hairline hover:border-hairline-strong px-1 pt-5 pb-6 hover:bg-noir-soft/60 transition-colors duration-300"
               >
-                <div className="text-lg font-semibold group-hover:text-gold transition-colors">
-                  {link.label}
+                <div className="flex items-baseline justify-between gap-3">
+                  <span className="font-display font-medium text-xl text-ink group-hover:text-champagne-bright transition-colors duration-300">
+                    {link.label}
+                  </span>
+                  <span className="text-champagne transition-transform duration-400 group-hover:translate-x-1.5">
+                    &rarr;
+                  </span>
                 </div>
-                <div className="text-text-secondary text-sm mt-1">
+                <div className="font-sans text-[0.8125rem] tracking-[0.02em] text-ink-faint mt-1.5">
                   {link.sub}
                 </div>
               </Link>
@@ -267,21 +334,32 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* FAQ Section */}
-      <section className="py-20 px-4 bg-bg-secondary">
-        <div className="max-w-3xl mx-auto">
-          <h2 className="text-3xl sm:text-4xl font-bold text-center mb-14">
-            Frequently Asked Questions
-          </h2>
+      <div className="divider-gilt" />
 
-          <div className="space-y-6">
+      {/* FAQ Section */}
+      <section className="py-24 sm:py-28 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-3xl mx-auto">
+          <div className="mb-14" data-reveal>
+            <p className="flex items-center gap-4 font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.28em] text-champagne mb-5">
+              <span className="hairline-draw block h-px w-10 bg-champagne/60" />
+              Good to Know
+            </p>
+            <h2 className="font-display font-medium text-[2rem] leading-[1.12] sm:text-4xl lg:text-[2.75rem] tracking-[-0.01em] text-ink">
+              Frequently Asked{" "}
+              <em className="italic text-champagne font-normal">Questions</em>
+            </h2>
+          </div>
+
+          <div className="divide-y divide-hairline border-y border-hairline" data-reveal>
             {faqs.map((faq) => (
-              <div
-                key={faq.question}
-                className="bg-bg-card border border-border rounded-xl p-6"
-              >
-                <h3 className="text-lg font-semibold mb-3">{faq.question}</h3>
-                <p className="text-text-secondary leading-relaxed">
+              <div key={faq.question} className="py-7">
+                <h3 className="font-display font-medium text-lg sm:text-xl text-ink flex gap-5">
+                  <span className="font-display italic text-champagne/70 select-none">
+                    Q.
+                  </span>
+                  {faq.question}
+                </h3>
+                <p className="mt-3 pl-[2.15rem] font-sans text-base leading-[1.8] text-ink-soft">
                   {faq.answer}
                 </p>
               </div>
@@ -290,13 +368,19 @@ export default function HomePage() {
         </div>
       </section>
 
+      <div className="divider-gilt" />
+
       {/* Bottom CTA */}
-      <section className="py-20 px-4">
-        <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-            Ready to Plan Your Birthday?
+      <section className="py-24 sm:py-32 px-4 sm:px-6 lg:px-8 bg-noir-deep">
+        <div className="max-w-3xl mx-auto text-center" data-reveal>
+          <p className="font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.28em] text-champagne mb-6">
+            The Guest List Awaits
+          </p>
+          <h2 className="font-display font-medium text-[2rem] leading-[1.12] sm:text-4xl lg:text-[2.75rem] tracking-[-0.01em] text-ink mb-5">
+            Ready to Plan Your{" "}
+            <em className="italic text-champagne font-normal">Birthday?</em>
           </h2>
-          <p className="text-text-secondary text-lg mb-8 max-w-xl mx-auto">
+          <p className="font-sans text-[1.0625rem] leading-[1.8] text-ink-soft mb-10 max-w-xl mx-auto">
             Tell us your date, group size, and vibe — we&apos;ll handle
             everything else. It takes two minutes on WhatsApp.
           </p>
@@ -304,6 +388,7 @@ export default function HomePage() {
             message={getGeneralWhatsAppMessage()}
             label="Start Planning on WhatsApp"
             size="large"
+            microcopy="Free service · Replies in minutes"
           />
         </div>
       </section>

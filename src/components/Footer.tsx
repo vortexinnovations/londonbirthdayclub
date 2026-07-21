@@ -23,15 +23,19 @@ const guideLinks = [
 
 export default function Footer() {
   return (
-    <footer className="bg-bg-secondary border-t border-border mt-auto">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <footer className="bg-noir-deep mt-auto">
+      <div className="divider-gilt" />
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <p className="font-display italic text-4xl sm:text-5xl text-ink/90 mb-14">
+          London Birthday Club
+        </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
           {/* Brand */}
           <div>
-            <h3 className="text-gold font-bold text-lg mb-4">
-              London Birthday Club
+            <h3 className="font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.28em] text-champagne mb-5">
+              The Service
             </h3>
-            <p className="text-text-secondary text-sm leading-relaxed">
+            <p className="font-sans text-[0.9375rem] text-ink-soft leading-[1.8]">
               The ultimate guide to celebrating your birthday at London&apos;s
               most exclusive nightclubs. Free planning, expert advice, VIP
               access.
@@ -40,15 +44,15 @@ export default function Footer() {
 
           {/* Club Pages */}
           <div>
-            <h4 className="text-text-primary font-semibold text-sm mb-4 uppercase tracking-wider">
+            <h4 className="font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.28em] text-champagne mb-5">
               Birthday Venues
             </h4>
-            <ul className="space-y-2">
+            <ul className="space-y-2.5">
               {openClubs.slice(0, 7).map((club) => (
                 <li key={club.slug}>
                   <Link
                     href={`/clubs/${club.slug}`}
-                    className="text-text-secondary hover:text-gold text-sm transition-colors"
+                    className="font-sans text-[0.9375rem] text-ink-soft hover:text-champagne-bright transition-colors duration-200"
                   >
                     {club.name}
                   </Link>
@@ -58,15 +62,15 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="text-text-primary font-semibold text-sm mb-4 uppercase tracking-wider">
+            <h4 className="font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.28em] text-champagne mb-5">
               More Venues
             </h4>
-            <ul className="space-y-2">
+            <ul className="space-y-2.5">
               {openClubs.slice(7).map((club) => (
                 <li key={club.slug}>
                   <Link
                     href={`/clubs/${club.slug}`}
-                    className="text-text-secondary hover:text-gold text-sm transition-colors"
+                    className="font-sans text-[0.9375rem] text-ink-soft hover:text-champagne-bright transition-colors duration-200"
                   >
                     {club.name}
                   </Link>
@@ -77,15 +81,15 @@ export default function Footer() {
 
           {/* Guides col 1 */}
           <div>
-            <h4 className="text-text-primary font-semibold text-sm mb-4 uppercase tracking-wider">
+            <h4 className="font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.28em] text-champagne mb-5">
               Birthday Guides
             </h4>
-            <ul className="space-y-2">
+            <ul className="space-y-2.5">
               {guideLinks.slice(0, 9).map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-text-secondary hover:text-gold text-sm transition-colors"
+                    className="font-sans text-[0.9375rem] text-ink-soft hover:text-champagne-bright transition-colors duration-200"
                   >
                     {link.label}
                   </Link>
@@ -96,15 +100,15 @@ export default function Footer() {
 
           {/* Guides col 2 */}
           <div>
-            <h4 className="text-text-primary font-semibold text-sm mb-4 uppercase tracking-wider">
+            <h4 className="font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.28em] text-champagne mb-5">
               More Guides
             </h4>
-            <ul className="space-y-2">
+            <ul className="space-y-2.5">
               {guideLinks.slice(9).map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-text-secondary hover:text-gold text-sm transition-colors"
+                    className="font-sans text-[0.9375rem] text-ink-soft hover:text-champagne-bright transition-colors duration-200"
                   >
                     {link.label}
                   </Link>
@@ -114,8 +118,8 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-border mt-12 pt-8 text-center">
-          <p className="text-text-muted text-sm">
+        <div className="border-t border-hairline mt-16 pt-8">
+          <p className="font-sans text-[0.8125rem] tracking-[0.02em] text-ink-faint">
             &copy; {new Date().getFullYear()} London Birthday Club. All rights
             reserved. Helping you celebrate at London&apos;s finest nightclubs.
           </p>

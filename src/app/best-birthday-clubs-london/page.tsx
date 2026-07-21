@@ -148,84 +148,135 @@ export default function BestClubsPage() {
       <ItemListSchema name="Best Birthday Clubs in London 2026" description="13 London nightclubs ranked for birthday celebrations, based on atmosphere, service, entertainment, and birthday-specific features." items={itemListItems} />
       <ArticleSchema title="13 Best Birthday Clubs in London — Ranked by Real Experience" description="Honest, ranked guide to the best London nightclubs for birthday celebrations." url="https://londonbirthdayclub.com/best-birthday-clubs-london" />
 
-      <section className="relative min-h-[50vh] flex items-center justify-center px-4">
-        <Image src={images.hero.bestClubs} alt="Best birthday clubs in London" fill className="object-cover" priority sizes="100vw" />
-        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-black/30" />
-        <div className="max-w-4xl mx-auto relative z-10">
-          <h1 className="text-4xl sm:text-5xl font-bold tracking-tight mb-6">
-            Best Clubs for a Birthday in{" "}
-            <span className="text-gold">London</span>
-          </h1>
-          <p className="text-lg text-white max-w-2xl leading-relaxed mb-4 [text-shadow:0_2px_8px_rgba(0,0,0,0.8)]">
-            An honest, opinionated guide to the best London nightclubs for
-            birthday celebrations. We&apos;ve helped plan hundreds of birthday
-            nights — these are the venues that consistently deliver
-            unforgettable celebrations, ranked by how well they handle birthdays
-            specifically.
-          </p>
-          <p className="text-white/70 text-sm [text-shadow:0_2px_8px_rgba(0,0,0,0.8)]">
-            Updated for 2026. Every venue personally vetted.
-          </p>
+      {/* Hero */}
+      <section className="relative min-h-[64vh] img-editorial flex items-end overflow-hidden">
+        <Image
+          src={images.hero.bestClubs}
+          alt="Best birthday clubs in London"
+          fill
+          className="object-cover kenburns"
+          priority
+          sizes="100vw"
+        />
+        <div className="absolute inset-0 [background:var(--grad-hero)]" />
+        <div className="grade" />
+        <div className="absolute inset-0 pointer-events-none [box-shadow:inset_0_0_140px_60px_rgba(8,6,3,0.55)]" />
+        <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-40 pb-16 sm:pb-20">
+          <div className="max-w-3xl">
+            <p className="flex items-center gap-4 font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.28em] text-champagne mb-6">
+              <span className="block h-px w-10 bg-champagne/60" />
+              Ranked Guide
+            </p>
+            <h1 className="font-display font-medium text-[2.9rem] leading-[1.04] tracking-[-0.015em] sm:text-6xl lg:text-[4.75rem] text-ink mb-7">
+              Best Clubs for a Birthday in{" "}
+              <em className="italic text-champagne font-normal">London</em>
+            </h1>
+            <p className="font-sans text-[1.0625rem] leading-[1.8] text-ink-soft max-w-2xl mb-6">
+              An honest, opinionated guide to the best London nightclubs for
+              birthday celebrations. We&apos;ve helped plan hundreds of birthday
+              nights — these are the venues that consistently deliver
+              unforgettable celebrations, ranked by how well they handle birthdays
+              specifically.
+            </p>
+            <p className="font-sans text-[0.75rem] uppercase tracking-[0.18em] text-ink-faint">
+              Updated for 2026. Every venue personally vetted.
+            </p>
+          </div>
         </div>
       </section>
 
       {/* Rankings */}
-      <section className="py-10 px-4">
-        <div className="max-w-4xl mx-auto space-y-8">
-          {rankings.map((item) => {
-            const club = openClubs.find((c) => c.slug === item.slug)!;
-            return (
-              <div
-                key={item.slug}
-                className="bg-bg-card border border-border rounded-xl p-6 sm:p-8"
-              >
-                <div className="flex items-start gap-4 mb-4">
-                  <span className="text-gold text-3xl font-bold opacity-50 leading-none">
-                    #{item.position}
-                  </span>
-                  <div className="flex-1">
-                    <div className="flex flex-wrap items-center gap-3 mb-2">
+      <section className="py-24 sm:py-28 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-4xl mx-auto">
+          <p
+            className="flex items-center gap-4 font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.28em] text-champagne mb-14 sm:mb-16"
+            data-reveal
+          >
+            <span className="hairline-draw block h-px w-10 bg-champagne/60" />
+            The Ranking
+          </p>
+          <div className="space-y-12" data-reveal>
+            {rankings.map((item) => {
+              const club = openClubs.find((c) => c.slug === item.slug)!;
+              return (
+                <article
+                  key={item.slug}
+                  className="flex gap-5 sm:gap-8 border-t border-hairline hover:border-hairline-strong pt-8 transition-colors duration-500"
+                >
+                  <div className="w-14 sm:w-24 shrink-0">
+                    <span className="font-display italic font-medium text-4xl sm:text-6xl text-champagne/60 leading-none">
+                      {String(item.position).padStart(2, "0")}
+                    </span>
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <div className="flex flex-wrap items-baseline gap-x-4 gap-y-2 mb-3">
                       <Link
                         href={`/clubs/${club.slug}`}
-                        className="text-2xl font-bold hover:text-gold transition-colors"
+                        className="font-display font-semibold text-[1.375rem] leading-snug text-ink hover:text-champagne-bright transition-colors duration-300"
                       >
                         {club.name}
                       </Link>
-                      <span className="text-xs bg-gold/10 text-gold px-2 py-1 rounded">
+                      <span className="inline-flex items-center border border-hairline-strong rounded-[2px] px-2.5 py-1 font-sans text-[0.625rem] font-semibold uppercase tracking-[0.2em] text-champagne">
                         {item.bestForTag}
                       </span>
                     </div>
-                    <div className="flex flex-wrap gap-4 text-sm text-text-muted mb-4">
-                      <span>{club.area}</span>
-                      <span>From {club.minSpend}</span>
-                      <span>{club.musicPolicy.split(",")[0]}</span>
+                    <div className="flex flex-wrap items-baseline gap-x-5 gap-y-1 mb-4">
+                      <span className="font-sans text-[0.75rem] uppercase tracking-[0.18em] text-ink-faint">
+                        {club.area}
+                      </span>
+                      <span className="font-sans text-[0.75rem] uppercase tracking-[0.18em] text-ink-faint">
+                        From{" "}
+                        <span className="font-display italic font-medium text-lg text-champagne normal-case tracking-normal">
+                          {club.minSpend}
+                        </span>
+                      </span>
+                      <span className="font-sans text-[0.75rem] uppercase tracking-[0.18em] text-ink-faint">
+                        {club.musicPolicy.split(",")[0]}
+                      </span>
+                    </div>
+                    <p className="font-sans text-base leading-[1.8] text-ink-soft">
+                      {item.verdict}
+                    </p>
+                    <div className="mt-5 flex flex-wrap gap-3">
+                      <Link
+                        href={`/clubs/${club.slug}`}
+                        className="group inline-flex items-center gap-2 text-champagne hover:text-champagne-bright text-[0.8125rem] font-semibold uppercase tracking-[0.14em] transition-colors duration-200"
+                      >
+                        Full birthday guide{" "}
+                        <span className="transition-transform duration-400 group-hover:translate-x-1.5">
+                          &rarr;
+                        </span>
+                      </Link>
                     </div>
                   </div>
-                </div>
-                <p className="text-text-secondary leading-relaxed mb-4">
-                  {item.verdict}
-                </p>
-                <div className="flex flex-wrap gap-3">
-                  <Link
-                    href={`/clubs/${club.slug}`}
-                    className="text-gold text-sm font-medium hover:underline"
-                  >
-                    Full birthday guide &rarr;
-                  </Link>
-                </div>
-              </div>
-            );
-          })}
+                </article>
+              );
+            })}
+          </div>
         </div>
       </section>
 
+      <div className="divider-gilt" />
+
       {/* Quick comparison */}
-      <section className="py-16 px-4 bg-bg-secondary">
-        <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-10">
-            Quick Comparison: Which Club Suits Your Birthday?
-          </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      <section className="py-24 sm:py-28 px-4 sm:px-6 lg:px-8 bg-noir-soft">
+        <div className="max-w-6xl mx-auto">
+          <div className="mb-14 sm:mb-20" data-reveal>
+            <p className="flex items-center gap-4 font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.28em] text-champagne mb-5">
+              <span className="hairline-draw block h-px w-10 bg-champagne/60" />
+              At a Glance
+            </p>
+            <h2 className="font-display font-medium text-[2rem] leading-[1.12] sm:text-4xl lg:text-[2.75rem] tracking-[-0.01em] text-ink max-w-2xl">
+              Quick Comparison: Which Club Suits{" "}
+              <em className="italic text-champagne font-normal">
+                Your Birthday?
+              </em>
+            </h2>
+          </div>
+          <div
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-2"
+            data-reveal
+          >
             {[
               {
                 q: "Biggest wow factor?",
@@ -261,32 +312,45 @@ export default function BestClubsPage() {
               <Link
                 key={item.q}
                 href={item.link}
-                className="block bg-bg-card border border-border hover:border-gold/30 rounded-xl p-5 transition-all group"
+                className="group block border-t border-hairline hover:border-hairline-strong px-1 pt-5 pb-6 transition-colors duration-300"
               >
-                <div className="font-semibold text-sm mb-2 group-hover:text-gold transition-colors">
+                <div className="font-display font-medium text-lg text-ink group-hover:text-champagne-bright transition-colors duration-300">
                   {item.q}
                 </div>
-                <div className="text-text-secondary text-sm">{item.a}</div>
+                <div className="font-sans text-[0.9375rem] leading-relaxed text-ink-soft mt-2">
+                  {item.a}
+                </div>
               </Link>
             ))}
           </div>
         </div>
       </section>
 
+      <div className="divider-gilt" />
+
       {/* FAQ */}
-      <section className="py-16 px-4">
+      <section className="py-24 sm:py-28 px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-10">
-            Birthday Club FAQ
-          </h2>
-          <div className="space-y-6">
+          <div className="mb-14" data-reveal>
+            <p className="flex items-center gap-4 font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.28em] text-champagne mb-5">
+              <span className="hairline-draw block h-px w-10 bg-champagne/60" />
+              Good to Know
+            </p>
+            <h2 className="font-display font-medium text-[2rem] leading-[1.12] sm:text-4xl lg:text-[2.75rem] tracking-[-0.01em] text-ink">
+              Birthday Club{" "}
+              <em className="italic text-champagne font-normal">FAQ</em>
+            </h2>
+          </div>
+          <div className="divide-y divide-hairline border-y border-hairline" data-reveal>
             {faqs.map((faq) => (
-              <div
-                key={faq.question}
-                className="bg-bg-card border border-border rounded-xl p-6"
-              >
-                <h3 className="text-lg font-semibold mb-3">{faq.question}</h3>
-                <p className="text-text-secondary leading-relaxed">
+              <div key={faq.question} className="py-7">
+                <h3 className="font-display font-medium text-lg sm:text-xl text-ink flex gap-5">
+                  <span className="font-display italic text-champagne/70 select-none">
+                    Q.
+                  </span>
+                  {faq.question}
+                </h3>
+                <p className="mt-3 pl-[2.15rem] font-sans text-base leading-[1.8] text-ink-soft">
                   {faq.answer}
                 </p>
               </div>
@@ -295,13 +359,21 @@ export default function BestClubsPage() {
         </div>
       </section>
 
+      <div className="divider-gilt" />
+
       {/* CTA */}
-      <section className="py-16 px-4 bg-bg-secondary">
-        <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-4">
-            Not Sure Which Club? We&apos;ll Help
+      <section className="py-24 sm:py-32 px-4 sm:px-6 lg:px-8 bg-noir-deep">
+        <div className="max-w-3xl mx-auto text-center" data-reveal>
+          <p className="font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.28em] text-champagne mb-6">
+            The Shortlist
+          </p>
+          <h2 className="font-display font-medium text-[2rem] leading-[1.12] sm:text-4xl lg:text-[2.75rem] tracking-[-0.01em] text-ink mb-5">
+            Not Sure Which Club?{" "}
+            <em className="italic text-champagne font-normal">
+              We&apos;ll Help
+            </em>
           </h2>
-          <p className="text-text-secondary text-lg mb-8">
+          <p className="font-sans text-[1.0625rem] leading-[1.8] text-ink-soft mb-10 max-w-xl mx-auto">
             Tell us about your birthday — group size, vibe, budget — and
             we&apos;ll recommend the perfect venue. Free advice, no obligation.
           </p>
@@ -309,6 +381,7 @@ export default function BestClubsPage() {
             message={getGeneralWhatsAppMessage()}
             label="Get a Recommendation on WhatsApp"
             size="large"
+            microcopy="Free service · Replies in minutes"
           />
         </div>
       </section>

@@ -20,35 +20,54 @@ export default function BookBirthdayPage() {
   return (
     <>
       <BreadcrumbSchema items={[{ name: "Home", href: "/" }, { name: "Book Your Birthday", href: "/book-birthday" }]} />
-      <section className="relative min-h-[50vh] flex items-center justify-center px-4">
-        <Image src={images.hero.bookBirthday} alt="Book your birthday celebration at a London club" fill className="object-cover" priority sizes="100vw" />
-        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-black/30" />
-        <div className="max-w-3xl mx-auto text-center relative z-10">
-          <h1 className="text-4xl sm:text-5xl font-bold tracking-tight mb-6">
-            Book Your <span className="text-gold">Birthday</span>
-          </h1>
-          <p className="text-lg text-white max-w-xl mx-auto mb-10 leading-relaxed [text-shadow:0_2px_8px_rgba(0,0,0,0.8)]">
-            No forms. No waiting. Just message us on WhatsApp with your
-            birthday details and we&apos;ll have your night sorted within
-            minutes. Our service is completely free.
-          </p>
-          <WhatsAppCTA
-            message={getGeneralWhatsAppMessage()}
-            label="Message Us on WhatsApp"
-            size="large"
-            variant="detailed"
-          />
+
+      {/* Hero */}
+      <section className="relative min-h-[64vh] img-editorial flex items-end overflow-hidden">
+        <Image src={images.hero.bookBirthday} alt="Book your birthday celebration at a London club" fill className="object-cover kenburns" priority sizes="100vw" />
+        <div className="absolute inset-0 [background:var(--grad-hero)]" />
+        <div className="grade" />
+        <div className="absolute inset-0 pointer-events-none [box-shadow:inset_0_0_140px_60px_rgba(8,6,3,0.55)]" />
+        <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-40 pb-16 sm:pb-20">
+          <div className="max-w-3xl">
+            <p className="flex items-center gap-4 font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.28em] text-champagne mb-6">
+              <span className="block h-px w-10 bg-champagne/60" />
+              The Booking
+            </p>
+            <h1 className="font-display font-medium text-[2.9rem] leading-[1.04] tracking-[-0.015em] sm:text-6xl lg:text-[4.75rem] text-ink mb-7">
+              Book Your{" "}
+              <em className="italic text-champagne font-normal">Birthday</em>
+            </h1>
+            <p className="font-sans text-[1.0625rem] leading-[1.8] text-ink-soft max-w-xl mb-10">
+              No forms. No waiting. Just message us on WhatsApp with your
+              birthday details and we&apos;ll have your night sorted within
+              minutes. Our service is completely free.
+            </p>
+            <WhatsAppCTA
+              message={getGeneralWhatsAppMessage()}
+              label="Message Us on WhatsApp"
+              size="large"
+              variant="detailed"
+              microcopy="Free service · Replies in minutes"
+            />
+          </div>
         </div>
       </section>
 
       {/* What happens when you message */}
-      <section className="py-16 px-4 bg-bg-secondary">
+      <section className="py-24 sm:py-28 px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-10">
-            What Happens When You Message Us
-          </h2>
+          <div className="mb-14 sm:mb-20" data-reveal>
+            <p className="flex items-center gap-4 font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.28em] text-champagne mb-5">
+              <span className="hairline-draw block h-px w-10 bg-champagne/60" />
+              The Process
+            </p>
+            <h2 className="font-display font-medium text-[2rem] leading-[1.12] sm:text-4xl lg:text-[2.75rem] tracking-[-0.01em] text-ink max-w-2xl">
+              What Happens When You{" "}
+              <em className="italic text-champagne font-normal">Message Us</em>
+            </h2>
+          </div>
 
-          <div className="space-y-8">
+          <div className="space-y-10" data-reveal>
             {[
               {
                 step: "1",
@@ -75,13 +94,18 @@ export default function BookBirthdayPage() {
                   "That's it. Arrive at the agreed time, give your name at the door, and enjoy your birthday. Your table, bottles, and extras are all sorted. If you need anything on the night, we're still on WhatsApp.",
               },
             ].map((item) => (
-              <div key={item.step} className="flex gap-5">
-                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-gold/10 text-gold font-bold flex items-center justify-center text-lg">
+              <div
+                key={item.step}
+                className="flex gap-6 sm:gap-8 border-t border-hairline pt-7"
+              >
+                <div className="font-display italic font-medium text-5xl sm:text-6xl text-champagne/40 leading-none w-12 sm:w-16 shrink-0">
                   {item.step}
                 </div>
                 <div>
-                  <h3 className="text-lg font-semibold mb-2">{item.title}</h3>
-                  <p className="text-text-secondary leading-relaxed">
+                  <h3 className="font-display font-medium text-xl text-ink mb-3">
+                    {item.title}
+                  </h3>
+                  <p className="font-sans text-base leading-[1.8] text-ink-soft">
                     {item.description}
                   </p>
                 </div>
@@ -91,13 +115,22 @@ export default function BookBirthdayPage() {
         </div>
       </section>
 
+      <div className="divider-gilt" />
+
       {/* Why WhatsApp */}
-      <section className="py-16 px-4">
+      <section className="py-24 sm:py-28 px-4 sm:px-6 lg:px-8 bg-noir-soft">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-10">
-            Why WhatsApp, Not a Form
-          </h2>
-          <div className="grid sm:grid-cols-2 gap-6">
+          <div className="mb-14 sm:mb-20" data-reveal>
+            <p className="flex items-center gap-4 font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.28em] text-champagne mb-5">
+              <span className="hairline-draw block h-px w-10 bg-champagne/60" />
+              The Service
+            </p>
+            <h2 className="font-display font-medium text-[2rem] leading-[1.12] sm:text-4xl lg:text-[2.75rem] tracking-[-0.01em] text-ink max-w-2xl">
+              Why WhatsApp,{" "}
+              <em className="italic text-champagne font-normal">Not a Form</em>
+            </h2>
+          </div>
+          <div className="grid sm:grid-cols-2 gap-x-14 gap-y-12">
             {[
               {
                 title: "Instant conversation",
@@ -115,15 +148,17 @@ export default function BookBirthdayPage() {
                 title: "No spam, no newsletters",
                 desc: "We'll never add you to a mailing list or send unsolicited messages. The WhatsApp conversation is just about your birthday, nothing else.",
               },
-            ].map((item) => (
+            ].map((item, i) => (
               <div
                 key={item.title}
-                className="bg-bg-card border border-border rounded-xl p-6"
+                className="group border-t border-hairline hover:border-hairline-strong pt-6 transition-colors duration-500"
+                data-reveal
+                data-reveal-delay={(i % 2) * 90}
               >
-                <h3 className="text-lg font-semibold text-gold mb-2">
+                <h3 className="font-display font-medium text-xl text-ink group-hover:text-champagne-bright transition-colors duration-300 mb-3">
                   {item.title}
                 </h3>
-                <p className="text-text-secondary text-sm leading-relaxed">
+                <p className="font-sans text-base leading-[1.8] text-ink-soft">
                   {item.desc}
                 </p>
               </div>
@@ -132,54 +167,85 @@ export default function BookBirthdayPage() {
         </div>
       </section>
 
+      <div className="divider-gilt" />
+
       {/* Links to explore */}
-      <section className="py-16 px-4 bg-bg-secondary">
-        <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-2xl font-bold mb-8">
-            Not Ready to Book? Explore First
-          </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      <section className="py-24 sm:py-28 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-3xl mx-auto">
+          <div className="mb-14 sm:mb-20" data-reveal>
+            <p className="flex items-center gap-4 font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.28em] text-champagne mb-5">
+              <span className="hairline-draw block h-px w-10 bg-champagne/60" />
+              The Guides
+            </p>
+            <h2 className="font-display font-medium text-[2rem] leading-[1.12] sm:text-4xl lg:text-[2.75rem] tracking-[-0.01em] text-ink max-w-2xl">
+              Not Ready to Book?{" "}
+              <em className="italic text-champagne font-normal">
+                Explore First
+              </em>
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-2" data-reveal>
             <Link
               href="/birthday-clubs-london"
-              className="block bg-bg-card hover:bg-bg-card-hover border border-border hover:border-gold/30 rounded-xl p-5 transition-all group"
+              className="group block border-t border-hairline hover:border-hairline-strong px-1 pt-5 pb-6 hover:bg-noir-soft/60 transition-colors duration-300"
             >
-              <div className="font-semibold group-hover:text-gold transition-colors">
-                Birthday Clubs London
+              <div className="flex items-baseline justify-between gap-3">
+                <span className="font-display font-medium text-xl text-ink group-hover:text-champagne-bright transition-colors duration-300">
+                  Birthday Clubs London
+                </span>
+                <span className="text-champagne transition-transform duration-400 group-hover:translate-x-1.5">
+                  &rarr;
+                </span>
               </div>
-              <div className="text-text-secondary text-sm mt-1">
+              <div className="font-sans text-[0.8125rem] tracking-[0.02em] text-ink-faint mt-1.5">
                 Compare all 13 venues
               </div>
             </Link>
             <Link
               href="/birthday-table-booking-london"
-              className="block bg-bg-card hover:bg-bg-card-hover border border-border hover:border-gold/30 rounded-xl p-5 transition-all group"
+              className="group block border-t border-hairline hover:border-hairline-strong px-1 pt-5 pb-6 hover:bg-noir-soft/60 transition-colors duration-300"
             >
-              <div className="font-semibold group-hover:text-gold transition-colors">
-                Table Booking Guide
+              <div className="flex items-baseline justify-between gap-3">
+                <span className="font-display font-medium text-xl text-ink group-hover:text-champagne-bright transition-colors duration-300">
+                  Table Booking Guide
+                </span>
+                <span className="text-champagne transition-transform duration-400 group-hover:translate-x-1.5">
+                  &rarr;
+                </span>
               </div>
-              <div className="text-text-secondary text-sm mt-1">
+              <div className="font-sans text-[0.8125rem] tracking-[0.02em] text-ink-faint mt-1.5">
                 Pricing, packages, what&apos;s included
               </div>
             </Link>
             <Link
               href="/best-birthday-clubs-london"
-              className="block bg-bg-card hover:bg-bg-card-hover border border-border hover:border-gold/30 rounded-xl p-5 transition-all group"
+              className="group block border-t border-hairline hover:border-hairline-strong px-1 pt-5 pb-6 hover:bg-noir-soft/60 transition-colors duration-300"
             >
-              <div className="font-semibold group-hover:text-gold transition-colors">
-                Best Birthday Clubs
+              <div className="flex items-baseline justify-between gap-3">
+                <span className="font-display font-medium text-xl text-ink group-hover:text-champagne-bright transition-colors duration-300">
+                  Best Birthday Clubs
+                </span>
+                <span className="text-champagne transition-transform duration-400 group-hover:translate-x-1.5">
+                  &rarr;
+                </span>
               </div>
-              <div className="text-text-secondary text-sm mt-1">
+              <div className="font-sans text-[0.8125rem] tracking-[0.02em] text-ink-faint mt-1.5">
                 Ranked guide with verdicts
               </div>
             </Link>
             <Link
               href="/plan-birthday-london-club"
-              className="block bg-bg-card hover:bg-bg-card-hover border border-border hover:border-gold/30 rounded-xl p-5 transition-all group"
+              className="group block border-t border-hairline hover:border-hairline-strong px-1 pt-5 pb-6 hover:bg-noir-soft/60 transition-colors duration-300"
             >
-              <div className="font-semibold group-hover:text-gold transition-colors">
-                Planning Guide
+              <div className="flex items-baseline justify-between gap-3">
+                <span className="font-display font-medium text-xl text-ink group-hover:text-champagne-bright transition-colors duration-300">
+                  Planning Guide
+                </span>
+                <span className="text-champagne transition-transform duration-400 group-hover:translate-x-1.5">
+                  &rarr;
+                </span>
               </div>
-              <div className="text-text-secondary text-sm mt-1">
+              <div className="font-sans text-[0.8125rem] tracking-[0.02em] text-ink-faint mt-1.5">
                 Step-by-step walkthrough
               </div>
             </Link>
@@ -187,13 +253,22 @@ export default function BookBirthdayPage() {
         </div>
       </section>
 
+      <div className="divider-gilt" />
+
       {/* Final CTA */}
-      <section className="py-20 px-4">
-        <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-4">
-            Your Birthday Deserves Better Than a Form
+      <section className="py-24 sm:py-32 px-4 sm:px-6 lg:px-8 bg-noir-deep">
+        <div className="max-w-3xl mx-auto text-center" data-reveal>
+          <p className="font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.28em] text-champagne mb-6">
+            The Final Step
+          </p>
+          <h2 className="font-display font-medium text-[2rem] leading-[1.12] sm:text-4xl lg:text-[2.75rem] tracking-[-0.01em] text-ink mb-5">
+            Your Birthday{" "}
+            <em className="italic text-champagne font-normal">
+              Deserves Better
+            </em>{" "}
+            Than a Form
           </h2>
-          <p className="text-text-secondary text-lg mb-8">
+          <p className="font-sans text-[1.0625rem] leading-[1.8] text-ink-soft mb-10 max-w-xl mx-auto">
             Two minutes on WhatsApp. That&apos;s all it takes to start
             planning the best birthday night of your life.
           </p>
@@ -201,6 +276,7 @@ export default function BookBirthdayPage() {
             message={getGeneralWhatsAppMessage()}
             label="Let's Plan Your Birthday"
             size="large"
+            microcopy="Free service · Replies in minutes"
           />
         </div>
       </section>

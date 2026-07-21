@@ -1,13 +1,23 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Bodoni_Moda, Hanken_Grotesk } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppSticky from "@/components/WhatsAppSticky";
+import Reveal from "@/components/Reveal";
+import { WHATSAPP_TEL } from "@/lib/clubs";
 
-const inter = Inter({
+const bodoni = Bodoni_Moda({
   subsets: ["latin"],
-  variable: "--font-inter",
+  style: ["normal", "italic"],
+  axes: ["opsz"],
+  variable: "--font-bodoni",
+  display: "swap",
+});
+
+const hanken = Hanken_Grotesk({
+  subsets: ["latin"],
+  variable: "--font-hanken",
   display: "swap",
 });
 
@@ -54,7 +64,7 @@ export default function RootLayout({
     description:
       "Birthday party planning service for London's most exclusive nightclubs. Free VIP table booking and birthday packages at Mayfair's finest venues.",
     url: "https://londonbirthdayclub.com",
-    telephone: "+447880662708",
+    telephone: WHATSAPP_TEL,
     image: "https://londonbirthdayclub.com/gallery/images/TapeSaturdayNYE311222-130.jpg",
     address: {
       "@type": "PostalAddress",
@@ -97,21 +107,11 @@ export default function RootLayout({
   };
 
   return (
-    <html lang="en" className={`${inter.variable} antialiased`}>
-      <head>
-        <style
-          dangerouslySetInnerHTML={{
-            __html: `
-              html{scroll-behavior:smooth}
-              body{background-color:#0a0a0a;color:#f5f5f5;font-family:"Inter",system-ui,-apple-system,sans-serif;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;margin:0}
-              ::selection{background-color:#c9a84c;color:#000}
-              .min-h-screen{min-height:100vh}.flex{display:flex}.flex-col{flex-direction:column}.flex-1{flex:1 1 0%}.pt-16{padding-top:4rem}
-              header{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(10,10,10,.9);backdrop-filter:blur(12px);border-bottom:1px solid #222}
-            `,
-          }}
-        />
-      </head>
-      <body className="min-h-screen flex flex-col">
+    <html
+      lang="en"
+      className={`${bodoni.variable} ${hanken.variable} antialiased`}
+    >
+      <body className="grain min-h-screen flex flex-col pb-24 lg:pb-0">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -125,9 +125,10 @@ export default function RootLayout({
           }}
         />
         <Header />
-        <main className="flex-1 pt-16">{children}</main>
+        <main className="flex-1">{children}</main>
         <Footer />
         <WhatsAppSticky />
+        <Reveal />
       </body>
     </html>
   );
