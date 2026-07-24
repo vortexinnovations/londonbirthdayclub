@@ -1339,4 +1339,82 @@ export const blogDataPart4: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "invited-to-a-birthday-at-a-london-club-guest-guide",
+    title: "Invited to a Birthday at a London Club? A Guest's Guide",
+    metaTitle: "Invited to a Club Birthday? A Guest's Guide",
+    metaDescription: "Invited to a birthday at a London club? What actually happens on the night, whether it will cost you, if you bring a gift, and how to be a good guest.",
+    excerpt: "Most birthday guides are written for the organiser. This one is for the guest: what to expect, whether you chip in, if you bring a present, and how to turn up right.",
+    publishedAt: "2026-07-24",
+    updatedAt: "2026-07-24",
+    category: "Planning",
+    readTime: "7 min read",
+    sections: [
+      {
+        heading: "So You Have Been Invited",
+        headingLevel: "h2" as const,
+        content: [
+          "Last updated: 24 July 2026",
+          "Almost every birthday guide is written for the person organising the night. This one is for everyone else at the table: the guest who has been invited to a birthday at a London club and is quietly wondering what they have signed up for. It is a fair thing to wonder, because a club birthday works differently from a house party or a dinner, and nobody ever explains the rules to the people being invited. After helping plan a lot of these nights, I can tell you the guests who enjoy them most are simply the ones who know what to expect, so here is everything you actually need to know, as of July 2026.",
+        ],
+      },
+      {
+        heading: "What Actually Happens on the Night",
+        headingLevel: "h2" as const,
+        content: [
+          "The shape of a club birthday is fairly consistent. The organiser has usually put the group on a guestlist or booked a table, which means your name, or the birthday person's name, gets you in at the door rather than a public queue. You arrive, you are pointed to the group's table or area if there is one, and the night builds from there. London's club scene runs to a particular rhythm, as Time Out's nightlife coverage at https://www.timeout.com/london/clubs lays out, and the practical upshot for a guest is simple: arrive close to the time you were given, because guestlists and tables have arrival windows, and turning up an hour late can mean the free or discounted entry has lapsed.",
+          "In my experience the guests who relax into it fastest are the ones who understand that the table, if there is one, is a base rather than a seat. It will usually be the group's meeting point for the night rather than a place everyone sits all evening. Expect to leave coats at the cloakroom, expect the music to be loud enough that the table is where you regroup between dancing, and expect the birthday person to be pulled in every direction. Your job as a guest is mostly to be easy to have around.",
+        ],
+      },
+      {
+        heading: "Will It Cost You Anything?",
+        headingLevel: "h2" as const,
+        content: [
+          "This is the question everyone is too polite to ask, so let me answer it plainly. I have watched more than one guest freeze at a card machine at the end of the night because nobody had told them the table bill was being split, and it is an easily avoided moment. Sometimes a club birthday costs a guest nothing beyond your own drinks, particularly if the organiser has sorted free guestlist entry. Sometimes, if the group has booked a table with bottles, the cost of that table is split across the people on it, and you may be asked to contribute a share. Neither is unusual, and neither is a trap; the important thing is to find out which it is early rather than on the night.",
+          "The honest move is to ask the organiser, before the day, whether there is a cost to join and roughly what it is. A good organiser will tell you gladly, and it lets you decide in comfort rather than being surprised at a card machine at 1am. If a shared table is beyond your budget, it is completely fine to say so and join for the entry and the dancing without going on the table bill. Saying it early, quietly and once is far better for everyone than backing out later.",
+        ],
+      },
+      {
+        heading: "Do You Bring a Present?",
+        headingLevel: "h2" as const,
+        content: [
+          "For a club birthday, a physical gift is usually optional and often impractical, because nobody wants to mind a wrapped box in a cloakroom all night. The general etiquette is that your presence, and your share of any group gift, is the present. Many groups organise a single joint gift that everyone chips into, coordinated by whoever is planning the night, which is easier for the birthday person to carry home and kinder to everyone's budget.",
+          "If you do want to bring something, keep it small and pocketable, a card, an envelope, or something that tucks into a bag. The one thing worth checking with the organiser is the cake, because a club birthday often has a cake arranged already, and a second surprise cake can complicate the venue's plans rather than help. When in doubt, ask the person organising rather than guessing.",
+        ],
+      },
+      {
+        heading: "How to Be a Good Guest",
+        headingLevel: "h2" as const,
+        content: [
+          "In my experience, the guests organisers quietly love are the ones who make the night easier to run. Reply to the invite quickly, because the organiser needs numbers for the guestlist or table and a late maybe is genuinely hard to plan around. Arrive on time for the same reason. Do not drop out at the last minute unless you truly have to, because a group that shrinks on the night can affect the table minimum and the door. And look out for the birthday person: a quick check that they are having a good time, and a hand keeping the group together, is worth more than any gift.",
+          "A couple of small things smooth the rest. Keep an eye on the group chat during the night so you do not get separated, and respect the venue's approach to phones and photos, which some rooms limit. None of this is complicated; it is just the difference between being a guest who is easy to have along and one who is quietly hard work.",
+        ],
+      },
+      {
+        heading: "The Short Version",
+        headingLevel: "h2" as const,
+        content: [
+          "Turn up on time, sort out in advance whether there is a cost to join, treat your presence and a share of a group gift as the present, and be the guest who is easy to have around. Do that and a club birthday is one of the best nights out going, precisely because someone else has done all the planning and all you have to do is show up and celebrate. That is the quiet privilege of being a guest rather than the organiser, and it is worth enjoying.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "Do you have to pay to attend a birthday at a London club?",
+        answer: "Sometimes yes, sometimes no. If the organiser has arranged free guestlist entry, you may only pay for your own drinks. If the group has booked a table with bottles, the cost is often split and you may be asked for a share. Ask the organiser in advance so you know which it is, as of July 2026.",
+      },
+      {
+        question: "Do you bring a present to a club birthday?",
+        answer: "Usually a physical gift is optional and impractical for a night out. Your presence and a share of any group gift is the accepted present. If you want to bring something, keep it small and pocketable, like a card, rather than anything that needs minding all night.",
+      },
+      {
+        question: "What time should you arrive at a club birthday?",
+        answer: "Close to the time you were given. Guestlists and table bookings have arrival windows, and arriving late can mean free or discounted entry has lapsed and the group has moved on. If you will be delayed, tell the organiser so they can plan around it.",
+      },
+      {
+        question: "What if you cannot afford a shared table?",
+        answer: "Say so early, quietly and once. It is completely acceptable to join for the entry and the dancing without going on the table bill. A good organiser will make room for that, and handling it in advance is far better than being caught out at the end of the night.",
+      },
+    ],
+  },
 ];

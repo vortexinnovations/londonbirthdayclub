@@ -56,6 +56,7 @@ export const images = {
   // Blog featured images (one per blog post — all unique)
   blog: {
     "dietary-requirements-london-club-birthday": "/gallery/images/maison-close-054.jpg",
+    "invited-to-a-birthday-at-a-london-club-guest-guide": "/gallery/images/maison-close-094.jpg",
     "birthday-for-someone-who-doesnt-like-clubs-london": "/gallery/images/maison-close-025.jpg",
     "birthday-weekend-london": "/gallery/images/maison-close-625.jpg",
     "joint-birthday-night-out-london": "/gallery/images/maison-close-288.jpg",
