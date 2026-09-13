@@ -1417,4 +1417,106 @@ export const blogDataPart4: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "december-birthday-london",
+    title: "How to Plan a December Birthday in London",
+    metaTitle: "December Birthday in London: How to Plan It",
+    metaDescription: "A December birthday competes with the whole Christmas party season. How to pick the date, book early enough, and get your friends to actually turn up.",
+    excerpt: "December birthdays are the hardest to plan in London. Every venue is chasing corporate money, your friends are triple-booked, and half the month is unusable. Here is how to work around it.",
+    publishedAt: "2026-09-13",
+    updatedAt: "2026-09-13",
+    category: "Planning",
+    readTime: "7 min read",
+    sections: [
+      {
+        heading: "The December Birthday Problem",
+        headingLevel: "h2" as const,
+        content: [
+          "Last updated: 13 September 2026",
+          "Having a birthday in December sounds festive and is, in practice, the hardest date in the year to plan around in London. You are not competing with other birthdays. You are competing with the entire Christmas party season, which means every decent room in the city is being fought over by companies with a budget, your friends have three other things on that weekend, and a good third of the month is effectively unusable. We arrange a lot of these nights and the December ones need a different plan from the rest of the year, so here is what actually works.",
+          "A December birthday does not have to be a compromise. It does mean the decisions that are casual in April become the whole game, and making them in the wrong order is what leaves people with a half-empty table.",
+        ],
+      },
+      {
+        heading: "Book Much Earlier Than You Would Any Other Month",
+        headingLevel: "h2" as const,
+        content: [
+          "The single biggest difference is lead time. For most of the year you can put a group night together with a couple of weeks of notice and have real choice. In December that window closes in early autumn, because venues start taking corporate bookings for the season long before the month arrives, and those bookings are larger and more predictable than a birthday group.",
+          "If your birthday falls in the first three weeks of December, treat late September and October as the sensible booking window rather than late November. That is not a sales line, it is simply when the good Friday and Saturday slots go. Leaving it until the month itself does not mean you will find nothing, but it does mean choosing from what is left rather than choosing what you want.",
+          "Fix the date first and the venue second. Groups that agree a venue before a date lose weeks, and in December weeks are exactly what you do not have.",
+        ],
+      },
+      {
+        heading: "Not All December Dates Are Equal",
+        headingLevel: "h2" as const,
+        content: [
+          "The month splits into three quite different stretches and knowing which one your birthday sits in changes everything.",
+          "Early December, roughly the first two weekends, is peak party season. The city is busy, the atmosphere is genuinely good, and this is when competition for tables is fiercest. If this is your window, book early and accept that you are planning alongside half of corporate London.",
+          "Mid December, around the third weekend, is the busiest and most expensive point of the entire year in London nightlife. It is also the most fun if you get it right. Expect everything to be full, expect minimum spends to reflect that, and expect your guests to be tired from the work events they have already attended.",
+          "Late December, from around the twenty-second onward, empties out fast. People leave London for family. Venues change their schedules, some close for a few days, and the ones that open are usually building toward New Year rather than running a normal night. A birthday in this stretch needs a different approach entirely.",
+        ],
+      },
+      {
+        heading: "Your Guest List Is the Real Constraint",
+        headingLevel: "h2" as const,
+        content: [
+          "In most months the hard part is the venue. In December it is the people. Your friends are carrying work parties, family commitments, other birthdays and travel, and a lot of them have already committed their good weekends before you have asked.",
+          "That means asking earlier and asking more directly than you normally would. A vague message in November about doing something before Christmas will get vague answers. A specific date, sent early, gets a yes or a no you can actually plan around. Treat silence as a no rather than a maybe, because in December it almost always is.",
+          "It also helps to accept a smaller number than you would expect in another month. A confirmed twelve is a far better night than a hoped-for twenty-five that arrives as nine. Build the booking around the people who have actually committed, and let anyone else join on the night.",
+        ],
+      },
+      {
+        heading: "The Crowd Is Different in December",
+        headingLevel: "h2" as const,
+        content: [
+          "Worth knowing before you pick a room: the crowd changes in December. Weeknights that are quiet for most of the year fill with office groups, and the mix in any given venue skews toward large mixed-age parties rather than the usual crowd. Some rooms handle that well and keep their character. Others feel noticeably different from how they feel in June.",
+          "If atmosphere matters more than the date, a weeknight in early December is a good trade: easier to book, more room, and a better chance of being looked after properly. If the date is fixed, be upfront about the kind of night you want so you get pointed at a room that still feels right on a heaving December Saturday.",
+          "Time Out keeps a broad and reasonably current view of what is on across the city at https://www.timeout.com/london/bars-pubs if you want a sense of the seasonal programming before you commit to a date.",
+        ],
+      },
+      {
+        heading: "Money Is Tighter for Everyone",
+        headingLevel: "h2" as const,
+        content: [
+          "December is the month when everyone is spending on other things. Presents, travel, their own work events. Asking a group to contribute to a table in December lands differently from asking in May, and it is worth planning around that rather than being surprised by it.",
+          "Be clear about the number per person as early as you set the date, so nobody is doing sums at the end of the night. If your group is stretched, a smaller table in a good room beats a big one that people quietly resent, and it is entirely reasonable to let some friends join for the night without going on the bill.",
+        ],
+      },
+      {
+        heading: "If Your Birthday Falls in Christmas Week",
+        headingLevel: "h2" as const,
+        content: [
+          "The last ten days of December are their own category. Half your friends have left London, venues run reduced or altered schedules, and anything close to New Year is priced and booked as a New Year event rather than a normal night.",
+          "Two things work here. The first is to move the celebration rather than the birthday: hold the night in the second or third week of December when people are still around, and keep the day itself for family. Nobody minds celebrating early, and a full room a fortnight beforehand beats an empty one on the day. The second, if the actual date matters to you, is to plan something smaller and deliberately intimate, and accept that a Christmas-week birthday is a different kind of night rather than a worse one.",
+          "The one date to think hard about is the thirty-first. A birthday on New Year Eve is not really a birthday booking at all, and it should be planned as a New Year night months ahead, on New Year terms.",
+        ],
+      },
+      {
+        heading: "A Simple Order to Do It In",
+        headingLevel: "h2" as const,
+        content: [
+          "Fix the date first, working around the three stretches above rather than defaulting to the day itself. Ask your group early and specifically, and take silence as a no. Settle the per-person number before anyone commits. Then book, and book sooner than feels necessary.",
+          "Done in that order, a December birthday is one of the best nights of the year, because the city is at its most alive. Done in the usual order it is the one month where that reliably goes wrong.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "How far in advance should I book a December birthday in London?",
+        answer: "Much further ahead than any other month. Venues start filling their December schedule with corporate bookings during the autumn, so late September and October are the realistic window for a good Friday or Saturday slot. Leaving it to November usually means choosing from what is left.",
+      },
+      {
+        question: "Which part of December is best for a birthday?",
+        answer: "Early December is busy but manageable and has the best atmosphere to availability balance. The third weekend is the peak of the whole year, so it is the hardest to book and the most expensive. After around the twenty-second the city empties and venues run altered schedules.",
+      },
+      {
+        question: "What if my birthday is right before Christmas?",
+        answer: "Consider moving the celebration rather than the date. Holding the night in the second or third week of December, while people are still in London, usually produces a much fuller room than the day itself. Keep the actual day for family if that suits you better.",
+      },
+      {
+        question: "Why do fewer friends say yes to December birthdays?",
+        answer: "Because they are genuinely overcommitted rather than uninterested. Work parties, family plans and travel take up most good December dates, and many are booked before you ask. Asking early with a specific date, and treating no reply as a no, gives you a guest list you can actually plan around.",
+      },
+    ],
+  },
 ];
