@@ -26,10 +26,10 @@ export async function generateMetadata({
   const club = getClubBySlug(slug);
   if (!club) return {};
 
-  if (club.status === "rebranded") {
-    const formerName = club.formerName ?? club.name;
-    const title = `${formerName} Is Now ${club.shortName}: Birthday Alternatives`;
-    const description = `${formerName} in ${club.area} is now ${club.shortName}. What changed, and the open London clubs to book for a birthday instead, free via WhatsApp.`;
+  if (club.status === "open" && club.formerName) {
+    const formerName = club.formerName;
+    const title = `${formerName} Is Now ${club.shortName} | Birthday Table Booking`;
+    const description = `${formerName} is now ${club.shortName}, ${club.location}. Open ${club.openingNights.replace(/, (?=[^,]*$)/, " and ")}. Book a birthday table at ${club.shortName} free via WhatsApp.`;
     return {
       title,
       description,
@@ -84,10 +84,15 @@ export default async function ClubPage({
   const club = getClubBySlug(slug);
   if (!club) notFound();
 
-  const faqs = [
+  // A renamed venue is open and bookable; the page leads with "Old is now New".
+  const isRenamed = club.status === "open" && Boolean(club.formerName);
+  const renamedFrom = (club.formerName ?? "").replace(/ London$/i, "");
+  const hasMinSpend = club.minSpend.startsWith("£");
+
+  const allFaqs = [
     {
       question: `How much is a birthday table at ${club.name}?`,
-      answer: `Minimum table spend at ${club.name} starts from ${club.minSpend}. This covers bottles and mixers for your group — it's not an additional charge on top of drinks. Prices can vary depending on the night of the week, table position, and group size. Contact us on WhatsApp for an exact quote for your birthday.`,
+      answer: `${hasMinSpend ? `Minimum table spend at ${club.name} starts from ${club.minSpend}.` : `Minimum table spends at ${club.name} are quoted on request.`} This covers bottles and mixers for your group; it's not an additional charge on top of drinks. Prices can vary depending on the night of the week, table position, and group size. Contact us on WhatsApp for an exact quote for your birthday.`,
     },
     {
       question: `What birthday extras does ${club.name} offer?`,
@@ -106,12 +111,14 @@ export default async function ClubPage({
       answer: `Simply message us on WhatsApp with your birthday date, group size, and any special requests. We'll confirm availability at ${club.name}, arrange your table and birthday extras, and make sure everything is sorted before you arrive. Our service is completely free.`,
     },
   ];
+  // A renamed venue has no confirmed dress code yet, so it gets no dress code FAQ.
+  const faqs = isRenamed
+    ? allFaqs.filter((f) => !f.question.startsWith("What is the dress code"))
+    : allFaqs;
 
   const otherClubs = openClubs.filter((c) => c.slug !== club.slug).slice(0, 4);
-  const isRebranded = club.status === "rebranded";
-  // Closed and rebranded venues are not sold: no prices, booking FAQ or booking CTA.
-  const isClosed = club.status === "closed" || isRebranded;
-  const formerName = club.formerName ?? club.name;
+  // Closed venues are not sold: no prices, booking FAQ or booking CTA.
+  const isClosed = club.status === "closed";
   const alternativeClubs = isClosed && club.alternatives
     ? club.alternatives.map((s) => getClubBySlug(s)).filter(Boolean)
     : [];
@@ -125,7 +132,7 @@ export default async function ClubPage({
         <section className="pt-36 sm:pt-40 pb-10 px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto border-y border-[#8a4432]/40 bg-[#2a120b]/40 px-6 sm:px-8 py-8">
             <h2 className="font-display font-medium text-lg sm:text-xl text-[#d98d75] mb-3">
-              {isRebranded ? `${formerName} Is Now ${club.shortName}` : `${club.name} Has Permanently Closed`}
+              {club.name} Has Permanently Closed
             </h2>
             <p className="font-sans text-base leading-[1.8] text-ink-soft mb-5">
               {club.closedNote}
@@ -174,7 +181,7 @@ export default async function ClubPage({
               &larr; All Birthday Venues
             </Link>
             <h1 className="font-display font-medium text-[2.9rem] leading-[1.04] tracking-[-0.015em] sm:text-6xl lg:text-[4.75rem] text-ink mb-6">
-              {isRebranded ? `${formerName} is now ` : "Birthday at "}
+              {isRenamed ? `${renamedFrom} is now ` : "Birthday at "}
               <em
                 className={
                   isClosed
@@ -182,14 +189,12 @@ export default async function ClubPage({
                     : "italic text-champagne font-normal"
                 }
               >
-                {isRebranded ? club.shortName : club.name}
+                {isRenamed ? club.shortName : club.name}
               </em>
             </h1>
             {isClosed && (
               <p className="font-sans font-semibold text-[#d98d75] mb-5">
-                {isRebranded
-                  ? `Renamed venue: not on our booking list yet`
-                  : "This venue has permanently closed"}
+                This venue has permanently closed
               </p>
             )}
             {!isClosed && (
@@ -222,7 +227,9 @@ export default async function ClubPage({
             {[
               { label: "Min Spend", value: club.minSpend },
               { label: "Location", value: club.area },
-              { label: "Music", value: club.musicPolicy.split(",")[0] },
+              isRenamed
+                ? { label: "Formerly", value: renamedFrom }
+                : { label: "Music", value: club.musicPolicy.split(",")[0] },
               { label: "Open", value: club.openingNights },
             ].map((fact) => (
               <div key={fact.label} className="border-l border-hairline pl-6 py-2">
@@ -310,7 +317,9 @@ export default async function ClubPage({
 
       {!isClosed && (
       <>
-      {/* Atmosphere & Group Advice */}
+      {/* Atmosphere & Group Advice (not confirmed yet for a renamed venue) */}
+      {!isRenamed && (
+      <>
       <section className="py-24 sm:py-28 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-x-14 gap-y-14">
           <div data-reveal>
@@ -343,6 +352,8 @@ export default async function ClubPage({
       </section>
 
       <div className="divider-gilt" />
+      </>
+      )}
 
       {/* Pro Tip */}
       <section className="py-24 sm:py-28 px-4 sm:px-6 lg:px-8 bg-noir-soft">
@@ -376,7 +387,8 @@ export default async function ClubPage({
           <div className="border-y border-hairline divide-y divide-hairline" data-reveal>
             {(
               [
-                { label: "Minimum Table Spend", value: `From ${club.minSpend}`, price: true },
+                { label: "Minimum Table Spend", value: hasMinSpend ? `From ${club.minSpend}` : club.minSpend, price: true },
+                ...(isRenamed ? [{ label: "Formerly", value: renamedFrom }] : []),
                 { label: "Location", value: club.location },
                 { label: "Music Policy", value: club.musicPolicy },
                 { label: "Dress Code", value: club.dressCode },
@@ -458,9 +470,7 @@ export default async function ClubPage({
                 </em>
               </h2>
               <p className="font-sans text-[1.0625rem] leading-[1.8] text-ink-soft mb-10 max-w-xl mx-auto">
-                {isRebranded
-                  ? `${formerName} is now ${club.shortName}, which is not on our booking list yet. Message us on WhatsApp and we will recommend an open venue for your birthday.`
-                  : `${club.name} has permanently closed, but we can help you find the perfect alternative. Message us on WhatsApp and we'll recommend the best venue for your birthday.`}
+                {`${club.name} has permanently closed, but we can help you find the perfect alternative. Message us on WhatsApp and we'll recommend the best venue for your birthday.`}
               </p>
               <WhatsAppCTA
                 message={getGeneralWhatsAppMessage()}
@@ -521,9 +531,11 @@ export default async function ClubPage({
                   {c.name}
                 </div>
                 <div className="mt-2 flex items-baseline gap-2">
+                  {c.minSpend.startsWith("£") && (
                   <span className="font-sans text-[0.625rem] uppercase tracking-[0.26em] text-ink-faint">
                     From
                   </span>
+                  )}
                   <span className="font-display italic text-lg text-champagne">
                     {c.minSpend}
                   </span>

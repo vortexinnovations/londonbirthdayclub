@@ -10,9 +10,9 @@ import ItemListSchema from "@/components/ItemListSchema";
 import ArticleSchema from "@/components/ArticleSchema";
 
 export const metadata: Metadata = {
-  title: "9 Best Birthday Clubs in London (2026) — Ranked by Real Experience",
+  title: "11 Best Birthday Clubs in London (2026): Ranked by Real Experience",
   description:
-    "We've booked hundreds of birthday tables. Here are the 9 best London clubs for a birthday, honestly ranked. Cirque Le Soir, Tape, The Box & more — with prices, group advice, and what to expect.",
+    "We've booked hundreds of birthday tables. Here are the 11 best London clubs for a birthday, honestly ranked. Cirque Le Soir, Tape, The Box & more, with prices, group advice, and what to expect.",
   alternates: {
     canonical: "https://londonbirthdayclub.com/best-birthday-clubs-london",
   },
@@ -101,6 +101,20 @@ const rankings = [
       "BEAT is the choice for birthday groups where the music genuinely matters. The sound system is among the best in London, and the house and tech house policy creates a dancefloor energy that's about the music, not about being seen. More relaxed on dress code, more focused on the experience.",
     bestForTag: "Music-First Birthday",
   },
+  {
+    position: 10,
+    slug: "tabu-london",
+    verdict:
+      "TABU is now Rumour, and the club at 1 Dover Street takes birthday bookings again under its new name. Rumour opens Wednesday to Saturday from 11pm, a short walk from Green Park station. It sits at ten because it is new under this name: music, dress code and table minimums are Rumour's own, and none of TABU's old terms carry over. Message us for current birthday table options.",
+    bestForTag: "TABU Is Now Rumour",
+  },
+  {
+    position: 11,
+    slug: "cuckoo-club",
+    verdict:
+      "Cuckoo Club is now 99 Regent Street, on Swallow Street by Piccadilly Circus. It opens Wednesday to Saturday for over 19s, with tables from £600 minimum spend, so it suits a birthday group that is all 19 or older. It sits at eleven because it is new under this name, and none of Cuckoo Club's old terms carry over.",
+    bestForTag: "Cuckoo Club Is Now 99 Regent Street",
+  },
 ];
 
 export default function BestClubsPage() {
@@ -117,8 +131,8 @@ export default function BestClubsPage() {
     <>
       <FAQSchema faqs={faqs} />
       <BreadcrumbSchema items={[{ name: "Home", href: "/" }, { name: "Best Birthday Clubs London", href: "/best-birthday-clubs-london" }]} />
-      <ItemListSchema name="Best Birthday Clubs in London 2026" description="9 London nightclubs ranked for birthday celebrations, based on atmosphere, service, entertainment, and birthday-specific features." items={itemListItems} />
-      <ArticleSchema title="9 Best Birthday Clubs in London — Ranked by Real Experience" description="Honest, ranked guide to the best London nightclubs for birthday celebrations." url="https://londonbirthdayclub.com/best-birthday-clubs-london" />
+      <ItemListSchema name="Best Birthday Clubs in London 2026" description="11 London nightclubs ranked for birthday celebrations, based on atmosphere, service, entertainment, and birthday-specific features." items={itemListItems} />
+      <ArticleSchema title="11 Best Birthday Clubs in London: Ranked by Real Experience" description="Honest, ranked guide to the best London nightclubs for birthday celebrations." url="https://londonbirthdayclub.com/best-birthday-clubs-london" />
 
       {/* Hero */}
       <section className="relative min-h-[64vh] img-editorial flex items-end overflow-hidden">
@@ -197,7 +211,7 @@ export default function BestClubsPage() {
                         {club.area}
                       </span>
                       <span className="font-sans text-[0.75rem] uppercase tracking-[0.18em] text-ink-faint">
-                        From{" "}
+                        {club.minSpend.startsWith("£") ? "From " : ""}
                         <span className="font-display italic font-medium text-lg text-champagne normal-case tracking-normal">
                           {club.minSpend}
                         </span>

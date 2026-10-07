@@ -284,7 +284,7 @@ export default function HomePage() {
               {
                 href: "/birthday-clubs-london",
                 label: "Birthday Clubs London",
-                sub: "All 9 venues compared",
+                sub: "All 11 venues compared",
               },
               {
                 href: "/birthday-table-booking-london",

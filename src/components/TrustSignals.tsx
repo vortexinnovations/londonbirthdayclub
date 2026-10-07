@@ -8,7 +8,7 @@ export default function TrustSignals() {
         >
           {[
             { stat: "Free", label: "No booking fees" },
-            { stat: "9", label: "Partner venues" },
+            { stat: "11", label: "Partner venues" },
             { stat: "WhatsApp", label: "Instant response" },
             { stat: "5 min", label: "Average booking time" },
           ].map((item) => (

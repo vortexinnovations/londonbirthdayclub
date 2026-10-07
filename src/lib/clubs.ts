@@ -19,11 +19,10 @@ export interface Club {
   atmosphere: string;
   groupSizeAdvice: string;
   proTip: string;
-  /** "rebranded": the venue trades under a new name (name holds "New (formerly Old)"). */
-  status: "open" | "closed" | "rebranded";
-  /** Rebranded venues only: the old name people still search for. */
+  status: "open" | "closed";
+  /** Renamed venues only (still open and bookable; name holds "New (formerly Old)"): the old name people still search for. */
   formerName?: string;
-  /** Closed or rebranded venues: the statement shown at the top of the venue page. */
+  /** Closed venues: the statement shown at the top of the venue page. */
   closedNote?: string;
   alternatives?: string[];
 }
@@ -176,29 +175,33 @@ export const clubs: Club[] = [
     name: "Rumour (formerly TABU)",
     shortName: "Rumour",
     formerName: "TABU London",
-    tagline: "TABU London is now Rumour",
-    location: "Mayfair, London",
+    tagline: "TABU Is Now Rumour",
+    location: "1 Dover Street, Mayfair",
     area: "Mayfair",
-    minSpend: "Not confirmed",
-    musicPolicy: "Not confirmed",
-    dressCode: "Not confirmed for Rumour.",
-    openingNights: "Not confirmed",
-    capacity: "Not confirmed",
+    minSpend: "On request",
+    musicPolicy: "To be confirmed",
+    dressCode: "Not confirmed for Rumour yet: ask us when you book.",
+    openingNights: "Wednesday, Thursday, Friday, Saturday",
+    capacity: "To be confirmed",
     birthdayRating: 0,
-    bestFor: "TABU London is now Rumour",
-    status: "rebranded",
-    closedNote:
-      "TABU London is now Rumour. The Mayfair club trades under its new name, so there are no TABU birthday tables or guestlist names any more. Rumour is not on our booking list yet. For a hip-hop and RnB birthday in Mayfair, Tape London is the closest match, Scotch of St James suits a smaller group, and Cirque Le Soir adds performers to the same music.",
-    alternatives: ["tape-london", "scotch-of-st-james", "cirque-le-soir"],
+    bestFor: "Birthday tables on Dover Street, Wednesday to Saturday",
+    status: "open",
     description:
-      "TABU London is now Rumour. People still search for TABU when planning a birthday, so this page explains the change and where to book instead. History: as TABU, the venue was a dark, Japanese-underground-themed Mayfair club playing hip-hop, RnB and Afrobeats. Rumour's music, nights, prices and door policy are not confirmed here yet, so none of TABU's old terms should be read as Rumour's.",
-    birthdayHighlights: [],
+      "TABU is now Rumour. The Mayfair club at 1 Dover Street trades under its new name and opens Wednesday to Saturday from 11pm. People still search for TABU when planning a birthday, so this page covers the change and how to book a birthday table at Rumour, free via WhatsApp.",
+    birthdayHighlights: [
+      "TABU is now Rumour, at 1 Dover Street in Mayfair",
+      "Open Wednesday to Saturday from 11pm",
+      "A short walk from Green Park station",
+      "Birthday tables booked free through us on WhatsApp",
+    ],
     whatToExpect:
-      "TABU London is now Rumour. If you were planning a birthday at TABU, Tape London on Hanover Square is the closest match for hip-hop and RnB in Mayfair, Scotch of St James is a small, characterful room for a tighter group, and Cirque Le Soir in Soho adds performers and a show to the same music.",
-    birthdayExtras: "TABU London is now Rumour.",
-    atmosphere: "TABU London is now Rumour.",
-    groupSizeAdvice: "TABU London is now Rumour.",
-    proTip: "TABU London is now Rumour. For a similar birthday, try Tape London, Scotch of St James or Cirque Le Soir.",
+      "Rumour is the new name for the club at 1 Dover Street, the room that was TABU. Doors open from 11pm, Wednesday to Saturday. Music, dress code and table minimums are the new venue's own, and none of TABU's old terms carry over, so message us with your date and group size for current birthday table options. History: under the TABU name, the room was a Japanese-underground-themed Mayfair club.",
+    birthdayExtras:
+      "Ask us on WhatsApp which birthday extras Rumour can arrange for your table, such as sparklers, cake or decorations, and we will confirm what is available on your night.",
+    atmosphere: "Not confirmed for Rumour yet.",
+    groupSizeAdvice: "Not confirmed for Rumour yet: tell us your group size and we will check table options.",
+    proTip:
+      "TABU is now Rumour, so look for it under the new name. Doors open from 11pm, Wednesday to Saturday.",
   },
   {
     slug: "funky-buddha",
@@ -216,13 +219,13 @@ export const clubs: Club[] = [
     bestFor: "This venue has permanently closed",
     status: "closed",
     closedNote:
-      "Funky Buddha has closed. The Berkeley Street club in Mayfair no longer takes birthday tables or guestlist names. For the same hip-hop and RnB party energy, Tape London, Cirque Le Soir and Reign London are the closest open alternatives.",
+      "Funky Buddha has closed, and Itzel now operates at its Berkeley Street address. Funky Buddha no longer takes birthday tables or guestlist names. For the same hip-hop and RnB party energy, Tape London, Cirque Le Soir and Reign London are the closest open alternatives.",
     alternatives: ["tape-london", "cirque-le-soir", "reign-london"],
     description:
-      "Funky Buddha was one of the best-known clubs in Mayfair, on Berkeley Street, with an intimate room, a hip-hop, RnB, dancehall and Afrobeats music policy and a long celebrity following. Funky Buddha has now closed.",
+      "Funky Buddha was one of the best-known clubs in Mayfair, on Berkeley Street, with an intimate room, a hip-hop, RnB, dancehall and Afrobeats music policy and a long celebrity following. Funky Buddha has now closed, and Itzel now operates at its Berkeley Street address.",
     birthdayHighlights: [],
     whatToExpect:
-      "Funky Buddha has closed. If you were planning a birthday there, Tape London is the closest match for hip-hop and RnB in Mayfair, Cirque Le Soir adds performers and a show to the same music, and Reign London suits a bigger birthday group with a full production.",
+      "Funky Buddha has closed, and Itzel now operates at its Berkeley Street address. If you were planning a birthday there, Tape London is the closest match for hip-hop and RnB in Mayfair, Cirque Le Soir adds performers and a show to the same music, and Reign London suits a bigger birthday group with a full production.",
     birthdayExtras: "Funky Buddha has closed.",
     atmosphere: "Funky Buddha has closed.",
     groupSizeAdvice: "Funky Buddha has closed.",
@@ -233,29 +236,34 @@ export const clubs: Club[] = [
     name: "99 Regent Street (formerly Cuckoo Club)",
     shortName: "99 Regent Street",
     formerName: "Cuckoo Club",
-    tagline: "Cuckoo Club is now 99 Regent Street",
-    location: "Swallow Street, Mayfair",
+    tagline: "Cuckoo Club Is Now 99 Regent Street",
+    location: "Swallow Street, by Piccadilly Circus",
     area: "Mayfair",
-    minSpend: "Not confirmed",
-    musicPolicy: "Not confirmed",
-    dressCode: "Not confirmed for 99 Regent Street.",
-    openingNights: "Not confirmed",
-    capacity: "Not confirmed",
+    minSpend: "£600",
+    musicPolicy: "To be confirmed",
+    dressCode: "Not confirmed for 99 Regent Street yet: ask us when you book. Entry is for over 19s.",
+    openingNights: "Wednesday, Thursday, Friday, Saturday",
+    capacity: "To be confirmed",
     birthdayRating: 0,
-    bestFor: "Cuckoo Club is now 99 Regent Street",
-    status: "rebranded",
-    closedNote:
-      "Cuckoo Club is now 99 Regent Street. The venue on Swallow Street trades under its new name, so there are no Cuckoo Club birthday tables or guestlist names any more. 99 Regent Street is not on our booking list yet. For a birthday nearby, Reign London on Piccadilly suits big groups, The Box in Soho is the late-night show, and Scotch of St James mixes hip-hop and house.",
-    alternatives: ["reign-london", "the-box-london", "scotch-of-st-james"],
+    bestFor: "Birthday tables by Piccadilly Circus from £600, over 19s",
+    status: "open",
     description:
-      "Cuckoo Club is now 99 Regent Street. People still search for Cuckoo Club when planning a birthday, so this page explains the change and where to book instead. History: as Cuckoo Club, the venue on Swallow Street ran two floors, house and commercial upstairs and hip-hop and RnB downstairs. The music, nights, prices and door policy at 99 Regent Street are not confirmed here yet, so none of Cuckoo Club's old terms should be read as 99 Regent Street's.",
-    birthdayHighlights: [],
+      "Cuckoo Club is now 99 Regent Street. The venue on Swallow Street, by Piccadilly Circus, trades under its new name and opens Wednesday to Saturday for over 19s, with tables from £600. People still search for Cuckoo Club when planning a birthday, so this page covers the change and how to book a birthday table at 99 Regent Street, free via WhatsApp.",
+    birthdayHighlights: [
+      "Cuckoo Club is now 99 Regent Street, on Swallow Street by Piccadilly Circus",
+      "Tables from £600 minimum spend",
+      "Open Wednesday to Saturday",
+      "Over 19s only: every guest needs photo ID",
+      "Birthday tables booked free through us on WhatsApp",
+    ],
     whatToExpect:
-      "Cuckoo Club is now 99 Regent Street. If you were planning a birthday at Cuckoo Club, Reign London on Piccadilly is a few minutes away and suits large groups, The Box in Soho turns a birthday into a theatrical late night, and Scotch of St James mixes hip-hop, RnB and house depending on the night.",
-    birthdayExtras: "Cuckoo Club is now 99 Regent Street.",
-    atmosphere: "Cuckoo Club is now 99 Regent Street.",
-    groupSizeAdvice: "Cuckoo Club is now 99 Regent Street.",
-    proTip: "Cuckoo Club is now 99 Regent Street. For a similar birthday, try Reign London, The Box or Scotch of St James.",
+      "99 Regent Street is the new name for the Swallow Street venue that was Cuckoo Club, by Piccadilly Circus. It opens Wednesday to Saturday, entry is for over 19s, and tables start from £600 minimum spend. Music and dress code are the new venue's own, and none of Cuckoo Club's old terms carry over, so message us with your date and group size for birthday table options. History: under the Cuckoo Club name, the venue was a long-running Swallow Street club.",
+    birthdayExtras:
+      "Ask us on WhatsApp which birthday extras 99 Regent Street can arrange for your table, such as sparklers, cake or decorations, and we will confirm what is available on your night.",
+    atmosphere: "Not confirmed for 99 Regent Street yet.",
+    groupSizeAdvice: "Not confirmed for 99 Regent Street yet: tell us your group size and we will check table options.",
+    proTip:
+      "Entry is for over 19s, so check every guest's age and bring photo ID. That rules it out for an 18th birthday.",
   },
   {
     slug: "scotch-of-st-james",
@@ -542,10 +550,10 @@ export const clubs: Club[] = [
     bestFor: "This venue has permanently closed",
     status: "closed",
     closedNote:
-      "Luxx Club London has permanently closed. The venue was known for its stunning LED installations and electric light shows that made every birthday celebration visually spectacular. While Luxx is no longer operating, its legacy as one of Mayfair's most photogenic birthday venues lives on.",
+      "Luxx Club London has permanently closed, and its successor is Itzel, which now operates at its Berkeley Street address. The venue was known for its stunning LED installations and electric light shows that made every birthday celebration visually spectacular. While Luxx is no longer operating, its legacy as one of Mayfair's most photogenic birthday venues lives on.",
     alternatives: ["selene-london", "reign-london", "the-box-london"],
     description:
-      "Luxx Club London was a premium Mayfair venue famous for its electric light show theme and stunning LED imagery. The club offered an immersive visual experience with dynamic LED installations that transformed the space throughout the night. Luxx has now permanently closed.",
+      "Luxx Club London was a premium Mayfair venue famous for its electric light show theme and stunning LED imagery. The club offered an immersive visual experience with dynamic LED installations that transformed the space throughout the night. Luxx has now permanently closed; its successor is Itzel.",
     birthdayHighlights: [
       "Stunning LED light shows and visual installations",
       "Every corner was Instagram-worthy for birthday photos",
@@ -553,7 +561,7 @@ export const clubs: Club[] = [
       "Premium Mayfair location and service standards",
       "Dynamic atmosphere that evolved through the night",
     ],
-    whatToExpect: "Luxx Club London has permanently closed. If you were planning a birthday at Luxx, we recommend Selene London for refined elegance, Reign London for production and shows, or The Box for a theatrical night.",
+    whatToExpect: "Luxx Club London has permanently closed, and its successor is Itzel. If you were planning a birthday at Luxx, we recommend Selene London for refined elegance, Reign London for production and shows, or The Box for a theatrical night.",
     birthdayExtras: "Luxx Club London has permanently closed.",
     atmosphere: "Luxx Club London has permanently closed.",
     groupSizeAdvice: "Luxx Club London has permanently closed.",
@@ -608,10 +616,10 @@ export const clubs: Club[] = [
     bestFor: "This venue has permanently closed",
     status: "closed",
     closedNote:
-      "Libertine has permanently closed. Known for its sophisticated, futuristic design and excellent sound system, Libertine was a popular choice for style-conscious birthday celebrations. For a similar experience, Selene London, Tape London and The Box are excellent alternatives.",
+      "Libertine has permanently closed, and Selene now operates in its place. Known for its sophisticated, futuristic design and excellent sound system, Libertine was a popular choice for style-conscious birthday celebrations. For a similar experience, Selene London, Tape London and The Box are excellent alternatives.",
     alternatives: ["selene-london", "tape-london", "the-box-london"],
     description:
-      "Libertine brought a sophisticated, futuristic energy to Mayfair's nightlife scene. The venue combined sleek design with state-of-the-art lighting and sound. Libertine has now permanently closed.",
+      "Libertine brought a sophisticated, futuristic energy to Mayfair's nightlife scene. The venue combined sleek design with state-of-the-art lighting and sound. Libertine has now permanently closed, and Selene now operates in its place.",
     birthdayHighlights: [
       "Futuristic, visually stunning interior design",
       "State-of-the-art sound and lighting systems",
@@ -619,11 +627,11 @@ export const clubs: Club[] = [
       "Well-positioned tables with great sightlines",
       "Attentive, professional service team",
     ],
-    whatToExpect: "Libertine has permanently closed. If you were planning a birthday here, we recommend Tape London for hip-hop and RnB, Selene London for refined elegance, or The Box for a theatrical night.",
+    whatToExpect: "Libertine has permanently closed, and Selene now operates in its place. If you were planning a birthday here, Selene London is the venue there now, Tape London suits hip-hop and RnB, and The Box suits a theatrical night.",
     birthdayExtras: "Libertine has permanently closed.",
     atmosphere: "Libertine has permanently closed.",
     groupSizeAdvice: "Libertine has permanently closed.",
-    proTip: "Libertine has permanently closed. For a similar sophisticated Mayfair birthday, try Tape London for hip-hop and RnB, Selene for refined elegance, or The Box for theatre.",
+    proTip: "Libertine has permanently closed, and Selene now operates in its place. For a birthday there, book Selene; for hip-hop and RnB, try Tape London, or The Box for theatre.",
   },
 ];
 

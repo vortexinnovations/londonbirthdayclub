@@ -9,16 +9,16 @@ import FAQSchema from "@/components/FAQSchema";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 export const metadata: Metadata = {
-  title: "Birthday Clubs London — 9 Venues Compared (2026)",
+  title: "Birthday Clubs London: 11 Venues Compared (2026)",
   description:
-    "Compare 9 London birthday clubs side by side — minimum spends, music, group size, and what makes each one great for birthdays. Tables from £1,000. Free booking via WhatsApp.",
+    "Compare 11 London birthday clubs side by side: minimum spends, music, group size, and what makes each one great for birthdays. Tables from £1,000. Free booking via WhatsApp.",
   alternates: {
     canonical: "https://londonbirthdayclub.com/birthday-clubs-london",
   },
   openGraph: {
     title: "Birthday Clubs in London | Find Your Perfect Venue",
     description:
-      "Compare 9 London nightclubs for birthday celebrations. VIP tables, bottle service, birthday packages. Free booking via WhatsApp.",
+      "Compare 11 London nightclubs for birthday celebrations. VIP tables, bottle service, birthday packages. Free booking via WhatsApp.",
     url: "https://londonbirthdayclub.com/birthday-clubs-london",
   },
 };
@@ -186,7 +186,7 @@ export default function BirthdayClubsLondonPage() {
                     <div className="flex flex-wrap items-baseline gap-x-5 gap-y-1 font-sans text-[0.75rem] uppercase tracking-[0.18em] text-ink-faint mb-3">
                       <span>{club.area}</span>
                       <span>
-                        From{" "}
+                        {club.minSpend.startsWith("£") ? "From " : ""}
                         <span className="font-display italic font-medium text-lg normal-case tracking-normal text-champagne">
                           {club.minSpend}
                         </span>

@@ -32,7 +32,7 @@ const faqs = [
   {
     question: "Which London clubs are open on a Thursday?",
     answer:
-      "Thursday is a popular night in Mayfair with several top clubs open: Tape London, Maddox Club, Scotch of St James, Dear Darling, and The Box London all operate on Thursday nights. It's an excellent night for birthdays with strong atmosphere and lower minimum spends than weekends.",
+      "Thursday is a popular night in Mayfair with several top clubs open: Tape London, Maddox Club, Scotch of St James, Dear Darling, The Box London, Rumour (formerly TABU) and 99 Regent Street (formerly Cuckoo Club) all operate on Thursday nights. It's an excellent night for birthdays with strong atmosphere and lower minimum spends than weekends.",
   },
 ];
 
@@ -42,7 +42,7 @@ const nights = [
     slug: "wednesday",
     energy: "Building momentum",
     minSpendNote: "Lower than weekend, great value",
-    venuesOpen: ["Cirque Le Soir"],
+    venuesOpen: ["Cirque Le Soir", "Rumour", "99 Regent Street"],
     description:
       "Wednesday is an underrated birthday night. Cirque Le Soir's Wednesday offering is particularly noteworthy — you still get the full circus experience with live performers, but the atmosphere is slightly more intimate than Friday.",
     bestFor:
@@ -61,6 +61,8 @@ const nights = [
       "Scotch of St James",
       "Dear Darling",
       "The Box London",
+      "Rumour",
+      "99 Regent Street",
     ],
     description:
       "Thursday is the sweet spot for London birthday celebrations. Nearly every major Mayfair venue is open, the atmosphere is genuinely lively, and minimum spends are lower than weekends. The crowd on a Thursday tends to be slightly more industry-connected and fashion-forward — people who know the scene.",
@@ -84,6 +86,8 @@ const nights = [
       "BEAT London",
       "The Box London",
       "Selene London",
+      "Rumour",
+      "99 Regent Street",
     ],
     description:
       "Friday is when London nightlife hits its stride. Every venue is open, the energy is high, and the crowd is ready to celebrate. For birthdays, Friday offers the biggest choice of venues and consistently strong atmospheres across the board. Cirque Le Soir often has its best performance lineup on Fridays.",
@@ -107,6 +111,8 @@ const nights = [
       "BEAT London",
       "The Box London",
       "Selene London",
+      "Rumour",
+      "99 Regent Street",
     ],
     description:
       "Saturday is the biggest night in London nightlife. Every venue operates at full capacity, the atmosphere peaks, and the energy is at its absolute maximum. For birthdays, a Saturday night means your celebration happens when the room is at its most electric. The downside is the highest minimum spends and the most competition for premium table positions.",
@@ -229,6 +235,8 @@ export default function BirthdayByNightPage() {
                       "BEAT London": "beat-london",
                       "The Box London": "the-box-london",
                       "Selene London": "selene-london",
+                      "Rumour": "tabu-london",
+                      "99 Regent Street": "cuckoo-club",
                     };
                     return (
                       <Link

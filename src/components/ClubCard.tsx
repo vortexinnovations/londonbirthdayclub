@@ -18,7 +18,7 @@ export default function ClubCard({ club }: { club: Club }) {
         <div className="grade" />
         <div className="absolute top-5 right-5 z-[3] text-right">
           <span className="block font-sans text-[0.625rem] uppercase tracking-[0.26em] text-ink-soft">
-            Tables from
+            {club.minSpend.startsWith("£") ? "Tables from" : "Table prices"}
           </span>
           <span className="font-display italic text-xl text-champagne-bright">
             {club.minSpend}

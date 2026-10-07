@@ -26,7 +26,7 @@ export default function TwentyFirstBirthdayPage() {
     { slug: "cirque-le-soir", reason: "The undisputed champion for 21st birthdays. The live circus performers, pyrotechnic bottle presentations, and immersive atmosphere create a night that defines what turning 21 should feel like. Your group will be genuinely amazed — fire breathers, acrobats, and the kind of spectacle that makes this milestone birthday monumental." },
     { slug: "tape-london", reason: "For a 21st that prioritises exclusivity over spectacle. The members' club atmosphere, A-list clientele, and world-class sound create a celebration that feels genuinely VIP. Best for smaller 21st birthday groups of 8-12 who want quality over quantity." },
     { slug: "the-box-london", reason: "For the adventurous 21st birthday group. The provocative theatrical performances are unlike anything else in London — your group will be talking about this night for years. A genuinely unique way to mark the milestone." },
-    { slug: "cirque-le-soir", reason: "Fire breathers, acrobats and pyrotechnic bottle shows around your table, with hip-hop and RnB in between. The most spectacular way to mark a 21st." },
+    { slug: "cuckoo-club", reason: "Cuckoo Club is now 99 Regent Street, on Swallow Street by Piccadilly Circus. Entry is for over 19s, it opens Wednesday to Saturday, and tables start from £600 minimum spend." },
     { slug: "reign-london", reason: "For a big 21st group of 15 or more, Reign has the space for adjacent tables and aerial performances that keep the whole group entertained." },
   ];
 

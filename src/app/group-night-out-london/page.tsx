@@ -209,7 +209,7 @@ export default function GroupNightOutPage() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-x-10 gap-y-2" data-reveal>
             {[
-              { href: "/birthday-clubs-london", label: "Birthday Clubs", sub: "All 9 venues" },
+              { href: "/birthday-clubs-london", label: "Birthday Clubs", sub: "All 11 venues" },
               { href: "/best-clubs-for-large-groups-london", label: "Large Groups", sub: "15+ guests" },
               { href: "/birthday-table-prices-london", label: "Table Prices", sub: "Full breakdown" },
             ].map(link => (
