@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { blogPosts, type BlogPost } from "@/lib/blog";
+import { getMergedPosts, type BlogPost } from "@/lib/blog";
 import { getGeneralWhatsAppMessage } from "@/lib/clubs";
 import WhatsAppCTA from "@/components/WhatsAppCTA";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
-import { getBlogImage } from "@/lib/images";
+import { getPostImage } from "@/lib/images";
+
+// Prerendered; /api/revalidate marks it stale when the content API publishes.
+export const revalidate = 86400;
 
 export const metadata: Metadata = {
   title: "Birthday Planning Blog | Tips, Guides & Ideas for London Birthdays",
@@ -22,7 +25,7 @@ function PostCard({ post }: { post: BlogPost }) {
     <Link href={`/blog/${post.slug}`} className="group block">
       <div className="frame-mat img-editorial relative aspect-[3/2] overflow-hidden">
         <Image
-          src={getBlogImage(post.slug)}
+          src={getPostImage(post)}
           alt={post.title}
           fill
           className="object-cover transition-transform duration-[900ms] ease-[var(--ease-lux)] group-hover:scale-[1.04]"
@@ -56,7 +59,8 @@ function PostCard({ post }: { post: BlogPost }) {
   );
 }
 
-export default function BlogIndexPage() {
+export default async function BlogIndexPage() {
+  const blogPosts = await getMergedPosts();
   const sortedPosts = [...blogPosts].sort((a, b) => b.publishedAt.localeCompare(a.publishedAt));
   const categories = [...new Set(blogPosts.map((p) => p.category))];
 

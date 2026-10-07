@@ -124,6 +124,11 @@ export function getClubImage(slug: string): string {
   return (images.clubs as Record<string, string>)[slug] || images.hero.homepage;
 }
 
+/** A post's featured image: its own (database posts), else the slug map. */
+export function getPostImage(post: { slug: string; image?: string }): string {
+  return post.image || getBlogImage(post.slug);
+}
+
 export function getBlogImage(slug: string): string {
   return (images.blog as Record<string, string>)[slug] || images.hero.blog;
 }

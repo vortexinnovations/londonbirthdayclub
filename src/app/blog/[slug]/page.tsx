@@ -2,15 +2,35 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { blogPosts, getBlogPostBySlug } from "@/lib/blog";
+import { marked } from "marked";
+import { getMergedPostBySlug, getMergedPosts } from "@/lib/blog";
 import { getGeneralWhatsAppMessage } from "@/lib/clubs";
 import WhatsAppCTA from "@/components/WhatsAppCTA";
 import FAQSchema from "@/components/FAQSchema";
-import { getBlogImage } from "@/lib/images";
+import { getPostImage } from "@/lib/images";
+
+// Posts are prerendered at build and refreshed by /api/revalidate when the
+// content API publishes; this daily regeneration is only a safety net.
+export const revalidate = 86400;
 
 export async function generateStaticParams() {
-  return blogPosts.map((post) => ({ slug: post.slug }));
+  return (await getMergedPosts()).map((post) => ({ slug: post.slug }));
 }
+
+// Database posts are Markdown: style the rendered elements like the code
+// posts' sections (headings, paragraphs) and the site's links.
+const DB_BODY_CLASSES = [
+  "[&_h2]:font-display [&_h2]:font-medium [&_h2]:text-2xl sm:[&_h2]:text-3xl [&_h2]:text-ink [&_h2]:mb-5 [&_h2]:mt-12 [&_h2:first-child]:mt-0",
+  "[&_h3]:font-display [&_h3]:font-medium [&_h3]:text-xl [&_h3]:text-ink [&_h3]:mb-4 [&_h3]:mt-8",
+  "[&_p]:font-sans [&_p]:text-base [&_p]:leading-[1.8] [&_p]:text-ink-soft [&_p]:mb-5",
+  "[&_ul]:list-disc [&_ul]:pl-6 [&_ul]:mb-5 [&_ol]:list-decimal [&_ol]:pl-6 [&_ol]:mb-5",
+  "[&_li]:font-sans [&_li]:text-base [&_li]:leading-[1.8] [&_li]:text-ink-soft [&_li]:mb-2",
+  "[&_strong]:text-ink [&_strong]:font-semibold",
+  "[&_a]:text-champagne hover:[&_a]:text-champagne-bright [&_a]:underline [&_a]:decoration-champagne/30 [&_a]:underline-offset-4",
+  "[&_table]:block [&_table]:w-full [&_table]:overflow-x-auto [&_table]:mb-6 [&_table]:font-sans [&_table]:text-sm",
+  "[&_th]:text-left [&_th]:text-ink [&_th]:font-semibold [&_th]:py-2 [&_th]:pr-4 [&_th]:border-b [&_th]:border-hairline-strong",
+  "[&_td]:text-ink-soft [&_td]:py-2 [&_td]:pr-4 [&_td]:border-b [&_td]:border-hairline",
+].join(" ");
 
 export async function generateMetadata({
   params,
@@ -18,7 +38,7 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
   const { slug } = await params;
-  const post = getBlogPostBySlug(slug);
+  const post = await getMergedPostBySlug(slug);
   if (!post) return {};
 
   return {
@@ -44,7 +64,7 @@ export default async function BlogPostPage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const post = getBlogPostBySlug(slug);
+  const post = await getMergedPostBySlug(slug);
   if (!post) notFound();
 
   const articleSchema = {
@@ -71,7 +91,7 @@ export default async function BlogPostPage({
     },
   };
 
-  const otherPosts = blogPosts
+  const otherPosts = (await getMergedPosts())
     .filter((p) => p.slug !== post.slug)
     .slice(0, 3);
 
@@ -137,7 +157,7 @@ export default async function BlogPostPage({
               {post.excerpt}
             </p>
             <div className="frame-mat img-editorial relative w-full aspect-video overflow-hidden">
-              <Image src={getBlogImage(post.slug)} alt={post.title} fill className="object-cover" priority sizes="(max-width: 768px) 100vw, 768px" />
+              <Image src={getPostImage(post)} alt={post.imageAlt ?? post.title} fill className="object-cover" priority sizes="(max-width: 768px) 100vw, 768px" />
               <div className="grade" />
             </div>
           </div>
@@ -146,6 +166,12 @@ export default async function BlogPostPage({
         {/* Body */}
         <div className="pt-10 pb-24 px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto">
+            {post.source === "db" && (
+              <div
+                className={DB_BODY_CLASSES}
+                dangerouslySetInnerHTML={{ __html: marked.parse(post.bodyMd ?? "", { async: false }) }}
+              />
+            )}
             {post.sections.map((section, i) => {
               const Heading = section.headingLevel === "h2" ? "h2" : "h3";
               const headingClass =
