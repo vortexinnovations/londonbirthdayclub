@@ -1,5 +1,6 @@
 import { cache } from "react";
 import { getDbListing, getDbPosts, type DbPost } from "@/lib/site-posts";
+import { WHATSAPP_NUMBER } from "@/lib/clubs";
 
 export interface BlogPost {
   slug: string;
@@ -48,6 +49,10 @@ function readTime(markdown: string): string {
   return `${Math.max(1, Math.round(words / 200))} min read`;
 }
 
+// Post bodies may link WhatsApp with any number; send them to the live one.
+const withLiveWhatsApp = (md: string) =>
+  md.replace(/(wa\.me\/|api\.whatsapp\.com\/send\?phone=)\d+/g, `$1${WHATSAPP_NUMBER}`);
+
 function fromDb(p: DbPost): BlogPost {
   return {
     slug: p.slug,
@@ -62,7 +67,7 @@ function fromDb(p: DbPost): BlogPost {
     sections: [],
     faqs: p.faqs.length ? p.faqs : undefined,
     source: "db",
-    bodyMd: p.bodyMd,
+    bodyMd: withLiveWhatsApp(p.bodyMd),
     image: p.image || undefined,
     imageAlt: p.imageAlt || undefined,
   };
