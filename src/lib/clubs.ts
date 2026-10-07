@@ -416,36 +416,29 @@ export const clubs: Club[] = [
     slug: "luna-club-london",
     name: "Luna Club London",
     shortName: "Luna",
-    tagline: "The Celestial Birthday Experience",
+    tagline: "Permanently Closed",
     location: "Mayfair, London",
     area: "Mayfair",
     minSpend: "£1,000",
     musicPolicy: "Hip-Hop, RnB, Commercial, Afrobeats",
-    dressCode: "Smart stylish. Mayfair dress code — no sportswear, trainers, or casual wear.",
-    openingNights: "Friday, Saturday",
+    dressCode: "Smart stylish.",
+    openingNights: "Permanently Closed",
     capacity: "Medium (approx. 300)",
     birthdayRating: 4,
-    bestFor: "Stylish birthday celebrations in a stunning modern venue",
-    status: "open",
+    bestFor: "This venue has permanently closed",
+    status: "closed",
+    closedNote:
+      "Luna Club London has closed. The Mayfair club, also known as Luna Mayfair or Club Luna, no longer takes birthday tables or guestlist names. For the same hip-hop, RnB and Afrobeats with a young, well-dressed crowd, Tape London, Cirque Le Soir and The Box are the closest open alternatives.",
+    alternatives: ["tape-london", "cirque-le-soir", "the-box-london"],
     description:
-      "Luna Club London is one of Mayfair's most exciting newer venues, bringing a celestial-inspired design concept to London's nightlife scene. The interiors are sleek, modern, and immersive, with atmospheric lighting and design touches that create an otherworldly ambience. The music policy spans hip-hop, RnB, commercial anthems, and Afrobeats, ensuring the dancefloor stays packed all night. For birthdays, Luna offers a fresh, visually stunning setting that photographs beautifully and delivers consistently high energy.",
-    birthdayHighlights: [
-      "Stunning modern interiors with celestial-inspired design",
-      "Every corner is designed for exceptional photos",
-      "Energetic atmosphere with a well-curated music policy",
-      "Premium Mayfair location and service standards",
-      "Fresh venue energy — the excitement of somewhere new",
-    ],
+      "Luna Club London was a Mayfair nightclub with celestial-inspired interiors, atmospheric lighting and a music policy that mixed hip-hop, RnB, commercial and Afrobeats for a young, well-dressed crowd. Luna Club London has now closed.",
+    birthdayHighlights: [],
     whatToExpect:
-      "Luna impresses immediately with its design. The celestial-inspired interiors create an atmosphere that's both intimate and grand, with atmospheric lighting that shifts throughout the night. The music is a well-curated mix of hip-hop, RnB, and Afrobeats that keeps the energy high without becoming repetitive. For birthdays, the visual impact of the venue does half the work — your celebration looks and feels spectacular from the moment you arrive. Bottle service is polished and professional.",
-    birthdayExtras:
-      "Birthday celebrations at Luna include sparkler bottle presentations, birthday cake arrangements, table decorations, DJ shoutouts, and photo-worthy moments throughout the night. The modern, photogenic interiors mean every birthday moment is enhanced by the setting.",
-    atmosphere:
-      "Modern, energetic, and visually immersive. Luna attracts a young, well-dressed crowd who appreciate both aesthetics and atmosphere. The energy builds progressively through the night, with the dancefloor peaking around midnight. The venue's newer status means the excitement of discovery — people are genuinely impressed when they walk in.",
-    groupSizeAdvice:
-      "Luna is excellent for birthday groups of 8–20. The modern layout offers flexible table configurations that work for both intimate celebrations and larger parties. The energetic atmosphere means even smaller groups feel part of the action.",
-    proTip:
-      "As a newer venue, Luna is still building its reputation — which means booking is often easier than at more established clubs, even on peak nights. Take advantage of this while it lasts.",
+      "Luna Club London has closed. If you were planning a birthday at Luna, Tape London is the closest match for hip-hop and RnB in Mayfair, Cirque Le Soir adds performers and a show to the same music, and The Box in Soho turns a birthday into a theatrical night.",
+    birthdayExtras: "Luna Club London has closed.",
+    atmosphere: "Luna Club London has closed.",
+    groupSizeAdvice: "Luna Club London has closed.",
+    proTip: "Luna Club London has closed. For a similar birthday, try Tape London, Cirque Le Soir or The Box.",
   },
   {
     slug: "selene-london",
@@ -522,36 +515,29 @@ export const clubs: Club[] = [
     slug: "maison-close",
     name: "Maison Close",
     shortName: "Maison Close",
-    tagline: "The Intimate Art-House Birthday",
+    tagline: "Permanently Closed",
     location: "9 Swallow Street, Mayfair",
     area: "Mayfair",
-    minSpend: "\u00a31,000",
+    minSpend: "£1,000",
     musicPolicy: "House, Deep House, Soulful House",
-    dressCode: "Smart and sophisticated. Suits or smart separates for men, elegant dresses or upscale ensembles for women. No sportswear, trainers, or casual wear.",
-    openingNights: "Wednesday, Thursday, Friday, Saturday",
+    dressCode: "Smart and sophisticated.",
+    openingNights: "Permanently Closed",
     capacity: "Intimate (approx. 160)",
     birthdayRating: 5,
-    bestFor: "Intimate, art-forward birthday celebrations with exceptional house music",
-    status: "open",
+    bestFor: "This venue has permanently closed",
+    status: "closed",
+    closedNote:
+      "Maison Close has closed and no longer takes birthday tables or guestlist names. For house music in an intimate, dressed-up Mayfair room, Maddox Club, Selene London and Scotch of St James are the closest open alternatives.",
+    alternatives: ["maddox-club", "selene-london", "scotch-of-st-james"],
     description:
-      "Maison Close is Mayfair\u2019s most artistically curated nightclub, occupying the former Kadies space on Swallow Street. The French-inspired interiors blend vintage chandeliers, plush velvet seating, bold red accents, and curated art installations into a space that feels more like a private salon than a nightclub. The music policy is firmly house \u2014 world-class DJs play deep, soulful sets that reward attentive listeners. For birthdays, Maison Close offers an intimate, culturally rich experience that stands apart from the louder, more commercial Mayfair scene.",
-    birthdayHighlights: [
-      "Artistically curated interiors with vintage chandeliers and velvet",
-      "World-class house music DJs every night",
-      "Intimate 160-capacity venue where your birthday is felt by the room",
-      "Exceptional cocktail programme crafted by expert mixologists",
-      "Live performances and art exhibitions alongside nightlife",
-    ],
+      "Maison Close was a French-inspired house music club at 9 Swallow Street in Mayfair, in the former Kadies space. Its vintage chandeliers, velvet seating, red accents and capacity of around 160 made it feel more like a Parisian salon than a nightclub. Maison Close has now closed.",
+    birthdayHighlights: [],
     whatToExpect:
-      "Walking into Maison Close feels like stepping into a private members\u2019 salon in Paris. The plush seating, ambient lighting, and art-filled walls create an atmosphere that\u2019s sophisticated without being stuffy. The house music builds gradually through the night, played by DJs who understand dynamics \u2014 early sets are warm and conversational, building to a peak-time dancefloor that\u2019s intimate and electric. For birthdays, the compact space means your celebration has genuine presence. The staff treat every table like VIP guests, and the cocktails are genuinely exceptional.",
-    birthdayExtras:
-      "Birthday celebrations at Maison Close include sparkler-adorned bottle deliveries, the option to arrange birthday cake, personalised DJ shoutouts, and decorated table setups. The intimate, art-house atmosphere means even standard birthday touches feel elevated \u2014 sparklers surrounded by chandeliers and velvet create a visual that\u2019s effortlessly photogenic.",
-    atmosphere:
-      "Intimate, cultured, and effortlessly sophisticated. Maison Close attracts a well-dressed crowd who appreciate house music, design, and cocktails in equal measure. The energy is warm and social rather than frenetic \u2014 conversations flow as easily as the music. It\u2019s the kind of venue where you feel like you\u2019ve discovered something special.",
-    groupSizeAdvice:
-      "Maison Close is ideal for birthday groups of 4\u201315. The intimate 160-capacity venue means smaller groups feel perfectly at home, and the cosy layout creates natural conversation spaces. For groups larger than 15, the venue can feel snug \u2014 but that intimacy is part of the charm.",
-    proTip:
-      "Thursday nights at Maison Close often feature guest DJs and a slightly more industry-connected crowd. If your group appreciates house music, Thursday delivers the most musically rewarding experience. Wednesday is the most relaxed night and easiest to book.",
+      "Maison Close has closed. If you were planning a birthday there, Maddox Club pairs dinner with house music downstairs, Selene London offers refined house and commercial sets in an elegant room, and Scotch of St James is a small, storied Mayfair club for an intimate celebration.",
+    birthdayExtras: "Maison Close has closed.",
+    atmosphere: "Maison Close has closed.",
+    groupSizeAdvice: "Maison Close has closed.",
+    proTip: "Maison Close has closed. For a similar birthday, try Maddox Club, Selene London or Scotch of St James.",
   },
 
   // ==================== PERMANENTLY CLOSED VENUES ====================
@@ -572,7 +558,7 @@ export const clubs: Club[] = [
     status: "closed",
     closedNote:
       "Luxx Club London has permanently closed. The venue was known for its stunning LED installations and electric light shows that made every birthday celebration visually spectacular. While Luxx is no longer operating, its legacy as one of Mayfair's most photogenic birthday venues lives on.",
-    alternatives: ["luna-club-london", "tabu-london", "selene-london"],
+    alternatives: ["selene-london", "reign-london", "the-box-london"],
     description:
       "Luxx Club London was a premium Mayfair venue famous for its electric light show theme and stunning LED imagery. The club offered an immersive visual experience with dynamic LED installations that transformed the space throughout the night. Luxx has now permanently closed.",
     birthdayHighlights: [
@@ -582,11 +568,11 @@ export const clubs: Club[] = [
       "Premium Mayfair location and service standards",
       "Dynamic atmosphere that evolved through the night",
     ],
-    whatToExpect: "Luxx Club London has permanently closed. If you were planning a birthday at Luxx, we recommend Luna Club London, TABU, or Selene London as excellent alternatives that deliver a similarly impressive visual and atmospheric experience.",
+    whatToExpect: "Luxx Club London has permanently closed. If you were planning a birthday at Luxx, we recommend Selene London for refined elegance, Reign London for production and shows, or The Box for a theatrical night.",
     birthdayExtras: "Luxx Club London has permanently closed.",
     atmosphere: "Luxx Club London has permanently closed.",
     groupSizeAdvice: "Luxx Club London has permanently closed.",
-    proTip: "Luxx has permanently closed. For a similar experience, try Luna Club London for visual impact, TABU for intimate Mayfair atmosphere, or Selene for refined elegance.",
+    proTip: "Luxx has permanently closed. For a similar experience, try Reign London for visual impact, The Box for theatre, or Selene for refined elegance.",
   },
   {
     slug: "lio-london",
@@ -637,8 +623,8 @@ export const clubs: Club[] = [
     bestFor: "This venue has permanently closed",
     status: "closed",
     closedNote:
-      "Libertine has permanently closed. Known for its sophisticated, futuristic design and excellent sound system, Libertine was a popular choice for style-conscious birthday celebrations. For a similar experience, TABU, Selene London, and Cuckoo Club are excellent alternatives.",
-    alternatives: ["tabu-london", "selene-london", "cuckoo-club"],
+      "Libertine has permanently closed. Known for its sophisticated, futuristic design and excellent sound system, Libertine was a popular choice for style-conscious birthday celebrations. For a similar experience, Selene London, Tape London and The Box are excellent alternatives.",
+    alternatives: ["selene-london", "tape-london", "the-box-london"],
     description:
       "Libertine brought a sophisticated, futuristic energy to Mayfair's nightlife scene. The venue combined sleek design with state-of-the-art lighting and sound. Libertine has now permanently closed.",
     birthdayHighlights: [
@@ -648,11 +634,11 @@ export const clubs: Club[] = [
       "Well-positioned tables with great sightlines",
       "Attentive, professional service team",
     ],
-    whatToExpect: "Libertine has permanently closed. If you were planning a birthday here, we recommend TABU for edgy intimate style, Selene London for refined elegance, or Cuckoo Club for versatile two-floor fun.",
+    whatToExpect: "Libertine has permanently closed. If you were planning a birthday here, we recommend Tape London for hip-hop and RnB, Selene London for refined elegance, or The Box for a theatrical night.",
     birthdayExtras: "Libertine has permanently closed.",
     atmosphere: "Libertine has permanently closed.",
     groupSizeAdvice: "Libertine has permanently closed.",
-    proTip: "Libertine has permanently closed. For a similar sophisticated Mayfair birthday, try TABU for design-forward interiors, Selene for refined elegance, or Funky Buddha for iconic energy.",
+    proTip: "Libertine has permanently closed. For a similar sophisticated Mayfair birthday, try Tape London for hip-hop and RnB, Selene for refined elegance, or The Box for theatre.",
   },
 ];
 

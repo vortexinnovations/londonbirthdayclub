@@ -33,7 +33,7 @@ const faqs = [
   {
     question: "Is Mayfair good for a 25th birthday?",
     answer:
-      "Mayfair is excellent for a 25th birthday. Venues like TABU, Luna Club London, and Cuckoo Club offer the perfect blend of high energy and style that suits the 25th birthday demographic. Minimum spends start from £1,000, which works well when split across a group of 8-15.",
+      "Mayfair is excellent for a 25th birthday. Venues like Tape London, Cirque Le Soir and The Box offer the perfect blend of high energy and style that suits the 25th birthday demographic. Minimum spends start from £1,000, which works well when split across a group of 8-15.",
   },
 ];
 
@@ -83,12 +83,6 @@ const milestones = [
         slug: "tabu-london",
         reason:
           "The Japanese underground aesthetic is the kind of venue that impresses a 25-year-old crowd. It's cool, it's different, and the hip-hop playlist is exactly right. The intimate size means your birthday group is part of the energy, not lost in it.",
-      },
-      {
-        name: "Luna Club London",
-        slug: "luna-club-london",
-        reason:
-          "The celestial-inspired interiors are the kind of venue that impresses a 25-year-old crowd — modern, visually stunning, and incredibly photogenic. The hip-hop and Afrobeats playlist keeps the energy high, and the newer-venue excitement means every visit feels like a discovery.",
       },
       {
         name: "Funky Buddha",

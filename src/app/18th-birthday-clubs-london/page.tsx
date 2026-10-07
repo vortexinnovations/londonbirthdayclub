@@ -27,7 +27,6 @@ export default function EighteenthBirthdayPage() {
     { slug: "cuckoo-club", reason: "Two floors with completely different vibes solve the music-taste problem that every group has. Hip-hop downstairs, house upstairs — everyone finds their groove. The Mayfair location makes it feel special without being intimidating." },
     { slug: "reign-london", reason: "If your 18th group is big (15+), Reign's grand venue with aerial performances creates a celebration that matches the energy of the milestone. The spectacle gives everyone something to remember." },
     { slug: "funky-buddha", reason: "One of the most iconic names in London nightlife. The intimate setting and incredible hip-hop playlist create an 18th birthday that feels like a proper event. The energy is infectious." },
-    { slug: "luna-club-london", reason: "Stunning modern interiors that photograph beautifully. For 18th birthday groups who want their first big night to look as good on Instagram as it feels in person." },
   ];
 
   return (

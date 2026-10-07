@@ -484,7 +484,7 @@ export default function PlanBirthdayPage() {
                 The dress code is more flexible for women but still smart.
               </p>
               <p className="font-sans text-[0.8125rem] leading-relaxed tracking-[0.02em] text-ink-faint">
-                Applies to: Tape, Cirque, TABU, Funky Buddha, Luna, Maddox,
+                Applies to: Tape, Cirque, TABU, Funky Buddha, Maddox,
                 Scotch, Cuckoo, Dear Darling, The Box, Reign, Selene
               </p>
             </div>
@@ -552,7 +552,7 @@ export default function PlanBirthdayPage() {
                 </span>
               </div>
               <div className="font-sans text-[0.8125rem] tracking-[0.02em] text-ink-faint mt-1.5">
-                13 venues ranked
+                12 venues ranked
               </div>
             </Link>
             <Link

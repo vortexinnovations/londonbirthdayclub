@@ -10,9 +10,9 @@ import ItemListSchema from "@/components/ItemListSchema";
 import ArticleSchema from "@/components/ArticleSchema";
 
 export const metadata: Metadata = {
-  title: "13 Best Birthday Clubs in London (2026) — Ranked by Real Experience",
+  title: "12 Best Birthday Clubs in London (2026) — Ranked by Real Experience",
   description:
-    "We've booked hundreds of birthday tables. Here are the 13 best London clubs for a birthday, honestly ranked. Cirque Le Soir, Tape, The Box & more — with prices, group advice, and what to expect.",
+    "We've booked hundreds of birthday tables. Here are the 12 best London clubs for a birthday, honestly ranked. Cirque Le Soir, Tape, The Box & more — with prices, group advice, and what to expect.",
   alternates: {
     canonical: "https://londonbirthdayclub.com/best-birthday-clubs-london",
   },
@@ -103,27 +103,20 @@ const rankings = [
   },
   {
     position: 10,
-    slug: "luna-club-london",
-    verdict:
-      "Luna Club London brings a fresh, visually stunning energy to Mayfair's birthday scene. The celestial-inspired interiors are incredibly photogenic, the music policy spans hip-hop to Afrobeats, and the newer-venue excitement means every visit feels like a discovery. If your group wants a modern, Instagram-worthy birthday, Luna delivers.",
-    bestForTag: "Modern & Photogenic",
-  },
-  {
-    position: 11,
     slug: "selene-london",
     verdict:
       "Selene strikes the balance that many Mayfair clubs aim for but few achieve: genuinely elegant without feeling intimidating. The refined interiors, balanced music policy, and warm atmosphere make it an excellent choice for birthday groups who want premium quality without pretension. Particularly well-suited for mixed groups.",
     bestForTag: "Refined & Balanced",
   },
   {
-    position: 12,
+    position: 11,
     slug: "scotch-of-st-james",
     verdict:
       "Scotch of St James offers something no other venue can — genuine history and character. Celebrating your birthday in a venue with heritage stretching back to the Hendrix era gives the evening a story that goes beyond just another club night. Best for birthday groups who appreciate authenticity and a more intimate, characterful setting.",
     bestForTag: "Character & History",
   },
   {
-    position: 13,
+    position: 12,
     slug: "beat-london",
     verdict:
       "BEAT is the choice for birthday groups where the music genuinely matters. The sound system is among the best in London, and the house and tech house policy creates a dancefloor energy that's about the music, not about being seen. More relaxed on dress code, more focused on the experience.",
@@ -145,8 +138,8 @@ export default function BestClubsPage() {
     <>
       <FAQSchema faqs={faqs} />
       <BreadcrumbSchema items={[{ name: "Home", href: "/" }, { name: "Best Birthday Clubs London", href: "/best-birthday-clubs-london" }]} />
-      <ItemListSchema name="Best Birthday Clubs in London 2026" description="13 London nightclubs ranked for birthday celebrations, based on atmosphere, service, entertainment, and birthday-specific features." items={itemListItems} />
-      <ArticleSchema title="13 Best Birthday Clubs in London — Ranked by Real Experience" description="Honest, ranked guide to the best London nightclubs for birthday celebrations." url="https://londonbirthdayclub.com/best-birthday-clubs-london" />
+      <ItemListSchema name="Best Birthday Clubs in London 2026" description="12 London nightclubs ranked for birthday celebrations, based on atmosphere, service, entertainment, and birthday-specific features." items={itemListItems} />
+      <ArticleSchema title="12 Best Birthday Clubs in London — Ranked by Real Experience" description="Honest, ranked guide to the best London nightclubs for birthday celebrations." url="https://londonbirthdayclub.com/best-birthday-clubs-london" />
 
       {/* Hero */}
       <section className="relative min-h-[64vh] img-editorial flex items-end overflow-hidden">

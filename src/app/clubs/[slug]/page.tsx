@@ -26,6 +26,23 @@ export async function generateMetadata({
   const club = getClubBySlug(slug);
   if (!club) return {};
 
+  if (club.status === "closed") {
+    const title = `${club.name} Has Closed: ${club.area} Birthday Alternatives`;
+    const description = `${club.name} in ${club.area} has closed and no longer takes birthday bookings. Open London clubs for a similar birthday night, booked free via WhatsApp.`;
+    return {
+      title,
+      description,
+      alternates: {
+        canonical: `https://londonbirthdayclub.com/clubs/${club.slug}`,
+      },
+      openGraph: {
+        title,
+        description,
+        url: `https://londonbirthdayclub.com/clubs/${club.slug}`,
+      },
+    };
+  }
+
   return {
     title: `${club.name} Birthday | Birthday Table & Packages at ${club.name}`,
     description: `Celebrate your birthday at ${club.name}, ${club.location}. ${club.bestFor}. VIP tables from ${club.minSpend}, sparklers, cake, and birthday extras. Book free via WhatsApp.`,
@@ -172,6 +189,9 @@ export default async function ClubPage({
         </div>
       </section>
 
+      {/* Closed venues skip the booking details (facts, highlights, tips, prices, FAQ). */}
+      {!isClosed && (
+      <>
       {/* Quick Facts */}
       <section className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-noir-soft">
         <div className="max-w-6xl mx-auto">
@@ -228,6 +248,8 @@ export default async function ClubPage({
       </section>
 
       <div className="divider-gilt" />
+      </>
+      )}
 
       {/* What to expect */}
       <section className="py-24 sm:py-28 px-4 sm:px-6 lg:px-8 bg-noir-soft">
@@ -238,9 +260,9 @@ export default async function ClubPage({
               The Night
             </p>
             <h2 className="font-display font-medium text-[2rem] leading-[1.12] sm:text-4xl lg:text-[2.75rem] tracking-[-0.01em] text-ink max-w-2xl">
-              What to Expect on Your{" "}
+              {isClosed ? "Where to Celebrate " : "What to Expect on Your "}
               <em className="italic text-champagne font-normal">
-                Birthday Night
+                {isClosed ? "Instead" : "Birthday Night"}
               </em>
             </h2>
           </div>
@@ -248,6 +270,7 @@ export default async function ClubPage({
             {club.whatToExpect}
           </p>
 
+          {!isClosed && (
           <div className="border-t border-hairline pt-10" data-reveal>
             <h3 className="font-display font-medium text-xl text-ink mb-4">
               Birthday Extras &amp; Packages
@@ -256,11 +279,14 @@ export default async function ClubPage({
               {club.birthdayExtras}
             </p>
           </div>
+          )}
         </div>
       </section>
 
       <div className="divider-gilt" />
 
+      {!isClosed && (
+      <>
       {/* Atmosphere & Group Advice */}
       <section className="py-24 sm:py-28 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-x-14 gap-y-14">
@@ -391,6 +417,8 @@ export default async function ClubPage({
       </section>
 
       <div className="divider-gilt" />
+      </>
+      )}
 
       {/* CTA */}
       <section className="py-24 sm:py-32 px-4 sm:px-6 lg:px-8">

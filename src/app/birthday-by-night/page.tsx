@@ -101,7 +101,6 @@ const nights = [
       "Dear Darling",
       "BEAT London",
       "The Box London",
-      "Luna Club London",
       "Selene London",
     ],
     description:
@@ -128,7 +127,6 @@ const nights = [
       "Dear Darling",
       "BEAT London",
       "The Box London",
-      "Luna Club London",
       "Selene London",
     ],
     description:
@@ -254,7 +252,6 @@ export default function BirthdayByNightPage() {
                       "Dear Darling": "dear-darling",
                       "BEAT London": "beat-london",
                       "The Box London": "the-box-london",
-                      "Luna Club London": "luna-club-london",
                       "Selene London": "selene-london",
                     };
                     return (

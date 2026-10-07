@@ -100,7 +100,7 @@ export default function BirthdayTableBookingPage() {
               everything arranged for you, completely free.
             </p>
             <p className="font-sans text-[0.75rem] uppercase tracking-[0.18em] text-ink-faint mb-10">
-              13 venues &middot; Tables from £1,000 &middot; Book in 2 minutes
+              12 venues &middot; Tables from £1,000 &middot; Book in 2 minutes
               via WhatsApp
             </p>
             <WhatsAppCTA

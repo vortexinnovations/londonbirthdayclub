@@ -253,7 +253,7 @@ export default function HomePage() {
             title="Find Your Perfect Birthday Club"
             categories={[
               { label: "Best for 6-10 Guests", description: "Intimate celebrations", clubs: ["tape-london", "tabu-london", "dear-darling", "scotch-of-st-james"] },
-              { label: "Best for 15+ Guests", description: "Large group energy", clubs: ["reign-london", "beat-london", "cuckoo-club", "luna-club-london"] },
+              { label: "Best for 15+ Guests", description: "Large group energy", clubs: ["reign-london", "beat-london", "cuckoo-club", "the-box-london"] },
               { label: "Best for Entertainment", description: "Performers and spectacle", clubs: ["cirque-le-soir", "the-box-london", "reign-london"] },
               { label: "Best for Hip-Hop & RnB", description: "The right soundtrack", clubs: ["funky-buddha", "tabu-london", "cuckoo-club"] },
               { label: "Best for Dinner + Club", description: "Complete evening", clubs: ["maddox-club", "dear-darling"] },
@@ -284,7 +284,7 @@ export default function HomePage() {
               {
                 href: "/birthday-clubs-london",
                 label: "Birthday Clubs London",
-                sub: "All 13 venues compared",
+                sub: "All 12 venues compared",
               },
               {
                 href: "/birthday-table-booking-london",

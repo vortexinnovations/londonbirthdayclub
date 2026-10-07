@@ -9,16 +9,16 @@ import FAQSchema from "@/components/FAQSchema";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 export const metadata: Metadata = {
-  title: "Birthday Clubs London — 13 Venues Compared (2026)",
+  title: "Birthday Clubs London — 12 Venues Compared (2026)",
   description:
-    "Compare 13 London birthday clubs side by side — minimum spends, music, group size, and what makes each one great for birthdays. Tables from £1,000. Free booking via WhatsApp.",
+    "Compare 12 London birthday clubs side by side — minimum spends, music, group size, and what makes each one great for birthdays. Tables from £1,000. Free booking via WhatsApp.",
   alternates: {
     canonical: "https://londonbirthdayclub.com/birthday-clubs-london",
   },
   openGraph: {
     title: "Birthday Clubs in London | Find Your Perfect Venue",
     description:
-      "Compare 13 London nightclubs for birthday celebrations. VIP tables, bottle service, birthday packages. Free booking via WhatsApp.",
+      "Compare 12 London nightclubs for birthday celebrations. VIP tables, bottle service, birthday packages. Free booking via WhatsApp.",
     url: "https://londonbirthdayclub.com/birthday-clubs-london",
   },
 };
@@ -329,7 +329,7 @@ export default function BirthdayClubsLondonPage() {
               },
               {
                 size: "15–25 guests",
-                venues: "Reign London, The Box, Luna Club, Cuckoo Club",
+                venues: "Reign London, The Box, BEAT London, Cuckoo Club",
                 desc: "Large capacity venues with space for bigger groups without feeling cramped.",
               },
               {

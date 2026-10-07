@@ -28,7 +28,6 @@ export default function LargeGroupsPage() {
     { slug: "beat-london", capacity: "400", tables: "Adjacent dancefloor tables", why: "The medium capacity and more relaxed atmosphere mean large groups feel cohesive rather than scattered. The world-class sound system means everyone shares the same musical experience." },
     { slug: "cuckoo-club", capacity: "350", tables: "Split across two floors", why: "Large groups can book tables on both floors, giving your party two different vibes without splitting up. The versatile layout keeps big groups connected while offering variety." },
     { slug: "the-box-london", capacity: "300", tables: "Theatre-style, multiple areas", why: "The multi-level layout gives large groups different perspectives on the performances. Mezzanine tables offer relaxed viewing while ground-level positions put you in the action." },
-    { slug: "luna-club-london", capacity: "300", tables: "Flexible configurations", why: "As a newer venue, Luna's modern layout was designed with flexible table configurations in mind. Large birthday groups benefit from considered positioning and contemporary design." },
     { slug: "cirque-le-soir", capacity: "350", tables: "Adjacent performer-side", why: "Even with 20+ guests, the circus performers interact with your entire group. Multiple tables positioned together mean everyone gets the Cirque experience. Friday nights recommended for large groups." },
   ];
 
@@ -44,8 +43,7 @@ export default function LargeGroupsPage() {
           { name: "BEAT London", url: "https://londonbirthdayclub.com/clubs/beat-london", position: 2 },
           { name: "Cuckoo Club", url: "https://londonbirthdayclub.com/clubs/cuckoo-club", position: 3 },
           { name: "The Box London", url: "https://londonbirthdayclub.com/clubs/the-box-london", position: 4 },
-          { name: "Luna Club London", url: "https://londonbirthdayclub.com/clubs/luna-club-london", position: 5 },
-          { name: "Cirque Le Soir", url: "https://londonbirthdayclub.com/clubs/cirque-le-soir", position: 6 },
+          { name: "Cirque Le Soir", url: "https://londonbirthdayclub.com/clubs/cirque-le-soir", position: 5 },
         ]}
       />
 

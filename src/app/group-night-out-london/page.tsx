@@ -22,7 +22,7 @@ const faqs = [
 ];
 
 export default function GroupNightOutPage() {
-  const largeVenues = openClubs.filter(c => ["reign-london", "beat-london", "cuckoo-club", "the-box-london", "luna-club-london"].includes(c.slug));
+  const largeVenues = openClubs.filter(c => ["reign-london", "beat-london", "cuckoo-club", "the-box-london"].includes(c.slug));
   const intimateVenues = openClubs.filter(c => ["tape-london", "tabu-london", "dear-darling", "scotch-of-st-james"].includes(c.slug));
 
   return (
@@ -209,7 +209,7 @@ export default function GroupNightOutPage() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-x-10 gap-y-2" data-reveal>
             {[
-              { href: "/birthday-clubs-london", label: "Birthday Clubs", sub: "All 13 venues" },
+              { href: "/birthday-clubs-london", label: "Birthday Clubs", sub: "All 12 venues" },
               { href: "/best-clubs-for-large-groups-london", label: "Large Groups", sub: "15+ guests" },
               { href: "/birthday-table-prices-london", label: "Table Prices", sub: "Full breakdown" },
             ].map(link => (
