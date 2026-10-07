@@ -443,7 +443,7 @@ export const clubs: Club[] = [
     minSpend: "£1,000",
     musicPolicy: "House, Commercial, RnB",
     dressCode: "Smart elegant. Mayfair standards — dress to impress.",
-    openingNights: "Friday, Saturday",
+    openingNights: "Thursday, Friday, Saturday, Sunday",
     capacity: "Intimate-Medium (approx. 250)",
     birthdayRating: 4,
     bestFor: "Refined birthday celebrations in an elegant Mayfair setting",

@@ -32,7 +32,7 @@ const faqs = [
   {
     question: "Which London clubs are open on a Thursday?",
     answer:
-      "Thursday is a popular night in Mayfair with several top clubs open: Tape London, Maddox Club, Scotch of St James, Dear Darling, The Box London, Rumour (formerly TABU) and 99 Regent Street (formerly Cuckoo Club) all operate on Thursday nights. It's an excellent night for birthdays with strong atmosphere and lower minimum spends than weekends.",
+      "Thursday is a popular night in Mayfair with several top clubs open: Tape London, Maddox Club, Scotch of St James, Dear Darling, The Box London, Selene London, Rumour (formerly TABU) and 99 Regent Street (formerly Cuckoo Club) all operate on Thursday nights. It's an excellent night for birthdays with strong atmosphere and lower minimum spends than weekends.",
   },
 ];
 
@@ -61,6 +61,7 @@ const nights = [
       "Scotch of St James",
       "Dear Darling",
       "The Box London",
+      "Selene London",
       "Rumour",
       "99 Regent Street",
     ],
