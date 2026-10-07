@@ -18,7 +18,7 @@ const faqs = [
   { question: "What's the best club in London for a 21st birthday?", answer: "Cirque Le Soir consistently delivers the most spectacular 21st birthday experiences — live performers, pyrotechnic bottle shows, and an atmosphere of pure excitement. For a more exclusive 21st, Tape London offers intimate VIP energy. For large groups who want spectacle, Reign London has the space and aerial performances to match." },
   { question: "How far in advance should I book for a 21st birthday?", answer: "Book 2-3 weeks ahead for standard weekends, 3-4 weeks for peak Saturdays at popular venues like Cirque or Tape. 21st birthdays tend to be larger groups, and bigger tables need earlier booking to secure good positions." },
   { question: "What do 21st birthday groups get at London clubs?", answer: "A VIP table booking includes reserved seating, premium bottles and mixers, a dedicated host, priority entry, and birthday extras like sparkler presentations, cake arrangements, DJ shoutouts, and decorated tables. Some venues offer additional performer interactions for birthday groups." },
-  { question: "How big is a typical 21st birthday group?", answer: "21st birthday groups range from 10-25 guests, with 12-18 being the most common. This size works well for a single table at most venues, or two tables at intimate clubs like Tape or TABU. Groups of 20+ may need multi-table arrangements." },
+  { question: "How big is a typical 21st birthday group?", answer: "21st birthday groups range from 10-25 guests, with 12-18 being the most common. This size works well for a single table at most venues, or two tables at intimate clubs like Tape or Scotch of St James. Groups of 20+ may need multi-table arrangements." },
 ];
 
 export default function TwentyFirstBirthdayPage() {
@@ -26,8 +26,8 @@ export default function TwentyFirstBirthdayPage() {
     { slug: "cirque-le-soir", reason: "The undisputed champion for 21st birthdays. The live circus performers, pyrotechnic bottle presentations, and immersive atmosphere create a night that defines what turning 21 should feel like. Your group will be genuinely amazed — fire breathers, acrobats, and the kind of spectacle that makes this milestone birthday monumental." },
     { slug: "tape-london", reason: "For a 21st that prioritises exclusivity over spectacle. The members' club atmosphere, A-list clientele, and world-class sound create a celebration that feels genuinely VIP. Best for smaller 21st birthday groups of 8-12 who want quality over quantity." },
     { slug: "the-box-london", reason: "For the adventurous 21st birthday group. The provocative theatrical performances are unlike anything else in London — your group will be talking about this night for years. A genuinely unique way to mark the milestone." },
-    { slug: "funky-buddha", reason: "Legendary status, incredible energy, intimate setting. A 21st at Funky Buddha feels like stepping into London nightlife history. The hip-hop and RnB playlist is perfectly pitched for the 21st birthday demographic." },
-    { slug: "cuckoo-club", reason: "The two-floor layout solves every 21st birthday group's music dilemma. House upstairs, hip-hop downstairs — everyone happy, nobody compromises. Open more nights than most Mayfair clubs too." },
+    { slug: "cirque-le-soir", reason: "Fire breathers, acrobats and pyrotechnic bottle shows around your table, with hip-hop and RnB in between. The most spectacular way to mark a 21st." },
+    { slug: "reign-london", reason: "For a big 21st group of 15 or more, Reign has the space for adjacent tables and aerial performances that keep the whole group entertained." },
   ];
 
   return (
@@ -141,9 +141,9 @@ export default function TwentyFirstBirthdayPage() {
               { q: "Want the biggest wow?", a: "Cirque Le Soir — performers and pyrotechnics", slug: "cirque-le-soir" },
               { q: "Want genuine exclusivity?", a: "Tape London — members' club, A-list energy", slug: "tape-london" },
               { q: "Want something daring?", a: "The Box — provocative theatre meets nightclub", slug: "the-box-london" },
-              { q: "Mixed music tastes?", a: "Cuckoo Club — house upstairs, hip-hop downstairs", slug: "cuckoo-club" },
+              { q: "Mixed music tastes?", a: "Scotch of St James: hip-hop, RnB or house depending on the night", slug: "scotch-of-st-james" },
               { q: "Large group (15+)?", a: "Reign London — grand venue, aerial performances", slug: "reign-london" },
-              { q: "Instagram-worthy venue?", a: "TABU — Japanese underground, every angle looks amazing", slug: "tabu-london" },
+              { q: "Instagram-worthy venue?", a: "Dear Darling: chandeliers and velvet booths", slug: "dear-darling" },
             ].map(item => (
               <Link key={item.q} href={`/clubs/${item.slug}`} className="group block border-t border-hairline hover:border-hairline-strong px-1 pt-5 pb-6 transition-colors duration-500">
                 <div className="flex items-baseline justify-between gap-3">

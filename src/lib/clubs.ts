@@ -19,7 +19,11 @@ export interface Club {
   atmosphere: string;
   groupSizeAdvice: string;
   proTip: string;
-  status: "open" | "closed";
+  /** "rebranded": the venue trades under a new name (name holds "New (formerly Old)"). */
+  status: "open" | "closed" | "rebranded";
+  /** Rebranded venues only: the old name people still search for. */
+  formerName?: string;
+  /** Closed or rebranded venues: the statement shown at the top of the venue page. */
   closedNote?: string;
   alternatives?: string[];
 }
@@ -169,108 +173,89 @@ export const clubs: Club[] = [
   },
   {
     slug: "tabu-london",
-    name: "TABU London",
-    shortName: "TABU",
-    tagline: "The Underground Birthday Experience",
+    name: "Rumour (formerly TABU)",
+    shortName: "Rumour",
+    formerName: "TABU London",
+    tagline: "TABU London is now Rumour",
     location: "Mayfair, London",
     area: "Mayfair",
-    minSpend: "£1,000",
-    musicPolicy: "Hip-Hop, RnB, Afrobeats",
-    dressCode: "Smart stylish. Mayfair standards apply — no sportswear, casual trainers, or shorts.",
-    openingNights: "Thursday, Friday, Saturday",
-    capacity: "Intimate-Medium (approx. 250)",
-    birthdayRating: 4,
-    bestFor: "Hip-hop lovers wanting an intimate, edgy birthday vibe",
-    status: "open",
+    minSpend: "Not confirmed",
+    musicPolicy: "Not confirmed",
+    dressCode: "Not confirmed for Rumour.",
+    openingNights: "Not confirmed",
+    capacity: "Not confirmed",
+    birthdayRating: 0,
+    bestFor: "TABU London is now Rumour",
+    status: "rebranded",
+    closedNote:
+      "TABU London is now Rumour. The Mayfair club trades under its new name, so there are no TABU birthday tables or guestlist names any more. Rumour is not on our booking list yet. For a hip-hop and RnB birthday in Mayfair, Tape London is the closest match, Scotch of St James suits a smaller group, and Cirque Le Soir adds performers to the same music.",
+    alternatives: ["tape-london", "scotch-of-st-james", "cirque-le-soir"],
     description:
-      "TABU brings a Japanese underground aesthetic to the heart of Mayfair, creating something genuinely different in London's nightlife scene. The dark, immersive interiors draw inspiration from Tokyo's hidden bars and underground clubs, with moody lighting, intricate detailing, and an atmosphere that feels like you've discovered somewhere secret. For birthdays, TABU offers an experience that's edgy, cool, and completely different from a standard Mayfair club night.",
-    birthdayHighlights: [
-      "Unique Japanese underground-themed interiors",
-      "Intimate atmosphere where birthdays feel special",
-      "Strong hip-hop and RnB playlist all night",
-      "Stylish, design-forward venue perfect for photos",
-      "Attentive service with a personal touch",
-    ],
+      "TABU London is now Rumour. People still search for TABU when planning a birthday, so this page explains the change and where to book instead. History: as TABU, the venue was a dark, Japanese-underground-themed Mayfair club playing hip-hop, RnB and Afrobeats. Rumour's music, nights, prices and door policy are not confirmed here yet, so none of TABU's old terms should be read as Rumour's.",
+    birthdayHighlights: [],
     whatToExpect:
-      "TABU is the kind of club that makes you feel like you're in on a secret. The Japanese-inspired design creates an atmosphere that's dark, moody, and incredibly photogenic — your birthday photos will look amazing. The music policy is firmly hip-hop and RnB with Afrobeats, played loud and proud. The intimate size means the energy in the room is concentrated and infectious. Your birthday table puts you at the heart of the action without being overwhelmed.",
-    birthdayExtras:
-      "TABU offers sparkler bottle presentations, birthday cake arrangements, decorated tables, and DJ shoutouts for birthday celebrations. The unique aesthetic means even the standard bottle delivery feels special — the visual backdrop of the venue elevates everything.",
-    atmosphere:
-      "Dark, edgy, and effortlessly cool. TABU attracts a young, fashion-conscious crowd who appreciate good music and design. The energy builds steadily through the night, with the dancefloor peaking around 1am. It's the kind of club where everyone is there to have a good time, not to pose.",
-    groupSizeAdvice:
-      "TABU is ideal for birthday groups of 5–15. The intimate setting means smaller groups feel perfectly comfortable, and the club's size ensures your celebration gets noticed. Groups of 15+ can be accommodated with multiple tables.",
-    proTip:
-      "Thursday nights at TABU often have a more local, fashion-industry crowd and can be easier to book. Friday and Saturday are busier with more energy — perfect for a birthday where you want a packed room.",
+      "TABU London is now Rumour. If you were planning a birthday at TABU, Tape London on Hanover Square is the closest match for hip-hop and RnB in Mayfair, Scotch of St James is a small, characterful room for a tighter group, and Cirque Le Soir in Soho adds performers and a show to the same music.",
+    birthdayExtras: "TABU London is now Rumour.",
+    atmosphere: "TABU London is now Rumour.",
+    groupSizeAdvice: "TABU London is now Rumour.",
+    proTip: "TABU London is now Rumour. For a similar birthday, try Tape London, Scotch of St James or Cirque Le Soir.",
   },
   {
     slug: "funky-buddha",
     name: "Funky Buddha",
     shortName: "Funky Buddha",
-    tagline: "The Legendary Celebrity Birthday",
+    tagline: "Permanently Closed",
     location: "Berkeley Street, Mayfair",
     area: "Mayfair",
-    minSpend: "£1,000",
+    minSpend: "Closed",
     musicPolicy: "Hip-Hop, RnB, Dancehall, Afrobeats",
-    dressCode: "Smart stylish. Mayfair dress code — no sportswear, casual trainers, or shorts. Look sharp.",
-    openingNights: "Wednesday, Friday, Saturday",
+    dressCode: "Smart stylish.",
+    openingNights: "Permanently Closed",
     capacity: "Intimate (approx. 200)",
     birthdayRating: 5,
-    bestFor: "Iconic, celebrity-style birthday celebrations with incredible energy",
-    status: "open",
+    bestFor: "This venue has permanently closed",
+    status: "closed",
+    closedNote:
+      "Funky Buddha has closed. The Berkeley Street club in Mayfair no longer takes birthday tables or guestlist names. For the same hip-hop and RnB party energy, Tape London, Cirque Le Soir and Reign London are the closest open alternatives.",
+    alternatives: ["tape-london", "cirque-le-soir", "reign-london"],
     description:
-      "Funky Buddha is one of the most iconic names in London nightlife. Located on Berkeley Street in the heart of Mayfair, this legendary venue has hosted some of the biggest names in entertainment, sport, and fashion since it first opened. The intimate setting, combined with a music policy rooted in hip-hop, RnB, dancehall, and Afrobeats, creates an atmosphere that's unapologetically fun and dripping with energy. For birthdays, Funky Buddha delivers a celebration that feels like a headline event — intimate enough to feel exclusive, loud enough to feel like a party.",
-    birthdayHighlights: [
-      "One of Mayfair's most iconic and recognisable club names",
-      "Intimate layout where every birthday group is part of the energy",
-      "Music policy that keeps the dancefloor moving all night",
-      "Celebrity pedigree — a genuinely famous venue",
-      "Exceptional table service with a personal touch",
-    ],
+      "Funky Buddha was one of the best-known clubs in Mayfair, on Berkeley Street, with an intimate room, a hip-hop, RnB, dancehall and Afrobeats music policy and a long celebrity following. Funky Buddha has now closed.",
+    birthdayHighlights: [],
     whatToExpect:
-      "Walking into Funky Buddha, you immediately feel the heritage. This is a club that's earned its reputation over years of legendary nights. The intimate size means the energy is concentrated — the DJ is playing to the room, not to a stadium, and the music hits harder because of it. The hip-hop, RnB, and Afrobeats playlist is expertly curated, moving between classic anthems and current tracks. For birthdays, the compact dancefloor means your group is never far from the action, and the bottle presentations with sparklers create genuine moments of celebration.",
-    birthdayExtras:
-      "Birthday celebrations at Funky Buddha include sparkler bottle deliveries, birthday cake arrangements, DJ shoutouts, and decorated table setups. The intimate size means the DJ shoutout fills the whole room — everyone knows it's your birthday. The personal service ensures every detail is handled.",
-    atmosphere:
-      "Legendary, energetic, and intimate. Funky Buddha attracts a well-dressed crowd who come for the music and the energy. The atmosphere is unapologetically fun — people are dancing on seats, singing along, and genuinely celebrating. It's the kind of club where strangers become friends by the end of the night.",
-    groupSizeAdvice:
-      "Funky Buddha is perfect for birthday groups of 5–15. The intimate setting means your group is always part of the atmosphere, and the personal service means every birthday feels like a VIP event. Larger groups can be accommodated with advance planning.",
-    proTip:
-      "Wednesday nights at Funky Buddha have a loyal following and a slightly more relaxed atmosphere — great for a birthday that's more about the music and less about the scene. Friday and Saturday are peak energy.",
+      "Funky Buddha has closed. If you were planning a birthday there, Tape London is the closest match for hip-hop and RnB in Mayfair, Cirque Le Soir adds performers and a show to the same music, and Reign London suits a bigger birthday group with a full production.",
+    birthdayExtras: "Funky Buddha has closed.",
+    atmosphere: "Funky Buddha has closed.",
+    groupSizeAdvice: "Funky Buddha has closed.",
+    proTip: "Funky Buddha has closed. For a similar birthday, try Tape London, Cirque Le Soir or Reign London.",
   },
   {
     slug: "cuckoo-club",
-    name: "Cuckoo Club",
-    shortName: "Cuckoo",
-    tagline: "The Two-Floor Birthday Party",
+    name: "99 Regent Street (formerly Cuckoo Club)",
+    shortName: "99 Regent Street",
+    formerName: "Cuckoo Club",
+    tagline: "Cuckoo Club is now 99 Regent Street",
     location: "Swallow Street, Mayfair",
     area: "Mayfair",
-    minSpend: "£1,000",
-    musicPolicy: "Ground Floor: House & Commercial. Basement: Hip-Hop & RnB",
-    dressCode: "Smart stylish. Mayfair standards — dress well, feel great.",
-    openingNights: "Tuesday, Thursday, Friday, Saturday",
-    capacity: "Medium (approx. 350)",
-    birthdayRating: 4,
-    bestFor: "Groups who want two vibes under one roof",
-    status: "open",
+    minSpend: "Not confirmed",
+    musicPolicy: "Not confirmed",
+    dressCode: "Not confirmed for 99 Regent Street.",
+    openingNights: "Not confirmed",
+    capacity: "Not confirmed",
+    birthdayRating: 0,
+    bestFor: "Cuckoo Club is now 99 Regent Street",
+    status: "rebranded",
+    closedNote:
+      "Cuckoo Club is now 99 Regent Street. The venue on Swallow Street trades under its new name, so there are no Cuckoo Club birthday tables or guestlist names any more. 99 Regent Street is not on our booking list yet. For a birthday nearby, Reign London on Piccadilly suits big groups, The Box in Soho is the late-night show, and Scotch of St James mixes hip-hop and house.",
+    alternatives: ["reign-london", "the-box-london", "scotch-of-st-james"],
     description:
-      "Cuckoo Club is Mayfair's versatile two-floor nightclub, offering the rare luxury of two completely different atmospheres in one venue. The ground floor delivers a sleek, house-music-driven experience, while the basement pumps hip-hop and RnB in a darker, more intimate setting. For birthday groups, this dual personality is a genuine advantage — different members of your group can gravitate toward their preferred sound while staying in the same venue.",
-    birthdayHighlights: [
-      "Two floors with completely different music and atmospheres",
-      "Versatile option for groups with mixed music preferences",
-      "Stylish Mayfair location on Swallow Street",
-      "Open more nights than most Mayfair clubs (including Tuesday)",
-      "Consistent, lively atmosphere with a loyal following",
-    ],
+      "Cuckoo Club is now 99 Regent Street. People still search for Cuckoo Club when planning a birthday, so this page explains the change and where to book instead. History: as Cuckoo Club, the venue on Swallow Street ran two floors, house and commercial upstairs and hip-hop and RnB downstairs. The music, nights, prices and door policy at 99 Regent Street are not confirmed here yet, so none of Cuckoo Club's old terms should be read as 99 Regent Street's.",
+    birthdayHighlights: [],
     whatToExpect:
-      "Arriving at Cuckoo, you'll first encounter the ground floor — a stylish, well-lit space with house and commercial music. Head downstairs to the basement, and the vibe shifts entirely: darker, more intimate, with hip-hop and RnB dominating. Your birthday table can be on either floor depending on your music preference. Throughout the night, your group can move freely between the two, discovering which vibe suits their mood. Bottle service is excellent on both floors.",
-    birthdayExtras:
-      "Birthday celebrations at Cuckoo include sparkler bottle presentations, birthday cake delivery, decorated table arrangements, and DJ shoutouts on your chosen floor. The two-floor layout means your birthday can have multiple moments — a toast upstairs, cake downstairs, or vice versa.",
-    atmosphere:
-      "Versatile and consistently fun. Cuckoo attracts a mixed crowd that appreciates having options — you'll find house music lovers upstairs and hip-hop heads downstairs, often crossing between the two. The vibe is fun, social, and unpretentious, making it easy for birthday groups to settle in and enjoy.",
-    groupSizeAdvice:
-      "Cuckoo is excellent for birthday groups of 8–25. The two-floor layout means larger groups never feel cramped, and splitting across both floors actually adds to the fun. Smaller groups of 8–12 can book a single floor and still have a brilliant night.",
-    proTip:
-      "For birthdays, the basement hip-hop floor tends to create a more energetic celebration atmosphere. But booking a table on the ground floor gives you the option to retreat to a slightly calmer vibe when you need a break from the bass.",
+      "Cuckoo Club is now 99 Regent Street. If you were planning a birthday at Cuckoo Club, Reign London on Piccadilly is a few minutes away and suits large groups, The Box in Soho turns a birthday into a theatrical late night, and Scotch of St James mixes hip-hop, RnB and house depending on the night.",
+    birthdayExtras: "Cuckoo Club is now 99 Regent Street.",
+    atmosphere: "Cuckoo Club is now 99 Regent Street.",
+    groupSizeAdvice: "Cuckoo Club is now 99 Regent Street.",
+    proTip: "Cuckoo Club is now 99 Regent Street. For a similar birthday, try Reign London, The Box or Scotch of St James.",
   },
   {
     slug: "scotch-of-st-james",

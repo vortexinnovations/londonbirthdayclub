@@ -100,7 +100,7 @@ export default function BirthdayTableBookingPage() {
               everything arranged for you, completely free.
             </p>
             <p className="font-sans text-[0.75rem] uppercase tracking-[0.18em] text-ink-faint mb-10">
-              12 venues &middot; Tables from £1,000 &middot; Book in 2 minutes
+              9 venues &middot; Tables from £1,000 &middot; Book in 2 minutes
               via WhatsApp
             </p>
             <WhatsAppCTA
@@ -335,11 +335,6 @@ export default function BirthdayTableBookingPage() {
                 slug: "tape-london",
               },
               {
-                q: "Most iconic?",
-                a: "Funky Buddha — legendary venue, celebrity history",
-                slug: "funky-buddha",
-              },
-              {
                 q: "Most daring?",
                 a: "The Box London — provocative theatre meets nightclub",
                 slug: "the-box-london",
@@ -356,8 +351,8 @@ export default function BirthdayTableBookingPage() {
               },
               {
                 q: "Most photogenic?",
-                a: "TABU — Japanese underground design, every angle looks amazing",
-                slug: "tabu-london",
+                a: "Dear Darling: chandeliers and velvet booths",
+                slug: "dear-darling",
               },
               {
                 q: "Most elegant?",

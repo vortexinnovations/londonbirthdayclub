@@ -23,7 +23,7 @@ const faqs = [
   {
     question: "What is the best London club for a 21st birthday?",
     answer:
-      "For a 21st birthday, Cirque Le Soir offers the most exciting and memorable experience with live performers and an electric atmosphere. Cuckoo Club is also excellent thanks to its two floors catering to different music tastes. Both venues create the high-energy, spectacular atmosphere that 21st birthday groups are looking for.",
+      "For a 21st birthday, Cirque Le Soir offers the most exciting and memorable experience with live performers and an electric atmosphere. Reign London is also excellent for bigger groups, with aerial performances and plenty of space. Both venues create the high-energy, spectacular atmosphere that 21st birthday groups are looking for.",
   },
   {
     question: "Where should I celebrate my 30th birthday in London?",
@@ -54,12 +54,6 @@ const milestones = [
           "The live performers, theatrical atmosphere, and party energy make Cirque the ultimate 21st birthday experience. Your group will be genuinely amazed — fire breathers, acrobats, and pyrotechnic bottle shows create the kind of spectacle that makes turning 21 feel monumental.",
       },
       {
-        name: "Cuckoo Club",
-        slug: "cuckoo-club",
-        reason:
-          "Two floors with different music mean everyone in your birthday group finds their groove. The hip-hop basement is where the party peaks. The Mayfair location makes the night feel special without being intimidatingly exclusive.",
-      },
-      {
         name: "Reign London",
         slug: "reign-london",
         reason:
@@ -79,16 +73,16 @@ const milestones = [
       "By 25, you and your friends have been to plenty of clubs. A 25th birthday needs to be a step up — somewhere that impresses, that feels like a genuine treat. Your group is likely earning more, willing to spend a bit more, and wants something that feels special without being stuffy. This is the age where Mayfair starts making sense.",
     topPicks: [
       {
-        name: "TABU London",
-        slug: "tabu-london",
+        name: "Tape London",
+        slug: "tape-london",
         reason:
-          "The Japanese underground aesthetic is the kind of venue that impresses a 25-year-old crowd. It's cool, it's different, and the hip-hop playlist is exactly right. The intimate size means your birthday group is part of the energy, not lost in it.",
+          "A step up for a 25th: a small, hard-to-get-into Mayfair room with hip-hop and RnB, a celebrity crowd and a table that feels like a genuine treat.",
       },
       {
-        name: "Funky Buddha",
-        slug: "funky-buddha",
+        name: "The Box London",
+        slug: "the-box-london",
         reason:
-          "One of the most iconic names in London nightlife. The legendary Berkeley Street venue has incredible energy, an excellent hip-hop playlist, and the kind of celebrity pedigree that makes turning 25 feel like a headline event.",
+          "For a 25th group that has seen plenty of clubs, The Box in Soho adds late-night theatre to the party. It is daring, it is talked about, and it is unlike any other room in London.",
       },
     ],
     budgetTip:

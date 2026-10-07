@@ -103,7 +103,6 @@ export default function VIPBirthdayTablesPage() {
               { slug: "cirque-le-soir", why: "VIP tables get the best performer interactions, the most dramatic bottle presentations, and front-row seats to the circus spectacle." },
               { slug: "dear-darling", why: "Opulent VIP booths surrounded by chandeliers and velvet. The most elegant VIP birthday setting in Mayfair." },
               { slug: "the-box-london", why: "Premium positions with direct stage views. VIP here means front-row seats to London's most provocative performances." },
-              { slug: "funky-buddha", why: "Legendary VIP energy. The intimate setting means every table feels exclusive, and the celebrity pedigree is genuine." },
             ].map(item => {
               const club = openClubs.find(c => c.slug === item.slug);
               if (!club) return null;

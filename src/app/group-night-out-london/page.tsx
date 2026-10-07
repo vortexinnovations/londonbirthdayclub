@@ -18,12 +18,12 @@ const faqs = [
   { question: "How many people do you need for a group booking at a London club?", answer: "Most London clubs accommodate group bookings from 5 guests upwards. Tables typically seat 8-15 comfortably, with larger groups of 20-30+ accommodated across multiple tables. There's no maximum — we've arranged group nights for 50+ guests across venues like Reign London and BEAT London." },
   { question: "How much does a group night out cost per person in London?", answer: "With a £1,000 minimum table spend, the per-person cost depends on your group size: roughly £200 for 5 people, £100 for 10, £67 for 15, or £50 for 20. This covers premium bottles, mixers, a reserved VIP area, and dedicated table service. Larger groups get better per-person value." },
   { question: "What types of group celebrations can you book?", answer: "We handle all group celebrations: birthday parties (our specialty), hen and stag nights, work celebrations and leaving parties, promotions, engagements, reunions, graduation nights, and any occasion worth celebrating with a group at a premium London venue." },
-  { question: "Can you book multiple tables for a large group?", answer: "Yes. For groups of 15+, we regularly arrange multiple tables positioned together so your group stays connected. Venues like Reign London, BEAT London, and Cuckoo Club are particularly good at accommodating multi-table group bookings." },
+  { question: "Can you book multiple tables for a large group?", answer: "Yes. For groups of 15+, we regularly arrange multiple tables positioned together so your group stays connected. Venues like Reign London, BEAT London, and The Box London are particularly good at accommodating multi-table group bookings." },
 ];
 
 export default function GroupNightOutPage() {
-  const largeVenues = openClubs.filter(c => ["reign-london", "beat-london", "cuckoo-club", "the-box-london"].includes(c.slug));
-  const intimateVenues = openClubs.filter(c => ["tape-london", "tabu-london", "dear-darling", "scotch-of-st-james"].includes(c.slug));
+  const largeVenues = openClubs.filter(c => ["reign-london", "beat-london", "the-box-london"].includes(c.slug));
+  const intimateVenues = openClubs.filter(c => ["tape-london", "dear-darling", "scotch-of-st-james"].includes(c.slug));
 
   return (
     <>

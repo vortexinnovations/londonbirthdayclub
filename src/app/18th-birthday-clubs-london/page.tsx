@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 
 const faqs = [
   { question: "Can you go to a London nightclub for your 18th birthday?", answer: "Yes. London nightclubs admit guests aged 18 and over. You'll need valid photo ID (passport or driving licence) to enter. For an 18th birthday, a VIP table booking ensures your group gets priority entry and avoids any door queue uncertainty." },
-  { question: "What's the best London club for an 18th birthday?", answer: "Cirque Le Soir is our top recommendation — the live performers, pyrotechnics, and spectacular atmosphere create the most memorable first big night out. Cuckoo Club is also excellent with its two floors catering to different music tastes. Both are welcoming to 18th birthday groups." },
+  { question: "What's the best London club for an 18th birthday?", answer: "Cirque Le Soir is our top recommendation — the live performers, pyrotechnics, and spectacular atmosphere create the most memorable first big night out. Reign London is also excellent for bigger groups, with aerial performances and a big room. Both are welcoming to 18th birthday groups." },
   { question: "How much does an 18th birthday table cost in London?", answer: "Tables start from £1,000 minimum spend. For a typical 18th birthday group of 10-15, that's £67-100 per person — often less than a night of buying individual drinks, but with VIP service, bottles, and a reserved area. Weeknight bookings can offer lower minimums." },
   { question: "What should I wear to a London club for my 18th?", answer: "Mayfair clubs require smart dress: no sportswear, trainers, or casual jeans. For men, smart shoes, fitted trousers, and a collared shirt. For women, the dress code is more flexible but still smart. BEAT London has a more relaxed smart-casual dress code." },
 ];
@@ -24,9 +24,8 @@ const faqs = [
 export default function EighteenthBirthdayPage() {
   const topPicks = [
     { slug: "cirque-le-soir", reason: "The ultimate first big night out. Live performers, pyrotechnic bottle shows, and an atmosphere that makes turning 18 feel monumental. Your group will be genuinely amazed — this is the kind of night you'll tell stories about for years." },
-    { slug: "cuckoo-club", reason: "Two floors with completely different vibes solve the music-taste problem that every group has. Hip-hop downstairs, house upstairs — everyone finds their groove. The Mayfair location makes it feel special without being intimidating." },
+    { slug: "beat-london", reason: "A more relaxed smart-casual dress code and one of the best sound systems in London. House and tech house for an 18th group that wants to dance rather than pose." },
     { slug: "reign-london", reason: "If your 18th group is big (15+), Reign's grand venue with aerial performances creates a celebration that matches the energy of the milestone. The spectacle gives everyone something to remember." },
-    { slug: "funky-buddha", reason: "One of the most iconic names in London nightlife. The intimate setting and incredible hip-hop playlist create an 18th birthday that feels like a proper event. The energy is infectious." },
   ];
 
   return (

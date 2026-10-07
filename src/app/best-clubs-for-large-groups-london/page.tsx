@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 };
 
 const faqs = [
-  { question: "Which London club is best for 20+ guests?", answer: "Reign London is our top pick for 20+ guests — the grand multi-level venue has the space, spectacle, and multi-table configurations to handle large groups without anyone feeling lost. BEAT London and Cuckoo Club are also excellent for large groups, with BEAT offering the best sound quality and Cuckoo providing two floors of different music." },
+  { question: "Which London club is best for 20+ guests?", answer: "Reign London is our top pick for 20+ guests — the grand multi-level venue has the space, spectacle, and multi-table configurations to handle large groups without anyone feeling lost. BEAT London and The Box London are also excellent for large groups, with BEAT offering the best sound quality and The Box spreading big groups across several levels." },
   { question: "Can you book multiple tables together at London clubs?", answer: "Yes. For groups of 15+, we regularly arrange multiple tables positioned adjacent to each other so your group stays connected. We coordinate table positions with the venue to ensure your entire party is in the same area. This is standard practice at most London clubs." },
   { question: "How much does a large group booking cost per person?", answer: "Large group bookings offer the best per-person value. A £1,000 minimum spend across 20 people is just £50 each. For 30 people, it's roughly £33 per person. Multiple tables mean multiple minimum spends, but the per-person cost still decreases as the group grows." },
   { question: "How do you handle payments for large groups?", answer: "We recommend collecting money in advance via bank transfer to one organiser. For groups of 20+, nominate 2-3 people to manage collection. Most organisers set the per-person amount 10-15% above the minimum to cover the birthday person's share and tip. Payment apps make this straightforward." },
@@ -26,7 +26,6 @@ export default function LargeGroupsPage() {
   const largeGroupVenues = [
     { slug: "reign-london", capacity: "500+", tables: "Multi-table, same level", why: "The grand venue handles 20-40+ guests across adjacent tables with aerial performances keeping the entire group entertained. The biggest birthday-friendly venue in central London." },
     { slug: "beat-london", capacity: "400", tables: "Adjacent dancefloor tables", why: "The medium capacity and more relaxed atmosphere mean large groups feel cohesive rather than scattered. The world-class sound system means everyone shares the same musical experience." },
-    { slug: "cuckoo-club", capacity: "350", tables: "Split across two floors", why: "Large groups can book tables on both floors, giving your party two different vibes without splitting up. The versatile layout keeps big groups connected while offering variety." },
     { slug: "the-box-london", capacity: "300", tables: "Theatre-style, multiple areas", why: "The multi-level layout gives large groups different perspectives on the performances. Mezzanine tables offer relaxed viewing while ground-level positions put you in the action." },
     { slug: "cirque-le-soir", capacity: "350", tables: "Adjacent performer-side", why: "Even with 20+ guests, the circus performers interact with your entire group. Multiple tables positioned together mean everyone gets the Cirque experience. Friday nights recommended for large groups." },
   ];
@@ -41,9 +40,8 @@ export default function LargeGroupsPage() {
         items={[
           { name: "Reign London", url: "https://londonbirthdayclub.com/clubs/reign-london", position: 1 },
           { name: "BEAT London", url: "https://londonbirthdayclub.com/clubs/beat-london", position: 2 },
-          { name: "Cuckoo Club", url: "https://londonbirthdayclub.com/clubs/cuckoo-club", position: 3 },
-          { name: "The Box London", url: "https://londonbirthdayclub.com/clubs/the-box-london", position: 4 },
-          { name: "Cirque Le Soir", url: "https://londonbirthdayclub.com/clubs/cirque-le-soir", position: 5 },
+          { name: "The Box London", url: "https://londonbirthdayclub.com/clubs/the-box-london", position: 3 },
+          { name: "Cirque Le Soir", url: "https://londonbirthdayclub.com/clubs/cirque-le-soir", position: 4 },
         ]}
       />
 

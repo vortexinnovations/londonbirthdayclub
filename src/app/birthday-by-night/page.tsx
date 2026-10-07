@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title:
     "Best Night of the Week for a Birthday in London — Weekday vs Weekend",
   description:
-    "Which night of the week is best for your birthday? A guide to Tuesday–Saturday birthday celebrations at London clubs — atmosphere, pricing, and which venues are open each night.",
+    "Which night of the week is best for your birthday? A guide to Wednesday to Saturday birthday celebrations at London clubs — atmosphere, pricing, and which venues are open each night.",
   alternates: {
     canonical: "https://londonbirthdayclub.com/birthday-by-night",
   },
@@ -27,37 +27,24 @@ const faqs = [
   {
     question: "Can I celebrate my birthday at a London club on a weeknight?",
     answer:
-      "Absolutely. Many London clubs are open Tuesday through Saturday. Weeknight birthdays (Tuesday-Thursday) often come with lower minimum spends, more attentive service, and easier bookings. The atmosphere is slightly more intimate but still genuinely fun — and for some birthday groups, that's actually preferable.",
+      "Absolutely. Many London clubs are open Wednesday through Saturday. Weeknight birthdays (Wednesday and Thursday) often come with lower minimum spends, more attentive service, and easier bookings. The atmosphere is slightly more intimate but still genuinely fun — and for some birthday groups, that's actually preferable.",
   },
   {
     question: "Which London clubs are open on a Thursday?",
     answer:
-      "Thursday is a popular night in Mayfair with several top clubs open: Tape London, TABU, Maddox Club, Scotch of St James, Cuckoo Club, Dear Darling, and The Box London all operate on Thursday nights. It's an excellent night for birthdays with strong atmosphere and lower minimum spends than weekends.",
+      "Thursday is a popular night in Mayfair with several top clubs open: Tape London, Maddox Club, Scotch of St James, Dear Darling, and The Box London all operate on Thursday nights. It's an excellent night for birthdays with strong atmosphere and lower minimum spends than weekends.",
   },
 ];
 
 const nights = [
   {
-    day: "Tuesday",
-    slug: "tuesday",
-    energy: "Relaxed but fun",
-    minSpendNote: "Lowest minimums available",
-    venuesOpen: ["Cuckoo Club"],
-    description:
-      "Tuesday is the most intimate night for a birthday celebration in London. Only a handful of venues operate, which means smaller crowds and genuine personal attention. Cuckoo Club runs a popular Tuesday night that attracts a loyal crowd — it's a more relaxed atmosphere than the weekend, but the two-floor layout still delivers a proper night out.",
-    bestFor:
-      "Birthday groups who want an intimate, laid-back celebration without the weekend crowds. Great for smaller groups of 6–10 who prefer conversation alongside their cocktails.",
-    considerations:
-      "Limited venue choice means less flexibility. But if Cuckoo suits your group's style, a Tuesday birthday is the best value option in London with the most personal service you'll get at any Mayfair club.",
-  },
-  {
     day: "Wednesday",
     slug: "wednesday",
     energy: "Building momentum",
     minSpendNote: "Lower than weekend, great value",
-    venuesOpen: ["Cirque Le Soir", "Funky Buddha"],
+    venuesOpen: ["Cirque Le Soir"],
     description:
-      "Wednesday is an underrated birthday night. Cirque Le Soir's Wednesday offering is particularly noteworthy — you still get the full circus experience with live performers, but the atmosphere is slightly more intimate than Friday. Funky Buddha also runs a legendary Wednesday night with its signature hip-hop energy and iconic atmosphere.",
+      "Wednesday is an underrated birthday night. Cirque Le Soir's Wednesday offering is particularly noteworthy — you still get the full circus experience with live performers, but the atmosphere is slightly more intimate than Friday.",
     bestFor:
       "Birthday groups who want the big-venue experience without the peak-weekend price tag. A Wednesday Cirque birthday gives you the performers and spectacle at a more accessible minimum spend.",
     considerations:
@@ -70,10 +57,8 @@ const nights = [
     minSpendNote: "Moderate — strong value for the atmosphere",
     venuesOpen: [
       "Tape London",
-      "TABU London",
       "Maddox Club",
       "Scotch of St James",
-      "Cuckoo Club",
       "Dear Darling",
       "The Box London",
     ],
@@ -93,11 +78,8 @@ const nights = [
       "Tape London",
       "Cirque Le Soir",
       "Reign London",
-      "TABU London",
-      "Funky Buddha",
       "Maddox Club",
       "Scotch of St James",
-      "Cuckoo Club",
       "Dear Darling",
       "BEAT London",
       "The Box London",
@@ -119,11 +101,8 @@ const nights = [
       "Tape London",
       "Cirque Le Soir",
       "Reign London",
-      "TABU London",
-      "Funky Buddha",
       "Maddox Club",
       "Scotch of St James",
-      "Cuckoo Club",
       "Dear Darling",
       "BEAT London",
       "The Box London",
@@ -244,11 +223,8 @@ export default function BirthdayByNightPage() {
                       "Tape London": "tape-london",
                       "Cirque Le Soir": "cirque-le-soir",
                       "Reign London": "reign-london",
-                      "TABU London": "tabu-london",
-                      "Funky Buddha": "funky-buddha",
                       "Maddox Club": "maddox-club",
                       "Scotch of St James": "scotch-of-st-james",
-                      "Cuckoo Club": "cuckoo-club",
                       "Dear Darling": "dear-darling",
                       "BEAT London": "beat-london",
                       "The Box London": "the-box-london",

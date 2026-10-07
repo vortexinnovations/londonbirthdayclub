@@ -26,6 +26,24 @@ export async function generateMetadata({
   const club = getClubBySlug(slug);
   if (!club) return {};
 
+  if (club.status === "rebranded") {
+    const formerName = club.formerName ?? club.name;
+    const title = `${formerName} Is Now ${club.shortName}: Birthday Alternatives`;
+    const description = `${formerName} in ${club.area} is now ${club.shortName}. What changed, and the open London clubs to book for a birthday instead, free via WhatsApp.`;
+    return {
+      title,
+      description,
+      alternates: {
+        canonical: `https://londonbirthdayclub.com/clubs/${club.slug}`,
+      },
+      openGraph: {
+        title,
+        description,
+        url: `https://londonbirthdayclub.com/clubs/${club.slug}`,
+      },
+    };
+  }
+
   if (club.status === "closed") {
     const title = `${club.name} Has Closed: ${club.area} Birthday Alternatives`;
     const description = `${club.name} in ${club.area} has closed and no longer takes birthday bookings. Open London clubs for a similar birthday night, booked free via WhatsApp.`;
@@ -90,7 +108,10 @@ export default async function ClubPage({
   ];
 
   const otherClubs = openClubs.filter((c) => c.slug !== club.slug).slice(0, 4);
-  const isClosed = club.status === "closed";
+  const isRebranded = club.status === "rebranded";
+  // Closed and rebranded venues are not sold: no prices, booking FAQ or booking CTA.
+  const isClosed = club.status === "closed" || isRebranded;
+  const formerName = club.formerName ?? club.name;
   const alternativeClubs = isClosed && club.alternatives
     ? club.alternatives.map((s) => getClubBySlug(s)).filter(Boolean)
     : [];
@@ -104,7 +125,7 @@ export default async function ClubPage({
         <section className="pt-36 sm:pt-40 pb-10 px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto border-y border-[#8a4432]/40 bg-[#2a120b]/40 px-6 sm:px-8 py-8">
             <h2 className="font-display font-medium text-lg sm:text-xl text-[#d98d75] mb-3">
-              {club.name} Has Permanently Closed
+              {isRebranded ? `${formerName} Is Now ${club.shortName}` : `${club.name} Has Permanently Closed`}
             </h2>
             <p className="font-sans text-base leading-[1.8] text-ink-soft mb-5">
               {club.closedNote}
@@ -153,7 +174,7 @@ export default async function ClubPage({
               &larr; All Birthday Venues
             </Link>
             <h1 className="font-display font-medium text-[2.9rem] leading-[1.04] tracking-[-0.015em] sm:text-6xl lg:text-[4.75rem] text-ink mb-6">
-              Birthday at{" "}
+              {isRebranded ? `${formerName} is now ` : "Birthday at "}
               <em
                 className={
                   isClosed
@@ -161,12 +182,14 @@ export default async function ClubPage({
                     : "italic text-champagne font-normal"
                 }
               >
-                {club.name}
+                {isRebranded ? club.shortName : club.name}
               </em>
             </h1>
             {isClosed && (
               <p className="font-sans font-semibold text-[#d98d75] mb-5">
-                This venue has permanently closed
+                {isRebranded
+                  ? `Renamed venue: not on our booking list yet`
+                  : "This venue has permanently closed"}
               </p>
             )}
             {!isClosed && (
@@ -435,7 +458,9 @@ export default async function ClubPage({
                 </em>
               </h2>
               <p className="font-sans text-[1.0625rem] leading-[1.8] text-ink-soft mb-10 max-w-xl mx-auto">
-                {club.name} has permanently closed, but we can help you find the perfect alternative. Message us on WhatsApp and we&apos;ll recommend the best venue for your birthday.
+                {isRebranded
+                  ? `${formerName} is now ${club.shortName}, which is not on our booking list yet. Message us on WhatsApp and we will recommend an open venue for your birthday.`
+                  : `${club.name} has permanently closed, but we can help you find the perfect alternative. Message us on WhatsApp and we'll recommend the best venue for your birthday.`}
               </p>
               <WhatsAppCTA
                 message={getGeneralWhatsAppMessage()}

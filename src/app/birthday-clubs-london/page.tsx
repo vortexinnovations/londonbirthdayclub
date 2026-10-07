@@ -11,14 +11,14 @@ import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 export const metadata: Metadata = {
   title: "Birthday Clubs London — 12 Venues Compared (2026)",
   description:
-    "Compare 12 London birthday clubs side by side — minimum spends, music, group size, and what makes each one great for birthdays. Tables from £1,000. Free booking via WhatsApp.",
+    "Compare 9 London birthday clubs side by side — minimum spends, music, group size, and what makes each one great for birthdays. Tables from £1,000. Free booking via WhatsApp.",
   alternates: {
     canonical: "https://londonbirthdayclub.com/birthday-clubs-london",
   },
   openGraph: {
     title: "Birthday Clubs in London | Find Your Perfect Venue",
     description:
-      "Compare 12 London nightclubs for birthday celebrations. VIP tables, bottle service, birthday packages. Free booking via WhatsApp.",
+      "Compare 9 London nightclubs for birthday celebrations. VIP tables, bottle service, birthday packages. Free booking via WhatsApp.",
     url: "https://londonbirthdayclub.com/birthday-clubs-london",
   },
 };
@@ -27,7 +27,7 @@ const faqs = [
   {
     question: "What are the best birthday clubs in London?",
     answer:
-      "The best birthday clubs in London include Cirque Le Soir (for live entertainment and spectacle), Tape London (for exclusive, intimate celebrations), Funky Buddha (for iconic celebrity energy), The Box (for provocative theatrical performances), and Reign London (for large group spectacles). All offer VIP table packages with birthday extras like sparklers, cake, and DJ shoutouts.",
+      "The best birthday clubs in London include Cirque Le Soir (for live entertainment and spectacle), Tape London (for exclusive, intimate celebrations), The Box (for provocative theatrical performances), and Reign London (for large group spectacles). All offer VIP table packages with birthday extras like sparklers, cake, and DJ shoutouts.",
   },
   {
     question: "How much does a birthday club table cost in London?",
@@ -47,7 +47,7 @@ const faqs = [
   {
     question: "How far in advance should I book a birthday club in London?",
     answer:
-      "We recommend booking 1-2 weeks ahead for standard weekends, and 3-4 weeks for milestone birthdays or large groups. Popular venues like Tape London and Cirque Le Soir fill up fastest. Weeknight birthdays (Tuesday-Thursday) are easier to secure on shorter notice.",
+      "We recommend booking 1-2 weeks ahead for standard weekends, and 3-4 weeks for milestone birthdays or large groups. Popular venues like Tape London and Cirque Le Soir fill up fastest. Weeknight birthdays (Wednesday and Thursday) are easier to secure on shorter notice.",
   },
 ];
 
@@ -319,17 +319,17 @@ export default function BirthdayClubsLondonPage() {
             {[
               {
                 size: "5–10 guests",
-                venues: "Tape London, TABU, Dear Darling, Scotch of St James",
+                venues: "Tape London, Dear Darling, Scotch of St James",
                 desc: "Intimate venues where smaller groups feel VIP. Personal service, concentrated energy.",
               },
               {
                 size: "10–15 guests",
-                venues: "Cirque Le Soir, Funky Buddha, Cuckoo Club, Selene",
+                venues: "Cirque Le Soir, Maddox Club, Selene",
                 desc: "The sweet spot. Big enough for energy, small enough for cohesion.",
               },
               {
                 size: "15–25 guests",
-                venues: "Reign London, The Box, BEAT London, Cuckoo Club",
+                venues: "Reign London, The Box, BEAT London",
                 desc: "Large capacity venues with space for bigger groups without feeling cramped.",
               },
               {
@@ -366,11 +366,11 @@ export default function BirthdayClubsLondonPage() {
           <ClubComparisonModule
             title="Quick Match: Best Club for Your Birthday"
             categories={[
-              { label: "Best for 6-10 Guests", description: "Intimate celebrations", clubs: ["tape-london", "tabu-london", "dear-darling", "scotch-of-st-james"] },
-              { label: "Best for 15+ Guests", description: "Big group energy", clubs: ["reign-london", "beat-london", "cuckoo-club", "the-box-london"] },
+              { label: "Best for 6-10 Guests", description: "Intimate celebrations", clubs: ["tape-london", "dear-darling", "scotch-of-st-james"] },
+              { label: "Best for 15+ Guests", description: "Big group energy", clubs: ["reign-london", "beat-london", "the-box-london"] },
               { label: "Best for Entertainment", description: "Performers & spectacle", clubs: ["cirque-le-soir", "the-box-london", "reign-london"] },
               { label: "Best for Elegance", description: "Refined celebrations", clubs: ["dear-darling", "maddox-club", "selene-london"] },
-              { label: "Best for Hip-Hop", description: "The right playlist", clubs: ["funky-buddha", "tabu-london", "cuckoo-club"] },
+              { label: "Best for Hip-Hop", description: "The right playlist", clubs: ["tape-london", "cirque-le-soir", "scotch-of-st-james"] },
               { label: "Best for House Music", description: "Groove all night", clubs: ["maddox-club", "beat-london", "selene-london"] },
             ]}
           />

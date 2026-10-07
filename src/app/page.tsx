@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   title:
     "London Birthday Club — VIP Birthday Tables at London's Best Nightclubs",
   description:
-    "Free birthday planning at London's top nightclubs. VIP tables from £1,000 with sparklers, cake, and bottle service at Cirque Le Soir, Tape, Funky Buddha & more. Book instantly via WhatsApp.",
+    "Free birthday planning at London's top nightclubs. VIP tables from £1,000 with sparklers, cake, and bottle service at Cirque Le Soir, Tape, The Box & more. Book instantly via WhatsApp.",
   alternates: { canonical: "https://londonbirthdayclub.com" },
 };
 
@@ -252,12 +252,12 @@ export default function HomePage() {
           <ClubComparisonModule
             title="Find Your Perfect Birthday Club"
             categories={[
-              { label: "Best for 6-10 Guests", description: "Intimate celebrations", clubs: ["tape-london", "tabu-london", "dear-darling", "scotch-of-st-james"] },
-              { label: "Best for 15+ Guests", description: "Large group energy", clubs: ["reign-london", "beat-london", "cuckoo-club", "the-box-london"] },
+              { label: "Best for 6-10 Guests", description: "Intimate celebrations", clubs: ["tape-london", "dear-darling", "scotch-of-st-james"] },
+              { label: "Best for 15+ Guests", description: "Large group energy", clubs: ["reign-london", "beat-london", "the-box-london"] },
               { label: "Best for Entertainment", description: "Performers and spectacle", clubs: ["cirque-le-soir", "the-box-london", "reign-london"] },
-              { label: "Best for Hip-Hop & RnB", description: "The right soundtrack", clubs: ["funky-buddha", "tabu-london", "cuckoo-club"] },
+              { label: "Best for Hip-Hop & RnB", description: "The right soundtrack", clubs: ["tape-london", "cirque-le-soir", "scotch-of-st-james"] },
               { label: "Best for Dinner + Club", description: "Complete evening", clubs: ["maddox-club", "dear-darling"] },
-              { label: "Best on a Budget", description: "Midweek value", clubs: ["cuckoo-club", "cirque-le-soir", "funky-buddha"] },
+              { label: "Best on a Budget", description: "Midweek value", clubs: ["cirque-le-soir", "beat-london", "scotch-of-st-james"] },
             ]}
           />
         </div>
@@ -284,7 +284,7 @@ export default function HomePage() {
               {
                 href: "/birthday-clubs-london",
                 label: "Birthday Clubs London",
-                sub: "All 12 venues compared",
+                sub: "All 9 venues compared",
               },
               {
                 href: "/birthday-table-booking-london",
