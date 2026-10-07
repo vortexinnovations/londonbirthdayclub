@@ -449,7 +449,7 @@ export const clubs: Club[] = [
     bestFor: "Refined birthday celebrations in an elegant Mayfair setting",
     status: "open",
     description:
-      "Selene London brings a refined elegance to Mayfair's nightlife, offering a venue that balances sophisticated design with genuine club energy. The interiors are polished and considered — soft lighting, luxurious materials, and a layout that creates both intimate corners and open dancefloor space. The music spans house, commercial, and RnB, appealing to a broad range of tastes. For birthdays, Selene delivers a celebration that feels premium without being pretentious — stylish, fun, and effortlessly impressive.",
+      "Selene London brings a refined elegance to Mayfair's nightlife, offering a venue that balances sophisticated design with genuine club energy. The interiors are polished and considered — soft lighting, luxurious materials, and a layout that creates both intimate corners and open dancefloor space. Alongside the club rooms, Selene has private bowling lanes, which birthday groups can book together with their birthday table. The music spans house, commercial, and RnB, appealing to a broad range of tastes. For birthdays, Selene delivers a celebration that feels premium without being pretentious — stylish, fun, and effortlessly impressive.",
     birthdayHighlights: [
       "Elegant, refined interiors with luxurious finishing",
       "Balanced atmosphere — sophisticated but never stuffy",
