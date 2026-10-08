@@ -155,7 +155,7 @@ export const blogDataPart3: BlogPost[] = [
         heading: "Best Restaurants Near London Birthday Clubs",
         headingLevel: "h2",
         content: [
-          "For Mayfair clubs (Tape, TABU, Funky Buddha, Cuckoo, Dear Darling, Selene, Scotch), central Mayfair and Piccadilly offer dozens of suitable restaurants. Look for venues on or near Berkeley Square, Bruton Street, or Shepherd Market. Italian and Japanese restaurants tend to handle birthday groups best - they're used to larger bookings and celebration energy.",
+          "For Mayfair clubs (Tape, TABU, Funky Buddha, Cuckoo, Dear Darling, Scotch), central Mayfair and Piccadilly offer dozens of suitable restaurants. Look for venues on or near Berkeley Square, Bruton Street, or Shepherd Market. For Selene, just north of Oxford Circus in Fitzrovia, the restaurants of Fitzrovia and Marylebone are a short walk away. Italian and Japanese restaurants tend to handle birthday groups best - they're used to larger bookings and celebration energy.",
           "For Soho clubs (Cirque Le Soir, The Box), the restaurants on Dean Street, Frith Street, and Greek Street are all within a 5-minute walk. For Reign London on Piccadilly, the restaurants around St James's and Haymarket are ideal. The key is proximity - you want a 5-10 minute walk maximum between dinner and the club.",
         ],
       },

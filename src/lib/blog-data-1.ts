@@ -35,7 +35,7 @@ export const blogDataPart1: BlogPost[] = [
         heading: "Minimum Spend by Venue",
         headingLevel: "h2",
         content: [
-          "Most Mayfair nightclubs start at £1,000 minimum spend on a standard weekend night. However, this varies by venue, night of the week, and table position. Tape London, being the most exclusive members' club, starts from £1,500. Most other venues - Cirque Le Soir, TABU, Funky Buddha, Luna Club London, Maddox Club, Scotch of St James, Cuckoo Club, Dear Darling, BEAT London, The Box London, Selene London, and Reign London - start from £1,000.",
+          "Most Mayfair and West End nightclubs start at £1,000 minimum spend on a standard weekend night. However, this varies by venue, night of the week, and table position. Tape London, being the most exclusive members' club, starts from £1,500. Most other venues - Cirque Le Soir, TABU, Funky Buddha, Luna Club London, Maddox Club, Scotch of St James, Cuckoo Club, Dear Darling, BEAT London, The Box London, Selene London, and Reign London - start from £1,000.",
           "These are starting prices. Premium table positions (closer to the DJ, in the centre of the room, or in more private areas) often carry higher minimums. Friday and Saturday nights are at the top end, while Thursday and midweek nights can offer lower entry points.",
         ],
       },

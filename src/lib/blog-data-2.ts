@@ -454,9 +454,9 @@ export const blogDataPart2: BlogPost[] = [
   {
     slug: "selene-london-birthday-refined-celebration",
     title: "Selene London Birthday: A Night of Refined Celebration",
-    metaTitle: "Selene London Birthday | Refined Mayfair Birthday Celebration",
-    metaDescription: "Celebrate your birthday at Selene London - Mayfair's refined new venue that balances elegance with genuine fun. Perfect for groups who want premium without pretension.",
-    excerpt: "Why Selene London is the ideal birthday venue for groups who want Mayfair elegance without the pretension - refined interiors, balanced music, and an atmosphere that works for everyone.",
+    metaTitle: "Selene London Birthday | Refined Celebration Near Oxford Circus",
+    metaDescription: "Celebrate your birthday at Selene London, the refined venue just north of Oxford Circus that balances elegance with genuine fun. Perfect for groups who want premium without pretension.",
+    excerpt: "Why Selene London is the ideal birthday venue for groups who want West End elegance without the pretension: refined interiors, balanced music, and an atmosphere that works for everyone.",
     publishedAt: "2026-01-05",
     updatedAt: "2026-03-25",
     category: "Venue Guide",
@@ -466,7 +466,7 @@ export const blogDataPart2: BlogPost[] = [
         heading: "The Balance That Makes Selene Special",
         headingLevel: "h2",
         content: [
-          "Many Mayfair clubs lean heavily in one direction - either full nightclub energy or sophisticated lounge vibes. Selene London finds a rare middle ground, delivering a venue that's genuinely elegant without feeling intimidating, and genuinely fun without sacrificing sophistication. This balance is harder to achieve than it sounds, and it's what makes Selene particularly well-suited for birthday celebrations.",
+          "Many West End clubs lean heavily in one direction - either full nightclub energy or sophisticated lounge vibes. Selene London, on Winsley Street in Fitzrovia just north of Oxford Circus, finds a rare middle ground, delivering a venue that's genuinely elegant without feeling intimidating, and genuinely fun without sacrificing sophistication. This balance is harder to achieve than it sounds, and it's what makes Selene particularly well-suited for birthday celebrations.",
           "For birthday groups, this balance means nobody in your crew feels out of place. The guests who want to dance have the energy and dancefloor to do so. Those who prefer conversation and cocktails have a refined atmosphere that facilitates both. Everyone can enjoy the evening at their own pace within the same venue.",
         ],
       },
@@ -488,8 +488,8 @@ export const blogDataPart2: BlogPost[] = [
       },
     ],
     faqs: [
-      { question: "What makes Selene different from other Mayfair clubs?", answer: "Selene's defining quality is balance. It's elegant but not intimidating, fun but not overwhelming, and sophisticated without being pretentious. This makes it particularly well-suited for birthday groups with diverse tastes and expectations. The refined atmosphere works for milestone birthdays and casual celebrations alike." },
-      { question: "Is Selene London good for mixed birthday groups?", answer: "Excellent. Selene's balanced atmosphere and varied music policy make it one of the best Mayfair venues for groups with diverse preferences. Whether your guests prefer dancing or conversation, house music or RnB, they'll find their comfort zone at Selene." },
+      { question: "What makes Selene different from the Mayfair clubs?", answer: "Selene is at 4 Winsley Street in Fitzrovia, just north of Oxford Circus and a short walk from Mayfair, and its defining quality is balance. It's elegant but not intimidating, fun but not overwhelming, and sophisticated without being pretentious. This makes it particularly well-suited for birthday groups with diverse tastes and expectations. The refined atmosphere works for milestone birthdays and casual celebrations alike." },
+      { question: "Is Selene London good for mixed birthday groups?", answer: "Excellent. Selene's balanced atmosphere and varied music policy make it one of the best West End venues for groups with diverse preferences. Whether your guests prefer dancing or conversation, house music or RnB, they'll find their comfort zone at Selene." },
     ],
   },
 ];

@@ -442,7 +442,7 @@ export const clubs: Club[] = [
     area: "Fitzrovia",
     minSpend: "£1,000",
     musicPolicy: "House, Commercial, RnB",
-    dressCode: "Smart elegant. Mayfair standards — dress to impress.",
+    dressCode: "Smart elegant. Smart London club standards, so dress to impress.",
     openingNights: "Thursday, Friday, Saturday, Sunday",
     capacity: "Intimate-Medium (approx. 250)",
     birthdayRating: 4,
@@ -473,7 +473,7 @@ export const clubs: Club[] = [
     name: "BEAT London",
     shortName: "BEAT",
     tagline: "The High-Energy Birthday",
-    location: "Margaret Street, Central London",
+    location: "48 Margaret Street, Fitzrovia",
     area: "Fitzrovia",
     minSpend: "£1,000",
     musicPolicy: "House, Tech House, Dance",
@@ -520,7 +520,7 @@ export const clubs: Club[] = [
     bestFor: "This venue has permanently closed",
     status: "closed",
     closedNote:
-      "Maison Close has closed and no longer takes birthday tables or guestlist names. For house music in an intimate, dressed-up Mayfair room, Maddox Club, Selene London and Scotch of St James are the closest open alternatives.",
+      "Maison Close has closed and no longer takes birthday tables or guestlist names. For house music in an intimate, dressed-up room nearby, Maddox Club in Mayfair, Scotch of St James and Selene London, just north of Oxford Circus, are the closest open alternatives.",
     alternatives: ["maddox-club", "selene-london", "scotch-of-st-james"],
     description:
       "Maison Close was a French-inspired house music club at 9 Swallow Street in Mayfair, in the former Kadies space. Its vintage chandeliers, velvet seating, red accents and capacity of around 160 made it feel more like a Parisian salon than a nightclub. Maison Close has now closed.",
@@ -605,8 +605,8 @@ export const clubs: Club[] = [
     name: "Libertine",
     shortName: "Libertine",
     tagline: "Permanently Closed",
-    location: "Mayfair, London",
-    area: "Mayfair",
+    location: "4 Winsley Street, Fitzrovia",
+    area: "Fitzrovia",
     minSpend: "£1,000",
     musicPolicy: "Hip-Hop, RnB, Commercial",
     dressCode: "Smart and stylish.",
@@ -619,7 +619,7 @@ export const clubs: Club[] = [
       "Libertine has permanently closed, and Selene now operates in its place. Known for its sophisticated, futuristic design and excellent sound system, Libertine was a popular choice for style-conscious birthday celebrations. For a similar experience, Selene London, Tape London and The Box are excellent alternatives.",
     alternatives: ["selene-london", "tape-london", "the-box-london"],
     description:
-      "Libertine brought a sophisticated, futuristic energy to Mayfair's nightlife scene. The venue combined sleek design with state-of-the-art lighting and sound. Libertine has now permanently closed, and Selene now operates in its place.",
+      "Libertine brought a sophisticated, futuristic energy to the West End from 4 Winsley Street in Fitzrovia, just north of Oxford Circus. The venue combined sleek design with state-of-the-art lighting and sound. Libertine has now permanently closed, and Selene now operates in its place.",
     birthdayHighlights: [
       "Futuristic, visually stunning interior design",
       "State-of-the-art sound and lighting systems",
