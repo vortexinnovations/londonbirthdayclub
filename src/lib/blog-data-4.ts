@@ -103,7 +103,7 @@ export const blogDataPart4: BlogPost[] = [
         headingLevel: "h2" as const,
         content: [
           "By the time your group arrives at the club, the birthday has already had hours of celebration behind it - and this final phase is the exclamation point. A VIP table booking ensures your group walks straight in with priority entry, settles into a reserved area, and picks up the energy with premium bottles and the anticipation of a room filling around you.",
-          "For brunch-to-club birthdays, we particularly recommend Cirque Le Soir for groups who want spectacle - the live performers and pyrotechnics provide a dramatic shift from the daytime atmosphere. Cuckoo Club works well for groups with mixed music tastes, offering house upstairs and hip-hop downstairs. Funky Buddha delivers the intimate, high-energy finale that caps a long day perfectly.",
+          "For brunch-to-club birthdays, we particularly recommend Cirque Le Soir for groups who want spectacle - the live performers and pyrotechnics provide a dramatic shift from the daytime atmosphere. Reign London works well for groups with mixed music tastes, with a commercial mix of hip-hop, RnB and house. Tape London delivers the intimate, high-energy finale that caps a long day perfectly.",
           "Time your bottle presentation and birthday cake for around 11:30pm to midnight, when the room is full and the energy is at its peak. The sparklers, DJ shoutout, and cheering from your group create a moment that elevates the entire day into something genuinely memorable.",
         ],
       },
@@ -120,8 +120,8 @@ export const blogDataPart4: BlogPost[] = [
         headingLevel: "h2" as const,
         content: [
           "Cirque Le Soir is ideal for groups who want the evening finale to be an event in itself. After a long day of brunch and cocktails, arriving at Cirque to fire-breathers and acrobats feels like walking into another dimension. The sensory overload is the perfect contrast to a relaxed daytime celebration.",
-          "Cuckoo Club suits groups where not everyone wants the same music. After a day of socialising, having two floors with different sounds means your group can split and reconvene naturally. The Swallow Street location is also perfectly central for a Mayfair-based brunch-to-club itinerary.",
-          "Funky Buddha provides the intimate, legendary atmosphere that caps a birthday day perfectly. The hip-hop and RnB playlist is familiar and celebratory, the room is compact enough that your group's energy fills it, and the Berkeley Street location is walking distance from most Mayfair brunch spots.",
+          "Reign London suits groups where not everyone wants the same music. After a day of socialising, a mix of commercial, hip-hop, RnB and house keeps the whole group on the dancefloor. Its Piccadilly location is also perfectly central for a Mayfair-based brunch-to-club itinerary.",
+          "Tape London provides the intimate atmosphere that caps a birthday day perfectly. The hip-hop and RnB playlist is familiar and celebratory, the room is compact enough that your group's energy fills it, and it is within walking distance of most Mayfair brunch spots.",
         ],
       },
     ],
@@ -156,7 +156,7 @@ export const blogDataPart4: BlogPost[] = [
         headingLevel: "h2" as const,
         content: [
           "Your table host is the most important person to tip. They manage your bottles, keep your area clean, handle requests, and act as your point of contact all night. For a birthday table booking starting from £1,000, a tip of £50-100 for your host is appropriate and appreciated. Hand it directly at the start of the evening or midway through - this signals that you value their attention and often results in noticeably better service for the rest of the night.",
-          "Door staff and guest-list managers do not expect tips, but if they have gone out of their way to accommodate a large birthday group or resolve a last-minute issue, a £10-20 handshake is a classy gesture. At venues like Tape London, Reign London, and Funky Buddha, where door teams manage complex guest lists on busy nights, this small acknowledgment goes a long way.",
+          "Door staff and guest-list managers do not expect tips, but if they have gone out of their way to accommodate a large birthday group or resolve a last-minute issue, a £10-20 handshake is a classy gesture. At venues like Tape London, Reign London, and Cirque Le Soir, where door teams manage complex guest lists on busy nights, this small acknowledgment goes a long way.",
           "Bartenders at the main bar appreciate £2-5 per round if you are ordering directly rather than through table service. For birthday groups using bottle service at their table, separate bar tips are unnecessary since your host handles the pouring. If someone from your group does visit the bar independently, rounding up or leaving a few pounds keeps things flowing quickly.",
         ],
       },
@@ -174,7 +174,7 @@ export const blogDataPart4: BlogPost[] = [
         headingLevel: "h2" as const,
         content: [
           "Many London clubs add an automatic service charge of 12.5-15 per cent to your final bill. This is separate from any direct tips you give to staff, and it typically goes into a general pool rather than directly to your table host. Check your bill carefully - if a service charge is included, you are not obligated to tip on top of it, though a direct cash tip to your host remains the best way to reward exceptional personal service.",
-          "At venues like Maddox Club and Cuckoo Club, where dinner transitions into dancing, you may encounter service charges on both the dining and club elements. Understanding this in advance helps you budget accurately for your birthday night. If you are planning a birthday dinner then club evening, factor in that gratuity expectations differ between the two settings even within the same venue.",
+          "At venues like Maddox Club, where dinner transitions into dancing, you may encounter service charges on both the dining and club elements. Understanding this in advance helps you budget accurately for your birthday night. If you are planning a birthday dinner then club evening, factor in that gratuity expectations differ between the two settings even within the same venue.",
         ],
       },
       {
@@ -218,7 +218,7 @@ export const blogDataPart4: BlogPost[] = [
         headingLevel: "h2" as const,
         content: [
           "A cocktail class is the single most reliable pre-club activity for birthday groups. It works for mixed groups, keeps energy levels high, and naturally leads into the drinking atmosphere of a club night. Most classes in central London run 60 to 90 minutes and accommodate groups of eight to thirty. Book a session that finishes around 9pm and you will arrive at your club table perfectly warmed up.",
-          "Mayfair and Soho have several options within walking distance of clubs like Tape London, Cuckoo Club, and Maddox Club. This means your group can stroll from the class to the venue without needing taxis or losing anyone along the way. If you are planning a birthday and want to pair a cocktail class with a table booking, check our plan your birthday guide for timing advice.",
+          "Mayfair and Soho have several options within walking distance of clubs like Tape London, 99 Regent Street (formerly Cuckoo Club), and Maddox Club. This means your group can stroll from the class to the venue without needing taxis or losing anyone along the way. If you are planning a birthday and want to pair a cocktail class with a table booking, check our plan your birthday guide for timing advice.",
         ],
       },
       {
@@ -279,7 +279,7 @@ export const blogDataPart4: BlogPost[] = [
         headingLevel: "h2" as const,
         content: [
           "Most clubs ask you to deliver the cake on the day of your booking, typically between 6pm and 8pm before the venue opens to guests. The staff will store it in the kitchen or a designated area and bring it out at a time you agree in advance. Some clubs have limited cold storage, so check whether your cake needs refrigeration. Buttercream and fondant designs generally hold up fine, but anything with fresh cream or mousse may struggle in a warm club environment.",
-          "A few venues, including Maddox Club and Cuckoo Club, can coordinate with external bakeries to have the cake delivered directly. This saves you the trouble of transporting it yourself, especially if you are coming from a pre-club activity. Make sure the bakery knows the delivery window and has the venue address and contact name. Late deliveries are a common source of stress on the night.",
+          "A few venues, including Maddox Club, can coordinate with external bakeries to have the cake delivered directly. This saves you the trouble of transporting it yourself, especially if you are coming from a pre-club activity. Make sure the bakery knows the delivery window and has the venue address and contact name. Late deliveries are a common source of stress on the night.",
         ],
       },
       {
@@ -287,7 +287,7 @@ export const blogDataPart4: BlogPost[] = [
         headingLevel: "h2" as const,
         content: [
           "Keep it simple and photogenic. Tall, multi-tier cakes look impressive but are impractical in a dark, crowded club. A single-tier cake with bold decoration, metallic finishes, or a personalised topper photographs well under club lighting and is far easier to cut and serve. Think about colours that work under neon and UV light - white, gold, and bright pink tend to look best.",
-          "Size matters more than you might expect. A cake for ten people is manageable at a table. A cake for thirty creates a logistics problem. Most hosts find that a small feature cake for the photo moment, supplemented by individual cupcakes or cake pops for the wider group, works better than one enormous creation. Several clubs, including Cirque Le Soir and Funky Buddha, are used to handling this kind of split arrangement.",
+          "Size matters more than you might expect. A cake for ten people is manageable at a table. A cake for thirty creates a logistics problem. Most hosts find that a small feature cake for the photo moment, supplemented by individual cupcakes or cake pops for the wider group, works better than one enormous creation. Several clubs, including Cirque Le Soir, are used to handling this kind of split arrangement.",
           "Check our birthday decorations and extras guide for more on how to style your table area around the cake presentation.",
         ],
       },
@@ -305,7 +305,7 @@ export const blogDataPart4: BlogPost[] = [
         content: [
           "Most clubs do not charge a cakeage fee for birthday table bookings, but it is worth confirming. Some venues include cake service as part of the package, while others treat it as a courtesy that comes with your minimum spend. The cake itself is your responsibility to source and pay for. Expect to spend between 40 and 150 pounds depending on size and complexity. A simple personalised cake from a London bakery typically starts around 50 pounds.",
           "Clubs will usually cut and plate the cake for you, though not all have full cutlery sets. Paper plates and napkins are standard. Do not expect the same service you would get at a restaurant - this is a nightclub, and the focus is on the visual moment rather than a formal dessert course. If you want the cutting handled smoothly, brief a friend in advance to help distribute slices while the night continues.",
-          "Planning a birthday and want help coordinating the cake alongside your table booking? Message us on WhatsApp and we will handle everything. We work with clubs like Maddox Club, Cuckoo Club, Cirque Le Soir, and Dear Darling every week and can advise on exactly what each venue accommodates. See our birthday table prices guide for an overview of what a full birthday package typically costs.",
+          "Planning a birthday and want help coordinating the cake alongside your table booking? Message us on WhatsApp and we will handle everything. We work with clubs like Maddox Club, Cirque Le Soir, and Dear Darling every week and can advise on exactly what each venue accommodates. See our birthday table prices guide for an overview of what a full birthday package typically costs.",
         ],
       },
     ],
@@ -332,7 +332,7 @@ export const blogDataPart4: BlogPost[] = [
         headingLevel: "h2" as const,
         content: [
           "Every birthday night out has two experiences running in parallel. There is the birthday person's version - effortless, celebratory, full of surprises. And there is the organiser's version - a logistical operation that starts weeks before anyone sets foot in a club. If you have taken on the role of organiser, your job is to make the first version feel seamless while quietly managing the second.",
-          "The good news is that London's premium clubs are set up to help you. Venues like Maddox Club, Cirque Le Soir, and Funky Buddha handle birthday bookings every week, and their hosts and promoters are experienced at coordinating the details. But they need a competent organiser on the other end. These tips will make sure that person is you.",
+          "The good news is that London's premium clubs are set up to help you. Venues like Maddox Club, Cirque Le Soir, and Tape London handle birthday bookings every week, and their hosts and promoters are experienced at coordinating the details. But they need a competent organiser on the other end. These tips will make sure that person is you.",
         ],
       },
       {
@@ -356,9 +356,9 @@ export const blogDataPart4: BlogPost[] = [
         heading: "Work with the Venue, Not Around It",
         headingLevel: "h2" as const,
         content: [
-          "Contact the club or promoter at least a week in advance. Confirm your table booking, the number of guests, any extras like birthday decorations or a cake delivery, and your expected arrival time. Clubs such as Cuckoo Club, Dear Darling, and The Box London have dedicated hosts who will walk you through the options. If you are unsure which venue suits your group, our plan your birthday night guide helps narrow the choices.",
+          "Contact the club or promoter at least a week in advance. Confirm your table booking, the number of guests, any extras like birthday decorations or a cake delivery, and your expected arrival time. Clubs such as Dear Darling and The Box London have dedicated hosts who will walk you through the options. If you are unsure which venue suits your group, our plan your birthday night guide helps narrow the choices.",
           "Arrive 15 to 20 minutes before the birthday person. This gives you time to check in with the host, confirm the table location, and make sure any extras are in place. If you have ordered bottle service, the first round should be poured and ready when the guest of honour arrives. That initial moment - walking into a table that is already set up and buzzing - is what separates a good night from a great one.",
-          "Planning a birthday and want help with the logistics? Message us on WhatsApp and we will handle everything. We coordinate with venues like Maddox Club, Cirque Le Soir, Funky Buddha, and Dear Darling every week and know exactly what each club needs from the organiser to deliver a perfect night. Check our birthday clubs guide for the full list of venues we work with.",
+          "Planning a birthday and want help with the logistics? Message us on WhatsApp and we will handle everything. We coordinate with venues like Maddox Club, Cirque Le Soir, and Dear Darling every week and know exactly what each club needs from the organiser to deliver a perfect night. Check our birthday clubs guide for the full list of venues we work with.",
         ],
       },
     ],
@@ -401,7 +401,7 @@ export const blogDataPart4: BlogPost[] = [
         headingLevel: "h2" as const,
         content: [
           "A decades theme gives guests creative freedom while keeping the group visually connected. The most club-friendly decades are the 1970s disco era, 1990s streetwear, and early 2000s glamour. Each translates naturally into outfits that pass door policies at London clubs without feeling like fancy dress. The key is choosing an era where the fashion still looks sharp in a modern nightclub setting.",
-          "Venues with eclectic music programming work best for decades themes. Funky Buddha has the retro energy that suits a 70s or 80s inspiration. Cirque le Soir already feels like stepping into a different era, with its theatrical atmosphere creating a natural backdrop for any decade. Avoid themes from periods that require full costumes, like medieval or Victorian, as these will not get past security at any Mayfair venue.",
+          "Venues with eclectic music programming work best for decades themes. The Box London's eclectic, performance-led music suits a 70s or 80s inspiration. Cirque le Soir already feels like stepping into a different era, with its theatrical atmosphere creating a natural backdrop for any decade. Avoid themes from periods that require full costumes, like medieval or Victorian, as these will not get past security at any Mayfair venue.",
           "Brief your guests with reference images so everyone understands the level. You want \"inspired by\" rather than \"costume party.\" A 90s night means oversized blazers and statement trainers, not a full fancy dress situation. Browse our best birthday clubs page to find venues that suit the era you have in mind.",
         ],
       },
@@ -409,7 +409,7 @@ export const blogDataPart4: BlogPost[] = [
         heading: "Colour Coordinated: The Easiest Theme That Photographs Well",
         headingLevel: "h2" as const,
         content: [
-          "If a full theme feels like too much effort, a colour code is the simplest alternative. Pick one colour for the group and a contrasting colour for the birthday person. All-white with a red birthday star. All-pink for a summer celebration. All-black with neon accessories for something bolder. The visual impact in photos is enormous, especially under the lighting at clubs like Cuckoo Club.",
+          "If a full theme feels like too much effort, a colour code is the simplest alternative. Pick one colour for the group and a contrasting colour for the birthday person. All-white with a red birthday star. All-pink for a summer celebration. All-black with neon accessories for something bolder. The visual impact in photos is enormous, especially under club lighting.",
           "Colour coordination works brilliantly for mixed groups where not everyone wants to commit to a full costume theme. It requires minimal effort from guests while still creating that sense of a planned, intentional event. For inspiration on how to extend the colour theme to your table setup, check our birthday clubs page for the full list of venues we work with and the extras each one offers.",
         ],
       },
@@ -419,7 +419,7 @@ export const blogDataPart4: BlogPost[] = [
         content: [
           "Start communicating the theme at least three weeks before the date. Send a clear WhatsApp message with the theme, example outfit ideas, and any rules about what works within the club setting. If guests know early, they have time to prepare without stress. Last-minute theme announcements lead to half the group arriving off-brief, which defeats the purpose entirely.",
           "Let the venue know about your theme when you confirm the table. Some clubs can match the bottle presentation, LED colours, or table decorations to your colour scheme. Our plan your birthday night page walks through the full timeline from initial planning to the night itself. When choosing a venue, consider which clubs naturally suit your theme and the size of your group.",
-          "If you want help coordinating a themed birthday, message us on WhatsApp and we will handle everything. We work with venues like Maddox Club, Funky Buddha, and Dear Darling every week and can arrange themed extras that make the night feel curated rather than thrown together. A well-executed theme is the difference between a good birthday and one your group will be talking about for years.",
+          "If you want help coordinating a themed birthday, message us on WhatsApp and we will handle everything. We work with venues like Maddox Club, Cirque Le Soir, and Dear Darling every week and can arrange themed extras that make the night feel curated rather than thrown together. A well-executed theme is the difference between a good birthday and one your group will be talking about for years.",
         ],
       },
     ],
@@ -453,7 +453,7 @@ export const blogDataPart4: BlogPost[] = [
         heading: "Where to Have Pre-Drinks Near London Clubs",
         headingLevel: "h2" as const,
         content: [
-          "The best pre-drinks spots sit within a short walk or taxi ride of the club. If your table is booked at Maddox Club or Cuckoo Club in Mayfair, look at cocktail bars along Dover Street, South Molton Street, or around Berkeley Square. For groups heading to Cirque le Soir in Soho, Wardour Street and Greek Street have plenty of options with space for larger parties. The key is proximity, so nobody has to navigate across London mid-evening.",
+          "The best pre-drinks spots sit within a short walk or taxi ride of the club. If your table is booked at Maddox Club or Tape London in Mayfair, look at cocktail bars along Dover Street, South Molton Street, or around Berkeley Square. For groups heading to Cirque le Soir in Soho, Wardour Street and Greek Street have plenty of options with space for larger parties. The key is proximity, so nobody has to navigate across London mid-evening.",
           "Hotel bars are an underrated choice for birthday pre-drinks. Most offer comfortable seating for groups of ten or more, the drinks are reliable, and the atmosphere is polished without being intimidating. Ground floor bars at hotels near Mayfair work particularly well for groups planning a premium night. If you are considering a sit-down meal first instead, our birthday dinner then club guide covers how to combine the two seamlessly.",
         ],
       },
@@ -477,7 +477,7 @@ export const blogDataPart4: BlogPost[] = [
         heading: "Getting Your Group from Pre-Drinks to the Club",
         headingLevel: "h2" as const,
         content: [
-          "The transition from pre-drinks to the club is where birthday nights most commonly fall apart. Designate one person, ideally not the birthday person, as the logistics coordinator. That person sends the time-to-leave message to the WhatsApp group, orders the taxis, and makes sure nobody wanders off. For groups heading to venues like Funky Buddha or Dear Darling, where arrival times matter, having one person in charge of the door conversation makes everything smoother.",
+          "The transition from pre-drinks to the club is where birthday nights most commonly fall apart. Designate one person, ideally not the birthday person, as the logistics coordinator. That person sends the time-to-leave message to the WhatsApp group, orders the taxis, and makes sure nobody wanders off. For groups heading to venues like Tape London or Dear Darling, where arrival times matter, having one person in charge of the door conversation makes everything smoother.",
           "Make sure everyone knows the club name, the address, and what name the reservation is under before leaving pre-drinks. It sounds obvious, but half of all group confusion happens because guests take separate taxis and arrive at the wrong venue or cannot find the rest of the party. A pinned message in the group chat with the club address, postcode, and confirmation details saves problems later. For larger groups, our large groups guide covers which venues handle big birthday parties best.",
           "If you want help planning the full evening from pre-drinks to close, message us on WhatsApp and we will handle everything. We coordinate birthday nights every week across Mayfair and Soho, and can recommend pre-drinks spots that work perfectly with your chosen venue. One message gets the whole evening sorted.",
         ],
@@ -507,7 +507,7 @@ export const blogDataPart4: BlogPost[] = [
         content: [
           "Last updated: 3 May 2026",
           "Door policies at London nightclubs apply to everyone, but birthday groups face particular scrutiny. A party of ten or twelve arriving together draws far more attention than a couple, and door staff evaluate the whole group before letting anyone through. Your table reservation secures the table, but each guest still needs to meet the venue's standards independently. This is the single biggest source of birthday night anxiety, and it is entirely manageable once you understand how it works.",
-          "I've coordinated birthday arrivals at venues like Maddox Club and Funky Buddha for several years, and the most common misconception is that a booking guarantees automatic entry for the entire group. It does not. One guest in trainers or one person who has clearly had too much to drink at pre-drinks can delay or even prevent entry for the whole party. Understanding how door assessments work lets you prepare properly and protect the celebration you have spent weeks planning.",
+          "Our bookings team coordinates birthday arrivals at venues like Maddox Club and Dear Darling every week, and the most common misconception is that a booking guarantees automatic entry for the entire group. It does not. One guest in trainers or one person who has clearly had too much to drink at pre-drinks can delay or even prevent entry for the whole party. Understanding how door assessments work lets you prepare properly and protect the celebration you have spent weeks planning.",
         ],
       },
       {
@@ -515,7 +515,7 @@ export const blogDataPart4: BlogPost[] = [
         headingLevel: "h2" as const,
         content: [
           "London club door staff look at four things: dress code compliance, sobriety, group composition, and behaviour. For birthday groups, the critical factor is group composition. Most Mayfair venues prefer a balanced ratio of male and female guests. A group of twelve men without any women will face a harder door conversation than a mixed group of the same size, regardless of whether a table is booked. This is worth knowing early in the planning process so you can set expectations with your guests.",
-          "Sobriety checks are straightforward but strictly enforced. Door staff at venues such as Cirque le Soir and Cuckoo Club assess each person individually. If one guest is visibly intoxicated, they will be refused entry, and the rest of the group may be held while staff decide what to do. From experience, the groups that run into trouble are almost always those who went too hard at pre-drinks. As Time Out's London nightlife editors have noted, Mayfair clubs are increasingly selective about who they let through the door, prioritising the atmosphere inside over filling capacity.",
+          "Sobriety checks are straightforward but strictly enforced. Door staff at venues such as Cirque le Soir and Tape London assess each person individually. If one guest is visibly intoxicated, they will be refused entry, and the rest of the group may be held while staff decide what to do. In practice, the groups that run into trouble are almost always those who went too hard at pre-drinks. As Time Out's London nightlife editors have noted, Mayfair clubs are increasingly selective about who they let through the door, prioritising the atmosphere inside over filling capacity.",
           "Dress code is covered in our plan your birthday page, but the birthday-relevant point is this: you cannot assume every guest knows the rules. Smart shoes, no sportswear, and no fancy dress unless the venue specifically caters to it will cover most Mayfair clubs as of May 2026.",
         ],
       },
@@ -523,7 +523,7 @@ export const blogDataPart4: BlogPost[] = [
         heading: "How to Brief Your Group Before Arrival",
         headingLevel: "h2" as const,
         content: [
-          "The single most effective thing you can do is send a WhatsApp message to your group 48 hours before the night with three pieces of information: the dress code, the arrival time, and whose name the reservation is under. I've noticed that groups who receive this brief have significantly fewer door problems than those who leave it to chance. Keep the message short and specific. Something like 'smart shoes required, no trainers for men, arrive by 10:45pm, table is under Sarah' covers everything.",
+          "The single most effective thing you can do is send a WhatsApp message to your group 48 hours before the night with three pieces of information: the dress code, the arrival time, and whose name the reservation is under. Groups who receive this brief have far fewer door problems than those who leave it to chance. Keep the message short and specific. Something like 'smart shoes required, no trainers for men, arrive by 10:45pm, table is under Sarah' covers everything.",
           "For groups over ten, assign an arrival coordinator who is not the birthday person. This person arrives first, confirms the reservation with the host or promoter inside, and then messages the group when it is time to approach the door. Walking up as a coordinated group rather than in scattered arrivals makes a measurably better impression on door staff. Our birthday mistakes guide covers the most common version of this going wrong, and it is almost always a coordination failure rather than a dress code issue.",
         ],
       },
@@ -532,14 +532,14 @@ export const blogDataPart4: BlogPost[] = [
         headingLevel: "h2" as const,
         content: [
           "Large birthday groups rarely arrive at the same time, and venues understand this. Most clubs allow guests to join the table throughout the night, provided each person meets the entry criteria. However, the initial group that arrives to open the table should include whoever made the reservation and ideally at least half the total party. If you have booked a table at Dear Darling or Maddox Club and only two of your twelve guests show up at table time, the venue may reassign your position.",
-          "Late arrivals should know the exact club name, the reservation name, and ideally the name of a promoter or host to mention at the door. Saying 'I am joining a birthday table booked under James' is far more effective than 'my friends are inside somewhere.' We went through this recently with a group of sixteen at Funky Buddha, where three guests arrived ninety minutes late. Because they had the promoter's name and were dressed appropriately, they walked straight in. Without that information, they would have faced the standard queue and full door assessment. Our mixed group birthday guide explains how to manage this when your party spans different social circles.",
+          "Late arrivals should know the exact club name, the reservation name, and ideally the name of a promoter or host to mention at the door. Saying 'I am joining a birthday table booked under James' is far more effective than 'my friends are inside somewhere.' Late guests who have the promoter's name and are dressed appropriately usually walk straight in. Without that information, they face the standard queue and a full door assessment. Our mixed group birthday guide explains how to manage this when your party spans different social circles.",
         ],
       },
       {
         heading: "Getting Your Whole Group Through the Door",
         headingLevel: "h2" as const,
         content: [
-          "On my last visit to coordinate a birthday at Cuckoo Club, I watched a neighbouring group of fourteen arrive with zero preparation. Half were in trainers, two had clearly been drinking since the afternoon, and nobody knew the reservation name. They spent forty minutes at the door, lost their original table position, and the birthday person was visibly embarrassed before the night had started. Everything about that situation was avoidable with a five-minute WhatsApp brief sent the day before.",
+          "The groups that struggle at the door tend to fail in the same ways: guests in trainers, one or two who have been drinking since the afternoon, and nobody who knows the reservation name. That combination can mean a long wait at the door, a lost table position and an embarrassed birthday person before the night has started. All of it is avoidable with a five-minute WhatsApp brief sent the day before.",
           "Here is what works every time: brief your group in advance, arrive as close to your table time as possible, designate one person to speak with the door team, and keep pre-drinks moderate. If your group includes anyone who might be a dress code risk, tell them directly. It is far less awkward than watching them get turned away at the venue. Our birthday clubs page has the full list of venues we work with and their typical door standards.",
           "If you want someone to handle the door coordination for you, message us on WhatsApp and we will take care of everything. We confirm reservations, brief the door team in advance, and make sure your group gets through without stress. One message gets the whole evening sorted.",
         ],
@@ -568,24 +568,24 @@ export const blogDataPart4: BlogPost[] = [
         content: [
           "Last updated: 7 May 2026",
           "You have spent weeks planning a birthday celebration at a London club, confirmed the table, briefed the group, and then three friends message to say they cannot make it. This is one of the most common frustrations in birthday planning, and it happens far more often than most people expect. The good news is that cancellations do not have to derail your evening. With a few practical adjustments, a smaller group can still have a brilliant night.",
-          "I have coordinated birthday celebrations where nearly half the original group dropped out in the final 48 hours. In every case, the night still worked because we adjusted the plan rather than trying to force the original vision. The key is speed. The sooner you know about cancellations, the more options you have for reshaping the evening. As The Guardian has reported on London's nightlife scene, smaller and more intentional groups often have a better experience at premium venues than overstretched large parties trying to keep everyone together.",
+          "Our bookings team regularly sees birthdays where nearly half the original group drops out in the final 48 hours. The night can still work when the plan is adjusted rather than forced into the original vision. The key is speed. The sooner you know about cancellations, the more options you have for reshaping the evening. As The Guardian has reported on London's nightlife scene, smaller and more intentional groups often have a better experience at premium venues than overstretched large parties trying to keep everyone together.",
         ],
       },
       {
         heading: "Assess How Cancellations Affect Your Reservation",
         headingLevel: "h2" as const,
         content: [
-          "The first thing to check is your minimum spend. Most Mayfair club tables come with a minimum spend requirement that was calculated for your original group size. If you reserved a table for twelve at Funky Buddha with a minimum spend starting from £1,000 as of May 2026, losing four guests means the remaining eight need to cover that same total. Before you do anything else, work out the per-person cost increase and decide whether your remaining group can absorb it.",
-          "I have seen birthday groups panic at this stage, but the reality is more flexible than most people assume. Promoters and hosts at venues like Maddox Club and Cirque le Soir deal with group size changes every weekend. If you contact your promoter promptly, they can often adjust the arrangement. You might move to a smaller table with a lower minimum spend, or the venue might offer a compromise. The worst approach is saying nothing and hoping it works out on the night. Our birthday table information page covers how minimum spends work in detail.",
+          "The first thing to check is your minimum spend. Most Mayfair club tables come with a minimum spend requirement that was calculated for your original group size. If you reserved a table for twelve at Maddox Club with a minimum spend starting from £1,000 as of October 2026, losing four guests means the remaining eight need to cover that same total. Before you do anything else, work out the per-person cost increase and decide whether your remaining group can absorb it.",
+          "Birthday groups often panic at this stage, but the reality is more flexible than most people assume. Promoters and hosts at venues like Maddox Club and Cirque le Soir deal with group size changes every weekend. If you contact your promoter promptly, they can often adjust the arrangement. You might move to a smaller table with a lower minimum spend, or the venue might offer a compromise. The worst approach is saying nothing and hoping it works out on the night. Our birthday table information page covers how minimum spends work in detail.",
         ],
       },
       {
         heading: "How to Adjust Your Plans Quickly",
         headingLevel: "h2" as const,
         content: [
-          "Contact your promoter or the person who arranged the reservation immediately. Explain how many guests you have lost and ask what options are available. On my last visit to coordinate a birthday at Dear Darling, the host moved a group of six from a large corner table to a more intimate booth closer to the DJ, which actually suited the smaller party better and reduced their minimum spend by roughly a third.",
+          "Contact your promoter or the person who arranged the reservation immediately. Explain how many guests you have lost and ask what options are available. A host can often move a group that has shrunk from a large corner table to a more intimate booth, which usually suits the smaller party better and can bring the minimum spend down.",
           "If you originally planned a premium table and the numbers no longer justify the cost, consider switching to a guestlist-only arrangement instead. Several venues allow this conversion with enough notice. Your group still gets into the club, the birthday person still has a night out, and nobody is stretching their budget uncomfortably. Our last-minute birthday guide covers how to make quick changes without losing the evening entirely.",
-          "For groups that have dropped below six, think about whether a different venue might serve the night better. A smaller, more intimate club like The Box or Cuckoo Club can feel more alive with a compact group than a large venue where an empty table stands out. Matching the venue to your actual group size rather than your original plan almost always produces a better night.",
+          "For groups that have dropped below six, think about whether a different venue might serve the night better. A smaller, more intimate club like Dear Darling or Scotch of St James can feel more alive with a compact group than a large venue where an empty table stands out. Matching the venue to your actual group size rather than your original plan almost always produces a better night.",
         ],
       },
       {
@@ -600,7 +600,7 @@ export const blogDataPart4: BlogPost[] = [
         heading: "Making a Smaller Group Work in Your Favour",
         headingLevel: "h2" as const,
         content: [
-          "Some of the best birthday celebrations I have arranged were for groups that shrank from the original plan. A table of eight where everyone genuinely wants to be there creates a completely different energy than a table of fourteen where five people are checking their phones. Smaller groups are easier to coordinate, arrive on time more reliably, and the conversation flows better across the table.",
+          "Some of the best birthday celebrations we arrange are for groups that shrank from the original plan. A table of eight where everyone genuinely wants to be there creates a completely different energy than a table of fourteen where five people are checking their phones. Smaller groups are easier to coordinate, arrive on time more reliably, and the conversation flows better across the table.",
           "If your group has reduced to four or five, consider an intimate celebration approach rather than the large-group format. A birthday dinner followed by a club visit with a small, committed group often creates better memories than a huge party where half the guests disappear by midnight. Our couples birthday guide explores how to make a smaller celebration feel premium rather than compromised.",
           "Whatever the final group size, the night belongs to the birthday person. Message us on WhatsApp and we will handle everything, from adjusting your reservation to recommending the right venue for your updated numbers. One message gets the whole evening sorted.",
         ],
@@ -630,15 +630,15 @@ export const blogDataPart4: BlogPost[] = [
         content: [
           "Last updated: 10 May 2026",
           "Most birthday celebrations at London nightclubs that go wrong do not fail because of the venue or the music. They fail because someone left the planning until the final fortnight, and by then the table options were limited, the group could not agree on a date, and three friends quietly dropped out. A timeline fixes this.",
-          "I have planned more than a hundred birthday nights across central London, and the pattern is always the same. Groups who follow a structured eight-week build-up arrive at the venue relaxed and ready. Groups who scramble in the final week arrive stressed and resentful, often missing key reservations. The good news is that the timeline is straightforward, and you do not need to spend more than an hour on it in any given week.",
+          "Our bookings team plans birthday nights across central London every week, and the pattern is always the same. Groups who follow a structured eight-week build-up arrive at the venue relaxed and ready. Groups who scramble in the final week arrive stressed and resentful, often missing key reservations. The good news is that the timeline is straightforward, and you do not need to spend more than an hour on it in any given week.",
         ],
       },
       {
         heading: "Eight Weeks Out: Pick the Date and the Vibe",
         headingLevel: "h2" as const,
         content: [
-          "The first job is the date, not the venue. Send a single message to your six or eight closest friends asking which of two specific Saturdays they can make. Do not offer four options. Do not ask for general availability. Two specific dates with a 48-hour reply window will get you to a decision faster than any other approach I have seen.",
-          "Once the date is locked, have a quiet conversation with the birthday person. What sort of night do they actually want? An intimate dinner-and-dancing evening at somewhere like Maddox Club is a different proposition to a high-energy party at Cirque le Soir or Funky Buddha. Knowing the vibe early stops you from chasing the wrong venues. Our birthday planning hub covers the main vibe categories and which venues match each.",
+          "The first job is the date, not the venue. Send a single message to your six or eight closest friends asking which of two specific Saturdays they can make. Do not offer four options. Do not ask for general availability. Two specific dates with a 48-hour reply window will get you to a decision faster than any other approach we know.",
+          "Once the date is locked, have a quiet conversation with the birthday person. What sort of night do they actually want? An intimate dinner-and-dancing evening at somewhere like Maddox Club is a different proposition to a high-energy party at Cirque le Soir or Tape London. Knowing the vibe early stops you from chasing the wrong venues. Our birthday planning hub covers the main vibe categories and which venues match each.",
         ],
       },
       {
@@ -646,7 +646,7 @@ export const blogDataPart4: BlogPost[] = [
         headingLevel: "h2" as const,
         content: [
           "This is when you reach out to two or three venues that match the brief. Ask about availability for your date, the minimum spend for a table that suits your group size, and whether they have a dedicated birthday package. Most Mayfair venues run minimum spends starting from £1,000 as of May 2026, with larger and more central tables priced higher.",
-          "On my last visit to coordinate a small celebration at Cuckoo Club, the host walked me through three different table positions before we settled on the upstairs balcony, which had a slightly lower minimum and a clearer line of sight to the DJ. That kind of nuance only comes out when you talk to the venue six weeks ahead rather than two. As Time Out covers in its London nightlife coverage at https://www.timeout.com/london/clubs, the better tables at the better venues are claimed long before the weekend itself, particularly during peak season.",
+          "Talking to the venue early also opens up choices: a host will often walk you through several table positions, and a less obvious one may have a slightly lower minimum and a clearer line of sight to the DJ. That kind of nuance only comes out when you talk to the venue six weeks ahead rather than two. As Time Out covers in its London nightlife coverage at https://www.timeout.com/london/clubs, the better tables at the better venues are claimed long before the weekend itself, particularly during peak season.",
         ],
       },
       {
@@ -698,7 +698,7 @@ export const blogDataPart4: BlogPost[] = [
         headingLevel: "h2" as const,
         content: [
           "Last updated: 2 June 2026",
-          "More of the birthdays I plan now have at least one person who is not drinking, and a growing number where the birthday person themselves wants a completely sober night. That used to feel awkward to organise. It does not any more. Low- and no-alcohol drinking has moved firmly into the British mainstream, a shift that nightlife outlets like Time Out have tracked closely in their London bar coverage at https://www.timeout.com/london/bars, and London venues have caught up with proper alcohol-free menus rather than a sad lime and soda.",
+          "More of the birthdays we book now have at least one person who is not drinking, and a growing number where the birthday person themselves wants a completely sober night. That used to feel awkward to organise. It does not any more. Low- and no-alcohol drinking has moved firmly into the British mainstream, a shift that nightlife outlets like Time Out have tracked closely in their London bar coverage at https://www.timeout.com/london/bars, and London venues have caught up with proper alcohol-free menus rather than a sad lime and soda.",
           "From experience, a sober birthday lives or dies on two things: the venue you choose and how you handle a mixed group. Get those right and nobody spends the night feeling like they are missing out. This guide covers both.",
         ],
       },
@@ -707,7 +707,7 @@ export const blogDataPart4: BlogPost[] = [
         headingLevel: "h2" as const,
         content: [
           "The single biggest decision is picking somewhere the energy comes from the room, not the bar. A venue with a strong DJ, a real dance floor, and a sense of occasion carries a sober guest effortlessly, because the fun is in the music and the crowd rather than in how much everyone has had to drink. A quiet bar where the only activity is ordering rounds is the hardest place to enjoy sober.",
-          "I always steer sober celebrations towards music-led, high-energy rooms. On my last visit to coordinate a smaller birthday, the group barely touched the bar all night because the floor was packed and the DJ was relentless, and the birthday person told me afterwards it was the best night out she had had in a year. Look for venues known for their sound and their dance floor rather than their bottle presentations.",
+          "We always steer sober celebrations towards music-led, high-energy rooms. When the floor is packed and the DJ is relentless, a group barely needs the bar, and that is what makes a sober birthday feel like a proper night out. Look for venues known for their sound and their dance floor rather than their bottle presentations.",
         ],
       },
       {
@@ -715,7 +715,7 @@ export const blogDataPart4: BlogPost[] = [
         headingLevel: "h2" as const,
         content: [
           "Do not assume the venue has a proper alcohol-free range. Some do, with full mocktail lists and no-alcohol spirits and beers, while others still treat soft drinks as an afterthought. A quick message to the venue before the night confirms what they can actually pour, and means the sober guests are not stuck with cola for hours.",
-          "I noticed early on that the venues which take mocktails seriously make a real difference to how included a non-drinker feels. A proper alcohol-free cocktail served in the same glass as everyone else removes the sense of being the odd one out. When I check a venue for a sober-friendly birthday, the quality of the no-alcohol list is one of the first things I ask about.",
+          "The venues which take mocktails seriously make a real difference to how included a non-drinker feels. A proper alcohol-free cocktail served in the same glass as everyone else removes the sense of being the odd one out. When we check a venue for a sober-friendly birthday, the quality of the no-alcohol list is one of the first things we ask about.",
         ],
       },
       {
@@ -760,7 +760,7 @@ export const blogDataPart4: BlogPost[] = [
         headingLevel: "h2" as const,
         content: [
           "Last updated: 10 June 2026",
-          "Here is a piece of maths nobody thinks about until it affects them: five out of seven birthdays land on a weekday. For every birthday that conveniently falls on a Saturday, there are several that arrive on a Tuesday morning with a full work week wrapped around them. I have planned birthdays for years, and the weekday question comes up more than almost anything else: do you celebrate on the actual day, push it to the weekend, or try to do both?",
+          "Here is a piece of maths nobody thinks about until it affects them: five out of seven birthdays land on a weekday. For every birthday that conveniently falls on a Saturday, there are several that arrive on a Tuesday morning with a full work week wrapped around them. Our bookings team hears the weekday question more than almost anything else: do you celebrate on the actual day, push it to the weekend, or try to do both?",
           "The honest answer is that there is no single right call, but there is a right call for your group, your budget, and your energy levels. This guide walks through how to decide, and how to make a weekday celebration in London genuinely brilliant rather than a watered-down version of the weekend.",
         ],
       },
@@ -770,7 +770,7 @@ export const blogDataPart4: BlogPost[] = [
         content: [
           "Start with the decision itself, because everything else flows from it. Celebrating on the actual day feels right in a way a moved date never quite does: the messages, the cake at work, and the night out all line up, and there is something special about being out in London on the date itself. The trade-off is that some friends will struggle with a school night, so the group is usually smaller.",
           "Moving the party to the nearest Friday or Saturday gets you the full guest list and a later night, but you lose the magic of the day, and weekend nights out come with bigger crowds and bigger costs. From experience, the people who feel best about their birthday usually split the difference: something small and easy on the actual day, a dinner or a few drinks with the inner circle, and the main event at the weekend if a big group matters to them.",
-          "If you only have the appetite for one celebration, my advice is simple: small group, do it on the day; big group, move it to the weekend and let the actual birthday be a quiet pleasure.",
+          "If you only have the appetite for one celebration, our advice is simple: small group, do it on the day; big group, move it to the weekend and let the actual birthday be a quiet pleasure.",
         ],
       },
       {
@@ -779,7 +779,7 @@ export const blogDataPart4: BlogPost[] = [
         content: [
           "Now for the part most people do not expect: a weekday birthday night in London is not a consolation prize. London's scene runs seven nights a week, as Time Out's nightlife coverage (https://www.timeout.com/london/nightlife) makes clear, and the midweek version of the city has real advantages for a birthday group.",
           "The rooms are calmer, so your group actually stays together instead of being scattered by a Saturday crush. Doors are friendlier and queues are shorter, which matters when you are shepherding ten people. Staff have more time for you, and venues are noticeably more flexible about little birthday touches when they are not at full stretch. And the value is better across the board: midweek offers, easier entry, and quieter bars mean the same budget simply goes further than it would on a Saturday, as of June 2026.",
-          "I noticed years ago that midweek birthday groups often have a better time than weekend ones, precisely because the night feels like theirs. When the room is at seventy percent rather than rammed, a birthday group becomes the centre of gravity, and the staff treat them that way.",
+          "Midweek birthday groups often have a better time than weekend ones, precisely because the night feels like theirs. When the room is at seventy percent rather than rammed, a birthday group becomes the centre of gravity, and the staff treat them that way.",
         ],
       },
       {
@@ -806,7 +806,7 @@ export const blogDataPart4: BlogPost[] = [
         content: [
           "If you do shift the main event to Friday or Saturday, do not let the actual day pass unmarked. A favourite dinner, a couple of cocktails with your closest people, even a proper breakfast before work changes how the day feels. The weekend party then becomes a second celebration rather than a delayed one.",
           "Watch the double-spend, though. Two celebrations can quietly cost more than one good one, so decide early which night is the headline and budget the other as a low-key warm-up. And send the weekend invitation with the actual date mentioned, people are warmer about a moved party when they know what it is celebrating.",
-          "However you split it, the rule is the same one I give every birthday organiser: decide what kind of night you actually want first, then pick the date and the venue to serve it, never the other way round.",
+          "However you split it, the rule is the same one we give every birthday organiser: decide what kind of night you actually want first, then pick the date and the venue to serve it, never the other way round.",
         ],
       },
     ],
@@ -833,7 +833,7 @@ export const blogDataPart4: BlogPost[] = [
         headingLevel: "h2" as const,
         content: [
           "Last updated: 11 June 2026",
-          "A summer birthday in London is a gift and a trap at the same time. The gift is obvious: long light evenings, outdoor spaces that actually get used, and a city in a visibly better mood. The trap is quieter: summer is when your guest list is least available, when the best outdoor spots are most contested, and when the weather can rewrite your plan an hour before it starts. I plan more birthdays in June and July than any other months, and the difference between the great ones and the stressful ones is almost never the venue. It is how early and how flexibly the organiser planned around summer itself.",
+          "A summer birthday in London is a gift and a trap at the same time. The gift is obvious: long light evenings, outdoor spaces that actually get used, and a city in a visibly better mood. The trap is quieter: summer is when your guest list is least available, when the best outdoor spots are most contested, and when the weather can rewrite your plan an hour before it starts. Summer is a busy season for birthday bookings, and the difference between the great ones and the stressful ones is almost never the venue. It is how early and how flexibly the organiser planned around summer itself.",
         ],
       },
       {
@@ -849,7 +849,7 @@ export const blogDataPart4: BlogPost[] = [
         headingLevel: "h2" as const,
         content: [
           "Summer is the one season where a birthday can honestly run from afternoon to early morning, and the celebrations that make the most of it treat the day as three acts. Start outdoors in the late afternoon, somewhere relaxed where the light does the decorating for you. Move to dinner as the evening cools, booked for a table that does not rush you. Then take the group on to the night's main event once the energy has built naturally.",
-          "Two practical notes on that structure. First, outdoor space in London is rationed in summer: terraces, courtyards and rooftops fill fast on any warm day, so the afternoon stop needs booking with the same seriousness as the dinner. Second, pace the day for the long haul. I have watched plenty of birthday groups burn out by ten because the afternoon ran too hot; the organisers who build in a proper dinner break deliver their group to the late venue with energy left to spend.",
+          "Two practical notes on that structure. First, outdoor space in London is rationed in summer: terraces, courtyards and rooftops fill fast on any warm day, so the afternoon stop needs booking with the same seriousness as the dinner. Second, pace the day for the long haul. Plenty of birthday groups burn out by ten because the afternoon ran too hot; the organisers who build in a proper dinner break deliver their group to the late venue with energy left to spend.",
         ],
       },
       {
@@ -900,7 +900,7 @@ export const blogDataPart4: BlogPost[] = [
         headingLevel: "h2" as const,
         content: [
           "Last updated: 12 June 2026",
-          "A great birthday night out in London does not have to cost a fortune, but the people who overspend almost always do it in the same few places. The money goes on entry, on drinks bought one round at a time at club prices, on a table booked bigger than the group needed, and on the taxis nobody planned for. I plan birthdays on every budget, and the ones that come in cheap are rarely the ones that cut the fun. They are the ones that made a handful of structural choices early, before a single drink was poured.",
+          "A great birthday night out in London does not have to cost a fortune, but the people who overspend almost always do it in the same few places. The money goes on entry, on drinks bought one round at a time at club prices, on a table booked bigger than the group needed, and on the taxis nobody planned for. We book birthdays on every budget, and the ones that come in cheap are rarely the ones that cut the fun. They are the ones that made a handful of structural choices early, before a single drink was poured.",
           "The point worth holding onto is this: the biggest savings are structural, not penny-pinching. You save far more by picking the right night than by counting drinks, and far more by organising the group than by hunting discounts. Here is where to make those choices as of June 2026.",
         ],
       },
@@ -909,7 +909,7 @@ export const blogDataPart4: BlogPost[] = [
         headingLevel: "h2" as const,
         content: [
           "The single biggest lever on a birthday budget is the night you choose. A celebration on a quieter night costs a fraction of the same night on a Saturday: entry is often free before a cut-off time, tables carry much lower minimums, and the room is calmer and easier to enjoy. From experience, a midweek or early-weekend birthday is the closest thing there is to a discount on the whole night, and the group usually has a better time for the lack of a crush.",
-          "Arrival time matters just as much. Getting your group through the door before the venue starts charging, or before its busiest hour, can turn a pricey entry into a free one. I have walked plenty of birthday groups in at no cost simply by setting the arrival an hour earlier than the group first wanted. If your birthday falls on a weekend, an earlier start is the budget version of the same night, and nobody will feel short-changed by walking in at ten rather than midnight.",
+          "Arrival time matters just as much. Getting your group through the door before the venue starts charging, or before its busiest hour, can turn a pricey entry into a free one. Plenty of birthday groups get in at no cost simply by arriving an hour earlier than they first wanted. If your birthday falls on a weekend, an earlier start is the budget version of the same night, and nobody will feel short-changed by walking in at ten rather than midnight.",
         ],
       },
       {
@@ -917,7 +917,7 @@ export const blogDataPart4: BlogPost[] = [
         headingLevel: "h2" as const,
         content: [
           "For most budget birthdays, getting your group on a guest list and enjoying the floor beats committing to a table. A guest list keeps the per-person cost close to zero for entry and lets everyone buy their own drinks at their own pace, which suits a group where not everyone wants to spend the same.",
-          "A table earns its place only when the group is big enough to split the minimum spend comfortably, or when the birthday genuinely wants a base for the night. The mistake I see most is a group of six booking a table sized and priced for ten, then struggling to hit the minimum. If a table is the dream, match it honestly to the headcount and the night, and read it as a shared cost from the start rather than a surprise at the end.",
+          "A table earns its place only when the group is big enough to split the minimum spend comfortably, or when the birthday genuinely wants a base for the night. The mistake we see most is a group of six booking a table sized and priced for ten, then struggling to hit the minimum. If a table is the dream, match it honestly to the headcount and the night, and read it as a shared cost from the start rather than a surprise at the end.",
         ],
       },
       {
@@ -925,7 +925,7 @@ export const blogDataPart4: BlogPost[] = [
         headingLevel: "h2" as const,
         content: [
           "Drinks bought one round at a time at club prices are where a budget quietly disappears, so the cheapest birthdays move the early drinking somewhere cheaper. An hour or two of pre-drinks at home or at a relaxed bar before the main venue is the most effective single saving available, because it shifts the bulk of the night's drinking off the club tab without shortening the night.",
-          "It also does the group a favour. Everyone arrives warmed up and in good spirits, the awkward first hour is already behind you, and the time spent paying top prices inside is shorter. I build an hour or two of pre-drinks into almost every budget birthday I plan, and it is the saving the group notices least and benefits from most.",
+          "It also does the group a favour. Everyone arrives warmed up and in good spirits, the awkward first hour is already behind you, and the time spent paying top prices inside is shorter. We build an hour or two of pre-drinks into almost every budget birthday we plan, and it is the saving the group notices least and benefits from most.",
         ],
       },
       {
@@ -968,8 +968,8 @@ export const blogDataPart4: BlogPost[] = [
         headingLevel: "h2" as const,
         content: [
           "Last updated: 6 July 2026",
-          "Most London birthdays are not lost at the club door. They are lost three weeks earlier, in a group chat that never quite made a decision. I coordinate more than a hundred celebrations a year, and the pattern is consistent: the nights that come off are run by an organiser who treats WhatsApp as a planning tool, not a spectator sport.",
-          "This is the playbook I wish every organiser had: the chat setup, the deadlines that matter, how to get decisions out of people who never reply, and the one message everyone genuinely reads.",
+          "Most London birthdays are not lost at the club door. They are lost three weeks earlier, in a group chat that never quite made a decision. Our bookings team sees the same pattern again and again: the nights that come off are run by an organiser who treats WhatsApp as a planning tool, not a spectator sport.",
+          "This is the playbook we wish every organiser had: the chat setup, the deadlines that matter, how to get decisions out of people who never reply, and the one message everyone genuinely reads.",
         ],
       },
       {
@@ -995,7 +995,7 @@ export const blogDataPart4: BlogPost[] = [
         headingLevel: "h2" as const,
         content: [
           "Open questions die in big chats. Ask fifteen people where should we go and you will get four replies, two jokes and a voice note. Ask them to tap a poll with two options and a closing time, and you will have a decision by the evening. One decision per poll, never more than three options, always a stated close.",
-          "Treat silence as a no. This is the rule that feels harsh and saves every plan. If someone has not answered or paid by the deadline, the plan stops waiting for them. I have watched a fifteen-person chat talk itself out of a night entirely inside forty-eight hours because the organiser kept extending deadlines for two silent members.",
+          "Treat silence as a no. This is the rule that feels harsh and saves every plan. If someone has not answered or paid by the deadline, the plan stops waiting for them. A large chat can talk itself out of a night entirely inside forty-eight hours if the organiser keeps extending deadlines for a couple of silent members.",
           "Keep decisions moving one at a time: date, then area, then venue style, then money. A chat asked to decide everything at once decides nothing, and London offers more good nights per weekend than any chat can process, as the depth of the listings at https://www.timeout.com/london/nightlife makes clear. The organiser's job is to narrow, not to broadcast options.",
         ],
       },
@@ -1013,7 +1013,7 @@ export const blogDataPart4: BlogPost[] = [
         headingLevel: "h2" as const,
         content: [
           "Every big group sheds people. None of it needs to sink the night if the chat has the structures above: the headcount lock gives you a clean number to adjust from, and the money deadline means a dropout is a refund conversation rather than a hole in the budget. Our guide to what to do when friends cancel a birthday night out covers the emotional half of that problem.",
-          "If the whole chat has gone flat, the fix is a decision, not more chat. Post a poll with a close, or make the call yourself; in my opinion a decisive organiser with a good-enough plan beats a democratic chat with a perfect one every time.",
+          "If the whole chat has gone flat, the fix is a decision, not more chat. Post a poll with a close, or make the call yourself; in our view a decisive organiser with a good-enough plan beats a democratic chat with a perfect one every time.",
           "And if you would rather not run the logistics at all, that is what we are here for. Tell us the date, the group size and the occasion, and we will sort the venue and the timings while your chat gets on with the fun part. Message us on WhatsApp and we will handle everything.",
         ],
       },
@@ -1041,7 +1041,7 @@ export const blogDataPart4: BlogPost[] = [
         headingLevel: "h2" as const,
         content: [
           "Last updated: 7 July 2026",
-          "Some of the best celebrations I coordinate every year have two names on them. Joint birthdays, the flatmates born a week apart, the twins, the two best friends who decided one big night beats two medium ones, are quietly the smartest format in London partying: double the guest list, double the energy in the room, and half the admin for each host.",
+          "Some of the best celebrations we book every year have two names on them. Joint birthdays, the flatmates born a week apart, the twins, the two best friends who decided one big night beats two medium ones, are quietly the smartest format in London partying: double the guest list, double the energy in the room, and half the admin for each host.",
           "But the format has its own traps, and they are different from a normal birthday's. This is the playbook for the three that matter: sharing the spotlight, merging two friend groups, and running money with two hosts instead of one.",
         ],
       },
@@ -1058,7 +1058,7 @@ export const blogDataPart4: BlogPost[] = [
         headingLevel: "h2" as const,
         content: [
           "The defining feature of a joint birthday is that half the room are strangers to the other half. Treat that as the format's gift rather than its risk. The mechanics that work are simple: one shared table rather than two camps, a couple of deliberate introductions from each host early in the night, and a seating or standing arrangement that interleaves the groups instead of letting them settle into halves.",
-          "Our guide to mixed-group birthday nights covers the wider dynamics, but the joint-specific trick is this: each host is the other group's icebreaker. When I watch these nights work, it is because both birthday people spend the first hour actively cross-introducing, after which the room does the rest by itself.",
+          "Our guide to mixed-group birthday nights covers the wider dynamics, but the joint-specific trick is this: each host is the other group's icebreaker. When these nights work, it is because both birthday people spend the first hour actively cross-introducing, after which the room does the rest by itself.",
           "One practical note: a merged crowd is bigger and more varied than either host's usual, so pick a venue and a night with broad appeal rather than one group's niche taste. London has no shortage of rooms built for exactly this, as the sheer range at https://www.timeout.com/london/nightlife makes clear.",
         ],
       },
@@ -1067,7 +1067,7 @@ export const blogDataPart4: BlogPost[] = [
         headingLevel: "h2" as const,
         content: [
           "Money is where joint birthdays most often wobble, because there are two organisers and therefore, if you are not careful, two half-plans. Settle the host split first: fifty-fifty is the default, but splitting by guest count is fairer when one of you is bringing twenty people and the other eight. Then run the guest side exactly like any birthday: contributions collected before the night, one shared target, clear deadlines.",
-          "The one rule I insist on: appoint a single treasurer. Two people collecting money into two accounts against one venue bill is how joint birthdays end up in spreadsheet arguments the week after. One of you owns the money, the other owns the guest experience, and both own the night. Our birthday group payment tips guide covers the collecting mechanics, and our budget birthday guide helps you set a target both friend groups can live with.",
+          "The one rule we insist on: appoint a single treasurer. Two people collecting money into two accounts against one venue bill is how joint birthdays end up in spreadsheet arguments the week after. One of you owns the money, the other owns the guest experience, and both own the night. Our birthday group payment tips guide covers the collecting mechanics, and our budget birthday guide helps you set a target both friend groups can live with.",
         ],
       },
       {
@@ -1111,7 +1111,7 @@ export const blogDataPart4: BlogPost[] = [
         headingLevel: "h2" as const,
         content: [
           "Last updated: 13 July 2026",
-          "Some birthdays fit neatly into a single Saturday night, and some simply do not: the milestone years, the birthdays where half the guest list is travelling in, or the years when the people you love cannot all make the same evening. That is when the answer is a birthday weekend, and after helping plan a lot of them I can tell you the difference between a great one and an exhausting one is structure, not spend. This guide covers how to build a full London birthday weekend, as of July 2026: choosing the anchor night, arranging the supporting events around it, pacing your group across two days, and why the recovery day is part of the plan rather than the aftermath.",
+          "Some birthdays fit neatly into a single Saturday night, and some simply do not: the milestone years, the birthdays where half the guest list is travelling in, or the years when the people you love cannot all make the same evening. That is when the answer is a birthday weekend, and the difference between a great one and an exhausting one is structure, not spend. This guide covers how to build a full London birthday weekend, as of July 2026: choosing the anchor night, arranging the supporting events around it, pacing your group across two days, and why the recovery day is part of the plan rather than the aftermath.",
           "One thing this guide is not: a single-day itinerary. If what you want is one continuous day-to-night arc, our brunch-to-club day guide covers that format in full. A weekend is a different shape, with different rules.",
         ],
       },
@@ -1128,7 +1128,7 @@ export const blogDataPart4: BlogPost[] = [
         headingLevel: "h2" as const,
         content: [
           "Every good birthday weekend has one unmistakable main event, and everything else exists in relation to it. Choose that anchor night before anything else, because it decides the weekend's shape. Friday anchors suit London-based groups: people arrive straight from work with the whole weekend still ahead, venues are marginally easier to arrange, and Saturday becomes a generous recovery-and-brunch day. Saturday anchors suit weekends with travelling guests, who can arrive in the morning, drop bags and build up to the night properly; the cost is that Sunday carries the recovery and out-of-towners travel home tired.",
-          "As of July 2026, the practical rule I give every organiser is this: if more than a quarter of your list is coming from outside London, anchor on Saturday. Otherwise, Friday is the underrated choice and the whole weekend breathes better.",
+          "As of July 2026, the practical rule we give every organiser is this: if more than a quarter of your list is coming from outside London, anchor on Saturday. Otherwise, Friday is the underrated choice and the whole weekend breathes better.",
         ],
       },
       {
@@ -1143,7 +1143,7 @@ export const blogDataPart4: BlogPost[] = [
         heading: "Pace the Group Across the Whole Weekend",
         headingLevel: "h2" as const,
         content: [
-          "Nobody is required to attend everything, and the sooner your invitations say so, the better the weekend runs. Tier the plan openly: the whole list gets the anchor night, the inner circle gets the dinner or the Sunday, and people choose their own level beyond that. I noticed years ago that guests relax noticeably when the invitation itself gives them permission to skip a part; attendance at the anchor night actually improves when the weekend around it is optional.",
+          "Nobody is required to attend everything, and the sooner your invitations say so, the better the weekend runs. Tier the plan openly: the whole list gets the anchor night, the inner circle gets the dinner or the Sunday, and people choose their own level beyond that. Guests relax noticeably when the invitation itself gives them permission to skip a part; attendance at the anchor night actually improves when the weekend around it is optional.",
           "Money runs on the same discipline as any group birthday: one treasurer, clear per-event amounts, and collection before the weekend rather than during it. Our group payments guide covers the mechanics, and the same one-treasurer rule that saves a single night saves a weekend twice over. Keep the plan itself in one group chat with the key details pinned, and resist creating a separate chat per event.",
         ],
       },
@@ -1159,7 +1159,7 @@ export const blogDataPart4: BlogPost[] = [
         headingLevel: "h2" as const,
         content: [
           "The difference between a weekend that ends well and one that just stops is the last few hours. Plan the Sunday deliberately and gently: a late brunch within walking distance of wherever most people stayed, a park or a river walk if the weather allows, and a clear, guilt-free end point by mid-afternoon so travelling guests get home at a civilised hour. If the actual birthday date falls on the Sunday, this is where the quiet moment goes: the cake, the cards, the toast with the people who stayed.",
-          "Ending gently is not an anticlimax; it is what makes the anchor night the story everyone tells. The best birthday weekends I have seen finish with a table of survivors laughing about the night before, and that scene needs planning exactly like the party did.",
+          "Ending gently is not an anticlimax; it is what makes the anchor night the story everyone tells. The best birthday weekends finish with a table of survivors laughing about the night before, and that scene needs planning exactly like the party did.",
         ],
       },
     ],
@@ -1198,7 +1198,7 @@ export const blogDataPart4: BlogPost[] = [
         headingLevel: "h2" as const,
         content: [
           "Last updated: 14 July 2026",
-          "Not everyone wants to spend their birthday on a dancefloor, and one of the quiet truths of organising is that forcing a nightclub on someone who does not enjoy them is the fastest way to flatten their night. After planning a lot of London birthdays, I can tell you the fix is not to give up on a proper celebration; it is to build the same kind of night around what the person actually likes. This guide is for the organiser whose guest of honour goes quiet at the word club: how to plan a London birthday that still feels like an occasion, without the sweaty dancefloor, as of July 2026.",
+          "Not everyone wants to spend their birthday on a dancefloor, and one of the quiet truths of organising is that forcing a nightclub on someone who does not enjoy them is the fastest way to flatten their night. The fix is not to give up on a proper celebration; it is to build the same kind of night around what the person actually likes. This guide is for the organiser whose guest of honour goes quiet at the word club: how to plan a London birthday that still feels like an occasion, without the sweaty dancefloor, as of July 2026.",
           "One thing first: this is not the same as a sober birthday, which is about not drinking, or a low-key birthday, which is about scale. This is about the venue and the vibe. Plenty of people who love a drink and a big group still do not want a nightclub, and that is the specific problem this guide solves.",
         ],
       },
@@ -1215,7 +1215,7 @@ export const blogDataPart4: BlogPost[] = [
         headingLevel: "h2" as const,
         content: [
           "The strongest replacement for a club birthday is a great bar night, and London does these better than almost anywhere. A cocktail bar with a booked area gives you the same sense of occasion as a club table, the same togetherness of a reserved space, and none of the things a reluctant clubber dreads: you can talk, you can sit, and nobody is expected to dance. Book a defined space rather than leaving it to chance, because a birthday group standing in a packed bar with nowhere to land is its own kind of miserable. A booth or a reserved corner does for a bar birthday exactly what a table does for a club one.",
-          "If the person likes a bit of energy without the full nightclub, the sweet spot is a bar with music and life to it that still lets a group talk, the kind of room that gets lively by eleven but never asks you to shout. In my experience that is a completely different night from a nightclub, and for a lot of people it is the one they actually wanted all along.",
+          "If the person likes a bit of energy without the full nightclub, the sweet spot is a bar with music and life to it that still lets a group talk, the kind of room that gets lively by eleven but never asks you to shout. That is a completely different night from a nightclub, and for a lot of people it is the one they actually wanted all along.",
         ],
       },
       {
@@ -1223,7 +1223,7 @@ export const blogDataPart4: BlogPost[] = [
         headingLevel: "h2" as const,
         content: [
           "For many reluctant clubbers the answer is to make the meal the main event rather than the warm-up. A long, well-chosen dinner with the group is a proper celebration in its own right, and London has the range to make it feel special at any budget. The trick is to treat dinner as the destination: book a table you can keep for the evening, choose somewhere with atmosphere rather than a quick turnover, and let the night breathe. If the group wants to carry on, a nearby bar for a nightcap is a gentle second act the birthday person can join or leave freely.",
-          "It is the format I recommend most often here, because it flips the usual order: the part they enjoy becomes the centre, and anything after it is optional.",
+          "It is the format we recommend most often here, because it flips the usual order: the part they enjoy becomes the centre, and anything after it is optional.",
         ],
       },
       {
@@ -1278,7 +1278,7 @@ export const blogDataPart4: BlogPost[] = [
         headingLevel: "h2" as const,
         content: [
           "Last updated: 19 July 2026",
-          "Nothing flattens a birthday faster than the guest of honour, or a good friend at the table, watching everyone else eat while they sit with nothing they can have. Dietary requirements are more common than a lot of organisers plan for: coeliac and gluten needs, nut and other allergies, vegetarian and vegan diets, halal and kosher, and simple strong preferences all turn up in most groups of any size. After planning a lot of London birthdays, I can tell you the difference between a night where everyone is included and one where someone is quietly left out is almost entirely advance planning, and none of it is hard. This guide covers how to plan a London club birthday around dietary requirements so nobody misses out, as of July 2026.",
+          "Nothing flattens a birthday faster than the guest of honour, or a good friend at the table, watching everyone else eat while they sit with nothing they can have. Dietary requirements are more common than a lot of organisers plan for: coeliac and gluten needs, nut and other allergies, vegetarian and vegan diets, halal and kosher, and simple strong preferences all turn up in most groups of any size. The difference between a night where everyone is included and one where someone is quietly left out is almost entirely advance planning, and none of it is hard. This guide covers how to plan a London club birthday around dietary requirements so nobody misses out, as of July 2026.",
           "One point first: this is not about a sober night, which is a different subject we cover separately. This is about food, allergies and what people can and cannot eat, which is easy to forget when the plan is centred on a club rather than a restaurant.",
         ],
       },
@@ -1301,7 +1301,7 @@ export const blogDataPart4: BlogPost[] = [
         heading: "Eating Before, Not At, the Club",
         headingLevel: "h2" as const,
         content: [
-          "For anyone with a serious restriction, the most reliable plan is to make the real meal happen before the club rather than relying on club food. A dinner at a restaurant that handles the group's needs properly, chosen for exactly that, takes all the pressure off the night: everyone arrives fed and safe, and the club becomes the celebration rather than the catering. London's restaurant range makes this genuinely easy, and a quick look at the listings on https://www.timeout.com/london/restaurants will turn up rooms for almost any dietary combination. Then the club only needs to handle drinks and the cake, which is a far smaller ask than a full meal. For a group with mixed and serious needs, the dinner-first structure is the plan I recommend most often.",
+          "For anyone with a serious restriction, the most reliable plan is to make the real meal happen before the club rather than relying on club food. A dinner at a restaurant that handles the group's needs properly, chosen for exactly that, takes all the pressure off the night: everyone arrives fed and safe, and the club becomes the celebration rather than the catering. London's restaurant range makes this genuinely easy, and a quick look at the listings on https://www.timeout.com/london/restaurants will turn up rooms for almost any dietary combination. Then the club only needs to handle drinks and the cake, which is a far smaller ask than a full meal. For a group with mixed and serious needs, the dinner-first structure is the plan we recommend most often.",
         ],
       },
       {
@@ -1355,7 +1355,7 @@ export const blogDataPart4: BlogPost[] = [
         headingLevel: "h2" as const,
         content: [
           "Last updated: 24 July 2026",
-          "Almost every birthday guide is written for the person organising the night. This one is for everyone else at the table: the guest who has been invited to a birthday at a London club and is quietly wondering what they have signed up for. It is a fair thing to wonder, because a club birthday works differently from a house party or a dinner, and nobody ever explains the rules to the people being invited. After helping plan a lot of these nights, I can tell you the guests who enjoy them most are simply the ones who know what to expect, so here is everything you actually need to know, as of July 2026.",
+          "Almost every birthday guide is written for the person organising the night. This one is for everyone else at the table: the guest who has been invited to a birthday at a London club and is quietly wondering what they have signed up for. It is a fair thing to wonder, because a club birthday works differently from a house party or a dinner, and nobody ever explains the rules to the people being invited. The guests who enjoy them most are simply the ones who know what to expect, so here is everything you actually need to know, as of July 2026.",
         ],
       },
       {
@@ -1363,14 +1363,14 @@ export const blogDataPart4: BlogPost[] = [
         headingLevel: "h2" as const,
         content: [
           "The shape of a club birthday is fairly consistent. The organiser has usually put the group on a guestlist or booked a table, which means your name, or the birthday person's name, gets you in at the door rather than a public queue. You arrive, you are pointed to the group's table or area if there is one, and the night builds from there. London's club scene runs to a particular rhythm, as Time Out's nightlife coverage at https://www.timeout.com/london/clubs lays out, and the practical upshot for a guest is simple: arrive close to the time you were given, because guestlists and tables have arrival windows, and turning up an hour late can mean the free or discounted entry has lapsed.",
-          "In my experience the guests who relax into it fastest are the ones who understand that the table, if there is one, is a base rather than a seat. It will usually be the group's meeting point for the night rather than a place everyone sits all evening. Expect to leave coats at the cloakroom, expect the music to be loud enough that the table is where you regroup between dancing, and expect the birthday person to be pulled in every direction. Your job as a guest is mostly to be easy to have around.",
+          "The guests who relax into it fastest are the ones who understand that the table, if there is one, is a base rather than a seat. It will usually be the group's meeting point for the night rather than a place everyone sits all evening. Expect to leave coats at the cloakroom, expect the music to be loud enough that the table is where you regroup between dancing, and expect the birthday person to be pulled in every direction. Your job as a guest is mostly to be easy to have around.",
         ],
       },
       {
         heading: "Will It Cost You Anything?",
         headingLevel: "h2" as const,
         content: [
-          "This is the question everyone is too polite to ask, so let me answer it plainly. I have watched more than one guest freeze at a card machine at the end of the night because nobody had told them the table bill was being split, and it is an easily avoided moment. Sometimes a club birthday costs a guest nothing beyond your own drinks, particularly if the organiser has sorted free guestlist entry. Sometimes, if the group has booked a table with bottles, the cost of that table is split across the people on it, and you may be asked to contribute a share. Neither is unusual, and neither is a trap; the important thing is to find out which it is early rather than on the night.",
+          "This is the question everyone is too polite to ask, so here is the plain answer. Guests do sometimes freeze at a card machine at the end of the night because nobody told them the table bill was being split, and it is an easily avoided moment. Sometimes a club birthday costs a guest nothing beyond your own drinks, particularly if the organiser has sorted free guestlist entry. Sometimes, if the group has booked a table with bottles, the cost of that table is split across the people on it, and you may be asked to contribute a share. Neither is unusual, and neither is a trap; the important thing is to find out which it is early rather than on the night.",
           "The honest move is to ask the organiser, before the day, whether there is a cost to join and roughly what it is. A good organiser will tell you gladly, and it lets you decide in comfort rather than being surprised at a card machine at 1am. If a shared table is beyond your budget, it is completely fine to say so and join for the entry and the dancing without going on the table bill. Saying it early, quietly and once is far better for everyone than backing out later.",
         ],
       },
@@ -1386,7 +1386,7 @@ export const blogDataPart4: BlogPost[] = [
         heading: "How to Be a Good Guest",
         headingLevel: "h2" as const,
         content: [
-          "In my experience, the guests organisers quietly love are the ones who make the night easier to run. Reply to the invite quickly, because the organiser needs numbers for the guestlist or table and a late maybe is genuinely hard to plan around. Arrive on time for the same reason. Do not drop out at the last minute unless you truly have to, because a group that shrinks on the night can affect the table minimum and the door. And look out for the birthday person: a quick check that they are having a good time, and a hand keeping the group together, is worth more than any gift.",
+          "The guests organisers quietly love are the ones who make the night easier to run. Reply to the invite quickly, because the organiser needs numbers for the guestlist or table and a late maybe is genuinely hard to plan around. Arrive on time for the same reason. Do not drop out at the last minute unless you truly have to, because a group that shrinks on the night can affect the table minimum and the door. And look out for the birthday person: a quick check that they are having a good time, and a hand keeping the group together, is worth more than any gift.",
           "A couple of small things smooth the rest. Keep an eye on the group chat during the night so you do not get separated, and respect the venue's approach to phones and photos, which some rooms limit. None of this is complicated; it is just the difference between being a guest who is easy to have along and one who is quietly hard work.",
         ],
       },

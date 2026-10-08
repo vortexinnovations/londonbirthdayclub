@@ -35,7 +35,7 @@ export const blogDataPart1: BlogPost[] = [
         heading: "Minimum Spend by Venue",
         headingLevel: "h2",
         content: [
-          "Most Mayfair and West End nightclubs start at £1,000 minimum spend on a standard weekend night. However, this varies by venue, night of the week, and table position. Tape London, being the most exclusive members' club, starts from £1,500. Most other venues - Cirque Le Soir, TABU, Funky Buddha, Luna Club London, Maddox Club, Scotch of St James, Cuckoo Club, Dear Darling, BEAT London, The Box London, Selene London, and Reign London - start from £1,000.",
+          "Most Mayfair and West End nightclubs start at £1,000 minimum spend on a standard weekend night. However, this varies by venue, night of the week, and table position. Tape London, being the most exclusive members' club, starts from £1,500. Most other venues - Cirque Le Soir, Maddox Club, Scotch of St James, Dear Darling, BEAT London, The Box London, Selene London, and Reign London - start from £1,000. 99 Regent Street (formerly Cuckoo Club) starts from £600, and Rumour (formerly TABU) quotes on request.",
           "These are starting prices. Premium table positions (closer to the DJ, in the centre of the room, or in more private areas) often carry higher minimums. Friday and Saturday nights are at the top end, while Thursday and midweek nights can offer lower entry points.",
         ],
       },
@@ -60,7 +60,7 @@ export const blogDataPart1: BlogPost[] = [
         heading: "How to Get the Best Value",
         headingLevel: "h2",
         content: [
-          "There are genuine ways to get more value from your birthday table budget. Booking on a Thursday instead of Saturday can reduce minimum spends by 20-40% while still delivering a brilliant atmosphere. Midweek nights at Cirque Le Soir, Funky Buddha, and Cuckoo Club are particularly good value.",
+          "There are genuine ways to get more value from your birthday table budget. Booking on a Thursday instead of Saturday can reduce minimum spends by 20-40% while still delivering a brilliant atmosphere. Midweek nights at Cirque Le Soir and at 99 Regent Street (formerly Cuckoo Club), where tables start from £600, are particularly good value.",
           "Choosing your bottles wisely also matters. Premium vodka and champagne have the highest markup, while spirits like gin and tequila can stretch your minimum spend further. Your table host can advise on the best bottle choices for your group size and budget.",
           "Most importantly, get your group size confirmed early. The more people sharing the spend, the better the per-person value - and the more fun the table is. A table of 12 is always a better experience and better value than a table of 5.",
         ],
@@ -110,7 +110,7 @@ export const blogDataPart1: BlogPost[] = [
         heading: "The Standard Mayfair Dress Code",
         headingLevel: "h2",
         content: [
-          "The majority of London's premium nightclubs - including Tape London, Cirque Le Soir, Reign London, TABU, Funky Buddha, Luna Club London, Maddox Club, Scotch of St James, Cuckoo Club, Dear Darling, and The Box London - enforce a smart dress code. The principle is simple: look like you've made an effort.",
+          "The majority of London's premium nightclubs - including Tape London, Cirque Le Soir, Reign London, Maddox Club, Scotch of St James, Dear Darling, and The Box London - enforce a smart dress code. The principle is simple: look like you've made an effort.",
           "For men, this means smart shoes (leather shoes, Chelsea boots, or clean designer trainers at some venues), fitted trousers or dark jeans (not ripped or faded), and a collared shirt, smart knitwear, or a well-fitted T-shirt under a blazer. No sportswear, no caps, no hoodies, no shorts, and no plain trainers.",
           "For women, the dress code is more flexible. Dresses, jumpsuits, skirts with nice tops, heels or smart boots all work well. The key is looking put-together and occasion-appropriate. Avoid overly casual items like flip-flops, gym leggings, or basic jeans and trainers.",
         ],
@@ -188,7 +188,7 @@ export const blogDataPart1: BlogPost[] = [
         headingLevel: "h2",
         content: [
           "This is the easy part. Message us on WhatsApp and tell us it's a surprise - we'll handle the booking entirely through you. No confirmation emails to the birthday person's phone, no deposits on their card. Everything goes through the organiser.",
-          "Choose the venue based on what the birthday person would love, not just what's available. If they're a hip-hop fan, TABU or Cirque Le Soir. If they love house music, Maddox or BEAT. If they appreciate luxury, Tape or Dear Darling. We can help you match their personality to the right club.",
+          "Choose the venue based on what the birthday person would love, not just what's available. If they're a hip-hop fan, Cirque Le Soir or Reign London. If they love house music, Maddox or BEAT. If they appreciate luxury, Tape or Dear Darling. We can help you match their personality to the right club.",
         ],
       },
       {
@@ -364,7 +364,7 @@ export const blogDataPart1: BlogPost[] = [
         headingLevel: "h2",
         content: [
           "If the birthday person lives for music, the venue should match. BEAT London's sound system is among the finest in the city, delivering house and tech house with clarity and bass that you feel physically. For music-first birthday groups, this kind of audio experience is the centrepiece of the celebration.",
-          "Funky Buddha on Berkeley Street takes this further with one of the most legendary reputations in London nightlife. Celebrating a birthday at Funky Buddha means celebrating in a venue that has hosted countless celebrities and iconic nights. The intimate setting, incredible hip-hop and RnB playlist, and genuine energy make every birthday feel like a headline event.",
+          "For a music-first group that prefers hip-hop and RnB, Tape London is the Mayfair equivalent: an intimate room, a DJ who plays to the crowd, and a birthday table that sits close to the action.",
         ],
       },
       {
@@ -379,8 +379,8 @@ export const blogDataPart1: BlogPost[] = [
         heading: "The Two-Vibe Birthday: Something for Everyone",
         headingLevel: "h2",
         content: [
-          "Birthday groups rarely have unanimous music taste. Cuckoo Club's two-floor layout - house music upstairs, hip-hop and RnB in the basement - lets your group split and explore without anyone leaving the venue. It's a simple concept but it genuinely solves one of the most common birthday group problems.",
-          "Throughout the night, people naturally migrate between floors depending on their mood. The birthday person can move freely between both atmospheres, and the group can reconnect at the table whenever they want. For diverse friend groups, this flexibility is invaluable.",
+          "Birthday groups rarely have unanimous music taste. Reign London's commercial mix of hip-hop, RnB and house is built for exactly that, so nobody spends the night waiting for their kind of song, and Cirque Le Soir's party anthems tend to unite a group rather than divide it. Both solve one of the most common birthday group problems without anyone leaving the venue.",
+          "Throughout the night, people drift between the dancefloor and the table depending on their mood, and the group can reconnect at the table whenever they want. For diverse friend groups, this flexibility is invaluable.",
         ],
       },
     ],
@@ -506,11 +506,11 @@ export const blogDataPart1: BlogPost[] = [
         ],
       },
       {
-        heading: "For the Style-Conscious: TABU or Luna Club",
+        heading: "For the Style-Conscious: Selene London",
         headingLevel: "h2",
         content: [
-          "For women who care about aesthetics and atmosphere, TABU's Japanese underground design and Luna Club London's celestial-inspired interiors create the most visually striking birthday backdrops. Every photo looks incredible, the interiors are conversation starters, and the intimate sizes mean your group is part of the venue's energy rather than lost in it.",
-          "Both venues attract a well-dressed, fashion-conscious crowd, which adds to the sense of being somewhere special. For birthdays where looking and feeling amazing is the priority, these design-forward venues deliver.",
+          "For women who care about aesthetics and atmosphere, Selene London, on Winsley Street in Fitzrovia just north of Oxford Circus, has polished interiors, soft lighting and luxurious materials that make a striking birthday backdrop. Its intimate-medium size means your group is part of the venue's energy rather than lost in it, and it opens Thursday to Sunday from 11pm to 4am.",
+          "Selene attracts a well-dressed crowd, which adds to the sense of being somewhere special. For birthdays where looking and feeling amazing is the priority, it delivers.",
         ],
       },
       {
@@ -584,19 +584,18 @@ export const blogDataPart1: BlogPost[] = [
         ],
       },
       {
-        heading: "For the Lads' Night: Cuckoo Club or The London Reign",
+        heading: "For the Lads' Night: The London Reign",
         headingLevel: "h2",
         content: [
-          "Big birthday groups of 15+ need a venue that can handle the energy and the numbers. Cuckoo Club's two-floor layout means the group can spread out between house music upstairs and hip-hop downstairs, with everyone gravitating to their preference throughout the night.",
+          "Big birthday groups of 15+ need a venue that can handle the energy and the numbers, and at around 500 capacity The London Reign is built for it. Its mix of commercial, hip-hop, RnB and house keeps a big group on the dancefloor together.",
           "The London Reign offers scale and spectacle for even larger groups - the multi-level venue with aerial performances provides an impressive backdrop for big birthday celebrations. Multiple tables can be arranged together for groups of 20+, making it one of the best options for a large crew.",
         ],
       },
       {
-        heading: "For the Music Head: BEAT London or Funky Buddha",
+        heading: "For the Music Head: BEAT London",
         headingLevel: "h2",
         content: [
-          "Men who define their nights out by the music should look at BEAT London or Funky Buddha. BEAT's sound system is exceptional, the house and tech house policy is uncompromising, and the atmosphere is about the music rather than the scene.",
-          "Funky Buddha is the legendary option - celebrating a birthday at one of London's most iconic clubs carries genuine weight. The Berkeley Street venue has hosted countless celebrities and legendary nights. The intimate setting, incredible hip-hop and RnB playlist, and authentic energy make every birthday feel like it matters. For the man who wants his birthday at a genuinely famous venue, Funky Buddha is the one.",
+          "Men who define their nights out by the music should look at BEAT London. BEAT's sound system is exceptional, the house and tech house policy is uncompromising, and the atmosphere is about the music rather than the scene.",
         ],
       },
       {
@@ -613,7 +612,7 @@ export const blogDataPart1: BlogPost[] = [
         question:
           "What's the best London club for a lads' birthday?",
         answer:
-          "For a big group lads' birthday, Cuckoo Club (two floors, two vibes) and The London Reign (large capacity, aerial shows) are the top choices. For something more exclusive with a smaller group, Tape London delivers genuine VIP treatment.",
+          "For a big group lads' birthday, The London Reign (large capacity, aerial shows) is the top choice. For something more exclusive with a smaller group, Tape London delivers genuine VIP treatment.",
       },
       {
         question:
@@ -657,7 +656,7 @@ export const blogDataPart1: BlogPost[] = [
         heading: "What to Request: Match the Venue's Sound",
         headingLevel: "h2",
         content: [
-          "The best birthday song requests work with the venue's music policy, not against it. At hip-hop venues like TABU, Tape, or Cirque Le Soir, request tracks in that genre that have a celebratory energy. At house music venues like Maddox or BEAT, a house anthem that the crowd recognises will get a bigger reaction than a random pop track.",
+          "The best birthday song requests work with the venue's music policy, not against it. At hip-hop venues like Tape or Cirque Le Soir, request tracks in that genre that have a celebratory energy. At house music venues like Maddox or BEAT, a house anthem that the crowd recognises will get a bigger reaction than a random pop track.",
           "Popular choices that work across most London club environments include high-energy, widely recognised tracks that make people want to sing along and raise their glasses. Your table host and DJ will know what works best in their specific venue - trust their judgement if you're unsure.",
         ],
       },

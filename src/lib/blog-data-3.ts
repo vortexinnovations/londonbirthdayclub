@@ -47,7 +47,7 @@ export const blogDataPart3: BlogPost[] = [
     ],
     faqs: [
       { question: "Do I need to dress up for BEAT London?", answer: "BEAT has a more relaxed dress code than Mayfair clubs. Smart casual is the standard - clean trainers are fine, and the emphasis is on personal style over formality. You still can't wear sportswear or gym gear, but the bar is noticeably lower than Mayfair venues." },
-      { question: "What music plays at BEAT London?", answer: "House and tech house, played through one of London's finest sound systems. The music policy is uncompromising - if your birthday group loves dance music, BEAT delivers. If your group prefers hip-hop, consider a Mayfair venue like TABU or Funky Buddha instead." },
+      { question: "What music plays at BEAT London?", answer: "House and tech house, played through one of London's finest sound systems. The music policy is uncompromising - if your birthday group loves dance music, BEAT delivers. If your group prefers hip-hop, consider Tape London in Mayfair or Cirque Le Soir in Soho instead." },
     ],
   },
   {
@@ -74,7 +74,7 @@ export const blogDataPart3: BlogPost[] = [
         headingLevel: "h2",
         content: [
           "Cirque Le Soir is the standout choice for hen parties that want spectacle. The live circus performers, pyrotechnic bottle shows, and immersive atmosphere create a hen night the bride will never forget. The performers interact directly with your group, and the theatrical energy means even the most reserved guests end up on their feet.",
-          "For an elegant hen party, Dear Darling offers chandeliered booths, exceptional cocktails, and a refined atmosphere that works beautifully for groups who want luxury over volume. Cuckoo Club is ideal for mixed-taste groups - house music upstairs, hip-hop downstairs, everyone happy. And Funky Buddha delivers legendary energy in an intimate setting that makes the whole group feel like VIPs.",
+          "For an elegant hen party, Dear Darling offers chandeliered booths, exceptional cocktails, and a refined atmosphere that works beautifully for groups who want luxury over volume. Reign London suits mixed-taste groups, with a commercial mix of hip-hop, RnB and house that keeps everyone happy. And Tape London delivers high energy in an intimate setting that makes the whole group feel like VIPs.",
         ],
       },
       {
@@ -90,7 +90,7 @@ export const blogDataPart3: BlogPost[] = [
         headingLevel: "h2",
         content: [
           "Hen party groups typically range from 8-20 people. With a £1,000 minimum spend, the per-person cost scales well: £125 for 8 guests, £100 for 10, £67 for 15, or £50 for 20. Factor in a cake (£50-150) and optional decorations (£30-100), and you can plan the full evening with confidence.",
-          "Weeknight hen parties offer even better value. Wednesday at Cirque Le Soir or Funky Buddha gives you the full experience at a lower minimum spend, and the atmosphere is still genuinely celebratory. Thursday is another strong option - many venues have lower minimums while maintaining a lively, well-dressed crowd.",
+          "Weeknight hen parties offer even better value. Wednesday at Cirque Le Soir gives you the full experience at a lower minimum spend, and the atmosphere is still genuinely celebratory. Thursday is another strong option - many venues have lower minimums while maintaining a lively, well-dressed crowd.",
         ],
       },
       {
@@ -104,7 +104,7 @@ export const blogDataPart3: BlogPost[] = [
     ],
     faqs: [
       { question: "Can you arrange hen party decorations at a London club?", answer: "Yes. Most venues allow table decorations including balloons, sashes, and personalised touches. We coordinate this with the venue in advance. The club will have your table set up and decorated before your group arrives." },
-      { question: "What's the best London club for a hen party?", answer: "Cirque Le Soir for spectacle and entertainment, Dear Darling for elegant cocktail-focused celebrations, Cuckoo Club for groups with mixed music preferences, and Funky Buddha for iconic energy. The best choice depends on the bride's personality and the group's vibe." },
+      { question: "What's the best London club for a hen party?", answer: "Cirque Le Soir for spectacle and entertainment, Dear Darling for elegant cocktail-focused celebrations, Reign London for groups with mixed music preferences, and Tape London for an intimate, high-energy night. The best choice depends on the bride's personality and the group's vibe." },
       { question: "How far in advance should I book a hen party at a London club?", answer: "Book 3-4 weeks ahead for weekends, 2-3 weeks for weeknights. Hen parties on popular Saturday nights at venues like Cirque Le Soir can fill up quickly, so earlier is always better for securing a good table position." },
     ],
   },
@@ -155,7 +155,7 @@ export const blogDataPart3: BlogPost[] = [
         heading: "Best Restaurants Near London Birthday Clubs",
         headingLevel: "h2",
         content: [
-          "For Mayfair clubs (Tape, TABU, Funky Buddha, Cuckoo, Dear Darling, Scotch), central Mayfair and Piccadilly offer dozens of suitable restaurants. Look for venues on or near Berkeley Square, Bruton Street, or Shepherd Market. For Selene, just north of Oxford Circus in Fitzrovia, the restaurants of Fitzrovia and Marylebone are a short walk away. Italian and Japanese restaurants tend to handle birthday groups best - they're used to larger bookings and celebration energy.",
+          "For Mayfair clubs (Tape, Rumour, 99 Regent Street, Dear Darling, Scotch), central Mayfair and Piccadilly offer dozens of suitable restaurants. Look for venues on or near Berkeley Square, Bruton Street, or Shepherd Market. For Selene, just north of Oxford Circus in Fitzrovia, the restaurants of Fitzrovia and Marylebone are a short walk away. Italian and Japanese restaurants tend to handle birthday groups best - they're used to larger bookings and celebration energy.",
           "For Soho clubs (Cirque Le Soir, The Box), the restaurants on Dean Street, Frith Street, and Greek Street are all within a 5-minute walk. For Reign London on Piccadilly, the restaurants around St James's and Haymarket are ideal. The key is proximity - you want a 5-10 minute walk maximum between dinner and the club.",
         ],
       },
@@ -247,8 +247,8 @@ export const blogDataPart3: BlogPost[] = [
         heading: "Hip-Hop and RnB Birthdays",
         headingLevel: "h2",
         content: [
-          "If your birthday group lives for hip-hop, RnB, and rap, these are your venues. TABU London plays hip-hop and RnB all night with Afrobeats woven in - the Japanese underground aesthetic adds visual cool to an already strong musical identity. Funky Buddha is the legendary choice: iconic status, intimate setting, and a playlist that moves between classic anthems and current hits. Tape London plays hip-hop and RnB with a more exclusive, members' club atmosphere. Cuckoo Club's basement floor is dedicated to hip-hop and RnB if you want the option of house music upstairs for the group members who prefer it.",
-          "For pure hip-hop and RnB energy where the dancefloor is the focus, TABU and Funky Buddha are the strongest choices. For a more exclusive hip-hop experience, Tape delivers at a higher price point. For groups with mixed preferences, Cuckoo's two-floor solution is hard to beat.",
+          "If your birthday group lives for hip-hop, RnB, and rap, these are your venues. Tape London plays hip-hop and RnB with a more exclusive, members' club atmosphere. Cirque Le Soir pairs hip-hop, RnB and party anthems with live performers. Reign London mixes hip-hop and RnB with commercial and house on a bigger scale. Rumour (formerly TABU) and 99 Regent Street (formerly Cuckoo Club) both open Wednesday to Saturday under their new names and set their own music, so ask us what is playing on your night before you book.",
+          "For pure hip-hop and RnB energy where the dancefloor is the focus, Cirque Le Soir is the strongest choice. For a more exclusive hip-hop experience, Tape delivers at a higher price point. For groups with mixed preferences, Reign London's broader mix is hard to beat.",
         ],
       },
       {
@@ -256,29 +256,29 @@ export const blogDataPart3: BlogPost[] = [
         headingLevel: "h2",
         content: [
           "For birthday groups who love house, deep house, and tech house, the choices are clear. Maddox Club plays house and deep house exclusively - the dinner-to-dancing format means your birthday starts refined and builds into a proper house music session. BEAT London takes house and tech house seriously: the Margaret Street venue has one of London's finest sound systems, and the music policy is uncompromising. Dear Darling leans into soulful house and cocktail-lounge sounds for groups who want a more elegant, less intense house music experience.",
-          "Cuckoo Club's ground floor plays house and commercial, giving you a house music option within a venue that also offers hip-hop downstairs. If house music is your group's non-negotiable requirement, Maddox or BEAT are the definitive choices. Maddox for the dinner-club experience; BEAT for the sound system purists.",
+          "Selene London plays house alongside commercial and RnB, a softer option in Fitzrovia that opens Thursday to Sunday. If house music is your group's non-negotiable requirement, Maddox or BEAT are the definitive choices. Maddox for the dinner-club experience; BEAT for the sound system purists.",
         ],
       },
       {
         heading: "Mixed Music Taste Birthdays",
         headingLevel: "h2",
         content: [
-          "The most common birthday group problem: half want hip-hop, half want house, and someone's girlfriend only listens to Afrobeats. Three venues solve this directly. Cuckoo Club gives you two completely separate floors - house upstairs, hip-hop downstairs - under one roof. Your group moves freely between both. Cirque Le Soir plays a party-focused mix that spans hip-hop, RnB, and anthems - the live performers distract from any music-taste debates. Reign London plays a commercial mix of hip-hop, house, and RnB that's crowd-pleasing by design.",
-          "For the genuinely divided birthday group, Cuckoo Club is the safest bet. For groups where the music is secondary to the experience, Cirque Le Soir makes the entertainment the main event. Reign London works when the group just wants high energy regardless of genre.",
+          "The most common birthday group problem: half want hip-hop, half want house, and someone's girlfriend only listens to Afrobeats. Three venues solve this directly. Selene London blends house, commercial and RnB, with room for those who want to dance and those who want to talk. Cirque Le Soir plays a party-focused mix that spans hip-hop, RnB, and anthems - the live performers distract from any music-taste debates. Reign London plays a commercial mix of hip-hop, house, and RnB that's crowd-pleasing by design.",
+          "For the genuinely divided birthday group, Reign London is the safest bet, because its mix is built to please everyone. For groups where the music is secondary to the experience, Cirque Le Soir makes the entertainment the main event. Selene London works when the group wants a more refined night with music that suits both camps.",
         ],
       },
       {
         heading: "Afrobeats and Dancehall Birthdays",
         headingLevel: "h2",
         content: [
-          "Afrobeats and dancehall have become a major part of London's nightlife sound. Funky Buddha weaves Afrobeats and dancehall into its hip-hop and RnB playlist - the intimate setting means the energy is concentrated and the crowd genuinely dances. TABU includes Afrobeats alongside its hip-hop core, and the dark, design-forward setting creates great atmosphere for these genres. Neither venue plays Afrobeats exclusively, but both give it significant airtime and attract crowds who respond to it.",
+          "Afrobeats and dancehall have become a major part of London's nightlife sound. Funky Buddha and Luna Club London, the two Mayfair clubs best known for them, have both closed, and none of the open clubs we book plays Afrobeats exclusively. Hip-hop and RnB rooms such as Tape London and Cirque Le Soir are where it is most likely to get airtime, so tell us it matters when you book and we will check the music on your night.",
         ],
       },
     ],
     faqs: [
-      { question: "Which London birthday club plays the best hip-hop?", answer: "TABU London and Funky Buddha are the strongest hip-hop venues for birthdays. TABU adds Afrobeats to the mix in a stunning underground setting. Funky Buddha is the legendary choice with an iconic Mayfair reputation. Both play hip-hop and RnB all night." },
-      { question: "Which London birthday club plays house music?", answer: "Maddox Club (deep house, with dinner option), BEAT London (house and tech house, best sound system), and Dear Darling (soulful house, elegant atmosphere). Cuckoo Club's ground floor also plays house music." },
-      { question: "What if my birthday group has mixed music tastes?", answer: "Cuckoo Club is the answer - two floors, two completely different sounds (house upstairs, hip-hop downstairs), one venue. Your group moves freely between both. Cirque Le Soir is also a great option since the live entertainment is the main attraction, making the music secondary." },
+      { question: "Which London birthday club plays the best hip-hop?", answer: "Tape London and Cirque Le Soir are the strongest hip-hop venues for birthdays. Tape plays hip-hop and RnB in an exclusive, members' club setting. Cirque Le Soir adds live performers and party anthems. Reign London mixes hip-hop with commercial and house on a bigger scale." },
+      { question: "Which London birthday club plays house music?", answer: "Maddox Club (deep house, with dinner option), BEAT London (house and tech house, best sound system), and Dear Darling (soulful house, elegant atmosphere). Selene London also plays house alongside commercial and RnB." },
+      { question: "What if my birthday group has mixed music tastes?", answer: "Reign London is the answer, with a commercial mix of hip-hop, RnB and house designed to please a whole room. Cirque Le Soir is also a great option since the live entertainment is the main attraction, making the music secondary." },
     ],
   },
   {
@@ -391,8 +391,8 @@ export const blogDataPart3: BlogPost[] = [
         heading: "Best Clubs for Mixed Birthday Groups",
         headingLevel: "h2",
         content: [
-          "Cirque Le Soir is universally welcoming - the entertainment-focused atmosphere means the crowd is diverse, everyone is there for the experience, and the performers make every group feel included. Cuckoo Club works brilliantly for mixed groups because the two floors offer variety: different music, different energy, and everyone finds their space. Maddox Club's dinner-to-club format creates a more social, inclusive atmosphere where mixed groups naturally thrive - the restaurant element levels the playing field.",
-          "Dear Darling attracts a balanced crowd with its cocktail-lounge sophistication. Funky Buddha and TABU both draw well-dressed, fun-loving crowds where mixed groups feel completely at home. With a table booking at any of these venues, your mixed group is treated as VIP guests from the moment you arrive - the composition of your group is irrelevant when you're a confirmed booking.",
+          "Cirque Le Soir is universally welcoming - the entertainment-focused atmosphere means the crowd is diverse, everyone is there for the experience, and the performers make every group feel included. Reign London works brilliantly for mixed groups because its scale and broad music mix offer variety, and everyone finds their space. Maddox Club's dinner-to-club format creates a more social, inclusive atmosphere where mixed groups naturally thrive - the restaurant element levels the playing field.",
+          "Dear Darling attracts a balanced crowd with its cocktail-lounge sophistication. Selene London draws a well-dressed, fun-loving crowd where mixed groups feel completely at home. With a table booking at any of these venues, your mixed group is treated as VIP guests from the moment you arrive - the composition of your group is irrelevant when you're a confirmed booking.",
         ],
       },
       {
@@ -407,14 +407,14 @@ export const blogDataPart3: BlogPost[] = [
         heading: "Music That Works for Mixed Groups",
         headingLevel: "h2",
         content: [
-          "Mixed birthday groups often have the widest range of music preferences. Cuckoo Club's two-floor approach (house upstairs, hip-hop downstairs) is the safest bet for diverse tastes. Cirque Le Soir's party-anthem approach - hip-hop, RnB, sing-along classics - tends to unite rather than divide. Reign London's commercial mix is deliberately crowd-pleasing and works for groups who just want energy.",
+          "Mixed birthday groups often have the widest range of music preferences. Selene London's blend of house, commercial and RnB is a safe bet for diverse tastes. Cirque Le Soir's party-anthem approach - hip-hop, RnB, sing-along classics - tends to unite rather than divide. Reign London's commercial mix is deliberately crowd-pleasing and works for groups who just want energy.",
           "If the birthday person has a strong musical preference, lead with that - it's their night. But for groups where the music choice could cause debate, these three venues provide built-in solutions for mixed tastes.",
         ],
       },
     ],
     faqs: [
       { question: "Do London clubs have strict door policies for mixed groups?", answer: "With a VIP table booking, your entire group has priority entry on the guestlist - the group composition doesn't matter. Without a booking, some venues can be more selective. A table booking removes this concern entirely." },
-      { question: "Which London club is best for a mixed birthday group?", answer: "Cuckoo Club (two floors, two music styles), Cirque Le Soir (entertainment-focused atmosphere everyone enjoys), and Maddox Club (dinner-to-club format that's naturally inclusive). All three create atmospheres where mixed groups thrive." },
+      { question: "Which London club is best for a mixed birthday group?", answer: "Reign London (a broad mix of hip-hop, RnB, house and commercial), Cirque Le Soir (entertainment-focused atmosphere everyone enjoys), and Maddox Club (dinner-to-club format that's naturally inclusive). All three create atmospheres where mixed groups thrive." },
     ],
   },
   {
@@ -441,7 +441,7 @@ export const blogDataPart3: BlogPost[] = [
         headingLevel: "h2",
         content: [
           "Maddox Club is the standout choice for corporate celebrations - the Italian dinner element adds a formal first act before the club takes over, and the house music attracts a mature crowd. Dear Darling works beautifully for more senior teams: the cocktail-focused atmosphere is refined, conversational, and impressive without being overwhelming. Selene London strikes the balance between premium and fun that works for mixed-seniority teams.",
-          "For sales teams, creative agencies, or groups who want pure energy, Cirque Le Soir delivers an experience that nobody expects from a leaving party - performers, spectacle, and unforgettable entertainment. Funky Buddha and TABU work well for younger teams who want a high-energy celebration.",
+          "For sales teams, creative agencies, or groups who want pure energy, Cirque Le Soir delivers an experience that nobody expects from a leaving party - performers, spectacle, and unforgettable entertainment. Tape London and Reign London work well for younger teams who want a high-energy celebration.",
         ],
       },
       {
@@ -489,7 +489,7 @@ export const blogDataPart3: BlogPost[] = [
         heading: "Where to Find Last-Minute Availability",
         headingLevel: "h2",
         content: [
-          "Thursday nights are the easiest to book last-minute - venues like TABU, Scotch of St James, and Cuckoo Club often have tables available even a few days before. Friday nights have more availability than Saturday, and venues like BEAT London, Luna Club, and Selene London tend to fill up later than the marquee names.",
+          "Thursday nights are the easiest to book last-minute - venues like Scotch of St James often have tables available even a few days before, and Rumour (formerly TABU) and 99 Regent Street (formerly Cuckoo Club), both open Wednesday to Saturday, are worth asking about at short notice. Friday nights have more availability than Saturday, and venues like BEAT London and Selene London tend to fill up later than the marquee names.",
           "Even on Saturdays, cancellations and reshuffles mean tables sometimes open up midweek. We have direct lines to venue teams and can spot these opportunities before they appear publicly. The key is messaging us early in the week - even a Monday message for a Saturday birthday gives us time to work with the venues.",
         ],
       },
@@ -504,7 +504,7 @@ export const blogDataPart3: BlogPost[] = [
     ],
     faqs: [
       { question: "Can I book a birthday table at a London club with 2 days' notice?", answer: "Yes, it's possible. Weeknight tables (Thursday especially) are often available with 2-3 days' notice. Weekend availability depends on the venue - some have space, others are full. Message us and we'll check real-time availability instantly." },
-      { question: "Which London clubs have the best last-minute availability?", answer: "TABU, Scotch of St James, Luna Club, Selene, and BEAT London tend to have better short-notice availability than Cirque Le Soir or Tape London. Thursday nights offer the widest choice across all venues." },
+      { question: "Which London clubs have the best last-minute availability?", answer: "Scotch of St James, Selene, and BEAT London tend to have better short-notice availability than Cirque Le Soir or Tape London. Thursday nights offer the widest choice across all venues." },
     ],
   },
   {
