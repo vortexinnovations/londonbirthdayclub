@@ -497,7 +497,7 @@ export const blogDataPart3: BlogPost[] = [
         heading: "How to Maximise Your Last-Minute Options",
         headingLevel: "h2",
         content: [
-          "Be flexible on venue. If your heart is set on Cirque Le Soir on a Saturday and you're booking three days out, you might be disappointed. But if you're open to alternatives - a Thursday at Cirque, or a Saturday at a venue with similar energy - your options multiply. Be flexible on night. A Thursday birthday still gets you the full VIP experience, often with lower minimums and a more intimate crowd.",
+          "Be flexible on venue. If your heart is set on Cirque Le Soir on a Saturday and you're booking three days out, you might be disappointed. But if you're open to alternatives - a Wednesday at Cirque, or a Saturday at a venue with similar energy - your options multiply. Be flexible on night. A Thursday birthday still gets you the full VIP experience, often with lower minimums and a more intimate crowd.",
           "Have your group details ready: firm headcount, confirmed date, and budget. The faster we can present a clean booking request to the venue, the faster we get confirmation. Vague enquiries take longer; specific ones get answered quickly.",
         ],
       },

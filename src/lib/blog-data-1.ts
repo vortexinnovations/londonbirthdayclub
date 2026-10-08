@@ -811,7 +811,7 @@ export const blogDataPart1: BlogPost[] = [
         heading: "How to Book a Birthday at Tape London",
         headingLevel: "h2",
         content: [
-          "Booking a birthday at Tape requires more planning than most Mayfair venues due to the limited capacity. Tables start from £1,500 minimum spend, which reflects the premium positioning. Weekend tables (Friday and Saturday) are the most sought-after, while Thursday nights offer a slightly more accessible entry point with an equally impressive atmosphere.",
+          "Booking a birthday at Tape requires more planning than most Mayfair venues due to the limited capacity. Tables start from £1,500 minimum spend, which reflects the premium positioning. Weekend tables (Friday and Saturday) are the most sought-after, while Tuesday and Sunday nights offer a slightly more accessible entry point with an equally impressive atmosphere.",
           "The best approach is to reach out via WhatsApp at least two to three weeks in advance, especially for peak weekends. Tell us your group size, preferred date, and any special requests - we handle the rest and ensure your birthday gets the attention it deserves.",
         ],
       },

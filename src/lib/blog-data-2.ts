@@ -46,7 +46,7 @@ export const blogDataPart2: BlogPost[] = [
       },
     ],
     faqs: [
-      { question: "What nights is Cirque Le Soir open?", answer: "Cirque Le Soir operates on Wednesday, Friday, and Saturday nights. Friday typically has the most performers and the biggest production. Wednesday offers a slightly more intimate but still spectacular experience at a lower minimum spend." },
+      { question: "What nights is Cirque Le Soir open?", answer: "Cirque Le Soir operates on Monday, Wednesday, Friday, and Saturday nights. Friday typically has the most performers and the biggest production. Wednesday offers a slightly more intimate but still spectacular experience at a lower minimum spend." },
       { question: "Can the performers interact with the birthday person?", answer: "Yes, and this is one of the highlights of a Cirque birthday. Performers regularly interact with birthday groups, creating personalised moments that feel special. Let your table host know it's a birthday and they'll ensure the performers make your celebration part of the show." },
     ],
   },
@@ -227,7 +227,7 @@ export const blogDataPart2: BlogPost[] = [
     ],
     faqs: [
       { question: "Can my birthday group use both floors at Cuckoo Club?", answer: "Absolutely. Your table booking secures your spot on one floor, but all guests have full access to both floors throughout the night. Most birthday groups naturally move between the two, using the ground floor as a base and the basement for peak-energy moments." },
-      { question: "What nights is Cuckoo Club open?", answer: "Cuckoo Club operates on Tuesday, Thursday, Friday, and Saturday. It has one of the widest operating schedules of any Mayfair club, making it a versatile option for birthdays that don't fall on a typical weekend night." },
+      { question: "What nights is Cuckoo Club open?", answer: "Cuckoo Club operates Wednesday to Saturday. It has one of the widest operating schedules of any Mayfair club, making it a versatile option for birthdays that don't fall on a typical weekend night." },
     ],
   },
   {
@@ -400,7 +400,7 @@ export const blogDataPart2: BlogPost[] = [
         heading: "Planning Your Birthday at The Box",
         headingLevel: "h2",
         content: [
-          "The Box operates on Thursday, Friday, and Saturday nights, with Saturday typically featuring the most elaborate performance schedule. Arrive by 11pm to catch performances from the start - they're the main event and timing your arrival to see the full programme makes a significant difference to the birthday experience.",
+          "The Box operates on Wednesday, Thursday, Friday, and Saturday nights, with Saturday typically featuring the most elaborate performance schedule. Arrive by 11pm to catch performances from the start - they're the main event and timing your arrival to see the full programme makes a significant difference to the birthday experience.",
           "Tables start from £1,000 minimum spend. Book through us on WhatsApp, and we'll ensure your birthday group is positioned well for the performances and that all birthday extras are arranged. We'll also give you an honest brief on what to expect so your group arrives excited rather than unprepared.",
         ],
       },
