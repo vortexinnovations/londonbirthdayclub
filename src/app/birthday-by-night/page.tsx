@@ -151,7 +151,8 @@ export default function BirthdayByNightPage() {
               Your birthday doesn&apos;t have to fall on a Saturday to be
               incredible. Here&apos;s how each night of the week compares for
               birthday celebrations — atmosphere, pricing, and which clubs are
-              open.
+              open. If yours falls midweek, see{" "}
+              <Link href="/blog/birthday-falls-on-a-weekday-london" className="text-champagne hover:text-champagne-bright underline decoration-champagne/30 underline-offset-4 decoration-[0.5px] transition-colors duration-200">how to celebrate a birthday on a weekday</Link>.
             </p>
           </div>
         </div>
@@ -343,7 +344,8 @@ export default function BirthdayByNightPage() {
           </h2>
           <p className="font-sans text-[1.0625rem] leading-[1.8] text-ink-soft mb-10 max-w-xl mx-auto">
             Tell us your birthday date and preferences — we&apos;ll tell you
-            which venues and nights are the best fit.
+            which venues and nights are the best fit. Making a weekend of it? See{" "}
+            <Link href="/blog/birthday-weekend-london" className="text-champagne hover:text-champagne-bright underline decoration-champagne/30 underline-offset-4 decoration-[0.5px] transition-colors duration-200">how to plan a birthday weekend in London</Link>.
           </p>
           <WhatsAppCTA
             message={getGeneralWhatsAppMessage()}

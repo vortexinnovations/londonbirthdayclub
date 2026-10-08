@@ -115,7 +115,8 @@ export default function HomePage() {
             </h2>
             <p className="mt-5 font-sans text-[1.0625rem] leading-[1.8] text-ink-soft max-w-xl">
               Planning a birthday at a London club should be exciting, not
-              stressful. We handle everything for free.
+              stressful. We handle everything for free. For a week-by-week plan, see our{" "}
+              <Link href="/blog/birthday-planning-timeline-london" className="text-champagne hover:text-champagne-bright underline decoration-champagne/30 underline-offset-4 decoration-[0.5px] transition-colors duration-200">birthday planning timeline</Link>.
             </p>
           </div>
 
@@ -382,7 +383,8 @@ export default function HomePage() {
           </h2>
           <p className="font-sans text-[1.0625rem] leading-[1.8] text-ink-soft mb-10 max-w-xl mx-auto">
             Tell us your date, group size, and vibe — we&apos;ll handle
-            everything else. It takes two minutes on WhatsApp.
+            everything else. It takes two minutes on WhatsApp. To get your guests in one place first, see{" "}
+            <Link href="/blog/organise-birthday-group-whatsapp-london" className="text-champagne hover:text-champagne-bright underline decoration-champagne/30 underline-offset-4 decoration-[0.5px] transition-colors duration-200">how to organise a birthday group on WhatsApp</Link>.
           </p>
           <WhatsAppCTA
             message={getGeneralWhatsAppMessage()}

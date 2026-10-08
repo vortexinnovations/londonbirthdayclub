@@ -258,7 +258,8 @@ export default function BirthdayTableBookingPage() {
             </h2>
             <p className="mt-5 font-sans text-[1.0625rem] leading-[1.8] text-ink-soft max-w-xl">
               The minimum spend IS your drinks budget — not a fee on top.
-              Here&apos;s how it breaks down per person at a £1,000 minimum.
+              Here&apos;s how it breaks down per person at a £1,000 minimum. If the birthday person is not drinking, see our{" "}
+              <Link href="/blog/sober-birthday-night-out-london" className="text-champagne hover:text-champagne-bright underline decoration-champagne/30 underline-offset-4 decoration-[0.5px] transition-colors duration-200">guide to a sober birthday night out in London</Link>.
             </p>
           </div>
 
@@ -293,7 +294,8 @@ export default function BirthdayTableBookingPage() {
 
           <p className="mt-6 font-sans text-[0.8125rem] leading-relaxed tracking-[0.02em] text-ink-faint">
             Based on £1,000 minimum spend (excluding birthday person). Tape
-            London starts from £1,500. Weekend nights may have higher minimums.
+            London starts from £1,500. Weekend nights may have higher minimums. If numbers drop on the night, see{" "}
+            <Link href="/blog/friends-cancel-birthday-night-out-london" className="text-champagne hover:text-champagne-bright underline decoration-champagne/30 underline-offset-4 decoration-[0.5px] transition-colors duration-200">what to do when friends cancel a birthday night out</Link>.
           </p>
         </div>
       </section>

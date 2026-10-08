@@ -362,6 +362,9 @@ export default function BestClubsPage() {
           <p className="font-sans text-[1.0625rem] leading-[1.8] text-ink-soft mb-10 max-w-xl mx-auto">
             Tell us about your birthday — group size, vibe, budget — and
             we&apos;ll recommend the perfect venue. Free advice, no obligation.
+            If the birthday person would rather skip the club altogether, see our{" "}
+            <Link href="/blog/birthday-for-someone-who-doesnt-like-clubs-london" className="text-champagne hover:text-champagne-bright underline decoration-champagne/30 underline-offset-4 decoration-[0.5px] transition-colors duration-200">ideas for a birthday for someone who doesn&apos;t like clubs</Link>. Sharing the night with a friend? See our{" "}
+            <Link href="/blog/joint-birthday-night-out-london" className="text-champagne hover:text-champagne-bright underline decoration-champagne/30 underline-offset-4 decoration-[0.5px] transition-colors duration-200">joint birthday night out guide</Link>.
           </p>
           <WhatsAppCTA
             message={getGeneralWhatsAppMessage()}

@@ -124,7 +124,7 @@ export default function MayfairBirthdayPage() {
               The Mayfair{" "}
               <em className="italic text-champagne font-normal">Dress Code</em>
             </h2>
-            <p className="mt-5 font-sans text-[1.0625rem] leading-[1.8] text-ink-soft max-w-xl">Mayfair clubs take dress code seriously. This isn&apos;t about being exclusive for the sake of it — it&apos;s about maintaining an atmosphere where everyone has made an effort. The standard across all Mayfair venues: smart and stylish, no exceptions.</p>
+            <p className="mt-5 font-sans text-[1.0625rem] leading-[1.8] text-ink-soft max-w-xl">Mayfair clubs take dress code seriously. This isn&apos;t about being exclusive for the sake of it — it&apos;s about maintaining an atmosphere where everyone has made an effort. The standard across all Mayfair venues: smart and stylish, no exceptions. For what else the door looks at, see our{" "}<Link href="/blog/london-club-door-policy-birthday-groups" className="text-champagne hover:text-champagne-bright underline decoration-champagne/30 underline-offset-4 decoration-[0.5px] transition-colors duration-200">guide to London club door policy for birthday groups</Link>. If you are a guest rather than the organiser, see our{" "}<Link href="/blog/invited-to-a-birthday-at-a-london-club-guest-guide" className="text-champagne hover:text-champagne-bright underline decoration-champagne/30 underline-offset-4 decoration-[0.5px] transition-colors duration-200">guide for guests invited to a club birthday</Link>.</p>
           </div>
           <div className="grid sm:grid-cols-2 gap-x-14 gap-y-12" data-reveal>
             <div className="border-t border-hairline pt-6">
