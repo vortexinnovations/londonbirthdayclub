@@ -41,7 +41,7 @@ export const blogDataPart2: BlogPost[] = [
         headingLevel: "h2",
         content: [
           "After the main performance schedule winds down, Cirque shifts into full club mode. The DJ takes centre stage, the dancefloor fills, and the energy transitions from theatrical spectacle to pure party. This is when the birthday celebration often hits its most fun, uninhibited peak - your group has been entertained, amazed, and energised, and now it's time to dance.",
-          "The club runs until approximately 3am. By this point your birthday crew will have experienced something genuinely unique - a night that combined world-class entertainment with a proper birthday celebration. It's this combination that makes Cirque the most recommended birthday venue by our clients.",
+          "The club runs until 3:45am. By this point your birthday crew will have experienced something genuinely unique - a night that combined world-class entertainment with a proper birthday celebration. It's this combination that makes Cirque the most recommended birthday venue by our clients.",
         ],
       },
     ],
