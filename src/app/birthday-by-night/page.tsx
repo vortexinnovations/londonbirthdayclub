@@ -64,13 +64,14 @@ const nights = [
       "Selene London",
       "Rumour",
       "99 Regent Street",
+      "BEAT London",
     ],
     description:
       "Thursday is the sweet spot for London birthday celebrations. Nearly every major Mayfair venue is open, the atmosphere is genuinely lively, and minimum spends are lower than weekends. The crowd on a Thursday tends to be slightly more industry-connected and fashion-forward — people who know the scene.",
     bestFor:
       "Birthday groups who want a proper Mayfair night out with the widest venue choice and best value. Thursday delivers 80% of the weekend atmosphere at 60-70% of the cost.",
     considerations:
-      "The only potential downside is that some of your guests might have work the next morning. But for most people, a Thursday birthday is well worth the slightly rough Friday at the office.",
+      "The only potential downside is that some of your guests might have work the next morning. But for most people, a Thursday birthday is well worth the slightly rough Friday at the office. BEAT London opens on select Thursdays only, so check the date with us before planning around it.",
   },
   {
     day: "Friday",

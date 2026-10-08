@@ -478,7 +478,7 @@ export const clubs: Club[] = [
     minSpend: "£1,000",
     musicPolicy: "House, Tech House, Dance",
     dressCode: "Smart casual. BEAT is more relaxed than Mayfair — still look good, but less formal.",
-    openingNights: "Friday, Saturday",
+    openingNights: "Thursday (select nights), Friday, Saturday",
     capacity: "Medium (approx. 400)",
     birthdayRating: 4,
     bestFor: "Music-focused birthdays with incredible sound quality",

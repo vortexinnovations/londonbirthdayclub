@@ -40,7 +40,7 @@ export const blogDataPart3: BlogPost[] = [
         heading: "Booking a Birthday at BEAT",
         headingLevel: "h2",
         content: [
-          "BEAT operates on Friday and Saturday nights, with tables starting from £1,000 minimum spend. The medium capacity (around 400) means the venue has space for larger birthday groups without feeling overcrowded. Table positions adjacent to the dancefloor are recommended for birthday groups who want to be close to the action.",
+          "BEAT opens on Friday and Saturday nights and on select Thursdays, with tables starting from £1,000 minimum spend. The medium capacity (around 400) means the venue has space for larger birthday groups without feeling overcrowded. Table positions adjacent to the dancefloor are recommended for birthday groups who want to be close to the action.",
           "Check BEAT's social media for guest DJ lineups - if your birthday coincides with a notable guest DJ, the combination of a special lineup and your celebration creates something magical. Book through us on WhatsApp and we'll handle everything.",
         ],
       },
