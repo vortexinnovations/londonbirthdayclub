@@ -224,7 +224,7 @@ export const blogDataPart2: BlogPost[] = [
     slug: "scotch-of-st-james-birthday-hendrix",
     title: "Birthday at Scotch of St James: Celebrating Where Hendrix Partied",
     metaTitle: "Scotch of St James Birthday | Celebrating in a Piece of London History",
-    metaDescription: "Celebrate your birthday at Scotch of St James - the historic Mayfair club where Hendrix was a regular. History, character, and intimate birthday celebrations with genuine personality.",
+    metaDescription: "Celebrate your birthday at Scotch of St James - the historic St James's club where Hendrix was a regular. History, character, and intimate birthday celebrations with genuine personality.",
     excerpt: "What it means to celebrate your birthday in one of London's most historic music venues - from the Hendrix-era heritage to the modern intimate birthday experience.",
     publishedAt: "2026-01-10",
     updatedAt: "2026-03-25",
@@ -243,7 +243,7 @@ export const blogDataPart2: BlogPost[] = [
         heading: "The Intimate, Characterful Atmosphere",
         headingLevel: "h2",
         content: [
-          "With a capacity of approximately 200, Scotch is deliberately intimate. But unlike other small Mayfair clubs that aim for sleek minimalism, Scotch leans into character. Vintage detailing, warm tones, and design touches that reference the venue's history create an atmosphere that feels like celebrating in someone's incredibly cool private members' bar.",
+          "With a capacity of approximately 200, Scotch is deliberately intimate. But unlike the small Mayfair clubs that aim for sleek minimalism, Scotch leans into character. Vintage detailing, warm tones, and design touches that reference the venue's history create an atmosphere that feels like celebrating in someone's incredibly cool private members' bar.",
           "The music varies by night - some evenings lean hip-hop, others more house or eclectic - which means checking the schedule before booking ensures you match the right sound to your birthday group's taste. This variety is part of Scotch's charm; it's a venue that doesn't try to be one thing all the time.",
         ],
       },
@@ -263,9 +263,9 @@ export const blogDataPart2: BlogPost[] = [
   },
   {
     slug: "dear-darling-birthday-elegant-mayfair",
-    title: "Dear Darling Birthday: The Most Elegant Way to Celebrate in Mayfair",
-    metaTitle: "Dear Darling Birthday | Mayfair's Most Elegant Celebration Venue",
-    metaDescription: "Celebrate your birthday at Dear Darling Mayfair - chandeliers, velvet booths, and exceptional cocktails. The ultimate elegant birthday for milestone celebrations.",
+    title: "Dear Darling Birthday: The Most Elegant Way to Celebrate in St James's",
+    metaTitle: "Dear Darling Birthday | St James's Most Elegant Celebration Venue",
+    metaDescription: "Celebrate your birthday at Dear Darling in St James's - chandeliers, velvet booths, and exceptional cocktails. The ultimate elegant birthday for milestone celebrations.",
     excerpt: "Why Dear Darling is the perfect birthday venue for those who want elegance over energy - chandeliers, cocktails, and an atmosphere that makes milestones feel magnificent.",
     publishedAt: "2026-01-15",
     updatedAt: "2026-03-25",
@@ -276,7 +276,7 @@ export const blogDataPart2: BlogPost[] = [
         heading: "Elegance That Takes Your Breath Away",
         headingLevel: "h2",
         content: [
-          "Dear Darling is Mayfair's most opulent venue, and the interiors are deliberately breathtaking. Chandeliers catch the light, velvet booths invite you to sink in, and ornate detailing fills every surface. This isn't understated luxury - it's full, confident opulence that creates a sense of occasion from the moment you walk in.",
+          "Dear Darling is the most opulent venue in St James's, and the interiors are deliberately breathtaking. Chandeliers catch the light, velvet booths invite you to sink in, and ornate detailing fills every surface. This isn't understated luxury - it's full, confident opulence that creates a sense of occasion from the moment you walk in.",
           "For milestone birthdays - turning 30, 40, or 50 - this environment does something powerful. It signals that this celebration matters, that this evening has been curated, that you and your guests deserve to be surrounded by beauty. The setting alone elevates the birthday from ordinary to extraordinary.",
         ],
       },
@@ -298,7 +298,7 @@ export const blogDataPart2: BlogPost[] = [
       },
     ],
     faqs: [
-      { question: "Is Dear Darling a club or a bar?", answer: "Dear Darling occupies a unique middle ground. It's an opulent Mayfair bar with exceptional cocktails and late-night hours, making it feel like a club as the evening progresses. The atmosphere is more refined and conversational than a full nightclub, but the energy and opening hours go beyond a standard bar." },
+      { question: "Is Dear Darling a club or a bar?", answer: "Dear Darling occupies a unique middle ground. It's an opulent St James's bar with exceptional cocktails and late-night hours, making it feel like a club as the evening progresses. The atmosphere is more refined and conversational than a full nightclub, but the energy and opening hours go beyond a standard bar." },
       { question: "Is Dear Darling good for a 30th birthday?", answer: "Excellent. Dear Darling is one of our top recommendations for milestone birthdays. The opulent setting, exceptional cocktails, and elegant atmosphere create the kind of celebration that matches the significance of a milestone year. It appeals to groups who want quality and sophistication over pure nightclub energy." },
     ],
   },

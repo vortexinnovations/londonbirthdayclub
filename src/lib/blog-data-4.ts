@@ -51,7 +51,7 @@ export const blogDataPart4: BlogPost[] = [
         headingLevel: "h2" as const,
         content: [
           "Book three to four weeks ahead for a 40th birthday, especially if your preferred date falls on a Friday or Saturday. Table positions at intimate venues like Tape and Scotch are limited, and the best spots go quickly. For Maddox, book dinner and club together to ensure the transition is seamless.",
-          "If you are organising this as a surprise, we can coordinate directly with you while keeping the details hidden from the birthday person. Many 40th birthdays involve an element of surprise - arriving at a beautifully decorated table, a sparkler-led bottle presentation timed to your moment, or a DJ shoutout that catches them off guard. We have handled hundreds of surprise celebrations and know exactly how to execute them.",
+          "If you are organising this as a surprise, we can coordinate directly with you while keeping the details hidden from the birthday person. Many 40th birthdays involve an element of surprise - arriving at a beautifully decorated table, a sparkler-led bottle presentation timed to your moment, or a DJ shoutout that catches them off guard. We arrange surprise celebrations regularly and know exactly how to execute them.",
         ],
       },
     ],
@@ -532,7 +532,7 @@ export const blogDataPart4: BlogPost[] = [
         headingLevel: "h2" as const,
         content: [
           "Large birthday groups rarely arrive at the same time, and venues understand this. Most clubs allow guests to join the table throughout the night, provided each person meets the entry criteria. However, the initial group that arrives to open the table should include whoever made the reservation and ideally at least half the total party. If you have booked a table at Dear Darling or Maddox Club and only two of your twelve guests show up at table time, the venue may reassign your position.",
-          "Late arrivals should know the exact club name, the reservation name, and ideally the name of a promoter or host to mention at the door. Saying 'I am joining a birthday table booked under James' is far more effective than 'my friends are inside somewhere.' Late guests who have the promoter's name and are dressed appropriately usually walk straight in. Without that information, they face the standard queue and a full door assessment. Our mixed group birthday guide explains how to manage this when your party spans different social circles.",
+          "Late arrivals should know the exact club name, the reservation name, and ideally the name of a promoter or host to mention at the door. Saying they are joining a birthday table booked under James is far more effective than saying their friends are inside somewhere. Late guests who have the promoter's name and are dressed appropriately usually walk straight in. Without that information, they face the standard queue and a full door assessment. Our mixed group birthday guide explains how to manage this when your party spans different social circles.",
         ],
       },
       {
@@ -592,7 +592,7 @@ export const blogDataPart4: BlogPost[] = [
         heading: "Filling Empty Spots at Short Notice",
         headingLevel: "h2" as const,
         content: [
-          "If you want to keep your original table and spend, consider inviting additional people. We noticed that the birthday organisers who handle this best keep a mental list of friends who would enjoy a night out but were not on the original invite. A casual WhatsApp message saying you have spare capacity at a birthday table is surprisingly effective. Most people are flattered to be invited, even as a late addition.",
+          "If you want to keep your original table and spend, consider inviting additional people. The birthday organisers who handle this best keep a mental list of friends who would enjoy a night out but were not on the original invite. A casual WhatsApp message saying you have spare capacity at a birthday table is surprisingly effective. Most people are flattered to be invited, even as a late addition.",
           "Be honest about the situation. Saying something along the lines of a few people dropped out and we have space at our table on Saturday is perfectly fine. Nobody needs the full story. The priority is getting the right number of people to the venue so the birthday person has the celebration they deserve. Our mistakes to avoid guide covers why empty seats at a birthday table create an atmosphere problem that is worth preventing.",
         ],
       },
@@ -653,7 +653,7 @@ export const blogDataPart4: BlogPost[] = [
         heading: "Three Weeks Out: Lock In the Guest List and Money",
         headingLevel: "h2" as const,
         content: [
-          "By this point you should know exactly who is coming. Send a final WhatsApp message confirming the date, the venue, the meeting point, and the per-person cost. Ask for deposits within seven days. We noticed that groups who collect deposits at the three-week mark have far fewer last-minute cancellations than groups who try to settle up on the night. Money sorted early means commitment locked in.",
+          "By this point you should know exactly who is coming. Send a final WhatsApp message confirming the date, the venue, the meeting point, and the per-person cost. Ask for deposits within seven days. Groups who collect deposits at the three-week mark have far fewer last-minute cancellations than groups who try to settle up on the night. Money sorted early means commitment locked in.",
           "If you are unsure how to handle the financial side, our group payment guide covers the practical mechanics. Whatever method you use, write down who has paid and chase anyone who has not within forty-eight hours. The longer you leave it, the more awkward it becomes for everyone in the group.",
         ],
       },
@@ -699,7 +699,7 @@ export const blogDataPart4: BlogPost[] = [
         content: [
           "Last updated: 2 June 2026",
           "More of the birthdays we book now have at least one person who is not drinking, and a growing number where the birthday person themselves wants a completely sober night. That used to feel awkward to organise. It does not any more. Low- and no-alcohol drinking has moved firmly into the British mainstream, a shift that nightlife outlets like Time Out have tracked closely in their London bar coverage at https://www.timeout.com/london/bars, and London venues have caught up with proper alcohol-free menus rather than a sad lime and soda.",
-          "From experience, a sober birthday lives or dies on two things: the venue you choose and how you handle a mixed group. Get those right and nobody spends the night feeling like they are missing out. This guide covers both.",
+          "A sober birthday lives or dies on two things: the venue you choose and how you handle a mixed group. Get those right and nobody spends the night feeling like they are missing out. This guide covers both.",
         ],
       },
       {
@@ -769,7 +769,7 @@ export const blogDataPart4: BlogPost[] = [
         headingLevel: "h2" as const,
         content: [
           "Start with the decision itself, because everything else flows from it. Celebrating on the actual day feels right in a way a moved date never quite does: the messages, the cake at work, and the night out all line up, and there is something special about being out in London on the date itself. The trade-off is that some friends will struggle with a school night, so the group is usually smaller.",
-          "Moving the party to the nearest Friday or Saturday gets you the full guest list and a later night, but you lose the magic of the day, and weekend nights out come with bigger crowds and bigger costs. From experience, the people who feel best about their birthday usually split the difference: something small and easy on the actual day, a dinner or a few drinks with the inner circle, and the main event at the weekend if a big group matters to them.",
+          "Moving the party to the nearest Friday or Saturday gets you the full guest list and a later night, but you lose the magic of the day, and weekend nights out come with bigger crowds and bigger costs. The people who feel best about their birthday usually split the difference: something small and easy on the actual day, a dinner or a few drinks with the inner circle, and the main event at the weekend if a big group matters to them.",
           "If you only have the appetite for one celebration, our advice is simple: small group, do it on the day; big group, move it to the weekend and let the actual birthday be a quiet pleasure.",
         ],
       },
@@ -841,7 +841,7 @@ export const blogDataPart4: BlogPost[] = [
         headingLevel: "h2" as const,
         content: [
           "The single biggest summer problem is that everyone is away. Between annual leave, festivals, and family holidays, any given July weekend will lose you a chunk of your invite list, and no venue choice can fix that. So flip the usual order of planning: before you pick a place, pick the date with the people who matter most.",
-          "From experience, the method that works is simple. Choose your three or four essential guests and agree the date with them directly, three to four weeks out. Then invite everyone else with a clear, single message and accept the absences without chasing. A summer birthday with twelve people who are genuinely present beats one with twenty maybes, and the groups that try to find a date that works for absolutely everyone usually end up celebrating in September.",
+          "The method that works is simple. Choose your three or four essential guests and agree the date with them directly, three to four weeks out. Then invite everyone else with a clear, single message and accept the absences without chasing. A summer birthday with twelve people who are genuinely present beats one with twenty maybes, and the groups that try to find a date that works for absolutely everyone usually end up celebrating in September.",
         ],
       },
       {
@@ -908,7 +908,7 @@ export const blogDataPart4: BlogPost[] = [
         heading: "Pick the Night, Not Just the Venue",
         headingLevel: "h2" as const,
         content: [
-          "The single biggest lever on a birthday budget is the night you choose. A celebration on a quieter night costs a fraction of the same night on a Saturday: entry is often free before a cut-off time, tables carry much lower minimums, and the room is calmer and easier to enjoy. From experience, a midweek or early-weekend birthday is the closest thing there is to a discount on the whole night, and the group usually has a better time for the lack of a crush.",
+          "The single biggest lever on a birthday budget is the night you choose. A celebration on a quieter night costs a fraction of the same night on a Saturday: entry is often free before a cut-off time, tables carry much lower minimums, and the room is calmer and easier to enjoy. A midweek or early-weekend birthday is the closest thing there is to a discount on the whole night, and the group usually has a better time for the lack of a crush.",
           "Arrival time matters just as much. Getting your group through the door before the venue starts charging, or before its busiest hour, can turn a pricey entry into a free one. Plenty of birthday groups get in at no cost simply by arriving an hour earlier than they first wanted. If your birthday falls on a weekend, an earlier start is the budget version of the same night, and nobody will feel short-changed by walking in at ten rather than midnight.",
         ],
       },
@@ -977,7 +977,7 @@ export const blogDataPart4: BlogPost[] = [
         headingLevel: "h2" as const,
         content: [
           "Start a dedicated event chat rather than hijacking the friendship group that already exists. Name it with the person and the date, something like Maya's 30th, Sat 25 July, so the commitment is visible every time the chat opens, and the plan is not buried under two hundred unrelated messages by Thursday.",
-          "Pin the key message. The pin should always hold the current state of the plan: date, area, meeting time, and what people need to do next. From experience, half the questions organisers field are already answered in a message nobody scrolled back to find; the pin removes the scroll.",
+          "Pin the key message. The pin should always hold the current state of the plan: date, area, meeting time, and what people need to do next. Half the questions organisers field are already answered in a message nobody scrolled back to find; the pin removes the scroll.",
           "One more structural trick: for anything with a surprise element, or any group where money might get awkward, run a second, smaller organisers' chat of two or three people, so the chasing and the wobbles never play out in front of the guest of honour.",
         ],
       },
@@ -1004,7 +1004,7 @@ export const blogDataPart4: BlogPost[] = [
         headingLevel: "h2" as const,
         content: [
           "Whatever else happens in the chat, send one consolidated message two or three days before the night, and pin it. It should fit on one screen: meeting time and point, the area, the standard to dress to, a reminder that everyone needs physical photo ID, the travel plan, and one line on timings.",
-          "Write it as a card, with each item on its own line. From experience this single message eliminates ninety per cent of day-of questions. If the night includes a pre-drinks stop, our pre-drinks planning guide pairs naturally with this step, and our birthday planning timeline guide covers everything that should already have happened by now.",
+          "Write it as a card, with each item on its own line. In practice, this single message eliminates most day-of questions. If the night includes a pre-drinks stop, our pre-drinks planning guide pairs naturally with this step, and our birthday planning timeline guide covers everything that should already have happened by now.",
           "Day-of, keep chat traffic to logistics only. Share a live location when you set off, nominate one meeting-point anchor, and agree in advance that latecomers make their own way to the venue; the group does not hold the door.",
         ],
       },
@@ -1050,7 +1050,7 @@ export const blogDataPart4: BlogPost[] = [
         headingLevel: "h2" as const,
         content: [
           "The golden rule of a joint birthday is that it must feel like one party with two names on it, not two parties awkwardly sharing a room. Decide the shared moments in advance: one toast that names both of you, one cake moment even if there are two cakes, and one photo everyone is in. Our guide to arranging birthday cake at London clubs covers the venue side; for a joint night, the only extra decision is whether each of you gets your own cake or you share one with both names, and honestly, two small cakes beats one diplomatic compromise every time.",
-          "From experience, the joint birthdays that feel flat are the ones where each host quietly runs their own corner. Stand together for the toast, sit at the same table, and let the night orbit one centre rather than two.",
+          "The joint birthdays that feel flat are the ones where each host quietly runs their own corner. Stand together for the toast, sit at the same table, and let the night orbit one centre rather than two.",
         ],
       },
       {
@@ -1120,7 +1120,7 @@ export const blogDataPart4: BlogPost[] = [
         headingLevel: "h2" as const,
         content: [
           "Start with an honest threshold test. A weekend earns its place when at least one of three things is true: the guest list splits into groups that will not mix well in one room, key people are travelling from outside London and staying over, or the birthday itself is a milestone that one evening would shortchange. If none of those apply, a single brilliant night with everything poured into it will beat a stretched weekend every time.",
-          "The other honest question is energy. From experience, the organiser who plans three events attends all three; the guests each attend one or two. Plan for that reality from the start and nobody ends the weekend resentful or ruined.",
+          "The other honest question is energy. In practice, the organiser who plans three events attends all three; the guests each attend one or two. Plan for that reality from the start and nobody ends the weekend resentful or ruined.",
         ],
       },
       {
@@ -1207,7 +1207,7 @@ export const blogDataPart4: BlogPost[] = [
         headingLevel: "h2" as const,
         content: [
           "Before booking anything, work out what the person actually dislikes, because clubs is usually shorthand for something narrower. Some people hate the volume and cannot bear not being able to talk; some hate the crowds and the crush; some dislike the late hours; some just find dancing in front of people excruciating. Each of those points to a different night. The reluctant clubber who loves a lively room but wants to hear their friends needs a buzzy bar, not a silent restaurant. The one who hates late nights needs an earlier start, not a different postcode. Ask, or work it out from what they choose on a normal night out, and let the answer shape everything else.",
-          "From experience, the most useful question is simple: what is the best night out you have had in the last year? Whatever they describe is the template for the birthday version.",
+          "The most useful question is simple: what is the best night out you have had in the last year? Whatever they describe is the template for the birthday version.",
         ],
       },
       {
@@ -1286,7 +1286,7 @@ export const blogDataPart4: BlogPost[] = [
         heading: "Tell the Venue When You Book, Not on the Night",
         headingLevel: "h2" as const,
         content: [
-          "The single most important step is also the easiest: raise dietary needs when you book, not when you arrive. Venues arrange far more than people assume, from allergen-aware bottle-service snacks to a cake they can accommodate, but only if they know in advance. Springing a serious allergy on a busy floor team at midnight is where problems happen. When you enquire, give the venue the specifics, the number of guests affected and the nature of each need, and ask what they can do rather than assuming they cannot. From experience, the good rooms are used to this and handle it gracefully; the key is simply that they hear about it with time to prepare.",
+          "The single most important step is also the easiest: raise dietary needs when you book, not when you arrive. Venues arrange far more than people assume, from allergen-aware bottle-service snacks to a cake they can accommodate, but only if they know in advance. Springing a serious allergy on a busy floor team at midnight is where problems happen. When you enquire, give the venue the specifics, the number of guests affected and the nature of each need, and ask what they can do rather than assuming they cannot. The good rooms are used to this and handle it gracefully; the key is simply that they hear about it with time to prepare.",
           "This is also the moment to be honest about severity. A preference and a life-threatening nut allergy are not the same conversation, and a venue needs to know which one it is dealing with so it can take the right care.",
         ],
       },

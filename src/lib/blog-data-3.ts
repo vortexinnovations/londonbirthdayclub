@@ -155,7 +155,7 @@ export const blogDataPart3: BlogPost[] = [
         heading: "Best Restaurants Near London Birthday Clubs",
         headingLevel: "h2",
         content: [
-          "For Mayfair clubs (Tape, Rumour, 99 Regent Street, Dear Darling, Scotch), central Mayfair and Piccadilly offer dozens of suitable restaurants. Look for venues on or near Berkeley Square, Bruton Street, or Shepherd Market. For Selene, just north of Oxford Circus in Fitzrovia, the restaurants of Fitzrovia and Marylebone are a short walk away. Italian and Japanese restaurants tend to handle birthday groups best - they're used to larger bookings and celebration energy.",
+          "For Mayfair and St James's clubs (Tape, Rumour, 99 Regent Street, Dear Darling, Scotch), central Mayfair, St James's and Piccadilly offer dozens of suitable restaurants. Look for venues on or near Berkeley Square, Bruton Street, or Shepherd Market. For Selene, just north of Oxford Circus in Fitzrovia, the restaurants of Fitzrovia and Marylebone are a short walk away. Italian and Japanese restaurants tend to handle birthday groups best - they're used to larger bookings and celebration energy.",
           "For Soho clubs (Cirque Le Soir, The Box), the restaurants on Dean Street, Frith Street, and Greek Street are all within a 5-minute walk. For Reign London on Piccadilly, the restaurants around St James's and Haymarket are ideal. The key is proximity - you want a 5-10 minute walk maximum between dinner and the club.",
         ],
       },
@@ -456,7 +456,7 @@ export const blogDataPart3: BlogPost[] = [
         heading: "Making the Leaver Feel Special",
         headingLevel: "h2",
         content: [
-          "All the birthday extras translate perfectly to leaving parties: sparkler bottle presentation with the leaver's name, a DJ shoutout, a decorated table, and even a personalised cake. We've arranged leaving parties where the sparkler procession got a standing ovation from the entire club - that's the kind of send-off people remember.",
+          "All the birthday extras translate perfectly to leaving parties: sparkler bottle presentation with the leaver's name, a DJ shoutout, a decorated table, and even a personalised cake. A sparkler procession that gets the whole club cheering is the kind of send-off people remember.",
           "Let us know when booking that it's a leaving party rather than a birthday, and we'll tailor the DJ shoutout and any extras accordingly. The clubs are experienced at adapting their celebration format for different occasions.",
         ],
       },
