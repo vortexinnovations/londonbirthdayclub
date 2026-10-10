@@ -248,7 +248,7 @@ export default async function BlogPostPage({
             <em className="italic text-champagne font-normal">Birthday?</em>
           </h2>
           <p className="font-sans text-[1.0625rem] leading-[1.8] text-ink-soft mb-10 max-w-xl mx-auto">
-            Now you know the details — let us handle the rest. Message us on
+            Now you know the details: let us handle the rest. Message us on
             WhatsApp and we&apos;ll plan your perfect birthday night.
           </p>
           <WhatsAppCTA

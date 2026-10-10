@@ -10,7 +10,7 @@ import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 export const metadata: Metadata = {
   title:
-    "Best London Clubs by Age — 18th, 21st, 25th, 30th, 40th & 50th Birthday Guide",
+    "Best London Clubs by Age: 18th, 21st, 25th, 30th, 40th & 50th Birthday Guide",
   description:
     "Find the perfect London nightclub for your milestone birthday. Expert recommendations for 21st, 25th, 30th, 40th, and 50th birthday celebrations at Mayfair's best clubs.",
   alternates: {
@@ -28,7 +28,7 @@ const faqs = [
   {
     question: "Where should I celebrate my 30th birthday in London?",
     answer:
-      "For a 30th birthday, consider Maddox Club for the complete dinner-to-dancing experience, Dear Darling for an elegant cocktail-focused celebration, or Tape London for genuine exclusivity. A 30th calls for something more refined than a standard night out — these venues deliver sophistication without sacrificing fun.",
+      "For a 30th birthday, consider Maddox Club for the complete dinner-to-dancing experience, Dear Darling for an elegant cocktail-focused celebration, or Tape London for genuine exclusivity. A 30th calls for something more refined than a standard night out: these venues deliver sophistication without sacrificing fun.",
   },
   {
     question: "Is Mayfair good for a 25th birthday?",
@@ -45,13 +45,13 @@ const milestones = [
     subtitle:
       "The big coming-of-age night out. This birthday is about energy, spectacle, and making a statement.",
     description:
-      "Your 18th or 21st birthday is one of the first big milestones that calls for a proper celebration. The priority here is fun, energy, and an experience that feels genuinely special — not just another night at the pub. Your group will likely be a mix of close friends who want to dance, take photos, and have the kind of night they'll be talking about for months.",
+      "Your 18th or 21st birthday is one of the first big milestones that calls for a proper celebration. The priority here is fun, energy, and an experience that feels genuinely special, not just another night at the pub. Your group will likely be a mix of close friends who want to dance, take photos, and have the kind of night they'll be talking about for months.",
     topPicks: [
       {
         name: "Cirque Le Soir",
         slug: "cirque-le-soir",
         reason:
-          "The live performers, theatrical atmosphere, and party energy make Cirque the ultimate 21st birthday experience. Your group will be genuinely amazed — fire breathers, acrobats, and pyrotechnic bottle shows create the kind of spectacle that makes turning 21 feel monumental.",
+          "The live performers, theatrical atmosphere, and party energy make Cirque the ultimate 21st birthday experience. Your group will be genuinely amazed: fire breathers, acrobats, and pyrotechnic bottle shows create the kind of spectacle that makes turning 21 feel monumental.",
       },
       {
         name: "Reign London",
@@ -61,7 +61,7 @@ const milestones = [
       },
     ],
     budgetTip:
-      "A 21st birthday group typically ranges from 10–20 people. With a £1,000 minimum spend, that's £50–100 per person for the table, plus your own drinks budget. Wednesday or Thursday nights often have lower minimums — and the atmosphere is still brilliant.",
+      "A 21st birthday group typically ranges from 10 to 20 people. With a £1,000 minimum spend, that's £50 to 100 per person for the table, plus your own drinks budget. Wednesday or Thursday nights often have lower minimums, and the atmosphere is still brilliant.",
   },
   {
     age: "25th",
@@ -70,7 +70,7 @@ const milestones = [
     subtitle:
       "Old enough to appreciate quality, young enough to want a big night. The sweet spot.",
     description:
-      "By 25, you and your friends have been to plenty of clubs. A 25th birthday needs to be a step up — somewhere that impresses, that feels like a genuine treat. Your group is likely earning more, willing to spend a bit more, and wants something that feels special without being stuffy. This is the age where Mayfair starts making sense.",
+      "By 25, you and your friends have been to plenty of clubs. A 25th birthday needs to be a step up: somewhere that impresses, that feels like a genuine treat. Your group is likely earning more, willing to spend a bit more, and wants something that feels special without being stuffy. This is the age where Mayfair starts making sense.",
     topPicks: [
       {
         name: "Tape London",
@@ -86,7 +86,7 @@ const milestones = [
       },
     ],
     budgetTip:
-      "25th birthday groups tend to be 8–15 people. With minimum spends from £1,000, you're looking at £70–125 per person for the table. Friday and Saturday nights have higher minimums but bigger atmospheres.",
+      "25th birthday groups tend to be 8 to 15 people. With minimum spends from £1,000, you're looking at £70 to 125 per person for the table. Friday and Saturday nights have higher minimums but bigger atmospheres.",
   },
   {
     age: "30th",
@@ -95,13 +95,13 @@ const milestones = [
     subtitle:
       "A milestone that deserves something exceptional. Quality over chaos.",
     description:
-      "Turning 30 is a big deal, and the celebration needs to match. At this stage, your birthday group values quality — good drinks, excellent service, an environment that feels premium. The focus shifts from pure energy to experience. A 30th birthday at the right venue feels like a proper event, not just another night out. Many 30th birthday groups also want the option to include dinner, making the evening feel more complete.",
+      "Turning 30 is a big deal, and the celebration needs to match. At this stage, your birthday group values quality: good drinks, excellent service, an environment that feels premium. The focus shifts from pure energy to experience. A 30th birthday at the right venue feels like a proper event, not just another night out. Many 30th birthday groups also want the option to include dinner, making the evening feel more complete.",
     topPicks: [
       {
         name: "Maddox Club",
         slug: "maddox-club",
         reason:
-          "Maddox's dinner-to-club format is perfect for milestone birthdays. Start with excellent Italian dining, then transition seamlessly into a house music dancefloor — all without leaving the building. It's the most complete 30th birthday experience in London — one booking, one venue, the whole evening sorted.",
+          "Maddox's dinner-to-club format is perfect for milestone birthdays. Start with excellent Italian dining, then transition seamlessly into a house music dancefloor: all without leaving the building. It's the most complete 30th birthday experience in London: one booking, one venue, the whole evening sorted.",
       },
       {
         name: "Tape London",
@@ -117,7 +117,7 @@ const milestones = [
       },
     ],
     budgetTip:
-      "30th birthday groups are typically 8–20 people with a higher per-person budget. Many groups are happy spending £100–200 per head for a premium experience. Consider Maddox Club for the dinner-and-club option, which maximises the evening for a similar per-person spend.",
+      "30th birthday groups are typically 8 to 20 people with a higher per-person budget. Many groups are happy spending £100 to 200 per head for a premium experience. Consider Maddox Club for the dinner-and-club option, which maximises the evening for a similar per-person spend.",
   },
   {
     age: "40th",
@@ -126,7 +126,7 @@ const milestones = [
     subtitle:
       "Refined, sophisticated, and worth every penny. A celebration of arriving.",
     description:
-      "A 40th birthday is a celebration of success, friendship, and knowing exactly what you want. The group is typically smaller, the budget is higher, and the expectations are for genuine quality. A 40th birthday venue needs to deliver flawless service, a refined atmosphere, and an experience that feels worthy of the occasion. This is not about proving anything — it's about enjoying the very best.",
+      "A 40th birthday is a celebration of success, friendship, and knowing exactly what you want. The group is typically smaller, the budget is higher, and the expectations are for genuine quality. A 40th birthday venue needs to deliver flawless service, a refined atmosphere, and an experience that feels worthy of the occasion. This is not about proving anything. It's about enjoying the very best.",
     topPicks: [
       {
         name: "Maddox Club",
@@ -148,7 +148,7 @@ const milestones = [
       },
     ],
     budgetTip:
-      "40th birthday groups tend to be 6–15 people with comfort as a priority. Budget £150–250 per person for a premium experience including dinner. Private dining at Maddox or a champagne-focused evening at Dear Darling creates genuine luxury.",
+      "40th birthday groups tend to be 6 to 15 people with comfort as a priority. Budget £150 to 250 per person for a premium experience including dinner. Private dining at Maddox or a champagne-focused evening at Dear Darling creates genuine luxury.",
   },
   {
     age: "50th",
@@ -179,7 +179,7 @@ const milestones = [
       },
     ],
     budgetTip:
-      "50th birthday groups are typically 6–12 close friends. Budget generously — £200+ per person — and focus on the experience. A private dining area with dedicated service creates the kind of personal touch that marks a 50th properly.",
+      "50th birthday groups are typically 6 to 12 close friends. Budget generously, £200+ per person, and focus on the experience. A private dining area with dedicated service creates the kind of personal touch that marks a 50th properly.",
   },
 ];
 

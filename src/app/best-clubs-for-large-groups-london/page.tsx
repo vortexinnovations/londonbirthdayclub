@@ -9,14 +9,14 @@ import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import ItemListSchema from "@/components/ItemListSchema";
 
 export const metadata: Metadata = {
-  title: "Best London Clubs for Large Groups — 15 to 30+ Guest Birthday Venues",
+  title: "Best London Clubs for Large Groups: 15 to 30+ Guest Birthday Venues",
   description: "The best London nightclubs for large group bookings of 15-30+ guests. Multi-table configurations, big birthday celebrations, and venues that handle large parties without cramping the atmosphere.",
   alternates: { canonical: "https://londonbirthdayclub.com/best-clubs-for-large-groups-london" },
   openGraph: { url: "https://londonbirthdayclub.com/best-clubs-for-large-groups-london" },
 };
 
 const faqs = [
-  { question: "Which London club is best for 20+ guests?", answer: "Reign London is our top pick for 20+ guests — the grand multi-level venue has the space, spectacle, and multi-table configurations to handle large groups without anyone feeling lost. BEAT London and The Box London are also excellent for large groups, with BEAT offering the best sound quality and The Box spreading big groups across several levels." },
+  { question: "Which London club is best for 20+ guests?", answer: "Reign London is our top pick for 20+ guests: the grand multi-level venue has the space, spectacle, and multi-table configurations to handle large groups without anyone feeling lost. BEAT London and The Box London are also excellent for large groups, with BEAT offering the best sound quality and The Box spreading big groups across several levels." },
   { question: "Can you book multiple tables together at London clubs?", answer: "Yes. For groups of 15+, we regularly arrange multiple tables positioned adjacent to each other so your group stays connected. We coordinate table positions with the venue to ensure your entire party is in the same area. This is standard practice at most London clubs." },
   { question: "How much does a large group booking cost per person?", answer: "Large group bookings offer the best per-person value. A £1,000 minimum spend across 20 people is just £50 each. For 30 people, it's roughly £33 per person. Multiple tables mean multiple minimum spends, but the per-person cost still decreases as the group grows." },
   { question: "How do you handle payments for large groups?", answer: "We recommend collecting money in advance via bank transfer to one organiser. For groups of 20+, nominate 2-3 people to manage collection. Most organisers set the per-person amount 10-15% above the minimum to cover the birthday person's share and tip. Payment apps make this straightforward." },
@@ -81,8 +81,8 @@ export default function LargeGroupsPage() {
             </h2>
           </div>
           <div className="mt-8 space-y-6" data-reveal>
-            <p className="font-sans text-[1.0625rem] leading-[1.8] text-ink-soft">A group of 20+ at the wrong venue is a nightmare — people scattered across different areas, no cohesion, and a birthday that splits into fragments. At the right venue, that same group becomes the energy of the room. The key is choosing a club with the capacity, layout, and table configurations to keep your group connected while giving everyone space to enjoy the night.</p>
-            <p className="font-sans text-base leading-[1.8] text-ink-soft">We specialise in large group bookings and know exactly which venues handle them well. The recommendations below aren&apos;t just the biggest clubs — they&apos;re the ones that actively make large groups feel like a cohesive celebration rather than just a crowd.</p>
+            <p className="font-sans text-[1.0625rem] leading-[1.8] text-ink-soft">A group of 20+ at the wrong venue is a nightmare: people scattered across different areas, no cohesion, and a birthday that splits into fragments. At the right venue, that same group becomes the energy of the room. The key is choosing a club with the capacity, layout, and table configurations to keep your group connected while giving everyone space to enjoy the night.</p>
+            <p className="font-sans text-base leading-[1.8] text-ink-soft">We specialise in large group bookings and know exactly which venues handle them well. The recommendations below aren&apos;t just the biggest clubs. They&apos;re the ones that actively make large groups feel like a cohesive celebration rather than just a crowd.</p>
           </div>
         </div>
       </section>

@@ -7,9 +7,9 @@ import WhatsAppCTA from "@/components/WhatsAppCTA";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 export const metadata: Metadata = {
-  title: "Book Your Birthday — Free VIP Table Planning via WhatsApp",
+  title: "Book Your Birthday: Free VIP Table Planning via WhatsApp",
   description:
-    "Book your birthday celebration at a London nightclub in minutes via WhatsApp. Free planning service, VIP tables, birthday extras — we handle everything.",
+    "Book your birthday celebration at a London nightclub in minutes via WhatsApp. Free planning service, VIP tables, birthday extras: we handle everything.",
   alternates: {
     canonical: "https://londonbirthdayclub.com/book-birthday",
   },
@@ -73,7 +73,7 @@ export default function BookBirthdayPage() {
                 step: "1",
                 title: "You send us your details",
                 description:
-                  "Tap the WhatsApp button above — it opens a pre-filled message with spaces for your birthday date, group size, club preference (or ask us to recommend one), budget, and any special requests like cake or decorations.",
+                  "Tap the WhatsApp button above. It opens a pre-filled message with spaces for your birthday date, group size, club preference (or ask us to recommend one), budget, and any special requests like cake or decorations.",
               },
               {
                 step: "2",
@@ -138,11 +138,11 @@ export default function BookBirthdayPage() {
               },
               {
                 title: "Flexible and personal",
-                desc: "Forms force you into boxes. On WhatsApp, you can explain exactly what you want, ask questions, and change your mind — it's a conversation, not a transaction.",
+                desc: "Forms force you into boxes. On WhatsApp, you can explain exactly what you want, ask questions, and change your mind. It's a conversation, not a transaction.",
               },
               {
                 title: "Support until the end",
-                desc: "We're available on WhatsApp right up until your birthday night. Last-minute questions, changes, or requests — we're there.",
+                desc: "We're available on WhatsApp right up until your birthday night. Last-minute questions, changes, or requests. We're there.",
               },
               {
                 title: "No spam, no newsletters",

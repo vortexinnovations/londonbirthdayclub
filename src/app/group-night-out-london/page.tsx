@@ -8,14 +8,14 @@ import FAQSchema from "@/components/FAQSchema";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 export const metadata: Metadata = {
-  title: "Group Night Out London — VIP Tables for Celebrations",
-  description: "Planning a group night out in London? Birthday parties, hen nights, work dos — we'll sort VIP tables and bottle service at the best clubs. Groups of 5 to 30+. Free booking via WhatsApp.",
+  title: "Group Night Out London: VIP Tables for Celebrations",
+  description: "Planning a group night out in London? Birthday parties, hen nights, work dos. We'll sort VIP tables and bottle service at the best clubs. Groups of 5 to 30+. Free booking via WhatsApp.",
   alternates: { canonical: "https://londonbirthdayclub.com/group-night-out-london" },
   openGraph: { url: "https://londonbirthdayclub.com/group-night-out-london" },
 };
 
 const faqs = [
-  { question: "How many people do you need for a group booking at a London club?", answer: "Most London clubs accommodate group bookings from 5 guests upwards. Tables typically seat 8-15 comfortably, with larger groups of 20-30+ accommodated across multiple tables. There's no maximum — we've arranged group nights for 50+ guests across venues like Reign London and BEAT London." },
+  { question: "How many people do you need for a group booking at a London club?", answer: "Most London clubs accommodate group bookings from 5 guests upwards. Tables typically seat 8-15 comfortably, with larger groups of 20-30+ accommodated across multiple tables. There's no maximum. We've arranged group nights for 50+ guests across venues like Reign London and BEAT London." },
   { question: "How much does a group night out cost per person in London?", answer: "With a £1,000 minimum table spend, the per-person cost depends on your group size: roughly £200 for 5 people, £100 for 10, £67 for 15, or £50 for 20. This covers premium bottles, mixers, a reserved VIP area, and dedicated table service. Larger groups get better per-person value." },
   { question: "What types of group celebrations can you book?", answer: "We handle all group celebrations: birthday parties (our specialty), hen and stag nights, work celebrations and leaving parties, promotions, engagements, reunions, graduation nights, and any occasion worth celebrating with a group at a premium London venue." },
   { question: "Can you book multiple tables for a large group?", answer: "Yes. For groups of 15+, we regularly arrange multiple tables positioned together so your group stays connected. Venues like Reign London, BEAT London, and The Box London are particularly good at accommodating multi-table group bookings." },
@@ -47,7 +47,7 @@ export default function GroupNightOutPage() {
               <em className="italic text-champagne font-normal">London</em>
             </h1>
             <p className="font-sans text-[1.0625rem] leading-[1.8] text-ink-soft max-w-2xl mb-10">
-              Whether it&apos;s a birthday, hen night, work celebration, or any excuse to get your group together — we&apos;ll sort VIP tables, bottle service, and everything else at London&apos;s best clubs. Free booking, zero hassle.
+              Whether it&apos;s a birthday, hen night, work celebration, or any excuse to get your group together. We&apos;ll sort VIP tables, bottle service, and everything else at London&apos;s best clubs. Free booking, zero hassle.
             </p>
             <WhatsAppCTA message={getGroupWhatsAppMessage()} label="Plan Our Group Night" size="large" microcopy="Free service · Replies in minutes" />
           </div>
@@ -103,8 +103,8 @@ export default function GroupNightOutPage() {
           </div>
           <div className="space-y-14">
             {[
-              { size: "5–10 guests", label: "Intimate Group", venues: intimateVenues, desc: "Smaller groups thrive at intimate venues where your celebration is part of the room's energy. Personal service, concentrated atmosphere." },
-              { size: "15–30+ guests", label: "Large Group", venues: largeVenues, desc: "Big groups need space without sacrificing atmosphere. These venues handle multi-table bookings and keep your group connected." },
+              { size: "5 to 10 guests", label: "Intimate Group", venues: intimateVenues, desc: "Smaller groups thrive at intimate venues where your celebration is part of the room's energy. Personal service, concentrated atmosphere." },
+              { size: "15 to 30+ guests", label: "Large Group", venues: largeVenues, desc: "Big groups need space without sacrificing atmosphere. These venues handle multi-table bookings and keep your group connected." },
             ].map((item, i) => (
               <div key={item.size} className="border-t border-hairline pt-6" data-reveal data-reveal-delay={i * 90}>
                 <div className="flex flex-wrap items-baseline gap-x-5 gap-y-3 mb-4">
@@ -115,7 +115,7 @@ export default function GroupNightOutPage() {
                 <div className="flex flex-wrap gap-2.5">
                   {item.venues.map(v => (
                     <Link key={v.slug} href={`/clubs/${v.slug}`} className="inline-flex items-center border border-hairline hover:border-champagne rounded-[2px] px-3 py-1.5 font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.14em] text-ink-soft hover:text-champagne transition-colors duration-300">
-                      {v.shortName} — {v.minSpend}
+                      {v.shortName}: {v.minSpend}
                     </Link>
                   ))}
                 </div>

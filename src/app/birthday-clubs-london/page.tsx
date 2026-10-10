@@ -32,7 +32,7 @@ const faqs = [
   {
     question: "How much does a birthday club table cost in London?",
     answer:
-      "Birthday table minimum spends at London clubs start from £1,000 at most venues, with Tape London starting from £1,500. This covers premium bottles, mixers, and a reserved table for your group. Split across 10 people, that's around £100 per person — comparable to buying individual drinks all night but with VIP service included.",
+      "Birthday table minimum spends at London clubs start from £1,000 at most venues, with Tape London starting from £1,500. This covers premium bottles, mixers, and a reserved table for your group. Split across 10 people, that's around £100 per person: comparable to buying individual drinks all night but with VIP service included.",
   },
   {
     question: "Can you get a birthday guestlist at London clubs?",
@@ -88,7 +88,7 @@ export default function BirthdayClubsLondonPage() {
             <p className="font-sans text-[1.0625rem] leading-[1.8] text-ink-soft max-w-xl mb-6">
               Thirteen premium London nightclubs that specialise in birthday
               celebrations. VIP tables, bottle service, sparklers, birthday cakes,
-              and unforgettable nights — all bookable free via WhatsApp.
+              and unforgettable nights: all bookable free via WhatsApp.
             </p>
             <p className="font-sans text-[0.75rem] uppercase tracking-[0.18em] text-ink-faint mb-10">
               Tables from{" "}
@@ -125,7 +125,7 @@ export default function BirthdayClubsLondonPage() {
               {
                 step: "3",
                 title: "Celebrate",
-                desc: "Arrive on the night — your table, bottles, and birthday extras are sorted.",
+                desc: "Arrive on the night: your table, bottles, and birthday extras are sorted.",
               },
             ].map((item, i) => (
               <div key={item.step} data-reveal data-reveal-delay={i * 90}>
@@ -318,17 +318,17 @@ export default function BirthdayClubsLondonPage() {
           <div className="grid sm:grid-cols-2 gap-x-14 gap-y-12">
             {[
               {
-                size: "5–10 guests",
+                size: "5 to 10 guests",
                 venues: "Tape London, Dear Darling, Scotch of St James",
                 desc: "Intimate venues where smaller groups feel VIP. Personal service, concentrated energy.",
               },
               {
-                size: "10–15 guests",
+                size: "10 to 15 guests",
                 venues: "Cirque Le Soir, Maddox Club, Selene",
                 desc: "The sweet spot. Big enough for energy, small enough for cohesion.",
               },
               {
-                size: "15–25 guests",
+                size: "15 to 25 guests",
                 venues: "Reign London, The Box, BEAT London",
                 desc: "Large capacity venues with space for bigger groups without feeling cramped.",
               },

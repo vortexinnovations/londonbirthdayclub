@@ -71,7 +71,7 @@ export default function WhatsAppCTA({
           ))}
         </div>
         <p className="font-sans text-[0.8125rem] text-ink-faint tracking-[0.02em] mb-6">
-          Have these details ready — we handle the rest
+          Have these details ready. We handle the rest
         </p>
         {withMicrocopy}
       </div>

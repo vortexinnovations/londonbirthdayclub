@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 };
 
 const faqs = [
-  { question: "What's the best club in London for a 21st birthday?", answer: "Cirque Le Soir consistently delivers the most spectacular 21st birthday experiences — live performers, pyrotechnic bottle shows, and an atmosphere of pure excitement. For a more exclusive 21st, Tape London offers intimate VIP energy. For large groups who want spectacle, Reign London has the space and aerial performances to match." },
+  { question: "What's the best club in London for a 21st birthday?", answer: "Cirque Le Soir consistently delivers the most spectacular 21st birthday experiences: live performers, pyrotechnic bottle shows, and an atmosphere of pure excitement. For a more exclusive 21st, Tape London offers intimate VIP energy. For large groups who want spectacle, Reign London has the space and aerial performances to match." },
   { question: "How far in advance should I book for a 21st birthday?", answer: "Book 2-3 weeks ahead for standard weekends, 3-4 weeks for peak Saturdays at popular venues like Cirque or Tape. 21st birthdays tend to be larger groups, and bigger tables need earlier booking to secure good positions." },
   { question: "What do 21st birthday groups get at London clubs?", answer: "A VIP table booking includes reserved seating, premium bottles and mixers, a dedicated host, priority entry, and birthday extras like sparkler presentations, cake arrangements, DJ shoutouts, and decorated tables. Some venues offer additional performer interactions for birthday groups." },
   { question: "How big is a typical 21st birthday group?", answer: "21st birthday groups range from 10-25 guests, with 12-18 being the most common. This size works well for a single table at most venues, or two tables at intimate clubs like Tape or Scotch of St James. Groups of 20+ may need multi-table arrangements." },
@@ -23,9 +23,9 @@ const faqs = [
 
 export default function TwentyFirstBirthdayPage() {
   const topPicks = [
-    { slug: "cirque-le-soir", reason: "The undisputed champion for 21st birthdays. The live circus performers, pyrotechnic bottle presentations, and immersive atmosphere create a night that defines what turning 21 should feel like. Your group will be genuinely amazed — fire breathers, acrobats, and the kind of spectacle that makes this milestone birthday monumental." },
+    { slug: "cirque-le-soir", reason: "The undisputed champion for 21st birthdays. The live circus performers, pyrotechnic bottle presentations, and immersive atmosphere create a night that defines what turning 21 should feel like. Your group will be genuinely amazed: fire breathers, acrobats, and the kind of spectacle that makes this milestone birthday monumental." },
     { slug: "tape-london", reason: "For a 21st that prioritises exclusivity over spectacle. The members' club atmosphere, A-list clientele, and world-class sound create a celebration that feels genuinely VIP. Best for smaller 21st birthday groups of 8-12 who want quality over quantity." },
-    { slug: "the-box-london", reason: "For the adventurous 21st birthday group. The provocative theatrical performances are unlike anything else in London — your group will be talking about this night for years. A genuinely unique way to mark the milestone." },
+    { slug: "the-box-london", reason: "For the adventurous 21st birthday group. The provocative theatrical performances are unlike anything else in London: your group will be talking about this night for years. A genuinely unique way to mark the milestone." },
     { slug: "cuckoo-club", reason: "Cuckoo Club is now 99 Regent Street, on Swallow Street by Piccadilly Circus. Entry is for over 19s, it opens Wednesday to Saturday, and tables start from £600 minimum spend." },
     { slug: "reign-london", reason: "For a big 21st group of 15 or more, Reign has the space for adjacent tables and aerial performances that keep the whole group entertained." },
   ];
@@ -52,7 +52,7 @@ export default function TwentyFirstBirthdayPage() {
               <em className="italic text-champagne font-normal">London</em>
             </h1>
             <p className="font-sans text-[1.0625rem] leading-[1.8] text-ink-soft max-w-xl mb-10">
-              Turning 21 is the biggest birthday milestone in nightlife. This is the one your friends will compare every future night out to — make it count with a VIP celebration at one of London&apos;s most spectacular clubs.
+              Turning 21 is the biggest birthday milestone in nightlife. This is the one your friends will compare every future night out to: make it count with a VIP celebration at one of London&apos;s most spectacular clubs.
             </p>
             <WhatsAppCTA message={getMilestoneWhatsAppMessage("21st")} label="Plan My 21st Birthday" size="large" microcopy="Free service · Replies in minutes" />
           </div>
@@ -72,7 +72,7 @@ export default function TwentyFirstBirthdayPage() {
             </h2>
           </div>
           <div data-reveal>
-            <p className="font-sans text-base leading-[1.8] text-ink-soft mb-6">By 21, you and your friends have been to enough bars and house parties to know the difference between a good night and a great one. A 21st birthday at a London nightclub elevates the celebration from memorable to legendary — VIP service, spectacular venues, bottle presentations with sparklers, and the feeling of being at the centre of something genuinely exciting.</p>
+            <p className="font-sans text-base leading-[1.8] text-ink-soft mb-6">By 21, you and your friends have been to enough bars and house parties to know the difference between a good night and a great one. A 21st birthday at a London nightclub elevates the celebration from memorable to legendary: VIP service, spectacular venues, bottle presentations with sparklers, and the feeling of being at the centre of something genuinely exciting.</p>
             <p className="font-sans text-base leading-[1.8] text-ink-soft">The 21st birthday group is typically the perfect size for a club celebration: big enough to create energy, close enough as friends to make the night genuinely personal. Whether you want the theatrical spectacle of Cirque Le Soir, the exclusive cool of Tape London, or the daring entertainment of The Box, London has a venue that matches exactly what your 21st should feel like.</p>
           </div>
         </div>
@@ -138,11 +138,11 @@ export default function TwentyFirstBirthdayPage() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-2" data-reveal>
             {[
-              { q: "Want the biggest wow?", a: "Cirque Le Soir — performers and pyrotechnics", slug: "cirque-le-soir" },
-              { q: "Want genuine exclusivity?", a: "Tape London — members' club, A-list energy", slug: "tape-london" },
-              { q: "Want something daring?", a: "The Box — provocative theatre meets nightclub", slug: "the-box-london" },
+              { q: "Want the biggest wow?", a: "Cirque Le Soir: performers and pyrotechnics", slug: "cirque-le-soir" },
+              { q: "Want genuine exclusivity?", a: "Tape London: members' club, A-list energy", slug: "tape-london" },
+              { q: "Want something daring?", a: "The Box: provocative theatre meets nightclub", slug: "the-box-london" },
               { q: "Mixed music tastes?", a: "Scotch of St James: hip-hop, RnB or house depending on the night", slug: "scotch-of-st-james" },
-              { q: "Large group (15+)?", a: "Reign London — grand venue, aerial performances", slug: "reign-london" },
+              { q: "Large group (15+)?", a: "Reign London: grand venue, aerial performances", slug: "reign-london" },
               { q: "Instagram-worthy venue?", a: "Dear Darling: chandeliers and velvet booths", slug: "dear-darling" },
             ].map(item => (
               <Link key={item.q} href={`/clubs/${item.slug}`} className="group block border-t border-hairline hover:border-hairline-strong px-1 pt-5 pb-6 transition-colors duration-500">
@@ -173,7 +173,7 @@ export default function TwentyFirstBirthdayPage() {
           </div>
           <div data-reveal>
             <p className="font-sans text-base leading-[1.8] text-ink-soft mb-6">A typical 21st birthday group of 12-18 people, with a £1,000 minimum spend, breaks down to approximately £56-83 per person. That covers premium bottles, mixers, VIP service, and a reserved area for the entire night. Factor in cake (£50-150) and you&apos;re looking at a genuinely premium experience for less than you might expect. To keep costs down before the club, see our{" "}<Link href="/blog/pre-drinks-london-club-birthday-guide" className="text-champagne hover:text-champagne-bright underline decoration-champagne/30 underline-offset-4 decoration-[0.5px] transition-colors duration-200">guide to pre-drinks before a London club birthday</Link>.</p>
-            <p className="font-sans text-base leading-[1.8] text-ink-soft">The birthday person typically pays nothing — their share is covered by the group. With 15 friends splitting £1,000 plus cake, each person pays roughly £70-75 for a VIP birthday experience that&apos;s incomparably better than buying individual drinks at a bar all night. For more ways to keep the night affordable, see{" "}<Link href="/blog/budget-birthday-night-out-london" className="text-champagne hover:text-champagne-bright underline decoration-champagne/30 underline-offset-4 decoration-[0.5px] transition-colors duration-200">how to plan a birthday in London on a budget</Link>.</p>
+            <p className="font-sans text-base leading-[1.8] text-ink-soft">The birthday person typically pays nothing: their share is covered by the group. With 15 friends splitting £1,000 plus cake, each person pays roughly £70-75 for a VIP birthday experience that&apos;s incomparably better than buying individual drinks at a bar all night. For more ways to keep the night affordable, see{" "}<Link href="/blog/budget-birthday-night-out-london" className="text-champagne hover:text-champagne-bright underline decoration-champagne/30 underline-offset-4 decoration-[0.5px] transition-colors duration-200">how to plan a birthday in London on a budget</Link>.</p>
             <div className="flex flex-wrap gap-x-8 gap-y-3 mt-8">
               <Link href="/birthday-table-prices-london" className="font-sans text-sm text-champagne hover:text-champagne-bright underline decoration-champagne/30 underline-offset-4 decoration-[0.5px] transition-colors duration-200">Full pricing guide &rarr;</Link>
               <Link href="/vip-birthday-tables-london" className="font-sans text-sm text-champagne hover:text-champagne-bright underline decoration-champagne/30 underline-offset-4 decoration-[0.5px] transition-colors duration-200">VIP table upgrades &rarr;</Link>
@@ -195,7 +195,7 @@ export default function TwentyFirstBirthdayPage() {
             <h2 className="font-display font-medium text-[2rem] leading-[1.12] sm:text-4xl lg:text-[2.75rem] tracking-[-0.01em] text-ink max-w-2xl">
               Plan Your <em className="italic text-champagne font-normal">21st Birthday</em>
             </h2>
-            <p className="mt-5 font-sans text-[1.0625rem] leading-[1.8] text-ink-soft max-w-xl">This is the big one. Tell us your date, group size, and dream venue — we&apos;ll make your 21st unforgettable.</p>
+            <p className="mt-5 font-sans text-[1.0625rem] leading-[1.8] text-ink-soft max-w-xl">This is the big one. Tell us your date, group size, and dream venue. We&apos;ll make your 21st unforgettable.</p>
           </div>
           <div data-reveal>
             <WhatsAppCTA message={getMilestoneWhatsAppMessage("21st")} label="Plan My 21st on WhatsApp" size="large" variant="detailed" microcopy="Free service · Replies in minutes" />

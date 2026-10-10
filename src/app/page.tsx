@@ -12,7 +12,7 @@ import { images } from "@/lib/images";
 
 export const metadata: Metadata = {
   title:
-    "London Birthday Club — VIP Birthday Tables at London's Best Nightclubs",
+    "London Birthday Club | VIP Birthday Tables at London's Best Nightclubs",
   description:
     "Free birthday planning at London's top nightclubs. VIP tables from £1,000 with sparklers, cake, and bottle service at Cirque Le Soir, Tape, The Box & more. Book instantly via WhatsApp.",
   alternates: { canonical: "https://londonbirthdayclub.com" },
@@ -22,7 +22,7 @@ const faqs = [
   {
     question: "How does London Birthday Club work?",
     answer:
-      "We're a free birthday planning service. You tell us your birthday details via WhatsApp — date, group size, budget, and preferences — and we'll recommend the perfect club, handle the booking, and make sure your night is sorted. There's no charge for our service.",
+      "We're a free birthday planning service. You tell us your birthday details via WhatsApp (date, group size, budget, and preferences) and we'll recommend the perfect club, handle the booking, and make sure your night is sorted. There's no charge for our service.",
   },
   {
     question: "Is there a fee for using London Birthday Club?",
@@ -32,12 +32,12 @@ const faqs = [
   {
     question: "What is the minimum spend for a birthday table in London?",
     answer:
-      "Minimum spends start from around £1,000 at most Mayfair clubs and can go higher on peak nights (Fridays and Saturdays) or for premium table positions. This covers bottles for your group — it's not an additional fee on top of drinks.",
+      "Minimum spends start from around £1,000 at most Mayfair clubs and can go higher on peak nights (Fridays and Saturdays) or for premium table positions. This covers bottles for your group. It's not an additional fee on top of drinks.",
   },
   {
     question: "Do clubs provide birthday extras like cake and sparklers?",
     answer:
-      "Yes, most London clubs offer birthday packages including sparkler-adorned bottle deliveries, birthday cake arrangements, personalised DJ shoutouts, and decorated tables. Availability varies by venue and night — we'll confirm exactly what's included when you book.",
+      "Yes, most London clubs offer birthday packages including sparkler-adorned bottle deliveries, birthday cake arrangements, personalised DJ shoutouts, and decorated tables. Availability varies by venue and night. We'll confirm exactly what's included when you book.",
   },
   {
     question: "How far in advance should I book a birthday table?",
@@ -80,7 +80,7 @@ export default function HomePage() {
             <p className="font-sans text-[1.0625rem] leading-[1.8] text-ink-soft max-w-xl mb-10">
               VIP tables, bottle service, sparklers, birthday cakes, and
               unforgettable nights at Mayfair&apos;s finest venues. We plan
-              everything — you just celebrate.
+              everything. You just celebrate.
             </p>
             <div className="flex flex-col sm:flex-row gap-6 items-start sm:items-center">
               <WhatsAppCTA
@@ -126,7 +126,7 @@ export default function HomePage() {
                 step: "01",
                 title: "Choose Your Club",
                 description:
-                  "Browse our venue guide or tell us your vibe — group size, music taste, budget — and we'll recommend the perfect club for your birthday.",
+                  "Browse our venue guide or tell us your vibe (group size, music taste, budget) and we'll recommend the perfect club for your birthday.",
               },
               {
                 step: "02",
@@ -138,7 +138,7 @@ export default function HomePage() {
                 step: "03",
                 title: "Celebrate",
                 description:
-                  "Turn up on the night and enjoy VIP treatment — your table, bottles, sparklers, and birthday extras are all sorted. You just have a great time.",
+                  "Turn up on the night and enjoy VIP treatment: your table, bottles, sparklers, and birthday extras are all sorted. You just have a great time.",
               },
             ].map((item, i) => (
               <div key={item.step} data-reveal data-reveal-delay={i * 90}>
@@ -210,7 +210,7 @@ export default function HomePage() {
               {
                 title: "Completely Free Service",
                 description:
-                  "We don't charge you a penny. You only pay the club's minimum spend — the same price you'd pay booking directly, but with expert guidance and support.",
+                  "We don't charge you a penny. You only pay the club's minimum spend: the same price you'd pay booking directly, but with expert guidance and support.",
               },
               {
                 title: "Birthday Specialists",
@@ -220,7 +220,7 @@ export default function HomePage() {
               {
                 title: "Genuine Insider Knowledge",
                 description:
-                  "We know which club suits which kind of birthday. A 25th birthday crew wants something different from a 30th — we'll match you perfectly.",
+                  "We know which club suits which kind of birthday. A 25th birthday crew wants something different from a 30th: we'll match you perfectly.",
               },
               {
                 title: "WhatsApp, Not Forms",
@@ -382,7 +382,7 @@ export default function HomePage() {
             <em className="italic text-champagne font-normal">Birthday?</em>
           </h2>
           <p className="font-sans text-[1.0625rem] leading-[1.8] text-ink-soft mb-10 max-w-xl mx-auto">
-            Tell us your date, group size, and vibe — we&apos;ll handle
+            Tell us your date, group size, and vibe. We&apos;ll handle
             everything else. It takes two minutes on WhatsApp. To get your guests in one place first, see{" "}
             <Link href="/blog/organise-birthday-group-whatsapp-london" className="text-champagne hover:text-champagne-bright underline decoration-champagne/30 underline-offset-4 decoration-[0.5px] transition-colors duration-200">how to organise a birthday group on WhatsApp</Link>.
           </p>

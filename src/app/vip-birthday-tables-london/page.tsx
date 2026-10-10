@@ -8,17 +8,17 @@ import FAQSchema from "@/components/FAQSchema";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 export const metadata: Metadata = {
-  title: "VIP Birthday Tables London — Luxury Packages (2026)",
+  title: "VIP Birthday Tables London: Luxury Packages (2026)",
   description: "Book a VIP birthday table at London's most exclusive nightclubs. Premium table positions, champagne packages, sparklers, and dedicated hosts. Luxury birthday experiences from £1,000.",
   alternates: { canonical: "https://londonbirthdayclub.com/vip-birthday-tables-london" },
   openGraph: { url: "https://londonbirthdayclub.com/vip-birthday-tables-london" },
 };
 
 const faqs = [
-  { question: "What makes a VIP table different from a standard table?", answer: "VIP tables are positioned in the best spots — closer to the DJ, centre of the room, or in elevated areas with the best views. They come with enhanced service: a dedicated host, priority bottle delivery, and often better birthday extras like bigger sparkler presentations. The experience feels noticeably more premium." },
+  { question: "What makes a VIP table different from a standard table?", answer: "VIP tables are positioned in the best spots: closer to the DJ, centre of the room, or in elevated areas with the best views. They come with enhanced service: a dedicated host, priority bottle delivery, and often better birthday extras like bigger sparkler presentations. The experience feels noticeably more premium." },
   { question: "How much is a VIP birthday table in London?", answer: "VIP table minimum spends start from £1,000 at most Mayfair clubs, with premium positions ranging £1,500-3,000+ depending on venue, night, and position. Tape London starts from £1,500 for any table. The minimum spend covers premium bottles, mixers, and full VIP service." },
   { question: "Which London club has the best VIP birthday experience?", answer: "Tape London offers the most exclusive VIP experience with its members' club atmosphere. Cirque Le Soir delivers the most spectacular VIP birthday with live performers and pyrotechnic presentations. For elegant luxury, Dear Darling's chandeliered VIP booths are unmatched." },
-  { question: "Can I request a specific table position for my birthday?", answer: "Yes. When booking through us, you can request specific positions — centre stage, near the DJ, private corner, or elevated area. We confirm position availability with the venue and lock in the best available spot for your birthday. Early booking gives you the widest choice." },
+  { question: "Can I request a specific table position for my birthday?", answer: "Yes. When booking through us, you can request specific positions: centre stage, near the DJ, private corner, or elevated area. We confirm position availability with the venue and lock in the best available spot for your birthday. Early booking gives you the widest choice." },
 ];
 
 export default function VIPBirthdayTablesPage() {
@@ -66,10 +66,10 @@ export default function VIPBirthdayTablesPage() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-12" data-reveal>
             {[
-              { title: "Premium Position", desc: "The best table in the house — centre stage, near the DJ, or in an elevated VIP area with commanding views of the entire room." },
+              { title: "Premium Position", desc: "The best table in the house: centre stage, near the DJ, or in an elevated VIP area with commanding views of the entire room." },
               { title: "Dedicated VIP Host", desc: "Your personal host for the night. They manage your service, anticipate needs, and ensure your birthday runs flawlessly." },
               { title: "Enhanced Presentations", desc: "Birthday bottle deliveries with full sparkler processions, LED displays, and the kind of spectacle that stops the room." },
-              { title: "Premium Bottle Selection", desc: "Access to the venue's finest champagnes and spirits. Dom Perignon, Ace of Spades, premium Grey Goose magnums — the celebration-grade bottles." },
+              { title: "Premium Bottle Selection", desc: "Access to the venue's finest champagnes and spirits. Dom Perignon, Ace of Spades, premium Grey Goose magnums: the celebration-grade bottles." },
               { title: "Priority Everything", desc: "First to be served, first through the door, and first to receive attention. VIP means your group never waits." },
               { title: "Birthday Concierge", desc: "We coordinate cake delivery, table decorations, DJ shoutouts, and any surprises you want to arrange for the birthday person." },
             ].map(item => (
@@ -140,9 +140,9 @@ export default function VIPBirthdayTablesPage() {
           </div>
           <div className="space-y-10" data-reveal>
             {[
-              { tier: "Premium", spend: "£1,000–£1,500", desc: "A standard VIP table at most Mayfair venues. Premium bottles, dedicated host, sparkler presentations, and reserved seating. The entry point to VIP and genuinely excellent.", venues: "Most Mayfair clubs" },
-              { tier: "Luxury", spend: "£1,500–£3,000", desc: "Premium table positions, upgraded bottle selections, enhanced birthday presentations. The sweet spot for a memorable VIP birthday that impresses everyone.", venues: "Tape, Cirque, The Box" },
-              { tier: "Ultra-Premium", spend: "£3,000+", desc: "The absolute best table, the finest champagnes, the most dramatic presentations. For milestone birthdays where the budget matches the occasion.", venues: "Tape, Cirque — by arrangement" },
+              { tier: "Premium", spend: "£1,000 to £1,500", desc: "A standard VIP table at most Mayfair venues. Premium bottles, dedicated host, sparkler presentations, and reserved seating. The entry point to VIP and genuinely excellent.", venues: "Most Mayfair clubs" },
+              { tier: "Luxury", spend: "£1,500 to £3,000", desc: "Premium table positions, upgraded bottle selections, enhanced birthday presentations. The sweet spot for a memorable VIP birthday that impresses everyone.", venues: "Tape, Cirque, The Box" },
+              { tier: "Ultra-Premium", spend: "£3,000+", desc: "The absolute best table, the finest champagnes, the most dramatic presentations. For milestone birthdays where the budget matches the occasion.", venues: "Tape, Cirque (by arrangement)" },
             ].map(item => (
               <div key={item.tier} className="border-t border-hairline hover:border-hairline-strong pt-6 transition-colors duration-500">
                 <div className="flex flex-wrap items-baseline gap-x-4 gap-y-1">

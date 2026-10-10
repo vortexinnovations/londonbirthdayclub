@@ -9,7 +9,7 @@ import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import ArticleSchema from "@/components/ArticleSchema";
 
 export const metadata: Metadata = {
-  title: "Mayfair Birthday Night — How to Plan the Perfect Celebration (2026)",
+  title: "Mayfair Birthday Night: How to Plan the Perfect Celebration (2026)",
   description: "The complete guide to planning a birthday night out in Mayfair. Which clubs are where, dress codes, what to expect, and how to make your Mayfair birthday celebration perfect.",
   alternates: { canonical: "https://londonbirthdayclub.com/how-to-plan-a-birthday-night-in-mayfair" },
   openGraph: { url: "https://londonbirthdayclub.com/how-to-plan-a-birthday-night-in-mayfair" },
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 
 const faqs = [
   { question: "Why is Mayfair the best area for a birthday night out?", answer: "Mayfair has the highest concentration of premium nightclubs in London, all within walking distance of each other. This means more venue choice, higher service standards, and the prestige of celebrating in London's most exclusive neighbourhood. Most of the city's best birthday venues are in Mayfair." },
-  { question: "What is the dress code for Mayfair clubs?", answer: "Smart and stylish — no sportswear, trainers, shorts, or casual jeans. For men: smart shoes, fitted trousers, and a collared shirt. For women: the code is more flexible but still smart. Think Mayfair dinner rather than casual bar. Overdressing is better than underdressing." },
+  { question: "What is the dress code for Mayfair clubs?", answer: "Smart and stylish: no sportswear, trainers, shorts, or casual jeans. For men: smart shoes, fitted trousers, and a collared shirt. For women: the code is more flexible but still smart. Think Mayfair dinner rather than casual bar. Overdressing is better than underdressing." },
   { question: "How do I get to Mayfair clubs?", answer: "The nearest tube stations are Green Park (Jubilee, Piccadilly, Victoria lines), Bond Street (Central, Jubilee, Elizabeth lines), and Piccadilly Circus (Bakerloo, Piccadilly lines). Most Mayfair clubs are a 5-10 minute walk from these stations. Uber and black cabs are abundant in the area." },
   { question: "What time should I arrive at a Mayfair club for my birthday?", answer: "Aim for 10:30-11pm. This gives you time to settle into your table and order your first bottles before the energy peaks around midnight. Arriving earlier means a quieter start; later means walking into a full room. For dinner-club venues like Maddox, book dinner for 9-9:30pm." },
 ];
@@ -48,7 +48,7 @@ export default function MayfairBirthdayPage() {
               <em className="italic text-champagne font-normal">Mayfair</em>
             </h1>
             <p className="font-sans text-[1.0625rem] leading-[1.8] text-ink-soft max-w-xl mb-10">
-              Mayfair is London&apos;s premier nightlife district — the highest concentration of luxury clubs in the city, all within walking distance. Here&apos;s everything you need to plan a birthday celebration in London&apos;s most exclusive neighbourhood.
+              Mayfair is London&apos;s premier nightlife district: the highest concentration of luxury clubs in the city, all within walking distance. Here&apos;s everything you need to plan a birthday celebration in London&apos;s most exclusive neighbourhood.
             </p>
             <WhatsAppCTA message={getGeneralWhatsAppMessage()} label="Plan My Mayfair Birthday" size="large" microcopy="Free service · Replies in minutes" />
           </div>
@@ -69,8 +69,8 @@ export default function MayfairBirthdayPage() {
             </h2>
           </div>
           <div className="space-y-6" data-reveal>
-            <p className="font-sans text-base leading-[1.8] text-ink-soft">Mayfair isn&apos;t just another nightlife area — it&apos;s London&apos;s most prestigious neighbourhood for a reason. The clubs here operate at a level of service, design, and atmosphere that other areas simply don&apos;t match. Every venue has been curated rather than just opened, and the competition between them drives standards relentlessly upward.</p>
-            <p className="font-sans text-base leading-[1.8] text-ink-soft">For birthdays specifically, Mayfair&apos;s density of premium venues means you have genuine choice. Whether you want the theatrical spectacle of a performance club, the intimacy of a members&apos; bar, the elegance of a cocktail lounge, or the energy of a hip-hop-driven dancefloor — Mayfair has a venue that matches. And they&apos;re all within a 10-minute walk of each other.</p>
+            <p className="font-sans text-base leading-[1.8] text-ink-soft">Mayfair isn&apos;t just another nightlife area. It&apos;s London&apos;s most prestigious neighbourhood for a reason. The clubs here operate at a level of service, design, and atmosphere that other areas simply don&apos;t match. Every venue has been curated rather than just opened, and the competition between them drives standards relentlessly upward.</p>
+            <p className="font-sans text-base leading-[1.8] text-ink-soft">For birthdays specifically, Mayfair&apos;s density of premium venues means you have genuine choice. Whether you want the theatrical spectacle of a performance club, the intimacy of a members&apos; bar, the elegance of a cocktail lounge, or the energy of a hip-hop-driven dancefloor: Mayfair has a venue that matches. And they&apos;re all within a 10-minute walk of each other.</p>
           </div>
         </div>
       </section>
@@ -124,7 +124,7 @@ export default function MayfairBirthdayPage() {
               The Mayfair{" "}
               <em className="italic text-champagne font-normal">Dress Code</em>
             </h2>
-            <p className="mt-5 font-sans text-[1.0625rem] leading-[1.8] text-ink-soft max-w-xl">Mayfair clubs take dress code seriously. This isn&apos;t about being exclusive for the sake of it — it&apos;s about maintaining an atmosphere where everyone has made an effort. The standard across all Mayfair venues: smart and stylish, no exceptions. For what else the door looks at, see our{" "}<Link href="/blog/london-club-door-policy-birthday-groups" className="text-champagne hover:text-champagne-bright underline decoration-champagne/30 underline-offset-4 decoration-[0.5px] transition-colors duration-200">guide to London club door policy for birthday groups</Link>. If you are a guest rather than the organiser, see our{" "}<Link href="/blog/invited-to-a-birthday-at-a-london-club-guest-guide" className="text-champagne hover:text-champagne-bright underline decoration-champagne/30 underline-offset-4 decoration-[0.5px] transition-colors duration-200">guide for guests invited to a club birthday</Link>.</p>
+            <p className="mt-5 font-sans text-[1.0625rem] leading-[1.8] text-ink-soft max-w-xl">Mayfair clubs take dress code seriously. This isn&apos;t about being exclusive for the sake of it. It&apos;s about maintaining an atmosphere where everyone has made an effort. The standard across all Mayfair venues: smart and stylish, no exceptions. For what else the door looks at, see our{" "}<Link href="/blog/london-club-door-policy-birthday-groups" className="text-champagne hover:text-champagne-bright underline decoration-champagne/30 underline-offset-4 decoration-[0.5px] transition-colors duration-200">guide to London club door policy for birthday groups</Link>. If you are a guest rather than the organiser, see our{" "}<Link href="/blog/invited-to-a-birthday-at-a-london-club-guest-guide" className="text-champagne hover:text-champagne-bright underline decoration-champagne/30 underline-offset-4 decoration-[0.5px] transition-colors duration-200">guide for guests invited to a club birthday</Link>.</p>
           </div>
           <div className="grid sm:grid-cols-2 gap-x-14 gap-y-12" data-reveal>
             <div className="border-t border-hairline pt-6">
@@ -133,7 +133,7 @@ export default function MayfairBirthdayPage() {
             </div>
             <div className="border-t border-hairline pt-6">
               <h3 className="font-display font-medium text-xl text-ink mb-3">Women</h3>
-              <p className="font-sans text-base leading-[1.8] text-ink-soft">More flexible but still smart. Dresses, heels, smart separates, jumpsuits — essentially, dress for a special occasion. Avoid: casual daywear, very casual trainers, sportswear. When in doubt, overdress.</p>
+              <p className="font-sans text-base leading-[1.8] text-ink-soft">More flexible but still smart. Dresses, heels, smart separates, jumpsuits: essentially, dress for a special occasion. Avoid: casual daywear, very casual trainers, sportswear. When in doubt, overdress.</p>
             </div>
           </div>
         </div>
@@ -156,10 +156,10 @@ export default function MayfairBirthdayPage() {
           </div>
           <div className="space-y-8" data-reveal>
             {[
-              { time: "7:00–8:30pm", title: "Pre-drinks or dinner", desc: "Start with cocktails at a nearby bar or book dinner at Maddox Club for the full dinner-to-club experience. Mayfair has no shortage of excellent restaurants within walking distance of every club." },
-              { time: "10:30–11:00pm", title: "Arrive at the club", desc: "This is the sweet spot. Your table and bottles are ready, the room is filling up, and you have time to settle in before the peak. Give your name at the door — priority entry for table bookings means no queue." },
-              { time: "11:30pm–12:30am", title: "Birthday moment", desc: "Time for the birthday bottle presentation. Sparklers, DJ shoutout, cake if arranged. The room is full, the energy is right, and your birthday is the centre of attention." },
-              { time: "12:30am–3:00am", title: "Peak celebration", desc: "The dancefloor peaks. Your table is your home base between dances. Enjoy the bottles, the music, and the feeling of celebrating somewhere genuinely special." },
+              { time: "7:00 to 8:30pm", title: "Pre-drinks or dinner", desc: "Start with cocktails at a nearby bar or book dinner at Maddox Club for the full dinner-to-club experience. Mayfair has no shortage of excellent restaurants within walking distance of every club." },
+              { time: "10:30 to 11:00pm", title: "Arrive at the club", desc: "This is the sweet spot. Your table and bottles are ready, the room is filling up, and you have time to settle in before the peak. Give your name at the door: priority entry for table bookings means no queue." },
+              { time: "11:30pm to 12:30am", title: "Birthday moment", desc: "Time for the birthday bottle presentation. Sparklers, DJ shoutout, cake if arranged. The room is full, the energy is right, and your birthday is the centre of attention." },
+              { time: "12:30am to 3:00am", title: "Peak celebration", desc: "The dancefloor peaks. Your table is your home base between dances. Enjoy the bottles, the music, and the feeling of celebrating somewhere genuinely special." },
             ].map(item => (
               <div key={item.time} className="flex flex-col sm:flex-row gap-2 sm:gap-8 border-t border-hairline pt-6">
                 <div className="flex-shrink-0 sm:w-36 font-display italic font-medium text-lg text-champagne leading-snug">{item.time}</div>
@@ -187,7 +187,7 @@ export default function MayfairBirthdayPage() {
               Plan Your Mayfair{" "}
               <em className="italic text-champagne font-normal">Birthday</em>
             </h2>
-            <p className="mt-5 font-sans text-[1.0625rem] leading-[1.8] text-ink-soft max-w-xl">Tell us your date, group size, and preferred vibe — we know Mayfair inside out and will recommend the perfect venue.</p>
+            <p className="mt-5 font-sans text-[1.0625rem] leading-[1.8] text-ink-soft max-w-xl">Tell us your date, group size, and preferred vibe. We know Mayfair inside out and will recommend the perfect venue.</p>
           </div>
           <div data-reveal>
             <WhatsAppCTA message={getGeneralWhatsAppMessage()} label="Plan Mayfair Birthday on WhatsApp" size="large" variant="detailed" />

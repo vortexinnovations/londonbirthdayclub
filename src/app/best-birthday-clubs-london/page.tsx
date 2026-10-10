@@ -42,14 +42,14 @@ const rankings = [
     position: 1,
     slug: "tape-london",
     verdict:
-      "For exclusivity and genuine VIP treatment, Tape London is in a class of its own. The intimate members' club atmosphere means your birthday group gets real attention — not just a sparkler and a nod. The celebrity clientele, world-class sound, and personal service create a birthday that feels genuinely exclusive. Best for smaller groups who want quality over quantity.",
+      "For exclusivity and genuine VIP treatment, Tape London is in a class of its own. The intimate members' club atmosphere means your birthday group gets real attention, not just a sparkler and a nod. The celebrity clientele, world-class sound, and personal service create a birthday that feels genuinely exclusive. Best for smaller groups who want quality over quantity.",
     bestForTag: "Most Exclusive Birthday Venue",
   },
   {
     position: 2,
     slug: "cirque-le-soir",
     verdict:
-      "Nothing in London comes close to the sheer entertainment value of a birthday at Cirque Le Soir. The live performers, pyrotechnic bottle shows, and immersive atmosphere create a birthday experience that your guests will talk about for years. If you want your birthday to be genuinely unforgettable — not just another night at a club — Cirque is the one.",
+      "Nothing in London comes close to the sheer entertainment value of a birthday at Cirque Le Soir. The live performers, pyrotechnic bottle shows, and immersive atmosphere create a birthday experience that your guests will talk about for years. If you want your birthday to be genuinely unforgettable, not just another night at a club, Cirque is the one.",
     bestForTag: "Most Unforgettable Experience",
   },
   {
@@ -77,7 +77,7 @@ const rankings = [
     position: 6,
     slug: "maddox-club",
     verdict:
-      "Maddox's dinner-to-club format solves the birthday planning problem of coordinating a restaurant and a nightclub. Start with excellent Italian food, end on a house music dancefloor — all without leaving the building. The house music policy also makes it a refreshing alternative to Mayfair's hip-hop-heavy scene.",
+      "Maddox's dinner-to-club format solves the birthday planning problem of coordinating a restaurant and a nightclub. Start with excellent Italian food, end on a house music dancefloor: all without leaving the building. The house music policy also makes it a refreshing alternative to Mayfair's hip-hop-heavy scene.",
     bestForTag: "Dinner-to-Dancing",
   },
   {
@@ -91,7 +91,7 @@ const rankings = [
     position: 8,
     slug: "scotch-of-st-james",
     verdict:
-      "Scotch of St James offers something no other venue can — genuine history and character. Celebrating your birthday in a venue with heritage stretching back to the Hendrix era gives the evening a story that goes beyond just another club night. Best for birthday groups who appreciate authenticity and a more intimate, characterful setting.",
+      "Scotch of St James offers something no other venue can: genuine history and character. Celebrating your birthday in a venue with heritage stretching back to the Hendrix era gives the evening a story that goes beyond just another club night. Best for birthday groups who appreciate authenticity and a more intimate, characterful setting.",
     bestForTag: "Character & History",
   },
   {
@@ -160,7 +160,7 @@ export default function BestClubsPage() {
             <p className="font-sans text-[1.0625rem] leading-[1.8] text-ink-soft max-w-2xl mb-6">
               An honest, opinionated guide to the best London nightclubs for
               birthday celebrations. We&apos;ve helped plan hundreds of birthday
-              nights — these are the venues that consistently deliver
+              nights. These are the venues that consistently deliver
               unforgettable celebrations, ranked by how well they handle birthdays
               specifically.
             </p>
@@ -266,32 +266,32 @@ export default function BestClubsPage() {
             {[
               {
                 q: "Biggest wow factor?",
-                a: "Cirque Le Soir — live performers and pyrotechnics",
+                a: "Cirque Le Soir: live performers and pyrotechnics",
                 link: "/clubs/cirque-le-soir",
               },
               {
                 q: "Most exclusive?",
-                a: "Tape London — members' club, celebrity crowd",
+                a: "Tape London: members' club, celebrity crowd",
                 link: "/clubs/tape-london",
               },
               {
                 q: "Best for big groups?",
-                a: "Reign London — grand multi-level venue",
+                a: "Reign London: grand multi-level venue",
                 link: "/clubs/reign-london",
               },
               {
                 q: "Most elegant?",
-                a: "Dear Darling — chandeliers and cocktails",
+                a: "Dear Darling: chandeliers and cocktails",
                 link: "/clubs/dear-darling",
               },
               {
                 q: "Best dinner + club?",
-                a: "Maddox Club — Italian dining meets dancefloor",
+                a: "Maddox Club: Italian dining meets dancefloor",
                 link: "/clubs/maddox-club",
               },
               {
                 q: "Best sound system?",
-                a: "BEAT London — music-first experience",
+                a: "BEAT London: music-first experience",
                 link: "/clubs/beat-london",
               },
             ].map((item) => (
@@ -360,7 +360,7 @@ export default function BestClubsPage() {
             </em>
           </h2>
           <p className="font-sans text-[1.0625rem] leading-[1.8] text-ink-soft mb-10 max-w-xl mx-auto">
-            Tell us about your birthday — group size, vibe, budget — and
+            Tell us about your birthday (group size, vibe, budget) and
             we&apos;ll recommend the perfect venue. Free advice, no obligation.
             If the birthday person would rather skip the club altogether, see our{" "}
             <Link href="/blog/birthday-for-someone-who-doesnt-like-clubs-london" className="text-champagne hover:text-champagne-bright underline decoration-champagne/30 underline-offset-4 decoration-[0.5px] transition-colors duration-200">ideas for a birthday for someone who doesn&apos;t like clubs</Link>. Sharing the night with a friend? See our{" "}

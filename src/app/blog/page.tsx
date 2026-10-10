@@ -81,7 +81,7 @@ export default async function BlogIndexPage() {
           </h1>
           <p className="font-sans text-[1.0625rem] leading-[1.8] text-ink-soft max-w-2xl">
             Everything you need to know about celebrating your birthday at a
-            London nightclub — from costs and dress codes to surprise party
+            London nightclub, from costs and dress codes to surprise party
             planning and bottle service tips.
           </p>
         </div>
@@ -180,7 +180,7 @@ export default async function BlogIndexPage() {
             <em className="italic text-champagne font-normal">Planning?</em>
           </h2>
           <p className="font-sans text-[1.0625rem] leading-[1.8] text-ink-soft mb-10 max-w-xl mx-auto">
-            All the knowledge is here — but the easiest way to plan your
+            All the knowledge is here, but the easiest way to plan your
             birthday is to message us directly. We&apos;ll handle everything.
           </p>
           <WhatsAppCTA

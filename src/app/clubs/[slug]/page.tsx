@@ -96,7 +96,7 @@ export default async function ClubPage({
     },
     {
       question: `What birthday extras does ${club.name} offer?`,
-      answer: `${club.birthdayExtras} Contact us to arrange specific birthday requests — we'll confirm exactly what's available for your chosen night.`,
+      answer: `${club.birthdayExtras} Contact us to arrange specific birthday requests. We'll confirm exactly what's available for your chosen night.`,
     },
     {
       question: `What is the dress code at ${club.name}?`,
@@ -104,7 +104,7 @@ export default async function ClubPage({
     },
     {
       question: `What nights is ${club.name} open?`,
-      answer: `${club.name} is open on ${club.openingNights}. Not all nights have the same atmosphere or minimum spend — message us and we'll help you pick the best night for your birthday.`,
+      answer: `${club.name} is open on ${club.openingNights}. Not all nights have the same atmosphere or minimum spend. Message us and we'll help you pick the best night for your birthday.`,
     },
     {
       question: `How do I book a birthday at ${club.name}?`,

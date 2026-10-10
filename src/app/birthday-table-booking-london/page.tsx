@@ -9,7 +9,7 @@ import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 export const metadata: Metadata = {
   title:
-    "Birthday Table Booking London — What's Included & How It Works (2026)",
+    "Birthday Table Booking London: What's Included & How It Works (2026)",
   description:
     "Everything you need to know about booking a birthday table in London. What's included in the minimum spend, birthday extras, per-person costs, and how to book for free via WhatsApp.",
   alternates: {
@@ -27,7 +27,7 @@ const faqs = [
   {
     question: "How do I book a birthday table in London?",
     answer:
-      "Message us on WhatsApp with your birthday date, group size, budget, and club preference (or ask for a recommendation). We'll confirm availability, arrange birthday extras, and handle the booking — all free of charge. No forms, no deposits, just a simple WhatsApp conversation.",
+      "Message us on WhatsApp with your birthday date, group size, budget, and club preference (or ask for a recommendation). We'll confirm availability, arrange birthday extras, and handle the booking: all free of charge. No forms, no deposits, just a simple WhatsApp conversation.",
   },
   {
     question: "What is included in a birthday table booking?",
@@ -37,7 +37,7 @@ const faqs = [
   {
     question: "How much is a birthday VIP table in London?",
     answer:
-      "Minimum table spends start from £1,000 at most London clubs, with Tape London starting from £1,500. This is not a charge on top of drinks — it IS your drinks budget. For a group of 10, that's around £100 per person including premium bottles and VIP service.",
+      "Minimum table spends start from £1,000 at most London clubs, with Tape London starting from £1,500. This is not a charge on top of drinks. It IS your drinks budget. For a group of 10, that's around £100 per person including premium bottles and VIP service.",
   },
   {
     question: "Do I need to pay a deposit for a birthday table?",
@@ -53,7 +53,7 @@ const faqs = [
     question:
       "What happens if my group is smaller or larger than expected?",
     answer:
-      "Group sizes often change closer to the date — we understand. Let us know as soon as possible if your numbers change and we'll adjust the booking. Smaller groups may still need to meet the minimum spend. Larger groups may need a higher minimum or additional tables, which we can arrange.",
+      "Group sizes often change closer to the date. We understand. Let us know as soon as possible if your numbers change and we'll adjust the booking. Smaller groups may still need to meet the minimum spend. Larger groups may need a higher minimum or additional tables, which we can arrange.",
   },
 ];
 
@@ -96,7 +96,7 @@ export default function BirthdayTableBookingPage() {
             </h1>
             <p className="font-sans text-[1.0625rem] leading-[1.8] text-ink-soft max-w-xl mb-6">
               VIP birthday tables at London&apos;s most exclusive nightclubs.
-              Premium bottles, sparklers, birthday cake, dedicated service —
+              Premium bottles, sparklers, birthday cake, dedicated service:
               everything arranged for you, completely free.
             </p>
             <p className="font-sans text-[0.75rem] uppercase tracking-[0.18em] text-ink-faint mb-10">
@@ -155,7 +155,7 @@ export default function BirthdayTableBookingPage() {
               },
               {
                 title: "Priority Entry",
-                desc: "Your entire birthday group gets priority entry — straight past the queue to your table.",
+                desc: "Your entire birthday group gets priority entry: straight past the queue to your table.",
               },
               {
                 title: "Birthday Guestlist",
@@ -257,7 +257,7 @@ export default function BirthdayTableBookingPage() {
               <em className="italic text-champagne font-normal">Pricing</em>
             </h2>
             <p className="mt-5 font-sans text-[1.0625rem] leading-[1.8] text-ink-soft max-w-xl">
-              The minimum spend IS your drinks budget — not a fee on top.
+              The minimum spend IS your drinks budget, not a fee on top.
               Here&apos;s how it breaks down per person at a £1,000 minimum. If the birthday person is not drinking, see our{" "}
               <Link href="/blog/sober-birthday-night-out-london" className="text-champagne hover:text-champagne-bright underline decoration-champagne/30 underline-offset-4 decoration-[0.5px] transition-colors duration-200">guide to a sober birthday night out in London</Link>.
             </p>
@@ -273,7 +273,7 @@ export default function BirthdayTableBookingPage() {
               { guests: "10 guests", perPerson: "~£100", note: "Most popular group size" },
               { guests: "12 guests", perPerson: "~£83", note: "Excellent value per person" },
               { guests: "15 guests", perPerson: "~£67", note: "Large group, great value" },
-              { guests: "20 guests", perPerson: "~£50", note: "Best per-person value — less than a night of bar drinks" },
+              { guests: "20 guests", perPerson: "~£50", note: "Best per-person value: less than a night of bar drinks" },
             ].map((row) => (
               <div
                 key={row.guests}
@@ -328,27 +328,27 @@ export default function BirthdayTableBookingPage() {
             {[
               {
                 q: "Best entertainment?",
-                a: "Cirque Le Soir — live performers and pyrotechnic bottle shows",
+                a: "Cirque Le Soir: live performers and pyrotechnic bottle shows",
                 slug: "cirque-le-soir",
               },
               {
                 q: "Most exclusive?",
-                a: "Tape London — intimate members' club, A-list crowd",
+                a: "Tape London: intimate members' club, A-list crowd",
                 slug: "tape-london",
               },
               {
                 q: "Most daring?",
-                a: "The Box London — provocative theatre meets nightclub",
+                a: "The Box London: provocative theatre meets nightclub",
                 slug: "the-box-london",
               },
               {
                 q: "Best for dinner + club?",
-                a: "Maddox Club — Italian dining then house music dancefloor",
+                a: "Maddox Club: Italian dining then house music dancefloor",
                 slug: "maddox-club",
               },
               {
                 q: "Best for big groups?",
-                a: "Reign London — grand venue, aerial performances",
+                a: "Reign London: grand venue, aerial performances",
                 slug: "reign-london",
               },
               {
@@ -358,12 +358,12 @@ export default function BirthdayTableBookingPage() {
               },
               {
                 q: "Most elegant?",
-                a: "Dear Darling — chandeliers, velvet booths, exceptional cocktails",
+                a: "Dear Darling: chandeliers, velvet booths, exceptional cocktails",
                 slug: "dear-darling",
               },
               {
                 q: "Best sound system?",
-                a: "BEAT London — world-class audio, house and tech house",
+                a: "BEAT London: world-class audio, house and tech house",
                 slug: "beat-london",
               },
             ].map((item) => (

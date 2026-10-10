@@ -9,9 +9,9 @@ import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 export const metadata: Metadata = {
   title:
-    "Best Night of the Week for a Birthday in London — Weekday vs Weekend",
+    "Best Night of the Week for a Birthday in London: Weekday vs Weekend",
   description:
-    "Which night of the week is best for your birthday? A guide to Wednesday to Saturday birthday celebrations at London clubs — atmosphere, pricing, and which venues are open each night.",
+    "Which night of the week is best for your birthday? A guide to Wednesday to Saturday birthday celebrations at London clubs: atmosphere, pricing, and which venues are open each night.",
   alternates: {
     canonical: "https://londonbirthdayclub.com/birthday-by-night",
   },
@@ -27,7 +27,7 @@ const faqs = [
   {
     question: "Can I celebrate my birthday at a London club on a weeknight?",
     answer:
-      "Absolutely. Many London clubs are open Wednesday through Saturday. Weeknight birthdays (Wednesday and Thursday) often come with lower minimum spends, more attentive service, and easier bookings. The atmosphere is slightly more intimate but still genuinely fun — and for some birthday groups, that's actually preferable.",
+      "Absolutely. Many London clubs are open Wednesday through Saturday. Weeknight birthdays (Wednesday and Thursday) often come with lower minimum spends, more attentive service, and easier bookings. The atmosphere is slightly more intimate but still genuinely fun, and for some birthday groups, that's actually preferable.",
   },
   {
     question: "Which London clubs are open on a Thursday?",
@@ -44,17 +44,17 @@ const nights = [
     minSpendNote: "Lower than weekend, great value",
     venuesOpen: ["Cirque Le Soir", "The Box London", "Rumour", "99 Regent Street"],
     description:
-      "Wednesday is an underrated birthday night. Cirque Le Soir's Wednesday offering is particularly noteworthy — you still get the full circus experience with live performers, but the atmosphere is slightly more intimate than Friday.",
+      "Wednesday is an underrated birthday night. Cirque Le Soir's Wednesday offering is particularly noteworthy. You still get the full circus experience with live performers, but the atmosphere is slightly more intimate than Friday.",
     bestFor:
       "Birthday groups who want the big-venue experience without the peak-weekend price tag. A Wednesday Cirque birthday gives you the performers and spectacle at a more accessible minimum spend.",
     considerations:
-      "The atmosphere is still strong but won't match a peak Saturday. For many birthday groups, that's actually an advantage — more space, more attention, same performers.",
+      "The atmosphere is still strong but won't match a peak Saturday. For many birthday groups, that's actually an advantage: more space, more attention, same performers.",
   },
   {
     day: "Thursday",
     slug: "thursday",
     energy: "Strong and social",
-    minSpendNote: "Moderate — strong value for the atmosphere",
+    minSpendNote: "Moderate: strong value for the atmosphere",
     venuesOpen: [
       "Reign London",
       "Maddox Club",
@@ -67,7 +67,7 @@ const nights = [
       "BEAT London",
     ],
     description:
-      "Thursday is the sweet spot for London birthday celebrations. Nearly every major Mayfair venue is open, the atmosphere is genuinely lively, and minimum spends are lower than weekends. The crowd on a Thursday tends to be slightly more industry-connected and fashion-forward — people who know the scene.",
+      "Thursday is the sweet spot for London birthday celebrations. Nearly every major Mayfair venue is open, the atmosphere is genuinely lively, and minimum spends are lower than weekends. The crowd on a Thursday tends to be slightly more industry-connected and fashion-forward: people who know the scene.",
     bestFor:
       "Birthday groups who want a proper Mayfair night out with the widest venue choice and best value. Thursday delivers 80% of the weekend atmosphere at 60-70% of the cost.",
     considerations:
@@ -96,7 +96,7 @@ const nights = [
     bestFor:
       "Birthday groups who want the full weekend atmosphere with maximum venue choice. Friday is the go-to night if you want a big, energetic celebration and your group can commit to a proper night out.",
     considerations:
-      "Higher minimum spends than midweek, and some venues may feel very busy. Book your preferred table position early — the best spots go first on Fridays.",
+      "Higher minimum spends than midweek, and some venues may feel very busy. Book your preferred table position early: the best spots go first on Fridays.",
   },
   {
     day: "Saturday",
@@ -121,7 +121,7 @@ const nights = [
     bestFor:
       "Birthday groups who want the biggest, most energetic celebration possible and are willing to pay premium pricing for a peak-night experience. Saturday is the night if atmosphere is your top priority.",
     considerations:
-      "Book as early as possible — Saturday tables are the first to sell out. Minimum spends are at their highest, and premium table positions go quickly. If budget is a concern, Thursday or Friday delivers nearly as much atmosphere at a better price.",
+      "Book as early as possible: Saturday tables are the first to sell out. Minimum spends are at their highest, and premium table positions go quickly. If budget is a concern, Thursday or Friday delivers nearly as much atmosphere at a better price.",
   },
 ];
 
@@ -150,7 +150,7 @@ export default function BirthdayByNightPage() {
             <p className="font-sans text-[1.0625rem] leading-[1.8] text-ink-soft max-w-2xl">
               Your birthday doesn&apos;t have to fall on a Saturday to be
               incredible. Here&apos;s how each night of the week compares for
-              birthday celebrations — atmosphere, pricing, and which clubs are
+              birthday celebrations: atmosphere, pricing, and which clubs are
               open. If yours falls midweek, see{" "}
               <Link href="/blog/birthday-falls-on-a-weekday-london" className="text-champagne hover:text-champagne-bright underline decoration-champagne/30 underline-offset-4 decoration-[0.5px] transition-colors duration-200">how to celebrate a birthday on a weekday</Link>.
             </p>
@@ -343,7 +343,7 @@ export default function BirthdayByNightPage() {
             <em className="italic text-champagne font-normal">Ask Us</em>
           </h2>
           <p className="font-sans text-[1.0625rem] leading-[1.8] text-ink-soft mb-10 max-w-xl mx-auto">
-            Tell us your birthday date and preferences — we&apos;ll tell you
+            Tell us your birthday date and preferences. We&apos;ll tell you
             which venues and nights are the best fit. Making a weekend of it? See{" "}
             <Link href="/blog/birthday-weekend-london" className="text-champagne hover:text-champagne-bright underline decoration-champagne/30 underline-offset-4 decoration-[0.5px] transition-colors duration-200">how to plan a birthday weekend in London</Link>.
           </p>

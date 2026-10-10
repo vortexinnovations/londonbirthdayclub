@@ -9,16 +9,16 @@ import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import ArticleSchema from "@/components/ArticleSchema";
 
 export const metadata: Metadata = {
-  title: "Birthday Table Prices London 2026 — Per-Person Costs at Every Club",
+  title: "Birthday Table Prices London 2026: Per-Person Costs at Every Club",
   description: "Complete guide to birthday table prices at London nightclubs. Venue-by-venue minimums, per-person costs by group size, weekday vs weekend pricing, and what's included. Updated for 2026.",
   alternates: { canonical: "https://londonbirthdayclub.com/birthday-table-prices-london" },
   openGraph: { url: "https://londonbirthdayclub.com/birthday-table-prices-london" },
 };
 
 const faqs = [
-  { question: "How much is a birthday table in London?", answer: "Birthday table minimum spends start from £1,000 at most London clubs, with Tape London starting from £1,500. This is not a fee on top of drinks — it IS your drinks budget, covering premium bottles, mixers, a reserved area, and dedicated service. Prices are higher on Fridays and Saturdays, and for premium table positions." },
+  { question: "How much is a birthday table in London?", answer: "Birthday table minimum spends start from £1,000 at most London clubs, with Tape London starting from £1,500. This is not a fee on top of drinks. It IS your drinks budget, covering premium bottles, mixers, a reserved area, and dedicated service. Prices are higher on Fridays and Saturdays, and for premium table positions." },
   { question: "What's included in the minimum spend?", answer: "Your minimum spend covers: your choice of premium bottles (vodka, gin, tequila, whisky, or champagne), all mixers and ice, a reserved VIP table and seating area, a dedicated table host, and priority entry. Birthday extras like sparklers and DJ shoutouts are usually included; cake is an additional £50-150." },
-  { question: "Are London club tables cheaper on weeknights?", answer: "Yes. Thursday minimum spends are typically 20-40% lower than Saturday. Wednesday nights (at venues like Cirque Le Soir) can offer even better value. The atmosphere on weeknights is still genuinely good — and some argue the more intimate crowd makes for a better birthday." },
+  { question: "Are London club tables cheaper on weeknights?", answer: "Yes. Thursday minimum spends are typically 20-40% lower than Saturday. Wednesday nights (at venues like Cirque Le Soir) can offer even better value. The atmosphere on weeknights is still genuinely good, and some argue the more intimate crowd makes for a better birthday." },
   { question: "Is there a hidden charge on top of the minimum spend?", answer: "No hidden charges. The minimum spend is your drinks cost. Optional additions: birthday cake (£50-150), gratuity for your table host (10-15% is customary for good service), and any drinks ordered above your minimum. There are no entry fees, booking fees, or service charges on top." },
   { question: "How much should each person pay?", answer: "Most birthday groups exclude the birthday person from payment. For a £1,000 minimum with 10 guests (minus the birthday person = 9 paying), each person pays approximately £111. We recommend collecting 10-15% above the minimum to cover cake and tip, so roughly £125 per person in this example." },
 ];
@@ -47,9 +47,9 @@ export default function BirthdayTablePricesPage() {
               <em className="italic text-champagne font-normal">London</em>
             </h1>
             <p className="font-sans text-[1.0625rem] leading-[1.8] text-ink-soft max-w-xl mb-5">
-              A transparent breakdown of what birthday tables actually cost at London&apos;s best nightclubs. No hidden fees, no guesswork — just honest pricing to help you plan your budget.
+              A transparent breakdown of what birthday tables actually cost at London&apos;s best nightclubs. No hidden fees, no guesswork. Just honest pricing to help you plan your budget.
             </p>
-            <p className="font-sans text-[0.8125rem] leading-relaxed tracking-[0.02em] text-ink-faint">Updated for 2026. All prices are starting minimums — contact us for exact quotes.</p>
+            <p className="font-sans text-[0.8125rem] leading-relaxed tracking-[0.02em] text-ink-faint">Updated for 2026. All prices are starting minimums. Contact us for exact quotes.</p>
           </div>
         </div>
       </section>
@@ -109,15 +109,15 @@ export default function BirthdayTablePricesPage() {
             <h2 className="font-display font-medium text-[2rem] leading-[1.12] sm:text-4xl lg:text-[2.75rem] tracking-[-0.01em] text-ink max-w-2xl">
               Per-Person Cost <em className="italic text-champagne font-normal">Breakdown</em>
             </h2>
-            <p className="mt-5 font-sans text-[1.0625rem] leading-[1.8] text-ink-soft max-w-xl">Based on a £1,000 minimum spend. The birthday person typically pays nothing — costs below exclude them.</p>
+            <p className="mt-5 font-sans text-[1.0625rem] leading-[1.8] text-ink-soft max-w-xl">Based on a £1,000 minimum spend. The birthday person typically pays nothing: costs below exclude them.</p>
           </div>
           <div className="divide-y divide-hairline border-y border-hairline" data-reveal>
             {[
-              { total: "5 paying guests", pp: "£200", note: "Intimate group — high per-person but premium experience" },
-              { total: "7 paying guests", pp: "£143", note: "Small group — still excellent value for VIP" },
+              { total: "5 paying guests", pp: "£200", note: "Intimate group: high per-person but premium experience" },
+              { total: "7 paying guests", pp: "£143", note: "Small group: still excellent value for VIP" },
               { total: "9 paying guests", pp: "£111", note: "Most common birthday group size" },
-              { total: "12 paying guests", pp: "£83", note: "Great value — cheaper than a night of bar drinks" },
-              { total: "15 paying guests", pp: "£67", note: "Large group — outstanding value per head" },
+              { total: "12 paying guests", pp: "£83", note: "Great value: cheaper than a night of bar drinks" },
+              { total: "15 paying guests", pp: "£67", note: "Large group: outstanding value per head" },
               { total: "20 paying guests", pp: "£50", note: "Best per-person value you'll find" },
             ].map((row) => (
               <div key={row.total} className="flex flex-col sm:flex-row sm:items-baseline py-5 gap-1 sm:gap-6">
@@ -185,10 +185,10 @@ export default function BirthdayTablePricesPage() {
           </div>
           <div className="space-y-10">
             {[
-              { tier: "Smart Budget", pp: "£50-80 per person", how: "Large group (15+), midweek booking, standard table position. You still get the full VIP experience — just with a bigger group splitting the cost.", venues: "Cirque Le Soir (Wed), BEAT London, Reign London" },
-              { tier: "Standard", pp: "£80-120 per person", how: "Group of 10-12, weekend booking, standard table. This is the most popular tier — excellent experience at a reasonable per-person cost.", venues: "Most Mayfair clubs on Fri/Sat" },
+              { tier: "Smart Budget", pp: "£50-80 per person", how: "Large group (15+), midweek booking, standard table position. You still get the full VIP experience. Just with a bigger group splitting the cost.", venues: "Cirque Le Soir (Wed), BEAT London, Reign London" },
+              { tier: "Standard", pp: "£80-120 per person", how: "Group of 10-12, weekend booking, standard table. This is the most popular tier: excellent experience at a reasonable per-person cost.", venues: "Most Mayfair clubs on Fri/Sat" },
               { tier: "Premium", pp: "£120-200 per person", how: "Smaller group (6-8), premium table position, potentially upgraded bottles. A more intimate, higher-quality experience.", venues: "Tape London, Cirque Le Soir, The Box" },
-              { tier: "Luxury", pp: "£200+ per person", how: "Small group at the most exclusive venue, best table in the house, champagne packages. For milestone birthdays where budget isn't the primary concern.", venues: "Tape London, Cirque Le Soir — premium positions" },
+              { tier: "Luxury", pp: "£200+ per person", how: "Small group at the most exclusive venue, best table in the house, champagne packages. For milestone birthdays where budget isn't the primary concern.", venues: "Tape London, Cirque Le Soir: premium positions" },
             ].map((item, i) => (
               <div key={item.tier} className="border-t border-hairline pt-6" data-reveal data-reveal-delay={i * 90}>
                 <div className="flex flex-wrap items-baseline gap-x-5 gap-y-1 mb-3">
@@ -216,7 +216,7 @@ export default function BirthdayTablePricesPage() {
             <h2 className="font-display font-medium text-[2rem] leading-[1.12] sm:text-4xl lg:text-[2.75rem] tracking-[-0.01em] text-ink max-w-2xl">
               Get an Exact <em className="italic text-champagne font-normal">Quote</em>
             </h2>
-            <p className="mt-5 font-sans text-[1.0625rem] leading-[1.8] text-ink-soft max-w-xl">Prices vary by venue, night, and table position. Tell us your details and we&apos;ll give you an exact quote — no obligation, completely free.</p>
+            <p className="mt-5 font-sans text-[1.0625rem] leading-[1.8] text-ink-soft max-w-xl">Prices vary by venue, night, and table position. Tell us your details and we&apos;ll give you an exact quote: no obligation, completely free.</p>
           </div>
           <div data-reveal>
             <WhatsAppCTA message={getPricingWhatsAppMessage()} label="Get a Quote on WhatsApp" size="large" variant="detailed" microcopy="Free service · Replies in minutes" />

@@ -9,7 +9,7 @@ import ArticleSchema from "@/components/ArticleSchema";
 
 export const metadata: Metadata = {
   title:
-    "How to Plan a Birthday at a London Club — Step-by-Step (2026 Guide)",
+    "How to Plan a Birthday at a London Club: Step-by-Step (2026 Guide)",
   description:
     "Step-by-step guide to planning a birthday at a London nightclub. Covers booking, minimum spends, group payments, dress codes, birthday extras, and what to expect on the night.",
   alternates: {
@@ -27,12 +27,12 @@ const faqs = [
   {
     question: "What does minimum spend mean at a London nightclub?",
     answer:
-      "Minimum spend is the minimum amount your table must spend on drinks (bottles, cocktails, champagne) during the night. It's not an entry fee or deposit on top of drinks — it IS your drinks budget. A £1,000 minimum spend means your group will have £1,000 worth of bottles and mixers at your table.",
+      "Minimum spend is the minimum amount your table must spend on drinks (bottles, cocktails, champagne) during the night. It's not an entry fee or deposit on top of drinks. It IS your drinks budget. A £1,000 minimum spend means your group will have £1,000 worth of bottles and mixers at your table.",
   },
   {
     question: "Can I bring a birthday cake to a London nightclub?",
     answer:
-      "Most London clubs allow birthday cakes and many actively help arrange them. Some clubs have preferred bakeries they work with, while others allow you to bring your own. We can arrange cake delivery to your club on the night — just let us know when you book.",
+      "Most London clubs allow birthday cakes and many actively help arrange them. Some clubs have preferred bakeries they work with, while others allow you to bring your own. We can arrange cake delivery to your club on the night. Just let us know when you book.",
   },
   {
     question: "What happens if my group doesn't meet the minimum spend?",
@@ -52,7 +52,7 @@ const faqs = [
   {
     question: "How do I split the bill for a birthday table?",
     answer:
-      "The most common approach is to have the birthday person pay nothing, with the cost split equally among the rest of the group. Collect money in advance via bank transfer — chasing people for cash on the night ruins the mood. We recommend using a group payment app and collecting at least a week before.",
+      "The most common approach is to have the birthday person pay nothing, with the cost split equally among the rest of the group. Collect money in advance via bank transfer: chasing people for cash on the night ruins the mood. We recommend using a group payment app and collecting at least a week before.",
   },
   {
     question: "What should I wear to a London nightclub birthday?",
@@ -87,7 +87,7 @@ export default function PlanBirthdayPage() {
             </h1>
             <p className="font-sans text-[1.0625rem] leading-[1.8] text-ink-soft max-w-2xl">
               Everything you need to know about planning a birthday celebration at
-              a London club — from choosing the right venue and understanding
+              a London club, from choosing the right venue and understanding
               minimum spends to handling group payments and knowing what to expect
               on the night.
             </p>
@@ -120,7 +120,7 @@ export default function PlanBirthdayPage() {
               </div>
               <div className="flex-1">
                 <h3 className="font-display font-medium text-xl text-ink mb-4">
-                  3–4 Weeks Before: Choose Your Venue
+                  3 to 4 Weeks Before: Choose Your Venue
                 </h3>
                 <p className="font-sans text-base leading-[1.8] text-ink-soft mb-4">
                   Start by working out what kind of birthday you want. Consider
@@ -161,17 +161,17 @@ export default function PlanBirthdayPage() {
               </div>
               <div className="flex-1">
                 <h3 className="font-display font-medium text-xl text-ink mb-4">
-                  2–3 Weeks Before: Book and Confirm
+                  2 to 3 Weeks Before: Book and Confirm
                 </h3>
                 <p className="font-sans text-base leading-[1.8] text-ink-soft mb-4">
                   Once you&apos;ve chosen your club, message us on WhatsApp with
                   your details. We&apos;ll check availability, confirm the
                   minimum spend for your chosen night, and arrange any birthday
-                  extras you want — cake, sparklers, decorations, DJ shoutouts.
+                  extras you want: cake, sparklers, decorations, DJ shoutouts.
                 </p>
                 <p className="font-sans text-base leading-[1.8] text-ink-soft">
                   Most clubs require a deposit or card on file (typically
-                  £200–500, deducted from your spend on the night). We&apos;ll
+                  £200 to 500, deducted from your spend on the night). We&apos;ll
                   walk you through the process and make sure everything is
                   confirmed.
                 </p>
@@ -185,7 +185,7 @@ export default function PlanBirthdayPage() {
               </div>
               <div className="flex-1">
                 <h3 className="font-display font-medium text-xl text-ink mb-4">
-                  1–2 Weeks Before: Sort Group Logistics
+                  1 to 2 Weeks Before: Sort Group Logistics
                 </h3>
                 <p className="font-sans text-base leading-[1.8] text-ink-soft mb-6">
                   This is when the practical stuff matters most. Confirm your
@@ -200,7 +200,7 @@ export default function PlanBirthdayPage() {
                   <ul className="space-y-3 font-sans text-[0.9375rem] leading-[1.8] text-ink-soft">
                     <li className="flex gap-3">
                       <span className="font-display italic text-champagne/70 select-none">✦</span>
-                      The birthday person traditionally pays nothing — split the
+                      The birthday person traditionally pays nothing: split the
                       cost among everyone else
                     </li>
                     <li className="flex gap-3">
@@ -209,7 +209,7 @@ export default function PlanBirthdayPage() {
                     </li>
                     <li className="flex gap-3">
                       <span className="font-display italic text-champagne/70 select-none">✦</span>
-                      Use bank transfer or a group payment app — avoid chasing
+                      Use bank transfer or a group payment app: avoid chasing
                       cash
                     </li>
                     <li className="flex gap-3">
@@ -219,7 +219,7 @@ export default function PlanBirthdayPage() {
                     </li>
                     <li className="flex gap-3">
                       <span className="font-display italic text-champagne/70 select-none">✦</span>
-                      Be upfront about the cost — people appreciate honesty
+                      Be upfront about the cost: people appreciate honesty
                       over surprises
                     </li>
                   </ul>
@@ -240,7 +240,7 @@ export default function PlanBirthdayPage() {
                   Confirm the guest list with us, remind your group about the
                   dress code and arrival time, and sort any last-minute birthday
                   extras (cake delivery, decorations). We&apos;ll send you a
-                  final confirmation with all the details you need — venue
+                  final confirmation with all the details you need: venue
                   address, your table host&apos;s name, and what to expect on
                   arrival.
                 </p>
@@ -257,7 +257,7 @@ export default function PlanBirthdayPage() {
                   On the Night: What to Expect
                 </h3>
                 <p className="font-sans text-base leading-[1.8] text-ink-soft mb-4">
-                  Arrive at the time we&apos;ve agreed — usually between
+                  Arrive at the time we&apos;ve agreed, usually between
                   10:30pm and 11:30pm for most clubs. Give your name at the door
                   and you&apos;ll be taken to your table. Your table host will
                   introduce themselves and present your bottles.
@@ -267,8 +267,8 @@ export default function PlanBirthdayPage() {
                   bottle shows typically happen within the first hour. If
                   you&apos;ve arranged a cake or DJ shoutout, your table host
                   will coordinate the timing. The best birthday nights are the
-                  ones where you stop thinking about logistics and just enjoy it
-                  — which is exactly why we handle all of that for you.
+                  ones where you stop thinking about logistics and just enjoy it,
+                  which is exactly why we handle all of that for you.
                 </p>
               </div>
             </div>
@@ -296,7 +296,7 @@ export default function PlanBirthdayPage() {
               Minimum spend is the part of club birthday planning that confuses
               people most. Here&apos;s the simple version: minimum spend is the
               minimum amount your table must spend on drinks. It&apos;s not an
-              entry fee, it&apos;s not a deposit on top of drinks — it IS your
+              entry fee, it&apos;s not a deposit on top of drinks. It IS your
               drinks budget.
             </p>
           </div>
@@ -313,7 +313,7 @@ export default function PlanBirthdayPage() {
                 </li>
                 <li className="flex gap-3">
                   <span className="text-champagne/70 select-none">&#10003;</span>
-                  <span>Mixers — juices, soft drinks, Red Bull, tonic</span>
+                  <span>Mixers: juices, soft drinks, Red Bull, tonic</span>
                 </li>
                 <li className="flex gap-3">
                   <span className="text-champagne/70 select-none">&#10003;</span>
@@ -340,7 +340,7 @@ export default function PlanBirthdayPage() {
                 </li>
                 <li className="flex gap-3">
                   <span className="text-ink-faint select-none">&#10007;</span>
-                  <span>Birthday cake (arranged separately, usually £50–150)</span>
+                  <span>Birthday cake (arranged separately, usually £50 to 150)</span>
                 </li>
                 <li className="flex gap-3">
                   <span className="text-ink-faint select-none">&#10007;</span>
@@ -348,7 +348,7 @@ export default function PlanBirthdayPage() {
                 </li>
                 <li className="flex gap-3">
                   <span className="text-ink-faint select-none">&#10007;</span>
-                  <span>Gratuity (10–15% is customary for great service)</span>
+                  <span>Gratuity (10 to 15% is customary for great service)</span>
                 </li>
               </ul>
             </div>
@@ -413,11 +413,11 @@ export default function PlanBirthdayPage() {
               },
               {
                 title: "Birthday Cake",
-                desc: "Most clubs can arrange a birthday cake for your table. Some work with preferred bakeries, others allow you to bring your own. Prices typically range from £50–150 for club-arranged cakes.",
+                desc: "Most clubs can arrange a birthday cake for your table. Some work with preferred bakeries, others allow you to bring your own. Prices typically range from £50 to 150 for club-arranged cakes.",
               },
               {
                 title: "DJ Birthday Shoutout",
-                desc: "The DJ announces your birthday over the sound system — a moment your group won't forget. Available at most venues and can be coordinated through your table host.",
+                desc: "The DJ announces your birthday over the sound system: a moment your group won't forget. Available at most venues and can be coordinated through your table host.",
               },
               {
                 title: "Decorated Tables",
@@ -425,7 +425,7 @@ export default function PlanBirthdayPage() {
               },
               {
                 title: "Priority Entry",
-                desc: "Birthday groups with a table booking skip the main queue. You'll arrive, give your name, and be taken straight to your table — no waiting in the cold.",
+                desc: "Birthday groups with a table booking skip the main queue. You'll arrive, give your name, and be taken straight to your table: no waiting in the cold.",
               },
               {
                 title: "Complimentary Extras",
@@ -467,7 +467,7 @@ export default function PlanBirthdayPage() {
             <p className="mt-5 font-sans text-[1.0625rem] leading-[1.8] text-ink-soft max-w-2xl">
               Nothing ruins a birthday faster than someone in your group being
               turned away at the door. Share the dress code with your entire
-              group in advance — no exceptions.
+              group in advance: no exceptions.
             </p>
           </div>
 
@@ -480,7 +480,7 @@ export default function PlanBirthdayPage() {
                 Smart dress code enforced strictly. For men: smart shoes
                 (no trainers), fitted trousers or dark jeans, collared shirt
                 or smart knitwear. No sportswear, caps, or casual wear. For
-                women: dress to impress — heels, dresses, smart separates.
+                women: dress to impress: heels, dresses, smart separates.
                 The dress code is more flexible for women but still smart.
               </p>
               <p className="font-sans text-[0.8125rem] leading-relaxed tracking-[0.02em] text-ink-faint">
@@ -495,7 +495,7 @@ export default function PlanBirthdayPage() {
               <p className="font-sans text-[0.9375rem] leading-[1.8] text-ink-soft mb-5">
                 Smart-casual is accepted. Clean trainers are fine, but still
                 no sportswear, flip-flops, or gym gear. The vibe is less
-                formal — comfort and style over strict dress codes. You can
+                formal: comfort and style over strict dress codes. You can
                 express yourself more freely while still looking put-together.
               </p>
               <p className="font-sans text-[0.8125rem] leading-relaxed tracking-[0.02em] text-ink-faint">
@@ -624,7 +624,7 @@ export default function PlanBirthdayPage() {
           </h2>
           <p className="font-sans text-[1.0625rem] leading-[1.8] text-ink-soft mb-10 max-w-xl mx-auto">
             Send us your birthday details on WhatsApp and we&apos;ll handle
-            the rest — venue recommendation, booking, extras, and
+            the rest: venue recommendation, booking, extras, and
             confirmations. Takes two minutes, saves you hours.
           </p>
           <WhatsAppCTA
