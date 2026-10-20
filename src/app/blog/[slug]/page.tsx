@@ -60,6 +60,12 @@ function renderInline(text: string): ReactNode {
   return nodes;
 }
 
+// Posts at peak season keep their old title (with the site name) until the
+// date given; the daily regeneration picks up the shorter title after it.
+const TITLE_FROZEN_UNTIL: Record<string, string> = {
+  "halloween-birthday-london": "2026-11-01T00:00:00Z",
+};
+
 export async function generateMetadata({
   params,
 }: {
@@ -70,7 +76,10 @@ export async function generateMetadata({
   if (!post) return {};
 
   return {
-    title: fitTitle(post.metaTitle),
+    title:
+      TITLE_FROZEN_UNTIL[post.slug] && Date.now() < Date.parse(TITLE_FROZEN_UNTIL[post.slug])
+        ? post.metaTitle
+        : fitTitle(post.metaTitle),
     description: post.metaDescription,
     alternates: {
       canonical: `https://londonbirthdayclub.com/blog/${post.slug}`,
