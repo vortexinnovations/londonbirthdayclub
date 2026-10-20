@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { fitTitle } from "@/lib/seo";
 import Image from "next/image";
 import Link from "next/link";
 import { images } from "@/lib/images";
@@ -8,8 +9,7 @@ import FAQSchema from "@/components/FAQSchema";
 import ArticleSchema from "@/components/ArticleSchema";
 
 export const metadata: Metadata = {
-  title:
-    "How to Plan a Birthday at a London Club: Step-by-Step (2026 Guide)",
+  title: fitTitle("How to Plan a Birthday at a London Club: Step-by-Step (2026 Guide)"),
   description:
     "Step-by-step guide to planning a birthday at a London nightclub. Covers booking, minimum spends, group payments, dress codes, birthday extras, and what to expect on the night.",
   alternates: {

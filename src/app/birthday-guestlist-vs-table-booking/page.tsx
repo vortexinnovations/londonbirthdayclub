@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { fitTitle } from "@/lib/seo";
 import Image from "next/image";
 import Link from "next/link";
 import { images } from "@/lib/images";
@@ -9,7 +10,7 @@ import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import ArticleSchema from "@/components/ArticleSchema";
 
 export const metadata: Metadata = {
-  title: "Guestlist vs Table for a London Birthday: Worth It?",
+  title: fitTitle("Guestlist vs Table for a London Birthday: Worth It?"),
   description: "Should you book a guestlist or a VIP table for your birthday at a London nightclub? Honest comparison of costs, benefits, and which option suits your group size and budget.",
   alternates: { canonical: "https://londonbirthdayclub.com/birthday-guestlist-vs-table-booking" },
   openGraph: { url: "https://londonbirthdayclub.com/birthday-guestlist-vs-table-booking" },

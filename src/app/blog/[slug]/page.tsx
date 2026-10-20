@@ -9,6 +9,7 @@ import { getGeneralWhatsAppMessage } from "@/lib/clubs";
 import WhatsAppCTA from "@/components/WhatsAppCTA";
 import FAQSchema from "@/components/FAQSchema";
 import { getPostImage } from "@/lib/images";
+import { fitTitle } from "@/lib/seo";
 
 // Posts are prerendered at build and refreshed by /api/revalidate when the
 // content API publishes; this daily regeneration is only a safety net.
@@ -69,7 +70,7 @@ export async function generateMetadata({
   if (!post) return {};
 
   return {
-    title: post.metaTitle,
+    title: fitTitle(post.metaTitle),
     description: post.metaDescription,
     alternates: {
       canonical: `https://londonbirthdayclub.com/blog/${post.slug}`,

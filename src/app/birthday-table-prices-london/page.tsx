@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { fitTitle } from "@/lib/seo";
 import Image from "next/image";
 import Link from "next/link";
 import { images } from "@/lib/images";
@@ -9,7 +10,7 @@ import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import ArticleSchema from "@/components/ArticleSchema";
 
 export const metadata: Metadata = {
-  title: "Birthday Table Prices London 2026: Per-Person Costs at Every Club",
+  title: fitTitle("Birthday Table Prices London 2026: Per-Person Costs at Every Club"),
   description: "Complete guide to birthday table prices at London nightclubs. Venue-by-venue minimums, per-person costs by group size, weekday vs weekend pricing, and what's included. Updated for 2026.",
   alternates: { canonical: "https://londonbirthdayclub.com/birthday-table-prices-london" },
   openGraph: { url: "https://londonbirthdayclub.com/birthday-table-prices-london" },

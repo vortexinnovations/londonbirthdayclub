@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { fitTitle } from "@/lib/seo";
 import Image from "next/image";
 import Link from "next/link";
 import { openClubs, getGeneralWhatsAppMessage } from "@/lib/clubs";
@@ -11,8 +12,7 @@ import VenueTicker from "@/components/VenueTicker";
 import { images } from "@/lib/images";
 
 export const metadata: Metadata = {
-  title:
-    "London Birthday Club | VIP Birthday Tables at London's Best Nightclubs",
+  title: fitTitle("London Birthday Club | VIP Birthday Tables at London's Best Nightclubs"),
   description:
     "Free birthday planning at London's top nightclubs. VIP tables from £1,000 with sparklers, cake, and bottle service at Cirque Le Soir, Tape, The Box & more. Book instantly via WhatsApp.",
   alternates: { canonical: "https://londonbirthdayclub.com" },

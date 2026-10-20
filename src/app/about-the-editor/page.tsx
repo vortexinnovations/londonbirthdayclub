@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
+import { fitTitle } from "@/lib/seo";
 import Link from "next/link";
 
 const SITE_URL = "https://londonbirthdayclub.com";
 
 export const metadata: Metadata = {
-  title: "About the Editor: Charlotte Hayes",
+  title: fitTitle("About the Editor: Charlotte Hayes"),
   description:
     "Meet Charlotte Hayes, Events Specialist. She plans group nightlife celebrations across London and covers what each venue can actually deliver for a private celebration.",
   alternates: { canonical: `${SITE_URL}/about-the-editor` },

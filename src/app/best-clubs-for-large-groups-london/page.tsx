@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { fitTitle } from "@/lib/seo";
 import Image from "next/image";
 import Link from "next/link";
 import { images } from "@/lib/images";
@@ -9,7 +10,7 @@ import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import ItemListSchema from "@/components/ItemListSchema";
 
 export const metadata: Metadata = {
-  title: "Best London Clubs for Large Groups: 15 to 30+ Guest Birthday Venues",
+  title: fitTitle("Best London Clubs for Large Groups: 15 to 30+ Guest Birthday Venues"),
   description: "The best London nightclubs for large group bookings of 15-30+ guests. Multi-table configurations, big birthday celebrations, and venues that handle large parties without cramping the atmosphere.",
   alternates: { canonical: "https://londonbirthdayclub.com/best-clubs-for-large-groups-london" },
   openGraph: { url: "https://londonbirthdayclub.com/best-clubs-for-large-groups-london" },

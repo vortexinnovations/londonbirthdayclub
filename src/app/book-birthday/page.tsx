@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { fitTitle } from "@/lib/seo";
 import Image from "next/image";
 import Link from "next/link";
 import { images } from "@/lib/images";
@@ -7,7 +8,7 @@ import WhatsAppCTA from "@/components/WhatsAppCTA";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 export const metadata: Metadata = {
-  title: "Book Your Birthday: Free VIP Table Planning via WhatsApp",
+  title: fitTitle("Book Your Birthday: Free VIP Table Planning via WhatsApp"),
   description:
     "Book your birthday celebration at a London nightclub in minutes via WhatsApp. Free planning service, VIP tables, birthday extras: we handle everything.",
   alternates: {

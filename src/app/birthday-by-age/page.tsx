@@ -1,5 +1,6 @@
 import { Fragment } from "react";
 import type { Metadata } from "next";
+import { fitTitle } from "@/lib/seo";
 import Image from "next/image";
 import Link from "next/link";
 import { images } from "@/lib/images";
@@ -9,8 +10,7 @@ import FAQSchema from "@/components/FAQSchema";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 export const metadata: Metadata = {
-  title:
-    "Best London Clubs by Age: 18th, 21st, 25th, 30th, 40th & 50th Birthday Guide",
+  title: fitTitle("Best London Clubs by Age: 18th, 21st, 25th, 30th, 40th & 50th Birthday Guide"),
   description:
     "Find the perfect London nightclub for your milestone birthday. Expert recommendations for 21st, 25th, 30th, 40th, and 50th birthday celebrations at Mayfair's best clubs.",
   alternates: {

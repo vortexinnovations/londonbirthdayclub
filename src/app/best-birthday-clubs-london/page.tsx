@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { fitTitle } from "@/lib/seo";
 import Image from "next/image";
 import Link from "next/link";
 import { images } from "@/lib/images";
@@ -10,7 +11,7 @@ import ItemListSchema from "@/components/ItemListSchema";
 import ArticleSchema from "@/components/ArticleSchema";
 
 export const metadata: Metadata = {
-  title: "11 Best Birthday Clubs in London (2026): Ranked by Real Experience",
+  title: fitTitle("11 Best Birthday Clubs in London (2026): Ranked by Real Experience"),
   description:
     "We've booked hundreds of birthday tables. Here are the 11 best London clubs for a birthday, honestly ranked. Cirque Le Soir, Tape, The Box & more, with prices, group advice, and what to expect.",
   alternates: {

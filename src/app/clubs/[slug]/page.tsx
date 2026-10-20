@@ -13,6 +13,7 @@ import WhatsAppCTA from "@/components/WhatsAppCTA";
 import FAQSchema from "@/components/FAQSchema";
 import NightClubSchema from "@/components/NightClubSchema";
 import { getClubImage } from "@/lib/images";
+import { fitTitle } from "@/lib/seo";
 
 export async function generateStaticParams() {
   return clubs.map((club) => ({ slug: club.slug }));
@@ -32,7 +33,7 @@ export async function generateMetadata({
     const title = `${formerName} Is Now ${club.shortName} | Birthday Table Booking`;
     const description = `${formerName} is now ${club.shortName}, ${club.location}. Open ${club.openingNights.replace(/, (?=[^,]*$)/, " and ")}. Book a birthday table at ${club.shortName} free via WhatsApp.`;
     return {
-      title,
+      title: fitTitle(title),
       description,
       alternates: {
         canonical: `https://londonbirthdayclub.com/clubs/${club.slug}`,
@@ -49,7 +50,7 @@ export async function generateMetadata({
     const title = `${club.name} Has Closed: ${club.area} Birthday Alternatives`;
     const description = `${club.name} in ${club.area} has closed and no longer takes birthday bookings. Open London clubs for a similar birthday night, booked free via WhatsApp.`;
     return {
-      title,
+      title: fitTitle(title),
       description,
       alternates: {
         canonical: `https://londonbirthdayclub.com/clubs/${club.slug}`,
@@ -67,9 +68,11 @@ export async function generateMetadata({
     ? `${club.name} (formerly ${club.previousName})`
     : club.name;
   return {
-    title: club.previousName
-      ? `${titleName} Birthday | Birthday Table & Packages`
-      : `${club.name} Birthday | Birthday Table & Packages at ${club.name}`,
+    title: fitTitle(
+      club.previousName
+        ? `${titleName} Birthday | Birthday Table & Packages`
+        : `${club.name} Birthday | Birthday Table & Packages at ${club.name}`
+    ),
     description: club.previousName
       ? `Celebrate your birthday at ${titleName}, ${club.location}. ${club.bestFor}. Tables from ${club.minSpend}, birthday extras on request. Book free via WhatsApp.`
       : `Celebrate your birthday at ${club.name}, ${club.location}. ${club.bestFor}. VIP tables from ${club.minSpend}, sparklers, cake, and birthday extras. Book free via WhatsApp.`,

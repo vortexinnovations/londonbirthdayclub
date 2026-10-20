@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { fitTitle } from "@/lib/seo";
 import Image from "next/image";
 import Link from "next/link";
 import { images } from "@/lib/images";
@@ -8,8 +9,7 @@ import FAQSchema from "@/components/FAQSchema";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 export const metadata: Metadata = {
-  title:
-    "Best Night of the Week for a Birthday in London: Weekday vs Weekend",
+  title: fitTitle("Best Night of the Week for a Birthday in London: Weekday vs Weekend"),
   description:
     "Which night of the week is best for your birthday? A guide to Wednesday to Saturday birthday celebrations at London clubs: atmosphere, pricing, and which venues are open each night.",
   alternates: {

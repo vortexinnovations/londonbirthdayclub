@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { fitTitle } from "@/lib/seo";
 import Image from "next/image";
 import Link from "next/link";
 import { images } from "@/lib/images";
@@ -9,7 +10,7 @@ import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import ArticleSchema from "@/components/ArticleSchema";
 
 export const metadata: Metadata = {
-  title: "Mayfair Birthday Night: How to Plan the Perfect Celebration (2026)",
+  title: fitTitle("Mayfair Birthday Night: How to Plan the Perfect Celebration (2026)"),
   description: "The complete guide to planning a birthday night out in Mayfair. Which clubs are where, dress codes, what to expect, and how to make your Mayfair birthday celebration perfect.",
   alternates: { canonical: "https://londonbirthdayclub.com/how-to-plan-a-birthday-night-in-mayfair" },
   openGraph: { url: "https://londonbirthdayclub.com/how-to-plan-a-birthday-night-in-mayfair" },

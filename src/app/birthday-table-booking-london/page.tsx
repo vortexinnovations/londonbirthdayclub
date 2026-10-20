@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { fitTitle } from "@/lib/seo";
 import Image from "next/image";
 import Link from "next/link";
 import { images } from "@/lib/images";
@@ -8,8 +9,7 @@ import FAQSchema from "@/components/FAQSchema";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 export const metadata: Metadata = {
-  title:
-    "Birthday Table Booking London: What's Included & How It Works (2026)",
+  title: fitTitle("Birthday Table Booking London: What's Included & How It Works (2026)"),
   description:
     "Everything you need to know about booking a birthday table in London. What's included in the minimum spend, birthday extras, per-person costs, and how to book for free via WhatsApp.",
   alternates: {

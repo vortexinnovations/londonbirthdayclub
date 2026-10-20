@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { fitTitle } from "@/lib/seo";
 import Image from "next/image";
 import Link from "next/link";
 import { images } from "@/lib/images";
@@ -8,7 +9,7 @@ import FAQSchema from "@/components/FAQSchema";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 export const metadata: Metadata = {
-  title: "21st Birthday Clubs London | Best Venues for Your 21st in 2026",
+  title: fitTitle("21st Birthday Clubs London | Best Venues for Your 21st in 2026"),
   description: "The best London nightclubs for a 21st birthday celebration. VIP tables, live entertainment, spectacular venues. Make turning 21 genuinely unforgettable. Free booking via WhatsApp.",
   alternates: { canonical: "https://londonbirthdayclub.com/21st-birthday-clubs-london" },
   openGraph: { url: "https://londonbirthdayclub.com/21st-birthday-clubs-london" },

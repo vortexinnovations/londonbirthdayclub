@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { fitTitle } from "@/lib/seo";
 import Image from "next/image";
 import Link from "next/link";
 import { getMergedPosts, type BlogPost } from "@/lib/blog";
@@ -11,7 +12,7 @@ import { getPostImage } from "@/lib/images";
 export const revalidate = 86400;
 
 export const metadata: Metadata = {
-  title: "Birthday Planning Blog | Tips, Guides & Ideas for London Birthdays",
+  title: fitTitle("Birthday Planning Blog | Tips, Guides & Ideas for London Birthdays"),
   description:
     "Expert advice on planning birthday celebrations at London nightclubs. Costs, dress codes, group payments, surprise parties, bottle service guides, and venue recommendations.",
   alternates: {

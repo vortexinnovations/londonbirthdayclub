@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { fitTitle } from "@/lib/seo";
 import Image from "next/image";
 import Link from "next/link";
 import { images } from "@/lib/images";
@@ -8,7 +9,7 @@ import FAQSchema from "@/components/FAQSchema";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 export const metadata: Metadata = {
-  title: "30th Birthday Night Out London | Celebrate Turning 30 in Style",
+  title: fitTitle("30th Birthday Night Out London | Celebrate Turning 30 in Style"),
   description: "The best London clubs and venues for a 30th birthday celebration. Quality over chaos: elegant venues, dinner-to-club options, and VIP birthday experiences for the milestone that matters.",
   alternates: { canonical: "https://londonbirthdayclub.com/30th-birthday-night-out-london" },
   openGraph: { url: "https://londonbirthdayclub.com/30th-birthday-night-out-london" },

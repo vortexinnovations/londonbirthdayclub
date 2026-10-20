@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { fitTitle } from "@/lib/seo";
 import Image from "next/image";
 import Link from "next/link";
 import { images } from "@/lib/images";
@@ -9,7 +10,7 @@ import FAQSchema from "@/components/FAQSchema";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 export const metadata: Metadata = {
-  title: "Birthday Clubs London: 11 Venues Compared (2026)",
+  title: fitTitle("Birthday Clubs London: 11 Venues Compared (2026)"),
   description:
     "Compare 11 London birthday clubs side by side: minimum spends, music, group size, and what makes each one great for birthdays. Tables from £1,000. Free booking via WhatsApp.",
   alternates: {
