@@ -12,13 +12,13 @@ import ArticleSchema from "@/components/ArticleSchema";
 export const metadata: Metadata = {
   title: fitTitle("Birthday Table Prices London 2026: Per-Person Costs"),
   description:
-    "Birthday tables at 11 London clubs start from £600 to £1,500. Per-person costs by group size, from £200 for 5 guests to £50 for 20, and what's included.",
+    "Birthday tables at 11 London clubs start from £600 to £1,000. Per-person costs by group size, from £200 for 5 guests to £50 for 20, and what's included.",
   alternates: { canonical: "https://londonbirthdayclub.com/birthday-table-prices-london" },
   openGraph: { url: "https://londonbirthdayclub.com/birthday-table-prices-london" },
 };
 
 const faqs = [
-  { question: "How much is a birthday table in London?", answer: "Birthday table minimum spends start from £1,000 at most London clubs, with Tape London starting from £1,500. This is not a fee on top of drinks. It IS your drinks budget, covering premium bottles, mixers, a reserved area, and dedicated service. Prices are higher on Fridays and Saturdays, and for premium table positions." },
+  { question: "How much is a birthday table in London?", answer: "Birthday table minimum spends at the clubs we book start from £600 at 99 Regent Street, £750 at Tape London and £800 at Cirque Le Soir, Reign London and Selene London, and from £1,000 at most of the others. This is not a fee on top of drinks. It IS your drinks budget, covering premium bottles, mixers, a reserved area, and dedicated service. Prices are higher on Fridays and Saturdays, and for premium table positions." },
   { question: "What's included in the minimum spend?", answer: "Your minimum spend covers: your choice of premium bottles (vodka, gin, tequila, whisky, or champagne), all mixers and ice, a reserved VIP table and seating area, a dedicated table host, and priority entry. Birthday extras like sparklers and DJ shoutouts are usually included; cake is an additional £50-150." },
   { question: "Are London club tables cheaper on weeknights?", answer: "Yes. Thursday minimum spends are typically 20-40% lower than Saturday. Wednesday nights (at venues like Cirque Le Soir) can offer even better value. The atmosphere on weeknights is still genuinely good, and some argue the more intimate crowd makes for a better birthday." },
   { question: "Is there a hidden charge on top of the minimum spend?", answer: "No hidden charges. The minimum spend is your drinks cost. Optional additions: birthday cake (£50-150), gratuity for your table host (10-15% is customary for good service), and any drinks ordered above your minimum. There are no entry fees, booking fees, or service charges on top." },

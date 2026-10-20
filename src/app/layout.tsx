@@ -66,14 +66,6 @@ export default function RootLayout({
     url: "https://londonbirthdayclub.com",
     telephone: WHATSAPP_TEL,
     image: "https://londonbirthdayclub.com/gallery/images/TapeSaturdayNYE311222-130.jpg",
-    address: {
-      "@type": "PostalAddress",
-      streetAddress: "Mayfair",
-      addressLocality: "London",
-      addressRegion: "Greater London",
-      postalCode: "W1",
-      addressCountry: "GB",
-    },
     areaServed: {
       "@type": "City",
       name: "London",

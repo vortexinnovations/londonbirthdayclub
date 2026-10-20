@@ -12,7 +12,7 @@ import ItemListSchema from "@/components/ItemListSchema";
 export const metadata: Metadata = {
   title: fitTitle("Best London Clubs for Large Groups: 15 to 30+ Guests"),
   description:
-    "Reign takes 20 to 40+ guests across adjacent tables, followed by BEAT, The Box and Cirque Le Soir. Large group birthday venues from £1,000, booked free.",
+    "Reign takes 20 to 40+ guests across adjacent tables, followed by BEAT, The Box and Cirque Le Soir. Large group birthday venues from £800, booked free.",
   alternates: { canonical: "https://londonbirthdayclub.com/best-clubs-for-large-groups-london" },
   openGraph: { url: "https://londonbirthdayclub.com/best-clubs-for-large-groups-london" },
 };

@@ -11,21 +11,21 @@ import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 export const metadata: Metadata = {
   title: fitTitle("18th Birthday Clubs London: Where to Celebrate in 2026"),
   description:
-    "Cirque Le Soir, BEAT, Reign and Rumour, which admits 18+ with photo ID, are our 18th birthday picks. Tables from £1,000, planned free via WhatsApp.",
+    "Cirque Le Soir on a Monday or Wednesday, BEAT, Reign and Rumour (18+ with photo ID) are our 18th birthday picks. Tables from £800, planned free.",
   alternates: { canonical: "https://londonbirthdayclub.com/18th-birthday-clubs-london" },
   openGraph: { url: "https://londonbirthdayclub.com/18th-birthday-clubs-london" },
 };
 
 const faqs = [
-  { question: "Can you go to a London nightclub for your 18th birthday?", answer: "Yes. London nightclubs admit guests aged 18 and over. You'll need valid photo ID (passport or driving licence) to enter. For an 18th birthday, a VIP table booking ensures your group gets priority entry and avoids any door queue uncertainty." },
-  { question: "What's the best London club for an 18th birthday?", answer: "Cirque Le Soir is our top recommendation: the live performers, pyrotechnics, and spectacular atmosphere create the most memorable first big night out. Reign London is also excellent for bigger groups, with aerial performances and a big room. Both are welcoming to 18th birthday groups." },
-  { question: "How much does an 18th birthday table cost in London?", answer: "Tables start from £1,000 minimum spend. For a typical 18th birthday group of 10-15, that's £67-100 per person, often less than a night of buying individual drinks, but with VIP service, bottles, and a reserved area. Weeknight bookings can offer lower minimums." },
+  { question: "Can you go to a London nightclub for your 18th birthday?", answer: "Yes. Most London nightclubs admit guests aged 18 and over, though some doors are older: Cirque Le Soir is 21+ at weekends, 99 Regent Street is 19+ and Maddox Club is 20+. You'll need valid photo ID (passport or driving licence) to enter. For an 18th birthday, a VIP table booking ensures your group gets priority entry and avoids any door queue uncertainty." },
+  { question: "What's the best London club for an 18th birthday?", answer: "Cirque Le Soir is our top recommendation: the live performers, pyrotechnics, and spectacular atmosphere create the most memorable first big night out. Book a Monday or Wednesday, because the door is 21+ at weekends. Reign London is also excellent for bigger groups, with aerial performances and a big room. Both are welcoming to 18th birthday groups." },
+  { question: "How much does an 18th birthday table cost in London?", answer: "Tables start from £800 minimum spend at Cirque Le Soir and Reign London, and from £1,000 at BEAT and Rumour. For a typical 18th birthday group of 10 to 15, a £1,000 table is £67 to £100 per person, often less than a night of buying individual drinks, but with VIP service, bottles, and a reserved area. Weeknight bookings can offer lower minimums." },
   { question: "What should I wear to a London club for my 18th?", answer: "Mayfair clubs require smart dress: no sportswear, trainers, or casual jeans. For men, smart shoes, fitted trousers, and a collared shirt. For women, the dress code is more flexible but still smart. BEAT London has a more relaxed smart-casual dress code." },
 ];
 
 export default function EighteenthBirthdayPage() {
   const topPicks = [
-    { slug: "cirque-le-soir", reason: "The ultimate first big night out. Live performers, pyrotechnic bottle shows, and an atmosphere that makes turning 18 feel monumental. Your group will be genuinely amazed. This is the kind of night you'll tell stories about for years." },
+    { slug: "cirque-le-soir", reason: "The ultimate first big night out. Live performers, pyrotechnic bottle shows, and an atmosphere that makes turning 18 feel monumental. Your group will be genuinely amazed. This is the kind of night you'll tell stories about for years. The door is 18+, but 21+ at weekends, so plan an 18th for a Monday or Wednesday." },
     { slug: "beat-london", reason: "A more relaxed smart-casual dress code and one of the best sound systems in London. House and tech house for an 18th group that wants to dance rather than pose." },
     { slug: "reign-london", reason: "If your 18th group is big (15+), Reign's grand venue with aerial performances creates a celebration that matches the energy of the milestone. The spectacle gives everyone something to remember." },
     { slug: "rumour-london", reason: "Rumour (formerly Tabu) admits 18 and over with photo ID, so an 18th works here; 99 Regent Street, by contrast, is 19+. One intimate room of red velvet booths at 1 Dover Street, open-format hip-hop, RnB and house, and booths from £1,000 minimum spend that cover entry for the whole group. No photos or video in the main room, so the night stays in the room." },
@@ -137,8 +137,8 @@ export default function EighteenthBirthdayPage() {
             </h2>
           </div>
           <div data-reveal>
-            <p className="font-sans text-base leading-[1.8] text-ink-soft mb-6">An 18th birthday group typically ranges from 10-20 people. With a £1,000 minimum spend at most venues, that breaks down to £50-100 per person for the table: covering premium bottles, mixers, a reserved VIP area, and birthday extras. Compare that to buying individual drinks all night at a London bar, and a table often works out cheaper while being significantly more memorable.</p>
-            <p className="font-sans text-base leading-[1.8] text-ink-soft mb-8">Midweek nights (Wednesday and Thursday) often have lower minimum spends, and the atmosphere is still brilliant. A Wednesday birthday at Cirque Le Soir still gets you the full circus experience at a more accessible price point.</p>
+            <p className="font-sans text-base leading-[1.8] text-ink-soft mb-6">An 18th birthday group typically ranges from 10-20 people. With minimum spends from £800 to £1,000 at these venues, that breaks down to roughly £40 to £100 per person for the table: covering premium bottles, mixers, a reserved VIP area, and birthday extras. Compare that to buying individual drinks all night at a London bar, and a table often works out cheaper while being significantly more memorable.</p>
+            <p className="font-sans text-base leading-[1.8] text-ink-soft mb-8">Midweek nights (Wednesday and Thursday) often have lower minimum spends, and the atmosphere is still brilliant. A Wednesday birthday at Cirque Le Soir still gets you the full circus experience at a more accessible price point, and on a Wednesday the door is 18+ rather than the weekend 21+.</p>
             <div className="flex flex-wrap gap-x-8 gap-y-3">
               <Link href="/birthday-table-prices-london" className="group inline-flex items-center gap-2 text-champagne hover:text-champagne-bright text-[0.8125rem] font-semibold uppercase tracking-[0.14em] transition-colors duration-200">
                 Full pricing guide{" "}

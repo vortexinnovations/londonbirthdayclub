@@ -12,7 +12,7 @@ import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 export const metadata: Metadata = {
   title: fitTitle("Birthday Clubs London: 11 Venues Compared (2026)"),
   description:
-    "Compare 11 London birthday clubs side by side: minimum spends from £600 to £1,500, music, nights and group size. Free booking via WhatsApp.",
+    "Compare 11 London birthday clubs side by side: minimum spends from £600 to £1,000, music, nights and group size. Free booking via WhatsApp.",
   alternates: {
     canonical: "https://londonbirthdayclub.com/birthday-clubs-london",
   },
@@ -33,7 +33,7 @@ const faqs = [
   {
     question: "How much does a birthday club table cost in London?",
     answer:
-      "Birthday table minimum spends at London clubs start from £1,000 at most venues, with Tape London starting from £1,500. This covers premium bottles, mixers, and a reserved table for your group. Split across 10 people, that's around £100 per person: comparable to buying individual drinks all night but with VIP service included.",
+      "Birthday table minimum spends at the clubs we book start from £600 at 99 Regent Street, £750 at Tape London and £800 at Cirque Le Soir, Reign London and Selene London, and from £1,000 at most of the others. This covers premium bottles, mixers, and a reserved table for your group. Split across 10 people, that's around £100 per person: comparable to buying individual drinks all night but with VIP service included.",
   },
   {
     question: "Can you get a birthday guestlist at London clubs?",

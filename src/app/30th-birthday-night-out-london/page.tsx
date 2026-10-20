@@ -9,9 +9,9 @@ import FAQSchema from "@/components/FAQSchema";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 export const metadata: Metadata = {
-  title: fitTitle("30th Birthday Night Out London: Top 5 Venues from £1,000"),
+  title: fitTitle("30th Birthday Night Out London: Top 5 Venues from £750"),
   description:
-    "Maddox Club, Dear Darling, Tape, Selene and Scotch of St James are our top 5 London venues for a 30th, with tables from £1,000 and dinner-to-club options.",
+    "Maddox Club, Dear Darling, Tape, Selene and Scotch of St James are our top 5 London venues for a 30th, with tables from £750 and dinner-to-club options.",
   alternates: { canonical: "https://londonbirthdayclub.com/30th-birthday-night-out-london" },
   openGraph: { url: "https://londonbirthdayclub.com/30th-birthday-night-out-london" },
 };
@@ -26,7 +26,7 @@ const faqs = [
 export default function ThirtiethBirthdayPage() {
   const topPicks = [
     { slug: "maddox-club", reason: "The complete 30th birthday experience. Start with Italian dining (genuinely excellent food, not a club afterthought), then transition seamlessly to a house music dancefloor. One venue, one booking, the whole evening sorted. The house music policy attracts a mature, well-dressed crowd that matches the 30th birthday energy perfectly." },
-    { slug: "dear-darling", reason: "If your 30th birthday vision is champagne cocktails in velvet booths surrounded by chandeliers, Dear Darling is perfect. The most elegant birthday setting in Mayfair. Exceptional drinks, opulent interiors, and late-night hours mean you don't need to leave for the celebration to feel complete." },
+    { slug: "dear-darling", reason: "If your 30th birthday vision is champagne cocktails in velvet booths surrounded by chandeliers, Dear Darling is perfect. The most elegant birthday setting in St James's. Exceptional drinks, opulent interiors, and late-night hours mean you don't need to leave for the celebration to feel complete." },
     { slug: "tape-london", reason: "For a 30th that prioritises genuine exclusivity. The members' club atmosphere means your celebration is intimate, personal, and surrounded by quality. Smaller 30th birthday groups of 6-10 who want something truly special will love Tape." },
     { slug: "selene-london", reason: "Selene strikes the balance that 30th birthday groups want: elegant without being intimidating, fun without being chaotic. The refined interiors and balanced music policy work for groups with mixed preferences: everyone enjoys the evening at their own pace." },
     { slug: "scotch-of-st-james", reason: "For the 30th birthday person who values character over gloss. Scotch's Hendrix-era heritage and vintage-meets-luxury interiors create a celebration with genuine personality. The intimate setting means every detail feels personal." },

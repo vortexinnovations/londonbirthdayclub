@@ -12,7 +12,7 @@ import ArticleSchema from "@/components/ArticleSchema";
 export const metadata: Metadata = {
   title: fitTitle("Birthday Party Venues in Mayfair: Plan the Night (2026)"),
   description:
-    "Six birthday clubs in Mayfair and St James's within a 10-minute walk, with tables from £600 to £1,500. Which club suits you, the dress code and a timeline.",
+    "Six birthday clubs in Mayfair and St James's within a 10-minute walk, with tables from £600 to £1,000. Which club suits you, the dress code and a timeline.",
   alternates: { canonical: "https://londonbirthdayclub.com/how-to-plan-a-birthday-night-in-mayfair" },
   openGraph: { url: "https://londonbirthdayclub.com/how-to-plan-a-birthday-night-in-mayfair" },
 };

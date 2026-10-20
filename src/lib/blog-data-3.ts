@@ -213,7 +213,7 @@ export const blogDataPart3: BlogPost[] = [
         heading: "The Rest of the Night: What to Expect",
         headingLevel: "h2",
         content: [
-          "After the birthday moment, the night continues until close (typically 3am, sometimes later). Your table remains yours - bottles are topped up, your host keeps the ice fresh, and the area stays reserved even when your group is on the dancefloor. There's a genuine comfort in having a home base: somewhere to sit, somewhere to leave your jacket, somewhere that's unambiguously yours.",
+          "After the birthday moment, the night continues until close (around 4am at most of the clubs we book, and as late as 6am at some). Your table remains yours - bottles are topped up, your host keeps the ice fresh, and the area stays reserved even when your group is on the dancefloor. There's a genuine comfort in having a home base: somewhere to sit, somewhere to leave your jacket, somewhere that's unambiguously yours.",
           "If your group runs through the minimum spend before the night ends, you can order additional bottles. Your host will let you know where you stand - there are no surprise bills. At the end of the night, you settle the final tab (minimum spend plus any extras) and head home with a genuinely memorable birthday behind you.",
         ],
       },

@@ -11,14 +11,14 @@ import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 export const metadata: Metadata = {
   title: fitTitle("VIP Birthday Tables London: Luxury Packages (2026)"),
   description:
-    "VIP birthday tables at London clubs from £1,000 to £1,500, with a dedicated host, sparkler presentations and premium bottles at Tape, Cirque and more.",
+    "VIP birthday tables at London clubs from £750 at Tape and £800 at Cirque, with a dedicated host, sparkler presentations and premium bottles. Book free.",
   alternates: { canonical: "https://londonbirthdayclub.com/vip-birthday-tables-london" },
   openGraph: { url: "https://londonbirthdayclub.com/vip-birthday-tables-london" },
 };
 
 const faqs = [
   { question: "What makes a VIP table different from a standard table?", answer: "VIP tables are positioned in the best spots: closer to the DJ, centre of the room, or in elevated areas with the best views. They come with enhanced service: a dedicated host, priority bottle delivery, and often better birthday extras like bigger sparkler presentations. The experience feels noticeably more premium." },
-  { question: "How much is a VIP birthday table in London?", answer: "VIP table minimum spends start from £1,000 at most Mayfair clubs, with premium positions ranging £1,500-3,000+ depending on venue, night, and position. Tape London starts from £1,500 for any table. The minimum spend covers premium bottles, mixers, and full VIP service." },
+  { question: "How much is a VIP birthday table in London?", answer: "Table minimum spends start from £600 at 99 Regent Street, £750 at Tape London, £800 at Cirque Le Soir and £1,000 at The Box and Maddox Club. Premium positions cost more and are quoted on request, depending on venue, night, and position. The minimum spend covers premium bottles, mixers, and full VIP service." },
   { question: "Which London club has the best VIP birthday experience?", answer: "Tape London offers the most exclusive VIP experience with its members' club atmosphere. Cirque Le Soir delivers the most spectacular VIP birthday with live performers and pyrotechnic presentations. For elegant luxury, Dear Darling's chandeliered VIP booths are unmatched." },
   { question: "Can I request a specific table position for my birthday?", answer: "Yes. When booking through us, you can request specific positions: centre stage, near the DJ, private corner, or elevated area. We confirm position availability with the venue and lock in the best available spot for your birthday. Early booking gives you the widest choice." },
 ];
@@ -142,7 +142,7 @@ export default function VIPBirthdayTablesPage() {
           </div>
           <div className="space-y-10" data-reveal>
             {[
-              { tier: "Premium", spend: "£1,000 to £1,500", desc: "A standard VIP table at most Mayfair venues. Premium bottles, dedicated host, sparkler presentations, and reserved seating. The entry point to VIP and genuinely excellent.", venues: "Most Mayfair clubs" },
+              { tier: "Premium", spend: "£600 to £1,500", desc: "A standard VIP table at most Mayfair venues. Premium bottles, dedicated host, sparkler presentations, and reserved seating. The entry point to VIP and genuinely excellent.", venues: "Most Mayfair clubs" },
               { tier: "Luxury", spend: "£1,500 to £3,000", desc: "Premium table positions, upgraded bottle selections, enhanced birthday presentations. The sweet spot for a memorable VIP birthday that impresses everyone.", venues: "Tape, Cirque, The Box" },
               { tier: "Ultra-Premium", spend: "£3,000+", desc: "The absolute best table, the finest champagnes, the most dramatic presentations. For milestone birthdays where the budget matches the occasion.", venues: "Tape, Cirque (by arrangement)" },
             ].map(item => (

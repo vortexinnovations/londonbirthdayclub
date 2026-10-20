@@ -37,7 +37,7 @@ const faqs = [
   {
     question: "How much is a birthday VIP table in London?",
     answer:
-      "Minimum table spends start from £1,000 at most London clubs, with Tape London starting from £1,500. This is not a charge on top of drinks. It IS your drinks budget. For a group of 10, that's around £100 per person including premium bottles and VIP service.",
+      "Minimum table spends at the clubs we book start from £600 at 99 Regent Street, £750 at Tape London and £800 at Cirque Le Soir, Reign London and Selene London, and from £1,000 at most of the others. This is not a charge on top of drinks. It IS your drinks budget. For a group of 10, that's around £100 per person including premium bottles and VIP service.",
   },
   {
     question: "Do I need to pay a deposit for a birthday table?",
@@ -294,7 +294,7 @@ export default function BirthdayTableBookingPage() {
 
           <p className="mt-6 font-sans text-[0.8125rem] leading-relaxed tracking-[0.02em] text-ink-faint">
             Based on £1,000 minimum spend (excluding birthday person). Tape
-            London starts from £1,500. Weekend nights may have higher minimums. If numbers drop on the night, see{" "}
+            London starts from £750. Weekend nights may have higher minimums. If numbers drop on the night, see{" "}
             <Link href="/blog/friends-cancel-birthday-night-out-london" className="text-champagne hover:text-champagne-bright underline decoration-champagne/30 underline-offset-4 decoration-[0.5px] transition-colors duration-200">what to do when friends cancel a birthday night out</Link>.
           </p>
         </div>

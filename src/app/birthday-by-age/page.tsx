@@ -33,7 +33,7 @@ const faqs = [
   {
     question: "Is Mayfair good for a 25th birthday?",
     answer:
-      "Mayfair is excellent for a 25th birthday. Venues like Tape London, Cirque Le Soir and The Box offer the perfect blend of high energy and style that suits the 25th birthday demographic. Minimum spends start from £1,000, which works well when split across a group of 8-15.",
+      "Mayfair is excellent for a 25th birthday. Tape London in Mayfair, and Cirque Le Soir and The Box in nearby Soho, offer the perfect blend of high energy and style that suits the 25th birthday demographic. Minimum spends start from £750 at Tape London, £800 at Cirque Le Soir and £1,000 at The Box, which works well when split across a group of 8 to 15.",
   },
 ];
 
@@ -51,7 +51,7 @@ const milestones = [
         name: "Cirque Le Soir",
         slug: "cirque-le-soir",
         reason:
-          "The live performers, theatrical atmosphere, and party energy make Cirque the ultimate 21st birthday experience. Your group will be genuinely amazed: fire breathers, acrobats, and pyrotechnic bottle shows create the kind of spectacle that makes turning 21 feel monumental.",
+          "The live performers, theatrical atmosphere, and party energy make Cirque the ultimate 21st birthday experience. Your group will be genuinely amazed: fire breathers, acrobats, and pyrotechnic bottle shows create the kind of spectacle that makes turning 21 feel monumental. For an 18th, book a Monday or Wednesday: the door is 18+, but 21+ at weekends.",
       },
       {
         name: "Reign London",
@@ -86,7 +86,7 @@ const milestones = [
       },
     ],
     budgetTip:
-      "25th birthday groups tend to be 8 to 15 people. With minimum spends from £1,000, you're looking at £70 to 125 per person for the table. Friday and Saturday nights have higher minimums but bigger atmospheres.",
+      "25th birthday groups tend to be 8 to 15 people. With minimum spends from £750 to £1,000, you're looking at about £50 to £125 per person for the table. Friday and Saturday nights have higher minimums but bigger atmospheres.",
   },
   {
     age: "30th",

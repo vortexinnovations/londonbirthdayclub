@@ -32,7 +32,7 @@ const faqs = [
   {
     question: "What is the minimum spend for a birthday table in London?",
     answer:
-      "Minimum spends start from around £1,000 at most Mayfair clubs and can go higher on peak nights (Fridays and Saturdays) or for premium table positions. This covers bottles for your group. It's not an additional fee on top of drinks.",
+      "Minimum spends at Mayfair clubs start from about £600 to £1,000 (£600 at 99 Regent Street, £750 at Tape London) and can go higher on peak nights (Fridays and Saturdays) or for premium table positions. This covers bottles for your group. It's not an additional fee on top of drinks.",
   },
   {
     question: "Do clubs provide birthday extras like cake and sparklers?",
