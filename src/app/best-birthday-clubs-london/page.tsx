@@ -34,7 +34,7 @@ const faqs = [
   {
     question: "Which Mayfair club is cheapest for a birthday?",
     answer:
-      "Most Mayfair clubs start from £1,000 minimum spend; 99 Regent Street (formerly Cuckoo Club), at the Piccadilly Circus end of Regent Street, starts from £600. Weeknight bookings (Wednesday and Thursday) often have lower minimums than weekends. Cirque Le Soir on Wednesdays and Thursday nights at Mayfair clubs such as Maddox Club and Scotch of St James can offer more accessible entry points for birthday groups.",
+      "Most Mayfair clubs start from £1,000 minimum spend; 99 Regent Street (formerly Cuckoo Club), at the Piccadilly Circus end of Regent Street, starts from £600. Weeknight bookings (Wednesday and Thursday) often have lower minimums than weekends. Cirque Le Soir on Wednesdays and Thursday nights at clubs such as Maddox Club in Mayfair and Scotch of St James can offer more accessible entry points for birthday groups.",
   },
 ];
 

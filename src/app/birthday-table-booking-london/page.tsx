@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Birthday Table Booking London | VIP Birthday Packages",
     description:
-      "VIP birthday tables at London's best clubs. Bottles, sparklers, cake, and personal service from £1,000. Book free via WhatsApp.",
+      "VIP birthday tables at London's best clubs. Bottles, sparklers, cake, and personal service, with tables from £600. Book free via WhatsApp.",
     url: "https://londonbirthdayclub.com/birthday-table-booking-london",
   },
 };
@@ -100,7 +100,7 @@ export default function BirthdayTableBookingPage() {
               everything arranged for you, completely free.
             </p>
             <p className="font-sans text-[0.75rem] uppercase tracking-[0.18em] text-ink-faint mb-10">
-              11 venues &middot; Tables from £1,000 &middot; Book in 2 minutes
+              11 venues &middot; Tables from £600 &middot; Book in 2 minutes
               via WhatsApp
             </p>
             <WhatsAppCTA

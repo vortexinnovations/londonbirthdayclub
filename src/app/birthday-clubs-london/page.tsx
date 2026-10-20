@@ -87,14 +87,14 @@ export default function BirthdayClubsLondonPage() {
               <em className="italic text-champagne font-normal">London</em>
             </h1>
             <p className="font-sans text-[1.0625rem] leading-[1.8] text-ink-soft max-w-xl mb-6">
-              Thirteen premium London nightclubs that specialise in birthday
+              {openClubs.length} premium London nightclubs that specialise in birthday
               celebrations. VIP tables, bottle service, sparklers, birthday cakes,
               and unforgettable nights: all bookable free via WhatsApp.
             </p>
             <p className="font-sans text-[0.75rem] uppercase tracking-[0.18em] text-ink-faint mb-10">
               Tables from{" "}
               <span className="font-display italic font-medium text-lg normal-case tracking-normal text-champagne">
-                £1,000
+                £600
               </span>{" "}
               &middot; Free booking service &middot; WhatsApp support
             </p>

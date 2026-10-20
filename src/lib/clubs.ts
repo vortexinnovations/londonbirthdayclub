@@ -357,8 +357,8 @@ export const clubs: Club[] = [
     name: "Scotch of St James",
     shortName: "Scotch",
     tagline: "The Iconic Birthday in a Historic Setting",
-    location: "Mayfair, London",
-    area: "Mayfair",
+    location: "St James's, London",
+    area: "St James's",
     minSpend: "£1,000",
     musicPolicy: "Mixed: Hip-Hop, RnB, House, depending on the night",
     dressCode: "Smart stylish. Scotch has heritage: respect the dress code. No sportswear or casual attire.",
@@ -368,7 +368,7 @@ export const clubs: Club[] = [
     bestFor: "Birthdays with character in a venue with genuine history",
     status: "open",
     description:
-      "Scotch of St James is one of London's most storied nightclub locations, with a history stretching back to the 1960s when Jimi Hendrix himself was a regular. That rock'n'roll heritage permeates the venue today: the interiors blend vintage elegance with modern luxury, creating a space that feels like it has stories to tell. For birthdays, Scotch offers something no other Mayfair club can: genuine character and history, combined with modern VIP service.",
+      "Scotch of St James is one of London's most storied nightclub locations, with a history stretching back to the 1960s when Jimi Hendrix himself was a regular. That rock'n'roll heritage permeates the venue today: the interiors blend vintage elegance with modern luxury, creating a space that feels like it has stories to tell. For birthdays, Scotch offers something the Mayfair clubs can't: genuine character and history, combined with modern VIP service.",
     birthdayHighlights: [
       "Historic venue with genuine 1960s heritage (Hendrix era)",
       "Intimate setting with bags of character",
@@ -396,7 +396,7 @@ export const clubs: Club[] = [
     shortName: "Dear Darling",
     tagline: "The Elegant Cocktail Birthday",
     location: "91 Jermyn Street, St James's",
-    area: "Mayfair",
+    area: "St James's",
     minSpend: "£1,000",
     musicPolicy: "House, Soulful House, Cocktail Lounge",
     dressCode: "Smart elegant. Dear Darling is refined: dress to match the chandeliers.",
@@ -406,11 +406,11 @@ export const clubs: Club[] = [
     bestFor: "Elegant, cocktail-focused birthday celebrations",
     status: "open",
     description:
-      "Dear Darling is Mayfair's most opulent bar, a venue that feels like stepping into a lavishly decorated private salon. Think chandeliers, velvet booths, ornate detailing, and a cocktail programme that rivals the best bars in the city. With late-night hours that push it into club territory, Dear Darling occupies a unique space: more refined than a nightclub, more exciting than a cocktail bar. For birthdays where elegance is the priority, this is the venue.",
+      "Dear Darling is St James's most opulent bar, a venue that feels like stepping into a lavishly decorated private salon. Think chandeliers, velvet booths, ornate detailing, and a cocktail programme that rivals the best bars in the city. With late-night hours that push it into club territory, Dear Darling occupies a unique space: more refined than a nightclub, more exciting than a cocktail bar. For birthdays where elegance is the priority, this is the venue.",
     birthdayHighlights: [
       "Stunning opulent interiors with chandeliers and velvet",
       "Exceptional cocktail programme alongside bottle service",
-      "The most photogenic birthday venue in Mayfair",
+      "The most photogenic birthday venue in St James's",
       "Late-night hours mean the party goes on",
       "Intimate, luxurious atmosphere ideal for milestone birthdays",
     ],
@@ -628,7 +628,7 @@ export const clubs: Club[] = [
       "Maison Close was a French-inspired house music club at 9 Swallow Street in Mayfair, in the former Kadies space. Its vintage chandeliers, velvet seating, red accents and capacity of around 160 made it feel more like a Parisian salon than a nightclub. Maison Close has now closed.",
     birthdayHighlights: [],
     whatToExpect:
-      "Maison Close has closed. If you were planning a birthday there, Maddox Club pairs dinner with house music downstairs, Selene London offers refined house and commercial sets in an elegant room, and Scotch of St James is a small, storied Mayfair club for an intimate celebration.",
+      "Maison Close has closed. If you were planning a birthday there, Maddox Club pairs dinner with house music downstairs, Selene London offers refined house and commercial sets in an elegant room, and Scotch of St James is a small, storied St James's club for an intimate celebration.",
     birthdayExtras: "Maison Close has closed.",
     atmosphere: "Maison Close has closed.",
     groupSizeAdvice: "Maison Close has closed.",

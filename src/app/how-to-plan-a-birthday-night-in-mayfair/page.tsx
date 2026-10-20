@@ -12,7 +12,7 @@ import ArticleSchema from "@/components/ArticleSchema";
 export const metadata: Metadata = {
   title: fitTitle("Birthday Party Venues in Mayfair: Plan the Night (2026)"),
   description:
-    "Six Mayfair birthday clubs within a 10-minute walk, with tables from £600 to £1,500. Which club suits you, the dress code and a timeline for the night.",
+    "Six birthday clubs in Mayfair and St James's within a 10-minute walk, with tables from £600 to £1,500. Which club suits you, the dress code and a timeline.",
   alternates: { canonical: "https://londonbirthdayclub.com/how-to-plan-a-birthday-night-in-mayfair" },
   openGraph: { url: "https://londonbirthdayclub.com/how-to-plan-a-birthday-night-in-mayfair" },
 };
@@ -25,7 +25,7 @@ const faqs = [
 ];
 
 export default function MayfairBirthdayPage() {
-  const mayfairClubs = openClubs.filter(c => c.area === "Mayfair");
+  const mayfairClubs = openClubs.filter(c => c.area === "Mayfair" || c.area === "St James's");
 
   return (
     <>
@@ -89,7 +89,7 @@ export default function MayfairBirthdayPage() {
             </p>
             <h2 className="font-display font-medium text-[2rem] leading-[1.12] sm:text-4xl lg:text-[2.75rem] tracking-[-0.01em] text-ink max-w-2xl">
               Birthday Clubs in{" "}
-              <em className="italic text-champagne font-normal">Mayfair</em>
+              <em className="italic text-champagne font-normal">Mayfair</em> and St James&apos;s
             </h2>
           </div>
           <div className="border-t border-hairline" data-reveal>
