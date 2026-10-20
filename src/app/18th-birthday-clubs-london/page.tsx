@@ -26,6 +26,7 @@ export default function EighteenthBirthdayPage() {
     { slug: "cirque-le-soir", reason: "The ultimate first big night out. Live performers, pyrotechnic bottle shows, and an atmosphere that makes turning 18 feel monumental. Your group will be genuinely amazed. This is the kind of night you'll tell stories about for years." },
     { slug: "beat-london", reason: "A more relaxed smart-casual dress code and one of the best sound systems in London. House and tech house for an 18th group that wants to dance rather than pose." },
     { slug: "reign-london", reason: "If your 18th group is big (15+), Reign's grand venue with aerial performances creates a celebration that matches the energy of the milestone. The spectacle gives everyone something to remember." },
+    { slug: "rumour-london", reason: "Rumour (formerly Tabu) admits 18 and over with photo ID, so an 18th works here; 99 Regent Street, by contrast, is 19+. One intimate room of red velvet booths at 1 Dover Street, open-format hip-hop, RnB and house, and booths from £1,000 minimum spend that cover entry for the whole group. No photos or video in the main room, so the night stays in the room." },
   ];
 
   return (

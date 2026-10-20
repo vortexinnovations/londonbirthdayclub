@@ -33,6 +33,17 @@ const nextConfig: NextConfig = {
         destination: "/best-birthday-clubs-london",
         permanent: true,
       },
+      // Renamed venues: the old club pages live on under the new names.
+      {
+        source: "/clubs/cuckoo-club",
+        destination: "/clubs/99-regent-street",
+        permanent: true,
+      },
+      {
+        source: "/clubs/tabu-london",
+        destination: "/clubs/rumour-london",
+        permanent: true,
+      },
     ];
   },
 };

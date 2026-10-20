@@ -22,6 +22,24 @@ export interface Club {
   status: "open" | "closed";
   /** Renamed venues only (still open and bookable; name holds "New (formerly Old)"): the old name people still search for. */
   formerName?: string;
+  /**
+   * An open venue that changed its name and has full data under the new one:
+   * the old name goes in the title, a line under the H1 and the structured
+   * data as alternateName. Unlike formerName it leaves the layout as for any
+   * open club (prices, dress code, booking CTA).
+   */
+  previousName?: string;
+  /** Postal address and hours for the NightClub structured data (open venues with a confirmed address). */
+  streetAddress?: string;
+  postalCode?: string;
+  /** schema.org opening hours, e.g. "We-Sa 23:00-04:00". */
+  openingHours?: string;
+  /** Hero and card image alt text naming the venue and the room; the generic line is used when unset. */
+  heroAlt?: string;
+  /** Extra photos for the venue page, served through the /gallery/images rewrite. */
+  photos?: { src: string; alt: string }[];
+  /** Venue-specific questions appended to the generated FAQ. */
+  extraFaqs?: { question: string; answer: string }[];
   /** Closed venues: the statement shown at the top of the venue page. */
   closedNote?: string;
   alternatives?: string[];
@@ -171,37 +189,58 @@ export const clubs: Club[] = [
       "Saturday nights have the fullest performance schedule. Arrive by 11pm to catch the earlier shows from your table before the club hits peak energy around midnight.",
   },
   {
-    slug: "tabu-london",
-    name: "Rumour (formerly TABU)",
+    slug: "rumour-london",
+    name: "Rumour",
     shortName: "Rumour",
-    formerName: "TABU London",
-    tagline: "TABU Is Now Rumour",
+    previousName: "Tabu",
+    tagline: "The Red Velvet Booth Birthday",
     location: "1 Dover Street, Mayfair",
     area: "Mayfair",
-    minSpend: "On request",
-    musicPolicy: "To be confirmed",
-    dressCode: "Not confirmed for Rumour yet: ask us when you book.",
+    minSpend: "£1,000",
+    musicPolicy: "Open Format, Hip-Hop, RnB, House",
+    dressCode: "Smart and dressed up: heels for ladies, a considered look for men. No sportswear or fancy dress; trainers at the door's discretion. Entry is 18+ with photo ID.",
     openingNights: "Wednesday, Thursday, Friday, Saturday",
-    capacity: "To be confirmed",
-    birthdayRating: 0,
-    bestFor: "Birthday tables on Dover Street, Wednesday to Saturday",
+    capacity: "Intimate (approx. 200)",
+    birthdayRating: 4,
+    bestFor: "Intimate booth birthdays for groups aged 18 and over",
     status: "open",
+    streetAddress: "1 Dover Street",
+    postalCode: "W1S 4LD",
+    openingHours: "We-Sa 23:00-04:00",
+    heroAlt: "The red velvet booths in the main room at Rumour",
     description:
-      "TABU is now Rumour. The Mayfair club at 1 Dover Street trades under its new name and opens Wednesday to Saturday from 11pm. People still search for TABU when planning a birthday, so this page covers the change and how to book a birthday table at Rumour, free via WhatsApp.",
+      "Rumour (formerly Tabu) is the one-room club at 1 Dover Street in Mayfair, a few minutes from Green Park: a full rebrand under the same ownership, with a new design built around booths of deep red velvet, dark panelling, a chandelier and low warm lighting, for around 200 people. It fills early by design, which suits a birthday: the room is busy from early in the night. Booths start from £1,000 minimum spend, spent on drinks and covering entry for everyone at the table, which across eight people is roughly £125 each. The door is 18+ with photo ID, so an 18th birthday is possible here, and a no-photography rule in the main room keeps the night in the room rather than on a feed.",
     birthdayHighlights: [
-      "TABU is now Rumour, at 1 Dover Street in Mayfair",
-      "Open Wednesday to Saturday from 11pm",
-      "A short walk from Green Park station",
-      "Birthday tables booked free through us on WhatsApp",
+      "One intimate room of around 200, built around red velvet booths",
+      "Booths from £1,000 minimum spend, covering entry for the whole group",
+      "18+ with photo ID, so an 18th birthday works here",
+      "Open-format hip-hop, RnB and house, read to the room on the night",
+      "No photos or video in the main room, so the night stays private",
     ],
     whatToExpect:
-      "Rumour is the new name for the club at 1 Dover Street, the room that was TABU. Doors open from 11pm, Wednesday to Saturday. Music, dress code and table minimums are the new venue's own, and none of TABU's old terms carry over, so message us with your date and group size for current birthday table options. History: under the TABU name, the room was a Japanese-underground-themed Mayfair club.",
+      "Dover Street sits between Piccadilly and Grafton Street, a few minutes' walk from Green Park. Inside is a single room of around 200: deep red velvet booths, where the birthday tables are, with dark panelling, a chandelier and low warm lighting. The music is open format, hip-hop, RnB and house, read to the room on the night, and the room fills early by design. The floor team enforce a no-photography policy in the main room and on the dance floor, the clearest difference from the clubs around it: good for a birthday that wants to feel private, and worth telling the group about if they were planning to film. Doors are 11pm to 4am, Wednesday to Saturday. Wednesday and Thursday are the more relaxed nights; Friday and Saturday fill out and are worth arranging in advance.",
     birthdayExtras:
-      "Ask us on WhatsApp which birthday extras Rumour can arrange for your table, such as sparklers, cake or decorations, and we will confirm what is available on your night.",
-    atmosphere: "Not confirmed for Rumour yet.",
-    groupSizeAdvice: "Not confirmed for Rumour yet: tell us your group size and we will check table options.",
+      "Birthday extras at Rumour are arranged on request: tell us when you book if you want sparklers with the bottles or a cake for the booth, and we will confirm what the venue can do on your night. Plan around the no-photography rule in the main room: the birthday photo is best taken before you go in. The booth minimum is spent on drinks, not charged on top, and it covers entry for everyone in the group.",
+    atmosphere:
+      "Deep red velvet, dark panelling, a chandelier and low warm lighting. The venue presents itself as a members' club, and we book booths and guestlist for non-members. The dress code is smart and dressed up, the room is intimate, and the no-photography policy means no photos or video in the main room or on the dance floor, so the group's attention stays on the birthday. Wednesday and Thursday are the more relaxed nights; Friday and Saturday fill out.",
+    groupSizeAdvice:
+      "The £1,000 booth minimum across eight people works out at roughly £125 each, all of it spent on drinks, and it covers entry for the whole group. Men and mixed groups come in on the booth: the ladies' guestlist is free to £20 on the door depending on the night and how busy it is, but men are not added to it, so a mixed birthday group should book a booth rather than rely on the list. For a bigger celebration, the 200-capacity room suits a private takeover: enquiries go through us, with terms on request.",
     proTip:
-      "TABU is now Rumour, so look for it under the new name. Doors open from 11pm, Wednesday to Saturday.",
+      "Book a booth rather than the guestlist if there are men in the group: the list is ladies only, and a booth is the route in for men and mixed groups. For an 18th birthday, Rumour works where 99 Regent Street does not, because the door is 18+ with photo ID. Wednesday and Thursday are the more relaxed nights and the easiest for guestlist entry; Friday and Saturday fill out and are worth arranging in advance.",
+    extraFaqs: [
+      {
+        question: "Is Rumour the club that used to be Tabu?",
+        answer: "Yes. Rumour is the club at 1 Dover Street that traded as Tabu: same ownership, a full rebrand with a new design and concept, opened in October 2026. We book its booths and guestlist under the new name.",
+      },
+      {
+        question: "Can you celebrate an 18th birthday at Rumour?",
+        answer: "Yes. The door is 18+ with photo ID. Book a booth so the whole group comes in on the table, because the guestlist is ladies only and men are not added to it.",
+      },
+      {
+        question: "Can you take photos at Rumour?",
+        answer: "No. Rumour has a no-photography policy in the main room and on the dance floor, enforced by the floor team, so take the birthday photo before you go in.",
+      },
+    ],
   },
   {
     slug: "funky-buddha",
@@ -232,38 +271,64 @@ export const clubs: Club[] = [
     proTip: "Funky Buddha has closed. For a similar birthday, try Tape London, Cirque Le Soir or Reign London.",
   },
   {
-    slug: "cuckoo-club",
-    name: "99 Regent Street (formerly Cuckoo Club)",
+    slug: "99-regent-street",
+    name: "99 Regent Street",
     shortName: "99 Regent Street",
-    formerName: "Cuckoo Club",
-    tagline: "Cuckoo Club Is Now 99 Regent Street",
+    previousName: "Cuckoo Club",
+    tagline: "The Two-Floor Birthday by Piccadilly Circus",
     location: "Swallow Street, by Piccadilly Circus",
     area: "Mayfair",
     minSpend: "£600",
-    musicPolicy: "To be confirmed",
-    dressCode: "Not confirmed for 99 Regent Street yet: ask us when you book. Entry is for over 19s.",
+    musicPolicy: "Hip-Hop, RnB (upstairs), House (downstairs)",
+    dressCode: "Elegant and enforced. No sportswear, running trainers, shorts, caps or fancy dress; clean minimal trainers at the door's discretion. Black is the safe choice. Entry is 19+ with physical photo ID.",
     openingNights: "Wednesday, Thursday, Friday, Saturday",
-    capacity: "To be confirmed",
-    birthdayRating: 0,
-    bestFor: "Birthday tables by Piccadilly Circus from £600, over 19s",
+    capacity: "Two floors (approx. 200 each)",
+    birthdayRating: 4,
+    bestFor: "Mixed-music birthdays for groups aged 19 and over",
     status: "open",
+    streetAddress: "99 Regent Street",
+    postalCode: "W1B 4EZ",
+    openingHours: "We-Sa 23:00-04:00",
+    heroAlt: "The upstairs main room at 99 Regent Street",
+    photos: [
+      { src: "/gallery/images/99-regent-street-staircase.jpg", alt: "The staircase between the two floors at 99 Regent Street" },
+      { src: "/gallery/images/99-regent-street-bar.jpg", alt: "The long bar at 99 Regent Street" },
+      { src: "/gallery/images/99-regent-street-downstairs.jpg", alt: "The downstairs house room at 99 Regent Street" },
+      { src: "/gallery/images/99-regent-street-entrance.jpg", alt: "The entrance to 99 Regent Street on Swallow Street" },
+    ],
     description:
-      "Cuckoo Club is now 99 Regent Street. The venue on Swallow Street, by Piccadilly Circus, trades under its new name and opens Wednesday to Saturday for over 19s, with tables from £600. People still search for Cuckoo Club when planning a birthday, so this page covers the change and how to book a birthday table at 99 Regent Street, free via WhatsApp.",
+      "99 Regent Street (formerly Cuckoo Club) is the two-floor club at the Piccadilly Circus end of Regent Street, with its entrance on Swallow Street. Upstairs is the main room, where most of the tables sit and the music is open-format hip-hop and RnB; downstairs is darker and more dance-focused, with house. Dark panelling, warm low lighting, banquette seating and a long bar frame a birthday table, and on Friday and Saturday, when both floors run, the staircase between them lets a mixed group switch sounds without leaving the building. Tables start from £600 minimum spend, spent on drinks and covering entry for the whole group. Entry is 19+ with physical photo ID, so it suits a 21st or later rather than an 18th.",
     birthdayHighlights: [
-      "Cuckoo Club is now 99 Regent Street, on Swallow Street by Piccadilly Circus",
-      "Tables from £600 minimum spend",
-      "Open Wednesday to Saturday",
-      "Over 19s only: every guest needs photo ID",
-      "Birthday tables booked free through us on WhatsApp",
+      "Two floors on Friday and Saturday: hip-hop and RnB upstairs, house downstairs",
+      "Tables from £600 minimum spend, covering entry for the whole group",
+      "Entrance on Swallow Street, two minutes from Piccadilly Circus",
+      "Banquette seating, a long bar and warm low lighting around the table",
+      "Sparklers, a cake and other birthday extras on request",
     ],
     whatToExpect:
-      "99 Regent Street is the new name for the Swallow Street venue that was Cuckoo Club, by Piccadilly Circus. It opens Wednesday to Saturday, entry is for over 19s, and tables start from £600 minimum spend. Music and dress code are the new venue's own, and none of Cuckoo Club's old terms carry over, so message us with your date and group size for birthday table options. History: under the Cuckoo Club name, the venue was a long-running Swallow Street club.",
+      "The entrance is on Swallow Street, the door the Cuckoo Club used, two minutes from Piccadilly Circus, and a staircase links the two floors inside. Upstairs is the main room, where most of the tables sit and the music is open-format hip-hop and RnB. Downstairs is darker and more dance-focused, with house for the part of your group that wants the dance floor. Friday and Saturday run both floors; on Wednesday and Thursday one floor opens, so a midweek birthday is a one-room night. Doors are 11pm to 4am on every opening night, and every guest needs physical photo ID showing they are 19 or over.",
     birthdayExtras:
-      "Ask us on WhatsApp which birthday extras 99 Regent Street can arrange for your table, such as sparklers, cake or decorations, and we will confirm what is available on your night.",
-    atmosphere: "Not confirmed for 99 Regent Street yet.",
-    groupSizeAdvice: "Not confirmed for 99 Regent Street yet: tell us your group size and we will check table options.",
+      "Birthday extras at 99 Regent Street are arranged on request: tell us when you book if you want sparklers with the bottles or a cake brought to the table, and we will confirm what the venue can do on your night. The table minimum is spent on drinks, not charged on top, and it covers entry for everyone in the group. VIP and larger tables are quoted on request.",
+    atmosphere:
+      "Dark panelling, warm low lighting, banquette seating and a long bar. Membership exists at the venue, though its details are not published, and we book tables and guestlist for non-members. The dress code is elegant and enforced, and the 19+ door is a year older than most London clubs. Upstairs is the social floor, built around the tables; downstairs is darker and more dance-focused.",
+    groupSizeAdvice:
+      "The £600 starting minimum is the lowest of the clubs on this site: it is spent on drinks the group would order anyway, and it covers entry for everyone at the table. It rises with the night, the group size and the table's position, and VIP and larger tables are quoted on request. Friends who are not at the table can come on the guestlist, which is by request and open to mixed groups (it is not a ladies-only list), with entry free to about £50 depending on the night and arrival time; we confirm names and the night's terms before you go. For a bigger celebration, private hire is arranged through us, with capacities, minimums and terms on request.",
     proTip:
-      "Entry is for over 19s, so check every guest's age and bring photo ID. That rules it out for an 18th birthday.",
+      "Check every guest is 19 or over before you book: the door asks for physical photo ID and is a year older than most London clubs, so one 18-year-old friend can hold up the whole group. If the group wants both sounds, book a Friday or Saturday, when both floors run; on Wednesday and Thursday one floor opens.",
+    extraFaqs: [
+      {
+        question: "Is 99 Regent Street the old Cuckoo Club?",
+        answer: "Yes. 99 Regent Street is the venue that was the Cuckoo Club, and the Cuckoo Club name is no longer used. The Cuckoo founders are reunited on the same floor with a new concept, opened in October 2026, and the entrance is still on Swallow Street.",
+      },
+      {
+        question: "Can you celebrate an 18th birthday at 99 Regent Street?",
+        answer: "No. Entry is 19+ with physical photo ID, a year older than most London doors, so the whole group needs to be 19 or over. For an 18th in Mayfair, Rumour at 1 Dover Street admits 18 and over.",
+      },
+      {
+        question: "Which floor is best for a birthday table at 99 Regent Street?",
+        answer: "Upstairs is the main room, where most of the tables sit, with open-format hip-hop and RnB. Downstairs is house, darker and more dance-focused. Both floors run on Friday and Saturday; one floor opens on Wednesday and Thursday.",
+      },
+    ],
   },
   {
     slug: "scotch-of-st-james",

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import type { ReactNode } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -31,6 +32,32 @@ const DB_BODY_CLASSES = [
   "[&_th]:text-left [&_th]:text-ink [&_th]:font-semibold [&_th]:py-2 [&_th]:pr-4 [&_th]:border-b [&_th]:border-hairline-strong",
   "[&_td]:text-ink-soft [&_td]:py-2 [&_td]:pr-4 [&_td]:border-b [&_td]:border-hairline",
 ].join(" ");
+
+// Code posts may link within the site as [label](/path); everything else in a
+// paragraph is plain text, so posts without the pattern render as before.
+const INLINE_LINK = /\[([^\]]+)\]\((\/[^)\s]*)\)/g;
+
+function renderInline(text: string): ReactNode {
+  if (!text.includes("](/")) return text;
+  const nodes: ReactNode[] = [];
+  let last = 0;
+  for (const match of text.matchAll(INLINE_LINK)) {
+    const start = match.index ?? 0;
+    if (start > last) nodes.push(text.slice(last, start));
+    nodes.push(
+      <Link
+        key={start}
+        href={match[2]}
+        className="text-champagne hover:text-champagne-bright underline decoration-champagne/30 underline-offset-4 decoration-[0.5px] transition-colors duration-200"
+      >
+        {match[1]}
+      </Link>
+    );
+    last = start + match[0].length;
+  }
+  if (last < text.length) nodes.push(text.slice(last));
+  return nodes;
+}
 
 export async function generateMetadata({
   params,
@@ -187,7 +214,7 @@ export default async function BlogPostPage({
                       key={j}
                       className="font-sans text-base leading-[1.8] text-ink-soft mb-5"
                     >
-                      {para}
+                      {renderInline(para)}
                     </p>
                   ))}
                 </section>

@@ -32,7 +32,7 @@ const faqs = [
   {
     question: "Which London clubs are open on a Thursday?",
     answer:
-      "Thursday is a popular night in the West End with several top clubs open: Reign London, Maddox Club, Scotch of St James, Dear Darling, The Box London, Selene London, Rumour (formerly TABU) and 99 Regent Street (formerly Cuckoo Club) all operate on Thursday nights. It's an excellent night for birthdays with strong atmosphere and lower minimum spends than weekends.",
+      "Thursday is a popular night in the West End with several top clubs open: Reign London, Maddox Club, Scotch of St James, Dear Darling, The Box London, Selene London, Rumour (formerly Tabu) and 99 Regent Street (formerly Cuckoo Club) all operate on Thursday nights. It's an excellent night for birthdays with strong atmosphere and lower minimum spends than weekends.",
   },
 ];
 
@@ -238,8 +238,8 @@ export default function BirthdayByNightPage() {
                       "BEAT London": "beat-london",
                       "The Box London": "the-box-london",
                       "Selene London": "selene-london",
-                      "Rumour": "tabu-london",
-                      "99 Regent Street": "cuckoo-club",
+                      "Rumour": "rumour-london",
+                      "99 Regent Street": "99-regent-street",
                     };
                     return (
                       <Link

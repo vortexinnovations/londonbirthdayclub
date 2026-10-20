@@ -9,7 +9,7 @@ export default function ClubCard({ club }: { club: Club }) {
       <div className="frame-mat img-editorial relative aspect-[4/5] sm:aspect-[16/10] overflow-hidden">
         <Image
           src={getClubImage(club.slug)}
-          alt={`Birthday celebration at ${club.name}`}
+          alt={club.heroAlt ?? `Birthday celebration at ${club.name}`}
           fill
           className="object-cover transition-transform duration-[900ms] ease-[var(--ease-lux)] group-hover:scale-[1.04]"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"

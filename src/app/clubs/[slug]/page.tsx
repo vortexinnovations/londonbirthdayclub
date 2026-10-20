@@ -11,6 +11,7 @@ import {
 } from "@/lib/clubs";
 import WhatsAppCTA from "@/components/WhatsAppCTA";
 import FAQSchema from "@/components/FAQSchema";
+import NightClubSchema from "@/components/NightClubSchema";
 import { getClubImage } from "@/lib/images";
 
 export async function generateStaticParams() {
@@ -61,14 +62,22 @@ export async function generateMetadata({
     };
   }
 
+  // A venue with a previous name keeps the open-club layout; the old name rides along in the title.
+  const titleName = club.previousName
+    ? `${club.name} (formerly ${club.previousName})`
+    : club.name;
   return {
-    title: `${club.name} Birthday | Birthday Table & Packages at ${club.name}`,
-    description: `Celebrate your birthday at ${club.name}, ${club.location}. ${club.bestFor}. VIP tables from ${club.minSpend}, sparklers, cake, and birthday extras. Book free via WhatsApp.`,
+    title: club.previousName
+      ? `${titleName} Birthday | Birthday Table & Packages`
+      : `${club.name} Birthday | Birthday Table & Packages at ${club.name}`,
+    description: club.previousName
+      ? `Celebrate your birthday at ${titleName}, ${club.location}. ${club.bestFor}. Tables from ${club.minSpend}, birthday extras on request. Book free via WhatsApp.`
+      : `Celebrate your birthday at ${club.name}, ${club.location}. ${club.bestFor}. VIP tables from ${club.minSpend}, sparklers, cake, and birthday extras. Book free via WhatsApp.`,
     alternates: {
       canonical: `https://londonbirthdayclub.com/clubs/${club.slug}`,
     },
     openGraph: {
-      title: `${club.name} Birthday Packages | London Birthday Club`,
+      title: `${titleName} Birthday Packages | London Birthday Club`,
       description: `Birthday table booking at ${club.name}. ${club.tagline}. Tables from ${club.minSpend}. Free booking via WhatsApp.`,
       url: `https://londonbirthdayclub.com/clubs/${club.slug}`,
     },
@@ -112,9 +121,17 @@ export default async function ClubPage({
     },
   ];
   // A renamed venue has no confirmed dress code yet, so it gets no dress code FAQ.
-  const faqs = isRenamed
-    ? allFaqs.filter((f) => !f.question.startsWith("What is the dress code"))
-    : allFaqs;
+  const faqs = [
+    ...(isRenamed
+      ? allFaqs.filter((f) => !f.question.startsWith("What is the dress code"))
+      : allFaqs),
+    ...(club.extraFaqs ?? []),
+  ];
+
+  // A confirmed postal address is shown in full, matching the NightClub structured data.
+  const fullAddress = club.streetAddress
+    ? `${club.streetAddress}, London${club.postalCode ? ` ${club.postalCode}` : ""}`
+    : undefined;
 
   const otherClubs = openClubs.filter((c) => c.slug !== club.slug).slice(0, 4);
   // Closed venues are not sold: no prices, booking FAQ or booking CTA.
@@ -126,6 +143,7 @@ export default async function ClubPage({
   return (
     <>
       {!isClosed && <FAQSchema faqs={faqs} />}
+      {!isClosed && club.streetAddress && <NightClubSchema club={club} />}
 
       {/* Closed Banner */}
       {isClosed && (
@@ -163,7 +181,7 @@ export default async function ClubPage({
       <section className="relative min-h-[64vh] img-editorial flex items-end overflow-hidden">
         <Image
           src={getClubImage(club.slug)}
-          alt={`Birthday celebration at ${club.name} London`}
+          alt={club.heroAlt ?? `Birthday celebration at ${club.name} London`}
           fill
           className="object-cover kenburns"
           priority
@@ -192,6 +210,11 @@ export default async function ClubPage({
                 {isRenamed ? club.shortName : club.name}
               </em>
             </h1>
+            {club.previousName && !isClosed && (
+              <p className="font-sans text-[0.8125rem] tracking-[0.06em] text-ink-faint mb-4">
+                Formerly {club.previousName}
+              </p>
+            )}
             {isClosed && (
               <p className="font-sans font-semibold text-[#d98d75] mb-5">
                 This venue has permanently closed
@@ -276,6 +299,36 @@ export default async function ClubPage({
           </ul>
         </div>
       </section>
+
+      {club.photos && club.photos.length > 0 && (
+      <>
+      <div className="divider-gilt" />
+
+      {/* Photos (venues with their own shared gallery files) */}
+      <section className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto">
+          <p className="flex items-center gap-4 font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.28em] text-champagne mb-8" data-reveal>
+            <span className="hairline-draw block h-px w-10 bg-champagne/60" />
+            Inside {club.shortName}
+          </p>
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6" data-reveal>
+            {club.photos.map((photo) => (
+              <div key={photo.src} className="frame-mat img-editorial relative aspect-[4/5] overflow-hidden">
+                <Image
+                  src={photo.src}
+                  alt={photo.alt}
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 1024px) 50vw, 25vw"
+                />
+                <div className="grade" />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+      </>
+      )}
 
       <div className="divider-gilt" />
       </>
@@ -389,7 +442,7 @@ export default async function ClubPage({
               [
                 { label: "Minimum Table Spend", value: hasMinSpend ? `From ${club.minSpend}` : club.minSpend, price: true },
                 ...(isRenamed ? [{ label: "Formerly", value: renamedFrom }] : []),
-                { label: "Location", value: club.location },
+                { label: "Location", value: fullAddress ?? club.location },
                 { label: "Music Policy", value: club.musicPolicy },
                 { label: "Dress Code", value: club.dressCode },
                 { label: "Opening Nights", value: club.openingNights },

@@ -247,7 +247,7 @@ export const blogDataPart3: BlogPost[] = [
         heading: "Hip-Hop and RnB Birthdays",
         headingLevel: "h2",
         content: [
-          "If your birthday group lives for hip-hop, RnB, and rap, these are your venues. Tape London plays hip-hop and RnB with a more exclusive, members' club atmosphere. Cirque Le Soir pairs hip-hop, RnB and party anthems with live performers. Reign London mixes hip-hop and RnB with commercial and house on a bigger scale. Rumour (formerly TABU) and 99 Regent Street (formerly Cuckoo Club) both open Wednesday to Saturday under their new names and set their own music, so ask us what is playing on your night before you book.",
+          "If your birthday group lives for hip-hop, RnB, and rap, these are your venues. Tape London plays hip-hop and RnB with a more exclusive, members' club atmosphere. Cirque Le Soir pairs hip-hop, RnB and party anthems with live performers. Reign London mixes hip-hop and RnB with commercial and house on a bigger scale. Rumour (formerly Tabu) plays open format across hip-hop, RnB and house in one intimate room, and 99 Regent Street (formerly Cuckoo Club) puts open-format hip-hop and RnB in its upstairs main room with house downstairs; both open Wednesday to Saturday.",
           "For pure hip-hop and RnB energy where the dancefloor is the focus, Cirque Le Soir is the strongest choice. For a more exclusive hip-hop experience, Tape delivers at a higher price point. For groups with mixed preferences, Reign London's broader mix is hard to beat.",
         ],
       },
@@ -489,7 +489,7 @@ export const blogDataPart3: BlogPost[] = [
         heading: "Where to Find Last-Minute Availability",
         headingLevel: "h2",
         content: [
-          "Thursday nights are the easiest to book last-minute - venues like Scotch of St James often have tables available even a few days before, and Rumour (formerly TABU) and 99 Regent Street (formerly Cuckoo Club), both open Wednesday to Saturday, are worth asking about at short notice. Friday nights have more availability than Saturday, and venues like BEAT London and Selene London tend to fill up later than the marquee names.",
+          "Thursday nights are the easiest to book last-minute - venues like Scotch of St James often have tables available even a few days before, and Rumour (formerly Tabu) and 99 Regent Street (formerly Cuckoo Club), both open Wednesday to Saturday, are worth asking about at short notice. Friday nights have more availability than Saturday, and venues like BEAT London and Selene London tend to fill up later than the marquee names.",
           "Even on Saturdays, cancellations and reshuffles mean tables sometimes open up midweek. We have direct lines to venue teams and can spot these opportunities before they appear publicly. The key is messaging us early in the week - even a Monday message for a Saturday birthday gives us time to work with the venues.",
         ],
       },

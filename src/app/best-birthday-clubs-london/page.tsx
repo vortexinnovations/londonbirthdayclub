@@ -33,7 +33,7 @@ const faqs = [
   {
     question: "Which Mayfair club is cheapest for a birthday?",
     answer:
-      "Most Mayfair clubs start from £1,000 minimum spend. Weeknight bookings (Wednesday and Thursday) often have lower minimums than weekends. Cirque Le Soir on Wednesdays and Thursday nights at Mayfair clubs such as Maddox Club and Scotch of St James can offer more accessible entry points for birthday groups.",
+      "Most Mayfair clubs start from £1,000 minimum spend; 99 Regent Street (formerly Cuckoo Club), at the Piccadilly Circus end of Regent Street, starts from £600. Weeknight bookings (Wednesday and Thursday) often have lower minimums than weekends. Cirque Le Soir on Wednesdays and Thursday nights at Mayfair clubs such as Maddox Club and Scotch of St James can offer more accessible entry points for birthday groups.",
   },
 ];
 
@@ -103,17 +103,17 @@ const rankings = [
   },
   {
     position: 10,
-    slug: "tabu-london",
+    slug: "rumour-london",
     verdict:
-      "TABU is now Rumour, and the club at 1 Dover Street takes birthday bookings again under its new name. Rumour opens Wednesday to Saturday from 11pm, a short walk from Green Park station. It sits at ten because it is new under this name: music, dress code and table minimums are Rumour's own, and none of TABU's old terms carry over. Message us for current birthday table options.",
-    bestForTag: "TABU Is Now Rumour",
+      "Rumour (formerly Tabu) is one intimate room at 1 Dover Street, built around deep red velvet booths with dark panelling and a chandelier, and it fills early by design. Booths start from £1,000 minimum spend and cover entry for the whole group, which matters here because the guestlist is ladies only. Two things earn it a place on this list: the door is 18+ with photo ID, so it works for an 18th, and a no-photography policy in the main room keeps a birthday private. Open Wednesday to Saturday, 11pm to 4am.",
+    bestForTag: "Intimate Booths, 18 and Over",
   },
   {
     position: 11,
-    slug: "cuckoo-club",
+    slug: "99-regent-street",
     verdict:
-      "Cuckoo Club is now 99 Regent Street, on Swallow Street by Piccadilly Circus. It opens Wednesday to Saturday for over 19s, with tables from £600 minimum spend, so it suits a birthday group that is all 19 or older. It sits at eleven because it is new under this name, and none of Cuckoo Club's old terms carry over.",
-    bestForTag: "Cuckoo Club Is Now 99 Regent Street",
+      "99 Regent Street (formerly Cuckoo Club) is the two-floor club with its entrance on Swallow Street, two minutes from Piccadilly Circus: open-format hip-hop and RnB upstairs, where most of the tables sit, and house downstairs. Tables start from £600 minimum spend, the lowest on this list, and cover entry for the whole group. The door is 19+ with physical photo ID, so it suits a 21st and up rather than an 18th. Both floors run on Friday and Saturday; one floor opens on Wednesday and Thursday.",
+    bestForTag: "Two Floors From £600",
   },
 ];
 
@@ -183,7 +183,8 @@ export default function BestClubsPage() {
           </p>
           <div className="space-y-12" data-reveal>
             {rankings.map((item) => {
-              const club = openClubs.find((c) => c.slug === item.slug)!;
+              const club = openClubs.find((c) => c.slug === item.slug);
+              if (!club) return null;
               return (
                 <article
                   key={item.slug}
