@@ -9,9 +9,9 @@ import FAQSchema from "@/components/FAQSchema";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 export const metadata: Metadata = {
-  title: fitTitle("Best Night of the Week for a Birthday in London: Weekday vs Weekend"),
+  title: fitTitle("Best Night for a Birthday in London: Weekday vs Weekend"),
   description:
-    "Which night of the week is best for your birthday? A guide to Wednesday to Saturday birthday celebrations at London clubs: atmosphere, pricing, and which venues are open each night.",
+    "Thursday has 9 London clubs open and lower minimum spends than the weekend. Wednesday to Saturday compared for a birthday: atmosphere, price and venues.",
   alternates: {
     canonical: "https://londonbirthdayclub.com/birthday-by-night",
   },

@@ -20,6 +20,10 @@ export interface Club {
   groupSizeAdvice: string;
   proTip: string;
   status: "open" | "closed";
+  /** Search title for the venue page (at most 60 characters, without the site name); the generated one is used when unset. */
+  metaTitle?: string;
+  /** Meta description for the venue page (120 to 155 characters, facts from the page). */
+  metaDescription?: string;
   /** Renamed venues only (still open and bookable; name holds "New (formerly Old)"): the old name people still search for. */
   formerName?: string;
   /**
@@ -85,6 +89,9 @@ export const clubs: Club[] = [
   // ==================== OPEN VENUES ====================
   {
     slug: "tape-london",
+    metaTitle: "Tape London Birthday: Mayfair Club Tables from £1,500",
+    metaDescription:
+      "Tape London on Hanover Square, Mayfair, opens Tuesday, Friday, Saturday and Sunday. Birthday tables from £1,500 with sparklers and cake, booked free.",
     name: "Tape London",
     shortName: "Tape",
     tagline: "The A-List Birthday Experience",
@@ -120,6 +127,9 @@ export const clubs: Club[] = [
   },
   {
     slug: "cirque-le-soir",
+    metaTitle: "Cirque Le Soir Birthday: Soho Club Tables from £1,000",
+    metaDescription:
+      "Cirque Le Soir on Ganton Street, Soho, opens Monday, Wednesday, Friday and Saturday. Birthday tables from £1,000 with live performers around you.",
     name: "Cirque Le Soir",
     shortName: "Cirque",
     tagline: "The Most Unforgettable Birthday in London",
@@ -155,6 +165,9 @@ export const clubs: Club[] = [
   },
   {
     slug: "reign-london",
+    metaTitle: "Reign London Birthday: Piccadilly Tables from £1,000",
+    metaDescription:
+      "Reign London on Piccadilly opens Tuesday, Thursday, Friday and Saturday. Birthday tables from £1,000 for big groups, with aerial shows. Book free.",
     name: "Reign London",
     shortName: "Reign",
     tagline: "The Grand Birthday Spectacle",
@@ -190,6 +203,9 @@ export const clubs: Club[] = [
   },
   {
     slug: "rumour-london",
+    metaTitle: "Rumour (formerly Tabu) Birthday: Booths from £1,000",
+    metaDescription:
+      "Rumour (formerly Tabu) at 1 Dover Street, Mayfair, opens Wednesday to Saturday. Birthday booths from £1,000 cover entry for all; 18+ with photo ID.",
     name: "Rumour",
     shortName: "Rumour",
     previousName: "Tabu",
@@ -272,6 +288,9 @@ export const clubs: Club[] = [
   },
   {
     slug: "99-regent-street",
+    metaTitle: "99 Regent Street (formerly Cuckoo Club) Birthday Tables",
+    metaDescription:
+      "99 Regent Street (formerly Cuckoo Club) opens Wednesday to Saturday, entrance on Swallow Street. Birthday tables from £600 cover entry; 19+ with photo ID.",
     name: "99 Regent Street",
     shortName: "99 Regent Street",
     previousName: "Cuckoo Club",
@@ -332,6 +351,9 @@ export const clubs: Club[] = [
   },
   {
     slug: "scotch-of-st-james",
+    metaTitle: "Scotch of St James Birthday: Tables from £1,000, Thu to Sat",
+    metaDescription:
+      "Scotch of St James opens Thursday to Saturday, with birthday tables from £1,000 in an intimate room of about 200 where Hendrix was a regular. Book free.",
     name: "Scotch of St James",
     shortName: "Scotch",
     tagline: "The Iconic Birthday in a Historic Setting",
@@ -367,6 +389,9 @@ export const clubs: Club[] = [
   },
   {
     slug: "dear-darling",
+    metaTitle: "Dear Darling Birthday: St James's Tables from £1,000",
+    metaDescription:
+      "Dear Darling at 91 Jermyn Street, St James's, opens Thursday to Sunday. Birthday tables from £1,000 among chandeliers and velvet booths, booked free.",
     name: "Dear Darling",
     shortName: "Dear Darling",
     tagline: "The Elegant Cocktail Birthday",
@@ -402,6 +427,9 @@ export const clubs: Club[] = [
   },
   {
     slug: "maddox-club",
+    metaTitle: "Maddox Club Birthday: Dinner and Tables from £1,000",
+    metaDescription:
+      "Maddox Club in Mayfair opens Thursday to Saturday: Italian dinner first, then the house music club. Birthday tables from £1,000, booked free via WhatsApp.",
     name: "Maddox Club",
     shortName: "Maddox",
     tagline: "The Dinner-to-Dance Birthday",
@@ -437,6 +465,9 @@ export const clubs: Club[] = [
   },
   {
     slug: "the-box-london",
+    metaTitle: "The Box London Birthday: Soho Tables from £1,000",
+    metaDescription:
+      "The Box London in Soho opens Wednesday to Saturday, with performances through the night. Birthday tables from £1,000, booked free via WhatsApp.",
     name: "The Box London",
     shortName: "The Box",
     tagline: "The Most Daring Birthday in London",
@@ -500,6 +531,9 @@ export const clubs: Club[] = [
   },
   {
     slug: "selene-london",
+    metaTitle: "Selene London Birthday: Tables from £1,000, Thu to Sun",
+    metaDescription:
+      "Selene London on Winsley Street, Fitzrovia, opens Thursday to Sunday. Birthday tables from £1,000, with private bowling lanes to book alongside. Book free.",
     name: "Selene London",
     shortName: "Selene",
     tagline: "The Refined Fitzrovia Birthday",
@@ -535,6 +569,9 @@ export const clubs: Club[] = [
   },
   {
     slug: "beat-london",
+    metaTitle: "BEAT London, Margaret Street: Birthday Tables from £1,000",
+    metaDescription:
+      "BEAT London at 48 Margaret Street, Fitzrovia, opens Friday, Saturday and select Thursdays. Birthday tables from £1,000 with sparklers and cake. Book free.",
     name: "BEAT London",
     shortName: "BEAT",
     tagline: "The High-Energy Birthday",

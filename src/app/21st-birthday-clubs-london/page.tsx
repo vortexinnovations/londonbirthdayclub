@@ -9,8 +9,9 @@ import FAQSchema from "@/components/FAQSchema";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 export const metadata: Metadata = {
-  title: fitTitle("21st Birthday Clubs London | Best Venues for Your 21st in 2026"),
-  description: "The best London nightclubs for a 21st birthday celebration. VIP tables, live entertainment, spectacular venues. Make turning 21 genuinely unforgettable. Free booking via WhatsApp.",
+  title: fitTitle("21st Birthday Venues London 2026: Top 5 Clubs from £600"),
+  description:
+    "Cirque Le Soir, Tape, The Box, 99 Regent Street and Reign: the top 5 London clubs for a 21st, with tables from £600. Plan the night free via WhatsApp.",
   alternates: { canonical: "https://londonbirthdayclub.com/21st-birthday-clubs-london" },
   openGraph: { url: "https://londonbirthdayclub.com/21st-birthday-clubs-london" },
 };

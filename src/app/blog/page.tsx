@@ -12,9 +12,9 @@ import { getPostImage } from "@/lib/images";
 export const revalidate = 86400;
 
 export const metadata: Metadata = {
-  title: fitTitle("Birthday Planning Blog | Tips, Guides & Ideas for London Birthdays"),
+  title: fitTitle("Birthday Planning Blog: Guides for London Club Birthdays"),
   description:
-    "Expert advice on planning birthday celebrations at London nightclubs. Costs, dress codes, group payments, surprise parties, bottle service guides, and venue recommendations.",
+    "Guides to birthdays at London clubs: table costs, dress codes, splitting the bill, surprise parties, bottle service and advice on each venue.",
   alternates: {
     canonical: "https://londonbirthdayclub.com/blog",
   },

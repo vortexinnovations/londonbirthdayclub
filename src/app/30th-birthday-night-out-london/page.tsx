@@ -9,8 +9,9 @@ import FAQSchema from "@/components/FAQSchema";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 export const metadata: Metadata = {
-  title: fitTitle("30th Birthday Night Out London | Celebrate Turning 30 in Style"),
-  description: "The best London clubs and venues for a 30th birthday celebration. Quality over chaos: elegant venues, dinner-to-club options, and VIP birthday experiences for the milestone that matters.",
+  title: fitTitle("30th Birthday Night Out London: Top 5 Venues from £1,000"),
+  description:
+    "Maddox Club, Dear Darling, Tape, Selene and Scotch of St James are our top 5 London venues for a 30th, with tables from £1,000 and dinner-to-club options.",
   alternates: { canonical: "https://londonbirthdayclub.com/30th-birthday-night-out-london" },
   openGraph: { url: "https://londonbirthdayclub.com/30th-birthday-night-out-london" },
 };

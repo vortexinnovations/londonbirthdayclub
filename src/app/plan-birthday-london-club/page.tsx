@@ -9,9 +9,9 @@ import FAQSchema from "@/components/FAQSchema";
 import ArticleSchema from "@/components/ArticleSchema";
 
 export const metadata: Metadata = {
-  title: fitTitle("How to Plan a Birthday at a London Club: Step-by-Step (2026 Guide)"),
+  title: fitTitle("How to Plan a Birthday at a London Club (2026 Guide)"),
   description:
-    "Step-by-step guide to planning a birthday at a London nightclub. Covers booking, minimum spends, group payments, dress codes, birthday extras, and what to expect on the night.",
+    "Choose the club 3 to 4 weeks out, book 2 to 3 weeks before and expect a £200 to £500 deposit. A step-by-step plan for a birthday at a London club.",
   alternates: {
     canonical: "https://londonbirthdayclub.com/plan-birthday-london-club",
   },

@@ -69,13 +69,14 @@ export async function generateMetadata({
     : club.name;
   return {
     title: fitTitle(
-      club.previousName
-        ? `${titleName} Birthday | Birthday Table & Packages`
-        : `${club.name} Birthday | Birthday Table & Packages at ${club.name}`
+      club.metaTitle ??
+        (club.previousName
+          ? `${titleName} Birthday | Birthday Table & Packages`
+          : `${club.name} Birthday | Birthday Table & Packages at ${club.name}`)
     ),
-    description: club.previousName
+    description: club.metaDescription ?? (club.previousName
       ? `Celebrate your birthday at ${titleName}, ${club.location}. ${club.bestFor}. Tables from ${club.minSpend}, birthday extras on request. Book free via WhatsApp.`
-      : `Celebrate your birthday at ${club.name}, ${club.location}. ${club.bestFor}. VIP tables from ${club.minSpend}, sparklers, cake, and birthday extras. Book free via WhatsApp.`,
+      : `Celebrate your birthday at ${club.name}, ${club.location}. ${club.bestFor}. VIP tables from ${club.minSpend}, sparklers, cake, and birthday extras. Book free via WhatsApp.`),
     alternates: {
       canonical: `https://londonbirthdayclub.com/clubs/${club.slug}`,
     },

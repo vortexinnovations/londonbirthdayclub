@@ -10,8 +10,9 @@ import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import ArticleSchema from "@/components/ArticleSchema";
 
 export const metadata: Metadata = {
-  title: fitTitle("Mayfair Birthday Night: How to Plan the Perfect Celebration (2026)"),
-  description: "The complete guide to planning a birthday night out in Mayfair. Which clubs are where, dress codes, what to expect, and how to make your Mayfair birthday celebration perfect.",
+  title: fitTitle("Birthday Party Venues in Mayfair: Plan the Night (2026)"),
+  description:
+    "Six Mayfair birthday clubs within a 10-minute walk, with tables from £600 to £1,500. Which club suits you, the dress code and a timeline for the night.",
   alternates: { canonical: "https://londonbirthdayclub.com/how-to-plan-a-birthday-night-in-mayfair" },
   openGraph: { url: "https://londonbirthdayclub.com/how-to-plan-a-birthday-night-in-mayfair" },
 };

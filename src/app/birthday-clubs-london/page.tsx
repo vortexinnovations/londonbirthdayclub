@@ -12,7 +12,7 @@ import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 export const metadata: Metadata = {
   title: fitTitle("Birthday Clubs London: 11 Venues Compared (2026)"),
   description:
-    "Compare 11 London birthday clubs side by side: minimum spends, music, group size, and what makes each one great for birthdays. Tables from £1,000. Free booking via WhatsApp.",
+    "Compare 11 London birthday clubs side by side: minimum spends from £600 to £1,500, music, nights and group size. Free booking via WhatsApp.",
   alternates: {
     canonical: "https://londonbirthdayclub.com/birthday-clubs-london",
   },

@@ -12,9 +12,9 @@ import VenueTicker from "@/components/VenueTicker";
 import { images } from "@/lib/images";
 
 export const metadata: Metadata = {
-  title: fitTitle("London Birthday Club | VIP Birthday Tables at London's Best Nightclubs"),
+  title: fitTitle("London Birthday Club: VIP Birthday Tables at London Clubs"),
   description:
-    "Free birthday planning at London's top nightclubs. VIP tables from £1,000 with sparklers, cake, and bottle service at Cirque Le Soir, Tape, The Box & more. Book instantly via WhatsApp.",
+    "Birthday tables at 11 London clubs, including Tape, Cirque Le Soir and The Box, from £600. Sparklers, cake and free planning via WhatsApp.",
   alternates: { canonical: "https://londonbirthdayclub.com" },
 };
 

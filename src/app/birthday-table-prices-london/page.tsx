@@ -10,8 +10,9 @@ import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import ArticleSchema from "@/components/ArticleSchema";
 
 export const metadata: Metadata = {
-  title: fitTitle("Birthday Table Prices London 2026: Per-Person Costs at Every Club"),
-  description: "Complete guide to birthday table prices at London nightclubs. Venue-by-venue minimums, per-person costs by group size, weekday vs weekend pricing, and what's included. Updated for 2026.",
+  title: fitTitle("Birthday Table Prices London 2026: Per-Person Costs"),
+  description:
+    "Birthday tables at 11 London clubs start from £600 to £1,500. Per-person costs by group size, from £200 for 5 guests to £50 for 20, and what's included.",
   alternates: { canonical: "https://londonbirthdayclub.com/birthday-table-prices-london" },
   openGraph: { url: "https://londonbirthdayclub.com/birthday-table-prices-london" },
 };

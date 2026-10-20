@@ -10,7 +10,8 @@ import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 export const metadata: Metadata = {
   title: fitTitle("VIP Birthday Tables London: Luxury Packages (2026)"),
-  description: "Book a VIP birthday table at London's most exclusive nightclubs. Premium table positions, champagne packages, sparklers, and dedicated hosts. Luxury birthday experiences from £1,000.",
+  description:
+    "VIP birthday tables at London clubs from £1,000 to £1,500, with a dedicated host, sparkler presentations and premium bottles at Tape, Cirque and more.",
   alternates: { canonical: "https://londonbirthdayclub.com/vip-birthday-tables-london" },
   openGraph: { url: "https://londonbirthdayclub.com/vip-birthday-tables-london" },
 };

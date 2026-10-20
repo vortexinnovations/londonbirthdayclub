@@ -7,7 +7,7 @@ const SITE_URL = "https://londonbirthdayclub.com";
 export const metadata: Metadata = {
   title: fitTitle("About the Editor: Charlotte Hayes"),
   description:
-    "Meet Charlotte Hayes, Events Specialist. She plans group nightlife celebrations across London and covers what each venue can actually deliver for a private celebration.",
+    "Charlotte Hayes, Events Specialist, plans group nightlife celebrations across London and covers what each venue can deliver for a private celebration.",
   alternates: { canonical: `${SITE_URL}/about-the-editor` },
   openGraph: {
     title: "About the Editor: Charlotte Hayes | London Birthday Club",

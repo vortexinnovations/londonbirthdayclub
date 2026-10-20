@@ -10,7 +10,8 @@ import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 export const metadata: Metadata = {
   title: fitTitle("Group Night Out London: VIP Tables for Celebrations"),
-  description: "Planning a group night out in London? Birthday parties, hen nights, work dos. We'll sort VIP tables and bottle service at the best clubs. Groups of 5 to 30+. Free booking via WhatsApp.",
+  description:
+    "VIP tables for groups of 5 to 30+ at London clubs, from £1,000: birthdays, hen nights, work dos and reunions. Free booking via WhatsApp.",
   alternates: { canonical: "https://londonbirthdayclub.com/group-night-out-london" },
   openGraph: { url: "https://londonbirthdayclub.com/group-night-out-london" },
 };

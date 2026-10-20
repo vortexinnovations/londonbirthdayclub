@@ -11,9 +11,9 @@ import ItemListSchema from "@/components/ItemListSchema";
 import ArticleSchema from "@/components/ArticleSchema";
 
 export const metadata: Metadata = {
-  title: fitTitle("11 Best Birthday Clubs in London (2026): Ranked by Real Experience"),
+  title: fitTitle("11 Best Birthday Clubs in London (2026), Ranked with Prices"),
   description:
-    "We've booked hundreds of birthday tables. Here are the 11 best London clubs for a birthday, honestly ranked. Cirque Le Soir, Tape, The Box & more, with prices, group advice, and what to expect.",
+    "Tape, Cirque Le Soir and The Box lead our 11 best London clubs for a birthday, ranked with prices from £600, group advice and what to expect on the night.",
   alternates: {
     canonical: "https://londonbirthdayclub.com/best-birthday-clubs-london",
   },

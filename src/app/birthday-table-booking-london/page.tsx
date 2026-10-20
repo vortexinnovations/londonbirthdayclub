@@ -9,9 +9,9 @@ import FAQSchema from "@/components/FAQSchema";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 export const metadata: Metadata = {
-  title: fitTitle("Birthday Table Booking London: What's Included & How It Works (2026)"),
+  title: fitTitle("Birthday Table Booking London: What's Included (2026)"),
   description:
-    "Everything you need to know about booking a birthday table in London. What's included in the minimum spend, birthday extras, per-person costs, and how to book for free via WhatsApp.",
+    "A £1,000 birthday table covers bottles, mixers, a host and priority entry, about £100 each for 10 guests. What's included, the extras and how to book free.",
   alternates: {
     canonical: "https://londonbirthdayclub.com/birthday-table-booking-london",
   },

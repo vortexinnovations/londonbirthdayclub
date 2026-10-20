@@ -10,9 +10,9 @@ import FAQSchema from "@/components/FAQSchema";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 export const metadata: Metadata = {
-  title: fitTitle("Best London Clubs by Age: 18th, 21st, 25th, 30th, 40th & 50th Birthday Guide"),
+  title: fitTitle("Best London Clubs by Age: 18th to 50th Birthday Guide"),
   description:
-    "Find the perfect London nightclub for your milestone birthday. Expert recommendations for 21st, 25th, 30th, 40th, and 50th birthday celebrations at Mayfair's best clubs.",
+    "Cirque Le Soir for an 18th or 21st, Tape for a 25th, Maddox Club for a 30th, 40th or 50th: the right London club for each milestone birthday.",
   alternates: {
     canonical: "https://londonbirthdayclub.com/birthday-by-age",
   },

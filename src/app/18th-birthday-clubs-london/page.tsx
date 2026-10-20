@@ -9,8 +9,9 @@ import FAQSchema from "@/components/FAQSchema";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 export const metadata: Metadata = {
-  title: fitTitle("18th Birthday Clubs London | Best Venues for Turning 18 in 2026"),
-  description: "The best London nightclubs for an 18th birthday celebration. First night out done properly: VIP tables, bottle service, and spectacular venues. From £1,000 with free booking.",
+  title: fitTitle("18th Birthday Clubs London: Where to Celebrate in 2026"),
+  description:
+    "Cirque Le Soir, BEAT, Reign and Rumour, which admits 18+ with photo ID, are our 18th birthday picks. Tables from £1,000, planned free via WhatsApp.",
   alternates: { canonical: "https://londonbirthdayclub.com/18th-birthday-clubs-london" },
   openGraph: { url: "https://londonbirthdayclub.com/18th-birthday-clubs-london" },
 };
