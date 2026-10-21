@@ -596,7 +596,7 @@ export const blogDataPart3: BlogPost[] = [
         headingLevel: "h2",
         content: [
           "The honest truth: a table for two at a £1,000 minimum means £500 per person, which is premium by any standard. For some couples, especially for milestone birthdays (30th, 40th, 50th), this is a deliberate choice - a luxury experience as a gift to each other. The per-person cost is high, but the experience is proportionally more personal and attentive.",
-          "For couples who want the club experience at a lower per-person cost, consider a Thursday night (lower minimums at most venues) or a cocktail-focused venue like Dear Darling, where tables start from £800 minimum spend and the experience centres on the drinks and atmosphere rather than bottle volume. Alternatively, a group of four splitting a table brings the per-person cost down to a more comfortable £250 - still premium, but reasonable for a genuinely special evening.",
+          "For couples who want the club experience at a lower per-person cost, consider a Thursday night (lower minimums at most venues) or a cocktail-focused venue like Dear Darling, where tables start from £800 minimum spend and the experience centres on the drinks and atmosphere rather than bottle volume. Alternatively, a group of four splitting a £1,000 table brings the per-person cost down to a more comfortable £250 - still premium, but reasonable for a genuinely special evening.",
         ],
       },
       {
