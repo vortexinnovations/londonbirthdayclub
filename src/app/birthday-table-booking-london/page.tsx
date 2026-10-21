@@ -37,7 +37,7 @@ const faqs = [
   {
     question: "How much is a birthday VIP table in London?",
     answer:
-      "Minimum table spends at the clubs we book start from £600 at 99 Regent Street, £750 at Tape London and £800 at Cirque Le Soir, Reign London and Selene London, and from £1,000 at most of the others. This is not a charge on top of drinks. It IS your drinks budget. For a group of 10, that's around £100 per person including premium bottles and VIP service.",
+      "Minimum table spends at the clubs we book start from £600 at 99 Regent Street, £750 at Tape London and £800 at Cirque Le Soir, Reign London, Selene London and Dear Darling Mayfair, and from £1,000 at most of the others. This is not a charge on top of drinks. It IS your drinks budget. For a group of 10, that's around £100 per person including premium bottles and VIP service.",
   },
   {
     question: "Do I need to pay a deposit for a birthday table?",

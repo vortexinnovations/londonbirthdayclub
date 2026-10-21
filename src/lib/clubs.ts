@@ -389,15 +389,15 @@ export const clubs: Club[] = [
   },
   {
     slug: "dear-darling",
-    metaTitle: "Dear Darling Mayfair Birthday: St James's Tables from £1,000",
+    metaTitle: "Dear Darling Mayfair Birthday: St James's Tables from £800",
     metaDescription:
-      "Dear Darling Mayfair at 91 Jermyn Street, St James's, opens Thursday to Sunday. Birthday tables from £1,000 among chandeliers and velvet booths, booked free.",
+      "Dear Darling Mayfair at 91 Jermyn Street, St James's, opens Thursday to Sunday. Birthday tables from £800 among chandeliers and velvet booths, booked free.",
     name: "Dear Darling Mayfair",
     shortName: "Dear Darling",
     tagline: "The Elegant Cocktail Birthday",
     location: "91 Jermyn Street, St James's",
     area: "St James's",
-    minSpend: "£1,000",
+    minSpend: "£800",
     musicPolicy: "House, Soulful House, Cocktail Lounge",
     dressCode: "Smart elegant. Dear Darling is refined: dress to match the chandeliers. Entry is 18+.",
     openingNights: "Thursday, Friday, Saturday, Sunday",
