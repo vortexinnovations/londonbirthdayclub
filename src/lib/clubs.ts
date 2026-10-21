@@ -52,7 +52,7 @@ export interface Club {
 // Set NEXT_PUBLIC_WHATSAPP_NUMBER in Vercel (international format, no + or spaces).
 // Falls back to the current number so the site keeps working if the var is unset.
 export const WHATSAPP_NUMBER =
-  process.env.NEXT_PUBLIC_WHATSAPP_NUMBER ?? "447880662708";
+  process.env.NEXT_PUBLIC_WHATSAPP_NUMBER ?? "447348644054";
 
 /** E.164 form for schema.org / tel: links. */
 export const WHATSAPP_TEL = `+${WHATSAPP_NUMBER}`;
