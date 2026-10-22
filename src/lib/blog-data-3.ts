@@ -271,7 +271,7 @@ export const blogDataPart3: BlogPost[] = [
         heading: "Afrobeats and Dancehall Birthdays",
         headingLevel: "h2",
         content: [
-          "Afrobeats and dancehall have become a major part of London's nightlife sound. Funky Buddha and Luna Club London, the two Mayfair clubs best known for them, have both closed, and none of the open clubs we book plays Afrobeats exclusively. Hip-hop and RnB rooms such as Tape London and Cirque Le Soir are where it is most likely to get airtime, so tell us it matters when you book and we will check the music on your night.",
+          "Afrobeats and dancehall have become a major part of London's nightlife sound. None of the open clubs we book plays Afrobeats exclusively. Hip-hop and RnB rooms such as Tape London and Cirque Le Soir are where it is most likely to get airtime, so tell us it matters when you book and we will check the music on your night.",
         ],
       },
     ],

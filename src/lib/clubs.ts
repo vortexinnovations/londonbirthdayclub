@@ -502,32 +502,60 @@ export const clubs: Club[] = [
       "The performances are the main event. Arrive by 11pm to catch them from the start. Saturday nights have the most elaborate shows. If anyone in your group is easily shocked, give them a gentle heads-up about The Box's reputation beforehand.",
   },
   {
+    // Luna Club London rebranded as Maya (owner, 2026-10-22): same room beneath
+    // Inca London, open and booked by us. Owner facts only; Luna's old prices,
+    // music and nights are history, and table prices are confirmed at booking.
     slug: "luna-club-london",
-    name: "Luna Club London",
-    shortName: "Luna",
-    tagline: "Permanently Closed",
-    location: "Mayfair, London",
-    area: "Mayfair",
-    minSpend: "£1,000",
-    musicPolicy: "Hip-Hop, RnB, Commercial, Afrobeats",
-    dressCode: "Smart stylish.",
-    openingNights: "Permanently Closed",
-    capacity: "Medium (approx. 300)",
+    metaTitle: "Maya (formerly Luna Club London) Birthday Tables",
+    metaDescription:
+      "Luna Club London is now Maya, beneath Inca London on Argyll Street. Open Friday and Saturday 11pm to 3am, 18+. Birthday tables and guestlist booked free.",
+    name: "Maya",
+    shortName: "Maya",
+    previousName: "Luna Club London",
+    tagline: "The Lounge Club Beneath Inca London",
+    location: "8-9 Argyll Street, Soho",
+    area: "Soho",
+    minSpend: "On request",
+    musicPolicy: "Lounge club with DJs",
+    dressCode: "Smart: heels for ladies, smart shoes and shirts for men. No sportswear. Entry is 18+ with photo ID.",
+    openingNights: "Friday, Saturday",
+    capacity: "Lounge club",
     birthdayRating: 4,
-    bestFor: "This venue has permanently closed",
-    status: "closed",
-    closedNote:
-      "Luna Club London has closed. The Mayfair club, also known as Luna Mayfair or Club Luna, no longer takes birthday tables or guestlist names. For the same hip-hop, RnB and Afrobeats with a young, well-dressed crowd, Tape London, Cirque Le Soir and The Box are the closest open alternatives.",
-    alternatives: ["tape-london", "cirque-le-soir", "the-box-london"],
+    bestFor: "Dressed-up Friday and Saturday birthdays, with dinner at Inca London upstairs",
+    status: "open",
+    streetAddress: "8-9 Argyll Street",
+    postalCode: "W1F 7TF",
+    openingHours: "Fr-Sa 23:00-03:00",
+    heroAlt: "A birthday table at Maya, the club beneath Inca London, formerly Luna Club London",
     description:
-      "Luna Club London was a Mayfair nightclub with celestial-inspired interiors, atmospheric lighting and a music policy that mixed hip-hop, RnB, commercial and Afrobeats for a young, well-dressed crowd. Luna Club London has now closed.",
-    birthdayHighlights: [],
+      "Maya (formerly Luna Club London) is the club beneath Inca London at 8-9 Argyll Street, next to the London Palladium, with Oxford Circus the nearest tube. Luna rebranded as Maya: a luxury lounge and members'-style club inspired by ancient Mayan culture, open on Friday and Saturday from 11pm to 3am. Entry is 18+ with photo ID and the door is smart. We book Maya birthday tables and guestlist; table prices are confirmed when you book.",
+    birthdayHighlights: [
+      "Luxury lounge and members'-style club inspired by ancient Mayan culture",
+      "Directly beneath Inca London, so dinner and the club are under one roof",
+      "Open Friday and Saturday, 11pm to 3am",
+      "18+ with photo ID, so an 18th birthday works here",
+      "Tables and guestlist by request through us",
+    ],
     whatToExpect:
-      "Luna Club London has closed. If you were planning a birthday at Luna, Tape London is the closest match for hip-hop and RnB in Mayfair, Cirque Le Soir adds performers and a show to the same music, and The Box in Soho turns a birthday into a theatrical night.",
-    birthdayExtras: "Luna Club London has closed.",
-    atmosphere: "Luna Club London has closed.",
-    groupSizeAdvice: "Luna Club London has closed.",
-    proTip: "Luna Club London has closed. For a similar birthday, try Tape London, Cirque Le Soir or The Box.",
+      "Maya sits beneath Inca London on Argyll Street, a couple of minutes from Oxford Circus. It is the room that traded as Luna, now rebranded as a luxury lounge and members'-style club inspired by ancient Mayan culture. Doors are 11pm to 3am on Friday and Saturday. Many birthday groups start with dinner and the show at Inca London upstairs, then move downstairs to a table at Maya.",
+    birthdayExtras:
+      "Birthday extras at Maya are arranged on request: tell us when you book if you want sparklers with the bottles or a cake for the table, and we will confirm what the venue can do on your night.",
+    atmosphere:
+      "A luxury lounge and members'-style club inspired by ancient Mayan culture, with a smart, dressed-up door: heels for ladies, smart shoes and shirts for men, and no sportswear.",
+    groupSizeAdvice:
+      "Send us the group size with your date and we will come back with the tables available at Maya for that night. Table prices are confirmed when you book, depending on the night, the table and the number of guests.",
+    proTip:
+      "Make a night of Argyll Street: dinner and the show at Inca London upstairs, then a table at Maya downstairs from 11pm. Bring photo ID for everyone, as the door is 18+.",
+    extraFaqs: [
+      {
+        question: "Is Maya the club that used to be Luna Club London?",
+        answer: "Yes. Luna Club London, also called Luna Mayfair, Club Luna or Luna by INCA, the club beneath Inca London at 8-9 Argyll Street, now trades as Maya. We book Maya birthday tables and guestlist.",
+      },
+      {
+        question: "Is Inca London open?",
+        answer: "Yes. Inca London, the South American restaurant with a dinner show upstairs, is open, and Maya is the club beneath it.",
+      },
+    ],
   },
   {
     slug: "selene-london",

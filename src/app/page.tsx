@@ -14,7 +14,7 @@ import { images } from "@/lib/images";
 export const metadata: Metadata = {
   title: fitTitle("London Birthday Club: VIP Birthday Tables at London Clubs"),
   description:
-    "Birthday tables at 11 London clubs, including Tape, Cirque Le Soir and The Box, from £600. Sparklers, cake and free planning via WhatsApp.",
+    "Birthday tables at 12 London clubs, including Tape, Cirque Le Soir and The Box, from £600. Sparklers, cake and free planning via WhatsApp.",
   alternates: { canonical: "https://londonbirthdayclub.com" },
 };
 
@@ -285,7 +285,7 @@ export default function HomePage() {
               {
                 href: "/birthday-clubs-london",
                 label: "Birthday Clubs London",
-                sub: "All 11 venues compared",
+                sub: "All 12 venues compared",
               },
               {
                 href: "/birthday-table-booking-london",

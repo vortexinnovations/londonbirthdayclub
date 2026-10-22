@@ -199,7 +199,7 @@ export default function BookBirthdayPage() {
                 </span>
               </div>
               <div className="font-sans text-[0.8125rem] tracking-[0.02em] text-ink-faint mt-1.5">
-                Compare all 11 venues
+                Compare all 12 venues
               </div>
             </Link>
             <Link
