@@ -223,9 +223,19 @@ export const clubs: Club[] = [
     streetAddress: "1 Dover Street",
     postalCode: "W1S 4LD",
     openingHours: "We-Sa 23:00-04:00",
-    heroAlt: "The red velvet booths in the main room at Rumour",
+    heroAlt: "Tables set with glassware and ice buckets in front of red velvet curtains at Rumour (formerly Tabu), Mayfair",
+    photos: [
+      { src: "/gallery/images/rumour-london-booth-disc-wall.jpg", alt: "A curved red velvet booth with ice buckets beneath the backlit gold disc wall at Rumour" },
+      { src: "/gallery/images/rumour-london-booths-glassware.jpg", alt: "Booths beneath a double row of backlit discs at Rumour, the tables set with glassware" },
+      { src: "/gallery/images/rumour-london-arch-and-booth.jpg", alt: "The arch and steps beside a red velvet booth with an ice bucket at Rumour" },
+      { src: "/gallery/images/rumour-london-dj-decks-booths.jpg", alt: "DJ decks in front of the red velvet booths at Rumour" },
+      { src: "/gallery/images/rumour-london-bar.jpg", alt: "The bar and its backlit bottle display at Rumour" },
+      { src: "/gallery/images/rumour-london-booth-ice-bucket.jpg", alt: "A red velvet booth beneath the disc wall at Rumour, with an ice bucket and glasses" },
+      { src: "/gallery/images/rumour-london-doorway-disc-walls.jpg", alt: "The arched doorway framed by backlit disc walls at Rumour" },
+      { src: "/gallery/images/rumour-london-table-setting.jpg", alt: "A table set with glassware and an ice bucket in front of a booth at Rumour" },
+    ],
     description:
-      "Rumour (formerly Tabu) is the one-room club at 1 Dover Street in Mayfair, a few minutes from Green Park: a full rebrand under the same ownership, with a new design built around booths of deep red velvet, dark panelling, a chandelier and low warm lighting, for around 200 people. It fills early by design, which suits a birthday: the room is busy from early in the night. Booths start from £1,000 minimum spend, spent on drinks and covering entry for everyone at the table, which across eight people is roughly £125 each. The door is 18+ with photo ID, so an 18th birthday is possible here, and a no-photography rule in the main room keeps the night in the room rather than on a feed.",
+      "Rumour (formerly Tabu) is the one-room club at 1 Dover Street in Mayfair, a few minutes from Green Park: a full rebrand under the same ownership, with a new design built around red velvet booths beneath backlit gold disc walls, with red velvet curtains and low red lighting, for around 200 people. It fills early by design, which suits a birthday: the room is busy from early in the night. Booths start from £1,000 minimum spend, spent on drinks and covering entry for everyone at the table, which across eight people is roughly £125 each. The door is 18+ with photo ID, so an 18th birthday is possible here, and a no-photography rule in the main room keeps the night in the room rather than on a feed.",
     birthdayHighlights: [
       "One intimate room of around 200, built around red velvet booths",
       "Booths from £1,000 minimum spend, covering entry for the whole group",
@@ -234,11 +244,11 @@ export const clubs: Club[] = [
       "No photos or video in the main room, so the night stays private",
     ],
     whatToExpect:
-      "Dover Street sits between Piccadilly and Grafton Street, a few minutes' walk from Green Park. Inside is a single room of around 200: deep red velvet booths, where the birthday tables are, with dark panelling, a chandelier and low warm lighting. The music is open format, hip-hop, RnB and house, read to the room on the night, and the room fills early by design. The floor team enforce a no-photography policy in the main room and on the dance floor, the clearest difference from the clubs around it: good for a birthday that wants to feel private, and worth telling the group about if they were planning to film. Doors are 11pm to 4am, Wednesday to Saturday. Wednesday and Thursday are the more relaxed nights; Friday and Saturday fill out and are worth arranging in advance.",
+      "Dover Street sits between Piccadilly and Grafton Street, a few minutes' walk from Green Park. Inside is a single room of around 200: red velvet booths, where the birthday tables are, beneath backlit gold disc walls, with red velvet curtains, an arched doorway and low red lighting. The music is open format, hip-hop, RnB and house, read to the room on the night, and the room fills early by design. The floor team enforce a no-photography policy in the main room and on the dance floor, the clearest difference from the clubs around it: good for a birthday that wants to feel private, and worth telling the group about if they were planning to film. Doors are 11pm to 4am, Wednesday to Saturday. Wednesday and Thursday are the more relaxed nights; Friday and Saturday fill out and are worth arranging in advance.",
     birthdayExtras:
       "Birthday extras at Rumour are arranged on request: tell us when you book if you want sparklers with the bottles or a cake for the booth, and we will confirm what the venue can do on your night. Plan around the no-photography rule in the main room: the birthday photo is best taken before you go in. The booth minimum is spent on drinks, not charged on top, and it covers entry for everyone in the group.",
     atmosphere:
-      "Deep red velvet, dark panelling, a chandelier and low warm lighting. The venue presents itself as a members' club, and we book booths and guestlist for non-members. The dress code is smart and dressed up, the room is intimate, and the no-photography policy means no photos or video in the main room or on the dance floor, so the group's attention stays on the birthday. Wednesday and Thursday are the more relaxed nights; Friday and Saturday fill out.",
+      "Red velvet booths, backlit gold disc walls, red velvet curtains and low red lighting. The venue presents itself as a members' club, and we book booths and guestlist for non-members. The dress code is smart and dressed up, the room is intimate, and the no-photography policy means no photos or video in the main room or on the dance floor, so the group's attention stays on the birthday. Wednesday and Thursday are the more relaxed nights; Friday and Saturday fill out.",
     groupSizeAdvice:
       "The £1,000 booth minimum across eight people works out at roughly £125 each, all of it spent on drinks, and it covers entry for the whole group. Men and mixed groups come in on the booth: the ladies' guestlist is free to £20 on the door depending on the night and how busy it is, but men are not added to it, so a mixed birthday group should book a booth rather than rely on the list. For a bigger celebration, the 200-capacity room suits a private takeover: enquiries go through us, with terms on request.",
     proTip:
@@ -254,7 +264,7 @@ export const clubs: Club[] = [
       },
       {
         question: "Can you take photos at Rumour?",
-        answer: "No. Rumour has a no-photography policy in the main room and on the dance floor, enforced by the floor team, so take the birthday photo before you go in.",
+        answer: "No. Rumour has a no-photography policy in the main room and on the dance floor, enforced by the floor team, so take the birthday photo before you go in. The photos on this page are the venue's own.",
       },
     ],
   },

@@ -106,7 +106,7 @@ const rankings = [
     position: 10,
     slug: "rumour-london",
     verdict:
-      "Rumour (formerly Tabu) is one intimate room at 1 Dover Street, built around deep red velvet booths with dark panelling and a chandelier, and it fills early by design. Booths start from £1,000 minimum spend and cover entry for the whole group, which matters here because the guestlist is ladies only. Two things earn it a place on this list: the door is 18+ with photo ID, so it works for an 18th, and a no-photography policy in the main room keeps a birthday private. Open Wednesday to Saturday, 11pm to 4am.",
+      "Rumour (formerly Tabu) is one intimate room at 1 Dover Street, built around red velvet booths beneath backlit gold disc walls, and it fills early by design. Booths start from £1,000 minimum spend and cover entry for the whole group, which matters here because the guestlist is ladies only. Two things earn it a place on this list: the door is 18+ with photo ID, so it works for an 18th, and a no-photography policy in the main room keeps a birthday private. Open Wednesday to Saturday, 11pm to 4am.",
     bestForTag: "Intimate Booths, 18 and Over",
   },
   {

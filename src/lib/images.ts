@@ -40,7 +40,7 @@ export const images = {
     "tape-london": "/gallery/images/Tape-1-.jpg",
     "cirque-le-soir": "/gallery/images/fe4414_54a8200c73ae49e7a5ee7170777de8bf.jpg",
     "reign-london": "/gallery/images/DSC_6754.jpg",
-    "rumour-london": "/gallery/images/rumour-london.jpg",
+    "rumour-london": "/gallery/images/rumour-london-tables-curtains.jpg",
     "funky-buddha": "/gallery/images/fe4414_affd1145589143f7a655ebcb34a0a7c8.jpg",
     "99-regent-street": "/gallery/images/99-regent-street-main-room.jpg",
     "scotch-of-st-james": "/gallery/images/fe4414_016460dc35074665a9f15d051da0d9de.jpg",
