@@ -609,39 +609,60 @@ export const clubs: Club[] = [
     slug: "beat-london",
     metaTitle: "BEAT London, Margaret Street: Birthday Tables from £1,000",
     metaDescription:
-      "BEAT London at 48 Margaret Street, Fitzrovia, opens Friday, Saturday and select Thursdays. Birthday tables from £1,000 with sparklers and cake. Book free.",
+      "BEAT London at 48 Margaret Street, Fitzrovia: house music, doors at 1am on Friday, Saturday and select Thursdays. Birthday tables from £1,000. Book free.",
     name: "BEAT London",
     shortName: "BEAT",
-    tagline: "The High-Energy Birthday",
+    tagline: "The Late Birthday After Dinner",
     location: "48 Margaret Street, Fitzrovia",
+    streetAddress: "48 Margaret Street",
+    postalCode: "W1W 8SE",
+    openingHours: "Fr,Sa 01:00-06:00",
     area: "Fitzrovia",
     minSpend: "£1,000",
-    musicPolicy: "House, Tech House, Dance",
-    dressCode: "Smart casual. BEAT is more relaxed than Mayfair: still look good, but less formal.",
-    openingNights: "Thursday (select nights), Friday, Saturday",
-    capacity: "Medium (approx. 400)",
+    musicPolicy: "House",
+    dressCode: "Smart casual, no sportswear. Trainers only if clean and smart, at the door's discretion.",
+    openingNights: "Friday, Saturday and select Thursdays",
+    capacity: "Intimate (approx. 250)",
     birthdayRating: 4,
-    bestFor: "Music-focused birthdays with incredible sound quality",
+    bestFor: "A late birthday plan after dinner, with house music from 1am",
     status: "open",
     description:
-      "BEAT London puts music first. The Margaret Street venue is built around one of London's finest sound systems, delivering audio quality that rivals dedicated music venues. The focus here is on the dancefloor experience: house and tech house played loud, clear, and with the bass you can feel in your chest. For birthdays where the music matters as much as the celebration, BEAT delivers an experience that music lovers genuinely appreciate.",
+      "BEAT London is an after-hours house music club at 48 Margaret Street, Fitzrovia. Doors are at 1am, so it suits a late birthday plan after dinner or a bar. It is open from 1am to 6am on Friday, Saturday and select Thursdays, and entry is by table booking only, with birthday tables from £1,000 minimum spend and VIP tables from £2,000.",
     birthdayHighlights: [
-      "One of London's best nightclub sound systems",
-      "Music-first atmosphere with quality DJs",
-      "High-energy dancefloor that peaks late",
-      "More relaxed dress code than Mayfair venues",
-      "Great value for quality nightlife experience",
+      "Doors at 1am, so the birthday can start with dinner or a bar",
+      "House music until 6am",
+      "One of London's finest sound systems, by the venue's own account",
+      "Entry by table booking, and non-members can book",
+      "Tables from £1,000 minimum spend, spent on drinks",
     ],
     whatToExpect:
-      "BEAT is for people who love music. The sound system is the star: from the moment you walk in, the audio quality is noticeably superior to most London clubs. The DJs play house and tech house that builds progressively, with the dancefloor peaking between 1am and 3am. For birthdays, this means the energy of the night grows alongside your celebration. Table service puts you adjacent to the dancefloor action with room to dance, drink, and celebrate.",
+      "BEAT is an after-hours club, so plan the birthday around its hours: doors are at 1am and it closes at 6am. That makes it a late plan for after dinner or a bar, not a place to start the night. The music is house, the room holds about 250 people, and the venue's own account is that it has one of London's finest sound systems. Its own history is that it opened in 1966 as The Speakeasy Club (\"The Speak\"), which hosted Jimi Hendrix, The Beatles, Bob Marley and David Bowie, and King Crimson's debut, and that it has since been extensively renovated.",
     birthdayExtras:
-      "Birthday celebrations at BEAT include sparkler bottle deliveries, birthday cake arrangements, and DJ shoutouts. The music-first environment means the birthday shoutout comes through a world-class sound system: it hits different when the bass backs it up.",
+      "Tables at BEAT can be booked for birthdays, and celebration extras are on request, so tell us what you have in mind when you book.",
     atmosphere:
-      "High-energy, music-driven, and unpretentious. BEAT attracts genuine music fans alongside the nightlife crowd, creating an atmosphere that's less about being seen and more about losing yourself in the music. The energy builds throughout the night, making it perfect for birthdays that are all about the party.",
+      "A late house music room of about 250 people. By the time doors open at 1am, your group will already have had dinner or drinks, so the table is where the birthday finishes.",
     groupSizeAdvice:
-      "BEAT works well for birthday groups of 6 to 20. The medium capacity means your group has space to spread out between the table and the dancefloor. Music-loving birthday groups of any size will appreciate what BEAT does differently.",
+      "BEAT holds about 250 people, so it is a smaller room than the big multi-level clubs. Everyone comes in on the table booking, so tell us your group size when you enquire and we will confirm the table options for your night.",
     proTip:
-      "If your birthday falls on a night when BEAT has a notable guest DJ, book it: the combination of a special lineup and your celebration creates something magical. Check the BEAT socials for upcoming lineups.",
+      "Book dinner or a bar for earlier in the evening and plan to reach BEAT for 1am. There is no guestlist and there are no tickets, so the whole group comes in on your table, and everyone needs photo ID because the door is 18+.",
+    extraFaqs: [
+      {
+        question: "What time does BEAT London open?",
+        answer: "Doors are at 1am and it closes at 6am, on Friday, Saturday and select Thursdays. It suits a late birthday plan after dinner or a bar. Check Thursday dates with us first.",
+      },
+      {
+        question: "Is there a guestlist or tickets for BEAT London?",
+        answer: "No. BEAT does not run a guestlist and there are no tickets. Entry is by table booking.",
+      },
+      {
+        question: "Do you need to be a member to book a birthday at BEAT?",
+        answer: "No. BEAT has members, and non-members can book a table.",
+      },
+      {
+        question: "What is the age limit at BEAT London?",
+        answer: "BEAT is 18+ with photo ID.",
+      },
+    ],
   },
 
   {

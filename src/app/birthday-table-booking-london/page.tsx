@@ -363,7 +363,7 @@ export default function BirthdayTableBookingPage() {
               },
               {
                 q: "Best sound system?",
-                a: "BEAT London: world-class audio, house and tech house",
+                a: "BEAT London: one of London's finest, by the venue's own account",
                 slug: "beat-london",
               },
             ].map((item) => (

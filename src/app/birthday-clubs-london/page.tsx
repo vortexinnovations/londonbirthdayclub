@@ -330,12 +330,12 @@ export default function BirthdayClubsLondonPage() {
               },
               {
                 size: "15 to 25 guests",
-                venues: "Reign London, The Box, BEAT London",
+                venues: "Reign London, The Box",
                 desc: "Large capacity venues with space for bigger groups without feeling cramped.",
               },
               {
                 size: "25+ guests",
-                venues: "Reign London, BEAT London",
+                venues: "Reign London",
                 desc: "The biggest venues with multi-table configurations for major celebrations.",
               },
             ].map((item, i) => (

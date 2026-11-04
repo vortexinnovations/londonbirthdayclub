@@ -57,7 +57,7 @@ const faqs = [
   {
     question: "What should I wear to a London nightclub birthday?",
     answer:
-      "Mayfair clubs enforce smart dress codes: no sportswear, trainers, shorts, or overly casual clothing. For men, smart shoes, fitted trousers, and a collared shirt are safe. For women, the dress code is more flexible but still smart. BEAT London has a more relaxed dress code than the Mayfair venues. Always check the specific venue's requirements.",
+      "Mayfair clubs enforce smart dress codes: no sportswear, trainers, shorts, or overly casual clothing. For men, smart shoes, fitted trousers, and a collared shirt are safe. For women, the dress code is more flexible but still smart. BEAT London is smart casual, with no sportswear. Always check the specific venue's requirements.",
   },
 ];
 
@@ -493,10 +493,7 @@ export default function PlanBirthdayPage() {
                 More Relaxed Venues
               </h3>
               <p className="font-sans text-[0.9375rem] leading-[1.8] text-ink-soft mb-5">
-                Smart-casual is accepted. Clean trainers are fine, but still
-                no sportswear, flip-flops, or gym gear. The vibe is less
-                formal: comfort and style over strict dress codes. You can
-                express yourself more freely while still looking put-together.
+                Smart casual, with no sportswear. Trainers only if they are clean and smart, at the door's discretion.
               </p>
               <p className="font-sans text-[0.8125rem] leading-relaxed tracking-[0.02em] text-ink-faint">
                 Applies to: BEAT London

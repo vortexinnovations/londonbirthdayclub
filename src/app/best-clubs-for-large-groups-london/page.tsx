@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 };
 
 const faqs = [
-  { question: "Which London club is best for 20+ guests?", answer: "Reign London is our top pick for 20+ guests: the grand multi-level venue has the space, spectacle, and multi-table configurations to handle large groups without anyone feeling lost. BEAT London and The Box London are also excellent for large groups, with BEAT offering the best sound quality and The Box spreading big groups across several levels." },
+  { question: "Which London club is best for 20+ guests?", answer: "Reign London is our top pick for 20+ guests: the grand multi-level venue has the space, spectacle, and multi-table configurations to handle large groups without anyone feeling lost. The Box London is also excellent for large groups, spreading them across several levels. BEAT London is a smaller room of about 250, so check table options with us first." },
   { question: "Can you book multiple tables together at London clubs?", answer: "Yes. For groups of 15+, we regularly arrange multiple tables positioned adjacent to each other so your group stays connected. We coordinate table positions with the venue to ensure your entire party is in the same area. This is standard practice at most London clubs." },
   { question: "How much does a large group booking cost per person?", answer: "Large group bookings offer the best per-person value. A £1,000 minimum spend across 20 people is just £50 each. For 30 people, it's roughly £33 per person. Multiple tables mean multiple minimum spends, but the per-person cost still decreases as the group grows." },
   { question: "How do you handle payments for large groups?", answer: "We recommend collecting money in advance via bank transfer to one organiser. For groups of 20+, nominate 2-3 people to manage collection. Most organisers set the per-person amount 10-15% above the minimum to cover the birthday person's share and tip. Payment apps make this straightforward." },
@@ -27,7 +27,7 @@ const faqs = [
 export default function LargeGroupsPage() {
   const largeGroupVenues = [
     { slug: "reign-london", capacity: "500+", tables: "Multi-table, same level", why: "The grand venue handles 20-40+ guests across adjacent tables with aerial performances keeping the entire group entertained. The biggest birthday-friendly venue in central London." },
-    { slug: "beat-london", capacity: "400", tables: "Adjacent dancefloor tables", why: "The medium capacity and more relaxed atmosphere mean large groups feel cohesive rather than scattered. The world-class sound system means everyone shares the same musical experience." },
+    { slug: "beat-london", capacity: "250", tables: "Confirmed on enquiry", why: "A smaller room of about 250, so a large group stays together. Doors are at 1am, so plan dinner or a bar first. Entry is by table booking, so tell us your numbers early and we will confirm the table options." },
     { slug: "the-box-london", capacity: "300", tables: "Theatre-style, multiple areas", why: "The multi-level layout gives large groups different perspectives on the performances. Mezzanine tables offer relaxed viewing while ground-level positions put you in the action." },
     { slug: "cirque-le-soir", capacity: "350", tables: "Adjacent performer-side", why: "Even with 20+ guests, the circus performers interact with your entire group. Multiple tables positioned together mean everyone gets the Cirque experience. Friday nights recommended for large groups." },
   ];

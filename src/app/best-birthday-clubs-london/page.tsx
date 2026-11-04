@@ -29,7 +29,7 @@ const faqs = [
   {
     question: "Which London club is best for a big birthday group?",
     answer:
-      "For large birthday groups of 15+, Reign London, BEAT London, and The Box London offer the most space and can accommodate multiple tables together. Reign London is the best option for very large groups of 25+ thanks to its multi-level layout.",
+      "For large birthday groups of 15+, Reign London and The Box London offer the most space and can accommodate multiple tables together. Reign London is the best option for very large groups of 25+ thanks to its multi-level layout.",
   },
   {
     question: "Which Mayfair club is cheapest for a birthday?",
@@ -99,7 +99,7 @@ const rankings = [
     position: 9,
     slug: "beat-london",
     verdict:
-      "BEAT is the choice for birthday groups where the music genuinely matters. The sound system is among the best in London, and the house and tech house policy creates a dancefloor energy that's about the music, not about being seen. More relaxed on dress code, more focused on the experience.",
+      "BEAT is the late choice for birthday groups who love house music. Doors are at 1am, so it suits a plan after dinner or a bar, and it stays open until 6am. The venue's own account is that it has one of London's finest sound systems. Entry is by table booking, and non-members can book.",
     bestForTag: "Music-First Birthday",
   },
   {
@@ -293,7 +293,7 @@ export default function BestClubsPage() {
               },
               {
                 q: "Best sound system?",
-                a: "BEAT London: music-first experience",
+                a: "BEAT London: one of London's finest, by the venue's own account",
                 link: "/clubs/beat-london",
               },
             ].map((item) => (

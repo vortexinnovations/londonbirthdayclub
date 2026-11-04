@@ -258,7 +258,7 @@ export default function HomePage() {
               { label: "Best for Entertainment", description: "Performers and spectacle", clubs: ["cirque-le-soir", "the-box-london", "reign-london"] },
               { label: "Best for Hip-Hop & RnB", description: "The right soundtrack", clubs: ["tape-london", "cirque-le-soir", "scotch-of-st-james"] },
               { label: "Best for Dinner + Club", description: "Complete evening", clubs: ["maddox-club", "dear-darling"] },
-              { label: "Best on a Budget", description: "Midweek value", clubs: ["cirque-le-soir", "beat-london", "scotch-of-st-james"] },
+              { label: "Best on a Budget", description: "Midweek value", clubs: ["cirque-le-soir", "scotch-of-st-james"] },
             ]}
           />
         </div>

@@ -187,7 +187,7 @@ export default function BirthdayTablePricesPage() {
           </div>
           <div className="space-y-10">
             {[
-              { tier: "Smart Budget", pp: "£50-80 per person", how: "Large group (15+), midweek booking, standard table position. You still get the full VIP experience. Just with a bigger group splitting the cost.", venues: "Cirque Le Soir (Wed), BEAT London, Reign London" },
+              { tier: "Smart Budget", pp: "£50-80 per person", how: "Large group (15+), midweek booking, standard table position. You still get the full VIP experience. Just with a bigger group splitting the cost.", venues: "Cirque Le Soir (Wed), Reign London" },
               { tier: "Standard", pp: "£80-120 per person", how: "Group of 10-12, weekend booking, standard table. This is the most popular tier: excellent experience at a reasonable per-person cost.", venues: "Most Mayfair clubs on Fri/Sat" },
               { tier: "Premium", pp: "£120-200 per person", how: "Smaller group (6-8), premium table position, potentially upgraded bottles. A more intimate, higher-quality experience.", venues: "Tape London, Cirque Le Soir, The Box" },
               { tier: "Luxury", pp: "£200+ per person", how: "Small group at the most exclusive venue, best table in the house, champagne packages. For milestone birthdays where budget isn't the primary concern.", venues: "Tape London, Cirque Le Soir: premium positions" },
