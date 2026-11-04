@@ -1,5 +1,20 @@
 import type { NextConfig } from "next";
 
+// Enforced: these cannot block a page's own scripts, images or forms.
+const CSP = "frame-ancestors 'self'; base-uri 'self'; object-src 'none'";
+// Watch only, nothing is blocked: browsers log what a full policy would stop.
+const CSP_REPORT_ONLY = [
+  "default-src 'self'",
+  "script-src 'self' 'unsafe-inline' https://challenges.cloudflare.com",
+  "style-src 'self' 'unsafe-inline'",
+  "img-src 'self' data: blob: https:",
+  "font-src 'self' data:",
+  "connect-src 'self' https://challenges.cloudflare.com",
+  "frame-src https://challenges.cloudflare.com https://www.google.com https://maps.google.com",
+  "media-src 'self' https:",
+  "form-action 'self'",
+].join("; ");
+
 const nextConfig: NextConfig = {
   experimental: {
     inlineCss: true,
@@ -12,6 +27,8 @@ const nextConfig: NextConfig = {
           { key: "X-Frame-Options", value: "SAMEORIGIN" },
           { key: "X-Content-Type-Options", value: "nosniff" },
           { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
+          { key: "Content-Security-Policy", value: CSP },
+          { key: "Content-Security-Policy-Report-Only", value: CSP_REPORT_ONLY },
           { key: "Permissions-Policy", value: "camera=(), microphone=(), geolocation=()" },
         ],
       },
