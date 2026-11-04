@@ -1,3 +1,4 @@
+import { escapedHtml, safeLinks, safeJsonLd } from "@/lib/safe-output";
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import Image from "next/image";
@@ -10,6 +11,9 @@ import WhatsAppCTA from "@/components/WhatsAppCTA";
 import FAQSchema from "@/components/FAQSchema";
 import { getPostImage } from "@/lib/images";
 import { fitTitle } from "@/lib/seo";
+
+// Database posts are plain Markdown; raw HTML shows as text and only safe link schemes render.
+marked.use(escapedHtml, safeLinks);
 
 // Posts are prerendered at build and refreshed by /api/revalidate when the
 // content API publishes; this daily regeneration is only a safety net.
@@ -142,7 +146,7 @@ export default async function BlogPostPage({
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+        dangerouslySetInnerHTML={{ __html: safeJsonLd(articleSchema) }}
       />
       {post.faqs && <FAQSchema faqs={post.faqs} />}
 

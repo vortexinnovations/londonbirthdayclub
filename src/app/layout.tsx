@@ -1,3 +1,4 @@
+import { safeJsonLd } from "@/lib/safe-output";
 import type { Metadata } from "next";
 import { Bodoni_Moda, Hanken_Grotesk } from "next/font/google";
 import "./globals.css";
@@ -107,13 +108,13 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify(localBusinessSchema),
+            __html: safeJsonLd(localBusinessSchema),
           }}
         />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify(webSiteSchema),
+            __html: safeJsonLd(webSiteSchema),
           }}
         />
         <Header />

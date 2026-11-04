@@ -1,3 +1,4 @@
+import { safeJsonLd } from "@/lib/safe-output";
 interface ArticleSchemaProps {
   title: string;
   description: string;
@@ -39,7 +40,7 @@ export default function ArticleSchema({
   return (
     <script
       type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      dangerouslySetInnerHTML={{ __html: safeJsonLd(schema) }}
     />
   );
 }

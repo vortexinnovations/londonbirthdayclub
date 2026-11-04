@@ -1,3 +1,4 @@
+import { safeJsonLd } from "@/lib/safe-output";
 import type { Club } from "@/lib/clubs";
 import { getClubImage } from "@/lib/images";
 
@@ -26,7 +27,7 @@ export default function NightClubSchema({ club }: { club: Club }) {
   return (
     <script
       type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      dangerouslySetInnerHTML={{ __html: safeJsonLd(schema) }}
     />
   );
 }

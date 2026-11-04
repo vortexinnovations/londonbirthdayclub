@@ -1,3 +1,4 @@
+import { safeJsonLd } from "@/lib/safe-output";
 interface ItemListItem {
   name: string;
   url: string;
@@ -28,7 +29,7 @@ export default function ItemListSchema({ name, description, items }: ItemListSch
   return (
     <script
       type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      dangerouslySetInnerHTML={{ __html: safeJsonLd(schema) }}
     />
   );
 }
