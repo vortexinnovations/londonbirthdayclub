@@ -616,7 +616,7 @@ export const clubs: Club[] = [
     location: "48 Margaret Street, Fitzrovia",
     streetAddress: "48 Margaret Street",
     postalCode: "W1W 8SE",
-    openingHours: "Fr,Sa 01:00-06:00",
+    openingHours: "Sa,Su 01:00-06:00",
     area: "Fitzrovia",
     minSpend: "£1,000",
     musicPolicy: "House",
@@ -636,7 +636,7 @@ export const clubs: Club[] = [
       "Tables from £1,000 minimum spend, spent on drinks",
     ],
     whatToExpect:
-      "BEAT is an after-hours club, so plan the birthday around its hours: doors are at 1am and it closes at 6am. That makes it a late plan for after dinner or a bar, not a place to start the night. The music is house, the room holds about 250 people, and the venue's own account is that it has one of London's finest sound systems. Its own history is that it opened in 1966 as The Speakeasy Club (\"The Speak\"), which hosted Jimi Hendrix, The Beatles, Bob Marley and David Bowie, and King Crimson's debut, and that it has since been extensively renovated.",
+      "BEAT is an after-hours club, so plan the birthday around its hours: doors are at 1am and it closes at 6am. Nights run into the next morning, so a Friday night at BEAT means doors at 1am on Saturday morning. That makes it a late plan for after dinner or a bar, not a place to start the night. The music is house, the room holds about 250 people, and the venue's own account is that it has one of London's finest sound systems. Its own history is that it opened in 1966 as The Speakeasy Club (\"The Speak\"), which hosted Jimi Hendrix, The Beatles, Bob Marley and David Bowie, and King Crimson's debut, and that it has since been extensively renovated.",
     birthdayExtras:
       "Tables at BEAT can be booked for birthdays, and celebration extras are on request, so tell us what you have in mind when you book.",
     atmosphere:
@@ -648,7 +648,7 @@ export const clubs: Club[] = [
     extraFaqs: [
       {
         question: "What time does BEAT London open?",
-        answer: "Doors are at 1am and it closes at 6am, on Friday, Saturday and select Thursdays. It suits a late birthday plan after dinner or a bar. Check Thursday dates with us first.",
+        answer: "Doors are at 1am and it closes at 6am, on Friday, Saturday and select Thursdays. Nights run into the next morning, so a Friday night means doors at 1am on Saturday morning. It suits a late birthday plan after dinner or a bar. Check Thursday dates with us first.",
       },
       {
         question: "Is there a guestlist or tickets for BEAT London?",
