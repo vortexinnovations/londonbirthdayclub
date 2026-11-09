@@ -3,6 +3,7 @@ import { fitTitle } from "@/lib/seo";
 import Image from "next/image";
 import Link from "next/link";
 import { openClubs, getGeneralWhatsAppMessage } from "@/lib/clubs";
+import { getMergedPosts } from "@/lib/blog";
 import ClubCard from "@/components/ClubCard";
 import WhatsAppCTA from "@/components/WhatsAppCTA";
 import FAQSchema from "@/components/FAQSchema";
@@ -10,6 +11,10 @@ import TrustSignals from "@/components/TrustSignals";
 import ClubComparisonModule from "@/components/ClubComparisonModule";
 import VenueTicker from "@/components/VenueTicker";
 import { images } from "@/lib/images";
+
+// Prerendered, like /blog; /api/revalidate marks it stale when the content API
+// publishes, so the latest guides below update with no redeploy.
+export const revalidate = 86400;
 
 export const metadata: Metadata = {
   title: fitTitle("London Birthday Club: VIP Birthday Tables at London Clubs"),
@@ -46,7 +51,12 @@ const faqs = [
   },
 ];
 
-export default function HomePage() {
+export default async function HomePage() {
+  // Same list and order as the blog index.
+  const latestPosts = [...(await getMergedPosts())]
+    .sort((a, b) => b.publishedAt.localeCompare(a.publishedAt))
+    .slice(0, 6);
+
   return (
     <>
       <FAQSchema faqs={faqs} />
@@ -370,6 +380,69 @@ export default function HomePage() {
       </section>
 
       <div className="divider-gilt" />
+
+      {/* Latest guides: the six newest blog posts */}
+      {latestPosts.length > 0 && (
+        <>
+          <section className="py-24 sm:py-28 px-4 sm:px-6 lg:px-8 bg-noir-soft">
+            <div className="max-w-6xl mx-auto">
+              <div className="mb-14 sm:mb-20" data-reveal>
+                <p className="flex items-center gap-4 font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.28em] text-champagne mb-5">
+                  <span className="hairline-draw block h-px w-10 bg-champagne/60" />
+                  The Journal
+                </p>
+                <h2 className="font-display font-medium text-[2rem] leading-[1.12] sm:text-4xl lg:text-[2.75rem] tracking-[-0.01em] text-ink max-w-2xl">
+                  Latest{" "}
+                  <em className="italic text-champagne font-normal">Guides</em>
+                </h2>
+              </div>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-14 gap-y-12" data-reveal>
+                {latestPosts.map((post) => (
+                  <div
+                    key={post.slug}
+                    className="group border-t border-hairline hover:border-hairline-strong pt-6 transition-colors duration-500"
+                  >
+                    <div className="flex flex-wrap items-center gap-4 mb-4">
+                      <span className="inline-flex items-center border border-hairline-strong rounded-[2px] px-2.5 py-1 font-sans text-[0.625rem] font-semibold uppercase tracking-[0.2em] text-champagne">
+                        {post.category}
+                      </span>
+                      <span className="font-sans text-[0.75rem] uppercase tracking-[0.18em] text-ink-faint">
+                        {post.readTime}
+                      </span>
+                    </div>
+                    <h3 className="font-display font-medium text-xl text-ink mb-3">
+                      <Link
+                        href={`/blog/${post.slug}`}
+                        className="group-hover:text-champagne-bright transition-colors duration-300"
+                      >
+                        {post.title}
+                      </Link>
+                    </h3>
+                    <p className="font-sans text-base leading-[1.8] text-ink-soft">
+                      {post.excerpt}
+                    </p>
+                  </div>
+                ))}
+              </div>
+
+              <div className="mt-12 sm:mt-14">
+                <Link
+                  href="/blog"
+                  className="group inline-flex items-center gap-2 text-champagne text-[0.8125rem] font-semibold uppercase tracking-[0.14em]"
+                >
+                  All guides{" "}
+                  <span className="transition-transform duration-400 group-hover:translate-x-1.5">
+                    &rarr;
+                  </span>
+                </Link>
+              </div>
+            </div>
+          </section>
+
+          <div className="divider-gilt" />
+        </>
+      )}
 
       {/* Bottom CTA */}
       <section className="py-24 sm:py-32 px-4 sm:px-6 lg:px-8 bg-noir-deep">
