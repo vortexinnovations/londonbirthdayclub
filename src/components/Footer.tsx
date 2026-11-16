@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { openClubs } from "@/lib/clubs";
+import { PreferredSourceButton } from "@/components/PreferredSourceButton";
 
 const guideLinks = [
   { href: "/birthday-clubs-london", label: "Birthday Clubs London" },
@@ -118,7 +119,13 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-hairline mt-16 pt-8">
+        <div className="border-t border-hairline mt-16 pt-8 flex flex-col gap-8 md:flex-row-reverse md:items-center md:justify-between">
+          <div className="shrink-0">
+            <PreferredSourceButton placement="footer" />
+            <p className="mt-2.5 font-sans text-[0.75rem] tracking-[0.02em] text-ink-faint">
+              See us first in Google Search, Discover &amp; AI Mode.
+            </p>
+          </div>
           <p className="font-sans text-[0.8125rem] tracking-[0.02em] text-ink-faint">
             &copy; {new Date().getFullYear()} London Birthday Club. All rights
             reserved. Helping you celebrate at London&apos;s finest nightclubs.

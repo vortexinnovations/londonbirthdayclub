@@ -152,6 +152,8 @@ Legacy classes (`text-gold`, `bg-bg-card`, `border-border`, `text-text-secondary
 9. Icon sets / emoji decoration (existing content emoji like ⚠ may be removed; type and rules carry the UI). The star ✶/★ list bullets become `<span className="font-display italic text-champagne/70">✦</span>` or a champagne en-dash — pick one per page and be consistent
 10. Zebra striping, `[text-shadow:…]`, black gradient overlays (`from-black`)
 
+**The one exception: Google's "Add to Preferred Sources" button** (`src/components/PreferredSourceButton.tsx`, `.preferred-source-btn` in `globals.css`). It is Google's mark and the same component as on the sister sites, so it keeps its pill shape, the four Google colours and its slowly flowing border. Do not restyle it to the bans above; only its fill (`--psb-bg`, surface) and text (`--psb-fg`, ink) follow this palette. It appears in the header service strip (xl+), at the foot of the mobile menu, in the footer's bottom row and in a hairline panel at the end of blog articles. Its `placement` names (`header`, `menu`, `footer`, `article`, `thankyou`) are what the click dashboard on londonnightguide.com reports, so do not rename them.
+
 ## 8. Content-integrity rules (absolute)
 
 - ZERO changes to user-visible copy: headings, paragraphs, FAQ text, labels, link text, alt text. (Exceptions explicitly allowed: NONE. Eyebrow labels are the only NEW text you may add, and they must be short generic section labels.)

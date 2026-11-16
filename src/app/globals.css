@@ -308,6 +308,60 @@ body {
 }
 
 /* ============================================================
+   Google "Add to Preferred Sources" button
+   Google's own mark, so it keeps Google's look and is the one
+   exception to the pill, raw-colour and ambient-motion bans:
+   the border is a conic gradient in the four Google colours,
+   slowly flowing around the pill. Animating the angle needs
+   @property; browsers without it show the gradient standing
+   still. --psb-bg / --psb-fg are the fill (surface) and text (ink).
+   ============================================================ */
+
+@property --psb-angle {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0deg;
+}
+
+@keyframes psb-flow {
+  to {
+    --psb-angle: 360deg;
+  }
+}
+
+.preferred-source-btn {
+  --psb-bg: #1a1610;
+  --psb-fg: #f4efe6;
+  color: var(--psb-fg);
+  text-decoration: none;
+  border: 2px solid transparent;
+  border-radius: 9999px;
+  background:
+    linear-gradient(var(--psb-bg), var(--psb-bg)) padding-box,
+    conic-gradient(
+        from var(--psb-angle),
+        #4285f4,
+        #ea4335,
+        #fbbc05,
+        #34a853,
+        #4285f4
+      )
+      border-box;
+  animation: psb-flow 5s linear infinite;
+  transition:
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
+}
+
+.preferred-source-btn:hover {
+  color: var(--psb-fg);
+  transform: translateY(-1px);
+  box-shadow:
+    0 0 14px rgba(66, 133, 244, 0.3),
+    0 0 26px rgba(52, 168, 83, 0.15);
+}
+
+/* ============================================================
    Scroll reveal — JS-safe: content is fully visible unless
    the client component mounts and stamps html.js.
    ============================================================ */
@@ -413,5 +467,8 @@ html.js [data-reveal].in-view .hairline-draw {
   }
   .ticker-track {
     animation: none;
+  }
+  .preferred-source-btn:hover {
+    transform: none;
   }
 }

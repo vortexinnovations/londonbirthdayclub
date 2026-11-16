@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { getWhatsAppLink, getGeneralWhatsAppMessage } from "@/lib/clubs";
+import { PreferredSourceButton } from "@/components/PreferredSourceButton";
 
 const whatsAppGlyph = (
   <svg
@@ -116,9 +117,12 @@ export default function Header() {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-9 border-b border-hairline">
-            <p className="font-sans text-[0.625rem] font-semibold uppercase tracking-[0.28em] text-ink-faint">
-              Mayfair · Est. London
-            </p>
+            <div className="flex items-center gap-6">
+              <p className="font-sans text-[0.625rem] font-semibold uppercase tracking-[0.28em] text-ink-faint">
+                Mayfair · Est. London
+              </p>
+              <PreferredSourceButton placement="header" />
+            </div>
             <div className="flex items-center gap-6">
               <p className="font-sans text-[0.625rem] font-semibold uppercase tracking-[0.28em] text-ink-faint">
                 Free concierge · Replies in minutes
@@ -201,10 +205,11 @@ export default function Header() {
         aria-hidden
       />
 
-      {/* Mobile nav — an editorial contents page */}
+      {/* Mobile nav — an editorial contents page. It scrolls inside the space
+          above the sticky WhatsApp bar, so the last rows stay reachable. */}
       {mobileOpen && (
-        <div className="relative xl:hidden bg-noir-deep/98 backdrop-blur-md border-t border-hairline">
-          <nav className="px-6 py-8 flex flex-col">
+        <div className="relative xl:hidden bg-noir-deep/98 backdrop-blur-md border-t border-hairline max-h-[calc(100dvh-10.5rem-env(safe-area-inset-bottom))] overflow-y-auto overscroll-contain">
+          <nav className="px-6 pt-8 pb-6 flex flex-col">
             {navLinks.map((link, i) => {
               const active = isActive(link.href);
               return (
@@ -231,6 +236,12 @@ export default function Header() {
               );
             })}
           </nav>
+          <div className="px-6 pb-8 flex flex-col items-start gap-3">
+            <PreferredSourceButton placement="menu" />
+            <p className="font-sans text-[0.75rem] tracking-[0.02em] text-ink-faint">
+              See us first in Google Search &amp; AI Mode
+            </p>
+          </div>
         </div>
       )}
     </header>
