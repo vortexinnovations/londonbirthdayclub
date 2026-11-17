@@ -29,7 +29,7 @@ export default function EighteenthBirthdayPage() {
     { slug: "beat-london", reason: "The door is 18+ with photo ID and the dress code is smart casual. House music with doors at 1am, so it suits an 18th group planning dinner or a bar first. Entry is by table booking." },
     { slug: "reign-london", reason: "If your 18th group is big (15+), Reign's grand venue with aerial performances creates a celebration that matches the energy of the milestone. The spectacle gives everyone something to remember." },
     { slug: "rumour-london", reason: "Rumour (formerly Tabu) admits 18 and over with photo ID, so an 18th works here; 99 Regent Street, by contrast, is 19+. One intimate room of red velvet booths at 1 Dover Street, open-format hip-hop, RnB and house, and booths from £1,000 minimum spend that cover entry for the whole group. No photos or video in the main room, so the night stays in the room." },
-    { slug: "rex-rooms-chelsea", reason: "The Rex Rooms on the King's Road in Chelsea is 18+ with photo ID, so an 18th works here. Birthday tables are bookable in both rooms, the Main Room with the DJ and the bar or the VIP King's Room with its private-party feel, and celebration extras are on request. Open Monday and Wednesday to Saturday, 11:30pm to 3am, with last entry at 2am." },
+    { slug: "rex-rooms-chelsea", reason: "The Rex Rooms on the King's Road in Chelsea is 18+ with photo ID, so an 18th works here. Birthday tables are bookable in both rooms, the Main Room with the DJ and the bar or the VIP King's Room with its private-party feel, and celebration extras are on request. Open Monday and Wednesday to Saturday, 11pm to 3am, with last entry at 2am." },
   ];
 
   return (

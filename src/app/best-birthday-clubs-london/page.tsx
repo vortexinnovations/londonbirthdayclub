@@ -120,7 +120,7 @@ const rankings = [
     position: 12,
     slug: "rex-rooms-chelsea",
     verdict:
-      "The Rex Rooms is the Chelsea choice, at 151 King's Road on the site of the former 151 Club. Birthday tables are bookable in both rooms: the Main Room, with the DJ and the bar, or the VIP King's Room, a more exclusive space with a private-party feel. The door is 18+ with photo ID, so it works for an 18th, celebration extras are on request, and the minimum spend is confirmed when you book. Open Monday and Wednesday to Saturday, 11:30pm to 3am, with last entry at 2am.",
+      "The Rex Rooms is the Chelsea choice, at 151 King's Road on the site of the former 151 Club. Birthday tables are bookable in both rooms: the Main Room, with the DJ and the bar, or the VIP King's Room, a more exclusive space with a private-party feel. The door is 18+ with photo ID, so it works for an 18th, celebration extras are on request, and the minimum spend is confirmed when you book. Open Monday and Wednesday to Saturday, 11pm to 3am, with last entry at 2am.",
     bestForTag: "Chelsea, Two Rooms",
   },
 ];

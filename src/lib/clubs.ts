@@ -677,7 +677,7 @@ export const clubs: Club[] = [
     location: "151 King's Road, Chelsea",
     streetAddress: "151 King's Road",
     postalCode: "SW3 5TX",
-    openingHours: "Mo,We,Th,Fr,Sa 23:30-03:00",
+    openingHours: "Mo,We,Th,Fr,Sa 23:00-03:00",
     area: "Chelsea",
     minSpend: "On request",
     musicPolicy: "House, Latin, Commercial",
@@ -704,16 +704,16 @@ export const clubs: Club[] = [
       "The VIP King's Room has a private-party feel, with tables K2 to K7 around a VIP bar",
       "18+ with photo ID, so an 18th birthday works here",
       "House, Latin and commercial music, five nights a week",
-      "As of November 2026, mixed groups get free entry before 11:30pm",
+      "Doors open at 11pm, and as of November 2026 mixed groups who arrive before 11:30pm get in free",
     ],
     whatToExpect:
-      "The Rex Rooms is at 151 King's Road in Chelsea, and the nearest tubes are Sloane Square and South Kensington. It opens on Monday (Industry Mondays), Wednesday (House Wednesday), Thursday, Friday (Scandi Fridays) and Saturday (Brazilian Saturdays), from 11:30pm to 3am with last entry at 2am, and it is closed on Tuesday and Sunday. There are two rooms. The Main Room has the DJ and the bar, is open to everyone, and is where guests dance and mingle; its tables, numbered 1 to 14, sit around the main bar. The VIP King's Room is a more exclusive space where many VIP guests spend their time, with a private-party feel; its tables, K2 to K7, sit around a VIP bar. The music is house, Latin and commercial: the resident DJ Tiempo usually plays house and Latin, and DJ Dan usually plays more commercial sets.",
+      "The Rex Rooms is at 151 King's Road in Chelsea, and the nearest tubes are Sloane Square and South Kensington. It opens on Monday (Industry Mondays), Wednesday (House Wednesday), Thursday, Friday (Scandi Fridays) and Saturday (Brazilian Saturdays), from 11pm to 3am with last entry at 2am, and it is closed on Tuesday and Sunday. There are two rooms. The Main Room has the DJ and the bar, is open to everyone, and is where guests dance and mingle; its tables, numbered 1 to 14, sit around the main bar. The VIP King's Room is a more exclusive space where many VIP guests spend their time, with a private-party feel; its tables, K2 to K7, sit around a VIP bar. The music is house, Latin and commercial: the resident DJ Tiempo usually plays house and Latin, and DJ Dan usually plays more commercial sets.",
     birthdayExtras:
       "Celebration extras at The Rex Rooms are on request: tell us what you have in mind when you book, and we will confirm with the venue what can be arranged for your night. The minimum spend for your table is confirmed when you book.",
     atmosphere:
       "Two rooms with two moods. The Main Room is where guests dance and mingle, around the DJ and the bar. The VIP King's Room is more exclusive, with a private-party feel that suits a birthday table. Dress smart and stylish, with no sportswear.",
     groupSizeAdvice:
-      "Tables are bookable in both rooms, so tell us your group size and whether you want the Main Room or the King's Room, and we will come back with the options and the minimum spend for your night. Guests who are not at the table can still join you: as of November 2026, mixed groups get free entry before 11:30pm, and otherwise guestlist and entry are by request.",
+      "Tables are bookable in both rooms, so tell us your group size and whether you want the Main Room or the King's Room, and we will come back with the options and the minimum spend for your night. Guests who are not at the table can still join you: as of November 2026, mixed groups who arrive before 11:30pm get in free, and otherwise guestlist and entry are by request.",
     proTip:
       "Choose the room first: the King's Room for a more private birthday table, the Main Room to be close to the DJ and the dancing. Last entry is 2am, so tell any late arrivals in the group, and remind everyone to bring photo ID.",
     extraFaqs: [
@@ -727,7 +727,7 @@ export const clubs: Club[] = [
       },
       {
         question: "What time is The Rex Rooms open?",
-        answer: "From 11:30pm to 3am on Monday, Wednesday, Thursday, Friday and Saturday, with last entry at 2am. It is closed on Tuesday and Sunday.",
+        answer: "From 11pm to 3am on Monday, Wednesday, Thursday, Friday and Saturday, with last entry at 2am. It is closed on Tuesday and Sunday.",
       },
       {
         question: "Where is The Rex Rooms?",
