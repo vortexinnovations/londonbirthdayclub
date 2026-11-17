@@ -10,16 +10,16 @@ import FAQSchema from "@/components/FAQSchema";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 export const metadata: Metadata = {
-  title: fitTitle("Birthday Clubs London: 11 Venues Compared (2026)"),
+  title: fitTitle(`Birthday Clubs London: ${openClubs.length} Venues Compared (2026)`),
   description:
-    "Compare 11 London birthday clubs side by side: minimum spends from £600 to £1,000, music, nights and group size. Free booking via WhatsApp.",
+    `Compare ${openClubs.length} London birthday clubs side by side: minimum spends from £600 to £1,000, music, nights and group size. Free booking via WhatsApp.`,
   alternates: {
     canonical: "https://londonbirthdayclub.com/birthday-clubs-london",
   },
   openGraph: {
     title: "Birthday Clubs in London | Find Your Perfect Venue",
     description:
-      "Compare 11 London nightclubs for birthday celebrations. VIP tables, bottle service, birthday packages. Free booking via WhatsApp.",
+      `Compare ${openClubs.length} London nightclubs for birthday celebrations. VIP tables, bottle service, birthday packages. Free booking via WhatsApp.`,
     url: "https://londonbirthdayclub.com/birthday-clubs-london",
   },
 };
