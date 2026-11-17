@@ -82,7 +82,7 @@ export async function generateMetadata({
     },
     openGraph: {
       title: `${titleName} Birthday Packages | London Birthday Club`,
-      description: `Birthday table booking at ${club.name}. ${club.tagline}. Tables from ${club.minSpend}. Free booking via WhatsApp.`,
+      description: `Birthday table booking at ${club.name}. ${club.tagline}. ${club.minSpend.startsWith("£") ? `Tables from ${club.minSpend}` : "Table minimum confirmed when you book"}. Free booking via WhatsApp.`,
       url: `https://londonbirthdayclub.com/clubs/${club.slug}`,
     },
   };
@@ -328,6 +328,31 @@ export default async function ClubPage({
                 <div className="grade" />
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+      </>
+      )}
+
+      {club.floorPlan && (
+      <>
+      <div className="divider-gilt" />
+
+      {/* Table plan (venues that share theirs): shown whole, never cropped */}
+      <section className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-3xl mx-auto">
+          <p className="flex items-center gap-4 font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.28em] text-champagne mb-8" data-reveal>
+            <span className="hairline-draw block h-px w-10 bg-champagne/60" />
+            The Table Plan
+          </p>
+          <div className="frame-mat relative aspect-square overflow-hidden" data-reveal>
+            <Image
+              src={club.floorPlan.src}
+              alt={club.floorPlan.alt}
+              fill
+              className="object-contain"
+              sizes="(max-width: 768px) 100vw, 768px"
+            />
           </div>
         </div>
       </section>

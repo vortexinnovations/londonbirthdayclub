@@ -11,9 +11,9 @@ import ItemListSchema from "@/components/ItemListSchema";
 import ArticleSchema from "@/components/ArticleSchema";
 
 export const metadata: Metadata = {
-  title: fitTitle("11 Best Birthday Clubs in London (2026), Ranked with Prices"),
+  title: fitTitle("12 Best Birthday Clubs in London (2026), Ranked with Prices"),
   description:
-    "Tape, Cirque Le Soir and The Box lead our 11 best London clubs for a birthday, ranked with prices from £600, group advice and what to expect on the night.",
+    "Tape, Cirque Le Soir and The Box lead our 12 best London clubs for a birthday, ranked with prices from £600, group advice and what to expect on the night.",
   alternates: {
     canonical: "https://londonbirthdayclub.com/best-birthday-clubs-london",
   },
@@ -116,6 +116,13 @@ const rankings = [
       "99 Regent Street (formerly Cuckoo Club) is the two-floor club with its entrance on Swallow Street, two minutes from Piccadilly Circus: open-format hip-hop and RnB upstairs, where most of the tables sit, and house downstairs. Tables start from £600 minimum spend, the lowest on this list, and cover entry for the whole group. The door is 19+ with physical photo ID, so it suits a 21st and up rather than an 18th. Both floors run on Friday and Saturday; one floor opens on Wednesday and Thursday.",
     bestForTag: "Two Floors From £600",
   },
+  {
+    position: 12,
+    slug: "rex-rooms-chelsea",
+    verdict:
+      "The Rex Rooms is the Chelsea choice, at 151 King's Road on the site of the former 151 Club. Birthday tables are bookable in both rooms: the Main Room, with the DJ and the bar, or the VIP King's Room, a more exclusive space with a private-party feel. The door is 18+ with photo ID, so it works for an 18th, celebration extras are on request, and the minimum spend is confirmed when you book. Open Monday and Wednesday to Saturday, 11:30pm to 3am, with last entry at 2am.",
+    bestForTag: "Chelsea, Two Rooms",
+  },
 ];
 
 export default function BestClubsPage() {
@@ -132,8 +139,8 @@ export default function BestClubsPage() {
     <>
       <FAQSchema faqs={faqs} />
       <BreadcrumbSchema items={[{ name: "Home", href: "/" }, { name: "Best Birthday Clubs London", href: "/best-birthday-clubs-london" }]} />
-      <ItemListSchema name="Best Birthday Clubs in London 2026" description="11 London nightclubs ranked for birthday celebrations, based on atmosphere, service, entertainment, and birthday-specific features." items={itemListItems} />
-      <ArticleSchema title="11 Best Birthday Clubs in London: Ranked by Real Experience" description="Honest, ranked guide to the best London nightclubs for birthday celebrations." url="https://londonbirthdayclub.com/best-birthday-clubs-london" />
+      <ItemListSchema name="Best Birthday Clubs in London 2026" description="12 London nightclubs ranked for birthday celebrations, based on atmosphere, service, entertainment, and birthday-specific features." items={itemListItems} />
+      <ArticleSchema title="12 Best Birthday Clubs in London: Ranked by Real Experience" description="Honest, ranked guide to the best London nightclubs for birthday celebrations." url="https://londonbirthdayclub.com/best-birthday-clubs-london" />
 
       {/* Hero */}
       <section className="relative min-h-[64vh] img-editorial flex items-end overflow-hidden">

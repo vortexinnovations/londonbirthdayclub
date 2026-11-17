@@ -32,7 +32,7 @@ const faqs = [
   {
     question: "Which London clubs are open on a Thursday?",
     answer:
-      "Thursday is a popular night in the West End with several top clubs open: Reign London, Maddox Club, Scotch of St James, Dear Darling, The Box London, Selene London, Rumour (formerly Tabu) and 99 Regent Street (formerly Cuckoo Club) all operate on Thursday nights. It's an excellent night for birthdays with strong atmosphere and lower minimum spends than weekends.",
+      "Thursday is a popular night in the West End with several top clubs open: Reign London, Maddox Club, Scotch of St James, Dear Darling, The Box London, Selene London, Rumour (formerly Tabu) and 99 Regent Street (formerly Cuckoo Club) all operate on Thursday nights, and The Rex Rooms is open in Chelsea. It's an excellent night for birthdays with strong atmosphere and lower minimum spends than weekends.",
   },
 ];
 
@@ -42,7 +42,7 @@ const nights = [
     slug: "wednesday",
     energy: "Building momentum",
     minSpendNote: "Lower than weekend, great value",
-    venuesOpen: ["Cirque Le Soir", "The Box London", "Rumour", "99 Regent Street"],
+    venuesOpen: ["Cirque Le Soir", "The Box London", "Rumour", "99 Regent Street", "The Rex Rooms"],
     description:
       "Wednesday is an underrated birthday night. Cirque Le Soir's Wednesday offering is particularly noteworthy. You still get the full circus experience with live performers, but the atmosphere is slightly more intimate than Friday.",
     bestFor:
@@ -65,6 +65,7 @@ const nights = [
       "Rumour",
       "99 Regent Street",
       "BEAT London",
+      "The Rex Rooms",
     ],
     description:
       "Thursday is the sweet spot for London birthday celebrations. Nearly every major Mayfair venue is open, the atmosphere is genuinely lively, and minimum spends are lower than weekends. The crowd on a Thursday tends to be slightly more industry-connected and fashion-forward: people who know the scene.",
@@ -90,6 +91,7 @@ const nights = [
       "Selene London",
       "Rumour",
       "99 Regent Street",
+      "The Rex Rooms",
     ],
     description:
       "Friday is when London nightlife hits its stride. Every venue is open, the energy is high, and the crowd is ready to celebrate. For birthdays, Friday offers the biggest choice of venues and consistently strong atmospheres across the board. Cirque Le Soir often has its best performance lineup on Fridays.",
@@ -115,6 +117,7 @@ const nights = [
       "Selene London",
       "Rumour",
       "99 Regent Street",
+      "The Rex Rooms",
     ],
     description:
       "Saturday is the biggest night in London nightlife. Every venue operates at full capacity, the atmosphere peaks, and the energy is at its absolute maximum. For birthdays, a Saturday night means your celebration happens when the room is at its most electric. The downside is the highest minimum spends and the most competition for premium table positions.",
@@ -240,6 +243,7 @@ export default function BirthdayByNightPage() {
                       "Selene London": "selene-london",
                       "Rumour": "rumour-london",
                       "99 Regent Street": "99-regent-street",
+                      "The Rex Rooms": "rex-rooms-chelsea",
                     };
                     return (
                       <Link

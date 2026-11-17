@@ -50,6 +50,7 @@ export const images = {
     "luna-club-london": "/gallery/images/photo-dec-23-2024-3-08-31-am.jpg",
     "selene-london": "/gallery/images/DesDior-167.jpg",
     "beat-london": "/gallery/images/DesDior-99.jpg",
+    "rex-rooms-chelsea": "/gallery/images/rex-rooms-chelsea-velvet-booths.jpg",
     "maison-close": "/gallery/images/maison-close-479.jpg",
   },
 

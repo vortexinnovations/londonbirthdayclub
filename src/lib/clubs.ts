@@ -42,6 +42,8 @@ export interface Club {
   heroAlt?: string;
   /** Extra photos for the venue page, served through the /gallery/images rewrite. */
   photos?: { src: string; alt: string }[];
+  /** The venue's table plan, shown uncropped on the venue page. */
+  floorPlan?: { src: string; alt: string };
   /** Venue-specific questions appended to the generated FAQ. */
   extraFaqs?: { question: string; answer: string }[];
   /** Closed venues: the statement shown at the top of the venue page. */
@@ -661,6 +663,75 @@ export const clubs: Club[] = [
       {
         question: "What is the age limit at BEAT London?",
         answer: "BEAT is 18+ with photo ID.",
+      },
+    ],
+  },
+  {
+    slug: "rex-rooms-chelsea",
+    metaTitle: "The Rex Rooms Chelsea Birthday: Tables in Two Rooms",
+    metaDescription:
+      "Birthday tables at The Rex Rooms, 151 King's Road, Chelsea, in the Main Room or the VIP King's Room. 18+ with photo ID; extras on request. Book free.",
+    name: "The Rex Rooms",
+    shortName: "Rex Rooms",
+    tagline: "The Chelsea Birthday in Two Rooms",
+    location: "151 King's Road, Chelsea",
+    streetAddress: "151 King's Road",
+    postalCode: "SW3 5TX",
+    openingHours: "Mo,We,Th,Fr,Sa 23:30-03:00",
+    area: "Chelsea",
+    minSpend: "On request",
+    musicPolicy: "House, Latin, Commercial",
+    dressCode: "Smart and stylish. Avoid sportswear; the door has the final say. Entry is 18+ with photo ID.",
+    openingNights: "Monday, Wednesday, Thursday, Friday, Saturday",
+    capacity: "Two rooms",
+    birthdayRating: 4,
+    bestFor: "Chelsea birthdays for groups aged 18 and over, at a table in the Main Room or the VIP King's Room",
+    status: "open",
+    heroAlt: "Purple velvet booths with silver ice buckets at The Rex Rooms, Chelsea",
+    photos: [
+      { src: "/gallery/images/rex-rooms-chelsea-velvet-booths.jpg", alt: "Purple velvet booths with silver ice buckets at The Rex Rooms, Chelsea" },
+      { src: "/gallery/images/rex-rooms-chelsea-bar.jpg", alt: "The bar at The Rex Rooms, Chelsea, with its hand-carved wooden counter and black and white wave floor" },
+      { src: "/gallery/images/rex-rooms-chelsea-entrance.jpg", alt: "The King's Road entrance of The Rex Rooms, Chelsea, under its neon The Rex Rooms sign" },
+    ],
+    floorPlan: {
+      src: "/gallery/images/rex-rooms-chelsea-floor-plan.jpg",
+      alt: "Table plan of The Rex Rooms: the VIP King's Room with tables K2 to K7 around the VIP bar, and the Main Room with tables 1 to 14 around the main bar",
+    },
+    description:
+      "The Rex Rooms is a nightclub at 151 King's Road, Chelsea, on the site of the former 151 Club, opened in March 2025. Birthday tables are bookable in both of its rooms: the Main Room, with the DJ and the bar, and the VIP King's Room, a more exclusive space with a private-party feel. The door is 18+ with photo ID, celebration extras are on request, and the minimum spend is confirmed when you book.",
+    birthdayHighlights: [
+      "Birthday tables in either room: the Main Room or the VIP King's Room",
+      "The VIP King's Room has a private-party feel, with tables K2 to K7 around a VIP bar",
+      "18+ with photo ID, so an 18th birthday works here",
+      "House, Latin and commercial music, five nights a week",
+      "As of November 2026, mixed groups get free entry before 11:30pm",
+    ],
+    whatToExpect:
+      "The Rex Rooms is at 151 King's Road in Chelsea, and the nearest tubes are Sloane Square and South Kensington. It opens on Monday (Industry Mondays), Wednesday (House Wednesday), Thursday, Friday (Scandi Fridays) and Saturday (Brazilian Saturdays), from 11:30pm to 3am with last entry at 2am, and it is closed on Tuesday and Sunday. There are two rooms. The Main Room has the DJ and the bar, is open to everyone, and is where guests dance and mingle; its tables, numbered 1 to 14, sit around the main bar. The VIP King's Room is a more exclusive space where many VIP guests spend their time, with a private-party feel; its tables, K2 to K7, sit around a VIP bar. The music is house, Latin and commercial: the resident DJ Tiempo usually plays house and Latin, and DJ Dan usually plays more commercial sets.",
+    birthdayExtras:
+      "Celebration extras at The Rex Rooms are on request: tell us what you have in mind when you book, and we will confirm with the venue what can be arranged for your night. The minimum spend for your table is confirmed when you book.",
+    atmosphere:
+      "Two rooms with two moods. The Main Room is where guests dance and mingle, around the DJ and the bar. The VIP King's Room is more exclusive, with a private-party feel that suits a birthday table. Dress smart and stylish, with no sportswear.",
+    groupSizeAdvice:
+      "Tables are bookable in both rooms, so tell us your group size and whether you want the Main Room or the King's Room, and we will come back with the options and the minimum spend for your night. Guests who are not at the table can still join you: as of November 2026, mixed groups get free entry before 11:30pm, and otherwise guestlist and entry are by request.",
+    proTip:
+      "Choose the room first: the King's Room for a more private birthday table, the Main Room to be close to the DJ and the dancing. Last entry is 2am, so tell any late arrivals in the group, and remind everyone to bring photo ID.",
+    extraFaqs: [
+      {
+        question: "Can you celebrate an 18th birthday at The Rex Rooms?",
+        answer: "Yes. The door is 18+ with photo ID, so make sure everyone in the group brings it.",
+      },
+      {
+        question: "Which room is best for a birthday at The Rex Rooms?",
+        answer: "Tables are bookable in both. The VIP King's Room is the more exclusive space, with a private-party feel and tables K2 to K7 around a VIP bar. The Main Room has the DJ and the bar and is where guests dance and mingle, with tables numbered 1 to 14 around the main bar.",
+      },
+      {
+        question: "What time is The Rex Rooms open?",
+        answer: "From 11:30pm to 3am on Monday, Wednesday, Thursday, Friday and Saturday, with last entry at 2am. It is closed on Tuesday and Sunday.",
+      },
+      {
+        question: "Where is The Rex Rooms?",
+        answer: "151 King's Road, Chelsea, London SW3 5TX, on the site of the former 151 Club. The nearest tubes are Sloane Square and South Kensington.",
       },
     ],
   },
