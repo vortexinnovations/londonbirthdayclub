@@ -4,6 +4,7 @@ import { Bodoni_Moda, Hanken_Grotesk } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import LeadRefTracker from "@/components/LeadRefTracker";
 import WhatsAppSticky from "@/components/WhatsAppSticky";
 import Reveal from "@/components/Reveal";
 import { WHATSAPP_TEL } from "@/lib/clubs";
@@ -120,6 +121,7 @@ export default function RootLayout({
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
+        <LeadRefTracker />
         <WhatsAppSticky />
         <Reveal />
       </body>
