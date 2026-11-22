@@ -11,9 +11,9 @@ import ItemListSchema from "@/components/ItemListSchema";
 import ArticleSchema from "@/components/ArticleSchema";
 
 export const metadata: Metadata = {
-  title: fitTitle("12 Best Birthday Clubs in London (2026), Ranked with Prices"),
+  title: fitTitle("13 Best Birthday Clubs in London (2026), Ranked with Prices"),
   description:
-    "Tape, Cirque Le Soir and The Box lead our 12 best London clubs for a birthday, ranked with prices from £600, group advice and what to expect on the night.",
+    "Tape, Cirque Le Soir and The Box lead our 13 best London clubs for a birthday, ranked with prices from £600, group advice and what to expect on the night.",
   alternates: {
     canonical: "https://londonbirthdayclub.com/best-birthday-clubs-london",
   },
@@ -123,6 +123,13 @@ const rankings = [
       "The Rex Rooms is the Chelsea choice, at 151 King's Road on the site of the former 151 Club. Birthday tables are bookable in both rooms: the Main Room, with the DJ and the bar, or the VIP King's Room, a more exclusive space with a private-party feel. The door is 18+ with photo ID, so it works for an 18th, celebration extras are on request, and tables start from £1,000 minimum spend. Open Monday and Wednesday to Saturday, 11pm to 3am, with last entry at 2am.",
     bestForTag: "Chelsea, Two Rooms",
   },
+  {
+    position: 13,
+    slug: "bisou-mayfair",
+    verdict:
+      "Bisou is the newest club on this list: a bar and nightclub that opened in 2026 at 9 Swallow Street in Mayfair. It is a house music room with a Void Acoustics sound system, open Thursday to Saturday from 11pm until late, so it suits a birthday group that wants to dance after dinner. Birthday tables start from £1,000 minimum spend, guestlist for friends who are not at the table is by request, and birthday extras are on request. The club publishes no age limit or dress code, so bring photo ID and dress smart.",
+    bestForTag: "Mayfair, House Music",
+  },
 ];
 
 export default function BestClubsPage() {
@@ -139,8 +146,8 @@ export default function BestClubsPage() {
     <>
       <FAQSchema faqs={faqs} />
       <BreadcrumbSchema items={[{ name: "Home", href: "/" }, { name: "Best Birthday Clubs London", href: "/best-birthday-clubs-london" }]} />
-      <ItemListSchema name="Best Birthday Clubs in London 2026" description="12 London nightclubs ranked for birthday celebrations, based on atmosphere, service, entertainment, and birthday-specific features." items={itemListItems} />
-      <ArticleSchema title="12 Best Birthday Clubs in London: Ranked by Real Experience" description="Honest, ranked guide to the best London nightclubs for birthday celebrations." url="https://londonbirthdayclub.com/best-birthday-clubs-london" />
+      <ItemListSchema name="Best Birthday Clubs in London 2026" description="13 London nightclubs ranked for birthday celebrations, based on atmosphere, service, entertainment, and birthday-specific features." items={itemListItems} />
+      <ArticleSchema title="13 Best Birthday Clubs in London: Ranked by Real Experience" description="Honest, ranked guide to the best London nightclubs for birthday celebrations." url="https://londonbirthdayclub.com/best-birthday-clubs-london" />
 
       {/* Hero */}
       <section className="relative min-h-[64vh] img-editorial flex items-end overflow-hidden">

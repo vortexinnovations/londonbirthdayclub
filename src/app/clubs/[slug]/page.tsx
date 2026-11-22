@@ -12,8 +12,26 @@ import {
 import WhatsAppCTA from "@/components/WhatsAppCTA";
 import FAQSchema from "@/components/FAQSchema";
 import NightClubSchema from "@/components/NightClubSchema";
-import { getClubImage } from "@/lib/images";
+import { getClubImage, hasClubPhoto } from "@/lib/images";
 import { fitTitle } from "@/lib/seo";
+
+/** Renders [text](/path) in venue copy as an internal link; everything else stays plain text. */
+function withLinks(text: string | undefined): React.ReactNode[] {
+  return (text ?? "").split(/(\[[^\]]+\]\(\/[^)\s]*\))/g).map((part, i) => {
+    const m = part.match(/^\[([^\]]+)\]\((\/[^)\s]*)\)$/);
+    return m ? (
+      <Link
+        key={i}
+        href={m[2]}
+        className="text-champagne hover:text-champagne-bright underline decoration-champagne/30 underline-offset-4 decoration-[0.5px] transition-colors duration-200"
+      >
+        {m[1]}
+      </Link>
+    ) : (
+      part
+    );
+  });
+}
 
 export async function generateStaticParams() {
   return clubs.map((club) => ({ slug: club.slug }));
@@ -157,7 +175,7 @@ export default async function ClubPage({
               {club.name} Has Permanently Closed
             </h2>
             <p className="font-sans text-base leading-[1.8] text-ink-soft mb-5">
-              {club.closedNote}
+              {withLinks(club.closedNote)}
             </p>
             {alternativeClubs.length > 0 && (
               <div>
@@ -183,14 +201,17 @@ export default async function ClubPage({
 
       {/* Hero */}
       <section className="relative min-h-[64vh] img-editorial flex items-end overflow-hidden">
-        <Image
-          src={getClubImage(club.slug)}
-          alt={club.heroAlt ?? `Birthday celebration at ${club.name} London`}
-          fill
-          className="object-cover kenburns"
-          priority
-          sizes="100vw"
-        />
+        {/* A club with no photographs of its own gets a plain hero, never another venue's photo. */}
+        {hasClubPhoto(club.slug) && (
+          <Image
+            src={getClubImage(club.slug)}
+            alt={club.heroAlt ?? `Birthday celebration at ${club.name} London`}
+            fill
+            className="object-cover kenburns"
+            priority
+            sizes="100vw"
+          />
+        )}
         <div className="absolute inset-0 [background:var(--grad-hero)]" />
         <div className="grade" />
         <div className="absolute inset-0 pointer-events-none [box-shadow:inset_0_0_140px_60px_rgba(8,6,3,0.55)]" />
@@ -379,7 +400,7 @@ export default async function ClubPage({
             </h2>
           </div>
           <p className="font-sans text-base leading-[1.8] text-ink-soft mb-12" data-reveal>
-            {club.whatToExpect}
+            {withLinks(club.whatToExpect)}
           </p>
 
           {!isClosed && (

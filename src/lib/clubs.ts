@@ -38,6 +38,11 @@ export interface Club {
   postalCode?: string;
   /** schema.org opening hours, e.g. "We-Sa 23:00-04:00". */
   openingHours?: string;
+  /**
+   * Opening days and time for a venue that publishes no closing time: emitted as
+   * openingHoursSpecification with `opens` only. Use instead of openingHours.
+   */
+  openingSpec?: { days: string[]; opens: string };
   /** Hero and card image alt text naming the venue and the room; the generic line is used when unset. */
   heroAlt?: string;
   /** Extra photos for the venue page, served through the /gallery/images rewrite. */
@@ -46,7 +51,10 @@ export interface Club {
   floorPlan?: { src: string; alt: string };
   /** Venue-specific questions appended to the generated FAQ. */
   extraFaqs?: { question: string; answer: string }[];
-  /** Closed venues: the statement shown at the top of the venue page. */
+  /**
+   * Closed venues: the statement shown at the top of the venue page. Here and in
+   * whatToExpect, [text](/path) is rendered as an internal link.
+   */
   closedNote?: string;
   alternatives?: string[];
 }
@@ -68,7 +76,7 @@ export function getGeneralWhatsAppMessage(): string {
 }
 
 export function getClubWhatsAppMessage(clubName: string): string {
-  return `Hi, I'd like to book a birthday table at ${clubName}. Here are my details:\n\nBirthday person's name:\nDate:\nGroup size:\nBudget:\nAny requests (cake, decorations, surprises):`;
+  return `Hi, I found you on londonbirthdayclub.com and I'd like to book a birthday table at ${clubName}. Here are my details:\n\nBirthday person's name:\nDate:\nGroup size:\nBudget:\nAny requests (cake, decorations, surprises):`;
 }
 
 export function getGroupWhatsAppMessage(): string {
@@ -337,7 +345,7 @@ export const clubs: Club[] = [
       "Sparklers, a cake and other birthday extras on request",
     ],
     whatToExpect:
-      "The entrance is on Swallow Street, the door the Cuckoo Club used, two minutes from Piccadilly Circus, and a staircase links the two floors inside. Upstairs is the main room, where most of the tables sit and the music is open-format hip-hop and RnB. Downstairs is darker and more dance-focused, with house for the part of your group that wants the dance floor. Friday and Saturday run both floors; on Wednesday and Thursday one floor opens, so a midweek birthday is a one-room night. Doors are 11pm to 4am on every opening night, and every guest needs physical photo ID showing they are 19 or over.",
+      "The entrance is on Swallow Street, the door the Cuckoo Club used, two minutes from Piccadilly Circus, and a staircase links the two floors inside. Upstairs is the main room, where most of the tables sit and the music is open-format hip-hop and RnB. Downstairs is darker and more dance-focused, with house for the part of your group that wants the dance floor. Friday and Saturday run both floors; on Wednesday and Thursday one floor opens, so a midweek birthday is a one-room night. Doors are 11pm to 4am on every opening night, and every guest needs physical photo ID showing they are 19 or over. [Bisou](/clubs/bisou-mayfair), a house music bar and nightclub we also book for birthdays, is on Swallow Street too.",
     birthdayExtras:
       "Birthday extras at 99 Regent Street are arranged on request: tell us when you book if you want sparklers with the bottles or a cake brought to the table, and we will confirm what the venue can do on your night. The table minimum is spent on drinks, not charged on top, and it covers entry for everyone in the group. VIP and larger tables are quoted on request.",
     atmosphere:
@@ -735,6 +743,78 @@ export const clubs: Club[] = [
       },
     ],
   },
+  {
+    // Bisou (owner and the club's own site, 2026-11-22). Published facts only: the club
+    // gives no closing time, age limit, capacity or dress code, so none is stated.
+    // No photos yet: see clubsWithoutPhotos in images.ts.
+    slug: "bisou-mayfair",
+    metaTitle: "Bisou Mayfair Birthday: Tables from £1,000",
+    metaDescription:
+      "Birthday tables at Bisou, 9 Swallow Street, Mayfair, from £1,000 minimum spend. House music, Thursday to Saturday from 11pm. Birthday extras on request.",
+    name: "Bisou",
+    shortName: "Bisou",
+    tagline: "The House Music Birthday on Swallow Street",
+    location: "9 Swallow Street, Mayfair",
+    streetAddress: "9 Swallow Street",
+    postalCode: "W1B 4DF",
+    // No closing time is published: opening days and time only, no openingHours range.
+    openingSpec: { days: ["Thursday", "Friday", "Saturday"], opens: "23:00" },
+    area: "Mayfair",
+    minSpend: "£1,000",
+    musicPolicy: "House",
+    dressCode:
+      "The club publishes no dress code. Our booking guidance: dress smart, as for any Mayfair club, with no sportswear. The door has the final say, and everyone should bring valid photo ID.",
+    openingNights: "Thursday, Friday, Saturday",
+    capacity: "Not published",
+    birthdayRating: 4,
+    bestFor: "House music birthdays in Mayfair, at a table from Thursday to Saturday",
+    status: "open",
+    description:
+      "Bisou, also known as Bisou Mayfair, is a bar and nightclub at 9 Swallow Street, Mayfair, which opened in 2026. For a birthday it means a table in a house music room, open on Thursday, Friday and Saturday from 11pm until late. Birthday tables start from £1,000 minimum spend, guestlist for friends who are not at the table is by request, and birthday extras are arranged on request.",
+    birthdayHighlights: [
+      "Birthday tables from £1,000 minimum spend",
+      "House music on a Void Acoustics sound system tuned to the room",
+      "Open Thursday, Friday and Saturday, from 11pm until late",
+      "Guestlist by request for friends who are not at the table",
+      "On Swallow Street in Mayfair, with Piccadilly Circus the nearest tube",
+    ],
+    whatToExpect:
+      "Bisou is at 9 Swallow Street, the short lane between Regent Street and Piccadilly, and the nearest tube is Piccadilly Circus. People also search for it as Bisou Club Mayfair and Bisou London. It calls itself a bar and nightclub and describes itself as an audiophile space: the music is house, and the room runs on a Void Acoustics sound system tuned to the room. It opens on Thursday, Friday and Saturday from 11pm until late, and is closed from Sunday to Wednesday. The club publishes no closing time, so plan the birthday around the 11pm start, with dinner or drinks first. [99 Regent Street](/clubs/99-regent-street) (formerly Cuckoo Club), which we also book, has its entrance on Swallow Street too.",
+    birthdayExtras:
+      "Birthday extras at Bisou are on request: tell us what you have in mind when you book, and we will confirm with the club what can be arranged for your night. Tables start from £1,000 minimum spend.",
+    atmosphere:
+      "A bar and nightclub built around its sound: Bisou describes itself as an audiophile space, and the music is house. It suits a birthday group that wants to dance, with a table of its own to come back to. The club publishes no dress code, so dress smart, as for any Mayfair club.",
+    groupSizeAdvice:
+      "Tables start from £1,000 minimum spend. The club publishes no table sizes, so tell us how many of you there are and we will confirm the table and the minimum for your night. Friends who are not at the table can ask for the guestlist, which is by request; any entry charge is confirmed when you book.",
+    proTip:
+      "Check the birthday falls on a Thursday, Friday or Saturday, the only nights Bisou opens, and book dinner or drinks first, because doors are at 11pm. The club publishes no age limit: ask everyone to bring valid photo ID, a passport or a driving licence, and remember the door has the final say.",
+    extraFaqs: [
+      {
+        question: "Where is Bisou Mayfair?",
+        answer: "9 Swallow Street, Mayfair, London W1B 4DF, on the short lane between Regent Street and Piccadilly. The nearest tube is Piccadilly Circus.",
+      },
+      {
+        question: "What time does Bisou open?",
+        answer: "From 11pm until late on Thursday, Friday and Saturday. It is closed from Sunday to Wednesday. The club publishes no closing time.",
+      },
+      {
+        question: "Is there a guestlist at Bisou for birthday guests?",
+        answer: "Yes, by request through us. Any entry charge is confirmed when you book. A birthday table, from £1,000 minimum spend, is the other way in.",
+      },
+      {
+        question: "How old do you have to be to celebrate a birthday at Bisou?",
+        answer: "The club publishes no age limit. Everyone in the group needs valid photo ID, a passport or a driving licence, and the door has the final say. Tell us the ages in your group when you book and we will check before you commit.",
+      },
+      {
+        question: "What music does Bisou play?",
+        answer: "House. Bisou describes itself as an audiophile space, and the room runs on a Void Acoustics sound system tuned to the room.",
+      },
+      {
+        question: "What was at 9 Swallow Street before Bisou?",
+        answer: "Most recently Maison Close, which has closed. Long before that the address was Sibylla's, the 1966 club part-owned by George Harrison. Bisou opened there in 2026.",
+      },
+    ],
+  },
 
   {
     slug: "maison-close",
@@ -752,17 +832,17 @@ export const clubs: Club[] = [
     bestFor: "This venue has permanently closed",
     status: "closed",
     closedNote:
-      "Maison Close has closed and no longer takes birthday tables or guestlist names. For house music in an intimate, dressed-up room nearby, Maddox Club in Mayfair, Scotch of St James and Selene London, just north of Oxford Circus, are the closest open alternatives.",
-    alternatives: ["maddox-club", "selene-london", "scotch-of-st-james"],
+      "Maison Close has closed and no longer takes birthday tables or guestlist names. A new club, [Bisou](/clubs/bisou-mayfair), has since opened at the same address, 9 Swallow Street, and we book birthday tables there. For house music in an intimate, dressed-up room nearby, Maddox Club in Mayfair, Scotch of St James and Selene London, just north of Oxford Circus, are the other open alternatives.",
+    alternatives: ["bisou-mayfair", "maddox-club", "selene-london", "scotch-of-st-james"],
     description:
       "Maison Close was a French-inspired house music club at 9 Swallow Street in Mayfair, in the former Kadies space. Its vintage chandeliers, velvet seating, red accents and capacity of around 160 made it feel more like a Parisian salon than a nightclub. Maison Close has now closed.",
     birthdayHighlights: [],
     whatToExpect:
-      "Maison Close has closed. If you were planning a birthday there, Maddox Club pairs dinner with house music downstairs, Selene London offers refined house and commercial sets in an elegant room, and Scotch of St James is a small, storied St James's club for an intimate celebration.",
+      "Maison Close has closed. If you were planning a birthday there, [Bisou](/clubs/bisou-mayfair) has since opened at the same address, 9 Swallow Street: a house music bar and nightclub, open Thursday to Saturday from 11pm, with birthday tables from £1,000 minimum spend. Maddox Club pairs dinner with house music downstairs, Selene London offers refined house and commercial sets in an elegant room, and Scotch of St James is a small, storied St James's club for an intimate celebration.",
     birthdayExtras: "Maison Close has closed.",
     atmosphere: "Maison Close has closed.",
     groupSizeAdvice: "Maison Close has closed.",
-    proTip: "Maison Close has closed. For a similar birthday, try Maddox Club, Selene London or Scotch of St James.",
+    proTip: "Maison Close has closed. For a similar birthday, try Bisou, which has since opened at the same address, Maddox Club, Selene London or Scotch of St James.",
   },
 
   // ==================== PERMANENTLY CLOSED VENUES ====================

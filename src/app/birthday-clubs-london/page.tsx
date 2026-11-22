@@ -372,7 +372,7 @@ export default function BirthdayClubsLondonPage() {
               { label: "Best for Entertainment", description: "Performers & spectacle", clubs: ["cirque-le-soir", "the-box-london", "reign-london"] },
               { label: "Best for Elegance", description: "Refined celebrations", clubs: ["dear-darling", "maddox-club", "selene-london"] },
               { label: "Best for Hip-Hop", description: "The right playlist", clubs: ["tape-london", "cirque-le-soir", "scotch-of-st-james"] },
-              { label: "Best for House Music", description: "Groove all night", clubs: ["maddox-club", "beat-london", "selene-london"] },
+              { label: "Best for House Music", description: "Groove all night", clubs: ["maddox-club", "beat-london", "selene-london", "bisou-mayfair"] },
             ]}
           />
         </div>

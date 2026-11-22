@@ -1,19 +1,28 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { Club } from "@/lib/clubs";
-import { getClubImage } from "@/lib/images";
+import { getClubImage, hasClubPhoto } from "@/lib/images";
 
 export default function ClubCard({ club }: { club: Club }) {
   return (
     <Link href={`/clubs/${club.slug}`} className="group block">
       <div className="frame-mat img-editorial relative aspect-[4/5] sm:aspect-[16/10] overflow-hidden">
-        <Image
-          src={getClubImage(club.slug)}
-          alt={club.heroAlt ?? `Birthday celebration at ${club.name}`}
-          fill
-          className="object-cover transition-transform duration-[900ms] ease-[var(--ease-lux)] group-hover:scale-[1.04]"
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-        />
+        {hasClubPhoto(club.slug) ? (
+          <Image
+            src={getClubImage(club.slug)}
+            alt={club.heroAlt ?? `Birthday celebration at ${club.name}`}
+            fill
+            className="object-cover transition-transform duration-[900ms] ease-[var(--ease-lux)] group-hover:scale-[1.04]"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          />
+        ) : (
+          // No photographs of this club yet: a plain panel, never another venue's photo.
+          <div className="absolute inset-0 flex items-center justify-center bg-noir-soft">
+            <span className="font-sans text-[0.625rem] uppercase tracking-[0.26em] text-ink-faint">
+              Photographs to follow
+            </span>
+          </div>
+        )}
         <div className="absolute inset-0 [background:var(--grad-card)]" />
         <div className="grade" />
         <div className="absolute top-5 right-5 z-[3] text-right">

@@ -121,6 +121,17 @@ export const images = {
   },
 } as const;
 
+/**
+ * Open clubs with no photographs of their own yet. Their hero and cards show a
+ * plain panel, never another venue's photo. Remove a slug from here once its
+ * photo is added to images.clubs.
+ */
+export const clubsWithoutPhotos: ReadonlySet<string> = new Set(["bisou-mayfair"]);
+
+export function hasClubPhoto(slug: string): boolean {
+  return !clubsWithoutPhotos.has(slug);
+}
+
 export function getClubImage(slug: string): string {
   return (images.clubs as Record<string, string>)[slug] || images.hero.homepage;
 }
