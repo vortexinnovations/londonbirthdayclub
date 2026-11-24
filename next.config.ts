@@ -45,6 +45,13 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     return [
+      // The editor persona is retired: pages are credited to the team, whose
+      // About page explains who we are and how we write.
+      {
+        source: "/about-the-editor",
+        destination: "/about",
+        permanent: true,
+      },
       {
         source: "/best-clubs-for-birthdays-london",
         destination: "/best-birthday-clubs-london",

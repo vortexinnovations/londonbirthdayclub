@@ -147,7 +147,8 @@ export default function BestClubsPage() {
       <FAQSchema faqs={faqs} />
       <BreadcrumbSchema items={[{ name: "Home", href: "/" }, { name: "Best Birthday Clubs London", href: "/best-birthday-clubs-london" }]} />
       <ItemListSchema name="Best Birthday Clubs in London 2026" description="13 London nightclubs ranked for birthday celebrations, based on atmosphere, service, entertainment, and birthday-specific features." items={itemListItems} />
-      <ArticleSchema title="13 Best Birthday Clubs in London: Ranked by Real Experience" description="Honest, ranked guide to the best London nightclubs for birthday celebrations." url="https://londonbirthdayclub.com/best-birthday-clubs-london" />
+      {/* Live since 25 March 2026 (first commit); last substantive change 22 November 2026 (Bisou added to the ranking). Update dateModified with any real change to the guide. */}
+      <ArticleSchema title="Best Clubs for a Birthday in London" description="Ranked guide to the best London nightclubs for birthday celebrations." url="https://londonbirthdayclub.com/best-birthday-clubs-london" datePublished="2026-03-25" dateModified="2026-11-22" />
 
       {/* Hero */}
       <section className="relative min-h-[64vh] img-editorial flex items-end overflow-hidden">

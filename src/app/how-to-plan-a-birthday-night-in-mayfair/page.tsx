@@ -31,7 +31,8 @@ export default function MayfairBirthdayPage() {
     <>
       <FAQSchema faqs={faqs} />
       <BreadcrumbSchema items={[{ name: "Home", href: "/" }, { name: "Birthday Night in Mayfair", href: "/how-to-plan-a-birthday-night-in-mayfair" }]} />
-      <ArticleSchema title="How to Plan a Birthday Night in Mayfair" description="The complete guide to planning a birthday night out in Mayfair." url="https://londonbirthdayclub.com/how-to-plan-a-birthday-night-in-mayfair" />
+      {/* Live since 25 March 2026 (first commit); last substantive change 21 October 2026 (table prices from the owner). Update dateModified with any real change to the guide. */}
+      <ArticleSchema title="How to Plan a Birthday Night in Mayfair" description="The complete guide to planning a birthday night out in Mayfair." url="https://londonbirthdayclub.com/how-to-plan-a-birthday-night-in-mayfair" datePublished="2026-03-25" dateModified="2026-10-21" />
 
       {/* Hero */}
       <section className="relative min-h-[64vh] img-editorial flex items-end overflow-hidden">

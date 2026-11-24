@@ -30,7 +30,8 @@ export default function BirthdayTablePricesPage() {
     <>
       <FAQSchema faqs={faqs} />
       <BreadcrumbSchema items={[{ name: "Home", href: "/" }, { name: "Birthday Table Prices London", href: "/birthday-table-prices-london" }]} />
-      <ArticleSchema title="Birthday Table Prices London 2026" description="Complete guide to birthday table prices at London nightclubs." url="https://londonbirthdayclub.com/birthday-table-prices-london" />
+      {/* Live since 25 March 2026 (first commit); last substantive change 4 November 2026 (BEAT London facts). Update dateModified with any real change to the guide. */}
+      <ArticleSchema title="Birthday Table Prices London 2026" description="Complete guide to birthday table prices at London nightclubs." url="https://londonbirthdayclub.com/birthday-table-prices-london" datePublished="2026-03-25" dateModified="2026-11-04" />
 
       {/* Hero */}
       <section className="relative min-h-[64vh] img-editorial flex items-end overflow-hidden">

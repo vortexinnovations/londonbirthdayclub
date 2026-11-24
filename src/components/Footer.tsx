@@ -41,6 +41,12 @@ export default function Footer() {
               most exclusive nightclubs. Free planning, expert advice, VIP
               access.
             </p>
+            <Link
+              href="/about"
+              className="inline-block mt-4 font-sans text-[0.9375rem] text-ink-soft hover:text-champagne-bright transition-colors duration-200"
+            >
+              About us
+            </Link>
           </div>
 
           {/* Club Pages */}

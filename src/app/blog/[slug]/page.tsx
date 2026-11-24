@@ -116,11 +116,11 @@ export default async function BlogPostPage({
     description: post.metaDescription,
     datePublished: post.publishedAt,
     dateModified: post.updatedAt,
+    // Pages are credited to the team, never to a named writer (About page).
     author: {
-      "@type": "Person",
-      name: "Charlotte Hayes",
-      jobTitle: "Events Specialist",
-      url: "https://londonbirthdayclub.com/about-the-editor/",
+      "@type": "Organization",
+      name: "London Birthday Club",
+      url: "https://londonbirthdayclub.com/about",
     },
     publisher: {
       "@type": "Organization",
@@ -188,12 +188,11 @@ export default async function BlogPostPage({
             <p className="font-sans text-[0.75rem] uppercase tracking-[0.18em] text-ink-faint mb-6">
               By{" "}
               <Link
-                href="/about-the-editor"
+                href="/about#how-we-write"
                 className="text-champagne hover:text-champagne-bright underline decoration-champagne/30 underline-offset-4 decoration-[0.5px] transition-colors duration-200"
               >
-                Charlotte Hayes
+                the London Birthday Club team
               </Link>
-              , Events Specialist
             </p>
             <p className="font-sans text-[1.0625rem] leading-[1.8] text-ink-soft mb-10">
               {post.excerpt}

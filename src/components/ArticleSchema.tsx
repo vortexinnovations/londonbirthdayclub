@@ -3,16 +3,18 @@ interface ArticleSchemaProps {
   title: string;
   description: string;
   url: string;
-  datePublished?: string;
-  dateModified?: string;
+  /** The day the page went live (YYYY-MM-DD), kept with the page. */
+  datePublished: string;
+  /** The day of the page's last substantive change (YYYY-MM-DD), kept with the page; never a default. */
+  dateModified: string;
 }
 
 export default function ArticleSchema({
   title,
   description,
   url,
-  datePublished = "2025-03-01",
-  dateModified = "2026-03-25",
+  datePublished,
+  dateModified,
 }: ArticleSchemaProps) {
   const schema = {
     "@context": "https://schema.org",
@@ -21,10 +23,11 @@ export default function ArticleSchema({
     description,
     datePublished,
     dateModified,
+    // Pages are credited to the team, never to a named writer (About page).
     author: {
       "@type": "Organization",
       name: "London Birthday Club",
-      url: "https://londonbirthdayclub.com",
+      url: "https://londonbirthdayclub.com/about",
     },
     publisher: {
       "@type": "Organization",

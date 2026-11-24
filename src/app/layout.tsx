@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 import LeadRefTracker from "@/components/LeadRefTracker";
 import WhatsAppSticky from "@/components/WhatsAppSticky";
 import Reveal from "@/components/Reveal";
-import { WHATSAPP_TEL } from "@/lib/clubs";
+import { siteOrganization } from "@/lib/organization";
 
 const bodoni = Bodoni_Moda({
   subsets: ["latin"],
@@ -58,32 +58,9 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const localBusinessSchema = {
+  const organizationSchema = {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "@id": "https://londonbirthdayclub.com/#organization",
-    name: "London Birthday Club",
-    description:
-      "Birthday party planning service for London's most exclusive nightclubs. Free VIP table booking and birthday packages at Mayfair's finest venues.",
-    url: "https://londonbirthdayclub.com",
-    telephone: WHATSAPP_TEL,
-    image: "https://londonbirthdayclub.com/gallery/images/TapeSaturdayNYE311222-130.jpg",
-    areaServed: {
-      "@type": "City",
-      name: "London",
-    },
-    priceRange: "££££",
-    serviceType: "Birthday Party Planning & VIP Nightclub Table Booking",
-    knowsAbout: [
-      "Birthday party planning",
-      "VIP nightclub table booking",
-      "London nightlife",
-      "Mayfair nightclubs",
-      "Birthday bottle service",
-      "Hen party nightlife",
-      "Milestone birthday celebrations",
-      "Group nightclub bookings",
-    ],
+    ...siteOrganization(),
   };
 
   const webSiteSchema = {
@@ -109,7 +86,7 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: safeJsonLd(localBusinessSchema),
+            __html: safeJsonLd(organizationSchema),
           }}
         />
         <script
