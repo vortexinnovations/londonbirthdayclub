@@ -5,7 +5,6 @@ import Link from "next/link";
 import { images } from "@/lib/images";
 import { openClubs, getGeneralWhatsAppMessage } from "@/lib/clubs";
 import WhatsAppCTA from "@/components/WhatsAppCTA";
-import FAQSchema from "@/components/FAQSchema";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import ItemListSchema from "@/components/ItemListSchema";
 
@@ -34,7 +33,6 @@ export default function LargeGroupsPage() {
 
   return (
     <>
-      <FAQSchema faqs={faqs} />
       <BreadcrumbSchema items={[{ name: "Home", href: "/" }, { name: "Best Clubs for Large Groups London", href: "/best-clubs-for-large-groups-london" }]} />
       <ItemListSchema
         name="Best London Clubs for Large Groups 2026"

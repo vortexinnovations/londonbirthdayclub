@@ -5,7 +5,6 @@ import Link from "next/link";
 import { images } from "@/lib/images";
 import { openClubs, getMilestoneWhatsAppMessage } from "@/lib/clubs";
 import WhatsAppCTA from "@/components/WhatsAppCTA";
-import FAQSchema from "@/components/FAQSchema";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 export const metadata: Metadata = {
@@ -34,7 +33,6 @@ export default function ThirtiethBirthdayPage() {
 
   return (
     <>
-      <FAQSchema faqs={faqs} />
       <BreadcrumbSchema items={[{ name: "Home", href: "/" }, { name: "30th Birthday Night Out London", href: "/30th-birthday-night-out-london" }]} />
 
       {/* Hero */}

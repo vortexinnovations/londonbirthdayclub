@@ -5,7 +5,6 @@ import Link from "next/link";
 import { images } from "@/lib/images";
 import { getGeneralWhatsAppMessage } from "@/lib/clubs";
 import WhatsAppCTA from "@/components/WhatsAppCTA";
-import FAQSchema from "@/components/FAQSchema";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 export const metadata: Metadata = {
@@ -134,7 +133,6 @@ const nights = [
 export default function BirthdayByNightPage() {
   return (
     <>
-      <FAQSchema faqs={faqs} />
       <BreadcrumbSchema items={[{ name: "Home", href: "/" }, { name: "Birthday by Night", href: "/birthday-by-night" }]} />
 
       {/* Hero */}

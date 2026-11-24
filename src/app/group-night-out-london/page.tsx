@@ -5,7 +5,6 @@ import Link from "next/link";
 import { images } from "@/lib/images";
 import { openClubs, getGroupWhatsAppMessage } from "@/lib/clubs";
 import WhatsAppCTA from "@/components/WhatsAppCTA";
-import FAQSchema from "@/components/FAQSchema";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 export const metadata: Metadata = {
@@ -29,7 +28,6 @@ export default function GroupNightOutPage() {
 
   return (
     <>
-      <FAQSchema faqs={faqs} />
       <BreadcrumbSchema items={[{ name: "Home", href: "/" }, { name: "Group Night Out London", href: "/group-night-out-london" }]} />
 
       {/* Hero */}

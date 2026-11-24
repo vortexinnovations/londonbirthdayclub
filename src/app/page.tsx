@@ -6,7 +6,6 @@ import { openClubs, getGeneralWhatsAppMessage } from "@/lib/clubs";
 import { getMergedPosts } from "@/lib/blog";
 import ClubCard from "@/components/ClubCard";
 import WhatsAppCTA from "@/components/WhatsAppCTA";
-import FAQSchema from "@/components/FAQSchema";
 import TrustSignals from "@/components/TrustSignals";
 import ClubComparisonModule from "@/components/ClubComparisonModule";
 import VenueTicker from "@/components/VenueTicker";
@@ -59,7 +58,6 @@ export default async function HomePage() {
 
   return (
     <>
-      <FAQSchema faqs={faqs} />
 
       {/* Hero Section */}
       <section className="relative min-h-[88vh] img-editorial flex items-end sm:items-center overflow-hidden">

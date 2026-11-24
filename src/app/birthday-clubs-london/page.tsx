@@ -6,7 +6,6 @@ import { images } from "@/lib/images";
 import { openClubs, getGeneralWhatsAppMessage, getClubWhatsAppMessage, getWhatsAppLink } from "@/lib/clubs";
 import ClubComparisonModule from "@/components/ClubComparisonModule";
 import WhatsAppCTA from "@/components/WhatsAppCTA";
-import FAQSchema from "@/components/FAQSchema";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 export const metadata: Metadata = {
@@ -55,7 +54,6 @@ const faqs = [
 export default function BirthdayClubsLondonPage() {
   return (
     <>
-      <FAQSchema faqs={faqs} />
       <BreadcrumbSchema
         items={[
           { name: "Home", href: "/" },

@@ -5,7 +5,6 @@ import Link from "next/link";
 import { images } from "@/lib/images";
 import { getGeneralWhatsAppMessage } from "@/lib/clubs";
 import WhatsAppCTA from "@/components/WhatsAppCTA";
-import FAQSchema from "@/components/FAQSchema";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import ArticleSchema from "@/components/ArticleSchema";
 
@@ -27,7 +26,6 @@ const faqs = [
 export default function GuestlistVsTablePage() {
   return (
     <>
-      <FAQSchema faqs={faqs} />
       <BreadcrumbSchema items={[{ name: "Home", href: "/" }, { name: "Guestlist vs Table Booking", href: "/birthday-guestlist-vs-table-booking" }]} />
       {/* Live since 25 March 2026 (first commit); last substantive change 25 March 2026 (no change to the guide itself since launch). Update dateModified with any real change to the guide. */}
       <ArticleSchema title="Birthday Guestlist vs Table Booking in London" description="Should you book a guestlist or a VIP table for your birthday?" url="https://londonbirthdayclub.com/birthday-guestlist-vs-table-booking" datePublished="2026-03-25" dateModified="2026-03-25" />

@@ -5,7 +5,6 @@ import Link from "next/link";
 import { images } from "@/lib/images";
 import { getGeneralWhatsAppMessage } from "@/lib/clubs";
 import WhatsAppCTA from "@/components/WhatsAppCTA";
-import FAQSchema from "@/components/FAQSchema";
 import ArticleSchema from "@/components/ArticleSchema";
 
 export const metadata: Metadata = {
@@ -64,7 +63,6 @@ const faqs = [
 export default function PlanBirthdayPage() {
   return (
     <>
-      <FAQSchema faqs={faqs} />
       {/* Live since 25 March 2026 (first commit); last substantive change 4 November 2026 (BEAT London facts). Update dateModified with any real change to the guide. */}
       <ArticleSchema title="How to Plan a Birthday at a London Club" description="Step-by-step guide to planning a birthday at a London nightclub." url="https://londonbirthdayclub.com/plan-birthday-london-club" datePublished="2026-03-25" dateModified="2026-11-04" />
 

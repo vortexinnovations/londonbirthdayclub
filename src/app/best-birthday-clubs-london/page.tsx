@@ -5,7 +5,6 @@ import Link from "next/link";
 import { images } from "@/lib/images";
 import { openClubs, getGeneralWhatsAppMessage } from "@/lib/clubs";
 import WhatsAppCTA from "@/components/WhatsAppCTA";
-import FAQSchema from "@/components/FAQSchema";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import ItemListSchema from "@/components/ItemListSchema";
 import ArticleSchema from "@/components/ArticleSchema";
@@ -144,7 +143,6 @@ export default function BestClubsPage() {
 
   return (
     <>
-      <FAQSchema faqs={faqs} />
       <BreadcrumbSchema items={[{ name: "Home", href: "/" }, { name: "Best Birthday Clubs London", href: "/best-birthday-clubs-london" }]} />
       <ItemListSchema name="Best Birthday Clubs in London 2026" description="13 London nightclubs ranked for birthday celebrations, based on atmosphere, service, entertainment, and birthday-specific features." items={itemListItems} />
       {/* Live since 25 March 2026 (first commit); last substantive change 22 November 2026 (Bisou added to the ranking). Update dateModified with any real change to the guide. */}

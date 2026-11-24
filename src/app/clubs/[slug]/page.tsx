@@ -10,7 +10,6 @@ import {
   getGeneralWhatsAppMessage,
 } from "@/lib/clubs";
 import WhatsAppCTA from "@/components/WhatsAppCTA";
-import FAQSchema from "@/components/FAQSchema";
 import NightClubSchema from "@/components/NightClubSchema";
 import { getClubImage, hasClubPhoto } from "@/lib/images";
 import { fitTitle } from "@/lib/seo";
@@ -164,7 +163,6 @@ export default async function ClubPage({
 
   return (
     <>
-      {!isClosed && <FAQSchema faqs={faqs} />}
       {!isClosed && club.streetAddress && <NightClubSchema club={club} />}
 
       {/* Closed Banner */}

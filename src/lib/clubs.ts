@@ -39,8 +39,9 @@ export interface Club {
   /** schema.org opening hours, e.g. "We-Sa 23:00-04:00". */
   openingHours?: string;
   /**
-   * Opening days and time for a venue that publishes no closing time: emitted as
-   * openingHoursSpecification with `opens` only. Use instead of openingHours.
+   * Opening days and time for a venue that publishes no closing time. Use
+   * instead of openingHours. Not emitted in structured data: Google expects a
+   * closing time with each opening time, and we never invent one.
    */
   openingSpec?: { days: string[]; opens: string };
   /** Hero and card image alt text naming the venue and the room; the generic line is used when unset. */

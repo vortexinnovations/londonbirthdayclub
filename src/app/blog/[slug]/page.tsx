@@ -8,7 +8,6 @@ import { marked } from "marked";
 import { getMergedPostBySlug, getMergedPosts } from "@/lib/blog";
 import { getGeneralWhatsAppMessage } from "@/lib/clubs";
 import WhatsAppCTA from "@/components/WhatsAppCTA";
-import FAQSchema from "@/components/FAQSchema";
 import { ArticlePreferredSourcePrompt } from "@/components/PreferredSourceButton";
 import { getPostImage } from "@/lib/images";
 import { fitTitle } from "@/lib/seo";
@@ -149,7 +148,6 @@ export default async function BlogPostPage({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: safeJsonLd(articleSchema) }}
       />
-      {post.faqs && <FAQSchema faqs={post.faqs} />}
 
       {/* Header */}
       <article>

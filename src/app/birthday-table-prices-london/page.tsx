@@ -5,7 +5,6 @@ import Link from "next/link";
 import { images } from "@/lib/images";
 import { openClubs, getPricingWhatsAppMessage } from "@/lib/clubs";
 import WhatsAppCTA from "@/components/WhatsAppCTA";
-import FAQSchema from "@/components/FAQSchema";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import ArticleSchema from "@/components/ArticleSchema";
 
@@ -28,7 +27,6 @@ const faqs = [
 export default function BirthdayTablePricesPage() {
   return (
     <>
-      <FAQSchema faqs={faqs} />
       <BreadcrumbSchema items={[{ name: "Home", href: "/" }, { name: "Birthday Table Prices London", href: "/birthday-table-prices-london" }]} />
       {/* Live since 25 March 2026 (first commit); last substantive change 4 November 2026 (BEAT London facts). Update dateModified with any real change to the guide. */}
       <ArticleSchema title="Birthday Table Prices London 2026" description="Complete guide to birthday table prices at London nightclubs." url="https://londonbirthdayclub.com/birthday-table-prices-london" datePublished="2026-03-25" dateModified="2026-11-04" />
