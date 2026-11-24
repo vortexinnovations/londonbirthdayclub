@@ -3,7 +3,7 @@ import { fitTitle } from "@/lib/seo";
 import Image from "next/image";
 import Link from "next/link";
 import { images } from "@/lib/images";
-import { openClubs, getGeneralWhatsAppMessage, getClubWhatsAppMessage, getWhatsAppLink } from "@/lib/clubs";
+import { openClubs, closedClubs, getGeneralWhatsAppMessage, getClubWhatsAppMessage, getWhatsAppLink } from "@/lib/clubs";
 import ClubComparisonModule from "@/components/ClubComparisonModule";
 import WhatsAppCTA from "@/components/WhatsAppCTA";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
@@ -220,6 +220,24 @@ export default function BirthdayClubsLondonPage() {
               </div>
             ))}
           </div>
+
+          {/* Closed venues keep their pages (people still search for them):
+              this line keeps each one reachable from the directory. */}
+          <p className="mt-8 font-sans text-[0.9375rem] leading-relaxed text-ink-soft" data-reveal>
+            Closed venues:{" "}
+            {closedClubs.map((club, i) => (
+              <span key={club.slug}>
+                {i > 0 && (i === closedClubs.length - 1 ? " and " : ", ")}
+                <Link
+                  href={`/clubs/${club.slug}`}
+                  className="text-champagne hover:text-champagne-bright underline decoration-champagne/30 underline-offset-4 decoration-[0.5px] transition-colors duration-200"
+                >
+                  {club.name}
+                </Link>
+              </span>
+            ))}
+            . Each page says what happened to the venue and suggests open alternatives.
+          </p>
         </div>
       </section>
 
