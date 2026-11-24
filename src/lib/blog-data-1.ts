@@ -10,7 +10,7 @@ export const blogDataPart1: BlogPost[] = [
       "Full breakdown of birthday table costs at London nightclubs. Minimum spends, what's included, per-person costs, and how to get the best value at Mayfair clubs.",
     excerpt:
       "A transparent breakdown of what you'll actually spend on a birthday table at a London nightclub - from minimum spends to hidden costs and per-person budgets.",
-    publishedAt: "2026-01-15",
+    publishedAt: "2026-03-25",
     updatedAt: "2026-03-25",
     category: "Planning",
     readTime: "7 min read",
@@ -93,7 +93,7 @@ export const blogDataPart1: BlogPost[] = [
       "Complete dress code guide for London nightclub birthdays. What to wear at Mayfair clubs, what gets you turned away, and outfit ideas for birthday celebrations.",
     excerpt:
       "A practical guide to dressing for a birthday at a London nightclub - what works, what doesn't, and how to make sure nobody in your group gets turned away at the door.",
-    publishedAt: "2026-01-22",
+    publishedAt: "2026-03-25",
     updatedAt: "2026-03-25",
     category: "Tips",
     readTime: "6 min read",
@@ -170,7 +170,7 @@ export const blogDataPart1: BlogPost[] = [
       "Complete guide to planning a surprise birthday at a London club. Secret booking tips, how to coordinate with the venue, surprise arrival ideas, and common mistakes to avoid.",
     excerpt:
       "Planning a surprise birthday at a London club requires coordination, secrecy, and timing. Here's how to pull it off without the birthday person finding out.",
-    publishedAt: "2026-01-05",
+    publishedAt: "2026-03-25",
     updatedAt: "2026-03-25",
     category: "Planning",
     readTime: "6 min read",
@@ -248,7 +248,7 @@ export const blogDataPart1: BlogPost[] = [
       "Everything you need to know about birthday bottle service at London nightclubs. How it works, what bottles to choose, tipping etiquette, and how to make the most of your table.",
     excerpt:
       "A no-nonsense guide to how bottle service actually works at London clubs on your birthday - from choosing bottles to tipping your table host.",
-    publishedAt: "2026-01-12",
+    publishedAt: "2026-03-25",
     updatedAt: "2026-03-25",
     category: "Guide",
     readTime: "8 min read",
@@ -320,7 +320,7 @@ export const blogDataPart1: BlogPost[] = [
       "Creative birthday celebration ideas in London's nightlife scene. From circus-themed clubs to dinner-and-dancing, cocktail bars to superclubs - unique ways to celebrate.",
     excerpt:
       "If you want a birthday that goes beyond a standard night at the pub, London's nightlife scene offers genuinely unique experiences. Here are the most memorable ways to celebrate.",
-    publishedAt: "2026-01-20",
+    publishedAt: "2026-03-25",
     updatedAt: "2026-03-25",
     category: "Ideas",
     readTime: "7 min read",
@@ -406,7 +406,7 @@ export const blogDataPart1: BlogPost[] = [
       "Practical advice on collecting money and splitting the cost of a birthday table at a London nightclub. Avoid awkward conversations and last-minute cancellations.",
     excerpt:
       "Money is the most awkward part of planning a birthday table. Here's how to handle group payments without the drama - from how to split the cost to when to collect.",
-    publishedAt: "2026-01-01",
+    publishedAt: "2026-03-25",
     updatedAt: "2026-03-25",
     category: "Planning",
     readTime: "5 min read",
@@ -476,7 +476,7 @@ export const blogDataPart1: BlogPost[] = [
       "The best London birthday night out ideas for women. From glamorous Mayfair clubs to cocktail bars and dinner-and-dancing - venues where she'll feel like a VIP.",
     excerpt:
       "Planning a birthday night out for the woman in your life? These are the London venues and experiences that consistently deliver unforgettable celebrations for women's birthdays.",
-    publishedAt: "2026-01-10",
+    publishedAt: "2026-03-25",
     updatedAt: "2026-03-25",
     category: "Ideas",
     readTime: "6 min read",
@@ -554,7 +554,7 @@ export const blogDataPart1: BlogPost[] = [
       "The best London birthday night out ideas for men. From exclusive members' clubs to legendary superclubs - venues that deliver an unforgettable birthday for him.",
     excerpt:
       "Planning a birthday night out for the man in your life? These are the London venues that consistently deliver memorable celebrations for men's birthdays.",
-    publishedAt: "2026-01-15",
+    publishedAt: "2026-03-25",
     updatedAt: "2026-03-25",
     category: "Ideas",
     readTime: "6 min read",
@@ -631,7 +631,7 @@ export const blogDataPart1: BlogPost[] = [
       "The best birthday songs to request from the DJ at a London nightclub. How DJ requests work, when to ask, and which tracks always get the room singing happy birthday.",
     excerpt:
       "When the DJ shouts your name and drops the right track, it's the peak of your birthday night. Here's how to make the most of your DJ moment at a London club.",
-    publishedAt: "2026-01-20",
+    publishedAt: "2026-03-25",
     updatedAt: "2026-03-25",
     category: "Tips",
     readTime: "5 min read",
@@ -702,7 +702,7 @@ export const blogDataPart1: BlogPost[] = [
       "Plan a full birthday weekend in London. From daytime activities to the main event at a Mayfair club - a complete itinerary for making a birthday weekend unforgettable.",
     excerpt:
       "Turn your birthday night into a birthday weekend. Here's how to plan a full London birthday celebration from Saturday afternoon to Sunday morning.",
-    publishedAt: "2026-01-25",
+    publishedAt: "2026-03-25",
     updatedAt: "2026-03-25",
     category: "Planning",
     readTime: "6 min read",
@@ -777,7 +777,7 @@ export const blogDataPart1: BlogPost[] = [
     metaTitle: "Tape London Birthday | The Most Exclusive Mayfair Celebration",
     metaDescription: "Discover why Tape London is the ultimate exclusive birthday venue in Mayfair. Members' club atmosphere, celebrity crowd, world-class sound. Complete birthday guide inside.",
     excerpt: "What makes a birthday at Tape London different from every other Mayfair club - and why the intimate, members' club experience creates the most genuinely exclusive celebration in London.",
-    publishedAt: "2026-01-10",
+    publishedAt: "2026-03-25",
     updatedAt: "2026-03-25",
     category: "Venue Guide",
     readTime: "6 min read",
