@@ -174,14 +174,12 @@ export default function BestClubsPage() {
               <em className="italic text-champagne font-normal">London</em>
             </h1>
             <p className="font-sans text-[1.0625rem] leading-[1.8] text-ink-soft max-w-2xl mb-6">
-              An honest, opinionated guide to the best London nightclubs for
-              birthday celebrations. We&apos;ve helped plan hundreds of birthday
-              nights. These are the venues that consistently deliver
-              unforgettable celebrations, ranked by how well they handle birthdays
-              specifically.
+              An opinionated guide to the best London nightclubs for birthday
+              celebrations: the clubs we book birthday tables at, ranked by how
+              well they handle birthdays specifically.
             </p>
             <p className="font-sans text-[0.75rem] uppercase tracking-[0.18em] text-ink-faint">
-              Updated for 2026. Every venue personally vetted.
+              Updated for 2026.
             </p>
           </div>
         </div>

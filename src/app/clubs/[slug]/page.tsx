@@ -463,7 +463,7 @@ export default async function ClubPage({
         <div className="max-w-3xl mx-auto" data-reveal>
           <div className="border-l-2 border-champagne/60 pl-7 sm:pl-10 py-1">
             <h3 className="font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.28em] text-champagne mb-4">
-              Insider Tip
+              Top Tip
             </h3>
             <p className="font-sans text-[1.0625rem] leading-[1.8] text-ink-soft">
               {club.proTip}

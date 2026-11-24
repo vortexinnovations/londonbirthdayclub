@@ -158,8 +158,8 @@ export default function BirthdayClubsLondonPage() {
               <em className="italic text-champagne font-normal">Venues</em>
             </h2>
             <p className="mt-5 font-sans text-[1.0625rem] leading-[1.8] text-ink-soft max-w-xl">
-              Every club listed here has been personally vetted for birthday
-              celebrations. Click any venue for the full birthday guide.
+              Every club listed here is one we book birthday tables at. Click
+              any venue for the full birthday guide.
             </p>
           </div>
 

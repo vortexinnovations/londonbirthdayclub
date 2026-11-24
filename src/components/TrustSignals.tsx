@@ -1,3 +1,5 @@
+import { openClubs } from "@/lib/clubs";
+
 export default function TrustSignals() {
   return (
     <section className="py-16 px-4 sm:px-6 lg:px-8">
@@ -8,9 +10,9 @@ export default function TrustSignals() {
         >
           {[
             { stat: "Free", label: "No booking fees" },
-            { stat: "12", label: "Partner venues" },
+            { stat: String(openClubs.length), label: "Clubs we book" },
             { stat: "WhatsApp", label: "Instant response" },
-            { stat: "5 min", label: "Average booking time" },
+            { stat: "Extras", label: "Cake and decorations arranged" },
           ].map((item) => (
             <div key={item.label} className="border-l border-hairline pl-6 py-2">
               <div className="font-display italic font-medium text-4xl sm:text-5xl text-champagne leading-none">
@@ -23,7 +25,7 @@ export default function TrustSignals() {
           ))}
         </div>
         <p className="font-sans text-[0.8125rem] leading-relaxed tracking-[0.02em] text-ink-faint mt-10 max-w-2xl">
-          London Birthday Club is an independent nightlife concierge. We work
+          London Birthday Club is a London nightlife booking service. We work
           directly with venue management to secure the best tables and birthday
           packages for our clients.
         </p>

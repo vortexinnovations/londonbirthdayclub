@@ -181,8 +181,8 @@ export default async function HomePage() {
               Birthday <em className="italic text-champagne font-normal">Venues</em>
             </h2>
             <p className="mt-5 font-sans text-[1.0625rem] leading-[1.8] text-ink-soft max-w-xl">
-              Every club we work with has been personally vetted for birthday
-              celebrations. From intimate Mayfair lounges to iconic superclubs.
+              Every club here is one we book birthday tables at, from intimate
+              Mayfair lounges to iconic superclubs.
             </p>
           </div>
 
@@ -220,15 +220,15 @@ export default async function HomePage() {
               {
                 title: "Completely Free Service",
                 description:
-                  "We don't charge you a penny. You only pay the club's minimum spend: the same price you'd pay booking directly, but with expert guidance and support.",
+                  "We don't charge you a penny. You only pay the club's minimum spend: the same price you'd pay booking directly, but with our guidance and support.",
               },
               {
-                title: "Birthday Specialists",
+                title: "Built Around Birthdays",
                 description:
-                  "We don't do corporate events or hen parties. Birthdays are all we do, and we know exactly what makes a birthday celebration work at every venue.",
+                  "Birthdays are this site's focus: which club suits which celebration, and what each venue can arrange for the birthday person on the night.",
               },
               {
-                title: "Genuine Insider Knowledge",
+                title: "Matched to Your Birthday",
                 description:
                   "We know which club suits which kind of birthday. A 25th birthday crew wants something different from a 30th: we'll match you perfectly.",
               },

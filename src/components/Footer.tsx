@@ -38,7 +38,7 @@ export default function Footer() {
             </h3>
             <p className="font-sans text-[0.9375rem] text-ink-soft leading-[1.8]">
               The ultimate guide to celebrating your birthday at London&apos;s
-              most exclusive nightclubs. Free planning, expert advice, VIP
+              most exclusive nightclubs. Free planning, booking advice, VIP
               access.
             </p>
             <Link
