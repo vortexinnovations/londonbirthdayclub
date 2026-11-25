@@ -4,9 +4,9 @@ export const blogDataPart4: BlogPost[] = [
   {
     slug: "40th-birthday-night-out-london",
     title: "40th Birthday Night Out in London: Where Sophistication Meets Celebration",
-    metaTitle: "40th Birthday Night Out London - Refined Venues & Planning (2026)",
+    metaTitle: "40th Birthday Night Out London: Refined Venues & Planning (2026)",
     metaDescription: "The best London clubs for a 40th birthday celebration. Sophisticated venues, dinner-to-club options, and VIP experiences designed for milestone birthdays where quality matters most.",
-    excerpt: "Turning 40 is a milestone that demands more than just a big night - it demands the right night. Here are the venues and formats that deliver a 40th birthday worthy of the occasion.",
+    excerpt: "Turning 40 is a milestone that demands more than just a big night: it demands the right night. Here are the venues and formats that deliver a 40th birthday worthy of the occasion.",
     publishedAt: "2026-03-26",
     updatedAt: "2026-03-26",
     category: "Guide",
@@ -16,16 +16,16 @@ export const blogDataPart4: BlogPost[] = [
         heading: "Why a 40th Birthday Deserves a Different Approach",
         headingLevel: "h2" as const,
         content: [
-          "A 40th birthday sits at a particular inflection point. The group is tighter - these are the people who have genuinely stuck around. The budget is more generous, but the tolerance for chaos is lower. Nobody wants to queue outside a nightclub at midnight in the cold. Nobody wants to shout over terrible music. What everyone wants is to feel that the evening was considered, that it matched the significance of the milestone.",
-          "The venues we recommend for 40th birthdays share common traits: exceptional service, refined atmospheres, food and drink that reward attention, and music that enhances rather than overwhelms conversation. These are not the clubs you went to at 21 - and that is entirely the point.",
+          "A 40th birthday sits at a particular inflection point. The group is tighter. These are the people who have genuinely stuck around. The budget is more generous, but the tolerance for chaos is lower. Nobody wants to queue outside a nightclub at midnight in the cold. Nobody wants to shout over terrible music. What everyone wants is to feel that the evening was considered, that it matched the significance of the milestone.",
+          "The venues we recommend for 40th birthdays share common traits: exceptional service, refined atmospheres, food and drink that reward attention, and music that enhances rather than overwhelms conversation. These are not the clubs you went to at 21, and that is entirely the point.",
         ],
       },
       {
         heading: "The Best Venues for a 40th Birthday in London",
         headingLevel: "h2" as const,
         content: [
-          "Maddox Club leads our recommendations for a reason. The Italian dinner-to-club format was practically designed for milestone birthdays: your group arrives for a genuinely excellent meal, the birthday toast happens over champagne and pasta, and the evening naturally evolves into a house-music-driven dancefloor without anyone needing to hail a taxi between venues. One booking, one location, an entire evening that builds in tempo. The house music policy attracts a mature, well-dressed crowd - the room matches the occasion.",
-          "Dear Darling is the choice for groups who prioritise elegance above all else. The chandeliered, velvet-draped interiors create the kind of environment where a champagne toast feels like a scene from a film. The cocktail programme is exceptional, the late-night hours extend the celebration, and the intimate capacity means your birthday is felt by the room rather than lost in it. For 40th birthdays where the guest list is deliberately small - 6 to 10 close friends - Dear Darling is difficult to beat.",
+          "Maddox Club leads our recommendations for a reason. The Italian dinner-to-club format was practically designed for milestone birthdays: your group arrives for a genuinely excellent meal, the birthday toast happens over champagne and pasta, and the evening naturally evolves into a house-music-driven dancefloor without anyone needing to hail a taxi between venues. One booking, one location, an entire evening that builds in tempo. The house music policy attracts a mature, well-dressed crowd, and the room matches the occasion.",
+          "Dear Darling is the choice for groups who prioritise elegance above all else. The chandeliered, velvet-draped interiors create the kind of environment where a champagne toast feels like a scene from a film. The cocktail programme is exceptional, the late-night hours extend the celebration, and the intimate capacity means your birthday is felt by the room rather than lost in it. For 40th birthdays where the guest list is deliberately small (6 to 10 close friends), Dear Darling is difficult to beat.",
           "Tape London suits the 40th birthday person who wants genuine exclusivity. The members' club atmosphere filters the crowd naturally, the sound system is built for music appreciation, and the service is quietly impeccable. With a higher minimum spend from £1,500, Tape attracts guests who understand what premium means. For intimate 40th celebrations of 6 to 8, it delivers an evening that feels privately curated.",
           "Scotch of St James brings something no other venue can offer: heritage. The Hendrix-era history creates a warmth and character that modern clubs lack. For the birthday person who values personality over polish, Scotch's vintage-meets-luxury interiors provide a backdrop with genuine stories to tell. The eclectic music policy varies by night, so matching your group's taste requires checking in advance.",
         ],
@@ -35,15 +35,15 @@ export const blogDataPart4: BlogPost[] = [
         headingLevel: "h2" as const,
         content: [
           "The most popular format for 40th birthdays is dinner followed by a club, and for good reason. It structures the evening into two distinct acts: the first is social, conversational, and centred around food and wine; the second is energetic, celebratory, and driven by music and atmosphere. This dual format means guests who prefer to leave after dinner can do so gracefully, while those who want to dance until close have a seamless transition.",
-          "Maddox Club handles this transition under one roof, which removes the logistical headache of coordinating two venues. If you prefer separate venues, start with a restaurant in Mayfair - the area around Berkeley Square, Mount Street, and Bruton Place has dozens of excellent options - then walk to your chosen club five minutes away. We can recommend pairings that work well together.",
+          "Maddox Club handles this transition under one roof, which removes the logistical headache of coordinating two venues. If you prefer separate venues, start with a restaurant in Mayfair (the area around Berkeley Square, Mount Street, and Bruton Place has dozens of excellent options), then walk to your chosen club five minutes away. We can recommend pairings that work well together.",
         ],
       },
       {
         heading: "Budget Expectations for a 40th Birthday",
         headingLevel: "h2" as const,
         content: [
-          "A 40th birthday group tends to be smaller and more willing to spend. Typical groups of 8 to 12 with a £1,000 minimum spend translate to £83-125 per person. Many 40th birthday groups comfortably spend £150-200 per head when dinner is included - and consider it excellent value for an evening that includes a multi-course meal, premium bottles, VIP service, and a venue that matches the milestone.",
-          "For the dinner-to-club format at Maddox, budget approximately £50-70 per person for dinner plus the club minimum split across your group. The total per-person cost of £120-180 covers an entire evening from 9pm to 3am - often the best value-per-hour of premium entertainment in London.",
+          "A 40th birthday group tends to be smaller and more willing to spend. Typical groups of 8 to 12 with a £1,000 minimum spend translate to £83-125 per person. Many 40th birthday groups comfortably spend £150 to £200 per head when dinner is included, and consider it excellent value for an evening that includes a multi-course meal, premium bottles, VIP service, and a venue that matches the milestone.",
+          "For the dinner-to-club format at Maddox, budget approximately £50-70 per person for dinner plus the club minimum split across your group. The total per-person cost of £120 to £180 covers an entire evening from 9pm to 3am, often the best value-per-hour of premium entertainment in London.",
         ],
       },
       {
@@ -51,7 +51,7 @@ export const blogDataPart4: BlogPost[] = [
         headingLevel: "h2" as const,
         content: [
           "Book three to four weeks ahead for a 40th birthday, especially if your preferred date falls on a Friday or Saturday. Table positions at intimate venues like Tape and Scotch are limited, and the best spots go quickly. For Maddox, book dinner and club together to ensure the transition is seamless.",
-          "If you are organising this as a surprise, we can coordinate directly with you while keeping the details hidden from the birthday person. Many 40th birthdays involve an element of surprise - arriving at a beautifully decorated table, a sparkler-led bottle presentation timed to your moment, or a DJ shoutout that catches them off guard. We arrange surprise celebrations regularly and know exactly how to execute them.",
+          "If you are organising this as a surprise, we can coordinate directly with you while keeping the details hidden from the birthday person. Many 40th birthdays involve an element of surprise: arriving at a beautifully decorated table, a sparkler-led bottle presentation timed to your moment, or a DJ shoutout that catches them off guard. We arrange surprise celebrations regularly and know exactly how to execute them.",
         ],
       },
     ],
@@ -64,9 +64,9 @@ export const blogDataPart4: BlogPost[] = [
   {
     slug: "birthday-brunch-to-club-london",
     title: "Birthday Brunch to Club in London: How to Plan the Ultimate Day-to-Night Celebration",
-    metaTitle: "Birthday Brunch to Club London - Day-to-Night Celebration Guide (2026)",
+    metaTitle: "Birthday Brunch to Club London: Day-to-Night Celebration Guide (2026)",
     metaDescription: "Plan the ultimate birthday brunch to club celebration in London. Start with bottomless brunch, transition to a VIP club table. Full planning guide for day-into-night birthdays.",
-    excerpt: "Why limit your birthday to a few hours after dark? The brunch-to-club format turns a single evening into an all-day celebration - and it's becoming London's most popular birthday format.",
+    excerpt: "Why limit your birthday to a few hours after dark? The brunch-to-club format turns a single evening into an all-day celebration, and it's becoming London's most popular birthday format.",
     publishedAt: "2026-03-26",
     updatedAt: "2026-03-26",
     category: "Planning",
@@ -76,16 +76,16 @@ export const blogDataPart4: BlogPost[] = [
         heading: "Why the Brunch-to-Club Format Is Taking Over London Birthdays",
         headingLevel: "h2" as const,
         content: [
-          "The traditional birthday format - meet at 10pm, queue outside a club, celebrate for four hours - is being replaced by something more ambitious. The brunch-to-club format extends your birthday from early afternoon to the early hours, creating a full day of celebration that moves through distinct phases: relaxed daytime dining, a social golden-hour transition, and an electric late-night finale at a premium venue.",
-          "This format works particularly well for birthdays because it accommodates everyone. Friends who cannot make a late night can join for brunch and still feel part of the celebration. The core group carries the energy through to the club. And the birthday person gets the rare luxury of an entire day dedicated to them - not just a few hours squeezed into a Saturday night.",
+          "The traditional birthday format (meet at 10pm, queue outside a club, celebrate for four hours) is being replaced by something more ambitious. The brunch-to-club format extends your birthday from early afternoon to the early hours, creating a full day of celebration that moves through distinct phases: relaxed daytime dining, a social golden-hour transition, and an electric late-night finale at a premium venue.",
+          "This format works particularly well for birthdays because it accommodates everyone. Friends who cannot make a late night can join for brunch and still feel part of the celebration. The core group carries the energy through to the club. And the birthday person gets the rare luxury of an entire day dedicated to them, not just a few hours squeezed into a Saturday night.",
         ],
       },
       {
         heading: "Phase One: Birthday Brunch (1pm to 4pm)",
         headingLevel: "h2" as const,
         content: [
-          "The brunch sets the tone. For a birthday that leads into a Mayfair club night, choose a restaurant with energy - not a quiet cafe. You want a venue with a lively atmosphere, good cocktails or bottomless options, and enough space for your group to spread out and settle in. Mayfair, Soho, and Marylebone all have excellent brunch spots within walking distance of the clubs.",
-          "Budget approximately £40-60 per person for a birthday brunch with drinks. Bottomless brunch packages, where available, are popular for birthday groups and typically run 90 minutes to two hours. Book a private or semi-private area if your group exceeds 12 - this prevents the group splitting across multiple tables and losing the celebratory cohesion.",
+          "The brunch sets the tone. For a birthday that leads into a Mayfair club night, choose a restaurant with energy, not a quiet cafe. You want a venue with a lively atmosphere, good cocktails or bottomless options, and enough space for your group to spread out and settle in. Mayfair, Soho, and Marylebone all have excellent brunch spots within walking distance of the clubs.",
+          "Budget approximately £40-60 per person for a birthday brunch with drinks. Bottomless brunch packages, where available, are popular for birthday groups and typically run 90 minutes to two hours. Book a private or semi-private area if your group exceeds 12, as this prevents the group splitting across multiple tables and losing the celebratory cohesion.",
           "Timing matters. A 1pm start gives your group three hours of brunch before the next phase. Starting much earlier risks the energy dipping before the evening arrives; starting later compresses the transition and leaves less recovery time.",
         ],
       },
@@ -95,15 +95,15 @@ export const blogDataPart4: BlogPost[] = [
         content: [
           "This is the phase most birthday planners overlook, and getting it right separates a good day from a great one. After brunch, your group needs a change of scenery and pace before the club. Options include a cocktail bar with a relaxed afternoon atmosphere, a hotel bar with comfortable seating, or simply heading home to change outfits and recharge.",
           "The smartest approach: book a late-afternoon cocktail session at a venue like Dear Darling, where the opulent interiors provide an Instagram-worthy backdrop and the cocktail programme bridges the gap between afternoon and evening. This also positions your group in Mayfair, ready for the club without needing to travel.",
-          "For groups that prefer to reset at home, ensure everyone knows the evening meet-up time and location clearly. Losing momentum during the transition is the biggest risk to the brunch-to-club format - a firm 10pm regrouping time keeps the day on track.",
+          "For groups that prefer to reset at home, ensure everyone knows the evening meet-up time and location clearly. Losing momentum during the transition is the biggest risk to the brunch-to-club format: a firm 10pm regrouping time keeps the day on track.",
         ],
       },
       {
         heading: "Phase Three: The Club (10:30pm to Close)",
         headingLevel: "h2" as const,
         content: [
-          "By the time your group arrives at the club, the birthday has already had hours of celebration behind it - and this final phase is the exclamation point. A VIP table booking ensures your group walks straight in with priority entry, settles into a reserved area, and picks up the energy with premium bottles and the anticipation of a room filling around you.",
-          "For brunch-to-club birthdays, we particularly recommend Cirque Le Soir for groups who want spectacle - the live performers and pyrotechnics provide a dramatic shift from the daytime atmosphere. Reign London works well for groups with mixed music tastes, with a commercial mix of hip-hop, RnB and house. Tape London delivers the intimate, high-energy finale that caps a long day perfectly.",
+          "By the time your group arrives at the club, the birthday has already had hours of celebration behind it, and this final phase is the exclamation point. A VIP table booking ensures your group walks straight in with priority entry, settles into a reserved area, and picks up the energy with premium bottles and the anticipation of a room filling around you.",
+          "For brunch-to-club birthdays, we particularly recommend Cirque Le Soir for groups who want spectacle: the live performers and pyrotechnics provide a dramatic shift from the daytime atmosphere. Reign London works well for groups with mixed music tastes, with a commercial mix of hip-hop, RnB and house. Tape London delivers the intimate, high-energy finale that caps a long day perfectly.",
           "Time your bottle presentation and birthday cake for around 11:30pm to midnight, when the room is full and the energy is at its peak. The sparklers, DJ shoutout, and cheering from your group create a moment that elevates the entire day into something genuinely memorable.",
         ],
       },
@@ -112,7 +112,7 @@ export const blogDataPart4: BlogPost[] = [
         headingLevel: "h2" as const,
         content: [
           "A complete brunch-to-club birthday costs approximately £120-180 per person when all phases are included. This breaks down to roughly £40-60 for brunch, £20-30 for the transition cocktails, and £50-100 for the club table share. For a group of 12 splitting a £1,000 club minimum, the table element alone is just £83 per person.",
-          "This per-person total covers an entire day of celebration - eight or more hours of premium experiences across multiple venues. Compare that to a single restaurant dinner at £80-120 per person for two hours, and the brunch-to-club format delivers significantly more value per pound spent.",
+          "This per-person total covers an entire day of celebration: eight or more hours of premium experiences across multiple venues. Compare that to a single restaurant dinner at £80-120 per person for two hours, and the brunch-to-club format delivers significantly more value per pound spent.",
         ],
       },
       {
@@ -126,7 +126,7 @@ export const blogDataPart4: BlogPost[] = [
       },
     ],
     faqs: [
-      { question: "Can you do a brunch and club on the same day in London?", answer: "Absolutely - it's becoming one of the most popular birthday formats. Start with brunch around 1pm, transition through cocktails in the afternoon, and arrive at the club by 10:30pm. The key is pacing: the transition period between brunch and club prevents fatigue and keeps the energy building." },
+      { question: "Can you do a brunch and club on the same day in London?", answer: "Absolutely. It's becoming one of the most popular birthday formats. Start with brunch around 1pm, transition through cocktails in the afternoon, and arrive at the club by 10:30pm. The key is pacing: the transition period between brunch and club prevents fatigue and keeps the energy building." },
       { question: "How much does a brunch-to-club birthday cost?", answer: "Budget approximately £120-180 per person for the full day: £40-60 for brunch with drinks, £20-30 for afternoon cocktails, and £50-100 for your share of the club table minimum. A group of 12 splitting a £1,000 table minimum pays roughly £83 each for the club element." },
       { question: "What time should we arrive at the club after brunch?", answer: "Aim for 10:30-11pm. This gives you time after brunch to transition, change outfits if needed, and arrive at the club as the atmosphere builds. Arriving too early means a quieter start; too late and you miss the build-up. Time your birthday bottle presentation for midnight when energy peaks." },
     ],
@@ -147,7 +147,7 @@ export const blogDataPart4: BlogPost[] = [
         headingLevel: "h2" as const,
         content: [
           "Tipping etiquette at London nightclubs is one of those unspoken rules that separates a smooth birthday night from an awkward one. Unlike restaurants where 12.5 per cent is standard, clubs operate on a different system entirely. Understanding it means better service, a more attentive host, and a birthday celebration that feels genuinely VIP rather than just expensive.",
-          "For birthday bookings especially, tipping well at the right moments creates a ripple effect throughout the evening. Your table host remembers you, the bar staff prioritise your group, and those small extras - sparklers on the bottle, a better table position, the DJ acknowledging your birthday - become far more likely. None of this is guaranteed, but generosity tends to be reciprocated in Mayfair.",
+          "For birthday bookings especially, tipping well at the right moments creates a ripple effect throughout the evening. Your table host remembers you, the bar staff prioritise your group, and those small extras (sparklers on the bottle, a better table position, the DJ acknowledging your birthday) become far more likely. None of this is guaranteed, but generosity tends to be reciprocated in Mayfair.",
           "The key distinction is that London club tipping is discretionary, not obligatory. Service charges are sometimes added to your final bill, but direct tips to specific staff members are what truly elevate the experience. Knowing who deserves what makes all the difference.",
         ],
       },
@@ -155,7 +155,7 @@ export const blogDataPart4: BlogPost[] = [
         heading: "Who to Tip and How Much",
         headingLevel: "h2" as const,
         content: [
-          "Your table host is the most important person to tip. They manage your bottles, keep your area clean, handle requests, and act as your point of contact all night. For a birthday table booking starting from £1,000, a tip of £50-100 for your host is appropriate and appreciated. Hand it directly at the start of the evening or midway through - this signals that you value their attention and often results in noticeably better service for the rest of the night.",
+          "Your table host is the most important person to tip. They manage your bottles, keep your area clean, handle requests, and act as your point of contact all night. For a birthday table booking starting from £1,000, a tip of £50-100 for your host is appropriate and appreciated. Hand it directly at the start of the evening or midway through. This signals that you value their attention and often results in noticeably better service for the rest of the night.",
           "Door staff and guest-list managers do not expect tips, but if they have gone out of their way to accommodate a large birthday group or resolve a last-minute issue, a £10-20 handshake is a classy gesture. At venues like Tape London, Reign London, and Cirque Le Soir, where door teams manage complex guest lists on busy nights, this small acknowledgment goes a long way.",
           "Bartenders at the main bar appreciate £2-5 per round if you are ordering directly rather than through table service. For birthday groups using bottle service at their table, separate bar tips are unnecessary since your host handles the pouring. If someone from your group does visit the bar independently, rounding up or leaving a few pounds keeps things flowing quickly.",
         ],
@@ -173,7 +173,7 @@ export const blogDataPart4: BlogPost[] = [
         heading: "Service Charges and What They Cover",
         headingLevel: "h2" as const,
         content: [
-          "Many London clubs add an automatic service charge of 12.5-15 per cent to your final bill. This is separate from any direct tips you give to staff, and it typically goes into a general pool rather than directly to your table host. Check your bill carefully - if a service charge is included, you are not obligated to tip on top of it, though a direct cash tip to your host remains the best way to reward exceptional personal service.",
+          "Many London clubs add an automatic service charge of 12.5-15 per cent to your final bill. This is separate from any direct tips you give to staff, and it typically goes into a general pool rather than directly to your table host. Check your bill carefully: if a service charge is included, you are not obligated to tip on top of it, though a direct cash tip to your host remains the best way to reward exceptional personal service.",
           "At venues like Maddox Club, where dinner transitions into dancing, you may encounter service charges on both the dining and club elements. Understanding this in advance helps you budget accurately for your birthday night. If you are planning a birthday dinner then club evening, factor in that gratuity expectations differ between the two settings even within the same venue.",
         ],
       },
@@ -187,9 +187,9 @@ export const blogDataPart4: BlogPost[] = [
       },
     ],
     faqs: [
-      { question: "Do you tip at London nightclubs?", answer: "Tipping is discretionary but strongly recommended, especially for table bookings. Your table host is the key person to tip - £50-100 is appropriate for a birthday booking. Many clubs add an automatic service charge to the bill, but a direct cash tip to your host rewards personal service and often results in better attention throughout the night." },
-      { question: "How much should you tip a VIP host at a London club?", answer: "For a birthday table booking starting from £1,000, tipping your VIP host £50-100 in cash is standard for good service. Tip early in the evening for the best effect - ideally when your first bottle arrives. For larger bookings or exceptional service, £100-150 is generous and appreciated." },
-      { question: "Is service charge included at London nightclubs?", answer: "Many London clubs add a 12.5-15 per cent service charge automatically to your final bill. This goes into a general staff pool rather than directly to your table host. Check your bill before paying - if service is included, additional tipping is optional but a direct cash tip to your host is still the best way to reward great personal service." },
+      { question: "Do you tip at London nightclubs?", answer: "Tipping is discretionary but strongly recommended, especially for table bookings. Your table host is the key person to tip: £50 to £100 is appropriate for a birthday booking. Many clubs add an automatic service charge to the bill, but a direct cash tip to your host rewards personal service and often results in better attention throughout the night." },
+      { question: "How much should you tip a VIP host at a London club?", answer: "For a birthday table booking starting from £1,000, tipping your VIP host £50-100 in cash is standard for good service. Tip early in the evening for the best effect, ideally when your first bottle arrives. For larger bookings or exceptional service, £100-150 is generous and appreciated." },
+      { question: "Is service charge included at London nightclubs?", answer: "Many London clubs add a 12.5-15 per cent service charge automatically to your final bill. This goes into a general staff pool rather than directly to your table host. Check your bill before paying: if service is included, additional tipping is optional but a direct cash tip to your host is still the best way to reward great personal service." },
       { question: "Should you tip the doorman at a London club?", answer: "Door staff do not expect tips, but a £10-20 handshake is a classy gesture if they have gone out of their way for your birthday group, such as accommodating late arrivals or managing a large guest list. It is not required but is always appreciated and remembered." },
     ],
   },
@@ -270,7 +270,7 @@ export const blogDataPart4: BlogPost[] = [
         headingLevel: "h2" as const,
         content: [
           "The short answer is yes, but the details vary by venue. Most premium London clubs allow birthday cakes as part of a table booking, though very few will let you walk in off the street carrying one. The cake is almost always tied to the VIP table experience, and the club expects you to coordinate with their events team in advance rather than simply turning up with a box from the bakery.",
-          "The reason clubs care about cakes has less to do with health regulations and more to do with presentation. A birthday table at a Mayfair club is a production. The sparklers, the music drop, the bottle parade - these are choreographed moments. A cake that arrives unannounced disrupts the flow. When you arrange it properly, the cake becomes part of the show rather than an awkward interruption.",
+          "The reason clubs care about cakes has less to do with health regulations and more to do with presentation. A birthday table at a Mayfair club is a production. The sparklers, the music drop, the bottle parade: these are choreographed moments. A cake that arrives unannounced disrupts the flow. When you arrange it properly, the cake becomes part of the show rather than an awkward interruption.",
           "If you are booking a birthday table, mention the cake during your initial enquiry. Our plan birthday London club guide walks you through the full booking process, including how to flag extras like cakes and decorations from the start.",
         ],
       },
@@ -286,7 +286,7 @@ export const blogDataPart4: BlogPost[] = [
         heading: "What Kind of Cake Works Best in a Club Setting",
         headingLevel: "h2" as const,
         content: [
-          "Keep it simple and photogenic. Tall, multi-tier cakes look impressive but are impractical in a dark, crowded club. A single-tier cake with bold decoration, metallic finishes, or a personalised topper photographs well under club lighting and is far easier to cut and serve. Think about colours that work under neon and UV light - white, gold, and bright pink tend to look best.",
+          "Keep it simple and photogenic. Tall, multi-tier cakes look impressive but are impractical in a dark, crowded club. A single-tier cake with bold decoration, metallic finishes, or a personalised topper photographs well under club lighting and is far easier to cut and serve. Think about colours that work under neon and UV light: white, gold, and bright pink tend to look best.",
           "Size matters more than you might expect. A cake for ten people is manageable at a table. A cake for thirty creates a logistics problem. Most hosts find that a small feature cake for the photo moment, supplemented by individual cupcakes or cake pops for the wider group, works better than one enormous creation. Several clubs, including Cirque Le Soir, are used to handling this kind of split arrangement.",
           "Check our birthday decorations and extras guide for more on how to style your table area around the cake presentation.",
         ],
@@ -304,7 +304,7 @@ export const blogDataPart4: BlogPost[] = [
         headingLevel: "h2" as const,
         content: [
           "Most clubs do not charge a cakeage fee for birthday table bookings, but it is worth confirming. Some venues include cake service as part of the package, while others treat it as a courtesy that comes with your minimum spend. The cake itself is your responsibility to source and pay for. Expect to spend between 40 and 150 pounds depending on size and complexity. A simple personalised cake from a London bakery typically starts around 50 pounds.",
-          "Clubs will usually cut and plate the cake for you, though not all have full cutlery sets. Paper plates and napkins are standard. Do not expect the same service you would get at a restaurant - this is a nightclub, and the focus is on the visual moment rather than a formal dessert course. If you want the cutting handled smoothly, brief a friend in advance to help distribute slices while the night continues.",
+          "Clubs will usually cut and plate the cake for you, though not all have full cutlery sets. Paper plates and napkins are standard. Do not expect the same service you would get at a restaurant. This is a nightclub, and the focus is on the visual moment rather than a formal dessert course. If you want the cutting handled smoothly, brief a friend in advance to help distribute slices while the night continues.",
           "Planning a birthday and want help coordinating the cake alongside your table booking? Message us on WhatsApp and we will handle everything. We work with clubs like Maddox Club, Cirque Le Soir, and Dear Darling every week and can advise on exactly what each venue accommodates. See our birthday table prices guide for an overview of what a full birthday package typically costs.",
         ],
       },
@@ -331,7 +331,7 @@ export const blogDataPart4: BlogPost[] = [
         heading: "Why the Organiser Needs a Different Game Plan",
         headingLevel: "h2" as const,
         content: [
-          "Every birthday night out has two experiences running in parallel. There is the birthday person's version - effortless, celebratory, full of surprises. And there is the organiser's version - a logistical operation that starts weeks before anyone sets foot in a club. If you have taken on the role of organiser, your job is to make the first version feel seamless while quietly managing the second.",
+          "Every birthday night out has two experiences running in parallel. There is the birthday person's version: effortless, celebratory, full of surprises. And there is the organiser's version: a logistical operation that starts weeks before anyone sets foot in a club. If you have taken on the role of organiser, your job is to make the first version feel seamless while quietly managing the second.",
           "The good news is that London's premium clubs are set up to help you. Venues like Maddox Club, Cirque Le Soir, and Tape London handle birthday bookings every week, and their hosts and promoters are experienced at coordinating the details. But they need a competent organiser on the other end. These tips will make sure that person is you.",
         ],
       },
@@ -339,16 +339,16 @@ export const blogDataPart4: BlogPost[] = [
         heading: "Start with a Headcount and a Budget Conversation",
         headingLevel: "h2" as const,
         content: [
-          "The single biggest source of stress for birthday organisers is money. Get ahead of it by setting a clear per-person budget before you confirm anything. Most London clubs require a minimum spend starting from £1,000 for a birthday table, so divide that by your expected group size and communicate the number early. Be direct - vagueness about costs leads to dropouts and resentment. Our birthday table prices guide breaks down what to expect at each venue.",
+          "The single biggest source of stress for birthday organisers is money. Get ahead of it by setting a clear per-person budget before you confirm anything. Most London clubs require a minimum spend starting from £1,000 for a birthday table, so divide that by your expected group size and communicate the number early. Be direct: vagueness about costs leads to dropouts and resentment. Our birthday table prices guide breaks down what to expect at each venue.",
           "Lock in firm commitments at least ten days before the night. Ask people to transfer their share upfront rather than chasing payments on the evening itself. If someone drops out, you need time to either absorb the cost across the remaining group or find a replacement. Our guide to handling group payments covers the practical mechanics of collecting money without awkwardness.",
-          "Keep the guest list tight. A group of 8 to 12 is the sweet spot for most Mayfair venues - large enough to feel like a proper celebration, small enough that everyone gets a good experience at the table. If the birthday person wants a bigger group, consider whether a guestlist-plus-table approach works better than trying to seat 20 people at one table.",
+          "Keep the guest list tight. A group of 8 to 12 is the sweet spot for most Mayfair venues: large enough to feel like a proper celebration, small enough that everyone gets a good experience at the table. If the birthday person wants a bigger group, consider whether a guestlist-plus-table approach works better than trying to seat 20 people at one table.",
         ],
       },
       {
         heading: "Coordinate Without Micromanaging",
         headingLevel: "h2" as const,
         content: [
-          "Create a single WhatsApp group for logistics - date, venue, arrival time, dress expectations, and payment details. Pin the key information so latecomers do not need to scroll. Send one clear message with everything people need to know, then resist the urge to send daily reminders. Two updates in the final week are enough: one at five days out confirming numbers, and one on the day with the final plan.",
+          "Create a single WhatsApp group for logistics: date, venue, arrival time, dress expectations, and payment details. Pin the key information so latecomers do not need to scroll. Send one clear message with everything people need to know, then resist the urge to send daily reminders. Two updates in the final week are enough: one at five days out confirming numbers, and one on the day with the final plan.",
           "On the night itself, delegate. Assign one person to meet latecomers at the door. Ask another to handle the cake timing if you have arranged one (see our birthday cake guide for logistics). Your job as organiser is to liaise with the club host and keep the birthday person from dealing with any admin. You should be the only contact point between the group and the venue.",
         ],
       },
@@ -357,15 +357,15 @@ export const blogDataPart4: BlogPost[] = [
         headingLevel: "h2" as const,
         content: [
           "Contact the club or promoter at least a week in advance. Confirm your table booking, the number of guests, any extras like birthday decorations or a cake delivery, and your expected arrival time. Clubs such as Dear Darling and The Box London have dedicated hosts who will walk you through the options. If you are unsure which venue suits your group, our plan your birthday night guide helps narrow the choices.",
-          "Arrive 15 to 20 minutes before the birthday person. This gives you time to check in with the host, confirm the table location, and make sure any extras are in place. If you have ordered bottle service, the first round should be poured and ready when the guest of honour arrives. That initial moment - walking into a table that is already set up and buzzing - is what separates a good night from a great one.",
+          "Arrive 15 to 20 minutes before the birthday person. This gives you time to check in with the host, confirm the table location, and make sure any extras are in place. If you have ordered bottle service, the first round should be poured and ready when the guest of honour arrives. That initial moment (walking into a table that is already set up and buzzing) is what separates a good night from a great one.",
           "Planning a birthday and want help with the logistics? Message us on WhatsApp and we will handle everything. We coordinate with venues like Maddox Club, Cirque Le Soir, and Dear Darling every week and know exactly what each club needs from the organiser to deliver a perfect night. Check our birthday clubs guide for the full list of venues we work with.",
         ],
       },
     ],
     faqs: [
       { question: "How far in advance should I book a birthday table in London?", answer: "Book at least two weeks ahead for weekend nights, especially at popular venues like Maddox Club or Cirque Le Soir. Midweek bookings can sometimes be arranged with a week or less notice. The earlier you book, the better your table position." },
-      { question: "What is the best way to collect money for a group birthday?", answer: "Set a clear per-person amount and ask for bank transfers at least a week before the night. Apps like Splitwise or a simple shared note work well. Avoid collecting cash on the night - it creates confusion and delays." },
-      { question: "Should the organiser tell the birthday person the plan?", answer: "Share the basics - date, dress code, and rough timing - but keep venue details and any surprises to yourself. The birthday person should feel looked after, not left in the dark about what to wear or when to arrive." },
+      { question: "What is the best way to collect money for a group birthday?", answer: "Set a clear per-person amount and ask for bank transfers at least a week before the night. Apps like Splitwise or a simple shared note work well. Avoid collecting cash on the night, as it creates confusion and delays." },
+      { question: "Should the organiser tell the birthday person the plan?", answer: "Share the basics (date, dress code, and rough timing) but keep venue details and any surprises to yourself. The birthday person should feel looked after, not left in the dark about what to wear or when to arrive." },
       { question: "How many people is the ideal group size for a club birthday?", answer: "Eight to twelve guests is the sweet spot for most Mayfair clubs. This fits comfortably at a standard VIP table and keeps the minimum spend per person reasonable. Larger groups may need multiple tables or a different booking structure." },
     ],
   },
@@ -392,7 +392,7 @@ export const blogDataPart4: BlogPost[] = [
         heading: "Black and Gold: The Timeless Club Birthday Theme",
         headingLevel: "h2" as const,
         content: [
-          "This is the most reliable theme for a Mayfair birthday. Everyone owns something black, and adding gold accessories is simple - gold ties, gold jewellery, gold clutch bags. The effect when your group arrives as a coordinated unit is striking, and it works perfectly with the standard at venues like Maddox Club and Dear Darling. Nobody gets turned away, and the group photographs beautifully under club lighting.",
+          "This is the most reliable theme for a Mayfair birthday. Everyone owns something black, and adding gold accessories is simple: gold ties, gold jewellery, gold clutch bags. The effect when your group arrives as a coordinated unit is striking, and it works perfectly with the standard at venues like Maddox Club and Dear Darling. Nobody gets turned away, and the group photographs beautifully under club lighting.",
           "The practical advantage is that nobody needs to buy a costume. Guests simply elevate what they already own. Ask the group to send outfit photos to a WhatsApp chat beforehand so you can confirm everyone is on brief. For the birthday person, gold becomes their colour for the night, making them instantly recognisable in every photo. Pair this with gold-themed bottle presentations and LED sparklers, and the table becomes a centrepiece. Our birthday decorations and extras guide covers what clubs can provide to match your colour scheme.",
         ],
       },
@@ -401,7 +401,7 @@ export const blogDataPart4: BlogPost[] = [
         headingLevel: "h2" as const,
         content: [
           "A decades theme gives guests creative freedom while keeping the group visually connected. The most club-friendly decades are the 1970s disco era, 1990s streetwear, and early 2000s glamour. Each translates naturally into outfits that pass door policies at London clubs without feeling like fancy dress. The key is choosing an era where the fashion still looks sharp in a modern nightclub setting.",
-          "Venues with eclectic music programming work best for decades themes. The Box London's eclectic, performance-led music suits a 70s or 80s inspiration. Cirque le Soir already feels like stepping into a different era, with its theatrical atmosphere creating a natural backdrop for any decade. Avoid themes from periods that require full costumes, like medieval or Victorian, as these will not get past security at any Mayfair venue.",
+          "Venues with eclectic music programming work best for decades themes. The Box London's eclectic, performance-led music suits a 70s or 80s inspiration. Cirque Le Soir already feels like stepping into a different era, with its theatrical atmosphere creating a natural backdrop for any decade. Avoid themes from periods that require full costumes, like medieval or Victorian, as these will not get past security at any Mayfair venue.",
           "Brief your guests with reference images so everyone understands the level. You want \"inspired by\" rather than \"costume party.\" A 90s night means oversized blazers and statement trainers, not a full fancy dress situation. Browse our best birthday clubs page to find venues that suit the era you have in mind.",
         ],
       },
@@ -453,7 +453,7 @@ export const blogDataPart4: BlogPost[] = [
         heading: "Where to Have Pre-Drinks Near London Clubs",
         headingLevel: "h2" as const,
         content: [
-          "The best pre-drinks spots sit within a short walk or taxi ride of the club. If your table is booked at Maddox Club or Tape London in Mayfair, look at cocktail bars along Dover Street, South Molton Street, or around Berkeley Square. For groups heading to Cirque le Soir in Soho, Wardour Street and Greek Street have plenty of options with space for larger parties. The key is proximity, so nobody has to navigate across London mid-evening.",
+          "The best pre-drinks spots sit within a short walk or taxi ride of the club. If your table is booked at Maddox Club or Tape London in Mayfair, look at cocktail bars along Dover Street, South Molton Street, or around Berkeley Square. For groups heading to Cirque Le Soir in Soho, Wardour Street and Greek Street have plenty of options with space for larger parties. The key is proximity, so nobody has to navigate across London mid-evening.",
           "Hotel bars are an underrated choice for birthday pre-drinks. Most offer comfortable seating for groups of ten or more, the drinks are reliable, and the atmosphere is polished without being intimidating. Ground floor bars at hotels near Mayfair work particularly well for groups planning a premium night. If you are considering a sit-down meal first instead, our birthday dinner then club guide covers how to combine the two seamlessly.",
         ],
       },
@@ -515,7 +515,7 @@ export const blogDataPart4: BlogPost[] = [
         headingLevel: "h2" as const,
         content: [
           "London club door staff look at four things: dress code compliance, sobriety, group composition, and behaviour. For birthday groups, the critical factor is group composition. Most Mayfair venues prefer a balanced ratio of male and female guests. A group of twelve men without any women will face a harder door conversation than a mixed group of the same size, regardless of whether a table is booked. This is worth knowing early in the planning process so you can set expectations with your guests.",
-          "Sobriety checks are straightforward but strictly enforced. Door staff at venues such as Cirque le Soir and Tape London assess each person individually. If one guest is visibly intoxicated, they will be refused entry, and the rest of the group may be held while staff decide what to do. In practice, the groups that run into trouble are almost always those who went too hard at pre-drinks. As Time Out's London nightlife editors have noted, Mayfair clubs are increasingly selective about who they let through the door, prioritising the atmosphere inside over filling capacity.",
+          "Sobriety checks are straightforward but strictly enforced. Door staff at venues such as Cirque Le Soir and Tape London assess each person individually. If one guest is visibly intoxicated, they will be refused entry, and the rest of the group may be held while staff decide what to do. In practice, the groups that run into trouble are almost always those who went too hard at pre-drinks. As Time Out's London nightlife editors have noted, Mayfair clubs are increasingly selective about who they let through the door, prioritising the atmosphere inside over filling capacity.",
           "Dress code is covered in our plan your birthday page, but the birthday-relevant point is this: you cannot assume every guest knows the rules. Smart shoes, no sportswear, and no fancy dress unless the venue specifically caters to it will cover most Mayfair clubs as of May 2026.",
         ],
       },
@@ -576,7 +576,7 @@ export const blogDataPart4: BlogPost[] = [
         headingLevel: "h2" as const,
         content: [
           "The first thing to check is your minimum spend. Most Mayfair club tables come with a minimum spend requirement that was calculated for your original group size. If you reserved a table for twelve at Maddox Club with a minimum spend starting from £1,000 as of October 2026, losing four guests means the remaining eight need to cover that same total. Before you do anything else, work out the per-person cost increase and decide whether your remaining group can absorb it.",
-          "Birthday groups often panic at this stage, but the reality is more flexible than most people assume. Promoters and hosts at venues like Maddox Club and Cirque le Soir deal with group size changes every weekend. If you contact your promoter promptly, they can often adjust the arrangement. You might move to a smaller table with a lower minimum spend, or the venue might offer a compromise. The worst approach is saying nothing and hoping it works out on the night. Our birthday table information page covers how minimum spends work in detail.",
+          "Birthday groups often panic at this stage, but the reality is more flexible than most people assume. Promoters and hosts at venues like Maddox Club and Cirque Le Soir deal with group size changes every weekend. If you contact your promoter promptly, they can often adjust the arrangement. You might move to a smaller table with a lower minimum spend, or the venue might offer a compromise. The worst approach is saying nothing and hoping it works out on the night. Our birthday table information page covers how minimum spends work in detail.",
         ],
       },
       {
@@ -638,7 +638,7 @@ export const blogDataPart4: BlogPost[] = [
         headingLevel: "h2" as const,
         content: [
           "The first job is the date, not the venue. Send a single message to your six or eight closest friends asking which of two specific Saturdays they can make. Do not offer four options. Do not ask for general availability. Two specific dates with a 48-hour reply window will get you to a decision faster than any other approach we know.",
-          "Once the date is locked, have a quiet conversation with the birthday person. What sort of night do they actually want? An intimate dinner-and-dancing evening at somewhere like Maddox Club is a different proposition to a high-energy party at Cirque le Soir or Tape London. Knowing the vibe early stops you from chasing the wrong venues. Our birthday planning hub covers the main vibe categories and which venues match each.",
+          "Once the date is locked, have a quiet conversation with the birthday person. What sort of night do they actually want? An intimate dinner-and-dancing evening at somewhere like Maddox Club is a different proposition to a high-energy party at Cirque Le Soir or Tape London. Knowing the vibe early stops you from chasing the wrong venues. Our birthday planning hub covers the main vibe categories and which venues match each.",
         ],
       },
       {
